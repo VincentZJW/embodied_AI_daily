@@ -1,7 +1,7 @@
 const latestArticle = {
   "title": "具身智能中文日报｜2026-05-28",
   "date": "2026-05-28",
-  "subtitle": "聚焦VLA、Sim2Real、机器人基础模型，追踪论文、开源项目与产业动态。",
+  "subtitle": "聚焦VLA、Sim2Real、人形机器人，追踪论文、开源项目与产业动态。",
   "theme": "tech-dark",
   "accent_color": "#4F8CFF",
   "tags": [
@@ -11,186 +11,73 @@ const latestArticle = {
     "Diffusion Policy",
     "机器人基础模型",
     "人形机器人",
-    "世界模型",
-    "动作原语"
+    "机器人视觉",
+    "机器人"
   ],
   "export_note": "未发布到微信平台，仅生成小程序可读取的数据文件。",
   "executive_summary": [
     {
       "title": "核心结论 1",
-      "content": "多智能体世界模型正在从单一控制信号扩展到共享空间中的多主体交互建模，重点是可独立控制、置换对称和跨视角一致性。",
+      "content": "本次采集得到论文 0 篇、GitHub 项目 20 个、行业/公司动态 19 条。",
       "card_type": "核心摘要卡",
       "importance_score": 96,
       "tags": [
-        "具身智能",
-        "世界模型"
+        "具身智能"
       ]
     },
     {
       "title": "核心结论 2",
-      "content": "VLA（Vision-Language-Action，视觉-语言-动作）模型的工程落点正在同时向两端推进：一端是更高效的端侧部署量化，另一端是更稳健的动作监控与失败检测。",
+      "content": "部分来源采集失败：论文数据：arXiv API 当前限流，请稍后重试。",
       "card_type": "核心摘要卡",
-      "importance_score": 100,
+      "importance_score": 93,
       "tags": [
-        "具身智能",
-        "VLA",
-        "量化部署",
-        "机器人视觉"
+        "具身智能"
       ]
     },
     {
       "title": "核心结论 3",
-      "content": "机器人操作研究开始更强调可复用的动作原语、临床或真实场景下的系统评估，以及与硬件/传感器条件强相关的鲁棒性问题。",
+      "content": "当前未配置 OpenAI API Key，因此摘要为规则生成版本；配置后可生成更准确的中文理解和翻译。",
       "card_type": "核心摘要卡",
-      "importance_score": 93,
+      "importance_score": 90,
       "tags": [
-        "具身智能",
-        "动作原语",
-        "机器人视觉",
-        "机器人"
+        "具身智能"
       ]
     },
     {
       "title": "核心结论 4",
-      "content": "人形机器人和仿真平台继续升温，速度突破、零样本 sim-to-real 和可扩展训练框架是当前热点。",
+      "content": "从招聘视角看，VLA、机器人操作、Sim2Real 和人形机器人仍是值得持续追踪的方向。",
       "card_type": "核心摘要卡",
-      "importance_score": 95,
-      "tags": [
-        "具身智能",
-        "Sim2Real",
-        "人形机器人",
-        "机器人"
-      ]
-    }
-  ],
-  "papers": [
-    {
-      "title": "Gamma-World：面向多智能体交互生成的世界模型",
-      "reason": "这是把世界模型从单智能体扩展到多智能体场景的重要工作，直接对应多人游戏、多人协作机器人和共享环境中的具身智能需求。",
-      "highlights": [
-        "提出面向交互式仿真的生成式多智能体世界模型。",
-        "引入 Simplex Rotary Agent Encoding，用参数无关方式扩展 3D RoPE，为每个智能体分配不同相位，同时保持置换对称。",
-        "目标是在跨时间、跨视角上保持一致性，并支持高效推理。"
-      ],
-      "source_url": "http://arxiv.org/abs/2605.28816v1",
-      "card_type": "重点论文卡",
-      "importance_score": 94,
-      "tags": [
-        "具身智能",
-        "世界模型",
-        "机器人"
-      ]
-    },
-    {
-      "title": "Ω-QVLA：面向 VLA 模型的鲁棒统一 4bit 量化",
-      "reason": "该工作直接面向具身大模型的端侧部署瓶颈，覆盖语言骨干和扩散动作头的统一低精度压缩，工程价值很高。",
-      "highlights": [
-        "首次提出训练无关的后训练量化框架，同时压缩语言骨干和完整扩散动作头到 W4A4。",
-        "用复合 SVD-Hadamard 旋转均衡通道能量，降低量化误差。",
-        "挑战了“动作头不能统一量化”的常见假设。"
-      ],
-      "source_url": "http://arxiv.org/abs/2605.28803v1",
-      "card_type": "重点论文卡",
       "importance_score": 100,
       "tags": [
         "具身智能",
         "VLA",
-        "Diffusion Policy",
-        "量化部署"
-      ]
-    },
-    {
-      "title": "开放式外科缝合辅助中的模仿学习多策略评测",
-      "reason": "这是少见的把具身学习方法放到真实手术协作场景中系统评测的工作，具有明确的高风险应用背景。",
-      "highlights": [
-        "收集 160 个遥操作示范、32,374 帧数据，在开源机械臂上做缝合跟随任务。",
-        "比较 ACT、Diffusion Policy、SmolVLA、π_0 等 4 类策略，共 28 个模型、32 种配置。",
-        "在理想条件下成功率为 50%–75%，深度误差是主要失败原因。"
-      ],
-      "source_url": "http://arxiv.org/abs/2605.28736v1",
-      "card_type": "重点论文卡",
-      "importance_score": 96,
-      "tags": [
-        "具身智能",
-        "VLA",
-        "Diffusion Policy"
-      ]
-    },
-    {
-      "title": "VLA 的黑盒动作监控：不同架构有不同失败签名",
-      "reason": "它提示部署 VLA 不能只看一个通用安全指标，监控策略需要按架构定制，这对工业落地很关键。",
-      "highlights": [
-        "在 PushT 和 ALOHA 双臂操作上比较 VQ-BeT、Diffusion Policy、ACT。",
-        "发现方向反转率是跨架构通用的失败预测信号。",
-        "jerk 只对离散 token 类架构更有预测力，速度违规并不总是有效指标。"
-      ],
-      "source_url": "http://arxiv.org/abs/2605.28726v1",
-      "card_type": "重点论文卡",
-      "importance_score": 96,
-      "tags": [
-        "具身智能",
-        "VLA",
-        "Diffusion Policy"
-      ]
-    },
-    {
-      "title": "PrimitiveVLA：学习可复用动作原语以提升机器人操作效率",
-      "reason": "这篇工作把 VLA 的学习目标从“整段轨迹映射”转向“原语组合”，有望缓解数据效率和泛化问题。",
-      "highlights": [
-        "批评直接从指令到控制的单段轨迹映射范式。",
-        "提出 Primitive-Centric Disassemble & Assemble 框架。",
-        "训练阶段把示范拆成可复用原语，推理阶段用规划器和切换模块进行闭环组装执行。"
-      ],
-      "source_url": "http://arxiv.org/abs/2605.28634v1",
-      "card_type": "重点论文卡",
-      "importance_score": 87,
-      "tags": [
-        "具身智能",
-        "VLA",
-        "动作原语",
-        "机器人"
-      ]
-    },
-    {
-      "title": "SPRINT：用于人形机器人高速冲刺的频谱先验",
-      "reason": "该工作展示了人形机器人在高速运动与稳定性之间的进一步突破，且强调了零样本 sim-to-real。",
-      "highlights": [
-        "用频域建模人类运动的周期性，构建频率自适应的频谱先验。",
-        "仅用 5 段离散参考动作序列即可外推到更高速度。",
-        "在 Unitree G1 上实现零样本实机冲刺，峰值速度达到 6 m/s。"
-      ],
-      "source_url": "http://arxiv.org/abs/2605.28549v1",
-      "card_type": "重点论文卡",
-      "importance_score": 87,
-      "tags": [
-        "具身智能",
         "Sim2Real",
         "人形机器人",
-        "运动控制",
         "机器人"
       ]
     }
   ],
+  "papers": [],
   "github_projects": [
     {
       "name": "Genesis-Embodied-AI/genesis-world",
-      "summary": "面向通用机器人与具身智能学习的仿真平台，强调统一多物理引擎、照片级渲染和跨平台编译能力。",
-      "why_follow": "它是具身智能训练基础设施的重要底座，适合关注大规模仿真、数据生成和策略训练的团队。",
+      "summary": "该项目可能聚焦仿真到真实迁移，主要语言为 Python。",
+      "why_follow": "仓库星标数约为 29019，可用于观察开源社区对仿真到真实迁移的实现方向。",
       "source_url": "https://github.com/Genesis-Embodied-AI/genesis-world",
       "card_type": "开源项目卡",
-      "importance_score": 90,
+      "importance_score": 93,
       "tags": [
         "具身智能",
-        "机器人"
+        "Sim2Real"
       ]
     },
     {
       "name": "YanjieZe/awesome-humanoid-robot-learning",
-      "summary": "人形机器人学习论文索引库，按任务分类整理，优先收录真实机器人实验和开源代码。",
-      "why_follow": "适合快速追踪人形机器人领域论文脉络与代表工作，尤其适合做综述、选题和情报搜集。",
+      "summary": "该项目可能聚焦人形机器人控制，主要语言为 Python。",
+      "why_follow": "仓库星标数约为 2365，可用于观察开源社区对人形机器人控制的实现方向。",
       "source_url": "https://github.com/YanjieZe/awesome-humanoid-robot-learning",
       "card_type": "开源项目卡",
-      "importance_score": 94,
+      "importance_score": 91,
       "tags": [
         "具身智能",
         "人形机器人",
@@ -199,164 +86,130 @@ const latestArticle = {
     },
     {
       "name": "NVlabs/ProtoMotions",
-      "summary": "GPU 加速的数字人和人形机器人仿真与学习框架，面向高效训练物理模拟中的人形系统。",
-      "why_follow": "适合关注人形控制、动作学习和大规模仿真训练的研究团队，生态兼容性强。",
+      "summary": "该项目可能聚焦仿真到真实迁移，主要语言为 Python。",
+      "why_follow": "仓库星标数约为 1685，可用于观察开源社区对仿真到真实迁移的实现方向。",
       "source_url": "https://github.com/NVlabs/ProtoMotions",
       "card_type": "开源项目卡",
-      "importance_score": 88,
+      "importance_score": 87,
       "tags": [
         "具身智能",
-        "人形机器人",
-        "机器人"
+        "Sim2Real"
       ]
     },
     {
       "name": "fan-ziqi/rl_sar",
-      "summary": "面向机器人强化学习的仿真验证与实机部署框架，覆盖四足、轮式和人形机器人。",
-      "why_follow": "它连接 sim-to-real 的验证流程，对需要从仿真走向实机的团队很实用。",
+      "summary": "该项目可能聚焦仿真到真实迁移，主要语言为 C++。",
+      "why_follow": "仓库星标数约为 1316，可用于观察开源社区对仿真到真实迁移的实现方向。",
       "source_url": "https://github.com/fan-ziqi/rl_sar",
       "card_type": "开源项目卡",
-      "importance_score": 92,
+      "importance_score": 84,
       "tags": [
         "具身智能",
-        "Sim2Real",
-        "人形机器人",
-        "机器人"
+        "Sim2Real"
       ]
     },
     {
       "name": "Octoday-Hub/Embodied-AI",
-      "summary": "具身智能知识索引与产业地图，整合论文、工具、职业机会和产业信息。",
-      "why_follow": "对做行业研究、招聘和生态跟踪非常有帮助，信息面覆盖更贴近产业。",
+      "summary": "该项目可能聚焦人形机器人控制，主要语言为 未知。",
+      "why_follow": "仓库星标数约为 635，可用于观察开源社区对人形机器人控制的实现方向。",
       "source_url": "https://github.com/Octoday-Hub/Embodied-AI",
       "card_type": "开源项目卡",
-      "importance_score": 78,
-      "tags": [
-        "具身智能"
-      ]
-    },
-    {
-      "name": "Spirit-AI-Team/spirit-v1.5",
-      "summary": "Spirit AI 的机器人基础模型实现仓库，包含 VLA 模型与复现 RoboChallenge 基准所需的运行包装。",
-      "why_follow": "适合跟踪国产/产业侧 VLA 基础模型进展，以及基准成绩与工程实现方式。",
-      "source_url": "https://github.com/Spirit-AI-Team/spirit-v1.5",
-      "card_type": "开源项目卡",
-      "importance_score": 85,
+      "importance_score": 82,
       "tags": [
         "具身智能",
-        "VLA",
-        "机器人基础模型",
+        "人形机器人",
         "机器人"
       ]
     }
   ],
   "industry_updates": [
     {
-      "title": "2026 Robotics Summit & Expo 首日议程发布",
-      "summary": "报道介绍了大会首日将有多场主题演讲、机器人演示和交流活动，显示行业活动仍是技术传播与商业对接的重要场景。",
-      "impact": "有助于把最新传感器、运动控制和具身智能方案快速连接到产业客户与应用方。",
+      "title": "行业动态 1：具身智能评测与数据集",
+      "summary": "该动态与具身智能评测与数据集相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
+      "source_url": "https://www.therobotreport.com/hirebotics-talks-evolution-cobots-metal-fabrication-construction/",
+      "card_type": "行业动态卡",
+      "importance_score": 86,
+      "tags": [
+        "具身智能"
+      ]
+    },
+    {
+      "title": "行业动态 2：仿真到真实迁移",
+      "summary": "该动态与仿真到真实迁移相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
+      "source_url": "https://blogs.nvidia.com/blog/icra-research-robotics-simulation-to-real-world/",
+      "card_type": "行业动态卡",
+      "importance_score": 86,
+      "tags": [
+        "具身智能",
+        "Sim2Real"
+      ]
+    },
+    {
+      "title": "行业动态 3：视觉-语言-动作模型",
+      "summary": "该动态与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
+      "source_url": "https://www.therobotreport.com/your-guide-to-the-last-day-of-the-2026-robotics-summit-expo/",
+      "card_type": "行业动态卡",
+      "importance_score": 80,
+      "tags": [
+        "具身智能",
+        "机器人视觉"
+      ]
+    },
+    {
+      "title": "行业动态 4：仿真到真实迁移",
+      "summary": "该动态与仿真到真实迁移相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
       "source_url": "https://www.therobotreport.com/a-guide-to-day-1-of-the-2026-robotics-summit-expo/",
       "card_type": "行业动态卡",
-      "importance_score": 86,
+      "importance_score": 80,
       "tags": [
         "具身智能",
-        "机器人视觉",
-        "运动控制",
-        "机器人"
+        "Sim2Real"
       ]
     },
     {
-      "title": "机器人为何仍难以“看清”真实世界",
-      "summary": "文章强调，机器人感知可靠性不仅取决于 AI 算法，也高度依赖传感器标定与工程质量。",
-      "impact": "提示具身智能落地不能只堆模型，视觉系统、标定和传感器工程仍是核心投入。",
+      "title": "行业动态 5：视觉-语言-动作模型",
+      "summary": "该动态与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
       "source_url": "https://www.therobotreport.com/why-robots-still-struggle-to-see-real-world-orbbec/",
-      "card_type": "行业动态卡",
-      "importance_score": 86,
-      "tags": [
-        "具身智能",
-        "机器人视觉",
-        "机器人"
-      ]
-    },
-    {
-      "title": "人形机器人如何理解并适应复杂环境",
-      "summary": "报道聚焦人形系统在运动、平衡、视觉与响应之间的协同难题，强调系统级设计的重要性。",
-      "impact": "说明人形机器人研发正在从单点算法竞争转向系统集成与实时控制能力竞争。",
-      "source_url": "https://www.therobotreport.com/how-humanoids-learn-to-read-the-room-2/",
-      "card_type": "行业动态卡",
-      "importance_score": 84,
-      "tags": [
-        "具身智能",
-        "人形机器人",
-        "机器人视觉",
-        "机器人"
-      ]
-    },
-    {
-      "title": "机器人视觉系统生态继续扩张，GMSL 成为重点接口方向",
-      "summary": "文章讨论了机器人对更快、更复杂场景的适配需求，带动视觉链路与接口生态升级。",
-      "impact": "对多相机、低延迟、高带宽感知系统的硬件选型和供应链合作具有参考价值。",
-      "source_url": "https://www.therobotreport.com/gmsl-and-the-growing-ecosystem-around-robotic-vision-systems-2/",
-      "card_type": "行业动态卡",
-      "importance_score": 77,
-      "tags": [
-        "具身智能",
-        "机器人视觉",
-        "机器人"
-      ]
-    },
-    {
-      "title": "XELA Robotics 将展示触觉感知方案",
-      "summary": "消息显示其将在 2026 Robotics Summit & Expo 展示磁干扰补偿和 uSkin 相关触觉能力。",
-      "impact": "触觉感知仍是抓取、精细操作和人机交互落地的关键补充传感器方向。",
-      "source_url": "https://www.therobotreport.com/xela-robotics-show-tactile-sensing-2026-robotics-summit-expo/",
       "card_type": "行业动态卡",
       "importance_score": 74,
       "tags": [
         "具身智能",
-        "机器人视觉",
-        "触觉感知"
-      ]
-    },
-    {
-      "title": "Allient 将演示先进运动控制系统",
-      "summary": "消息显示其将在大会上展示多种运动控制技术。",
-      "impact": "运动控制仍是机器人性能上限的重要决定因素，也是产业展示和客户导入的重点。",
-      "source_url": "https://www.therobotreport.com/allient-demonstrates-advanced-motion-control-systems-2026-robotics-summit-expo/",
-      "card_type": "行业动态卡",
-      "importance_score": 71,
-      "tags": [
-        "具身智能",
-        "运动控制",
-        "机器人"
+        "机器人视觉"
       ]
     }
   ],
   "glossary": [
     {
       "term": "VLA",
-      "explanation": "Vision-Language-Action，视觉-语言-动作模型，把感知、语言理解和动作控制统一到一个策略中。",
+      "explanation": "Vision-Language-Action，视觉-语言-动作模型，把视觉感知、语言指令和机器人动作统一建模。",
       "card_type": "术语解释卡",
       "importance_score": 93,
       "tags": [
         "具身智能",
         "VLA",
-        "机器人视觉"
+        "机器人视觉",
+        "机器人"
       ]
     },
     {
-      "term": "W4A4",
-      "explanation": "权重 4 bit、激活 4 bit 的量化配置，用更低精度减少模型存储和算力开销。",
+      "term": "Sim2Real",
+      "explanation": "仿真到真实迁移，先在仿真环境训练策略，再迁移到真实机器人执行。",
       "card_type": "术语解释卡",
-      "importance_score": 88,
+      "importance_score": 92,
       "tags": [
         "具身智能",
-        "量化部署"
+        "Sim2Real",
+        "机器人"
       ]
     },
     {
       "term": "Diffusion Policy",
-      "explanation": "一种用扩散模型生成连续动作序列的机器人策略方法。",
+      "explanation": "扩散策略，用扩散模型生成连续动作轨迹，常用于机器人操作任务。",
       "card_type": "术语解释卡",
       "importance_score": 82,
       "tags": [
@@ -366,227 +219,126 @@ const latestArticle = {
       ]
     },
     {
-      "term": "sim-to-real",
-      "explanation": "从仿真到真实世界部署的迁移过程，强调策略在实机上的可用性。",
+      "term": "Robot Foundation Model",
+      "explanation": "机器人基础模型，面向多机器人、多任务和多场景泛化的通用模型。",
       "card_type": "术语解释卡",
       "importance_score": 89,
       "tags": [
         "具身智能",
-        "Sim2Real"
-      ]
-    },
-    {
-      "term": "motion primitive",
-      "explanation": "动作原语，可复用的基础运动片段，可像积木一样组合成更复杂任务。",
-      "card_type": "术语解释卡",
-      "importance_score": 76,
-      "tags": [
-        "具身智能",
-        "动作原语"
-      ]
-    },
-    {
-      "term": "RoPE",
-      "explanation": "Rotary Position Embedding，旋转位置编码，常用于 Transformer 的位置表示。",
-      "card_type": "术语解释卡",
-      "importance_score": 73,
-      "tags": [
-        "具身智能"
-      ]
-    },
-    {
-      "term": "simplex",
-      "explanation": "几何上的单纯形；这里指用正单纯形方式为多个智能体分配不同相位表示。",
-      "card_type": "术语解释卡",
-      "importance_score": 70,
-      "tags": [
-        "具身智能"
-      ]
-    },
-    {
-      "term": "Robot Foundation Model",
-      "explanation": "机器人基础模型，面向多任务、多机器人和多场景泛化的通用机器人模型。",
-      "card_type": "术语解释卡",
-      "importance_score": 77,
-      "tags": [
-        "具身智能",
         "机器人基础模型",
+        "机器人"
+      ]
+    },
+    {
+      "term": "Humanoid Robot",
+      "explanation": "人形机器人，形态接近人类，适合研究双足移动、全身控制和通用操作。",
+      "card_type": "术语解释卡",
+      "importance_score": 80,
+      "tags": [
+        "具身智能",
+        "人形机器人",
         "机器人"
       ]
     }
   ],
   "recruiting_insights": [
     {
-      "content": "VLA 端侧部署需求很强，懂量化、后训练压缩、混合精度和推理优化的人才值得重点关注。",
+      "content": "关注同时理解机器人控制、视觉语言模型和真实硬件部署的人才。",
       "card_type": "招聘洞察卡",
-      "importance_score": 95,
+      "importance_score": 90,
       "tags": [
         "具身智能",
-        "VLA",
-        "量化部署"
-      ]
-    },
-    {
-      "content": "机器人安全与监控不应只看通用指标，熟悉不同策略架构失败模式分析的人才会更有价值。",
-      "card_type": "招聘洞察卡",
-      "importance_score": 84,
-      "tags": [
-        "具身智能",
+        "机器人视觉",
         "机器人"
       ]
     },
     {
-      "content": "人形机器人与具身学习团队对仿真、控制、频域建模、sim-to-real 和系统集成能力的需求持续上升。",
+      "content": "候选人如果具备开源项目复现、数据集构建和 Sim2Real 经验，匹配度通常更高。",
       "card_type": "招聘洞察卡",
-      "importance_score": 86,
+      "importance_score": 85,
       "tags": [
         "具身智能",
-        "Sim2Real",
+        "Sim2Real"
+      ]
+    },
+    {
+      "content": "人形机器人岗位可重点筛选全身控制、强化学习、运动规划和嵌入式部署背景。",
+      "card_type": "招聘洞察卡",
+      "importance_score": 85,
+      "tags": [
+        "具身智能",
         "人形机器人",
         "机器人"
-      ]
-    },
-    {
-      "content": "面向手术、医疗等高风险场景的具身团队，会更偏好有真实数据采集、临床协作和鲁棒性评测经验的人。",
-      "card_type": "招聘洞察卡",
-      "importance_score": 78,
-      "tags": [
-        "具身智能"
-      ]
-    },
-    {
-      "content": "动作原语、任务分解、规划-控制一体化方向，适合寻找既懂学习又懂控制的复合型人才。",
-      "card_type": "招聘洞察卡",
-      "importance_score": 72,
-      "tags": [
-        "具身智能",
-        "动作原语"
       ]
     }
   ],
   "sources": [
     {
-      "name": "Gamma-World：面向多智能体交互生成的世界模型",
-      "url": "http://arxiv.org/abs/2605.28816v1",
-      "type": "论文",
-      "card_type": "来源链接卡",
-      "importance_score": 78
-    },
-    {
-      "name": "Ω-QVLA：面向 VLA 模型的鲁棒统一 4bit 量化",
-      "url": "http://arxiv.org/abs/2605.28803v1",
-      "type": "论文",
-      "card_type": "来源链接卡",
-      "importance_score": 83
-    },
-    {
-      "name": "开放式外科缝合辅助中的模仿学习多策略评测",
-      "url": "http://arxiv.org/abs/2605.28736v1",
-      "type": "论文",
-      "card_type": "来源链接卡",
-      "importance_score": 72
-    },
-    {
-      "name": "VLA 的黑盒动作监控：不同架构有不同失败签名",
-      "url": "http://arxiv.org/abs/2605.28726v1",
-      "type": "论文",
-      "card_type": "来源链接卡",
-      "importance_score": 74
-    },
-    {
-      "name": "PrimitiveVLA：学习可复用动作原语以提升机器人操作效率",
-      "url": "http://arxiv.org/abs/2605.28634v1",
-      "type": "论文",
-      "card_type": "来源链接卡",
-      "importance_score": 71
-    },
-    {
-      "name": "SPRINT：用于人形机器人高速冲刺的频谱先验",
-      "url": "http://arxiv.org/abs/2605.28549v1",
-      "type": "论文",
-      "card_type": "来源链接卡",
-      "importance_score": 67
-    },
-    {
       "name": "Genesis-Embodied-AI/genesis-world",
       "url": "https://github.com/Genesis-Embodied-AI/genesis-world",
       "type": "GitHub",
       "card_type": "来源链接卡",
-      "importance_score": 60
+      "importance_score": 78
     },
     {
       "name": "YanjieZe/awesome-humanoid-robot-learning",
       "url": "https://github.com/YanjieZe/awesome-humanoid-robot-learning",
       "type": "GitHub",
       "card_type": "来源链接卡",
-      "importance_score": 60
+      "importance_score": 75
     },
     {
       "name": "NVlabs/ProtoMotions",
       "url": "https://github.com/NVlabs/ProtoMotions",
       "type": "GitHub",
       "card_type": "来源链接卡",
-      "importance_score": 60
+      "importance_score": 72
     },
     {
       "name": "fan-ziqi/rl_sar",
       "url": "https://github.com/fan-ziqi/rl_sar",
       "type": "GitHub",
       "card_type": "来源链接卡",
-      "importance_score": 60
+      "importance_score": 69
     },
     {
       "name": "Octoday-Hub/Embodied-AI",
       "url": "https://github.com/Octoday-Hub/Embodied-AI",
       "type": "GitHub",
       "card_type": "来源链接卡",
-      "importance_score": 60
+      "importance_score": 66
     },
     {
-      "name": "Spirit-AI-Team/spirit-v1.5",
-      "url": "https://github.com/Spirit-AI-Team/spirit-v1.5",
-      "type": "GitHub",
+      "name": "行业动态 1：具身智能评测与数据集",
+      "url": "https://www.therobotreport.com/hirebotics-talks-evolution-cobots-metal-fabrication-construction/",
+      "type": "行业动态",
+      "card_type": "来源链接卡",
+      "importance_score": 63
+    },
+    {
+      "name": "行业动态 2：仿真到真实迁移",
+      "url": "https://blogs.nvidia.com/blog/icra-research-robotics-simulation-to-real-world/",
+      "type": "行业动态",
+      "card_type": "来源链接卡",
+      "importance_score": 63
+    },
+    {
+      "name": "行业动态 3：视觉-语言-动作模型",
+      "url": "https://www.therobotreport.com/your-guide-to-the-last-day-of-the-2026-robotics-summit-expo/",
+      "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
-      "name": "2026 Robotics Summit & Expo 首日议程发布",
+      "name": "行业动态 4：仿真到真实迁移",
       "url": "https://www.therobotreport.com/a-guide-to-day-1-of-the-2026-robotics-summit-expo/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
-      "name": "机器人为何仍难以“看清”真实世界",
+      "name": "行业动态 5：视觉-语言-动作模型",
       "url": "https://www.therobotreport.com/why-robots-still-struggle-to-see-real-world-orbbec/",
-      "type": "行业动态",
-      "card_type": "来源链接卡",
-      "importance_score": 60
-    },
-    {
-      "name": "人形机器人如何理解并适应复杂环境",
-      "url": "https://www.therobotreport.com/how-humanoids-learn-to-read-the-room-2/",
-      "type": "行业动态",
-      "card_type": "来源链接卡",
-      "importance_score": 60
-    },
-    {
-      "name": "机器人视觉系统生态继续扩张，GMSL 成为重点接口方向",
-      "url": "https://www.therobotreport.com/gmsl-and-the-growing-ecosystem-around-robotic-vision-systems-2/",
-      "type": "行业动态",
-      "card_type": "来源链接卡",
-      "importance_score": 60
-    },
-    {
-      "name": "XELA Robotics 将展示触觉感知方案",
-      "url": "https://www.therobotreport.com/xela-robotics-show-tactile-sensing-2026-robotics-summit-expo/",
-      "type": "行业动态",
-      "card_type": "来源链接卡",
-      "importance_score": 60
-    },
-    {
-      "name": "Allient 将演示先进运动控制系统",
-      "url": "https://www.therobotreport.com/allient-demonstrates-advanced-motion-control-systems-2026-robotics-summit-expo/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
