@@ -1,0 +1,81 @@
+<view class="page">
+  <view class="hero">
+    <view class="hero-top">
+      <view class="signal">
+        <view class="signal-dot"></view>
+        <view class="signal-line"></view>
+        <text class="signal-text">日报在线</text>
+      </view>
+      <text class="date">{{article.date}}</text>
+    </view>
+
+    <view class="hero-title">{{article.title}}</view>
+    <view class="hero-subtitle">{{article.subtitle}}</view>
+
+    <view class="tag-row">
+      <text wx:for="{{article.tags}}" wx:for-item="tag" wx:key="*this" class="tag">{{tag}}</text>
+    </view>
+
+    <view class="hero-metrics">
+      <view class="metric">
+        <text class="metric-value">{{article.papers.length}}</text>
+        <text class="metric-label">论文</text>
+      </view>
+      <view class="metric">
+        <text class="metric-value">{{article.github_projects.length}}</text>
+        <text class="metric-label">项目</text>
+      </view>
+      <view class="metric">
+        <text class="metric-value">{{article.industry_updates.length}}</text>
+        <text class="metric-label">动态</text>
+      </view>
+    </view>
+  </view>
+
+  <view wx:if="{{summaryText}}" class="brief-card">
+    <text class="brief-label">今日信号</text>
+    <text class="brief-text">{{summaryText}}</text>
+  </view>
+
+  <block wx:for="{{sections}}" wx:for-item="section" wx:key="key">
+    <view class="section">
+      <view class="section-head">
+        <view>
+          <text class="section-eyebrow">{{section.eyebrow}}</text>
+          <view class="section-title">{{section.title}}</view>
+        </view>
+        <text class="section-count">{{section.countText}}</text>
+      </view>
+
+      <block wx:for="{{section.items}}" wx:for-item="card" wx:key="id">
+        <view class="content-card">
+          <view class="card-head">
+            <view class="card-title-box">
+              <text wx:if="{{card.cardType}}" class="card-kicker">{{card.cardType}}</text>
+              <view class="card-title">{{card.title}}</view>
+            </view>
+            <text wx:if="{{card.scoreText}}" class="score">{{card.scoreText}}</text>
+          </view>
+
+          <view wx:if="{{card.subtitle}}" class="card-subtitle">{{card.subtitle}}</view>
+          <view wx:if="{{card.body}}" class="card-body">{{card.body}}</view>
+
+          <view wx:if="{{card.bullets.length}}" class="bullet-list">
+            <view wx:for="{{card.bullets}}" wx:for-item="bullet" wx:key="*this" class="bullet-row">
+              <text class="bullet-mark"></text>
+              <text class="bullet-text">{{bullet}}</text>
+            </view>
+          </view>
+
+          <view wx:if="{{card.tags.length}}" class="mini-tags">
+            <text wx:for="{{card.tags}}" wx:for-item="tag" wx:key="*this" class="mini-tag">{{tag}}</text>
+          </view>
+
+          <button wx:if="{{card.url}}" class="copy-button" data-url="{{card.url}}" bindtap="copySource">
+            复制来源
+          </button>
+        </view>
+      </block>
+    </view>
+  </block>
+</view>

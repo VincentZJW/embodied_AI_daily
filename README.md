@@ -12,6 +12,7 @@
 - 自动读取机器人和 AI 相关 RSS 动态，保存到 `data/raw/news_YYYY-MM-DD.json`
 - 使用 OpenAI API 把英文资料理解后生成中文结构化摘要
 - 渲染 `reports/YYYY-MM-DD.md`
+- 额外导出微信小程序可读取的科技风文章数据
 - GitHub Actions 每天自动运行，并把新日报 commit 回仓库
 
 ## 日报结构
@@ -68,6 +69,73 @@ python scripts/render_report.py --skip-collect
 ```text
 reports/YYYY-MM-DD.md
 ```
+
+同时会自动生成微信小程序文章数据：
+
+```text
+miniprogram_export/articles/YYYY-MM-DD.json
+miniprogram_export/latest.json
+```
+
+## 导出微信小程序文章数据
+
+系统不会直接发布到微信平台，只会生成小程序可读取的 JSON 文件。文章数据全部使用中文表达；英文论文、英文网页和英文 GitHub README 会在摘要阶段先理解，再转写为中文总结。必要英文技术术语会保留，例如 VLA、Sim2Real、Diffusion Policy、Robot Foundation Model，并配套中文解释。
+
+生成 Markdown 日报时会自动导出小程序文章数据：
+
+```bash
+python scripts/render_report.py --date 2026-05-28
+```
+
+如果已经存在 `reports/YYYY-MM-DD.md`，也可以单独导出：
+
+```bash
+python scripts/render_wechat_article.py --date 2026-05-28
+```
+
+也可以直接指定 Markdown 日报路径：
+
+```bash
+python scripts/render_wechat_article.py reports/2026-05-28.md
+```
+
+输出文件包括：
+
+```text
+miniprogram_export/articles/YYYY-MM-DD.json  # 指定日期文章数据
+miniprogram_export/latest.json              # 最新文章数据，方便小程序首页读取
+```
+
+JSON 会包含 `title`、`date`、`subtitle`、`executive_summary`、`papers`、`github_projects`、`industry_updates`、`glossary`、`recruiting_insights`、`sources`，并附带科技风展示字段，例如 `theme: "tech-dark"`、`accent_color: "#4F8CFF"`、`tags`、`card_type`、`importance_score`。
+
+如果今天的 `reports/YYYY-MM-DD.md` 不存在，单独运行导出脚本时会输出中文错误提示，并提醒先生成 Markdown 日报。
+
+## 微信小程序前端页面
+
+项目内置了一个原生微信小程序页面，用于手机端展示 `miniprogram_export/latest.json` 中的具身智能日报内容。页面位于：
+
+```text
+miniprogram/pages/daily/index
+```
+
+生成或导出小程序文章数据时，系统会同步写入：
+
+```text
+miniprogram/data/latest.js
+```
+
+小程序页面会读取这个数据模块，展示深色科技风卡片布局，包括核心摘要、重点论文、开源项目、行业动态、技术词汇、招聘洞察和来源链接。
+
+本地预览方式：
+
+1. 先生成日报和小程序数据：
+
+```bash
+python scripts/render_report.py --date 2026-05-28
+```
+
+2. 打开微信开发者工具，选择当前项目根目录。
+3. 使用测试号或自己的小程序 AppID 运行，入口页面为 `pages/daily/index`。
 
 ## API Key 配置
 
@@ -139,7 +207,10 @@ scripts/collect_github.py        # 从 GitHub REST API 采集项目
 scripts/collect_news.py          # 从 RSS feeds 采集行业动态
 scripts/summarize.py             # 生成中文结构化摘要
 scripts/render_report.py         # 渲染 Markdown 日报
+scripts/render_wechat_article.py # 导出微信小程序科技风文章数据
+miniprogram/                     # 微信小程序前端页面
 reports/                         # 每日 Markdown 报告
+miniprogram_export/              # 小程序文章 JSON 输出目录
 data/raw/                        # 原始采集数据
 data/processed/                  # 结构化中文摘要
 .github/workflows/daily.yml      # 每日自动运行工作流

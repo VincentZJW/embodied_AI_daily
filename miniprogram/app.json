@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/daily/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "具身智能日报",
+    "navigationBarBackgroundColor": "#050914",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#050914"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

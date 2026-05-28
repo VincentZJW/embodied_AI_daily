@@ -1,0 +1,14 @@
+{
+  "description": "具身智能日报微信小程序前端",
+  "projectname": "具身智能日报",
+  "miniprogramRoot": "miniprogram/",
+  "compileType": "miniprogram",
+  "appid": "touristappid",
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "minified": true
+  }
+}

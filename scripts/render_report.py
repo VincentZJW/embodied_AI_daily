@@ -14,11 +14,13 @@ try:
     from .collect_github import collect_github
     from .collect_news import collect_news
     from .collect_papers import collect_papers
+    from .render_wechat_article import export_wechat_article
     from .summarize import DailySummary, summarize
 except ImportError:
     from collect_github import collect_github
     from collect_news import collect_news
     from collect_papers import collect_papers
+    from render_wechat_article import export_wechat_article
     from summarize import DailySummary, summarize
 
 
@@ -200,6 +202,10 @@ def main() -> None:
     summary = summarize(target_date)
     output = write_report(summary)
     print(f"日报已生成：{output.relative_to(ROOT)}")
+    wechat_output = export_wechat_article(target_date)
+    print(f"微信小程序文章数据已生成：{wechat_output.relative_to(ROOT)}")
+    print("最新微信小程序文章索引已更新：miniprogram_export/latest.json")
+    print("小程序前端数据已同步：miniprogram/data/latest.js")
     _maybe_show_git_hint()
 
 
