@@ -1,0 +1,468 @@
+[
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2605.28816v1",
+    "title": "Gamma-World: Generative Multi-Agent World Modeling Beyond Two Players",
+    "abstract": "World models for interactive video generation have largely focused on single-agent settings, where future observations are generated from a single control signal. However, many generated environments require multi-agent interaction: multiple players, robots, or embodied agents act simultaneously within a shared space. Scaling world models to such settings requires a principled multi-agent design: agents should remain independently controllable, permutation-symmetric, and support efficient inference while maintaining consistency across time and perspectives. In this paper, we present our generative multi-agent world model for interactive simulation. It introduces Simplex Rotary Agent Encoding, a parameter-free extension of 3D RoPE that represents agents as vertices of a regular simplex in rotary angle space. This gives each agent a distinct phase while making all agents permutation-equivalent, enabling scalable agent identity without learned per-slot identities or a fixed agent ordering. To avoid dense all-to-all attention across agents, we further propose Sparse Hub Attention, where learnable hub tokens mediate token interaction across agents, reducing cross-agent attention cost from quadratic to linear in the number of agents. For real-time rollout, we distill a full-context diffusion teacher into a causal student that generates temporal blocks sequentially with KV caching, enabling action-responsive generation at 24 FPS. Experiments in multiplayer virtual environments show that our model improves video fidelity, action controllability, and inter-agent consistency over slot-based and dense-attention baselines, while generalizing from two to four players without additional training.",
+    "authors": [
+      "Fangfu Liu",
+      "Kai He",
+      "Tianchang Shen",
+      "Tianshi Cao",
+      "Sanja Fidler",
+      "Yueqi Duan",
+      "Jun Gao",
+      "Igor Gilitschenski",
+      "Zian Wang",
+      "Xuanchi Ren"
+    ],
+    "published": "2026-05-27T17:59:31+00:00",
+    "updated": "2026-05-27T17:59:31+00:00",
+    "url": "http://arxiv.org/abs/2605.28816v1",
+    "pdf_url": "https://arxiv.org/pdf/2605.28816v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2605.28803v1",
+    "title": "Ω-QVLA: Robust Quantization for Vision-Language-Action Models via Composite Rotation and Per-step Scaling",
+    "abstract": "Vision-Language-Action (VLA) models unify perception, reasoning, and control within a single policy, yet their multi-billion-parameter backbones and diffusion-based action heads make on-device deployment prohibitively expensive. Prior quantization efforts offer only partial solutions, compressing the LLM backbone while leaving the DiT action head at full precision, or resorting to mixed-precision schemes, driven by the belief that uniformly quantizing the action head is inherently unstable. We challenge this assumption with Omega-QVLA, the first training-free post-training quantization framework that compresses both the language backbone and the entire diffusion action head of a VLA model to a uniform W4A4 precision, eliminating the need for mixed-precision allocation. Omega-QVLA combines a composite SVD-Hadamard rotation that equalizes per-channel weight energy while diffusing residual activation outliers with per-step DiT activation scaling quantization that absorbs dynamic-range drift across denoising steps. On LIBERO, Omega-QVLA compresses Pi 0.5 and GR00T N1.5 to W4A4 with 98.0% and 87.8% task success rates, matching or exceeding their FP16 references of 97.1% and 87.0%, while reducing the static memory footprint by 71.3%. Real-world manipulation experiments further confirm smooth, accurate manipulation where prior methods fail. Code is available at https://github.com/UCMP13753/Omega-QVLA.",
+    "authors": [
+      "Xinyu Wang",
+      "Mingze Li",
+      "Sicheng Lyu",
+      "Dongxiu Liu",
+      "Kaicheng Yang",
+      "Ziyu Zhao",
+      "Yufei Cui",
+      "Xiao-Wen Chang",
+      "Peng Lu"
+    ],
+    "published": "2026-05-27T17:55:01+00:00",
+    "updated": "2026-05-27T17:55:01+00:00",
+    "url": "http://arxiv.org/abs/2605.28803v1",
+    "pdf_url": "https://arxiv.org/pdf/2605.28803v1",
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2605.28736v1",
+    "title": "Imitation Learning for Robot Assistance in Open Surgery: A Multi-Policy Evaluation on Suture Following",
+    "abstract": "This study presents the first evaluation of general-purpose imitation learning for surgeon-robot collaborative assistance in open surgery, targeting suture following: the grab-pull-release motion an assistant performs at every stitch. We collect 160 teleoperated demonstrations (32,374 frames) on an open-source robot arm, benchmark four architecturally diverse imitation learning policies (ACT, Diffusion Policy, SmolVLA, $π_0$) across 28 trained models evaluated in 32 configurations along three clinically motivated dimensions: dataset size, camera viewpoint, and background variation. Our results demonstrate that under ideal conditions, the four policies achieve $50$-$75\\%$ task success, with depth error as the dominant failure mode across all architectures. Among all policies, $π_0$ achieves the strongest results with a pretrained vision-language backbone, demonstrating superior data efficiency, greater robustness to background variation, and smoother trajectories compatible with surgical workflow. When deployed in a surgeon-robot suturing trial, $π_0$ yields a $92\\%$ stitch completion rate. These findings establish collaborative robotic assistance in open surgery as a feasible target for imitation learning and highlight depth perception and end-effector design as key priorities for clinical translation.",
+    "authors": [
+      "Xucheng Wang",
+      "Zhizhou Yang",
+      "Xiaoman Zhang",
+      "Sung Eun Kim",
+      "Romain Hardy",
+      "Pranav Rajpurkar"
+    ],
+    "published": "2026-05-27T16:56:11+00:00",
+    "updated": "2026-05-27T16:56:11+00:00",
+    "url": "http://arxiv.org/abs/2605.28736v1",
+    "pdf_url": "https://arxiv.org/pdf/2605.28736v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2605.28726v1",
+    "title": "How VLAs Fail Differently: Black-Box Action Monitoring Reveals Architecture-Specific Failure Signatures",
+    "abstract": "We discover that VLA architectures fail in fundamentally different, predictable ways at the motor-command level. Running VQ-BeT, Diffusion Policy, and ACT on identical evaluation protocols (n=450 episodes across PushT and ALOHA 14-DOF bimanual manipulation), we find: (1) direction reversal rate is a universal failure predictor across all three architectures (AUROC=0.93, 0.79, 0.91; p<0.001); (2) jerk monitoring is predictive only for discrete-token architectures, following a discrete-to-continuous gradient (0.88, 0.69, 0.41); (3) velocity violations alone are non-predictive everywhere (AUROC 0.41-0.69), yet velocity checking is the most common safety mechanism in VLA deployment code; and (4) for continuous-family VLAs, velocity monitoring provides effectively zero predictive signal (AUROC=0.52 on ACT, 0.41 on Diffusion), proving that architecture-matched monitor selection is essential. These results quantify a monitoring consequence of the well-known discrete/continuous VLA distinction: the two families produce qualitatively different failure signatures that require different monitors. No single monitor works universally; architecture-matched selection is required. This finding was enabled by SafeContract, a training-free, black-box action monitoring toolkit with conformal calibration. Code: https://github.com/krishnam94/vla-edge",
+    "authors": [
+      "Krishnam Gupta"
+    ],
+    "published": "2026-05-27T16:44:55+00:00",
+    "updated": "2026-05-27T16:44:55+00:00",
+    "url": "http://arxiv.org/abs/2605.28726v1",
+    "pdf_url": "https://arxiv.org/pdf/2605.28726v1",
+    "categories": [
+      "cs.RO",
+      "cs.LG"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2605.28634v1",
+    "title": "PrimitiveVLA: Learning Reusable Motion Primitives for Efficient and Generalizable Robotic Manipulation",
+    "abstract": "Vision-Language-Action (VLA) models offer a promising paradigm for generalist robotic policies, yet their adaptation is hindered by data inefficiency and poor generalization. We argue that these bottlenecks stem from the prevailing Direct Instruction-to-Control Mapping, which forces models to memorize monolithic trajectories rather than reusable motion patterns, i.e., primitives. We propose PrimitiveVLA, a framework that shifts this paradigm toward a Primitive-Centric Disassemble & Assemble paradigm. Supported by a shared Multimodal Canonical Representation (MCR), PrimitiveVLA unifies two phases: (1) Fine-tuning-phase Disassembly, which uses an automated pipeline to disassemble demonstrations into reusable primitives; and (2) Inference-phase Assembly, which employs a VLM-based planner and an LLM-generated switch module for robust closed-loop execution. By disassembling tasks into reusable primitives, PrimitiveVLA enables VLA models to learn invariant motion patterns instead of task-specific trajectories. Extensive experiments show that our framework improves data efficiency and achieves superior zero-shot generalization across unseen and long-horizon tasks.",
+    "authors": [
+      "Yutai Li",
+      "Shaohui Peng",
+      "Jiaming Guo",
+      "Di Huang",
+      "Zihao Zhang",
+      "Yuxuan Guo",
+      "Yunkai Gao",
+      "Siming Lan",
+      "Ling Li",
+      "Xing Hu",
+      "Yunji Chen"
+    ],
+    "published": "2026-05-27T15:41:18+00:00",
+    "updated": "2026-05-27T15:41:18+00:00",
+    "url": "http://arxiv.org/abs/2605.28634v1",
+    "pdf_url": "https://arxiv.org/pdf/2605.28634v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2605.28549v1",
+    "title": "SPRINT: Efficient Spectral Priors for Humanoid Athletic Sprints",
+    "abstract": "The pursuit of humanoid athletic sprints is hindered by a scarcity of humanoid-viable kinematic reference data and the inability of existing frameworks to maintain stability during sprints. To overcome these limitations, we introduce SPRINT, a novel framework driven by efficient, frequency-adaptive spectral priors. By characterizing the fundamental periodicity of human locomotion in the frequency domain using a reference library of five discrete motion sequences, these priors generate kinematically feasible joint trajectories across a broad velocity spectrum, successfully extrapolating to speeds that exceed the reference distribution. Guided by these pretrained priors, the SPRINT policy achieves zero-shot sim-to-real transfer in field experiments on the Unitree G1 platform, reaching a peak sprinting velocity of 6 m/s and demonstrating seamless gait transitions while preserving biomimetic naturalness. Ultimately, this work establishes frequency-adaptive spectral priors as a highly data-efficient foundation for humanoid athletic sprints. The project page is available at https://anonymous.4open.science/w/SPRINT-138A/.",
+    "authors": [
+      "Yantong Wei",
+      "Kaihong Huang",
+      "Hainan Pan",
+      "Jiawei Luo",
+      "Jiawei Zhou",
+      "Ziyan Mai",
+      "Zhiwen Zeng",
+      "Yaonan Wang",
+      "Huimin Lu"
+    ],
+    "published": "2026-05-27T14:40:29+00:00",
+    "updated": "2026-05-27T14:40:29+00:00",
+    "url": "http://arxiv.org/abs/2605.28549v1",
+    "pdf_url": "https://arxiv.org/pdf/2605.28549v1",
+    "categories": [
+      "cs.RO",
+      "cs.LG"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2605.28548v1",
+    "title": "GEM: Generative Supervision Helps Embodied Intelligence",
+    "abstract": "Embodied Vision-Language Models (VLMs) have demonstrated impressive performance and generalization in robotics, particularly within Vision-Language-Action frameworks. However, a significant gap remains between the high-level semantic focus of standard text-guided pre-training paradigms and the low-level spatial and physical knowledge critical for execution in embodied environments. In this paper, we introduce GEM, a Generative-supervised Embodied vision-language Model designed to bridge this divide. We propose integrating a depth map generation task directly into the VLM pre-training phase. By training this generative objective jointly with the main model, we observe substantial improvements in embodied intelligence, significantly enhancing both semantic understanding and physical operation capabilities. To support this paradigm, we curate and release GEM-4M, a comprehensive large-scale dataset featuring a mixture of grounding, reasoning, and planning data paired with high-quality depth supervision. Extensive experiments demonstrate that GEM achieves state-of-the-art results across diverse embodied benchmarks. Furthermore, our deployed action model, GEM-VLA, exhibits vastly superior task execution abilities in both simulation environments and real-world evaluations. Code, models, and datasets are available at https://zhaorw02.github.io/GEM/",
+    "authors": [
+      "Ruowen Zhao",
+      "Bangguo Li",
+      "Zuyan Liu",
+      "Yinan Liang",
+      "Junliang Ye",
+      "Fangfu Liu",
+      "Diankun Wu",
+      "Zhengyi Wang",
+      "Xumin Yu",
+      "Yongming Rao",
+      "Han Hu",
+      "Jun Zhu"
+    ],
+    "published": "2026-05-27T14:39:42+00:00",
+    "updated": "2026-05-27T14:39:42+00:00",
+    "url": "http://arxiv.org/abs/2605.28548v1",
+    "pdf_url": "https://arxiv.org/pdf/2605.28548v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2605.28527v1",
+    "title": "What Frozen VLAs Already Know About Success: A Probing Study of Value-Like Structure in Foundation Robot Policies",
+    "abstract": "Vision--language--action (VLA) policies are trained to imitate actions; their loss never asks them to estimate reward, progress, or future success. Their frozen representations nevertheless carry such information, and it can be read out and used to guide action choice without retraining the policy. From mixed successful and failed manipulation trajectories on LIBERO-Goal, we recover Monte-Carlo outcome targets using lightweight linear probes on frozen features. The targets are consistently predictable from OpenVLA, Pi0.5, DINOv2, and CLIP features, and substantially less so from baselines built on progress, time-to-go, task identity, or proprioception. To rule out task and temporal shortcuts, we evaluate the probes under same-task, same-timestep matched comparisons: Pi0.5 probes still reach roughly 92% pairwise ordering accuracy, while label-shuffled controls stay at chance. Used as a test-time selector over sampled Pi0.5 action prefixes, the same probe turns this offline finding into behavior: on push-plate, success rises from 26.7% under greedy decoding to 44.3%, with a second positive case on wine-rack. The gains are not universal and require additional inference compute, but the underlying finding is clean: frozen VLAs already encode information about success that their imitation objective never explicitly demands.",
+    "authors": [
+      "Jiachen Zhang",
+      "Junnan Nie",
+      "Junyi Lao",
+      "Wei Cheng",
+      "Chenghao Liu",
+      "Jiaxin Jiang",
+      "Songfang Huang"
+    ],
+    "published": "2026-05-27T14:23:29+00:00",
+    "updated": "2026-05-27T14:23:29+00:00",
+    "url": "http://arxiv.org/abs/2605.28527v1",
+    "pdf_url": "https://arxiv.org/pdf/2605.28527v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2605.28491v1",
+    "title": "DiscoForcing: A Unified Framework for Real-Time Audio-Driven Character Control with Diffusion Forcing",
+    "abstract": "We study real-time audio-responsive character control as a deployment-faithful problem: strictly causal, bounded-latency streaming that must generate coherent full-body motion at interactive frame rates while the audio condition can change abruptly, including tempo shifts, drops, or user edits. Prior music-to-motion systems are largely optimized for offline generation with global context, and degrade in streaming rollouts where conditioning history becomes stale or unreliable. We introduce DiscoForcing, a streaming audio-driven diffusion framework that combines a causal music encoder that captures rhythmic structure and phase dynamics with a diffusion-forcing sequence model trained under heterogeneous noise levels across the temporal horizon. Building on this, we design a hybrid temporal schedule and a history-guided streaming sampler to explicitly trade off responsiveness against long-horizon consistency under non-stationary audio. Implemented in an end-to-end real-time interactive system with online avatar playback and humanoid deployment workflows, DiscoForcing delivers more stable long-horizon rollouts and sharper audio-motion alignment than prior baselines under matched causality and latency constraints while maintaining real-time throughput.",
+    "authors": [
+      "Kaiyang Ji",
+      "Bingsheng Qian",
+      "Binghuan Wu",
+      "Kangyi Chen",
+      "Ye Shi",
+      "Jingya Wang"
+    ],
+    "published": "2026-05-27T13:47:40+00:00",
+    "updated": "2026-05-27T13:47:40+00:00",
+    "url": "http://arxiv.org/abs/2605.28491v1",
+    "pdf_url": "https://arxiv.org/pdf/2605.28491v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2605.28486v1",
+    "title": "Mag-VLA: Vision-Language-Action Model for Bimanual Magnetically Actuated Microrobot Manipulation",
+    "abstract": "Magnetically actuated microrobots have been used as wireless, non-contact manipulation tools at microscales, making them promising for minimally invasive applications. However, their control remains challenging due to indirect actuation, limited sensing, and nonlinear magnetic interactions. In this work, we propose Mag-VLA, a vision-language-action (VLA) model for dexterous magnetic microrobot manipulation using two robotic arms with mounted magnets for dynamic magnetic-field construction. Bimanual coordination enables capabilities such as microrobot reorientation that are difficult or infeasible with a single arm, but it also introduces coupled control challenges, as the policy must generate coordinated trajectories for both actuators within a shared workspace. Our framework adapts a Qwen2.5-VL-7B backbone using Low-Rank Adaptation (LoRA) to process visual observations and language instructions for action prediction. To capture task progression, we introduce a motion-aware phase classifier and a phase-conditioned Action Chunking Transformer (ACT) decoder for temporally coherent multi-step control. We further construct a teleoperated magnetic microrobot manipulation dataset covering three task configurations. Ablation studies show that the ACT-based decoder substantially outperforms alternative generative action heads. In real-robot experiments, Mag-VLA achieves a 90% approach success rate across all tasks and transport success rates of 80%, 70%, and 50% as task difficulty increases. These results demonstrate that hierarchical VLA modeling provides a promising framework for magnetic microrobot manipulation.",
+    "authors": [
+      "Yongchen Wang",
+      "Kangyi Lu",
+      "Lan Wei",
+      "Dandan Zhang"
+    ],
+    "published": "2026-05-27T13:44:00+00:00",
+    "updated": "2026-05-27T13:44:00+00:00",
+    "url": "http://arxiv.org/abs/2605.28486v1",
+    "pdf_url": "https://arxiv.org/pdf/2605.28486v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2605.28468v1",
+    "title": "EIT-Pneumatic Hybrid Robotic Skin for Practical and Accurate Force Map Reconstruction",
+    "abstract": "We present a hybrid robotic skin that combines electrical impedance tomography (EIT) with pneumatic tactile sensing to improve force reconstruction capability. The developed robotic skin is fabricated entirely by 3D printing and spray coating, making it affordable and easy to build. A Tikhonov-regularized inverse reconstruction, paired with per-pad pneumatic calibration, enables accurate large-area tactile sensing with a simple measurement scheme. For validation, we conducted load-cell indentation experiments; the results showed consistent force reconstruction across locations within a pad. Compared with an EIT-only baseline, sensitivity non-uniformity was also reduced, with the coefficient of variation decreasing from 0.31 to 0.14, indicating that the proposed approach addresses a longstanding limitation of EIT. We further demonstrated chest-mounted integration on a humanoid robot and found that the pneumatic signals remained reliable across diverse contact scenarios, including multiple simultaneous contacts on the same sensing pad. These results indicate a practical path toward accurate, scalable whole-body tactile sensing in real robotic systems.",
+    "authors": [
+      "Junhwi Cho",
+      "Sunggyu Bae",
+      "Junghyeon Ma",
+      "Hyosang Lee",
+      "Jung Kim",
+      "Kyungseo Park"
+    ],
+    "published": "2026-05-27T13:34:23+00:00",
+    "updated": "2026-05-27T13:34:23+00:00",
+    "url": "http://arxiv.org/abs/2605.28468v1",
+    "pdf_url": "https://arxiv.org/pdf/2605.28468v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2605.28272v1",
+    "title": "EchoAvatar: Real-time Generative Avatar Animation from Audio Streams",
+    "abstract": "Real-time synthesis of high-fidelity 3D character motion from audio is a pivotal component for next-generation interactive avatars and virtual assistants. However, most existing approaches are limited to offline processing of complete audio sequences or are constrained to specific domains, rarely handling both speech and music effectively. In this paper, we introduce a novel framework designed to generate continuous, coherent full-body motion from streaming speech and music with low latency. Central to our approach is a unified streaming architecture capable of synthesizing continuous motion from incremental audio inputs. We employ a robust training strategy that enforces strong audio dependency, allowing the model to seamlessly generalize across conversational speech and rhythmic music without requiring explicit domain labels or mode switching. Additionally, we explored Reinforcement Learning to refine the quality of online generation. Furthermore, we bridge reactive animation with intent-driven behavior via a tool-call interface that allows upstream Large Language Models to inject explicit semantic control. By combining this controllability with stream audio-driven synthesis, our framework serves as a plug-and-play solution for transforming voice agents into interactive humanoid avatars. Extensive experiments demonstrate that our method outperforms state-of-the-art realtime baselines in motion quality and synchronization while maintaining the flexibility required for live deployment. Our code, pre-trained models, and videos are available at https://robinwitch.github.io/EchoAvatar-Page.",
+    "authors": [
+      "Bohong Chen",
+      "Yumeng Li",
+      "Yinglin Xu",
+      "Youyi Zheng",
+      "Yanlin Weng",
+      "Kun Zhou"
+    ],
+    "published": "2026-05-27T10:18:16+00:00",
+    "updated": "2026-05-27T10:18:16+00:00",
+    "url": "http://arxiv.org/abs/2605.28272v1",
+    "pdf_url": "https://arxiv.org/pdf/2605.28272v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2605.28231v1",
+    "title": "ProgVLA: Progress-Aware Robot Manipulation Skill Learning",
+    "abstract": "We present ProgVLA, a compact vision-language-action (VLA) model designed for reliable robot manipulation under tight compute and memory budgets. The model specifically focuses on efficiently processing long multi-modal sequences by maintaining an explicit representation of task progress over extended horizons. To this end, ProgVLA integrates two key components. First, a multi-modal encoder with a two-stage Perceiver resampling scheme compresses variable-length visual, language, and proprioceptive streams into a fixed set of control-ready context tokens, substantially reducing sequence length while preserving cross-modal grounding. Second, an auxiliary set of progress heads is trained with offline reinforcement learning (RL) objectives to jointly learn critics over normalized remaining-horizon targets. This provides the policy with an internal estimate of task progress and enables advantage- and success-weighted flow-matching imitation learning. On two well-established multi-task robot manipulation benchmarks, a 0.1B-parameter ProgVLA model reaches success rates that are competitive with, and on long-horizon and harder task tiers exceed, substantially larger pretrained baselines. Ablations indicate that the learned context resampler and task-adaptive visual fine-tuning are the largest single contributors, while progress-aware training provides a consistent additional gain that is concentrated on long-horizon and multi-object tasks. We further validate the approach in real-world toy-kitchen environments.",
+    "authors": [
+      "Seungsu Kim",
+      "Jinyoung Choi",
+      "Seungmin Baek",
+      "Jean-Michel Renders"
+    ],
+    "published": "2026-05-27T09:44:46+00:00",
+    "updated": "2026-05-27T09:44:46+00:00",
+    "url": "http://arxiv.org/abs/2605.28231v1",
+    "pdf_url": "https://arxiv.org/pdf/2605.28231v1",
+    "categories": [
+      "cs.RO",
+      "cs.LG"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2605.28144v1",
+    "title": "Deconstructing Spatial Complexity: Hierarchical Decomposition for LLM Spatial Reasoning",
+    "abstract": "LLMs have shown remarkable proficiency in general language understanding and reasoning. However, they consistently underperform in spatial reasoning that severely limits their application, particularly in embodied intelligence. Inspired by the success of hierarchical reinforcement learning, this paper introduces a novel method for hierarchical task decomposition in LLM spatial reasoning. Our approach guides LLMs to decompose complex tasks into manageable sub-tasks by identifying key intermediate states and generating simplified sub-environments. However, we identify that LLMs often fail to derive optimal intermediate states due to their insufficient spatial prior, leading to sub-optimal task decomposition. To address this limitation and enhance its planning capability, we propose the MCTS-Guided Group Relative Policy Optimization (M-GRPO), where we reformulate the UCT formula by incorporating the LLM's prior predictive probabilities alongside its epistemic uncertainty. Furthermore, we implement a more fine-grained advantage function, enabling the model to learn optimal path planning. Experimental results demonstrate that our method substantially improves LLM performance on spatial tasks, including navigation, planning, and strategic games, achieving state-of-the-art results. This work paves the way for LLMs in real-world applications.",
+    "authors": [
+      "Yi Wang",
+      "Haojie Lu",
+      "Zhaofan Zhang",
+      "Li Chen",
+      "Sihong Xie"
+    ],
+    "published": "2026-05-27T08:26:57+00:00",
+    "updated": "2026-05-27T08:26:57+00:00",
+    "url": "http://arxiv.org/abs/2605.28144v1",
+    "pdf_url": "https://arxiv.org/pdf/2605.28144v1",
+    "categories": [
+      "cs.AI"
+    ],
+    "primary_category": "cs.AI"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2605.28097v1",
+    "title": "ICAN-Deploy: Identity-Stable Canary Deployment for Safety-Critical Embodied Agents",
+    "abstract": "Canary deployment routes a fraction of traffic to a new software version, monitors metrics, and rolls back on regression. Mainstream controllers (Argo Rollouts, Spinnaker, Flagger) change the deployed system's cryptographic identity during the canary window. The drift is harmless for stateless microservices but breaks the claim that \"the agent you certified is still the agent you have\" for safety-critical embodied agents, forcing re-certification per canary. We present ICAN-Deploy (Identity-stable CANary Deployment), a middleware construction whose state machine holds the identity hash invariant across the canary window by separating capability names (frozen, hashed) from capability versions (mutable runtime state). We implement ICAN-Deploy inside a runtime governance layer for LLM-driven robots and verify invariance by closed-form proof, AST lint, and TLA+ model-checking, then corroborate over N=100 real canary cycles on a Franka Panda arm in MuJoCo (zero drift; entry latency 95% BCa CI [1.52, 2.01] ms). A feature-flagged strawman that folds versions into the manifest falsifies on the same workload. A system certified once at identity-creation time can then ship arbitrary capability evolution under that same certification, within the version-and-name envelope.",
+    "authors": [
+      "Xue Qin",
+      "Simin Luan",
+      "John See",
+      "Zeyd Boukhers",
+      "Cong Yang",
+      "Zhijun Li"
+    ],
+    "published": "2026-05-27T07:52:55+00:00",
+    "updated": "2026-05-27T07:52:55+00:00",
+    "url": "http://arxiv.org/abs/2605.28097v1",
+    "pdf_url": "https://arxiv.org/pdf/2605.28097v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2605.28083v1",
+    "title": "VLA-Hijack: A Transferable Patch Attack against Vision-Language-Action Models via Visual Proprioception Hijacking",
+    "abstract": "While Vision-Language-Action (VLA) models have emerged as powerful generalist policies, their severe vulnerability to adversarial patches significantly hinders their deployment in safety-critical domains. Moreover, existing patch attacks primarily focus on white-box settings, heavily overfitting to the specific action output space of the target model, which results in poor cross-architecture transferability. To overcome this limitation, we propose VLA-Hijack, a unified adversarial framework that breaks the transferability bottleneck by exploiting a fundamental vulnerability identified in this work: before planning any motion, a VLA model must first use visual information to locate its own robotic arm within the environment. Targeting this shared visual self-localization process, our approach concurrently optimizes Attention-Guided Proprioceptive Suppression to inhibit the real robotic arm's features, and Multimodal Proprioceptive Injection to establish the patch as a surrogate \"phantom embodiment\". By alternating between semantic concept anchoring and visual prototype projection, VLA-Hijack effectively severs the semantic relationship between the agent's true embodiment and its control policy. Extensive experiments across diverse architectures (OpenVLA, UniVLA, and CronusVLA) demonstrate that VLA-Hijack achieves superior optimization efficiency in white-box settings and sets a new SOTA for cross-architecture and cross-domain black-box transferability.",
+    "authors": [
+      "Jiyuan Fu",
+      "Kaixun Jiang",
+      "Jingkai Jia",
+      "Zhaoyu Chen",
+      "Xueyao Chen",
+      "Lingyi Hong",
+      "Shuyong Gao",
+      "Chenzhi Tan",
+      "Dingkang Yang",
+      "Wenqiang Zhang"
+    ],
+    "published": "2026-05-27T07:38:16+00:00",
+    "updated": "2026-05-27T07:38:16+00:00",
+    "url": "http://arxiv.org/abs/2605.28083v1",
+    "pdf_url": "https://arxiv.org/pdf/2605.28083v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2605.27947v1",
+    "title": "SANTS: A State-Adaptive Scheduler for World Action Models",
+    "abstract": "World Action Models (WAMs) improve robot manipulation by using video-based future representations to condition action generation. In pixel-space WAMs, however, the best action condition is not necessarily the fully denoised video. Controlled denoising-depth scans show that video refinement can reduce action error up to a state-dependent point, after which the gain may saturate or even reverse when late predictions become less action-relevant or physically unreliable. This suggests that action generation should use a state-dependent point along the video noise trajectory rather than a fixed terminal denoising depth. We introduce State-Adaptive Noise Trajectory Scheduler (SANTS), a lightweight scheduler for video-to-action diffusion policies. At each video decision point, SANTS reads the current video-state representation and noise level, then jointly predicts a cumulative stopping hazard and a relative noise-progression ratio. SANTS is post-trained with a path-level reward computed after the frozen action branch generates the final action chunk, so the scheduler is optimized for downstream action quality rather than intermediate video fidelity, while redundant video-state updates are explicitly penalized. Experiments show that SANTS reaches \\(94.4\\%\\) overall success on RoboTwin 2.0 and \\(73.1\\%\\) average success across seven real-robot tasks, while reducing latency by \\(81.7\\%\\) and \\(79.0\\%\\) relative to full video denoising, respectively. These results indicate that adaptive selection along the video noise trajectory can preserve the control benefits of WAM-style future reasoning while removing much of its redundant inference cost.",
+    "authors": [
+      "Yirui Sun",
+      "Guangyu Zhuge",
+      "Keliang Liu",
+      "Jie Gu",
+      "Xinyu Bing",
+      "Zhongxue Gan",
+      "Chunxu Tian"
+    ],
+    "published": "2026-05-27T04:40:48+00:00",
+    "updated": "2026-05-27T04:40:48+00:00",
+    "url": "http://arxiv.org/abs/2605.27947v1",
+    "pdf_url": "https://arxiv.org/pdf/2605.27947v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2605.27886v1",
+    "title": "Tabero: Learning Gentle Manipulation with Closed-Loop Force Feedback from Vision, Touch, and Language",
+    "abstract": "Tactile sensing is essential for robots to achieve human-like gentle manipulation. However, existing Vision-Language-Action (VLA) models struggle to exploit tactile feedback for gentle manipulation due to scarce aligned vision-tactile-language data and the lack of effective closed-loop force feedback mechanisms. To address these challenges, we introduce Tabero, a benchmark and model suite for gentle, language-conditioned robotic manipulation that demands fine-grained contact force perception. First, the Tabero benchmark addresses the scarcity of tactile data by presenting a data-efficient pipeline that repurposes open-source robot manipulation trajectories to generate diverse vision-tactile-language tasks, and establishes a multidimensional evaluation protocol that measures task success alongside physical interaction quality. Second, we propose Tabero-VTLA, an architecture with a decoupled force-position command interface; the resulting force-position commands are executed by a fixed hybrid controller to enable real-time, force-aware manipulation. Evaluated on Tabero, our model maintains high task success while reducing average grip force by over 70\\% under gentle instructions, demonstrating its ability to modulate interaction forces based on multimodal experience. Our code is publicly available at https://github.com/NathanWu7/Tabero.",
+    "authors": [
+      "Qiwei Wu",
+      "Rui Zhang",
+      "Xin Xiang",
+      "Tao Li",
+      "Weihua Zhang",
+      "Junjie Lai",
+      "Renjing Xu"
+    ],
+    "published": "2026-05-27T03:08:21+00:00",
+    "updated": "2026-05-27T03:08:21+00:00",
+    "url": "http://arxiv.org/abs/2605.27886v1",
+    "pdf_url": "https://arxiv.org/pdf/2605.27886v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2605.27817v1",
+    "title": "Turning Video Models into Generalist Robot Policies",
+    "abstract": "Video generative models have emerged as a promising robotics backbone, capable of generating videos that depict the completion of complex tasks across embodiments and environments. Recent work proposes robot foundation models that jointly predict future observations and actions by finetuning video models with action-labeled data. In this paper, we test the limits of an alternative approach: leave the video planner as-is while training an embodiment-specific inverse dynamics model (IDM). This decoupling offers several natural benefits: the video planner remains embodiment-agnostic, different video models can be interchanged easily without re-training the IDM, and the IDM can be independently trained with readily available self-play data. We present a closed-loop, video-to-action policy that combines an action-free video world model with a carefully-designed IDM based on the robot embodiment Jacobian. We demonstrate that our IDM design is both data-efficient and scalable to high-dimensional action spaces. Our policy, which we coin the Video-to-Embodied Robot Action Model (VERA), achieves strong performance across simulated and real-world benchmarks, including zero-shot Panda arm manipulation and 16-DoF Allegro-hand dexterous cube re-orientation. The same video planner can be used across multiple embodiments by pairing it with different embodiment-specific IDMs. Our results show that decoupled video planning plus faithful video-to-action translation is a viable alternative route towards zero-shot, cross-embodiment, and generalizable robot control. More results are available on our project website: https://vera.csail.mit.edu.",
+    "authors": [
+      "Sizhe Lester Li",
+      "Evan Kim",
+      "Xingjian Bai",
+      "Tong Zhao",
+      "Tao Pang",
+      "Max Simchowitz",
+      "Vincent Sitzmann"
+    ],
+    "published": "2026-05-27T01:21:58+00:00",
+    "updated": "2026-05-27T01:21:58+00:00",
+    "url": "http://arxiv.org/abs/2605.27817v1",
+    "pdf_url": "https://arxiv.org/pdf/2605.27817v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.CV",
+      "cs.LG"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2605.27764v1",
+    "title": "Can Segmentation Models Understand the World? Towards Proactive Affordance Reasoning via Visual Chain-of-Thought",
+    "abstract": "Recent segmentation models couple large language models (LLMs) with mask decoders to ground complex language expressions into masks, yet their instructions remain target-referential: they describe, constrain, or imply the region to be segmented. However, in real-world embodied interaction, human instructions are often at the intent-level, which includes the desired outcome without naming the region that enables it. To bridge this gap, we introduce SegWorld, where the model reasons about the scene through a multi-level visual chain-of-thought (CoT) before committing to a mask. Before receiving any instructions, it proactively observes the scene, describing visible objects and inferring plausible events they may support. Given an instruction, it continues the chain: from the object relevant to the intent, through the action that satisfies it, to the physical interaction site, the object part that affords the action. We formalize SegWorld as probabilistic inference, in which proactive observation supplies a linguistic scene context that improves mask prediction when instructions are given at the level of intent. We construct an intent-to-part benchmark for evaluating affordance-bearing part segmentation from high-level goals. Experiments show SegWorld matches instruction-driven baselines on target-referential instructions and improves substantially on intent-level ones.",
+    "authors": [
+      "Yuchen Guo",
+      "Junli Gong",
+      "Hongmin Cai",
+      "Yiu-ming Cheung",
+      "Weifeng Su"
+    ],
+    "published": "2026-05-26T23:26:52+00:00",
+    "updated": "2026-05-26T23:26:52+00:00",
+    "url": "http://arxiv.org/abs/2605.27764v1",
+    "pdf_url": "https://arxiv.org/pdf/2605.27764v1",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "primary_category": "cs.CV"
+  }
+]
