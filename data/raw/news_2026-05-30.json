@@ -1,0 +1,155 @@
+[
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "MISUMI Group invests $1B in Americas, global AI and digital manufacturing",
+    "summary": "<p>MISUMI Americas combines MISUMI's precision components with Fictiv's digital manufacturing platform for an entire bill of materials.</p> <p>The post <a href=\"https://www.therobotreport.com/misumi-group-invests-1b-americas-global-ai-digital-manufacturing/\">MISUMI Group invests $1B in Americas, global AI and digital manufacturing</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/misumi-group-invests-1b-americas-global-ai-digital-manufacturing/",
+    "published": "2026-05-30T13:21:36+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://spectrum.ieee.org/feeds/topic/robotics.rss",
+    "feed_title": "",
+    "title": "Video Friday: Extreme Omnidirectional Robot",
+    "summary": "<img src=\"https://spectrum.ieee.org/media-library/spherical-multi-legged-robot-walking-along-a-forest-trail.gif?id=66834857&amp;width=1200&amp;height=800&amp;coordinates=100%2C0%2C100%2C0\" /><br /><br /><p>Video Friday is your weekly selection of awesome robotics videos, collected by your friends at <em>IEEE Spectrum</em> robotics. We also post a weekly calendar of upcoming robotics events for the next few months. Please <a href=\"mailto:automaton@ieee.org?subject=Robotics%20event%20suggestion%20for%20Video%20Friday\">send us your events</a> for inclusion.</p><h5><a href=\"https://2026.ieee-icra.org/\">ICRA 2026</a>: 1–5 June 2026, VIENNA</h5><h5><a href=\"https://roboticsconference.org/\">RSS 2026</a>: 13–17 July 2026, SYDNEY</h5><h5><a href=\"https://mrs.fel.cvut.cz/summer-school-2026/\">Summer School on Multi-Robot Systems</a>: 29 July–4 August 2026, PRAGUE</h5><h5><a href=\"https://actuate.foxglove.dev/\">Actuate 2026</a>: 18–19 August 2026, SAN FRANCISCO</h5><p>Enjoy today’s videos!</p><div class=\"horizontal-rule\"></div><div><span style=\"display: none;\"> </span></div><p class=\"rm-anchors\" id=\"nd-i4ynqeuy\">What is the right number of legs for a robot? Two? Four? No, the answer is obviously all of them. All of the legs.</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://generalroboticslab.com/Argus\">Argus</a> ]</p><div class=\"horizontal-rule\"></div><p class=\"rm-anchors\" id=\"mccv90sunby\">Sigh, yet another skill that I as a soccer-playing human should have but a robot has instead: the rabona.</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://bostondynamics.com/products/atlas/\">Boston Dynamics</a> ]</p><div class=\"horizontal-rule\"></div><blockquote class=\"rm-anchors\" id=\"p5lywik6oba\"><em>Robots are rapidly becoming part of our everyday lives, from drones and industrial machines to home assistants and humanoid robots. As their presence continues to grow, an important question arises: How can we choose the right robot—not only in terms of performance and cost but also in terms of sustainability? </em><em>This video introduces the Eco‑Score for Robots, a new approach to evaluating the environmental impact of robotic systems. Just as eco-labels help consumers make informed choices in other industries, the Robotics Eco‑Label provides a clear and transparent way to assess how sustainable a robot truly is.</em></blockquote><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://roboticsecolabel.com/\">Robotics EcoLabel</a> ]</p><p>Thanks, Bram!</p><div class=\"horizontal-rule\"></div><p class=\"rm-anchors\" id=\"w5iw60q526k\">Uh oh, <a href=\"https://spectrum.ieee.org/yale-variable-friction-robot-fingers\" target=\"_blank\">five-fingered hands</a>.</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://www.agilityrobotics.com/\">Agility</a> ]</p><div class=\"horizontal-rule\"></div><blockquote class=\"rm-anchors\" id=\"tapvn-tqpx0\"><em>Robotic manipulation has come a long way since the 1990s. We’ve gone from the two-ball paddle <a href=\"https://spectrum.ieee.org/juggling-robots-get-fancier\" target=\"_blank\">juggling robot </a>to AthenaZero, who can juggle barehanded using onboard vision feedback. By moving away from task-specific passive end-effectors such as cups or paddles and using multifingered hands, it can transition between a wide range of patterns including cascade, half-shower, tennis, shower, and box.</em></blockquote><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>There needs to be a robot circus show already.</p><p>[ <a href=\"https://rai-inst.com/resources/blog/bimanual-robot-for-dynamic-manipulation/\">Robotics and AI Institute</a> ]</p><div class=\"horizontal-rule\"></div><p class=\"rm-anchors\" id=\"qvdgu1-ykxy\">Zero legs. One hat. $13K.</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://www.astribot.com/en\">Astribot</a> ]</p><div class=\"horizontal-rule\"></div><blockquote class=\"rm-anchors\" id=\"-lgo5xqgvko\"><em>From its elegant design to the advanced technology powering every step, Luna is more than a machine—it’s a leap into the future.</em></blockquote><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://limxdynamics.com/en/products/luna\">LimX Dynamics</a> ]</p><p>Thanks, Jinyan!</p><div class=\"horizontal-rule\"></div><p class=\"rm-anchors\" id=\"g3pvccv00um\">You got a quadrotor in my quadruped! No, you got a quadruped in my quadrotor!</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://engineering.ontariotechu.ca/mars/index.php\">MARS Laboratory</a> ]</p><div class=\"horizontal-rule\"></div><blockquote class=\"rm-anchors\" id=\"tmi_h-ct5pk\"><em>A human hand, a robot’s arm—together tracing circles of trust and precision. No missteps. No hesitation. Just pure, algorithmic grace.</em></blockquote><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://www.ubtrobot.com/en/humanoid/products/walker-c\">UBTECH</a> ]</p><div class=\"horizontal-rule\"></div><p class=\"rm-anchors\" id=\"qlsj3p87a4a\">Low-gravity planetary exploration with a quadruped just looks like fun.</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://www.autonomousrobotslab.com/\">Autonomous Robots Lab</a> ]</p><div class=\"horizontal-rule\"></div><p class=\"rm-anchors\" id=\"xwjssgdd5no\">Here it is, that robot Kool-Aid that everyone seems to be drinking. Including me!</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://generalistai.com/\">Generalist</a> ]</p><div class=\"horizontal-rule\"></div><p class=\"rm-anchors\" id=\"6-prnhfdyfw\">Don’t shoot Mini Pupper!</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://mangdang.store/products/mp2\">MangDang</a> ]</p><div class=\"horizontal-rule\"></div><blockquote class=\"rm-anchors\" id=\"ofnlnztcwm4\"><em>We show here the ARISTO (Anthropomorphic, Robotic, Integrated-Sensing, Tendon-Operated) Hand. Developed in collaboration with Sony Group Corporation, this research platform is engineered to address the complex requirements of manipulating small, thin, and fragile objects.</em></blockquote><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://sites.utexas.edu/hcrl/\">University of Texas Human Centered Robotics Lab</a> ]</p><div class=\"horizontal-rule\"></div><p class=\"rm-anchors\" id=\"3vbk_jzmagu\">Okay, but did you really have to call it the T800?</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://en.engineai.com.cn/product-t800\">EngineAI</a> ]</p><div class=\"horizontal-rule\"></div><blockquote class=\"rm-anchors\" id=\"p15of1ktjt4\"><em>Moby shows what useful mobile manipulation looks like in the real world: picking up, carrying, and placing adaptable payloads. The video shows payload handling across increasing crate loads, including a 50.3-pound load, while maintaining balance, control, and mobility. This is the kind of capability that matters outside the lab—moving real objects, in real spaces, with practical reliability.</em></blockquote><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://www.noblemachines.ai/\">Noble Machines</a> ]</p><div class=\"horizontal-rule\"></div><blockquote class=\"rm-anchors\" id=\"dqyojl69xdk\"><em>What does it take to make a robot look human? Harvard SEAS students Hailey Block, Henry Tavistock, and Evan Crowley created “Hollow Minds,” a pair of animatronic heads capable of speaking, blinking, tracking movement, and displaying lifelike facial expressions.</em></blockquote><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://seas.harvard.edu/electrical-engineering/courses\">Harvard University</a> ]</p><div class=\"horizontal-rule\"></div><p class=\"rm-anchors\" id=\"jeejj42tkqu\">The longevity here is impressive, but the obvious question here is why the heck you’d ever do this task with a bipedal humanoid robot. It also doesn’t seem to have any error recovery, which is obviously fixable, but highlights the fact that real humans are versatile and humanoid robots are not.</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://www.figure.ai/\">Figure</a> ]</p><div class=\"horizontal-rule\"></div><blockquote class=\"rm-anchors\" id=\"ydf1vzbzrgy\"><em>Kacper Nowicki, CEO and cofounder of Nomagic, recently sat down for a deep dive into the “humanoid vs. purpose-built” debate during a panel discussion at the Web Summit in Vancouver 2026.</em></blockquote><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://nomagic.ai/\">Nomagic</a> ]</p><div class=\"horizontal-rule\"></div>",
+    "url": "https://spectrum.ieee.org/video-friday-rabona-soccer",
+    "published": "2026-05-29T17:00:01+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Software becoming the biggest bottleneck to physical AI innovation, finds QNX research",
+    "summary": "<p>As robots enter more unconstrained environments, software and security are becoming higher priorities, a QNX survey found.</p> <p>The post <a href=\"https://www.therobotreport.com/software-becoming-biggest-bottleneck-physical-ai-innovation-finds-qnx/\">Software becoming the biggest bottleneck to physical AI innovation, finds QNX research</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/software-becoming-biggest-bottleneck-physical-ai-innovation-finds-qnx/",
+    "published": "2026-05-29T15:00:31+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "NIST proposes a baseline performance benchmark for humanoid robots",
+    "summary": "<p>NIST has proposed a standardized performance benchmark and testing procedures to help developers and evaluators of humanoids.</p> <p>The post <a href=\"https://www.therobotreport.com/nist-proposes-a-baseline-performance-benchmark-for-humanoid-robots/\">NIST proposes a baseline performance benchmark for humanoid robots</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/nist-proposes-a-baseline-performance-benchmark-for-humanoid-robots/",
+    "published": "2026-05-29T14:24:18+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "The evolution of cobots in metal fabrication and construction",
+    "summary": "<p>Matt Bush, the co-founder and CEO of Hirebotics, talks about how cobots are becoming a necessity for manufacturers and welders.</p> <p>The post <a href=\"https://www.therobotreport.com/hirebotics-talks-evolution-cobots-metal-fabrication-construction/\">The evolution of cobots in metal fabrication and construction</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/hirebotics-talks-evolution-cobots-metal-fabrication-construction/",
+    "published": "2026-05-28T14:12:26+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://blogs.nvidia.com/blog/category/industries/robotics/feed/",
+    "feed_title": "",
+    "title": "NVIDIA Research Advances Robotics From Simulation to the Real World",
+    "summary": "Robotics is entering a new phase: moving from controlled demos and scripted automation toward generalizable, reliable embodied autonomy in the real world. At the International Conference on Robotics and Automation (ICRA), eight of NVIDIA Research’s 28 accepted papers show how simulation-to-real transfer is becoming a foundation for that shift, helping robots perceive, reason, plan and [&#8230;]",
+    "url": "https://blogs.nvidia.com/blog/icra-research-robotics-simulation-to-real-world/",
+    "published": "2026-05-28T13:00:51+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Your guide to the last day of the 2026 Robotics Summit & Expo",
+    "summary": "<p>The fun continues in Boston for the second day of the Robotics Summit &#038; Expo, which includes the Women in Robotics breakfast and more.</p> <p>The post <a href=\"https://www.therobotreport.com/your-guide-to-the-last-day-of-the-2026-robotics-summit-expo/\">Your guide to the last day of the 2026 Robotics Summit &#038; Expo</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/your-guide-to-the-last-day-of-the-2026-robotics-summit-expo/",
+    "published": "2026-05-28T12:00:35+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "A guide to Day 1 of the 2026 Robotics Summit & Expo",
+    "summary": "<p>Today, the Robotics Summit &#038; Expo will be full of insightful talks, hands-on robot demos, and interesting conversations.</p> <p>The post <a href=\"https://www.therobotreport.com/a-guide-to-day-1-of-the-2026-robotics-summit-expo/\">A guide to Day 1 of the 2026 Robotics Summit &#038; Expo</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/a-guide-to-day-1-of-the-2026-robotics-summit-expo/",
+    "published": "2026-05-27T12:00:03+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Why robots still struggle to see the real world",
+    "summary": "<p>Making machine perception reliable enough for real deployment requires more than better AI; it requires properly calibrated sensors, says an Orbbec co-founder.</p> <p>The post <a href=\"https://www.therobotreport.com/why-robots-still-struggle-to-see-real-world-orbbec/\">Why robots still struggle to see the real world</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/why-robots-still-struggle-to-see-real-world-orbbec/",
+    "published": "2026-05-27T11:43:01+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "How humanoids learn to read the room",
+    "summary": "<p>Designing for a humanoid robot is one of the most complicated applications in robotics today.</p> <p>The post <a href=\"https://www.therobotreport.com/how-humanoids-learn-to-read-the-room-2/\">How humanoids learn to read the room</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/how-humanoids-learn-to-read-the-room-2/",
+    "published": "2026-05-26T20:34:47+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "GMSL and the growing ecosystem around robotic vision systems",
+    "summary": "<p>Just a few years ago, many site owners were satisfied if a robot could move from point A to point B. That’s not quite enough anymore.</p> <p>The post <a href=\"https://www.therobotreport.com/gmsl-and-the-growing-ecosystem-around-robotic-vision-systems-2/\">GMSL and the growing ecosystem around robotic vision systems</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/gmsl-and-the-growing-ecosystem-around-robotic-vision-systems-2/",
+    "published": "2026-05-26T20:34:40+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "XELA Robotics to show tactile sensing at the 2026 Robotics Summit & Expo",
+    "summary": "<p>XELA Robotics will show at the Robotics Summit &#038; Expo its improved magnetic interference compensation and uSkin in the Universal Manipulation Interface.</p> <p>The post <a href=\"https://www.therobotreport.com/xela-robotics-show-tactile-sensing-2026-robotics-summit-expo/\">XELA Robotics to show tactile sensing at the 2026 Robotics Summit &#038; Expo</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/xela-robotics-show-tactile-sensing-2026-robotics-summit-expo/",
+    "published": "2026-05-26T14:35:02+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Allient to demonstrate advanced motion control systems at 2026 Robotics Summit & Expo",
+    "summary": "<p>Allient will exhibit and demonstrate a range of its motion and control technologies at the Robotics Summit &#038; Expo in Boston this week.</p> <p>The post <a href=\"https://www.therobotreport.com/allient-demonstrates-advanced-motion-control-systems-2026-robotics-summit-expo/\">Allient to demonstrate advanced motion control systems at 2026 Robotics Summit &#038; Expo</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/allient-demonstrates-advanced-motion-control-systems-2026-robotics-summit-expo/",
+    "published": "2026-05-26T13:01:55+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "IntBot and Certis Group partner to scale physical AI for enterprises across Singapore",
+    "summary": "<p>Certis is collaborating with IntBot to add humanoids to its existing service robot offerings as the partners start to expand in Singapore.</p> <p>The post <a href=\"https://www.therobotreport.com/intbot-certis-group-partner-scale-physical-ai-enterprises-across-singapore/\">IntBot and Certis Group partner to scale physical AI for enterprises across Singapore</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/intbot-certis-group-partner-scale-physical-ai-enterprises-across-singapore/",
+    "published": "2026-05-26T13:00:30+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "A guide to everything happening at the 2026 Robotics Summit & Expo",
+    "summary": "<p>Over the next two days, the Robotics Summit &#038; Expo will bring thousands of attendees and hundreds of exhibitors to Boston. </p> <p>The post <a href=\"https://www.therobotreport.com/a-guide-to-everything-happening-at-the-2026-robotics-summit-expo/\">A guide to everything happening at the 2026 Robotics Summit &#038; Expo</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/a-guide-to-everything-happening-at-the-2026-robotics-summit-expo/",
+    "published": "2026-05-26T12:00:32+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Simulation vs. digital twin: A strategic lens on virtual manufacturing",
+    "summary": "<p>Digital twins and simulation provide distinct benefits for manufacturers designing and integrating systems including automation, explains Visual Components.</p> <p>The post <a href=\"https://www.therobotreport.com/simulation-versus-digital-twin-strategic-lens-on-virtual-manufacturing/\">Simulation vs. digital twin: A strategic lens on virtual manufacturing</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/simulation-versus-digital-twin-strategic-lens-on-virtual-manufacturing/",
+    "published": "2026-05-25T14:23:45+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Sortera uses physical AI to double capacity in a Tennessee sorting facility",
+    "summary": "<p>With the new facility, Sortera has increased its annual processing capacity to an estimated 240 million lbs.</p> <p>The post <a href=\"https://www.therobotreport.com/sortera-uses-physical-ai-to-double-capacity-in-a-tennessee-sorting-facility/\">Sortera uses physical AI to double capacity in a Tennessee sorting facility</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/sortera-uses-physical-ai-to-double-capacity-in-a-tennessee-sorting-facility/",
+    "published": "2026-05-24T12:25:35+00:00"
+  }
+]

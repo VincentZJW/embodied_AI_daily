@@ -1,6 +1,6 @@
 const latestArticle = {
-  "title": "具身智能中文日报｜2026-05-29",
-  "date": "2026-05-29",
+  "title": "具身智能中文日报｜2026-05-30",
+  "date": "2026-05-30",
   "subtitle": "聚焦VLA、Sim2Real、人形机器人，追踪论文、开源项目与产业动态。",
   "theme": "tech-dark",
   "accent_color": "#4F8CFF",
@@ -18,7 +18,7 @@ const latestArticle = {
   "executive_summary": [
     {
       "title": "核心结论 1",
-      "content": "本次采集得到论文 0 篇、GitHub 项目 20 个、行业/公司动态 18 条。",
+      "content": "本次采集得到论文 0 篇、GitHub 项目 20 个、行业/公司动态 17 条。",
       "card_type": "核心摘要卡",
       "importance_score": 96,
       "tags": [
@@ -62,7 +62,7 @@ const latestArticle = {
     {
       "name": "Genesis-Embodied-AI/genesis-world",
       "summary": "该项目可能聚焦仿真到真实迁移，主要语言为 Python。",
-      "why_follow": "仓库星标数约为 29073，可用于观察开源社区对仿真到真实迁移的实现方向。",
+      "why_follow": "仓库星标数约为 29098，可用于观察开源社区对仿真到真实迁移的实现方向。",
       "source_url": "https://github.com/Genesis-Embodied-AI/genesis-world",
       "card_type": "开源项目卡",
       "importance_score": 93,
@@ -111,7 +111,7 @@ const latestArticle = {
     {
       "name": "Octoday-Hub/Embodied-AI",
       "summary": "该项目可能聚焦人形机器人控制，主要语言为 未知。",
-      "why_follow": "仓库星标数约为 667，可用于观察开源社区对人形机器人控制的实现方向。",
+      "why_follow": "仓库星标数约为 697，可用于观察开源社区对人形机器人控制的实现方向。",
       "source_url": "https://github.com/Octoday-Hub/Embodied-AI",
       "card_type": "开源项目卡",
       "importance_score": 82,
@@ -124,37 +124,24 @@ const latestArticle = {
   ],
   "industry_updates": [
     {
-      "title": "行业动态 1：人形机器人控制",
-      "summary": "该动态与人形机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
-      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://spectrum.ieee.org/video-friday-rabona-soccer",
-      "card_type": "行业动态卡",
-      "importance_score": 90,
-      "tags": [
-        "具身智能",
-        "人形机器人",
-        "机器人"
-      ]
-    },
-    {
-      "title": "行业动态 2：视觉-语言-动作模型",
+      "title": "行业动态 1：视觉-语言-动作模型",
       "summary": "该动态与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://www.therobotreport.com/software-becoming-biggest-bottleneck-physical-ai-innovation-finds-qnx/",
+      "source_url": "https://www.therobotreport.com/misumi-group-invests-1b-americas-global-ai-digital-manufacturing/",
       "card_type": "行业动态卡",
-      "importance_score": 83,
+      "importance_score": 86,
       "tags": [
         "具身智能",
         "机器人视觉"
       ]
     },
     {
-      "title": "行业动态 3：人形机器人控制",
+      "title": "行业动态 2：人形机器人控制",
       "summary": "该动态与人形机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://www.therobotreport.com/nist-proposes-a-baseline-performance-benchmark-for-humanoid-robots/",
+      "source_url": "https://spectrum.ieee.org/video-friday-rabona-soccer",
       "card_type": "行业动态卡",
-      "importance_score": 84,
+      "importance_score": 87,
       "tags": [
         "具身智能",
         "人形机器人",
@@ -162,26 +149,39 @@ const latestArticle = {
       ]
     },
     {
-      "title": "行业动态 4：具身智能评测与数据集",
+      "title": "行业动态 3：视觉-语言-动作模型",
+      "summary": "该动态与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
+      "source_url": "https://www.therobotreport.com/software-becoming-biggest-bottleneck-physical-ai-innovation-finds-qnx/",
+      "card_type": "行业动态卡",
+      "importance_score": 80,
+      "tags": [
+        "具身智能",
+        "机器人视觉"
+      ]
+    },
+    {
+      "title": "行业动态 4：人形机器人控制",
+      "summary": "该动态与人形机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
+      "source_url": "https://www.therobotreport.com/nist-proposes-a-baseline-performance-benchmark-for-humanoid-robots/",
+      "card_type": "行业动态卡",
+      "importance_score": 81,
+      "tags": [
+        "具身智能",
+        "人形机器人",
+        "机器人"
+      ]
+    },
+    {
+      "title": "行业动态 5：具身智能评测与数据集",
       "summary": "该动态与具身智能评测与数据集相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
       "source_url": "https://www.therobotreport.com/hirebotics-talks-evolution-cobots-metal-fabrication-construction/",
       "card_type": "行业动态卡",
-      "importance_score": 77,
+      "importance_score": 74,
       "tags": [
         "具身智能"
-      ]
-    },
-    {
-      "title": "行业动态 5：仿真到真实迁移",
-      "summary": "该动态与仿真到真实迁移相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
-      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://blogs.nvidia.com/blog/icra-research-robotics-simulation-to-real-world/",
-      "card_type": "行业动态卡",
-      "importance_score": 77,
-      "tags": [
-        "具身智能",
-        "Sim2Real"
       ]
     }
   ],
@@ -311,36 +311,36 @@ const latestArticle = {
       "importance_score": 66
     },
     {
-      "name": "行业动态 1：人形机器人控制",
+      "name": "行业动态 1：视觉-语言-动作模型",
+      "url": "https://www.therobotreport.com/misumi-group-invests-1b-americas-global-ai-digital-manufacturing/",
+      "type": "行业动态",
+      "card_type": "来源链接卡",
+      "importance_score": 63
+    },
+    {
+      "name": "行业动态 2：人形机器人控制",
       "url": "https://spectrum.ieee.org/video-friday-rabona-soccer",
       "type": "行业动态",
       "card_type": "来源链接卡",
-      "importance_score": 67
+      "importance_score": 64
     },
     {
-      "name": "行业动态 2：视觉-语言-动作模型",
+      "name": "行业动态 3：视觉-语言-动作模型",
       "url": "https://www.therobotreport.com/software-becoming-biggest-bottleneck-physical-ai-innovation-finds-qnx/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
-      "name": "行业动态 3：人形机器人控制",
+      "name": "行业动态 4：人形机器人控制",
       "url": "https://www.therobotreport.com/nist-proposes-a-baseline-performance-benchmark-for-humanoid-robots/",
-      "type": "行业动态",
-      "card_type": "来源链接卡",
-      "importance_score": 61
-    },
-    {
-      "name": "行业动态 4：具身智能评测与数据集",
-      "url": "https://www.therobotreport.com/hirebotics-talks-evolution-cobots-metal-fabrication-construction/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
-      "name": "行业动态 5：仿真到真实迁移",
-      "url": "https://blogs.nvidia.com/blog/icra-research-robotics-simulation-to-real-world/",
+      "name": "行业动态 5：具身智能评测与数据集",
+      "url": "https://www.therobotreport.com/hirebotics-talks-evolution-cobots-metal-fabrication-construction/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
