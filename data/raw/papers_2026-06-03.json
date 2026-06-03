@@ -1,0 +1,482 @@
+[
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.03994v1",
+    "title": "SimuScene: Simulation-Ready Compositional 3D Scene Reconstruction from a Single Image",
+    "abstract": "Reconstructing interactive, simulation-ready 3D scenes from a single image is a critical bottleneck for robotic manipulation. While recent single-image lifters recover plausible per-object shapes, composing them yields scenes that collapse under physical simulation due to interpenetrating, hovering, or sinking objects. Existing physics-aware methods address this strictly as a post-hoc layout correction, leaving the underlying geometric errors unresolved. To address this, we introduce SimuScene, a compositional 3D reconstruction pipeline that puts physics in the loop of shape and layout estimation. Rather than using physics merely for layout cleanup, we utilize the physics engine as a diagnostic measurement tool during the generative process itself. By diagnostically simulating reconstructed objects under gravity, we convert penetration and support failures into quantitative correction signals that drive gravity-axis stretching and amodal shape resampling. This physics-informed feedback loop mitigates accumulated reconstruction errors and produces a stable, simulation-ready compositional 3D scene. Extensive experiments demonstrate state-of-the-art performance on physical stability and geometric alignment benchmarks. We further highlight SimuScene's utility by deploying reconstructed environments in humanoid control and robot-arm manipulation tasks.",
+    "authors": [
+      "Inhee Lee",
+      "Sangwon Baik",
+      "Sungjoo Kim",
+      "Hyeonwoo Kim",
+      "Hyunsoo Cha",
+      "Hanbyul Joo"
+    ],
+    "published": "2026-06-02T17:59:59+00:00",
+    "updated": "2026-06-02T17:59:59+00:00",
+    "url": "http://arxiv.org/abs/2606.03994v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.03994v1",
+    "categories": [
+      "cs.CV",
+      "cs.RO"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.03985v1",
+    "title": "Humanoid-GPT: Scaling Data and Structure for Zero-Shot Motion Tracking",
+    "abstract": "We introduce Humanoid-GPT, a GPT-style Transformer with causal attention trained on a billion-scale motion corpus for whole-body control. Unlike prior shallow MLP trackers constrained by scarce data and an agility-generalization trade-off, Humanoid-GPT is pre-trained on a 2B-frame retargeted corpus that unifies all major mocap datasets with large-scale in-house recordings. Scaling both data and model capacity yields a single generative Transformer that tracks highly dynamic behaviors while achieving unprecedented zero-shot generalization to unseen motions and control tasks. Extensive experiments and scaling analyses show that our model establishes a new performance frontier, demonstrating robust zero-shot generalization to unseen tasks while simultaneously tracking highly dynamic and complex motions.",
+    "authors": [
+      "Zekun Qi",
+      "Xuchuan Chen",
+      "Dairu Liu",
+      "Chenghuai Lin",
+      "Yunrui Lian",
+      "Sikai Liang",
+      "Zhikai Zhang",
+      "Yu Guan",
+      "Jilong Wang",
+      "Wenyao Zhang",
+      "Xinqiang Yu",
+      "He Wang",
+      "Li Yi"
+    ],
+    "published": "2026-06-02T17:59:05+00:00",
+    "updated": "2026-06-02T17:59:05+00:00",
+    "url": "http://arxiv.org/abs/2606.03985v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.03985v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.CV"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.03954v1",
+    "title": "VLESA: Vision-Language Embodied Safety Agent for Human Activity Monitoring",
+    "abstract": "As AI systems increasingly assist humans in physical tasks, ensuring safety becomes paramount -- physical actions carry immediate and irreversible consequences that digital errors do not. We introduce the Vision-Language Embodied Safety Agent (VLESA), a framework that monitors human activities from egocentric video and triggers real-time safety interventions when dangerous actions are predicted. VLESA addresses intent-dependent safety where identical actions can be safe or dangerous depending on context. A dataset pairing egocentric frames with goal-conditioned safety annotations is introduced, enabling a goal-conditioned safety Q-filter trained via GRPO that evaluates actions with respect to inferred intent without retraining. On top of that, an intent-action prediction agent is proposed to jointly infer goals and predict future actions from video. On the ASIMOV-2.0 benchmark, VLESA achieves higher intervention accuracy at the exact ground-truth frame compared to baselines, while the GRPO-trained Q-filter improves action safety by over 41 percentage points through goal-conditioned constrained decoding. Code is available at https://github.com/HanjiangHu/VLESA.",
+    "authors": [
+      "Hanjiang Hu",
+      "Yiyuan Pan",
+      "Jiaxing Li",
+      "Xusheng Luo",
+      "Alexander Robey",
+      "Na Li",
+      "Yebin Wang",
+      "Changliu Liu"
+    ],
+    "published": "2026-06-02T17:42:17+00:00",
+    "updated": "2026-06-02T17:42:17+00:00",
+    "url": "http://arxiv.org/abs/2606.03954v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.03954v1",
+    "categories": [
+      "cs.CV",
+      "cs.LG",
+      "cs.RO"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.03943v1",
+    "title": "PointAction: 3D Points as Universal Action Representations for Robot Control",
+    "abstract": "Video-Action Models (VAMs) leverage the broad visual dynamics captured by pre-trained video diffusion models, offering a promising path toward generalizable robot manipulation. However, RGB-only video rollouts are not directly actionable: they leave metric 3D motion, contact geometry, and fine-grained spatial constraints under-specified, making action grounding ambiguous. Meanwhile, scaling action supervision across diverse tasks and embodiments remains costly. We present PointAction, a framework that bridges video predictions to robot actions through explicit point-based 4D modeling. PointAction fine-tunes a foundation video generation model to jointly predict future RGB frames and dynamic 3D pointmaps, producing temporally consistent 3D motion of task-relevant scene geometry. These point dynamics serve as a structured, embodiment-agnostic action interface, which a diffusion-based action decoder maps to executable robot actions. By using metric 3D point dynamics as the interface between video prediction and control, PointAction reduces the ambiguity of RGB-only action grounding and supports transfer across tasks and embodiments with limited action supervision. Experiments show that PointAction achieves state-of-the-art 4D generation quality on robot scenes, outperforms existing baselines in simulation, and generalizes to two real robot arms unseen during pretraining.",
+    "authors": [
+      "Mutian Tong",
+      "Han Jiang",
+      "Qiao Feng",
+      "Lingjie Liu",
+      "Jiatao Gu"
+    ],
+    "published": "2026-06-02T17:30:50+00:00",
+    "updated": "2026-06-02T17:30:50+00:00",
+    "url": "http://arxiv.org/abs/2606.03943v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.03943v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.03834v1",
+    "title": "Let the Dynamics Flow: Stable Flow Matching Dynamical Systems",
+    "abstract": "Flow matching has recently emerged as a powerful approach for imitation learning, enabling scalable, expressive, and multimodal motion policies. However, incorporating formal stability guarantees into these generative models, a prerequisite to ensure safe and generalizable robot behaviors, remains a significant challenge. While modeling robot motions as dynamical systems allows for such stability-based inductive biases, existing frameworks struggle to capture the rich action distributions inherent in complex robotic tasks. This paper introduces Stable Flow Matching Dynamical Systems (SFMDS), a novel framework that bridges the gap between high-capacity generative modeling and formal Lyapunov stability guarantees. SFMDS parametrizes dynamical systems via flow matching while simultaneously constraining the model to a family of stable solutions. We propose two variants: a soft constraint based on a penalty term, and a hard structural constraint embedded directly in the model architecture. We further extend both formulations to Lie groups. Experiments on benchmark datasets, in simulation, and on a humanoid robot show that SFMDS learns stable, scalable, and multimodal dynamical systems in low- and high-dimensional state spaces, enabling safe and expressive robot motion generation.",
+    "authors": [
+      "Rodrigo Pérez-Dattari",
+      "Francisco Leiva",
+      "Andrea Testa",
+      "Leonel Rozo",
+      "Javier Ruiz del Solar",
+      "Noémie Jaquier"
+    ],
+    "published": "2026-06-02T16:17:26+00:00",
+    "updated": "2026-06-02T16:17:26+00:00",
+    "url": "http://arxiv.org/abs/2606.03834v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.03834v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.03784v1",
+    "title": "Revisiting Embodied Chain-of-Thought for Generalizable Robot Manipulation",
+    "abstract": "Embodied chain-of-thought (CoT) aims to bridge linguistic reasoning and robotic control, but its effective form and integration strategy remain underexplored. In this paper, we revisit embodied CoT for vision-language-action (VLA) models at large scale. We construct the largest embodied CoT corpus to date, comprising 978,743 trajectories, 226.3M samples, and 2592.5 hours of robot data. Through extensive experiments, we find that effective embodied CoT should ground high-level semantic understanding into concrete action guidance, such as end-effector movement descriptions and image-space trajectories, while high-level reasoning alone brings only marginal gains. We further show that explicit CoT does not scale reliably when used as an autoregressive action prefix, as it suffers from compounding inference errors and unstable reasoning-action coupling. To address these limitations, we propose ERVLA, a VLA model that uses embodied CoT as representation-shaping supervision rather than mandatory test-time reasoning. ERVLA is trained with a reasoning-dropout strategy, enabling the model to absorb rich reasoning traces during training while predicting actions directly without CoT decoding during inference. This design improves scalability with increasing pre-training data and avoids autoregressive instability. ERVLA achieves state-of-the-art performance on LIBERO-Plus with an 86.9% success rate and reaches 53.2% success rate on VLABench, demonstrating strong out-of-distribution generalization. In real-robot experiments, ERVLA further outperforms competitive state-of-the-art baselines, especially on tasks requiring semantic disambiguation and long-horizon execution. Code, data, and model checkpoints will be released.",
+    "authors": [
+      "Nan Sun",
+      "Yuan Zhang",
+      "Yongkun Yang",
+      "Wentao Zhao",
+      "Peiyan Li",
+      "Jun Guo",
+      "Wenxuan Song",
+      "Pengxiang Ding",
+      "Runze Suo",
+      "Yifei Su",
+      "Xin Xiao",
+      "Xinghang Li",
+      "Huaping Liu"
+    ],
+    "published": "2026-06-02T15:37:59+00:00",
+    "updated": "2026-06-02T15:37:59+00:00",
+    "url": "http://arxiv.org/abs/2606.03784v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.03784v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.03755v1",
+    "title": "LAP: An Agent-to-Instrument Protocol for Autonomous Science",
+    "abstract": "Autonomous science is moving from demonstration to infrastructure. Large language model agents now plan experiments, and self-driving laboratories execute them. Yet every such system rebuilds the link between the reasoning agent and the physical instrument from scratch, against fragmented vendor SDKs and standards built for deterministic software clients rather than probabilistic, goal-directed agents. Recent agent-interoperability protocols clarify two of the three edges of an agentic ecosystem (Anthropic's Model Context Protocol (MCP) standardizes the agent-to-tool edge, and Google's Agent2Agent (A2A) the agent-to-agent edge), but neither models the agent-to-instrument edge, where operations are stateful, safety-critical, exclusively owned, physically embodied, and produce measurements with units, calibration, and uncertainty. We present the Lab Agent Protocol (LAP), a protocol design that fills this gap. LAP retains A2A's peer-to-peer, discovery-first, task-lifecycle structure and adds four physical-world primitives: (i) the InstrumentCard, a signed capability and physical-limit description; (ii) first-class reservation for exclusive instrument and sample locking; (iii) a safety-fence handshake with operator-confirmation tokens cryptographically bound to a specific task and its parameters, gating hazardous and irreversible operations; and (iv) a MeasurementResult schema that makes every result physically typed (QUDT/UCUM), calibration-anchored, uncertainty-bearing, and reproducible by construction. We specify roles, a six-layer architecture, the JSON-RPC method set, the task and safety state machines, the error model, and cross-laboratory federation, and walk a closed-loop autonomous campaign through the protocol end-to-end. LAP is transport-compatible with the A2A/MCP ecosystem and encapsulates rather than replaces existing device standards such as SiLA 2 and OPC-UA.",
+    "authors": [
+      "Linwu Zhu",
+      "Liqiang Gao",
+      "Yan Chen",
+      "Dan Zhu",
+      "Jian Huang"
+    ],
+    "published": "2026-06-02T15:03:43+00:00",
+    "updated": "2026-06-02T15:03:43+00:00",
+    "url": "http://arxiv.org/abs/2606.03755v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.03755v1",
+    "categories": [
+      "cs.AI"
+    ],
+    "primary_category": "cs.AI"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.03686v1",
+    "title": "The DeepSpeak-Agentic Dataset",
+    "abstract": "We present DeepSpeak-Agentic, a dataset of videos comprising over 37 hours of semi-structured conversations between a human and an embodied AI agent. We use this dataset to evaluate the automatic forensic identification (audio, video, or text) of AI agents, study the nature of human-agent interactions, and provide a benchmark for future advances in the large-language models and AI-generated voices and faces that power embodied AI agents. We also contribute a scalable data-capture system that creates agents, automatically pairs them with human crowd workers, records audiovisual conversations across specified scenarios, and identifies and separates the human and agent in the combined stream.",
+    "authors": [
+      "Sarah Barrington",
+      "Maty Bohacek",
+      "Hany Farid"
+    ],
+    "published": "2026-06-02T14:10:18+00:00",
+    "updated": "2026-06-02T14:10:18+00:00",
+    "url": "http://arxiv.org/abs/2606.03686v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.03686v1",
+    "categories": [
+      "cs.AI"
+    ],
+    "primary_category": "cs.AI"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.03682v1",
+    "title": "GN0: Toward a Unified Paradigm for Generation, Evaluation, and Policy Learning in Visual-Language Navigation",
+    "abstract": "Embodied navigation connects intelligent agents with the physical world and is fundamental for general robotic intelligence. Limited availability and quality of navigation data have constrained Vision-and-Language Navigation (VLN) systems' generalization and long-horizon capabilities. To address this, we curate diverse 3D scenes and develop an automated pipeline for large-scale navigation data, resulting in the GN-Matrix dataset. Building on a 3D Gaussian Splatting (3DGS) engine, we introduce a high-fidelity simulation platform supporting interactive roaming and collision-aware navigation. We further propose GN-Bench, the first BEV-based benchmark incorporating dynamic 3DGS avatars for human-robot interaction evaluation. To leverage the simulator, we develop an RL-driven navigation foundation model, Break and Establish (BAE). After supervised learning, DAgger exposes the model to rollout-induced states, breaking narrow expert-centric distributions and enabling downstream RL exploration. This unified VLN paradigm integrates map-based and map-free tasks, including instruction following, human following, and goal navigation. GN-BAE formalizes high-fidelity 3DGS-rendered Bird's Eye View representations as compact memory, unlocking latent spatial reasoning in VLMs. Extensive evaluations on GN-Bench and VLN-CE show that GN0 outperforms state-of-the-art VLN methods. Overall, GN-Matrix offers a unified framework spanning data, simulation, and learning, advancing embodied navigation in research and industrial applications.",
+    "authors": [
+      "Xinhai Li",
+      "Xiaotao Zhang",
+      "Yuehao Huang",
+      "Jiankun Dong",
+      "Tianhang Wang",
+      "Sunyao Zhou",
+      "Yunzi Wu",
+      "Chengnuo Sun",
+      "Yunfei Ge",
+      "Qizhen Weng",
+      "Chi Zhang",
+      "Chenjia Bai",
+      "Xuelong Li"
+    ],
+    "published": "2026-06-02T14:05:47+00:00",
+    "updated": "2026-06-02T14:05:47+00:00",
+    "url": "http://arxiv.org/abs/2606.03682v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.03682v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.03609v1",
+    "title": "A 3D Isovist World Model -- Revealing a City's Unseen Geometry and Its Emergent Cross-City Signature",
+    "abstract": "Embodied agents that navigate cities rely on world models that predict how their surroundings will change as they move. But for navigation, what matters is not what the buildings look like; it is where the agent can go. Most world models nonetheless predict appearance, learning how a scene looks rather than the space an agent can move through. Those that do target geometry, such as bird's-eye-view occupancy grids, flatten the three-dimensional environment onto a ground plane, discarding the above-ground and multi-level structure that shapes real navigation. What is missing is a predictive target that captures the navigable geometry an agent actually traverses, without photometric entanglement and without collapsing the third dimension. Our key idea is to model the open volume between buildings, the negative space, encoded as a 3D isovist: a spherical visibility-depth map recording the distance to the nearest surface in every direction. We introduce an embodied world model that predicts the next isovist from a short history of past isovists and a movement action. The prediction is formulated as a depth residual so the decoder inherits sharp building edges, trained with self-rollout scheduled sampling to keep corrupted context on the geometry manifold, and equipped with a persistent latent bird's-eye-view spatial map for cross-path consistency. Our central finding is emergent and unexpected: a single city-blind model trained on Manhattan and Paris develops a cross-city spatial signature, with city identity linearly decodable from its temporal latents far above single-frame baselines, so the signature lives in the learned dynamics rather than in appearance. The representation is lightweight, interpretable, and reproducible, offering a geometric substrate for spatial reasoning in embodied AI, robotics, and urban analysis, released with an open dataset and pipeline.",
+    "authors": [
+      "Xuhui Lin",
+      "Stephen Law",
+      "Nanjiang Chen",
+      "Kunyao Li",
+      "Tao Yang"
+    ],
+    "published": "2026-06-02T13:11:30+00:00",
+    "updated": "2026-06-02T13:11:30+00:00",
+    "url": "http://arxiv.org/abs/2606.03609v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.03609v1",
+    "categories": [
+      "cs.RO",
+      "cs.LG"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.03598v1",
+    "title": "PHASER: Phase-Aware and Semantic Experience Replay for Vision-Language-Action Models",
+    "abstract": "Vision-Language-Action (VLA) models have achieved remarkable success in language-conditioned robotic manipulation. However, deploying these models in open-ended environments requires continuously acquiring novel skills, a process that inevitably triggers severe catastrophic forgetting of previously learned behaviors. While experience replay (ER) serves as a standard mitigating strategy, naive uniform sampling fundamentally misaligns with the temporal characteristics of manipulation trajectories. It systematically under-samples brief but causally critical sub-skills, leading to phase starvation, and completely overlooks the varying degrees of forgetting across historical tasks. To overcome these limitations, we introduce PHASER, an architecture-agnostic continual learning framework. PHASER employs a phase-centric capacity allocation to guarantee equal memory support for all sub-skills, coupled with a multi-modal interference routing strategy that dynamically prioritizes historical phases at high risk of forgetting. Furthermore, to enable fully autonomous lifelong adaptation, we integrate Auto-PC, a lightweight pipeline combining unsupervised action-signal change-point detection with VLM-based semantic verification to extract temporal boundaries without intensive manual supervision. Evaluated across three VLA backbones on LIBERO continual learning suites, PHASER yields substantial empirical improvements, increasing Average Success Rate (ASR) by up to 31% over matched-budget ER and achieving an 87.8% final ASR on the LIBERO-Goal CL setting.",
+    "authors": [
+      "Ziyang Chen",
+      "Shaoguang Wang",
+      "Weiyu Guo",
+      "Qianyi Cai",
+      "He Zhang",
+      "Pengteng Li",
+      "Yiren Zhao",
+      "Yandong Guo"
+    ],
+    "published": "2026-06-02T13:04:15+00:00",
+    "updated": "2026-06-02T13:04:15+00:00",
+    "url": "http://arxiv.org/abs/2606.03598v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.03598v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.CV"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.03593v1",
+    "title": "Making Embodied AI Reliable: A Community Agenda from Testing to Formal Verification",
+    "abstract": "Embodied AI systems are increasingly deployed in open-world environments, yet ensuring their reliability remains a fundamental challenge. Drawing on discussions from the AAAI'26 Bridge Program on \"Making Embodied AI Reliable with Testing and Formal Verification\", this article argues that reliability in embodied AI is inherently a lifecycle assurance problem arising from uncertainty, human interaction, and emergent behaviors across tightly coupled system components. We identify three complementary directions toward reliable embodied AI: (1) trustworthy scenario-based testing supported by validated specifications and meaningful coverage metrics, (2) compositional verification enabled by structured symbolic representations of system behavior and environmental context, and (3) runtime assurance mechanisms capable of adapting to uncertainty and distribution shifts during deployment. Rather than treating these approaches independently, we advocate integrated assurance workflows that connect testing, verification, and runtime adaptation through shared neuro-symbolic representations and continuous feedback across the system lifecycle. Such integration provides a foundation for building trustworthy embodied AI systems that can operate safely and reliably in complex real-world environments.",
+    "authors": [
+      "Xi Zheng",
+      "Dulanga Weerakoon",
+      "Yintong Huo",
+      "Teresa Yeo",
+      "Guy Van Den Broeck",
+      "Vijay Ganesh",
+      "Daniel Neider",
+      "Biplav Srivastava",
+      "Ivan Ruchkin",
+      "Archan Misra",
+      "Corina Pasareanu"
+    ],
+    "published": "2026-06-02T12:58:40+00:00",
+    "updated": "2026-06-02T12:58:40+00:00",
+    "url": "http://arxiv.org/abs/2606.03593v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.03593v1",
+    "categories": [
+      "cs.SE",
+      "cs.RO"
+    ],
+    "primary_category": "cs.SE"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.03556v1",
+    "title": "Partially Observable Adversarial Patch Attacks on Vision-Language-Action Models in Robotics",
+    "abstract": "Vision-language-action (VLA) models are gaining attention in robotics, yet their robustness to adversarial attacks remains largely unexplored. Existing work shows that adversarial patches can mislead VLA-based robots but assumes full access to the entire execution trajectory, an unrealistic requirement in practice. We address this limitation by formulating a partially observable threat model, where the adversary can exploit only a short prefix of the trajectory to generate a fixed patch applied to all subsequent frames. Under this setting, we propose a two-phase framework. First, we localize the patch using the model's attention maps to identify visually critical regions that correspond to the full instruction. Then, we optimize the patch to disrupt the semantic grounding of target objects and increase the curvature of action trajectories, thereby compounding failures in both perception and control. Extensive experiments in simulation and real-world robotic environments show that our method sustains adversarial effects under partial observability, inducing long-horizon disruptions and significantly reducing task success rates.",
+    "authors": [
+      "Xiaofei Wang",
+      "Mingliang Han",
+      "Tianyu Hao",
+      "Yi Yang",
+      "Yun-Bo Zhao",
+      "Keke Tang"
+    ],
+    "published": "2026-06-02T12:19:28+00:00",
+    "updated": "2026-06-02T12:19:28+00:00",
+    "url": "http://arxiv.org/abs/2606.03556v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.03556v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.03551v1",
+    "title": "NVIDIA Isaac Sim: Enabling Scalable, GPU-Accelerated Simulation for Robotics",
+    "abstract": "Simulation has become a core infrastructure for robotics research. Unlike previous simulators, NVIDIA Isaac Sim leverages GPU acceleration to enable large-scale parallel training and physics-accurate modeling. Its synthetic data generation pipeline alleviates the scarcity of high-quality training data, supporting data-driven robot learning and large-scale simulation-centric experimentation. However, existing surveys often treat it as one simulator among many, without a systematic analysis of its architectural characteristics, usage patterns, and limitations. This survey reviews Isaac Sim from system and application perspectives, outlining its architecture and comparing it with widely used simulators. We analyze representative studies across five major domains and summarize common usage patterns, particularly in data generation and high-fidelity simulation. We also outline key future directions and challenges, including physics open-world learning, simulation-centric training and practical usability constraints.",
+    "authors": [
+      "Sicong Gao",
+      "Maurice Pagnucco",
+      "Tomasz Bednarz",
+      "Yang Song"
+    ],
+    "published": "2026-06-02T12:12:27+00:00",
+    "updated": "2026-06-02T12:12:27+00:00",
+    "url": "http://arxiv.org/abs/2606.03551v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.03551v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.03536v1",
+    "title": "Bionic Human-Motion Style Transfer for Physically Executable Whole-Body Control of Humanoid Robots",
+    "abstract": "Expressive whole-body motion is important for humanoid robots operating in human environments, where robots are expected to move stably while presenting readable and adjustable body behaviors. However, most expressive motions are still obtained from fixed demonstrations or manually designed scripts, making it difficult to reuse a demonstrated style across different motion contents. Inspired by the way human motion styles convey affective and intentional cues through gait rhythm, posture, arm swing and body sway, this paper proposes a bionic generation-to-control framework for exemplar-driven style transfer on humanoid robots. Given a short human style exemplar and a target content motion, the proposed framework generates a stylized whole-body reference that preserves the intended motion content while transferring the demonstrated style. A physics-aware multi-condition latent diffusion model is developed to fuse style, content and trajectory conditions, and classifier-free guidance is used to adjust the style intensity without retraining. To improve hardware executability, contact-consistency and temporal-smoothness regularization are imposed on decoded motions during training. The generated references are then converted into G1-compatible robot references and executed by a preview-based whole-body tracking policy trained with a cluster-and-distill strategy. Simulation and Unitree G1 experiments show that the proposed method can transfer short human style exemplars to diverse robot motion contents, reduce contact and jitter artifacts compared with animation-oriented style-transfer baselines, and achieve a 96.0% success rate over 125 reported real-robot trials. The results demonstrate the feasibility of using short human motion exemplars as reusable bionic sources for physically executable expressive humanoid motion.",
+    "authors": [
+      "Tianchen Huang",
+      "Mingkuan Zhao",
+      "Yang Gao",
+      "Feiyang Yuan",
+      "Junchi Gu",
+      "Xiaohu Zhang",
+      "Dongdong Zhao",
+      "Shi Yan",
+      "Yu Wang",
+      "Wei Gao",
+      "Shiwu Zhang"
+    ],
+    "published": "2026-06-02T11:59:01+00:00",
+    "updated": "2026-06-02T11:59:01+00:00",
+    "url": "http://arxiv.org/abs/2606.03536v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.03536v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.03509v1",
+    "title": "EvoMemNav: Efficient Self-Evolving Fine-Grained Memory for Zero-Shot Embodied Navigation",
+    "abstract": "Building memory is essential for long-horizon planning in zero-shot embodied navigation. Detector-centric scene graphs often compress observations into sparse nodes, discarding fine-grained visual evidence and accumulating noise, while 3D reconstruction-based methods remain computationally prohibitive. We present EvoMemNav, an efficient, self-evolving, fine-grained memory framework for zero-shot embodied navigation. EvoMemNav constructs a Visual-Semantic Memory Graph (VSMGraph) that keeps raw views as first-class memory and organizes them with lightweight semantic cues and topological relations into a room-view-object hierarchy, preserving fine-grained details for disambiguation and Stop verification. To scale to growing memory, we introduce a budgeted coarse-to-fine policy: a coarse stage compresses the search space into promising regions, and a fine stage invokes a VLM only for targeted verification and decision. Beyond static memories, EvoMemNav performs reflection-driven write-back after each subtask, updating graph-attached priors that encode accumulated environmental knowledge to refine future decisions without retraining. Experiments on GOAT-Bench and HM3D across object, text-description, and image-goal modalities show consistent gains in SR/SPL, with better multi-instance disambiguation, fewer premature stops, and stronger zero-shot generalization.",
+    "authors": [
+      "Zuhao Ge",
+      "Xiaosong Jia",
+      "Chao Wu",
+      "Yuchen Zhou",
+      "Zuxuan Wu",
+      "Yu-Gang Jiang"
+    ],
+    "published": "2026-06-02T11:27:44+00:00",
+    "updated": "2026-06-02T11:27:44+00:00",
+    "url": "http://arxiv.org/abs/2606.03509v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.03509v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.03476v1",
+    "title": "Human2Humanoid: Physics-Aware Cross-Morphology Motion Retargeting for Humanoid Robots",
+    "abstract": "Retargeting human motion to humanoid robots is critical for teleoperation, imitation learning and human-robot interaction. However, it remains challenging because of substantial morphological discrepancies between humans and robots, including differences in skeletal topology, limb proportions and degrees of freedom, as well as the scarcity of paired motion data. This paper presents Human2Humanoid, an unsupervised motion retargeting framework that transfers human motions to humanoid robot behaviors with high fidelity. To bridge the domain gap under unpaired data, we adopt a CycleGAN-based architecture equipped with a skeleton-aware graph convolutional network to capture topology-dependent motion features. To address cross-domain scale mismatches, we introduce a morphology-invariant end-effector consistency loss that aligns normalized end-effector trajectories to preserve motion semantics across embodiments. To improve physical plausibility and reduce contact artifacts, we impose explicit physics-aware feasibility constraints to encourage reproduction of the contact patterns in the source motion. Experimental results show that the proposed method successfully retargets human motion to the Unitree G1 humanoid robot without paired data, and outperforms existing methods in both downstream controllability and physical feasibility.",
+    "authors": [
+      "Tianchen Huang",
+      "Feiyang Yuan",
+      "Junchi Gu",
+      "Shurui Fang",
+      "Xiaohu Zhang",
+      "Yu Wang",
+      "Wei Gao",
+      "Shiwu Zhang"
+    ],
+    "published": "2026-06-02T10:53:06+00:00",
+    "updated": "2026-06-02T10:53:06+00:00",
+    "url": "http://arxiv.org/abs/2606.03476v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.03476v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.03392v1",
+    "title": "OpenEAI-Platform: An Open-source Embodied Artificial Intelligence Hardware-Software Unified Platform",
+    "abstract": "Embodied AI in the real world requires both accurate hardware and robust vision-language-action (VLA) policies. We present OpenEAI-Platform, a fully open-source platform that integrates a low-cost 6+1 degree-of-freedom (dof) robotic arm (OpenEAI-Arm) and a reproducible VLA model (OpenEAI-VLA). OpenEAI-Arm provides open-source mechanical designs for low manufacturing cost and compliant control methods for higher accuracy. OpenEAI-VLA builds on Qwen3-VL-4B and uses a Diffusion Transformer action head, and is trained in two stages with only open-source robot and multimodal datasets. Across four real-world manipulation tasks, OpenEAI-Arm outperforms two commercial 6+1-dof arms under the same policy, and OpenEAI-VLA achieves success rates comparable to the large-scale pretrained pi0 baseline with only limited pretraining data. We will release the full hardware designs, drivers, models, and training/data pipelines to support reproducible research and scalable data collection. Our codes, layouts, and models will be released after the paper is accepted.",
+    "authors": [
+      "Jinyuan Zhang",
+      "Luoyi Fan",
+      "Leiyu Wang",
+      "Yeqiang Wang",
+      "Yicheng Zhu",
+      "Cewu Lu",
+      "Nanyang Ye"
+    ],
+    "published": "2026-06-02T09:34:08+00:00",
+    "updated": "2026-06-02T09:34:08+00:00",
+    "url": "http://arxiv.org/abs/2606.03392v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.03392v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.03385v1",
+    "title": "Grasp-Then-Plan with Failure Attribution: A Closed Two-Stage Framework for Precise and Generalizable Robotic Manipulation",
+    "abstract": "In robotic manipulation, the tight coupling between grasping and motion planning often obscures the true source of failure, leading to inefficient trial-and-error. To enable efficient long-horizon manipulation, we propose GTP-FA (Grasp-Then-Plan with Failure Attribution), a task-oriented two-stage grasp-then-plan framework that generates grasp candidates and performs downstream motion planning conditioned on the selected grasp. Given a failed manipulation trajectory, we learn a failure attribution model that generalizes to unseen grasps and produces a stable distribution over failure modes for diagnosis-guided optimization. Based on these attribution results, we then optimize both modules in a diagnosis-driven manner: on the grasping side, we inject task-level priors and risk penalties into grasp candidate scoring and optimization to suppress unstable or task-incompatible grasps; on the planning side, we target high-risk initial states through data collection and fine-tuning to address genuine planning bottlenecks. We evaluate the proposed framework in both simulation and real-robot experiments, and show that GTP-FA improves the corresponding base learners across RL, IL, diffusion-policy, and VLA-based settings, achieving substantially higher overall task success rates.",
+    "authors": [
+      "Jiahao Xu",
+      "Peiyuan Wang",
+      "Hanzhuo Zhang",
+      "Zihao Yu",
+      "Tianyu Fu",
+      "Hao Chen",
+      "Xuanhao Xiang",
+      "Jianbo Yu",
+      "Chenchen Fu",
+      "Wanyuan Wang"
+    ],
+    "published": "2026-06-02T09:29:03+00:00",
+    "updated": "2026-06-02T09:29:03+00:00",
+    "url": "http://arxiv.org/abs/2606.03385v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.03385v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.03374v1",
+    "title": "eMEM: A Hybrid Spatio-Temporal Memory System For Embodied Agents",
+    "abstract": "We present eMEM (Embodied Memory), a hybrid graph-based memory system for embodied agents operating in physical environments. Current agent memory architectures, such as Generative Agents, MemGPT, and A-MEM, treat memory as text streams or knowledge graphs, but embodied agents require memory that is simultaneously searchable by meaning, space, and time. eMEM fills this gap with a multi-index architecture (SQL ITE for structured storage, hnswlib for approximate nearest neighbour semantic search, and an R-tree for spatial queries) unified behind a single graph model. A tiered consolidation pipeline transforms raw perceptual observations into compressed summaries, mirroring hippocampal-neocortical consolidation in biological systems. Ten agent-facing recall tools expose memory retrieval primitives, including concept-to-location resolution and cross layer recall, as first-class operations for LLM tool calling. The system is fully embedded and runs in-process alongside the agent. In addition we introduce eMEM-Bench v1, a benchmark we construct over ProcTHOR-10K scenes for embodied memory evaluation. The benchmark is organised explicitly around eight cognitive-psychology paradigms (DRM lures, pattern separation, pattern completion, source monitoring, context-dependent retrieval, long-horizon interference, serial position, and a foil augmented retention curve), each chosen so that the result is interpretable against the broader memory-systems literature in humans and prior agent-memory systems; a level of diagnostic that surface-task benchmarks like LoCoMo or OpenEQA cannot provide. eMEM scores 80.8 weighted mean over 988 probes, with a flat retention curve at ceiling from 1 h to 1 yr of simulated delay on room-unique items. We show that a pure RAG baseline (the flat_rag ablation) loses 30 pt on context dependent retrieval and 29 pt on DRM lure rejection, isolating the contribution of multi-layer storage and consolidation respectively. We release both the system and the benchmark code.",
+    "authors": [
+      "A. Haroon Rasheed",
+      "Maria Kabtoul"
+    ],
+    "published": "2026-06-02T09:22:12+00:00",
+    "updated": "2026-06-02T09:22:12+00:00",
+    "url": "http://arxiv.org/abs/2606.03374v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.03374v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  }
+]
