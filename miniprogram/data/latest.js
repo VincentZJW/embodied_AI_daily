@@ -1,6 +1,6 @@
 const latestArticle = {
-  "title": "具身智能中文日报｜2026-06-11",
-  "date": "2026-06-11",
+  "title": "具身智能中文日报｜2026-06-12",
+  "date": "2026-06-12",
   "subtitle": "聚焦VLA、Sim2Real、Diffusion Policy，追踪论文、开源项目与产业动态。",
   "theme": "tech-dark",
   "accent_color": "#4F8CFF",
@@ -59,33 +59,33 @@ const latestArticle = {
   ],
   "papers": [
     {
-      "title": "论文 1：视觉-语言-动作模型",
-      "reason": "该论文与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文精读摘要。",
+      "title": "论文 1：机器人操作与抓取",
+      "reason": "该论文与机器人操作与抓取相关，建议配置 OpenAI API Key 后生成更准确的中文精读摘要。",
       "highlights": [
         "已从 arXiv API 合规获取元数据。",
         "当前为规则摘要，未进行深度语义翻译。"
       ],
-      "source_url": "http://arxiv.org/abs/2606.12403v1",
+      "source_url": "http://arxiv.org/abs/2606.13679v1",
       "card_type": "重点论文卡",
       "importance_score": 94,
       "tags": [
         "具身智能",
-        "机器人视觉"
+        "机器人"
       ]
     },
     {
-      "title": "论文 2：视觉-语言-动作模型",
-      "reason": "该论文与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文精读摘要。",
+      "title": "论文 2：机器人操作与抓取",
+      "reason": "该论文与机器人操作与抓取相关，建议配置 OpenAI API Key 后生成更准确的中文精读摘要。",
       "highlights": [
         "已从 arXiv API 合规获取元数据。",
         "当前为规则摘要，未进行深度语义翻译。"
       ],
-      "source_url": "http://arxiv.org/abs/2606.12402v1",
+      "source_url": "http://arxiv.org/abs/2606.13672v1",
       "card_type": "重点论文卡",
       "importance_score": 91,
       "tags": [
         "具身智能",
-        "机器人视觉"
+        "机器人"
       ]
     },
     {
@@ -95,7 +95,7 @@ const latestArticle = {
         "已从 arXiv API 合规获取元数据。",
         "当前为规则摘要，未进行深度语义翻译。"
       ],
-      "source_url": "http://arxiv.org/abs/2606.12396v1",
+      "source_url": "http://arxiv.org/abs/2606.13578v1",
       "card_type": "重点论文卡",
       "importance_score": 88,
       "tags": [
@@ -104,34 +104,33 @@ const latestArticle = {
       ]
     },
     {
-      "title": "论文 4：视觉-语言-动作模型",
+      "title": "论文 4：机器人操作与抓取",
+      "reason": "该论文与机器人操作与抓取相关，建议配置 OpenAI API Key 后生成更准确的中文精读摘要。",
+      "highlights": [
+        "已从 arXiv API 合规获取元数据。",
+        "当前为规则摘要，未进行深度语义翻译。"
+      ],
+      "source_url": "http://arxiv.org/abs/2606.13497v1",
+      "card_type": "重点论文卡",
+      "importance_score": 85,
+      "tags": [
+        "具身智能",
+        "机器人"
+      ]
+    },
+    {
+      "title": "论文 5：视觉-语言-动作模型",
       "reason": "该论文与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文精读摘要。",
       "highlights": [
         "已从 arXiv API 合规获取元数据。",
         "当前为规则摘要，未进行深度语义翻译。"
       ],
-      "source_url": "http://arxiv.org/abs/2606.12366v1",
-      "card_type": "重点论文卡",
-      "importance_score": 85,
-      "tags": [
-        "具身智能",
-        "机器人视觉"
-      ]
-    },
-    {
-      "title": "论文 5：扩散策略机器人控制",
-      "reason": "该论文与扩散策略机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文精读摘要。",
-      "highlights": [
-        "已从 arXiv API 合规获取元数据。",
-        "当前为规则摘要，未进行深度语义翻译。"
-      ],
-      "source_url": "http://arxiv.org/abs/2606.12365v1",
+      "source_url": "http://arxiv.org/abs/2606.13435v1",
       "card_type": "重点论文卡",
       "importance_score": 82,
       "tags": [
         "具身智能",
-        "Diffusion Policy",
-        "机器人"
+        "机器人视觉"
       ]
     }
   ],
@@ -139,7 +138,7 @@ const latestArticle = {
     {
       "name": "Genesis-Embodied-AI/genesis-world",
       "summary": "该项目可能聚焦仿真到真实迁移，主要语言为 Python。",
-      "why_follow": "仓库星标数约为 29313，可用于观察开源社区对仿真到真实迁移的实现方向。",
+      "why_follow": "仓库星标数约为 29325，可用于观察开源社区对仿真到真实迁移的实现方向。",
       "source_url": "https://github.com/Genesis-Embodied-AI/genesis-world",
       "card_type": "开源项目卡",
       "importance_score": 93,
@@ -151,7 +150,7 @@ const latestArticle = {
     {
       "name": "YanjieZe/awesome-humanoid-robot-learning",
       "summary": "该项目可能聚焦人形机器人控制，主要语言为 Python。",
-      "why_follow": "仓库星标数约为 2445，可用于观察开源社区对人形机器人控制的实现方向。",
+      "why_follow": "仓库星标数约为 2452，可用于观察开源社区对人形机器人控制的实现方向。",
       "source_url": "https://github.com/YanjieZe/awesome-humanoid-robot-learning",
       "card_type": "开源项目卡",
       "importance_score": 91,
@@ -176,7 +175,7 @@ const latestArticle = {
     {
       "name": "Octoday-Hub/Embodied-AI",
       "summary": "该项目可能聚焦人形机器人控制，主要语言为 未知。",
-      "why_follow": "仓库星标数约为 1122，可用于观察开源社区对人形机器人控制的实现方向。",
+      "why_follow": "仓库星标数约为 1149，可用于观察开源社区对人形机器人控制的实现方向。",
       "source_url": "https://github.com/Octoday-Hub/Embodied-AI",
       "card_type": "开源项目卡",
       "importance_score": 85,
@@ -202,56 +201,60 @@ const latestArticle = {
   ],
   "industry_updates": [
     {
-      "title": "行业动态 1：机器人操作与抓取",
-      "summary": "该动态与机器人操作与抓取相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "title": "行业动态 1：视觉-语言-动作模型",
+      "summary": "该动态与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://www.therobotreport.com/hello-robot-is-recognized-by-world-economic-forum-as-a-tech-pioneer/",
+      "source_url": "https://www.therobotreport.com/massrobotics-announces-winners-2026-robotics-medal-rising-star-awards/",
       "card_type": "行业动态卡",
       "importance_score": 86,
       "tags": [
         "具身智能",
+        "机器人视觉"
+      ]
+    },
+    {
+      "title": "行业动态 2：人形机器人控制",
+      "summary": "该动态与人形机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
+      "source_url": "https://www.therobotreport.com/robotics-summit-panel-explores-state-humanoid-robot-design/",
+      "card_type": "行业动态卡",
+      "importance_score": 87,
+      "tags": [
+        "具身智能",
+        "人形机器人",
         "机器人"
       ]
     },
     {
-      "title": "行业动态 2：具身智能评测与数据集",
-      "summary": "该动态与具身智能评测与数据集相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "title": "行业动态 3：扩散策略机器人控制",
+      "summary": "该动态与扩散策略机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://www.therobotreport.com/inside-xrzero-g0-a-new-2000-hour-open-dataset-for-robotics-research/",
-      "card_type": "行业动态卡",
-      "importance_score": 83,
-      "tags": [
-        "具身智能"
-      ]
-    },
-    {
-      "title": "行业动态 3：机器人操作与抓取",
-      "summary": "该动态与机器人操作与抓取相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
-      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://content.knowledgehub.wiley.com/wellness-robots-and-the-path-to-full-autonomy-a-new-paradigm-in-ai-powered-senior-care/",
+      "source_url": "https://spectrum.ieee.org/researcher-trains-robots-to-guess",
       "card_type": "行业动态卡",
       "importance_score": 80,
       "tags": [
         "具身智能",
+        "Diffusion Policy",
         "机器人"
       ]
     },
     {
-      "title": "行业动态 4：具身智能评测与数据集",
-      "summary": "该动态与具身智能评测与数据集相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "title": "行业动态 4：机器人操作与抓取",
+      "summary": "该动态与机器人操作与抓取相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://blogs.nvidia.com/blog/halos-os-robotaxi-safety/",
+      "source_url": "https://www.therobotreport.com/gatik-brings-autonomous-freight-pepsico-north-american-supply-chain/",
       "card_type": "行业动态卡",
       "importance_score": 77,
       "tags": [
-        "具身智能"
+        "具身智能",
+        "机器人"
       ]
     },
     {
       "title": "行业动态 5：人形机器人控制",
       "summary": "该动态与人形机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://www.therobotreport.com/neura-robotics-raise-up-1-4b-in-series-c-funding-physical-ai/",
+      "source_url": "https://spectrum.ieee.org/video-friday-humanoid-loco-manipulation",
       "card_type": "行业动态卡",
       "importance_score": 78,
       "tags": [
@@ -352,36 +355,36 @@ const latestArticle = {
   ],
   "sources": [
     {
-      "name": "论文 1：视觉-语言-动作模型",
-      "url": "http://arxiv.org/abs/2606.12403v1",
+      "name": "论文 1：机器人操作与抓取",
+      "url": "http://arxiv.org/abs/2606.13679v1",
       "type": "论文",
       "card_type": "来源链接卡",
       "importance_score": 78
     },
     {
-      "name": "论文 2：视觉-语言-动作模型",
-      "url": "http://arxiv.org/abs/2606.12402v1",
+      "name": "论文 2：机器人操作与抓取",
+      "url": "http://arxiv.org/abs/2606.13672v1",
       "type": "论文",
       "card_type": "来源链接卡",
       "importance_score": 75
     },
     {
       "name": "论文 3：视觉-语言-动作模型",
-      "url": "http://arxiv.org/abs/2606.12396v1",
+      "url": "http://arxiv.org/abs/2606.13578v1",
       "type": "论文",
       "card_type": "来源链接卡",
       "importance_score": 72
     },
     {
-      "name": "论文 4：视觉-语言-动作模型",
-      "url": "http://arxiv.org/abs/2606.12366v1",
+      "name": "论文 4：机器人操作与抓取",
+      "url": "http://arxiv.org/abs/2606.13497v1",
       "type": "论文",
       "card_type": "来源链接卡",
       "importance_score": 69
     },
     {
-      "name": "论文 5：扩散策略机器人控制",
-      "url": "http://arxiv.org/abs/2606.12365v1",
+      "name": "论文 5：视觉-语言-动作模型",
+      "url": "http://arxiv.org/abs/2606.13435v1",
       "type": "论文",
       "card_type": "来源链接卡",
       "importance_score": 66
@@ -422,36 +425,36 @@ const latestArticle = {
       "importance_score": 60
     },
     {
-      "name": "行业动态 1：机器人操作与抓取",
-      "url": "https://www.therobotreport.com/hello-robot-is-recognized-by-world-economic-forum-as-a-tech-pioneer/",
+      "name": "行业动态 1：视觉-语言-动作模型",
+      "url": "https://www.therobotreport.com/massrobotics-announces-winners-2026-robotics-medal-rising-star-awards/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
-      "name": "行业动态 2：具身智能评测与数据集",
-      "url": "https://www.therobotreport.com/inside-xrzero-g0-a-new-2000-hour-open-dataset-for-robotics-research/",
+      "name": "行业动态 2：人形机器人控制",
+      "url": "https://www.therobotreport.com/robotics-summit-panel-explores-state-humanoid-robot-design/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
-      "name": "行业动态 3：机器人操作与抓取",
-      "url": "https://content.knowledgehub.wiley.com/wellness-robots-and-the-path-to-full-autonomy-a-new-paradigm-in-ai-powered-senior-care/",
+      "name": "行业动态 3：扩散策略机器人控制",
+      "url": "https://spectrum.ieee.org/researcher-trains-robots-to-guess",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
-      "name": "行业动态 4：具身智能评测与数据集",
-      "url": "https://blogs.nvidia.com/blog/halos-os-robotaxi-safety/",
+      "name": "行业动态 4：机器人操作与抓取",
+      "url": "https://www.therobotreport.com/gatik-brings-autonomous-freight-pepsico-north-american-supply-chain/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
       "name": "行业动态 5：人形机器人控制",
-      "url": "https://www.therobotreport.com/neura-robotics-raise-up-1-4b-in-series-c-funding-physical-ai/",
+      "url": "https://spectrum.ieee.org/video-friday-humanoid-loco-manipulation",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
