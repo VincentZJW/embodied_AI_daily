@@ -1,7 +1,7 @@
 const latestArticle = {
-  "title": "具身智能中文日报｜2026-06-12",
-  "date": "2026-06-12",
-  "subtitle": "聚焦VLA、Sim2Real、Diffusion Policy，追踪论文、开源项目与产业动态。",
+  "title": "具身智能中文日报｜2026-06-13",
+  "date": "2026-06-13",
+  "subtitle": "聚焦VLA、Sim2Real、人形机器人，追踪论文、开源项目与产业动态。",
   "theme": "tech-dark",
   "accent_color": "#4F8CFF",
   "tags": [
@@ -138,7 +138,7 @@ const latestArticle = {
     {
       "name": "Genesis-Embodied-AI/genesis-world",
       "summary": "该项目可能聚焦仿真到真实迁移，主要语言为 Python。",
-      "why_follow": "仓库星标数约为 29325，可用于观察开源社区对仿真到真实迁移的实现方向。",
+      "why_follow": "仓库星标数约为 29333，可用于观察开源社区对仿真到真实迁移的实现方向。",
       "source_url": "https://github.com/Genesis-Embodied-AI/genesis-world",
       "card_type": "开源项目卡",
       "importance_score": 93,
@@ -150,7 +150,7 @@ const latestArticle = {
     {
       "name": "YanjieZe/awesome-humanoid-robot-learning",
       "summary": "该项目可能聚焦人形机器人控制，主要语言为 Python。",
-      "why_follow": "仓库星标数约为 2452，可用于观察开源社区对人形机器人控制的实现方向。",
+      "why_follow": "仓库星标数约为 2453，可用于观察开源社区对人形机器人控制的实现方向。",
       "source_url": "https://github.com/YanjieZe/awesome-humanoid-robot-learning",
       "card_type": "开源项目卡",
       "importance_score": 91,
@@ -173,52 +173,39 @@ const latestArticle = {
       ]
     },
     {
-      "name": "Octoday-Hub/Embodied-AI",
-      "summary": "该项目可能聚焦人形机器人控制，主要语言为 未知。",
-      "why_follow": "仓库星标数约为 1149，可用于观察开源社区对人形机器人控制的实现方向。",
-      "source_url": "https://github.com/Octoday-Hub/Embodied-AI",
-      "card_type": "开源项目卡",
-      "importance_score": 85,
-      "tags": [
-        "具身智能",
-        "人形机器人",
-        "机器人"
-      ]
-    },
-    {
       "name": "FluxVLA/FluxVLA",
       "summary": "该项目可能聚焦视觉-语言-动作模型，主要语言为 Python。",
       "why_follow": "仓库星标数约为 463，可用于观察开源社区对视觉-语言-动作模型的实现方向。",
       "source_url": "https://github.com/FluxVLA/FluxVLA",
       "card_type": "开源项目卡",
-      "importance_score": 83,
+      "importance_score": 86,
       "tags": [
         "具身智能",
         "VLA",
+        "机器人视觉"
+      ]
+    },
+    {
+      "name": "microsoft/VITRA",
+      "summary": "该项目可能聚焦视觉-语言-动作模型，主要语言为 Python。",
+      "why_follow": "仓库星标数约为 400，可用于观察开源社区对视觉-语言-动作模型的实现方向。",
+      "source_url": "https://github.com/microsoft/VITRA",
+      "card_type": "开源项目卡",
+      "importance_score": 78,
+      "tags": [
+        "具身智能",
         "机器人视觉"
       ]
     }
   ],
   "industry_updates": [
     {
-      "title": "行业动态 1：视觉-语言-动作模型",
-      "summary": "该动态与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
-      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://www.therobotreport.com/massrobotics-announces-winners-2026-robotics-medal-rising-star-awards/",
-      "card_type": "行业动态卡",
-      "importance_score": 86,
-      "tags": [
-        "具身智能",
-        "机器人视觉"
-      ]
-    },
-    {
-      "title": "行业动态 2：人形机器人控制",
+      "title": "行业动态 1：人形机器人控制",
       "summary": "该动态与人形机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://www.therobotreport.com/robotics-summit-panel-explores-state-humanoid-robot-design/",
+      "source_url": "https://spectrum.ieee.org/robot-emotions-visual-language-models",
       "card_type": "行业动态卡",
-      "importance_score": 87,
+      "importance_score": 90,
       "tags": [
         "具身智能",
         "人形机器人",
@@ -226,35 +213,45 @@ const latestArticle = {
       ]
     },
     {
-      "title": "行业动态 3：扩散策略机器人控制",
-      "summary": "该动态与扩散策略机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "title": "行业动态 2：视觉-语言-动作模型",
+      "summary": "该动态与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://spectrum.ieee.org/researcher-trains-robots-to-guess",
+      "source_url": "https://www.therobotreport.com/computers-software-windows-utility-robots/",
       "card_type": "行业动态卡",
-      "importance_score": 80,
+      "importance_score": 83,
       "tags": [
         "具身智能",
-        "Diffusion Policy",
-        "机器人"
+        "机器人视觉"
       ]
     },
     {
-      "title": "行业动态 4：机器人操作与抓取",
-      "summary": "该动态与机器人操作与抓取相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "title": "行业动态 3：具身智能评测与数据集",
+      "summary": "该动态与具身智能评测与数据集相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://www.therobotreport.com/gatik-brings-autonomous-freight-pepsico-north-american-supply-chain/",
+      "source_url": "https://www.therobotreport.com/ai-in-warehousing-akash-guptas-vision-for-the-future/",
+      "card_type": "行业动态卡",
+      "importance_score": 80,
+      "tags": [
+        "具身智能"
+      ]
+    },
+    {
+      "title": "行业动态 4：视觉-语言-动作模型",
+      "summary": "该动态与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
+      "source_url": "https://www.therobotreport.com/massrobotics-announces-winners-2026-robotics-medal-rising-star-awards/",
       "card_type": "行业动态卡",
       "importance_score": 77,
       "tags": [
         "具身智能",
-        "机器人"
+        "机器人视觉"
       ]
     },
     {
       "title": "行业动态 5：人形机器人控制",
       "summary": "该动态与人形机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://spectrum.ieee.org/video-friday-humanoid-loco-manipulation",
+      "source_url": "https://www.therobotreport.com/robotics-summit-panel-explores-state-humanoid-robot-design/",
       "card_type": "行业动态卡",
       "importance_score": 78,
       "tags": [
@@ -411,13 +408,6 @@ const latestArticle = {
       "importance_score": 60
     },
     {
-      "name": "Octoday-Hub/Embodied-AI",
-      "url": "https://github.com/Octoday-Hub/Embodied-AI",
-      "type": "GitHub",
-      "card_type": "来源链接卡",
-      "importance_score": 60
-    },
-    {
       "name": "FluxVLA/FluxVLA",
       "url": "https://github.com/FluxVLA/FluxVLA",
       "type": "GitHub",
@@ -425,36 +415,43 @@ const latestArticle = {
       "importance_score": 60
     },
     {
-      "name": "行业动态 1：视觉-语言-动作模型",
+      "name": "microsoft/VITRA",
+      "url": "https://github.com/microsoft/VITRA",
+      "type": "GitHub",
+      "card_type": "来源链接卡",
+      "importance_score": 60
+    },
+    {
+      "name": "行业动态 1：人形机器人控制",
+      "url": "https://spectrum.ieee.org/robot-emotions-visual-language-models",
+      "type": "行业动态",
+      "card_type": "来源链接卡",
+      "importance_score": 60
+    },
+    {
+      "name": "行业动态 2：视觉-语言-动作模型",
+      "url": "https://www.therobotreport.com/computers-software-windows-utility-robots/",
+      "type": "行业动态",
+      "card_type": "来源链接卡",
+      "importance_score": 60
+    },
+    {
+      "name": "行业动态 3：具身智能评测与数据集",
+      "url": "https://www.therobotreport.com/ai-in-warehousing-akash-guptas-vision-for-the-future/",
+      "type": "行业动态",
+      "card_type": "来源链接卡",
+      "importance_score": 60
+    },
+    {
+      "name": "行业动态 4：视觉-语言-动作模型",
       "url": "https://www.therobotreport.com/massrobotics-announces-winners-2026-robotics-medal-rising-star-awards/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
-      "name": "行业动态 2：人形机器人控制",
-      "url": "https://www.therobotreport.com/robotics-summit-panel-explores-state-humanoid-robot-design/",
-      "type": "行业动态",
-      "card_type": "来源链接卡",
-      "importance_score": 60
-    },
-    {
-      "name": "行业动态 3：扩散策略机器人控制",
-      "url": "https://spectrum.ieee.org/researcher-trains-robots-to-guess",
-      "type": "行业动态",
-      "card_type": "来源链接卡",
-      "importance_score": 60
-    },
-    {
-      "name": "行业动态 4：机器人操作与抓取",
-      "url": "https://www.therobotreport.com/gatik-brings-autonomous-freight-pepsico-north-american-supply-chain/",
-      "type": "行业动态",
-      "card_type": "来源链接卡",
-      "importance_score": 60
-    },
-    {
       "name": "行业动态 5：人形机器人控制",
-      "url": "https://spectrum.ieee.org/video-friday-humanoid-loco-manipulation",
+      "url": "https://www.therobotreport.com/robotics-summit-panel-explores-state-humanoid-robot-design/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
