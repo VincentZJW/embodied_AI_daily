@@ -1,0 +1,413 @@
+[
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.14665v1",
+    "title": "EgoGuide: Egocentric Guidance for Efficient Robot-Free Demonstration Collection and Learning",
+    "abstract": "Robot learning from real-world demonstrations is currently constrained by data scaling. Universal Manipulation Interface (UMI) provides an efficient robot-free data collection interface, yet current UMI-style pipelines often collect redundant demonstrations and lack global scene context. To improve data efficiency, we present EgoGuide, a collection interface that records synchronized wrist and head/egocentric observations and couples them with online visual-geometric data quality guidance. We also introduce a Gated Egocentric Residual Policy for robust learning from a viewpoint-varying egocentric camera, allowing head/egocentric context to correct ambiguous local observations while preserving stable wrist-view control. Real-world experiments show that EgoGuide reduces the required number of data episodes and improves data efficiency. The residual policy further improves robustness under visual occlusion. Project Page: https://silicx.github.io/EgoGuide",
+    "authors": [
+      "Yue Xu",
+      "Mingtao Nie",
+      "Tianle Li",
+      "Hong Li",
+      "Yibo Luo",
+      "Siyuan Huang",
+      "Yong-Lu Li"
+    ],
+    "published": "2026-06-12T17:36:23+00:00",
+    "updated": "2026-06-12T17:36:23+00:00",
+    "url": "http://arxiv.org/abs/2606.14665v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.14665v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.14617v1",
+    "title": "Whole-Body Impedance Model Predictive Control for Safe Physical Human--Robot Interaction on Floating-Base Platforms",
+    "abstract": "Floating-base robots must balance under rigid contact constraints while interacting safely with humans. Existing whole-body control~(WBC) frameworks allocate the full joint space to locomotion or rely on fixed-gain impedance feedback that accumulates steady-state error under sustained physical human--robot interaction~(pHRI) forces. This paper extends the authors' fixed-base two-layer Impedance MPC to floating-base platforms through a three-level architecture: a centroidal MPC plans contact forces over a 500\\,ms horizon; a priority-driven WBC layer resolves balance into joint torques through contact-consistent null-space projection; and the residual null space is governed by a receding-horizon quadratic program~(QP) that predicts and rejects pHRI disturbances using a Kalman-augmented state. A contact-consistent feedback linearization reduces the arm end-effector plant to a double integrator with a \\emph{constant} state matrix within each contact mode, enabling offline precomputation of the QP cost and ${\\geq}1$\\,kHz operation. A covariance-inflation protocol preserves the disturbance estimate across contact-mode switches, guaranteeing zero steady-state error under bounded constant pHRI loads, and an Impedance Equivalence Theorem shows the infinite-horizon limit recovers a classical task-space impedance law whose effective mass, damping, and stiffness adapt to posture and contact configuration. Simulations on a 17-DOF biped and the Unitree G1 humanoid validate the design.",
+    "authors": [
+      "Yongyan Cao"
+    ],
+    "published": "2026-06-12T16:41:20+00:00",
+    "updated": "2026-06-12T16:41:20+00:00",
+    "url": "http://arxiv.org/abs/2606.14617v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.14617v1",
+    "categories": [
+      "cs.RO",
+      "eess.SY"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.14602v1",
+    "title": "What Robots Do Matters More Than What They Look Like: Task Context Shapes Trust in Educational HRI",
+    "abstract": "Socially assistive robots (SARs) are increasingly deployed in educational and information-sharing contexts, supported by advances in large language models that enable fluent real-time interaction. Despite the growing diversity of robot embodiments, it remains unclear whether a single robot appearance is appropriate across different interaction tasks or whether trust depends primarily on contextual factors. In this study, we examine how robot appearance and task type jointly influence trust in robots. Using a within-subjects video-based experiment (N = 81), participants evaluated three robots with distinct appearances while performing three educationally relevant tasks: teaching, procedural instruction, and personal-information discussion. Results from repeated-measures analyses show a strong main effect of task on trust, with participants reporting the highest trust during instructional guidance, moderate trust during teaching activities, and significantly lower trust when robots requested personal information. In contrast, robot appearance showed no significant main effect, and the interaction between appearance and task was marginal. These findings suggest that trust in human-robot interaction is shaped more strongly by task context than by physical embodiment alone. By focusing on future educators as end users, this work contributes empirical evidence toward task-aware robot deployment in educational environments and highlights the importance of aligning robot roles and behaviors with interaction goals rather than relying solely on anthropomorphic design.",
+    "authors": [
+      "Anna-Maria Velentza",
+      "Konstantina Nikou",
+      "Anne-Gwenn Bosser",
+      "Nikolaos Fachantidis"
+    ],
+    "published": "2026-06-12T16:23:49+00:00",
+    "updated": "2026-06-12T16:23:49+00:00",
+    "url": "http://arxiv.org/abs/2606.14602v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.14602v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.14561v1",
+    "title": "ORCA: A Platform for Open-Source Dexterity Research",
+    "abstract": "Robotics manipulation research increasingly focuses on two-finger parallel grippers for their effectiveness, affordability, and ease of teleoperation. Grippers are nonetheless limited by their form factor, often requiring bimanual setups even for simple reorientation tasks. Anthropomorphic hands are a more natural platform for dexterous robot learning -- closer to the human hand, and capable of learning from human video -- yet they remain hard to use in learning research: even where open and accessible hand hardware exists, the software for control, simulation, teleoperation, and retargeting is scattered in one-off code bases, and largely disconnected from the robot-learning ecosystem. In this work, we introduce the \\orca~learning stack, an open-source research stack for dexterity as a first-class robot learning domain. Our \\orca~stack unifies low-level control, simulation, teleoperation from a range of consumer platforms, and hand retargeting, behind a single interface, and integrates natively with popular robot-learning frameworks such as \\lerobot, so dexterous hand researchers can leverage the same data, training, and evaluation pipelines used for non-dexterous robot learning. We demonstrate a complete end-to-end workflow, collecting expert demonstrations of an in-hand reorientation task by teleoperation with a consumer-grade VR headset, training an autonomous policy with \\lerobot, and evaluating the learned policy in a fully reproducible and observable setup. We open-source the entire stack as a shared, reproducible foundation for dexterous-manipulation research.",
+    "authors": [
+      "Francesco Capuano",
+      "Maximilian Eberlein",
+      "Fabrice Bourquin",
+      "Clemens Claudio Christoph"
+    ],
+    "published": "2026-06-12T15:38:34+00:00",
+    "updated": "2026-06-12T15:38:34+00:00",
+    "url": "http://arxiv.org/abs/2606.14561v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.14561v1",
+    "categories": [
+      "cs.RO",
+      "cs.LG"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.14535v1",
+    "title": "Spatially Conditioned Diffusion Policy: Learning Precise and Robust Manipulation with a Single RGB Camera",
+    "abstract": "Recent visual imitation learning systems have widely adopted multi-camera setups with wrist-mounted cameras as the de facto standard. However, manipulation from a single global view remains challenging, as the policy should capture fine-grained interaction details and identify task-relevant regions without local wrist views. To address this challenge, we present Spatially Conditioned Diffusion Policy (SCDP), a diffusion-based visuomotor policy that achieves precise and robust manipulation in a single-camera setting. Our key idea is that end-effector trajectories can serve as visual attention anchors that reflect task-relevant regions. Building on this idea, SCDP consists of two key components: (i) a visual encoder that produces multi-scale feature maps to capture both broader context and fine-grained visual features, and (ii) a spatial conditioning module that samples point-wise features along intermediate end-effector trajectories in the diffusion loop. Extensive simulation experiments show that SCDP consistently outperforms strong single-view baselines and achieves performance comparable to multi-camera baselines. Real-world experiments further demonstrate precise manipulation and robustness to visual distractors, highlighting the potential of single-camera imitation learning.",
+    "authors": [
+      "Seoyoon Kim",
+      "Kanghyun Kim",
+      "Dongwoo Ko",
+      "Yeong Jin Heo",
+      "Min Jun Kim"
+    ],
+    "published": "2026-06-12T15:12:03+00:00",
+    "updated": "2026-06-12T15:12:03+00:00",
+    "url": "http://arxiv.org/abs/2606.14535v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.14535v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.14409v1",
+    "title": "Hy-Embodied-0.5-VLA: From Vision-Language-Action Models to a Real-World Robot Learning Stack",
+    "abstract": "In this report, we present Hy-Embodied-0.5-VLA, abbreviated as HyVLA-0.5, an end-to-end system that spans the full robot learning stack: data collection, model design, continued pre-training and supervised fine-tuning, RL post-training, and real-world deployment. Each component serves a distinct role in this stack.",
+    "authors": [
+      "He Zhang",
+      "Lingzhu Xiang",
+      "Haitao Lin",
+      "Zeyu Huang",
+      "Minghui Wang",
+      "Dingyan Zhong",
+      "Yubo Dong",
+      "Yihao Wu",
+      "Yongming Rao",
+      "Dongsheng Zhang",
+      "Wanjia He",
+      "Ling Chen",
+      "Kai Huang",
+      "Jiahao Chen",
+      "Sichang Su",
+      "Xumin Yu",
+      "Ziyi Wang",
+      "Chengwei Zhu",
+      "Xiao Teng",
+      "Yuchun Guo",
+      "Yufeng Zhang",
+      "Yuandong Liu",
+      "Rui Wang",
+      "Zisheng Lu",
+      "Han Hu",
+      "Zhengyou Zhang"
+    ],
+    "published": "2026-06-12T12:45:18+00:00",
+    "updated": "2026-06-12T12:45:18+00:00",
+    "url": "http://arxiv.org/abs/2606.14409v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.14409v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.14375v1",
+    "title": "Elastic Queries Reinforcement Learning: Self-Aware Policy Execution for VLA Models",
+    "abstract": "Vision-language-action (VLA) models are powerful action generators for robot manipulation, but they are typically executed with fixed inference and replanning schedules. This rigidity ignores the uneven difficulty of robot control: contact-rich or uncertain states may need more computation and fresher feedback, while easier states can often be handled with fewer inference steps and longer open-loop execution. We propose Elastic Queries Reinforcement Learning (EQRL), a framework that makes each VLA policy query elastic. A lightweight latent-schedule adaptor jointly selects the latent input, denoising budget, and action chunk length, without fine-tuning the underlying VLA model. To make scheduling difficulty-aware, EQRL trains a critic over the joint latent-schedule action and derives a state difficulty signal from critic ensemble disagreement. This signal guides compute toward difficult states, while a learned residual allows task-driven correction. We formulate variable chunk execution as query-level macro-action RL with chunk-dependent discounting and an amortized number-of-function-evaluations (NFE) budget. Across simulation and real-robot manipulation, EQRL reduces amortized inference cost while preserving or improving task success.",
+    "authors": [
+      "Ge Wang",
+      "Xinyu Tan",
+      "Xiang Li",
+      "Man Luo",
+      "Chengsi Yao",
+      "Shenhao Yan",
+      "Jiahao Yang",
+      "Fan Feng",
+      "Honghao Cai",
+      "Xiangyuan Wang",
+      "Zhixin Mai",
+      "Yiming Zhao",
+      "Yatong Han",
+      "Zhen Li"
+    ],
+    "published": "2026-06-12T12:06:41+00:00",
+    "updated": "2026-06-12T12:06:41+00:00",
+    "url": "http://arxiv.org/abs/2606.14375v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.14375v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.14270v1",
+    "title": "Robust Fall Recovery for Armless Bipedal-Wheeled Robots Via Force-Guided Learning",
+    "abstract": "Fall recovery is critical for autonomous legged locomotion. Existing methods have demonstrated that some legged robots, such as humanoids and quadrupeds, are capable of fall recovery from diverse postures by utilizing arms or coordinating multi-legs to generate support forces. Without arms or other legs to provide supportive assistance, a bipedal-wheeled robot must rely solely on the actuation of its legs, making recovery particularly difficult. To address this, we introduce FTSR (Force-guided Teacher-student framework with Stage-wise Rewards). The force-guided method constructs an external auxiliary force during simulation training that correlates directly with the robot's real-time height, explicitly formulating this force as an optimizable constraint. Through constrained reinforcement learning, the policy is guided toward reducing force dependency gradually and increasing the body height, developing internal recovery strategies despite having no arms for support. Height-progressive stage-Wise rewards progressively structure posture stabilization during recovery and transition to sustained locomotion, integrated with teacher-student architecture distilling privileged knowledge of force effects and recovery dynamics. After simulation training, the policy is deployed on a physical armless bipedal-wheeled robot and extensively evaluated. Experiments confirm robust and reliable fall recovery under diverse challenging conditions, demonstrating strong environmental adaptability and motion robustness, while maintaining full post-recovery motion capability. The framework also generalizes effectively to a high-DOF humanoid, confirming its practical generalizability. The project page is available at https://2350575870.github.io/force-guided.github.io/",
+    "authors": [
+      "Haidong Hou",
+      "Zhangguo Yu",
+      "Tao Han",
+      "Hengbo Qi",
+      "Khaleel Ghazal",
+      "Yu Zhang",
+      "Yidong Du",
+      "Xuechao Chen",
+      "Fei Meng"
+    ],
+    "published": "2026-06-12T08:51:51+00:00",
+    "updated": "2026-06-12T08:51:51+00:00",
+    "url": "http://arxiv.org/abs/2606.14270v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.14270v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.14267v1",
+    "title": "FloVerse: Floor Plan-Guided Multi-Modal Navigation",
+    "abstract": "Floor plans encapsulate compact spatial priors, enabling agents to navigate unseen scenes more efficiently. While prior work has explored floor plan-guided navigation, it has focused mainly on PointNav and a limited set of environments. To bridge this gap, we introduce FloVerse, a new task for floor plan-guided embodied navigation that unifies PointNav, ObjectNav, and ImageNav. To support FloVerse, we assemble FloVerse-1.6K, a large-scale dataset of 1.6K scenes from HM3D and Gibson 4+, paired with corresponding floor plans, comprising 240K expert trajectories and 12M RGBD frames. We further propose ThreeDiff, a two-stage imitation learning policy comprising a planner, a diffusion-based multimodal goal-reasoning module trained via masked-modality modeling, and a refiner, a depth-based trajectory-refinement module for safe execution. Extensive experiments demonstrate that (1) floor-plan priors improve navigation performance across all goal modalities, and (2) ThreeDiff implicitly captures spatial information from floor plans. These results underscore the effectiveness of spatial priors and validate our proposed unified approach for floor plan-guided embodied navigation.",
+    "authors": [
+      "Weiqi Huang",
+      "Shuangyi Dong",
+      "Jiaxin Li",
+      "Yifei Guo",
+      "Zan Wang",
+      "Wei Liang"
+    ],
+    "published": "2026-06-12T08:49:53+00:00",
+    "updated": "2026-06-12T08:49:53+00:00",
+    "url": "http://arxiv.org/abs/2606.14267v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.14267v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.14255v1",
+    "title": "ReactVLA: Fast and Lightweight Reactive Robot Manipulation via Improved Mean Flow Action Generation",
+    "abstract": "Diffusion-based Vision-Language-Action (VLA) policies have demonstrated strong capability in modeling expressive and multimodal action distributions. However, their reliance on iterative sampling introduces substantial inference latency, which limits their applicability to reactive closed-loop robot manipulation. To address this limitation, we propose \\texttt{ReactVLA}, a lightweight and low-latency VLA framework for real-time robotic manipulation. \\texttt{ReactVLA} combines two complementary designs: (1) an improved Mean Flow (iMF) action generator that reduces expensive multi-step diffusion sampling to one-to-few-step action generation, and (2) Attention Residuals (AttnRes), a dynamic depth-wise feature routing mechanism that replaces uniform residual accumulation to better preserve task-relevant multimodal representations. We evaluate \\texttt{ReactVLA} on large-scale simulation benchmarks, including LIBERO and RoboIMI, as well as real-world robotic manipulation tasks. Experimental results show that \\texttt{ReactVLA} consistently outperforms similarly sized VLA baselines, including SmolVLA and $π_0$. On challenging precision manipulation tasks, \\texttt{ReactVLA} achieves up to a 1.65$\\times$ improvement in task performance while providing more than a 4$\\times$ increase in inference speed compared with leading VLA models. Finally, it reduces real-world policy latency to below 38.6 ms, enabling fast reactive control on physical robot platforms. Please check out our project website at: https://game-loader.github.io/ReactVLA/.",
+    "authors": [
+      "Yanzhao Guo",
+      "Wenkai Chen",
+      "Jianwei Zhang"
+    ],
+    "published": "2026-06-12T08:33:37+00:00",
+    "updated": "2026-06-12T08:33:37+00:00",
+    "url": "http://arxiv.org/abs/2606.14255v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.14255v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.14238v1",
+    "title": "When and How Severely: Scenario-Specific Safety Envelopes for Driving VLAs",
+    "abstract": "Safety certification of Vision-Language-Action (VLA) driving planners under ISO 21448 (SOTIF) rests on an Operational Design Domain (ODD) specification that answers two complementary questions: when does the planner start to fail, and how severely does it fail once it does? We evaluate Alpamayo R1, a 10B-parameter open-weight driving VLA, on 15,968 (clip, attack) pairs. We find a conservative-aggregate gap: an aggregate safe threshold of $σ\\leq 50$ under a 15% average displacement error (ADE) budget masks well-sampled scenarios that tolerate the top of the tested grid ($σ= 70$). A Gaussian Mixture Model (GMM) on the changed-explanation subset identifies six discrete severity bands (BIC-optimal $k{=}6$), so two perturbation conditions with the same mean error can differ materially in their share of high-severity (C4/C5) failures. Joining the two analyses on the same corpus surfaces a finding neither yields in isolation: the scenarios with the loosest noise thresholds are not those with the lowest high-severity rate: STOP_SIGNAL concentrates roughly $4\\times$ the C4/C5 share of LANE_KEEPING despite tolerating a larger $σ$. A deployable SOTIF ODD specification for driving VLAs therefore requires a two-dimensional safety envelope, not a single aggregate value per hazard.",
+    "authors": [
+      "Abhinaw Priyadershi",
+      "Jelena Frtunikj"
+    ],
+    "published": "2026-06-12T08:20:06+00:00",
+    "updated": "2026-06-12T08:20:06+00:00",
+    "url": "http://arxiv.org/abs/2606.14238v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.14238v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.14199v1",
+    "title": "OdysSim: Building Foundation Models for Human Behavior Simulation",
+    "abstract": "Large language models are increasingly deployed as human simulators for interactive evaluation and social simulation. Yet helpfulness-driven post-training pulls them toward a homogeneous, overly agreeable assistant register, creating a behavioral Sim2Real gap. We present OdysSim, the largest open systematic investigation of behavioral foundation models, i.e., models trained to simulate human behavior at scale. We propose SOUL, a taxonomy of five capability axes (CONV, SS, COG, ROLE, EVAL) that unifies 62 datasets and 23 benchmark tasks under one framework. Specifically, we curate the OdysSim corpus (21.4M interactions, 10B tokens, retrofitted with back-generated social contexts), construct the SOUL-Index benchmark, and develop an end-to-end training recipe combining midtraining, task-specific RL, and expert distillation. The resulting open 8B OSim model ranks first or tied-first on 8 of 23 tasks, outperforming any individual frontier model by this count, with the strongest gains on conversational and social tasks. Its outputs are also more human-like in length, formatting, and word choice, and it transfers zero-shot to out-of-distribution user simulation on $τ$-bench, nearly matching real users on reaction alignment (93.2 vs. 93.5). We further show that LLM-as-judge RL induces reward-hacking patterns, and that our detectors can mitigate them during post-training. Together, our findings suggest that behavioral foundation models require rethinking the LLM training paradigm. We release all artifacts to support future research.",
+    "authors": [
+      "Xuhui Zhou",
+      "Weiwei Sun",
+      "Weihua Du",
+      "Jiarui Liu",
+      "Haojia Sun",
+      "Qianou Ma",
+      "Tongshuang Wu",
+      "Yiming Yang",
+      "Maarten Sap"
+    ],
+    "published": "2026-06-12T07:31:55+00:00",
+    "updated": "2026-06-12T07:31:55+00:00",
+    "url": "http://arxiv.org/abs/2606.14199v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.14199v1",
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "primary_category": "cs.CL"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.14168v1",
+    "title": "MUSE: Agentic 3D Scene Authoring via Memory-Grounded Incremental Requirement Satisfaction",
+    "abstract": "Text-driven 3D scene generation is a promising technique for digital content creation, embodied AI simulation, and interactive design, yet practical workflows often require refining, extending, or correcting existing scenes while preserving non-target content. Existing methods can produce realistic and structurally plausible scenes, but they generally lack editability with requirement-level state tracking, so part-level failures often lead to full-scene regeneration or manual intervention. To tackle this challenge, we formulate controllable 3D scene authoring as incremental requirement satisfaction, unifying construction and editing. In this paper, we present MUSE, a memory-grounded multi-agent framework in which an Architect compiles instructions into structured requirements, a Sculptor executes local scene operations, and an Inspector verifies each step while updating Working, Scene, and Skill Memory. To evaluate requirement-level controllability and preservation-aware editing, we introduce AuthorBench, offering 145 constrained construction cases and a 1,584-case preservation-aware editing pool paired with external structured checks. On full construction cases, MUSE improves All-Goal success from 37.9 to 80.7 and surface-constraint fulfillment from 35.0 to 92.6 over the strongest baseline. On a stratified 240-case editing test split, MUSE achieves 49.6 All-Goal success, 99.9 preservation rate, and only 0.6 unintended change rate. Beyond automated metrics, human evaluations on compared local-editing baselines support stronger alignment with user intent, and downstream navigation-proxy tests indicate stronger spatial stability. Combined with ablations validating our memory designs, these results establish MUSE as an effective framework for controllable 3D scene authoring.",
+    "authors": [
+      "Ruijie Xu",
+      "Xinnan Zhu",
+      "Jiayu Ying",
+      "Daoguo Dong",
+      "Yuzhou Ji",
+      "Xin Tan"
+    ],
+    "published": "2026-06-12T06:51:08+00:00",
+    "updated": "2026-06-12T06:51:08+00:00",
+    "url": "http://arxiv.org/abs/2606.14168v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.14168v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.14153v1",
+    "title": "Encoder Winners Do Not Reliably Transfer Across VLA Backbone Scale: A Frozen-Backbone Grafting Diagnostic",
+    "abstract": "Vision-language-action (VLA) policies typically inherit their vision encoder from upstream VLM releases, but it is unclear whether an encoder choice validated on a small VLA transfers to a larger backbone. We introduce a frozen-backbone grafting diagnostic: the vision tower of a released VLA is replaced by a candidate encoder under a fixed protocol (adaptive average pooling, LayerNorm, and a single trainable linear projector), with the language model and action expert frozen. Across four encoders, two LIBERO suites, two backbones (SmolVLA-450M and $π_{0.5}$-3.3B), and two-to-three seeds per cell (40 main grafting runs plus native, LoRA, pooling, and zero-/shuffled-image controls, all scored by offline action MSE), the small-backbone winner does not reliably select the large-backbone top tier: SigLIP is best on SmolVLA across both suites, while on $π_{0.5}$ DINOv2-small leads the spatial suite and the object suite is a seed-sensitive near-tie band; three of the four backbone-suite comparisons (and 11 of 12 seed-level cells) support backbone-dependent rankings. The grafting wrapper is itself non-neutral with opposite sign across backbones (+45-56% MSE on the SmolVLA native tower, -50-52% on $π_{0.5}$), so all conclusions are conditional on the fixed grafting protocol. We position frozen grafting as a cheap target-backbone diagnostic to run before committing to an encoder at scale, not as a closed-loop deployment claim.",
+    "authors": [
+      "Qingping Zeng",
+      "Fei She"
+    ],
+    "published": "2026-06-12T06:27:00+00:00",
+    "updated": "2026-06-12T06:27:00+00:00",
+    "url": "http://arxiv.org/abs/2606.14153v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.14153v1",
+    "categories": [
+      "cs.CV",
+      "cs.RO"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.14084v1",
+    "title": "Self-Improving VLA Policies: Selected Diffusion Noise for Spurious-Robust Action Smoothing",
+    "abstract": "Diffusion-based Vision-Language-Action (VLA) policies enable strong generalization in robotic manipulation, but remain sensitive to spurious visual correlations and noisy action generation, leading to brittle behavior under perturbations. We introduce Selected Diffusion Noise (SDN), a simple, training-free test-time method that improves both robustness and success rate by leveraging the diffusion noise space as a controllable degree of freedom. SDN dynamically samples noise vectors that are maximally separated from a reference set to mitigate reliance on spurious cues, while selecting candidates that yield more coherent action trajectories. This dual objective encourages stable behavior even under object-masked observations and reduces action jitter without modifying model parameters. We evaluate SDN on two simulation benchmarks (Google Robot, Widow-X) and two real-world robotic datasets across multiple VLA policies, including pi_0, Groot-N1.5, and Groot-N1.6. SDN consistently improves success rates by +8% in simulation and +10% in real-world settings, while producing smoother and more stable actions. Our results highlight that diffusion noise selection can serve as an effective and general mechanism for enhancing VLA policies at test time.",
+    "authors": [
+      "Duc Minh Nguyen",
+      "Bao-Ngoc Dao",
+      "Tung M. Luu",
+      "Binh Gia Nguyen",
+      "Vinh Tong",
+      "Anji Liu",
+      "Vu N. Duong",
+      "Dung D. Le",
+      "Daniel Sonntag",
+      "Trung Le",
+      "Ngan Le",
+      "Jan Peter",
+      "An Thai Le",
+      "Minh Nhat Vu",
+      "Mathias Niepert",
+      "Khoa D. Doan",
+      "Duy M. H. Nguyen",
+      "Vien Anh Ngo"
+    ],
+    "published": "2026-06-12T03:59:47+00:00",
+    "updated": "2026-06-12T03:59:47+00:00",
+    "url": "http://arxiv.org/abs/2606.14084v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.14084v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.14083v1",
+    "title": "The N2D Haptic Glove: A Multi-Finger Glove for 2D Directional Force Feedback for Contact Rich Manipulation",
+    "abstract": "Humans rely on directional fingertip forces to probe and regulate contact during manipulation, yet most wearable haptic gloves render only vibration or single-axis force, leaving force direction ambiguous. Without directional cues, users must infer contact force from vision alone, often leading to over-pressing, inconsistent control, and reduced precision in robotic teleoperation. We present the N2D Haptic Glove, a multi-finger wearable device that renders planar flexion-extension fingertip forces using capstan-drive transmissions for high-transparency force feedback. Through benchtop validations and a user study involving haptic teleoperation of a robotic arm and hand, we demonstrate that compared to visual-only and single-axis haptic baselines, planar fingertip feedback significantly reduces contact force error during precise manipulation, improves trial-to-trial consistency, and enhances overall user experience in axial probing tasks. These findings establish the N2D Haptic Glove and directional finger-based haptics devices as a promising modality for contact-rich teleoperation, immersive virtual reality simulations, and robot learning from demonstrations. N2D Haptic Glove's hardware and software system will be fully open-sourced at \\href{https://ucsdarclab.github.io/n2d-glove/}{this https URL}.",
+    "authors": [
+      "Yao-Ting Huang",
+      "Jake Honma",
+      "Omar Hernandez",
+      "Logan Li",
+      "Kaitlin Calimbahin",
+      "Bryce Hackel",
+      "Michael C. Yip"
+    ],
+    "published": "2026-06-12T03:59:33+00:00",
+    "updated": "2026-06-12T03:59:33+00:00",
+    "url": "http://arxiv.org/abs/2606.14083v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.14083v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.14010v1",
+    "title": "RT-VLA: Real-Time Vision-Language-Action Models via Knowledge Distillation",
+    "abstract": "Vision-Language-Action (VLA) models have shown strong potential for end-to-end autonomous driving by jointly modeling visual perception, language reasoning, explainability and action prediction. However, their large vision-language backbones and reasoning modules introduce substantial inference latency and thereby prevent their deployment in the unforgiving reality of the road networks. We propose RT-VLA, a lightweight, distilled VLA model that transfers the driving and reasoning capabilities of the state-of-the-art SimLingo model into a compact student through multi-level supervised distillation. RT-VLA preserves language-based reasoning and supports post-hoc explanation through offline language analysis of safety-critical driving moments without adding latency to real-time control. Compared to the SimLingo teacher, RT-VLA maintains competitive closed-loop driving and language reasoning performance while reducing inference time by 44.8X in vision-only mode and 7.9X in vision+language mode. These results suggest that supervised distillation is a practical approach for building real-time, explainable VLA-style autonomous driving models.",
+    "authors": [
+      "Xiangyu Huang",
+      "Zhenlin Hua",
+      "Han Zhou",
+      "Shounak Sural",
+      "Ragunathan Rajkumar"
+    ],
+    "published": "2026-06-12T01:06:42+00:00",
+    "updated": "2026-06-12T01:06:42+00:00",
+    "url": "http://arxiv.org/abs/2606.14010v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.14010v1",
+    "categories": [
+      "cs.CV",
+      "cs.LG",
+      "cs.RO"
+    ],
+    "primary_category": "cs.CV"
+  }
+]
