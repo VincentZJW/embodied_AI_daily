@@ -1,6 +1,6 @@
 const latestArticle = {
-  "title": "具身智能中文日报｜2026-06-19",
-  "date": "2026-06-19",
+  "title": "具身智能中文日报｜2026-06-20",
+  "date": "2026-06-20",
   "subtitle": "聚焦VLA、Sim2Real、机器人基础模型，追踪论文、开源项目与产业动态。",
   "theme": "tech-dark",
   "accent_color": "#4F8CFF",
@@ -139,7 +139,7 @@ const latestArticle = {
     {
       "name": "Genesis-Embodied-AI/genesis-world",
       "summary": "该项目可能聚焦仿真到真实迁移，主要语言为 Python。",
-      "why_follow": "仓库星标数约为 29385，可用于观察开源社区对仿真到真实迁移的实现方向。",
+      "why_follow": "仓库星标数约为 29390，可用于观察开源社区对仿真到真实迁移的实现方向。",
       "source_url": "https://github.com/Genesis-Embodied-AI/genesis-world",
       "card_type": "开源项目卡",
       "importance_score": 93,
@@ -151,7 +151,7 @@ const latestArticle = {
     {
       "name": "YanjieZe/awesome-humanoid-robot-learning",
       "summary": "该项目可能聚焦人形机器人控制，主要语言为 Python。",
-      "why_follow": "仓库星标数约为 2493，可用于观察开源社区对人形机器人控制的实现方向。",
+      "why_follow": "仓库星标数约为 2496，可用于观察开源社区对人形机器人控制的实现方向。",
       "source_url": "https://github.com/YanjieZe/awesome-humanoid-robot-learning",
       "card_type": "开源项目卡",
       "importance_score": 91,
@@ -176,7 +176,7 @@ const latestArticle = {
     {
       "name": "leggedrobotics/pace-sim2real",
       "summary": "该项目可能聚焦仿真到真实迁移，主要语言为 Python。",
-      "why_follow": "仓库星标数约为 540，可用于观察开源社区对仿真到真实迁移的实现方向。",
+      "why_follow": "仓库星标数约为 542，可用于观察开源社区对仿真到真实迁移的实现方向。",
       "source_url": "https://github.com/leggedrobotics/pace-sim2real",
       "card_type": "开源项目卡",
       "importance_score": 84,
@@ -188,7 +188,7 @@ const latestArticle = {
     {
       "name": "FluxVLA/FluxVLA",
       "summary": "该项目可能聚焦视觉-语言-动作模型，主要语言为 Python。",
-      "why_follow": "仓库星标数约为 469，可用于观察开源社区对视觉-语言-动作模型的实现方向。",
+      "why_follow": "仓库星标数约为 472，可用于观察开源社区对视觉-语言-动作模型的实现方向。",
       "source_url": "https://github.com/FluxVLA/FluxVLA",
       "card_type": "开源项目卡",
       "importance_score": 83,
@@ -201,12 +201,24 @@ const latestArticle = {
   ],
   "industry_updates": [
     {
-      "title": "行业动态 1：人形机器人控制",
+      "title": "行业动态 1：机器人操作与抓取",
+      "summary": "该动态与机器人操作与抓取相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
+      "source_url": "https://www.therobotreport.com/defense-manufacturing-readiness-hinges-autonomous-surface-prep-says-graymatter/",
+      "card_type": "行业动态卡",
+      "importance_score": 86,
+      "tags": [
+        "具身智能",
+        "机器人"
+      ]
+    },
+    {
+      "title": "行业动态 2：人形机器人控制",
       "summary": "该动态与人形机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
       "source_url": "https://spectrum.ieee.org/video-friday-agentic-ai-robot",
       "card_type": "行业动态卡",
-      "importance_score": 90,
+      "importance_score": 87,
       "tags": [
         "具身智能",
         "人形机器人",
@@ -214,51 +226,38 @@ const latestArticle = {
       ]
     },
     {
-      "title": "行业动态 2：机器人操作与抓取",
+      "title": "行业动态 3：机器人操作与抓取",
       "summary": "该动态与机器人操作与抓取相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
       "source_url": "https://www.therobotreport.com/u-s-robotics-industry-saw-double-digit-growth-in-2025-says-ifr/",
       "card_type": "行业动态卡",
-      "importance_score": 83,
+      "importance_score": 80,
       "tags": [
         "具身智能",
         "机器人"
       ]
     },
     {
-      "title": "行业动态 3：具身智能评测与数据集",
+      "title": "行业动态 4：具身智能评测与数据集",
       "summary": "该动态与具身智能评测与数据集相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
       "source_url": "https://www.therobotreport.com/elmo-releases-new-motion-controller-servo-drives-industrial-applications/",
       "card_type": "行业动态卡",
-      "importance_score": 80,
+      "importance_score": 77,
       "tags": [
         "具身智能"
       ]
     },
     {
-      "title": "行业动态 4：仿真到真实迁移",
+      "title": "行业动态 5：仿真到真实迁移",
       "summary": "该动态与仿真到真实迁移相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
       "source_url": "https://spectrum.ieee.org/amazon-astro-robot-sound",
       "card_type": "行业动态卡",
-      "importance_score": 80,
+      "importance_score": 77,
       "tags": [
         "具身智能",
         "Sim2Real"
-      ]
-    },
-    {
-      "title": "行业动态 5：机器人基础模型",
-      "summary": "该动态与机器人基础模型相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
-      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://www.therobotreport.com/realsense-unveils-ai-native-d585-pro-depth-camera-for-robots/",
-      "card_type": "行业动态卡",
-      "importance_score": 79,
-      "tags": [
-        "具身智能",
-        "机器人基础模型",
-        "机器人"
       ]
     }
   ],
@@ -423,36 +422,36 @@ const latestArticle = {
       "importance_score": 60
     },
     {
-      "name": "行业动态 1：人形机器人控制",
+      "name": "行业动态 1：机器人操作与抓取",
+      "url": "https://www.therobotreport.com/defense-manufacturing-readiness-hinges-autonomous-surface-prep-says-graymatter/",
+      "type": "行业动态",
+      "card_type": "来源链接卡",
+      "importance_score": 60
+    },
+    {
+      "name": "行业动态 2：人形机器人控制",
       "url": "https://spectrum.ieee.org/video-friday-agentic-ai-robot",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
-      "name": "行业动态 2：机器人操作与抓取",
+      "name": "行业动态 3：机器人操作与抓取",
       "url": "https://www.therobotreport.com/u-s-robotics-industry-saw-double-digit-growth-in-2025-says-ifr/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
-      "name": "行业动态 3：具身智能评测与数据集",
+      "name": "行业动态 4：具身智能评测与数据集",
       "url": "https://www.therobotreport.com/elmo-releases-new-motion-controller-servo-drives-industrial-applications/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
-      "name": "行业动态 4：仿真到真实迁移",
+      "name": "行业动态 5：仿真到真实迁移",
       "url": "https://spectrum.ieee.org/amazon-astro-robot-sound",
-      "type": "行业动态",
-      "card_type": "来源链接卡",
-      "importance_score": 60
-    },
-    {
-      "name": "行业动态 5：机器人基础模型",
-      "url": "https://www.therobotreport.com/realsense-unveils-ai-native-d585-pro-depth-camera-for-robots/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
