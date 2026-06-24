@@ -1,0 +1,480 @@
+[
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.24884v1",
+    "title": "InSight: Self-Guided Skill Acquisition via Steerable VLAs",
+    "abstract": "Vision-language-action (VLA) models can learn manipulation skills from demonstrations, but their capabilities are bounded by the skills in the training data. We present InSight, a framework that unlocks autonomous skill acquisition by rendering VLAs steerable at the primitive-action level (e.g., \"move gripper to the bowl\", \"lift upward\", \"pour the bottle\"). InSight consists of two primary stages: (1) an automated segmentation pipeline that partitions demonstrations into labeled primitives via VLM plan decomposition and end-effector poses to enable VLA primitive steerability, and (2) a VLM-guided data flywheel that identifies missing primitives required to accomplish a novel task, autonomously attempts demonstrations of the missing primitives with VLM-proposed low-level control, and automatically labels, stores, and integrates successful demonstrations into the VLA training set. We evaluate InSight across simulation and real-world manipulation tasks, including block flipping, drawer closing, sweeping, twisting, and pouring, without any human demonstrations of these target skills. Once learned, these primitives can be composed to execute novel, long-horizon tasks without additional human demonstrations. Our findings demonstrate that primitive steerability provides a practical foundation for continual skill acquisition in VLA policies. Project website: https://insight-vla.github.io.",
+    "authors": [
+      "Maggie Wang",
+      "Lars Osterberg",
+      "Stephen Tian",
+      "Ola Shorinwa",
+      "Jiajun Wu",
+      "Mac Schwager"
+    ],
+    "published": "2026-06-23T17:59:01+00:00",
+    "updated": "2026-06-23T17:59:01+00:00",
+    "url": "http://arxiv.org/abs/2606.24884v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.24884v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.24767v1",
+    "title": "Compact Object-Level Representations with Open-Vocabulary Understanding for Indoor Visual Relocalization",
+    "abstract": "Indoor visual relocalization plays a critical role in emerging spatial and embodied AI applications. However, prior research was predominantly devoted to low-level vision schemes, struggling to perceive scene semantics and compositions, which limits both interpretability and applicability. In this paper, we explore the issue of how to organize rich object information in a scene, including semantics, layout, and geometry, into a structured map representation, thereby utilizing object units exclusively to drive the camera relocalization task. To this end, we propose OpenReLoc, a camera relocalization system designed to provide scene understanding and accurate pose estimation capabilities. Leveraging recent foundation models, we first introduce a multi-modal mechanism to integrate open-vocabulary semantic knowledge for effective 2D-3D object matching. Additionally, we design object-oriented reference frames as position priors, paired with a reference frame selection strategy based on the Distance-IoU (DIOU), enabling extension to scalable scenes. Moreover, to ensure stable and accurate pose optimization, we also propose a dual-path 2D Iterative Closest Pixel loss guided by object shape. Experimental results demonstrate that OpenReLoc achieves superior relocalization recall and accuracy across various datasets. Our source code will be released upon acceptance.",
+    "authors": [
+      "Zhaopeng Cui",
+      "Jiarui Hu",
+      "Jingbo Liu",
+      "Boming Zhao",
+      "Xiyue Guo",
+      "Boyin Feng",
+      "Haocheng Peng",
+      "Yujun Shen",
+      "Hujun Bao",
+      "Guofeng Zhang"
+    ],
+    "published": "2026-06-23T16:27:04+00:00",
+    "updated": "2026-06-23T16:27:04+00:00",
+    "url": "http://arxiv.org/abs/2606.24767v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.24767v1",
+    "categories": [
+      "cs.CV",
+      "cs.RO"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.24742v1",
+    "title": "World Value Models for Robotic Manipulation",
+    "abstract": "Generalist value models play a pivotal role in scaling robotic policy learning from large-scale, mixed-quality data. Mathematically, accurate value estimation demands deep temporal understanding, requiring models to both ground the current belief using historical context and plan over future outcomes. However, most existing robotic value models are built on Vision-Language Model (VLM) backbones that are pretrained primarily on static or temporally sparse visual observations, lacking the requisite temporal modeling capabilities for value estimation. Unlike VLMs, world models naturally excel at temporal modeling and future planning, making them ideal foundations for learning generalizable value functions. Driven by this insight, we marry world models with value estimation to construct a new generalist robotic value model, World Value Model (WVM), that offers accurate task progressions to assess data quality. On standard benchmarks, WVM delivers state-of-the-art (SOTA) Value-Order Correlation (VOC) results. Complementing standard evaluation suites that contains only expert data, we further introduce Suboptimal-Value-Bench, a multi-embodiment benchmark consisting of 800 suboptimal trajectories with high-fidelity, human-labeled frame annotations. Our evaluations show that WVM maintains its SOTA performance on Suboptimal-Value-Bench, establishing its robustness in handling both expert and suboptimal data. When deployed for policy learning, WVM improves manipulation performance across various policy extraction approaches in both simulated and real-world deployment, providing robust guidance for learning from mixed-quality data.",
+    "authors": [
+      "Zhihao Wang",
+      "Jianxiong Li",
+      "Yu Cui",
+      "Yuan Gao",
+      "Xianyuan Zhan",
+      "Junzhi Yu",
+      "Xiao Ma"
+    ],
+    "published": "2026-06-23T16:07:48+00:00",
+    "updated": "2026-06-23T16:07:48+00:00",
+    "url": "http://arxiv.org/abs/2606.24742v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.24742v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.24628v1",
+    "title": "ArtiTwinSplat: Interactable Digital Twin Reconstruction via Gaussian Splatting from RGB-D videos",
+    "abstract": "Deploying robots in unstructured real-world environments needs accurate, interactive models of the objects. Constructing these models at scale remains a critical bottleneck for robotic system integration. We present ArtiTwinSplat, a framework that automatically constructs articulated, photo-realistic digital twins of objects directly from RGB-D videos, requiring no CAD models, simulation assets, or manual annotations. Our method is built on 3D Gaussian Splatting that preserve geometric fidelity and photometric realism, coupled with an unsupervised articulation discovery pipeline that recovers part structure and joint kinematics from observed motion alone. With tracking and optimization stages our method provides stable, queryable digital twins that support real-time rendering, viewpoint control, and interactive manipulation. Unlike prior methods confined to simulation, ArtiTwinSplat operates directly on real-world observations and produces twins that are immediately usable by downstream robot planning and learning systems. This method offers a practical, scalable pathway toward digital twin construction, lowering the integration barrier for articulated object manipulation in embodied AI and human-robot collaboration contexts.",
+    "authors": [
+      "Pranjal Mishra",
+      "René Zurbrügg",
+      "Max Wilder-Smith",
+      "Marco Hutter",
+      "Marc Pollefeys",
+      "Zuria Bauer",
+      "Hermann Blum"
+    ],
+    "published": "2026-06-23T14:24:07+00:00",
+    "updated": "2026-06-23T14:24:07+00:00",
+    "url": "http://arxiv.org/abs/2606.24628v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.24628v1",
+    "categories": [
+      "cs.RO",
+      "cs.CV"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.24472v1",
+    "title": "G$^3$VLA: Geometric inductive bias for Vision-Language-Action Models",
+    "abstract": "Vision-language-action (VLA) models have made rapid progress in generalist robot manipulation by harnessing semantic knowledge from pretrained vision-language backbones, but their visual tokens remain grounded in 2D image coordinates rather than the calibrated geometry of the robot's cameras -- a mismatch especially pronounced in multi-camera setups, where views are coupled by known intrinsics and extrinsics yet processed as independent images. We propose G$^3$VLA, a camera-aware geometric module that injects calibrated structure into the visual-token stream of a pretrained VLA without altering its action space or imitation objective, combining intrinsic-conditioned ray embeddings, projective positional encoding (PRoPE), and bidirectional cross-view fusion. Geometric supervision is provided either from ground-truth point maps when available, or from confidence-gated $π^3$X teacher predictions, requiring no depth sensors or manual annotations. Instantiated on $π_0$, G$^3$VLA yields consistent gains across the LIBERO suites, RoboCasa24, RoboTwin2.0, and real-robot settings, with the largest improvements on spatially and object-sensitive tasks. We further validate on $π_{0.5}$ and GR00T 1.5, with results suggesting that geometric transfer is most effective when geometry-aware tokens have direct access to the action generation pathway. Our project page is at https://sites.google.com/view/g3vla",
+    "authors": [
+      "Yue Peng",
+      "Yongzhe Zhao",
+      "Artur Habuda",
+      "Khuyen Pham",
+      "Yanheng Zhu",
+      "Tran Nguyen Le",
+      "Fares Abu-Dakka",
+      "Li Guo"
+    ],
+    "published": "2026-06-23T12:02:36+00:00",
+    "updated": "2026-06-23T12:02:36+00:00",
+    "url": "http://arxiv.org/abs/2606.24472v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.24472v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.24450v1",
+    "title": "NoContactNoWorries: Estimating Contact through Vision and Proprioception for In-Hand Dexterous Manipulation",
+    "abstract": "Perceiving physical contact is fundamental to dexterous manipulation. While robots often rely on dedicated hardware tactile sensors, humans exhibit a remarkable ability to infer contact by integrating visual information with an innate sense of their body's pose and movement. Inspired by this embodied perceptual skill, we investigate whether a robot can learn to infer contact from vision, an approach that also offers a scalable alternative to tactile hardware specifically for binary contact estimation, which faces practical challenges in cost, fragility, and integration. We present NoContactNoWorries, a transformer-based multimodal framework that fuses RGB-D vision with the robot's proprioception to infer binary contact states as a pseudo-tactile signal for hand-object interactions. We validate by training a single contact prediction model on multiple objects and show that the inferred contact signal supports downstream reinforcement learning agents for in-hand object reorientation, generalizing to novel objects. Experiments in both simulation and on a real-world robot validate our approach, highlighting the feasibility of inferring contact from vision and proprioception. Project Page: https://soham2560.github.io/no-contact-no-worries/",
+    "authors": [
+      "Soham Patil",
+      "Avirup Das",
+      "Sourabh Bhosale",
+      "Spandan Roy"
+    ],
+    "published": "2026-06-23T11:36:46+00:00",
+    "updated": "2026-06-23T11:36:46+00:00",
+    "url": "http://arxiv.org/abs/2606.24450v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.24450v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.24448v1",
+    "title": "Supervise What Survives: Geometry-Guided VLA Adaptation from Synthetic Robot Videos",
+    "abstract": "Vision-Language-Action (VLA) models require large-scale video-action pairs, yet real teleoperation remains scarce. While generated robot videos offer a scalable alternative, existing methods treat them as real robot data by recovering pseudo-actions from synthesized pixels. We argue that deriving low-level control from generated visuals is a mismatched abstraction. A video captures only \\emph{geometry}: the spatial trajectory representing the \\emph{where} of a task. A real demonstration captures \\emph{control}: the exact motor commands representing the \\emph{how}. Human-to-robot video generation preserves these unequally: the visible geometry survives the generation process, while the underlying control signals are lost. This \\textbf{Asymmetric Preservation Principle} dictates a clean rule: this surviving geometry should solely supervise visual perception, leaving control to real demonstrations. Following this principle, we propose \\textbf{GRA} (\\textbf{G}eometry-guided \\textbf{R}epresentation \\textbf{A}lignment), which extracts the geometric content as future 2D end-effector waypoints, computed from the source human video through pose estimation, retargeting, simulation, and calibrated projection, and routes them to the VLA vision backbone via an auxiliary 2D head. The action head is trained on real demonstrations only. During fine-tuning, the waypoint loss persists as a \\textbf{spatial representation anchor} that prevents the backbone from losing its geometric grounding. On real-robot tasks, GRA outperforms pseudo-action baselines under matched data budgets and narrows the gap to policies trained with substantially more real demonstrations, suggesting that correctly routed geometry bridges generated videos to robot policies more reliably than recovered actions.",
+    "authors": [
+      "Danze Chen",
+      "Yanzhe Chen",
+      "Qiming Huang",
+      "Zhijun Cao",
+      "Chen Gao",
+      "Mike Zheng Shou"
+    ],
+    "published": "2026-06-23T11:35:13+00:00",
+    "updated": "2026-06-23T11:35:13+00:00",
+    "url": "http://arxiv.org/abs/2606.24448v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.24448v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.24445v1",
+    "title": "Legible and Intuitive Multi-modal Robot State and Intent Communication Validated in Online and Real-world Studies",
+    "abstract": "Effective robot-to-human communication can increase transparency and trust, reduce uncertainty, and contribute to safer collaboration in shared workspaces. Designing and validating an effective robot communication strategy is challenging due to the varying and often limited communication modalities across robots, differences in how diverse recipients interpret messages, and the underexplored virtual-to-real gap in studies of communication legibility. We present a systematic, large-scale comparative validation of existing communication strategies for a mobile non-humanoid robot across message types and settings (online and in-person). Based on the prescribed message types in the existing standards for industrial robots, we realize and compare a low-expressive, unimodal LED-based strategy with a highly expressive, multimodal one that leverages robotic gaze, gestures, and voice. For each strategy, we analyze the communication of a turning intention, an attention request, error status, whether the robot is stuck, and whether it is functioning normally. We evaluate these strategies in replicated online and in-person experiments. We find strong evidence that highly expressive multimodal communication is perceived as more legible and intuitive than unimodal LED-based communication. Comparing the online and real-world study findings, we observe a notable decrease in overall legibility, particularly for signaling with LEDs. Similarly, confidence in message interpretation decreases during the real-world evaluation.",
+    "authors": [
+      "Tim Schreiter",
+      "Jens V. Rüppel",
+      "Andrey Rudenko",
+      "Martin Magnusson",
+      "Achim J. Lilienthal"
+    ],
+    "published": "2026-06-23T11:27:17+00:00",
+    "updated": "2026-06-23T11:27:17+00:00",
+    "url": "http://arxiv.org/abs/2606.24445v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.24445v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.24416v1",
+    "title": "Agentic AI for Bilevel Long-Term Optimization of Policy-Driven Physical Layer Systems",
+    "abstract": "Network operators' changing policies, service requirements, and stringent real-time constraints render existing methods designed with fixed objectives and constraints ineffective. This paper presents Agentic long-term performance optimization (Agentic-LTPO), a nested bilevel optimization framework that can be applied to adaptive physical layer problem configuration. The key idea is to employ agentic AI to generate upper-level configurations in a bilevel optimization structure, where evolving operator policies, environment summaries, and historical experiences are translated into structured lower-level optimization problem configurations. The lower level solves the problems with updated configurations for real-time physical-layer decisions. Considering cell-free MIMO beamforming as a use case, we embody Agentic-LTPO by designing a new multi-agent decision process with retrieval-augmented experience-based verification in the upper level, together with a closed-form beamformer in the lower level. Experiments demonstrate that Agentic-LTPO exhibits strong adaptability to dynamic operator policies and effectively enhances the system's long-term performance by 57.2% compared to traditional methods.",
+    "authors": [
+      "Bingnan Xiao",
+      "Chenhao Yang",
+      "Wei Ni",
+      "Xin Wang",
+      "Tony Q. S. Quek"
+    ],
+    "published": "2026-06-23T10:53:12+00:00",
+    "updated": "2026-06-23T10:53:12+00:00",
+    "url": "http://arxiv.org/abs/2606.24416v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.24416v1",
+    "categories": [
+      "cs.AI"
+    ],
+    "primary_category": "cs.AI"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.24338v1",
+    "title": "RoBoSR: Structured Scene Representations for Embodied Robotic Reasoning",
+    "abstract": "Despite rapid progress, embodied reasoning under real-world variability remains challenging. Existing approaches rely on demonstration-driven sequential biases, limiting flexibility in open-ended and long-horizon tasks that require structured reasoning over evolving states. We introduce RoBoSR, an intermediate structural representation that formulates manipulation as step-wise state transitions over semantically grounded, object-centric scene graphs. By modeling object states and their spatial relations at the perception-action interface, RoBoSR disentangles high-level task reasoning from raw inputs and enables structured reasoning over preconditions, effects, and goal states. This representation endows the agent with causal reasoning capability, enforcing subtask dependencies and supporting coherent long-horizon task planning. To learn such structure-aware reasoning, we construct Manip-Cognition-1.6M, an open-world dataset that jointly supervises scene understanding, instruction interpretation, and subtask planning across diverse tasks. Across several benchmarks and real-world demonstrations, our method consistently outperforms prompting-based methods and classical TAMP baselines in zero-shot generalization and long-horizon tasks. The results underscore structured intermediate representations as a critical inductive bias for scalable embodied reasoning.",
+    "authors": [
+      "Kewei Hu",
+      "Wanchan Yu",
+      "Fangwen Chen",
+      "Jing Jiajian",
+      "Zimeng Li",
+      "Ying Wei",
+      "Tianhao Liu",
+      "Michael Zhang",
+      "Hanwen Kang"
+    ],
+    "published": "2026-06-23T09:24:52+00:00",
+    "updated": "2026-06-23T09:24:52+00:00",
+    "url": "http://arxiv.org/abs/2606.24338v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.24338v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.24253v1",
+    "title": "TuringViT: Making SOTA Vision Transformers Accessible to All",
+    "abstract": "Modern VLMs and VLA systems commonly adopt off-the-shelf ViTs such as SigLIP2 as visual encoders, but diverse downstream requirements in latency, temporal modeling, and VLM integration often call for customized SOTA-level ViTs. Training such encoders remains beyond the reach of much of the community, as it requires massive image-text data, while standard softmax attention makes high-resolution or dynamic-resolution pretraining prohibitively costly and often forces low-resolution pretraining followed by post-hoc adaptation. TuringViT addresses these challenges with three key designs: Turing Linear Attention (TLA) for efficient sequence modeling, VISTA-Curation to construct supervision-rich image-video training data, and native dynamic-resolution pretraining that supports flexible inputs from the start and transfers seamlessly to downstream VLMs. As a result, TuringViT outperforms leading open-source ViT baselines with only 10% of the data, achieves stronger downstream VLM performance, and delivers substantially better latency scaling on high-resolution inputs. Our scaling-law analysis further shows that TuringViT continues to improve predictably with curated data scale, far from saturation. Its fast adaptation, hardware-friendly design, and efficient deployment have made it a unified visual foundation across XPeng's AI systems. More broadly, TuringViT provides a reproducible pipeline that dramatically lowers the cost for the community to train, customize, and deploy SOTA-level ViTs, moving toward making such Vision Transformers accessible to all.",
+    "authors": [
+      "Qiman Wu",
+      "Hanlin Chen",
+      "Lyujie Chen",
+      "Rui Xin",
+      "Jianlei Zheng",
+      "Mingyuan Wang",
+      "Jiahui Hu",
+      "Da Zhu",
+      "Yuecheng Ma",
+      "Yuhua Wei",
+      "Yizhao Wang",
+      "Hua Zhou",
+      "Yuheng Zhang",
+      "Anhua Liu",
+      "Shaman Tang",
+      "Yue He",
+      "Pengfei Diao",
+      "Shuang Su",
+      "Haotong Xin",
+      "Weichao Huang",
+      "Hang Zhang",
+      "Xianming Liu"
+    ],
+    "published": "2026-06-23T07:42:22+00:00",
+    "updated": "2026-06-23T07:42:22+00:00",
+    "url": "http://arxiv.org/abs/2606.24253v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.24253v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.24245v1",
+    "title": "AutoSpec: Safety Rule Evolution for LLM Agents via Inductive Logic Programming",
+    "abstract": "Large language model (LLM) agents increasingly automate complex tasks by integrating language models with external tools and environments. However, their autonomy poses significant safety risks: agents may execute destructive commands, leak sensitive data, or violate domain constraints. Existing safety approaches face a fundamental tradeoff: hand-crafted rules are interpretable but brittle, with overly conservative rules blocking safe operations (high false positives) while permissive rules miss unsafe behaviors (high false negatives). Neural classifiers lack the interpretability required for safety-critical deployments. We present AutoSpec, a framework that automatically evolves deployed expert-designed safety rules from user safe/unsafe annotations through counterexample-guided inductive synthesis (CEGIS) guided by inductive logic programming (ILP). Starting from the expert rules and a stream of annotated traces, AutoSpec iteratively evaluates rules, mines false-positive and false-negative counterexamples, uses ILP to learn which predicates discriminate them, generates candidate rule edits, and verifies candidates to select the best revision. The key insight is that ILP efficiently identifies predicates that appear frequently in false negatives but rarely in false positives (or vice versa), dramatically pruning the exponential search space of rule edits. This continues until convergence, producing interpretable rules that balance precision and recall. We evaluate AutoSpec on 291 execution traces spanning code execution and embodied agent domains. AutoSpec raises rule F1 to 0.98 and 0.93 across the two domains, achieving up to 94% false positive reduction while maintaining high recall, and converges within 4-5 iterations. The ILP-guided approach achieves up to 4.8x higher F1 than heuristic CEGIS. The learned rules are human-readable, auditable, and generalize to unseen scenarios.",
+    "authors": [
+      "Pingchuan Ma",
+      "Zhaoyu Wang",
+      "Zimo Ji",
+      "Yuguang Zhou",
+      "Zhantong Xue",
+      "Zongjie Li",
+      "Shuai Wang",
+      "Xiaoqin Zhang"
+    ],
+    "published": "2026-06-23T07:31:03+00:00",
+    "updated": "2026-06-23T07:31:03+00:00",
+    "url": "http://arxiv.org/abs/2606.24245v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.24245v1",
+    "categories": [
+      "cs.SE",
+      "cs.AI",
+      "cs.CR"
+    ],
+    "primary_category": "cs.SE"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.24208v1",
+    "title": "Grounding Generative Policies in Physics: Optimization-Guided Diffusion for Robot Control",
+    "abstract": "Diffusion models sample effectively from high-dimensional, multimodal distributions, but their outputs may violate deployment constraints. For task-space robot policies, generated grasps, waypoints, or trajectories can be distributionally valid yet infeasible, violating reachability, collision-avoidance, or closed-loop executability requirements. This embodiment gap limits zero-shot deployment across robots, even when the task-space behavior itself is transferable. We propose an inference-time optimization framework that couples the behavior generation to physical feasibility by formulating diffusion guidance as a constrained optimization problem. Our key insight is to replace the sampling perturbation in the backward process with an optimized correction, allowing hard constraints or soft penalties to be imposed during sampling without the need to retrain the diffusion model, while keeping samples close to the learned prior. We evaluate the method on dexterous grasp synthesis with reachability and collision-avoidance constraints, and dynamic manipulation with controller-level trackability constraints. Across settings and robot embodiments, optimization-guided denoising matches the feasibility of projection- and gradient-guidance baselines while better preserving grasp quality, and improving controller-level executability and task success, with task success improving by up to 20pp. on dexterous grasping and 23pp. on visuomotor manipulation over the best baseline.",
+    "authors": [
+      "Sabrina Bodmer",
+      "René Zurbrügg",
+      "Tifanny Portela",
+      "Hao Ma",
+      "Alexandre Didier",
+      "Marco Hutter",
+      "Colin Jones",
+      "Melanie Zeilinger"
+    ],
+    "published": "2026-06-23T06:49:30+00:00",
+    "updated": "2026-06-23T06:49:30+00:00",
+    "url": "http://arxiv.org/abs/2606.24208v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.24208v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.24152v1",
+    "title": "Autonomous Video Generation with Counterfactual Controllability for Self-Evolving World Models",
+    "abstract": "Existing literature claims that video generation essentially is world modelling. On the one hand, the claim is productive because it pushes generative AI beyond static images and toward temporally extended physical scenes. On the other hand, this claim dangerously relies on the belief that scaling visual prediction alone will automatically yield physical agents. We prefer a more accurate statement: video generation models learn a partial, implicit spatiotemporal world model, but not a fully grounded or controllable one. The reason is as follows: a model may generate a plausible video of a drone crossing a forest or a robot arm manipulating a cup, yet still fail to know which variables are controllable, which constraints belong to a particular body and which futures remain valid under intervention. The frontier in essence is not predictive realism alone, instead it emphasizes a self-evolving generative nature that requires the decisive criterion to be counterfactual controllability: the capability of asking what would happen under an action, to test whether the generated future can survive embodiment constraints and to feed the resulting action knowledge back into future imagination (generation). Therefore, in this paper we present a new perspective, i.e., autonomous video generation with counterfactual controllability is one promising way to realize self-evolving world models.",
+    "authors": [
+      "Xin Wang",
+      "Wenxuan Liu",
+      "Tongtong Feng",
+      "Wenwu Zhu"
+    ],
+    "published": "2026-06-23T05:19:47+00:00",
+    "updated": "2026-06-23T05:19:47+00:00",
+    "url": "http://arxiv.org/abs/2606.24152v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.24152v1",
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.24068v1",
+    "title": "ObsGraph: Hierarchical Observation Representation for Embodied Reasoning and Exploration",
+    "abstract": "Embodied reasoning and exploration are increasingly considered crucial abilities for robots operating in complex and unfamiliar environments. To accomplish tasks in such settings, an agent must identify and acquire the information necessary for the task through exploration. We propose ObsGraph, an observation-centric hierarchical scene graph that unifies scene representation, retrieval, and exploration. It retains visual evidence and organizes it into room-view-object layers: rooms provide coarse semantic anchors, views preserve contextual object covisibility, and objects store fine-grained details. On top of this representation, we perform coarse-to-fine hierarchical retrieval under a bounded budget, and crucially use retrieval outcomes to structure the exploration candidate space--activating room-level exploration, view refinement, or frontier exploration--thereby tightly coupling representation, retrieval, and adaptive multi-scale exploration. Experiments across embodied reasoning and exploration benchmarks demonstrate improved success and efficiency, highlighting the benefits of structured scene representation and more targeted information gathering driven by identified evidence gaps.",
+    "authors": [
+      "Taekbeom Lee",
+      "Youngseok Jang",
+      "Jeonghwa Heo",
+      "Jeongjun Choi",
+      "H. Jin Kim"
+    ],
+    "published": "2026-06-23T02:17:08+00:00",
+    "updated": "2026-06-23T02:17:08+00:00",
+    "url": "http://arxiv.org/abs/2606.24068v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.24068v1",
+    "categories": [
+      "cs.CV",
+      "cs.RO"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.24051v1",
+    "title": "DriveStack-VLA: Render-Teacher Alignment for BEV-Based DeepStack Vision-Language-Action Model",
+    "abstract": "Vision-Language-Action driving models convert a pretrained Vision-Language Model into a driving policy, allowing them to use world knowledge and follow language guidances. However, existing VLA driving models still lack driving-oriented spatial intelligence: their policies are mainly grounded on perspective image tokens and language priors, while precise motion planning requires metric geometry, top-down scene structure, and attention to safety-critical perceptual cues. This limitation makes current models vulnerable to weak visual geometry modeling and perceptual coverage in expert demonstrations. In this paper, we present DriveStack-VLA, a framework built upon a large VLM backbone. To strengthen the spatial grounding of VLA driving, we develop dual visual modeling components. We inject a Bird-Eye-View representation into the Large Language Model decoder through a DeepStack-style connection, and propose Render-Teacher Alignment to align the perceptual focus of real images with that of rasterized images. Furthermore, to bridge the gap in multimodal trajectory selection, we introduce a head-based self-critique module that ranks sampled trajectories and conditionally refines the best one. DriveStack-VLA achieves 91.6 PDMS on NAVSIMv1, 91.0 EPDMS on NAVSIMv2 (with the human penalty filter enabled), and a driving score of 79.49 with a success rate of 56.36\\% on the closed-loop Bench2Drive. More visualizations are available on our project page: https://anonymous.4open.science/w/drivestack-vla/.",
+    "authors": [
+      "Jingke Wang",
+      "Zhenru Zhao",
+      "Shuangming Lei",
+      "Hao Su",
+      "Yuehao Huang",
+      "Yijia Xie",
+      "Kai Tang",
+      "Guanglin Xu",
+      "AiXue Ye",
+      "Yukai Ma",
+      "Yong Liu"
+    ],
+    "published": "2026-06-23T01:40:54+00:00",
+    "updated": "2026-06-23T01:40:54+00:00",
+    "url": "http://arxiv.org/abs/2606.24051v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.24051v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.24049v1",
+    "title": "SPACE: Enabling Learning from Cross-Robot Data Toward Generalist Policies",
+    "abstract": "In robot learning, scaling training datasets across diverse embodiments and environments has become a dominant paradigm for learning generalizable robot policies. These policies are commonly trained via behavior cloning to imitate actions from pre-collected demonstrations. However, since robot actions are tied to the dynamics of the data collection robot, different robots may require different actions to achieve the same motion. This discrepancy hinders both policy training and deployment across diverse robots. To address this, we propose using Cartesian state delta as a universal action representation across robots, and introduce State Prediction and Adaptive Command Execution (SPACE) framework. SPACE handles robot dynamics variation at three levels: across different embodiments, across hardware units of the same embodiment, and within a single robot during operation. It consists of two components: (i) a Cartesian state delta policy that predicts geometric end-effector displacement, and (ii) Action Adapter, which converts the predicted Cartesian state delta into robot-specific control commands. Experiments show that SPACE substantially outperforms policies that directly predict control commands when learning from data collected across different embodiments and across hardware units of the same embodiment. SPACE also remains robust under dynamics shifts at deployment, including changes in control frequency, object weight, and controller gains. The project page is available at http://haeone.site/space-website/.",
+    "authors": [
+      "Haeone Lee",
+      "Byeongguk Jeon",
+      "Suchae Jeong",
+      "Jian Kim",
+      "Kimin Lee"
+    ],
+    "published": "2026-06-23T01:32:40+00:00",
+    "updated": "2026-06-23T01:32:40+00:00",
+    "url": "http://arxiv.org/abs/2606.24049v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.24049v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.24039v1",
+    "title": "TurboMPC: Fast, Scalable, and Differentiable Model Predictive Control on the GPU",
+    "abstract": "Robotics increasingly relies on GPUs for parallel simulation, large-scale learning, and neural-network inference. For model predictive control (MPC) to scale with this paradigm, solvers must run efficiently on this hardware while remaining fast, differentiable, and compatible with expressive MPC formulations used in robotics. We present TurboMPC, a differentiable MPC solver that runs entirely on the GPU and supports state and control inequality constraints, implicit integrators, cross-time-coupled costs, and slack variables. TurboMPC combines sequential quadratic programming (SQP), an alternating direction method of multipliers (ADMM) inner solver, implicit differentiation, and a co-designed JAX-CUDA implementation for efficiency and ease of use. In simulation, we validate TurboMPC on constrained planning, humanoid imitation learning, and reinforcement learning with neural-network cost function tasks, achieving up to $15\\times$ and $58\\times$ speedups over state-of-the-art CPU and GPU differentiable solvers, respectively. We deploy TurboMPC on a full-scale car for minimum-time racing and find that batched, GPU-accelerated tuning of MPC parameters via Bayesian optimization yields significantly faster driving than a hand-tuned baseline. TurboMPC also scales to planning horizons of over $8000$ knot points while maintaining control of the vehicle. We open-source TurboMPC at: https://github.com/ToyotaResearchInstitute/turbompc",
+    "authors": [
+      "Gabriel Bravo-Palacios",
+      "Jianghan Zhang",
+      "Zachary Pestrikov",
+      "Brian Plancher",
+      "Thomas Lew"
+    ],
+    "published": "2026-06-23T00:42:33+00:00",
+    "updated": "2026-06-23T00:42:33+00:00",
+    "url": "http://arxiv.org/abs/2606.24039v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.24039v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.24004v1",
+    "title": "Towards Spec Learning: Inference-Time Alignment from Preference Pairs",
+    "abstract": "Steering a large language model (LLM) toward a desired behavior typically relies on an iterative process of hand-crafting a prompt based on a careful inspection of the model's responses. This is an involved, brittle, and error-prone process. Preference-based fine-tuning is a more rigorous but often prohibitively expensive solution. We propose spec learning, a framework that relies on a brief user instruction and a small set of preference judgments. These are compiled into specifications in the form of natural-language prompts for an LLM. Specifications condition LLMs at inference time, and no parameter updates to the underlying models are required. We show that the responses generated based on the compiled specifications often outperform direct preference optimization (DPO) on datasets from specialized domains whose preference signal is dense. Unlike opaque weight updates, the resulting specifications are human-readable and double as interpretable and transparent written embodiments of the preference signal that produced them.",
+    "authors": [
+      "Dhriti Krishnan",
+      "Tejas Goyal",
+      "Jaromir Savelka"
+    ],
+    "published": "2026-06-22T23:21:55+00:00",
+    "updated": "2026-06-22T23:21:55+00:00",
+    "url": "http://arxiv.org/abs/2606.24004v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.24004v1",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "primary_category": "cs.CL"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.23938v1",
+    "title": "Neuro-Symbolic Drive: Rule-Grounded Faithful Reasoning for Driving VLAs",
+    "abstract": "Driving VLA models incorporating Chain-of-Thought (CoT) reasoning are attractive because they leverage pretrained VLM representations and expose intermediate decisions in natural language, yet current rationales often lack the step-by-step decision semantics needed to keep the rationale causally connected to the planned motion. We introduce Neuro-Symbolic Drive, a neuro-symbolic driving framework that supervises a driving VLA with rule-grounded reasoning traces extracted directly from classical rule-based planners. Our key observation is that rule-based planners are symbolic AI systems that already function as executable reasoning engines: they reason about active safety constraints, search over candidate maneuvers, and select a final trajectory. We instrument these planners in simulation to capture both the executed trajectory and the internal decision trace at each rule-evaluation step. Each trace is serialized into structured rule-grounded reasoning and paired with the trajectory to fine-tune Qwen3.5-4B as a driving VLA. Because these traces are derived directly from the planner states that determine the action, they ensure reasoning is structurally coupled to motion generation by construction, rather than by post-hoc alignment. On our simulator-generated benchmark, detailed rule-grounded reasoning reduces ADE@3s from 0.47 to 0.26 and miss rate from 8.30% to 6.40% under three-camera perception, and from 0.54 to 0.26 and 10.13% to 5.99% under eight-camera perception. Neuro-Symbolic Drive thus converts neuro-symbolic planning logic into structured supervision. Code base: https://github.com/XiangboGaoBarry/Neural-Symbolic-Drive.",
+    "authors": [
+      "Xiangbo Gao",
+      "Xiukun Huang",
+      "Boyu Lu",
+      "Junge Zhang",
+      "Mengjie Mao",
+      "Jiachen Li",
+      "Wei Xiong",
+      "Zhengzhong Tu"
+    ],
+    "published": "2026-06-22T20:57:59+00:00",
+    "updated": "2026-06-22T20:57:59+00:00",
+    "url": "http://arxiv.org/abs/2606.23938v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.23938v1",
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "primary_category": "cs.AI"
+  }
+]
