@@ -1,6 +1,6 @@
 const latestArticle = {
-  "title": "具身智能中文日报｜2026-06-27",
-  "date": "2026-06-27",
+  "title": "具身智能中文日报｜2026-06-28",
+  "date": "2026-06-28",
   "subtitle": "聚焦VLA、Sim2Real、机器人基础模型，追踪论文、开源项目与产业动态。",
   "theme": "tech-dark",
   "accent_color": "#4F8CFF",
@@ -138,7 +138,7 @@ const latestArticle = {
     {
       "name": "Genesis-Embodied-AI/genesis-world",
       "summary": "该项目可能聚焦仿真到真实迁移，主要语言为 Python。",
-      "why_follow": "仓库星标数约为 29439，可用于观察开源社区对仿真到真实迁移的实现方向。",
+      "why_follow": "仓库星标数约为 29444，可用于观察开源社区对仿真到真实迁移的实现方向。",
       "source_url": "https://github.com/Genesis-Embodied-AI/genesis-world",
       "card_type": "开源项目卡",
       "importance_score": 93,
@@ -148,12 +148,24 @@ const latestArticle = {
       ]
     },
     {
+      "name": "NVlabs/ProtoMotions",
+      "summary": "该项目可能聚焦仿真到真实迁移，主要语言为 Python。",
+      "why_follow": "仓库星标数约为 1734，可用于观察开源社区对仿真到真实迁移的实现方向。",
+      "source_url": "https://github.com/NVlabs/ProtoMotions",
+      "card_type": "开源项目卡",
+      "importance_score": 90,
+      "tags": [
+        "具身智能",
+        "Sim2Real"
+      ]
+    },
+    {
       "name": "Octoday-Hub/Embodied-AI",
       "summary": "该项目可能聚焦人形机器人控制，主要语言为 未知。",
-      "why_follow": "仓库星标数约为 1644，可用于观察开源社区对人形机器人控制的实现方向。",
+      "why_follow": "仓库星标数约为 1672，可用于观察开源社区对人形机器人控制的实现方向。",
       "source_url": "https://github.com/Octoday-Hub/Embodied-AI",
       "card_type": "开源项目卡",
-      "importance_score": 91,
+      "importance_score": 88,
       "tags": [
         "具身智能",
         "人形机器人",
@@ -166,7 +178,7 @@ const latestArticle = {
       "why_follow": "仓库星标数约为 480，可用于观察开源社区对视觉-语言-动作模型的实现方向。",
       "source_url": "https://github.com/FluxVLA/FluxVLA",
       "card_type": "开源项目卡",
-      "importance_score": 89,
+      "importance_score": 86,
       "tags": [
         "具身智能",
         "VLA",
@@ -179,70 +191,21 @@ const latestArticle = {
       "why_follow": "仓库星标数约为 380，可用于观察开源社区对仿真到真实迁移的实现方向。",
       "source_url": "https://github.com/SMBU-PolarBear-Robotics-Team/pb2025_sentry_nav",
       "card_type": "开源项目卡",
-      "importance_score": 84,
+      "importance_score": 81,
       "tags": [
         "具身智能",
         "Sim2Real"
-      ]
-    },
-    {
-      "name": "sou350121/VLA-Handbook",
-      "summary": "该项目可能聚焦视觉-语言-动作模型，主要语言为 HTML。",
-      "why_follow": "仓库星标数约为 328，可用于观察开源社区对视觉-语言-动作模型的实现方向。",
-      "source_url": "https://github.com/sou350121/VLA-Handbook",
-      "card_type": "开源项目卡",
-      "importance_score": 83,
-      "tags": [
-        "具身智能",
-        "VLA",
-        "机器人视觉"
       ]
     }
   ],
   "industry_updates": [
     {
-      "title": "行业动态 1：具身智能评测与数据集",
-      "summary": "该动态与具身智能评测与数据集相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
-      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://www.therobotreport.com/we-know-how-to-build-smarter-robots-now-we-need-to-learn-smarter-ways-to-test-them/",
-      "card_type": "行业动态卡",
-      "importance_score": 86,
-      "tags": [
-        "具身智能"
-      ]
-    },
-    {
-      "title": "行业动态 2：机器人操作与抓取",
-      "summary": "该动态与机器人操作与抓取相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
-      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://www.therobotreport.com/how-compact-cobot-integration-enhances-autonomous-mobile-robot-applications/",
-      "card_type": "行业动态卡",
-      "importance_score": 83,
-      "tags": [
-        "具身智能",
-        "机器人"
-      ]
-    },
-    {
-      "title": "行业动态 3：机器人基础模型",
-      "summary": "该动态与机器人基础模型相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
-      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://www.therobotreport.com/general-intuition-raises-320m-uses-video-game-data-train-robots/",
-      "card_type": "行业动态卡",
-      "importance_score": 85,
-      "tags": [
-        "具身智能",
-        "机器人基础模型",
-        "机器人"
-      ]
-    },
-    {
-      "title": "行业动态 4：人形机器人控制",
+      "title": "行业动态 1：人形机器人控制",
       "summary": "该动态与人形机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://spectrum.ieee.org/video-friday-robot-grippers",
+      "source_url": "https://www.therobotreport.com/agibot-produces-15000th-robot-marking-milestone-embodied-ai-deployment/",
       "card_type": "行业动态卡",
-      "importance_score": 81,
+      "importance_score": 90,
       "tags": [
         "具身智能",
         "人形机器人",
@@ -250,14 +213,52 @@ const latestArticle = {
       ]
     },
     {
-      "title": "行业动态 5：具身智能评测与数据集",
+      "title": "行业动态 2：具身智能评测与数据集",
       "summary": "该动态与具身智能评测与数据集相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://www.therobotreport.com/orbbec-shows-ai-powered-vision-systems-automate-2026/",
+      "source_url": "https://www.therobotreport.com/we-know-how-to-build-smarter-robots-now-we-need-to-learn-smarter-ways-to-test-them/",
       "card_type": "行业动态卡",
-      "importance_score": 74,
+      "importance_score": 83,
       "tags": [
         "具身智能"
+      ]
+    },
+    {
+      "title": "行业动态 3：机器人操作与抓取",
+      "summary": "该动态与机器人操作与抓取相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
+      "source_url": "https://www.therobotreport.com/how-compact-cobot-integration-enhances-autonomous-mobile-robot-applications/",
+      "card_type": "行业动态卡",
+      "importance_score": 80,
+      "tags": [
+        "具身智能",
+        "机器人"
+      ]
+    },
+    {
+      "title": "行业动态 4：机器人基础模型",
+      "summary": "该动态与机器人基础模型相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
+      "source_url": "https://www.therobotreport.com/general-intuition-raises-320m-uses-video-game-data-train-robots/",
+      "card_type": "行业动态卡",
+      "importance_score": 82,
+      "tags": [
+        "具身智能",
+        "机器人基础模型",
+        "机器人"
+      ]
+    },
+    {
+      "title": "行业动态 5：人形机器人控制",
+      "summary": "该动态与人形机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
+      "source_url": "https://spectrum.ieee.org/video-friday-robot-grippers",
+      "card_type": "行业动态卡",
+      "importance_score": 78,
+      "tags": [
+        "具身智能",
+        "人形机器人",
+        "机器人"
       ]
     }
   ],
@@ -394,6 +395,13 @@ const latestArticle = {
       "importance_score": 63
     },
     {
+      "name": "NVlabs/ProtoMotions",
+      "url": "https://github.com/NVlabs/ProtoMotions",
+      "type": "GitHub",
+      "card_type": "来源链接卡",
+      "importance_score": 60
+    },
+    {
       "name": "Octoday-Hub/Embodied-AI",
       "url": "https://github.com/Octoday-Hub/Embodied-AI",
       "type": "GitHub",
@@ -405,7 +413,7 @@ const latestArticle = {
       "url": "https://github.com/FluxVLA/FluxVLA",
       "type": "GitHub",
       "card_type": "来源链接卡",
-      "importance_score": 62
+      "importance_score": 60
     },
     {
       "name": "SMBU-PolarBear-Robotics-Team/pb2025_sentry_nav",
@@ -415,43 +423,36 @@ const latestArticle = {
       "importance_score": 60
     },
     {
-      "name": "sou350121/VLA-Handbook",
-      "url": "https://github.com/sou350121/VLA-Handbook",
-      "type": "GitHub",
+      "name": "行业动态 1：人形机器人控制",
+      "url": "https://www.therobotreport.com/agibot-produces-15000th-robot-marking-milestone-embodied-ai-deployment/",
+      "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
-      "name": "行业动态 1：具身智能评测与数据集",
+      "name": "行业动态 2：具身智能评测与数据集",
       "url": "https://www.therobotreport.com/we-know-how-to-build-smarter-robots-now-we-need-to-learn-smarter-ways-to-test-them/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
-      "name": "行业动态 2：机器人操作与抓取",
+      "name": "行业动态 3：机器人操作与抓取",
       "url": "https://www.therobotreport.com/how-compact-cobot-integration-enhances-autonomous-mobile-robot-applications/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
-      "name": "行业动态 3：机器人基础模型",
+      "name": "行业动态 4：机器人基础模型",
       "url": "https://www.therobotreport.com/general-intuition-raises-320m-uses-video-game-data-train-robots/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
-      "name": "行业动态 4：人形机器人控制",
+      "name": "行业动态 5：人形机器人控制",
       "url": "https://spectrum.ieee.org/video-friday-robot-grippers",
-      "type": "行业动态",
-      "card_type": "来源链接卡",
-      "importance_score": 60
-    },
-    {
-      "name": "行业动态 5：具身智能评测与数据集",
-      "url": "https://www.therobotreport.com/orbbec-shows-ai-powered-vision-systems-automate-2026/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
