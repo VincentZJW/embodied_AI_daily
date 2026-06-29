@@ -1,0 +1,417 @@
+[
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.28237v1",
+    "title": "Unleashing Infinite Motion: Scaling Expressive Quadrupedal Motion via Generative Video Priors",
+    "abstract": "Quadruped robots have achieved remarkable locomotion, yet their behavioral repertoire remains confined to a few gaits--far from the expressive, companion-like presence long envisioned for them. Attempts to import the humanoid recipe of large-scale motion data have inherited one tacit assumption: that robot motion must first pass through an animal body, making data collection dependent on cooperative animals, reconstruction fragile across species, and retargeting ill-posed across incompatible morphologies. We propose Uni-Mo, a fully automated pipeline that removes the animal from the loop by reframing data scarcity as a generation problem: an LLM proposes motion prompts, a video diffusion model synthesizes the corresponding robot behaviors, and the generated videos are lifted into 3D reference trajectories used to train tracking policies deployed on a real Unitree Go2. To make naively-drifting generations reliably extractable, we introduce an Identity Consistency Loss that enforces appearance coherence across frames. We release Quad-Imaginarium at https://github.com/GaoLii/Quad-Imaginarium.git, the resulting open-source dataset of 7,488 language-annotated quadruped motions (18.5 hours) spanning acrobatic and performative behaviors. We validate 392 randomly sampled motions on a real Unitree Go2 with a 96.7% deployment success rate, complemented by a 97.6% success rate across the full dataset in simulation.",
+    "authors": [
+      "Youzhi Liu",
+      "Li Gao",
+      "Yifei Qian",
+      "Liu Liu",
+      "Yang Cai",
+      "Ziqiao Li"
+    ],
+    "published": "2026-06-26T16:23:40+00:00",
+    "updated": "2026-06-26T16:23:40+00:00",
+    "url": "http://arxiv.org/abs/2606.28237v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.28237v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.28215v1",
+    "title": "HAT-4D: Lifting Monocular Video for 4D Multi-Object Interactions via Human-Agent Collaboration",
+    "abstract": "Extracting dynamic 4D object interactions from massive, in-the-wild monocular videos offers a highly efficient data collection pathway for scaling Embodied AI and training VLAs. However, existing monocular 4D reconstruction methods primarily focus on isolated objects, often failing under the severe occlusions and complex dynamics inherent in multi-object interactions. To bridge this gap, we propose HAT-4D, the first agentic framework designed to reconstruct the 3D geometry, temporal dynamics, and physical interactions of multiple objects from a single video. By integrating VLMs with a multi-level human-in-the-loop feedback mechanism, HAT-4D efficiently resolves depth ambiguities and interaction-induced occlusions during 3D generation and 4D propagation, yielding physically plausible assets without relying on expensive multicamera rigs. As a scalable data engine, HAT-4D facilitates the creation of MVOIK-4D, an open-world benchmark for monocular 4D interaction reconstruction, accompanied by a novel multi-dimensional evaluation protocol focused on physical plausibility and temporal consistency. Extensive experiments demonstrate that HAT-4D achieves SOTA performance on most evaluation metrics, while maintaining competitive semantic alignment. Ablation studies show that introducing a small amount of human feedback improves interaction reconstruction. Moreover, the data produced by HAT-4D effectively improves baseline performance when used for fine-tuning. Our data and code are available at https://lijiaxin0111.github.io/HAT4D/",
+    "authors": [
+      "Jiaxin Li",
+      "Yuxiang Wu",
+      "Zhenkai Zhang",
+      "Xinrui Shi",
+      "Haoyuan Wang",
+      "Yichen Zhao",
+      "Su Linxiang",
+      "Chenyang Yu",
+      "Mingyu Zhang",
+      "Yifan Ding",
+      "Boran Wen",
+      "Li Zhang",
+      "Ruiyang Liu",
+      "Yong-Lu Li"
+    ],
+    "published": "2026-06-26T16:05:58+00:00",
+    "updated": "2026-06-26T16:05:58+00:00",
+    "url": "http://arxiv.org/abs/2606.28215v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.28215v1",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.GR"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.28182v1",
+    "title": "LLawCo: Learning Laws of Cooperation for Modeling Embodied Multi-Agent Behavior",
+    "abstract": "Embodied agents operating in decentralized and partially observable environments have attracted growing attention in recent years. However, existing large language model (LLM)-based agents often exhibit behaviors that are misaligned with their partners or inconsistent with the environment state, leading to inefficient cooperation and poor task success. To address this challenge, we propose a novel framework, Learning Laws of Cooperation (LLawCo), that enables embodied agents to autonomously align with both their partners and task objectives. Our framework allows agents to reflect on past failures to extract misaligned behavioral patterns, which are used to derive high-level behavioral laws, such as \"Talk when necessary\" and \"Wait for partner.\" These laws are explicitly incorporated into the agents' chains of thought via supervised fine-tuning, aligning their reasoning with task requirements and the behavior of other agents. To evaluate our approach, we introduce PARTNR-Dialog, a large-scale multi-agent communicative and cooperative planning benchmark built on the PARTNR environment. Experiments on existing tasks and our new benchmark demonstrate significant improvements in cooperative efficiency and task success rates. Across four backbone LLMs, our method achieves average success rate improvements of 4.5% on the PARTNR-Dialog benchmark and 6.8% on the TDW-MAT benchmark over state-of-the-art open-source communicative agent frameworks. See the LLawCo project page for details: https://www.merl.com/research/highlights/LLawCo",
+    "authors": [
+      "Qinhong Zhou",
+      "Chuang Gan",
+      "Anoop Cherian"
+    ],
+    "published": "2026-06-26T15:26:12+00:00",
+    "updated": "2026-06-26T15:26:12+00:00",
+    "url": "http://arxiv.org/abs/2606.28182v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.28182v1",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CV",
+      "cs.RO"
+    ],
+    "primary_category": "cs.LG"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.28133v1",
+    "title": "Translation as a Bridging Action: Transferring Manipulation Skills from Humans to Robots",
+    "abstract": "We study whether we can learn novel manipulation skills from human actions to a bi-manual robot with parallel grippers. Human action data is cheap, abundant, and diverse, making it one of the most promising resources for scaling up robot learning. Yet transferring skills from humans to robots remains hard: most prior work treats humans as just another bi-manual 6DoF embodiment, where hand-pose estimates are noisy and the contact patterns of human fingers differ fundamentally from those of a parallel gripper. We argue that learning rotation-inclusive action signals from human data is therefore sub-optimal, and instead propose a bridging action representation: the relative wrist translation within the initial head-camera frame, an action space shared by humans and robots. To handle the potential absence of certain action components in different embodiments, we build a $π_0$-like vision-language-action model with interleaved action tokens and attention masking. On a suite of novel bi-manual manipulation tasks, our bridging action transfers human manipulation knowledge to robots far more effectively than noisy 6DoF human actions and scales with the amount of human data.",
+    "authors": [
+      "Sijin Chen",
+      "Kaixuan Jiang",
+      "Haixin Shi",
+      "Yanhui Wang",
+      "Weiheng Zhong",
+      "Haosheng Li",
+      "Bo Jiang",
+      "Yuxiao Liu",
+      "Xihui Liu"
+    ],
+    "published": "2026-06-26T14:34:04+00:00",
+    "updated": "2026-06-26T14:34:04+00:00",
+    "url": "http://arxiv.org/abs/2606.28133v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.28133v1",
+    "categories": [
+      "cs.RO",
+      "cs.CV"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.28128v1",
+    "title": "PhysisForcing: Physics Reinforced World Simulator for Robotic Manipulation",
+    "abstract": "Video generation models have emerged as a promising paradigm for embodied world simulation. However, both general-domain video generators and robot-specific data fine-tuned models can still produce physically implausible manipulations, including discontinuous motion trajectories and inconsistent robot-object interactions, which limits their reliability as world simulators. Through extensive experiments, we find that such physical instability mainly arises from two factors: deformation of moving objects and implausible spatio-temporal correlations among interacting entities, particularly during contact. Building on this observation, we propose PhysisForcing, a scalable training framework that strengthens physical consistency by focusing supervision on physics-informative regions through joint optimization of pixel-level and semantic-level features. The framework consists of a pixel-level trajectory alignment loss, which supervises DiT features using reference point trajectories, and a semantic-level relational alignment loss, which aligns DiT features with inter-region relations extracted from a frozen video understanding encoder. Extensive experiments on R-Bench, PAI-Bench, and EZS-Bench show that PhysisForcing consistently improves embodied video generation over strong baselines, improving the Wan2.2-I2V-A14B and Cosmos3-Nano base models on R-Bench by 22.3\\% and 9.2\\% (7.1\\% and 3.7\\% over vanilla finetuning), with the Cosmos3-Nano variant attaining the best overall score. Beyond generation, as a world model under the WorldArena action-planner protocol it raises the closed-loop success rate from 16.0\\% to 24.0\\% and further improves downstream policy success, indicating that physically aligned video models yield stronger representations for robotic manipulation.",
+    "authors": [
+      "Peiwen Zhang",
+      "Yufan Deng",
+      "Shangkun Sun",
+      "Juncheng Ma",
+      "Duomin Wang",
+      "Jonas Du",
+      "Zilin Pan",
+      "Ye Huang",
+      "Hao Liang",
+      "Songyan Huang",
+      "Ruihua Zhang",
+      "Enze Xie",
+      "Ming-Yu Liu",
+      "Daquan Zhou"
+    ],
+    "published": "2026-06-26T14:30:18+00:00",
+    "updated": "2026-06-26T14:30:18+00:00",
+    "url": "http://arxiv.org/abs/2606.28128v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.28128v1",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.RO"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.28060v1",
+    "title": "ReScene: Structured Indoor Scene Reconstruction from Multi-View Captures",
+    "abstract": "Constructing simulation-ready 3D scenes from multi-view captures is a key bottleneck for Embodied Artificial Intelligence, as downstream tasks require object-level structure, explicit inter-object relations, and physical plausibility. Existing approaches either rely on specialized capture hardware, suffer from single-view bias in object reconstruction, or yield layouts that are geometrically reasonable but physically inconsistent. We identify that the problem is not single-object reconstruction but cross-view relation fusion and physically plausible scene assembly. To address this challenge, we present ReScene, a framework that threads multi-view geometry throughout the pipeline as a unifying prior. Our method consists of two main components: HierView prioritizes reconstruction views based on semantic consistency and 3D coverage completeness, replacing the largest-mask heuristic that conflates image occupancy with object coverage; and Relation-Aware Assembly fuses multi-frame relation predictions from a vision-language model with geometric and room-shell priors into a confidence-weighted scene graph, enabling physically consistent scene assembly. ReScene sets a new state of the art across geometry, rendering, and perceptual quality on a set of ScanNet scenes, achieving a 17% reduction in Chamfer Distance and 26% in LPIPS over the strongest prior baseline, while running up to 10x faster than prior multi-view methods. Based on the reconstructed scenes, we also generate an embodied visual question answering dataset, on which fine-tuned Qwen-VL approaches the performance of strong closed-source models on several spatial reasoning tasks.",
+    "authors": [
+      "Haoran Xu",
+      "Lechao Zhang",
+      "Daoguo Dong",
+      "Yan Gao",
+      "Xin Tan"
+    ],
+    "published": "2026-06-26T13:08:40+00:00",
+    "updated": "2026-06-26T13:08:40+00:00",
+    "url": "http://arxiv.org/abs/2606.28060v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.28060v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.28049v1",
+    "title": "AirGroundBench: Probing Spatial Intelligence in Multimodal Large Models under Heterogeneous Multi-View Embodied Collaboration",
+    "abstract": "In recent years, multimodal large language models (MLLMs) have shown strong potential for embodied intelligence, yet their ability to maintain geometrically consistent spatial understanding across heterogeneous views remains under-evaluated. Existing benchmarks largely focus on single-agent, single-view perception, leaving a gap in the systematic assessment of collaborative air-ground settings, where multi-scale observations are complementary but introduce scale mismatch, asymmetric occlusion, and reference-frame inconsistencies. We present AirGroundBench, a diagnostic benchmark for evaluating multi-view spatial intelligence in heterogeneous UAV-UGV collaboration. AirGroundBench is built from 11 high-fidelity simulated environments with 1,021 synchronized air-ground observation pairs, yielding approximately 62,000 dual-view, four-option single-choice visual question answering instances and 115 closed-loop vision-language navigation episodes. It covers 10 task types organized into four progressively demanding capability dimensions: spatial perception, cross-view alignment, spatial transformation and reasoning, and embodied decision-making. To support geometry-grounded evaluation and analysis, we provide structured spatial annotations, including cross-view object identities and metric 2D and 3D bounding boxes. Evaluations of 13 representative MLLMs under UAV-only, UGV-only, and dual-view input settings reveal consistent bottlenecks: models perform relatively well on spatial perception but struggle with cross-view alignment and transformation-intensive reasoning, and these deficits propagate to sequential decision-making in vision-language navigation. Although dual-view inputs provide measurable gains over single-view variants, a persistent gap from human performance remains, highlighting geometric consistency as a key limitation of current embodied MLLMs.",
+    "authors": [
+      "Haotian Li",
+      "Yida Wang",
+      "Leyuan Wang",
+      "Jinshan Lai",
+      "Keyang Wang",
+      "Zonghao Guo",
+      "Qiang Ma",
+      "Liuyu Xiang",
+      "Jianwei Hu",
+      "Zhaofeng He"
+    ],
+    "published": "2026-06-26T12:51:22+00:00",
+    "updated": "2026-06-26T12:51:22+00:00",
+    "url": "http://arxiv.org/abs/2606.28049v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.28049v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.27962v1",
+    "title": "Building a Scalable, Reproducible, Evaluatable, and Closed-Loop Simulation Environment Foundation for Embodied Intelligence Cloud-Native Simulation Infrastructure for Embodied Intelligence Training, Evaluation, and Data Collection",
+    "abstract": "This paper presents a cloud-native simulation infrastructure framework for embodied intelligence that supports large-scale training, standardized evaluation, and simulation-based data collection. The framework unifies simulation environment generation, task execution, trajectory collection, model evaluation, data management, and cloud services into a scalable and reproducible platform. To address the high cost, limited scalability, and poor reproducibility of real-world robotic data collection, the framework adopts cloud-native technologies including elastic resource scheduling, containerized simulation, unified data management, and service-oriented system design, enabling efficient large-scale simulation for multi-model and multi-task workloads. Built on a four-layer architecture, the framework provides standardized environment assets, automated task generation, trajectory collection, benchmark evaluation, and closed-loop data optimization. It further integrates representative systems including D-VLA, RL-VLA3, Sword, and Pre-VLA to support scalable simulation, dynamic scheduling, visual augmentation, and real-time data filtering. We argue that cloud-native simulation infrastructure provides a unified foundation for data generation, model training, standardized evaluation, and real-world deployment, and will play a key role in the future development of embodied intelligence.",
+    "authors": [
+      "Junwu Xiong",
+      "Yongjian Guo",
+      "Mingxi Luo",
+      "Ning Qiao",
+      "Lei Kang",
+      "Song Wang",
+      "Yince Gao"
+    ],
+    "published": "2026-06-26T11:04:34+00:00",
+    "updated": "2026-06-26T11:04:34+00:00",
+    "url": "http://arxiv.org/abs/2606.27962v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.27962v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.27929v1",
+    "title": "When Multi-Robot Systems Meet Agentic AI:Towards Embodied Collective Intelligence",
+    "abstract": "Embodied AI is increasingly becoming agentic, shifting robots from perception--control pipelines towards closed-loop systems that can retrieve context, deliberate during execution, monitor feedback, and refine future behavior. In parallel, robotics research has also moved from single-robot autonomy towards multi-robot systems, driven by the need for wider sensing, distributed action, heterogeneous capabilities, and fault tolerance. As AI agents move from single-agent use towards multi-agent collaboration, robotics faces a parallel challenge: robot teams must move beyond sharing maps, task assignments, and datasets towards sharing the state produced by embodied agent loops. This article explores Embodied Collective Intelligence (ECI), a future multi-robot paradigm in which a robot team accumulates and uses world context, task progress, and skill experience as shared resources. Specifically, we first review how embodied AI is becoming agentic and how multi-robot cooperation has evolved. We then present Embodied Collective Intelligence through Co-Perception, Co-Action, and Co-Evolution. Finally, we use an illustrative navigation study to examine one concrete component of the concept: shared world-memory inheritance. The study shows that a newly added robot can benefit from merged team memory, but it is not intended as a full evaluation of the ECI framework. Taken together, the review and conceptual framework motivate Embodied Collective Intelligence as a direction for embodied multi-agent intelligence, while the case study grounds one measurable part of the concept.",
+    "authors": [
+      "Yuxuan Yan",
+      "Yuanyuan Jia",
+      "Qianqian Yang"
+    ],
+    "published": "2026-06-26T10:21:52+00:00",
+    "updated": "2026-06-26T10:21:52+00:00",
+    "url": "http://arxiv.org/abs/2606.27929v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.27929v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.27872v1",
+    "title": "S$^2$-VLA: State-Space Guided Vision-Language-Action Models for Long-Horizon Manipulation",
+    "abstract": "Vision-Language-Action (VLA) models have demonstrated strong capabilities in robotic manipulation, but their performance degrades significantly in long-horizon tasks due to cumulative error propagation. This limitation largely arises from static feature fusion mechanisms that rely on fixed weights to combine visual, language, and action representations, preventing the model from adapting to different phases of task execution. To address this limitation, we propose S$^2$-VLA, a framework that introduces a State-Space Guided Adaptive Attention (SSGAA) mechanism. SSGAA maintains a belief state that tracks task progression and generates dynamic gating weights to adaptively fuse information from three complementary sources visual features for spatial perception, task intents for high-level task planning, and temporal action sequences for execution consistency. This adaptive fusion allows the model to shift its focus throughout task execution, aligning with the evolving requirements of different task stages. Despite its compact 2B parameter size, S$^2$-VLA consistently outperforms larger 7B-scale models and achieves state-of-the-art performance on long-horizon manipulation benchmarks, including LIBERO and SimplerEnv. highlighting the importance of adaptive feature fusion for long-horizon robotic manipulation.",
+    "authors": [
+      "Zhipeng Xie",
+      "Zongyi Han",
+      "Xiangyi Wei",
+      "Shiliang Sun",
+      "Yang Li",
+      "Jing Zhao"
+    ],
+    "published": "2026-06-26T09:13:16+00:00",
+    "updated": "2026-06-26T09:13:16+00:00",
+    "url": "http://arxiv.org/abs/2606.27872v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.27872v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.27871v1",
+    "title": "LocalNav: Distilling Frontier VLMs and Embodied RL for On-Device Object Goal Navigation",
+    "abstract": "Vision Language Models (VLMs) have emerged in the robotic domain as a powerful tool that enables environmental perception with language context, serving as a catalyst for open-vocabulary tasks like ObjectNav. Yet, their computational footprint typically confines them to cloud execution, hindering low-latency inference with local deployment on resource-constrained robots. To address this challenge, we present a distillation strategy that transfers complex spatial-semantic reasoning from large frontier models into a lightweight, 4B-parameter local VLM for edge execution on embedded GPU devices (e.g., Jetson Orin). We first establish a State of the Art (SotA), Scene Graph (SG)-based pipeline using Claude Sonnet 4.6, achieving a 39.7% Success Rate (SR) on the HM3D OVON benchmark. We then demonstrate that fine-tuning Qwen3.5-4B on just 500 frontier reasoning traces effectively enables navigation capabilities, yielding a SR of 34.5%, narrowing the gap to the performance of large cloud models. Finally, we introduce E-RLVR with Token Generation (TG) regularization to compress output sequence lengths for physical deployment while grounding the agent in its task. This downstream optimization reduces TG overhead by 72.1% and latency by 71.8%. Combined with quantization, this joint strategy yields a cumulative 82.8% reduction in overall inference latency without significantly sacrificing performance, presenting a viable paradigm for local, low-latency VLM execution on mobile robots.",
+    "authors": [
+      "Nicolas Baumann",
+      "Liam Boyle",
+      "Pu Deng",
+      "Edoardo Ghignone",
+      "Boyang Sun",
+      "Marc Pollefeys",
+      "Luca Benini",
+      "Michele Magno"
+    ],
+    "published": "2026-06-26T09:11:59+00:00",
+    "updated": "2026-06-26T09:11:59+00:00",
+    "url": "http://arxiv.org/abs/2606.27871v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.27871v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.27826v1",
+    "title": "NormAct: A Benchmark for Hidden Social Norm Compliance in Embodied Planning",
+    "abstract": "Multimodal large language models (MLLMs) are increasingly deployed as embodied planners in egocentric environments, where task success requires not only achieving instructed goals but also acting in socially appropriate ways. While explicit goals may render certain actions optimal, implicit social norms often impose hidden constraints. Existing evaluations typically focus on explicit goal achievement or direct norm knowledge, seldom assessing whether planners can infer and apply these hidden constraints within action sequences. We introduce NormAct, a benchmark for embodied social-norm interactions that evaluates plans on Goal Achievement, Norm Compliance, and overall Task Success. NormAct uniquely embeds hidden norms within ordinary tasks, testing whether models can realize them without explicit instruction. Experiments with state-of-the-art MLLMs (GPT-5.4, Claude Opus 4.7, Gemini 3 Pro) reveal a significant gap: models achieve explicit goals in 67.3\\% of cases, but comply with hidden norms in only 26.4\\%. Cue-condition experiments indicate that this gap stems not from a lack of general social knowledge, but from challenges in activating and grounding relevant norms in context. To address this, we propose NormPerceptor, a context-conditioned cue generator that infers scene-relevant norms prior to planning, increasing Task Success from 24.2\\% to 46.7\\%. Our results underscore the importance of enabling embodied agents to proactively detect hidden norms, ground them in visual evidence, and integrate them as action-planning constraints. Our benchmark is publicly available at https://huggingface.co/datasets/Caleb196x/NormAct.",
+    "authors": [
+      "Shiyun Zhao",
+      "Xinwei Song",
+      "Tianyu Guo",
+      "Xiaomeng Gao",
+      "Mingyuan Liu",
+      "Xu Han",
+      "Yuanyuan Zhang",
+      "Zhenliang Zhang",
+      "Xue Feng",
+      "Bo Dai"
+    ],
+    "published": "2026-06-26T08:10:39+00:00",
+    "updated": "2026-06-26T08:10:39+00:00",
+    "url": "http://arxiv.org/abs/2606.27826v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.27826v1",
+    "categories": [
+      "cs.AI"
+    ],
+    "primary_category": "cs.AI"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.27813v1",
+    "title": "Booster Lab: A Data-Centric Pipeline for Learning Deployable Humanoid Locomotion Policies",
+    "abstract": "Humanoid robot motion learning requires not only task-oriented control policies but also physically feasible and natural behaviors that can be transferred to real robots. However, robot-feasible motion data are often scarce: raw human demonstrations may be incompatible with the robot morphology, open-source clips vary in quality, and simulation-collected robot trajectories still require feasibility checking. To address these challenges, we propose a data-centric training and deployment pipeline that integrates motion data curation, real-to-sim model adaptation, AMP-based reinforcement learning, and sim-to-real deployment. We validate the framework on the Booster T1 robot and further provide preliminary cross-platform validation on Booster K1.",
+    "authors": [
+      "Penghui Chen",
+      "Tinglong Zheng",
+      "Yufeng Zhang",
+      "Mingguo Zhao"
+    ],
+    "published": "2026-06-26T07:55:15+00:00",
+    "updated": "2026-06-26T07:55:15+00:00",
+    "url": "http://arxiv.org/abs/2606.27813v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.27813v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.27807v1",
+    "title": "SpikeVLA: Vision-Language-Action Models with Spiking Neural Networks",
+    "abstract": "Vision-Language-Action (VLA) models have become a dominant paradigm for embodied intelligence. However, most existing approaches are built on large-scale transformers, resulting in substantial inference latency and energy consumption that limit their practical deployment in low-power, real-time scenarios. We propose SpikeVLA, a spiking VLA architecture for embodied navigation with energy-efficient inference, consisting of three key components. (i) A spiking vision encoder, Spike-V, that replaces dense continuous layers with event-driven spiking layers to reduce the energy consumption of visual representation learning. (ii) A multi-modal spiking large language model, Spike-L, that reformulates cross-modal reasoning with spiking dynamics and token-level event-driven sparsity to further lower computational cost. (iii) A spiking action policy network, Spike-A employs Laplacian-kernel population coding with a multi-layer fully connected SNN, and decodes spiking activities into stable and robust continuous control with energy-efficient inference under low-power constraints. Experiments on navigation and robotic control tasks show that SpikeVLA significantly reduces energy consumption and computational cost while maintaining competitive performance, highlighting its potential for low-power, real-time embodied intelligence.",
+    "authors": [
+      "Ruiqi Song",
+      "Dujun Nie",
+      "Siyu Teng",
+      "Baiyong Ding",
+      "Xiaotong Zhang",
+      "Dong Li",
+      "Chenming Zhang",
+      "Yuchen Li",
+      "Hangbin Wu",
+      "Long Chen"
+    ],
+    "published": "2026-06-26T07:45:45+00:00",
+    "updated": "2026-06-26T07:45:45+00:00",
+    "url": "http://arxiv.org/abs/2606.27807v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.27807v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.27755v1",
+    "title": "Drop-Then-Recovery: How Redundant Are Vision-Language-Action Models?",
+    "abstract": "Vision-Language-Action (VLA) models enable instruction-driven robotic manipulation, but they inherit oversized language backbones from pretrained VLMs whose capacity far exceeds what is needed for short robotic instructions. This raises a basic question: how much of a VLA model is actually necessary for closed-loop control? In this work, we study architectural redundancy in VLA models by using transformer block removal as a controlled intervention. We introduce \\textbf{Drop-Then-Recovery (DTR)}, an analysis protocol that removes selected blocks from a pretrained VLA model and then fine-tunes the resulting model to measure whether the removed capacity was necessary for downstream control. To make this intervention reliable, we propose \\textbf{GateProbe}, a one-shot virtual-gate sensitivity metric that ranks blocks by their contribution to the downstream action loss. Across multiple VLA architectures, manipulation benchmarks and even real-robot industrial scenarios, we find a strong asymmetry in post-removal recoverability: \\ul{\\textit{language backbones are highly redundant for standard robotic manipulation tasks, whereas vision and action pathways are substantially less tolerant to removal}}. On LIBERO, removing half of the LLM blocks even improves OpenVLA-OFT from 95.0% to 98.3% under the same downstream fine-tuning budget, and retaining only two language blocks still recovers baseline-level performance. These results suggest that current VLA benchmarks may exert limited pressure on deep language grounding and compositional instruction understanding, and that future VLA architectures should allocate capacity more deliberately across language, vision, and action components. The code is available at https://github.com/s1ghhh/VLADrop.",
+    "authors": [
+      "Guoheng Sun",
+      "Kaixi Feng",
+      "Shwai He",
+      "Xiaochuan Gong",
+      "Yexiao He",
+      "Ziyao Wang",
+      "Zheyu Shen",
+      "Wanghao Ye",
+      "Ramana Rao Kompella",
+      "Gaowen Liu",
+      "Ang Li"
+    ],
+    "published": "2026-06-26T06:22:17+00:00",
+    "updated": "2026-06-26T06:22:17+00:00",
+    "url": "http://arxiv.org/abs/2606.27755v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.27755v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.27676v1",
+    "title": "CWI: Composite Humanoid Whole-Body Imitation System for Loco-manipulation",
+    "abstract": "Achieving everyday tasks with humanoid robots requires coordinating stable locomotion with versatile manipulation. However, existing whole-body controllers still face significant challenges. Methods trained solely via command sampling, without motion-capture (MoCap) data, often struggle with sparse rewards and require carefully tuned curricula to converge. This is especially problematic for upper-body control, where the resulting motions deviate from human-like statistics and degrade whole-body coordination. Conversely, approaches that imitate full-body MoCap data suffer from dataset imbalance, as many locomotion trajectories are overly aggressive for stable-locomotion scenarios, necessitating extensive data filtering and augmentation. To address this, we present Composite Whole-Body Imitation (CWI), a framework that decouples the use of MoCap data for upper-body manipulation and lower-body locomotion. This decoupling allows us to exploit the full MoCap dataset of diverse manipulation references, while stable, command-conditioned lower-body locomotion is guided by dual discriminators trained on curated expert-quality walking and squatting clips via an Adversarial Motion Prior (AMP). A multi-critic architecture reduces conflicts among locomotion, manipulation, and motion-style objectives, and a teacher--student distillation stage yields a whole-body policy conditioned only on bimanual hand poses and velocity/height commands. We evaluate CWI through simulation experiments and real-world deployment on a full-size LimX Oli humanoid. The results show competitive loco-manipulation performance, robust whole-body coordination, and practical teleoperation without full-body motion-capture equipment. A project page with supplementary material can be found at https://cwi-ral.github.io/CWI-RAL-Webpage.",
+    "authors": [
+      "Wenqi Ge",
+      "Junde Guo",
+      "Zhen Fu",
+      "Shunpeng Yang",
+      "Jiayu Chen",
+      "Hua Chen"
+    ],
+    "published": "2026-06-26T03:14:52+00:00",
+    "updated": "2026-06-26T03:14:52+00:00",
+    "url": "http://arxiv.org/abs/2606.27676v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.27676v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2606.27663v1",
+    "title": "Direct Action-Head Injection of A Grounded 3D Point Unlocks Spatial and Task Generalization",
+    "abstract": "Vision-Language-Action (VLA) models leverage large-scale vision-language pretraining for flexible robot manipulation, yet at test time they remain brittle along two axes: spatial generalization, when object positions differ from those seen during training, and task generalization, when a familiar scene is paired with a different language instruction than the one seen in training. A growing family of methods addresses this brittleness by endowing a policy with the spatial and task-aware information such as 2D pixel-coordinate for object localization and placement. However, we find that existing representation through language prompting or visual prompting does not address the limitations; in contrast, exploiting a 3D point-based representation and feeding it directly to the action head leads to substantial improvements-revealing that how the grounding signal is represented and injected into the VLA is the true game changer. Thus, we propose a lightweight, model-agnostic module that represents the grounding signal in 3D, computes its relative displacement to the gripper, and injects the resulting spatial embedding directly into the action head through adaptive layer normalization. The entire module is a two-layer MLP that requires no changes to the VLA backbone or pretraining pipeline. On LIBERO-PRO, our method improves the average success rate of GR00T-N1.6 from 31.2 to 77.5 points under task perturbation and from 28.1 to 60.2 points under position perturbation (gains of 46.3 and 32.1 points). Comparable gains are achieved for $π_{0.5}$ as well, demonstrating that the mechanism is backbone-agnostic. Together, these results support our central finding: given adequate grounding lifted into 3D, injecting it directly into the action head is what unlocks both spatial and task generalization in VLAs-achievable with nothing more than a lightweight module on top of a pretrained backbone.",
+    "authors": [
+      "Shiang-Feng Tsai",
+      "Jin-Cheng Jhang",
+      "Yen-Ling Tai",
+      "Jia-Hong Lai",
+      "Shih-Yun Wong",
+      "KangTung-Hsu",
+      "Yi-Ting Chen"
+    ],
+    "published": "2026-06-26T02:44:27+00:00",
+    "updated": "2026-06-26T02:44:27+00:00",
+    "url": "http://arxiv.org/abs/2606.27663v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.27663v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  }
+]
