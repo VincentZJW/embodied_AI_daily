@@ -1,0 +1,155 @@
+[
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Humanoid says KinetIQ Ascend reinforcement learning approaches human-level dexterity",
+    "summary": "<p>Humanoid says its KinetIQ Ascend approach can reach 99.9% manipulation reliability at human speed and beyond for industrial tasks. </p> <p>The post <a href=\"https://www.therobotreport.com/humanoid-announces-kinetiq-ascend-reinforcement-learning-approach/\">Humanoid says KinetIQ Ascend reinforcement learning approaches human-level dexterity</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/humanoid-announces-kinetiq-ascend-reinforcement-learning-approach/",
+    "published": "2026-07-05T12:30:20+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Context is king: How Avride uses cloud VLMs as a safety net for delivery robots",
+    "summary": "<p>Avride uses vision-language models, or VLMs, to improve the environmental awareness of its delivery robots.</p> <p>The post <a href=\"https://www.therobotreport.com/how-avride-uses-cloud-vlms-safety-net-delivery-robots/\">Context is king: How Avride uses cloud VLMs as a safety net for delivery robots</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/how-avride-uses-cloud-vlms-safety-net-delivery-robots/",
+    "published": "2026-07-04T12:30:37+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://spectrum.ieee.org/feeds/topic/robotics.rss",
+    "feed_title": "",
+    "title": "Video Friday: An Earthbound Mars Rover for the Moon",
+    "summary": "<img src=\"https://spectrum.ieee.org/media-library/mars-style-rover-prototype-on-rugged-ground-under-a-clear-sky-with-the-moon-visible.png?id=67083121&amp;width=1245&amp;height=700&amp;coordinates=0%2C0%2C0%2C0\" /><br /><br /><p><span><a href=\"https://spectrum.ieee.org/tag/video-friday\" target=\"_blank\">Video Friday</a> is your weekly selection of awesome robotics videos, collected by your friends at </span><em>IEEE Spectrum</em><span> robotics. We also post a weekly calendar of upcoming robotics events for the next few months. Please </span><a href=\"mailto:automaton@ieee.org?subject=Robotics%20event%20suggestion%20for%20Video%20Friday\">send us your events</a><span> for inclusion.</span></p><h5><a href=\"https://roboticsconference.org/\">RSS 2026</a>: 13–17 July 2026, SYDNEY</h5><h5><a href=\"https://mrs.fel.cvut.cz/summer-school-2026/\">Summer School on Multi-Robot Systems</a>: 29 July–4 August 2026, PRAGUE</h5><h5><a href=\"https://actuate.foxglove.dev/\">Actuate 2026</a>: 18–19 August 2026, SAN FRANCISCO</h5><h5><a href=\"https://2026.ieee-iros.org/\">IROS 2026</a>: 27 September–1 October 2026, PITTSBURGH</h5><p>Enjoy today’s videos!</p><div class=\"horizontal-rule\"></div><div><span style=\"display: none;\"> </span></div><blockquote class=\"rm-anchors\" id=\"fmxmym6bj-y\"><em>NASA is considering a mission concept for an advanced, nuclear-powered rover to be deployed to the Moon’s South Pole as part of the agency’s Moon Base plans. The PROMISE (Polar Rover for Observation, Mapping, and In-Situ Exploration) mission concept relies on the Curiosity Mars rover mission’s testbed rover. Some elements of the Perseverance Mars testbed rover shown in this video could be used as well. As exact duplicates of Curiosity and Perseverance, the testbed rovers are equipped with flight-proven engineering systems capable of carrying technology as well as science instruments that would advance Moon Base efforts.</em></blockquote><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>A Mars rover for the Moon? That’s some <a href=\"https://science.nasa.gov/resource/improved-optimism/\" target=\"_blank\">OPTIMISM</a> right there.</p><p>[ <a href=\"https://science.nasa.gov/resource/improved-optimism/\">JPL</a> ]</p><div class=\"horizontal-rule\"></div><p class=\"rm-anchors\" id=\"6qrzc1kf7kc\">This is the absolute best thing since <a href=\"https://spectrum.ieee.org/festos-fantastical-flying-robots\" target=\"_blank\">Festo’s AirPenguin</a>.</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><blockquote><em>The project explores soft, lightweight robots that can gently float around people in indoor environments and invite playful, affectionate, and everyday interactions. Unlike conventional drones, our robot is designed to be quiet, soft, touch-safe, and socially approachable. Through this work, we ask what future indoor companion robots might feel like if they were not rigid machines, but gentle floating beings that share space with us.</em></blockquote><p>[ <a href=\"https://dl.acm.org/doi/10.1145/3800645.3813051\">Paper</a> ]</p><p>Thanks, Mingyang!</p><div class=\"horizontal-rule\"></div><blockquote class=\"rm-anchors\" id=\"m7pzr90bqw4\"><em>Today, we’re launching our home robot, Isaac 1. Deliveries will begin this fall.</em></blockquote><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>US $500 per month, with some basic task autonomy plus teleoperation.</p><p>[ <a href=\"https://www.weaverobotics.com/isaac-1\">Weave Robotics</a> ]</p><div class=\"horizontal-rule\"></div><p class=\"rm-anchors\" id=\"tv90gfm9rao\">A couple things from this new Figure video—thing one is that the cart pulling is a good illustration of how clumsy humanoid robots still are at basic tasks relative to humans. Thing two is that there are absolutey no humans anywhere near these robots. You can see one guy at 0:19, which I can only assume is an accident, because these robots are not safe to be around from an industrial safety perspective.</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://www.figure.ai/news/f-03-at-bmw\">Figure</a> ]</p><div class=\"horizontal-rule\"></div><p class=\"rm-anchors\" id=\"5mhop2g4e4u\">Our very own Kohava Mendelsohn met some robots at ICRA in Vienna, and only one of them was murderous.</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://2026.ieee-icra.org/\">ICRA 2026</a> ]</p><div class=\"horizontal-rule\"></div><blockquote class=\"rm-anchors\" id=\"ipyxwelid9q\"><em>Welcome to Robot Park, where we’re building the future with Apollo 2. Robot Park is where Apollo learns today, getting the experience needed to make a difference tomorrow. Today we’re announcing Robot Park, our nearly 90,000-square-foot facility where Apollo 2 is collecting real-world training data needed to advance autonomous humanoid robots. </em></blockquote><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://apptronik.com/news-collection/welcome-to-robot-park-where-apptroniks-apollo-goes-to-work\">Apptronik</a> ]</p><div class=\"horizontal-rule\"></div><blockquote class=\"rm-anchors\" id=\"mrlbqt5tkh4\"><em>UBTech Robotics, the world’s first publicly traded humanoid robot-maker, has launched a humanlike robot that features lifelike silicone skin and “emotional AI”, as Chinese tech firms increasingly transition robots from the factory floor to the family living room.</em></blockquote><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://www.scmp.com/tech/tech-trends/article/3358884/ubtechs-lifelike-humanoid-robots-built-companionship-arriving-homes-across-china\">SCMP</a> ]</p><div class=\"horizontal-rule\"></div><blockquote class=\"rm-anchors\" id=\"xdq8yzehviy\"><em>Spherephones are redefining how we experience sound. Created at Georgia Tech, this wearable uses spatial audio to alert users to movement from every direction—including behind and below. Built for safer human-robot collaboration, the technology is expanding into gaming and accessibility applications. See how music is becoming a new language for awareness and interaction.</em></blockquote><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://research.gatech.edu/feature/spherephones\">Georgia Tech</a> ]</p><div class=\"horizontal-rule\"></div><blockquote class=\"rm-anchors\" id=\"6dme3jyj3hg\"><em>Humanoid robots are meant to carry out long-horizon autonomous missions in a world built for humans. This is hard. These missions consist of many steps, each of which requires them to perceive, navigate, and interact with the environment. This is exactly Flexion’s goal: building the general-purpose intelligence that turns any robot into a useful helper.</em></blockquote><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://flexion.ai/news/flexion-reflect-v1.0\">Flexion</a> ]</p><div class=\"horizontal-rule\"></div><blockquote class=\"rm-anchors\" id=\"lttnht-y47m\"><em>We’re introducing KinetIQ Ascend — our reinforcement learning approach designed to reach 99.9% manipulation reliability at human speed and beyond.</em></blockquote><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://thehumanoid.ai/technology/kinetiq-ascend/\">Humanoid</a> ]</p><div class=\"horizontal-rule\"></div><blockquote class=\"rm-anchors\" id=\"hsmj7__elk0\"><em>Dr. Sebastian “Basti” Scherer has worked in field robotics since the first DARPA Grand Challenge in 2004. He runs the AirLab at Carnegie Mellon’s Robotics Institute and is the Director of Safe Embodied AI at FieldAI. While much of the industry is focused on local skills like tabletop manipulation, Dr. Scherer sees the greatest value in solving dirty, dull, and dangerous tasks that require operating in uncertain environments where the robot needs to “just work.” When robots “just work” they become less like robots and more like tools. “That’s the big challenge that we have to overcome,” he says, “and that’s the challenge that FieldAI is really primed to solve.”</em></blockquote><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://www.fieldai.com/\">Field AI</a> ]</p><div class=\"horizontal-rule\"></div><p class=\"rm-anchors\" id=\"omzfvmtwsjc\">Look, I really appreciate how valuable robots like ElliQ can be, and robots that do good work and offer a financial benefit are incredibly important, especially in the context of family care. But in my opinion, you really shouldn’t suggest that a robot with FaceTime or whatever is an equal replacement for in-person human companionship, nor should you suggest that AI can replace a human wellness coach. If you can’t afford those things, then sure, ElliQ can offer some of those capabilities in a very limited way, but that’s all.</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://elliq.com/\">ElliQ</a> ]</p><div class=\"horizontal-rule\"></div><p class=\"rm-anchors\" id=\"gz4frehicfe\">Very cool moves! Now get a job!</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://www.deeprobotics.cn/en\">DEEP Robotics</a> ]</p><div class=\"horizontal-rule\"></div><blockquote class=\"rm-anchors\" id=\"r6f8bztjqfg\"><em>Drawing inspiration from restaurant waiters in Morocco and Turkey, among other places, we equip a robot with a hanging tray to transport objects from one location to another without dropping them or spilling their contents. We incorporate this approach into an interactive robot waiter demonstration, which uses computer vision and visual servoing to steer toward a person with a raised hand to serve them.</em></blockquote><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://arxiv.org/abs/2606.10039\">Paper</a> ]</p><div class=\"horizontal-rule\"></div><p class=\"rm-anchors\" id=\"qfsmncdh9lu\">If you’re going to make robots wear skirts or shorts or pants, you have to give them butts, or it’s just not going to work. That is all.</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://techshare.co.jp/product/unitree/g1/\">TechShare</a> ] via [ <a href=\"https://www.youtube.com/@KazumichiMoriyama\">Kazumichi Moriyama</a> ]</p><div class=\"horizontal-rule\"></div><blockquote class=\"rm-anchors\" id=\"kfy7d-qiyjw\"><em>It’s Los Alamos, so of course we have robots. Some work inside gloveboxes, while others probe unexploded ordnance in the field and aid with repetitive lifting, Doc Ock–style. Legend has it there’s a fro-yo robot in the cafeteria.</em></blockquote><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://www.lanl.gov/media/publications/national-security-science/1224-sniffing-out-radiation\">LANL</a> ]</p><div class=\"horizontal-rule\"></div><p class=\"rm-anchors\" id=\"8aiznj4cciu\">Here are a couple of talks from the recent Humanoids Summit in Japan, from Ali Agha of Field AI as well as Hiroshi Ishiguro.</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p class=\"shortcode-media shortcode-media-youtube\"> <span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span> </p><p>[ <a href=\"https://humanoidssummit.com/agenda-2\">Humanoids Summit</a> ]</p><div class=\"horizontal-rule\"></div>",
+    "url": "https://spectrum.ieee.org/video-friday-nasa-lunar-rover",
+    "published": "2026-07-03T15:00:01+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Quarterhill discusses transport modernization as U.S. marks 70 years of federal highways",
+    "summary": "<p>At the U.S. celebrates 250 years of independence and 70 years of its highway system, an expert looks at the future of autonomous transport. </p> <p>The post <a href=\"https://www.therobotreport.com/quarterhill-discusses-transport-modernization-u-s-marks-70-years-federal-highways/\">Quarterhill discusses transport modernization as U.S. marks 70 years of federal highways</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/quarterhill-discusses-transport-modernization-u-s-marks-70-years-federal-highways/",
+    "published": "2026-07-03T13:01:26+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Automate 2026 show recap",
+    "summary": "<p>Editors Steve Crowe, Mike Oitzman, and Sarah Wynn review Automate 2026, analyzing key trends in physical AI, humanoids, and software orchestration.</p> <p>The post <a href=\"https://www.therobotreport.com/automate-2026-show-recap/\">Automate 2026 show recap</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/automate-2026-show-recap/",
+    "published": "2026-07-02T16:35:58+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Why you should combine robot dexterity with mechanical positioning for complex assembly operations",
+    "summary": "<p>Experts are recognizing the importance of mechanical positioning and its impact on the machine’s mobility, range and speed.</p> <p>The post <a href=\"https://www.therobotreport.com/why-you-should-combine-robot-dexterity-with-mechanical-positioning-for-complex-assembly-operations/\">Why you should combine robot dexterity with mechanical positioning for complex assembly operations</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/why-you-should-combine-robot-dexterity-with-mechanical-positioning-for-complex-assembly-operations/",
+    "published": "2026-07-02T12:36:09+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Luxonis closes Series A round to scale physical AI perception layer",
+    "summary": "<p>Luxonis said it plans to scale production of its OAK camera and refine its platform to support robotics and industrial automation. </p> <p>The post <a href=\"https://www.therobotreport.com/luxonis-closes-series-a-round-to-scale-physical-ai-perception-layer/\">Luxonis closes Series A round to scale physical AI perception layer</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/luxonis-closes-series-a-round-to-scale-physical-ai-perception-layer/",
+    "published": "2026-07-02T12:00:32+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "In Robotics, Ruggedization Is No Longer Optional",
+    "summary": "<p>As autonomy moves beyond controlled environments, ruggedized design is becoming a prerequisite for reliable robotic operations.</p> <p>The post <a href=\"https://www.therobotreport.com/in-robotics-ruggedization-is-no-longer-optional/\">In Robotics, Ruggedization Is No Longer Optional</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/in-robotics-ruggedization-is-no-longer-optional/",
+    "published": "2026-07-01T18:44:05+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Top 10 robotics developments of June 2026",
+    "summary": "<p>Humanoid robots made many headlines in June 2026, whether it be for companies going public, new deployments, or hitting production milestones.</p> <p>The post <a href=\"https://www.therobotreport.com/top-10-robotic-stories-june-2026/\">Top 10 robotics developments of June 2026</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/top-10-robotic-stories-june-2026/",
+    "published": "2026-07-01T16:10:57+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Apptronik unveils Apollo 2 and a flagship data collection and training facility",
+    "summary": "<p>Built as a data collection and training platform, Apollo 2 enables continuous learning through deployment, Apptronik said.</p> <p>The post <a href=\"https://www.therobotreport.com/apptronik-unveils-apollo-2-flagship-data-collection-training-facility/\">Apptronik unveils Apollo 2 and a flagship data collection and training facility</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/apptronik-unveils-apollo-2-flagship-data-collection-training-facility/",
+    "published": "2026-07-01T12:30:31+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "X Square Robot brings its valuation to $2.8B with four consecutive funding rounds",
+    "summary": "<p>X Square Robots' system combines foundation models, robotics hardware, a data pipeline system, and real-world deployments.</p> <p>The post <a href=\"https://www.therobotreport.com/x-square-robot-brings-valuation-2-8b-four-consecutive-funding-rounds/\">X Square Robot brings its valuation to $2.8B with four consecutive funding rounds</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/x-square-robot-brings-valuation-2-8b-four-consecutive-funding-rounds/",
+    "published": "2026-06-30T19:49:05+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://blogs.nvidia.com/blog/category/industries/robotics/feed/",
+    "feed_title": "",
+    "title": "How Jaiveer Singh Is Helping Robots — and Developers — Move Faster",
+    "summary": "When Jaiveer Singh talks about robots, he doesn’t begin with spectacle. He begins with infrastructure: the boards inside machines, the software that lets developers see through a robot&#8217;s cameras and the engineering required before a robot can leave a demo floor to do something useful. As a robotics software engineer who leads the team behind [&#8230;]",
+    "url": "https://blogs.nvidia.com/blog/nvidia-life-jaiveer-singh/",
+    "published": "2026-06-30T15:00:49+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Queue raises funding to build fully autonomous pharmacy",
+    "summary": "<p>Queue is developing automated pharmacies to expand access to prescriptions in hospitals, retail sites, and underserved communities.</p> <p>The post <a href=\"https://www.therobotreport.com/queue-raises-funding-fully-autonomous-pharmacy/\">Queue raises funding to build fully autonomous pharmacy</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/queue-raises-funding-fully-autonomous-pharmacy/",
+    "published": "2026-06-30T13:00:33+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Soft, robotic cells from morph embed physical AI into hardware",
+    "summary": "<p>morph launched a physically intelligent soft robotics platform that designs and manufactures what it calls “soft robotic cells.” </p> <p>The post <a href=\"https://www.therobotreport.com/soft-robotic-cells-from-morph-embed-physical-ai-into-hardware/\">Soft, robotic cells from morph embed physical AI into hardware</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/soft-robotic-cells-from-morph-embed-physical-ai-into-hardware/",
+    "published": "2026-06-30T12:30:35+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Sonair ADAR One 3D ultrasonic sensor is now safety-certified",
+    "summary": "<p>Sonair says ADAR One was assessed as a human detection sensor according to the IEC 61496 standard for electrosensitive protection devices.</p> <p>The post <a href=\"https://www.therobotreport.com/sonair-3d-ultrasonic-sensor-is-now-safety-certified/\">Sonair ADAR One 3D ultrasonic sensor is now safety-certified</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/sonair-3d-ultrasonic-sensor-is-now-safety-certified/",
+    "published": "2026-06-30T09:55:46+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Insights behind Kinisi’s acquisition by Bear Robotics",
+    "summary": "<p>Brennand Pierce, founder and CEO of Kinisi Robotics, discusses the company's approach to physical AI and its acquisition by Bear Robotics.</p> <p>The post <a href=\"https://www.therobotreport.com/insights-behind-kinisi-acquisition-by-bear-robotics/\">Insights behind Kinisi’s acquisition by Bear Robotics</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/insights-behind-kinisi-acquisition-by-bear-robotics/",
+    "published": "2026-06-29T22:29:11+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "BMW Group deploys Figure 03 humanoid after tests with previous version",
+    "summary": "<p>The Figure 02 robot supported the production of more than 30,000 BMW X3 vehicles over 11 months in South Carolina.</p> <p>The post <a href=\"https://www.therobotreport.com/bmw-group-deploys-figure-03-humanoid-after-tests-previous-version/\">BMW Group deploys Figure 03 humanoid after tests with previous version</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/bmw-group-deploys-figure-03-humanoid-after-tests-previous-version/",
+    "published": "2026-06-29T17:45:53+00:00"
+  }
+]
