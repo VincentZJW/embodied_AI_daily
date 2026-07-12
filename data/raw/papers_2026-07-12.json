@@ -1,0 +1,322 @@
+[
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.08751v1",
+    "title": "DexVerse: A Modular Benchmark for Multi-Task, Multi-Embodiment Dexterous Manipulation",
+    "abstract": "Building general-purpose dexterous manipulation policies requires benchmarks that go beyond isolated tasks to systematically evaluate policies across diverse interaction modes, sensory conditions, and robot embodiments. However, existing benchmarks remain limited in task and data diversity, embodiment coverage, or controllable visual variation, hindering studies of cross-task and cross-embodiment generalization. We present DexVerse, a large-scale and modular benchmark for dexterous manipulation. DexVerse includes 100 tasks spanning a broad range of manipulation skills, including object grasping and relocation, articulated-object interaction, functional tool use, bimanual coordination, non-prehensile control, contact-rich behaviors, multi-goal execution, and long-horizon multi-stage task completion. It supports 3 robot arms and 6 dexterous hands, and is extensible to new tasks, assets, and embodiments. To evaluate visuomotor generalization, DexVerse provides configurable visual variations in textures, background, lighting, and camera viewpoints. We further provide a VR-based teleoperation interface and 3,180 demonstrations with synchronized proprioceptive, RGB, depth, point-cloud, and state observations. We benchmark representative methods, including Diffusion Policy, DP3, OpenVLA, and $π_{0.5}$, across 19 tasks. Results reveal substantial challenges in task generalization and visuomotor robustness, establishing DexVerse as a promising testbed for general-purpose dexterous manipulation. Project page: https://ycyao216.github.io/DexVerse.site",
+    "authors": [
+      "Yunchao Yao",
+      "Zhuxiu Xu",
+      "Tianqi Zhang",
+      "Zixian Liu",
+      "Sikai Li",
+      "Zhenyu Wei",
+      "Feng Chen",
+      "Dihong Huang",
+      "Kechang Wan",
+      "Chenyang Ma",
+      "Shuqi Zhao",
+      "Shenghua Gao",
+      "Masayoshi Tomizuka",
+      "Yi Ma",
+      "Mingyu Ding"
+    ],
+    "published": "2026-07-09T17:50:47+00:00",
+    "updated": "2026-07-09T17:50:47+00:00",
+    "url": "http://arxiv.org/abs/2607.08751v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.08751v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.08742v1",
+    "title": "ContactMimic: Humanoid Object Interaction via Contact Control",
+    "abstract": "Keypoint tracking alone is insufficient for object interaction tasks such as sitting on a chair, wiping a board, or pushing furniture, where the robot can reach the correct pose without making meaningful physical contact with the object. We present CONTACTMIMIC, a learning framework that tracks explicit partlevel binary contact commands alongside keypoint trajectories. CONTACTMIMIC is made possible through the use of contact-following rewards and a trajectory augmentation scheme aimed at breaking the correlations between keypoint trajectories and contact labels. The resulting policy successfully decouples contact behavior from keypoint geometry, and achieves precise physical contact as well as contact-controllability (produce or suppress contact during deployment as desired). Simulation experiments across 10 diverse human-object interaction motions confirm that CONTACTMIMIC exhibits contact controllability that enables it to complete manipulation tasks without task-specific rewards, while also outperforming keypoint-only trackers on contact-relevant tasks. Ablations confirm the necessity of the proposed trajectory augmentation scheme and sim2real deployment validates contact controllability in the real world across 5 different motions. Video results are available on https://lixinyao11.github.io/contactmimic-page/.",
+    "authors": [
+      "Xinyao Li",
+      "Xialin He",
+      "Runpei Dong",
+      "Saurabh Gupta"
+    ],
+    "published": "2026-07-09T17:42:15+00:00",
+    "updated": "2026-07-09T17:42:15+00:00",
+    "url": "http://arxiv.org/abs/2607.08742v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.08742v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.08741v1",
+    "title": "ARDY: Autoregressive Diffusion with Hybrid Representation for Interactive Human Motion Generation",
+    "abstract": "Generating realistic 3D human motions in real-time within interactive applications is key for animation, simulation, and humanoid robotics. While recent offline motion generation approaches offer precise control via text and kinematic constraints, they lack the inference speed required for interactive settings. Conversely, existing online methods enable real-time synthesis but often sacrifice controllability or struggle with complex text semantics and long-horizon goals due to limited context windows. In this work, we introduce ARDY, a streaming generation framework that bridges this gap by enabling high-fidelity motion generation controllable via online text prompts and flexible kinematic constraints. ARDY employs a hybrid representation that combines explicit root features with a latent body embedding, balancing precise trajectory control with efficient generative learning. We propose a two-stage autoregressive transformer denoiser that features variable history context and supports conditioning on flexible, long-horizon kinematic constraints. By training on a large-scale motion capture dataset and being directly conditioned on text labels and kinematic constraints sampled from ground truth poses, ARDY natively learns controllable generation that supports online prompting and flexible long-horizon goals. Extensive evaluations on the HumanML3D benchmark and the large-scale, high-fidelity Bones Rigplay dataset demonstrate ARDY's high motion quality and constraint adherence, validating the efficacy of our key architectural decisions. Finally, we demonstrate the method's practical versatility through an interactive demo featuring dynamic text control, diverse keyframe pose constraints, path following, and interactive locomotion control via mouse and keyboard. Supplementary video results, code, and model releases can be found at https://research.nvidia.com/labs/sil/projects/ardy/.",
+    "authors": [
+      "Kaifeng Zhao",
+      "Mathis Petrovich",
+      "Haotian Zhang",
+      "Tingwu Wang",
+      "Siyu Tang",
+      "Davis Rempe"
+    ],
+    "published": "2026-07-09T17:41:49+00:00",
+    "updated": "2026-07-09T17:41:49+00:00",
+    "url": "http://arxiv.org/abs/2607.08741v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.08741v1",
+    "categories": [
+      "cs.GR",
+      "cs.CV",
+      "cs.LG",
+      "cs.RO"
+    ],
+    "primary_category": "cs.GR"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.08639v1",
+    "title": "Native Video-Action Pretraining for Generalizable Robot Control",
+    "abstract": "The advent of video-action models offers a promising path for robot control. Nevertheless, we argue that repurposing video generative models designed for digital content creation is inherently inadequate for physical environments. To bridge this gap, we present LingBot-VA 2.0, a video-action foundation model built from the ground up for embodiment. Four core design principles showcase its evolution from LingBot-VA. (1) Departing from traditional reconstruction-focused VAEs, we introduce a semantic visual-action tokenizer, which aligns visual representations with both semantics and actions, improving instruction following and action precision in subsequent policy learning. (2) Given the strictly causal nature of temporal dynamics, we adopt a causal pretraining paradigm, training from scratch to circumvent the catastrophic forgetting that frequently occurs when adapting bidirectional architectures. (3) To meet the demands of high-frequency inference, our model employs a sparse MoE backbone, expanding model capacity without compromising efficiency. (4) Real-time closed-loop control is realized through an enhanced asynchronous inference scheme, which predicts future latents in parallel with action execution while re-grounding each rollout on the latest observation via learned forward dynamics. Real-world deployment validates LingBot-VA 2.0 as a robust foundation model, as evidenced by its few-shot generalization across complex manipulation tasks.",
+    "authors": [
+      "Qihang Zhang",
+      "Lin Li",
+      "Luyao Zhang",
+      "Shuai Yang",
+      "Yiming Luo",
+      "Shuaiting Li",
+      "Ruilin Wang",
+      "Junke Wang",
+      "Jiahao Shao",
+      "Gangwei Xu",
+      "Jiaming Zhou",
+      "Yishu Shen",
+      "Yudong Jin",
+      "Fangyi Xu",
+      "Shuailei Ma",
+      "Jiaqi Liao",
+      "Guanxing Lu",
+      "Zifan Shi",
+      "Yongkun Wen",
+      "Yujie Zhao",
+      "Weixuan Tang",
+      "Xinyang Wang",
+      "Chaojian Li",
+      "Jiapeng Zhu",
+      "Ka Leong Cheng",
+      "Nan Xue",
+      "Xing Zhu",
+      "Yujun Shen",
+      "Yinghao Xu"
+    ],
+    "published": "2026-07-09T16:15:43+00:00",
+    "updated": "2026-07-09T16:15:43+00:00",
+    "url": "http://arxiv.org/abs/2607.08639v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.08639v1",
+    "categories": [
+      "cs.RO",
+      "cs.CV"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.08620v1",
+    "title": "A New Human-Likeness and Comfort Index for Robot Movements Along Prescribed Paths",
+    "abstract": "As human-robot interaction rapidly spreads in numerous fields, the subject of robot acceptance gains increasing importance. Visual similarity to the human body, as occurs for humanoids, is generally not enough to ensure acceptance in physical interaction, as acceptance directly links to comfort and ergonomics, which are measured in terms of the quality of the robot movement perceived by the human. This paper discusses the connection between comfort and similarity of the robot movement to the human one. By considering the kinematic characterization of human movement, this paper focuses on the time laws of such movements, wherein the end-effector path is prescribed. Based on the lognormality principle for modeling human movements, a human-likeness index is defined and used to provide an a priori characterization of trajectories. Such an index can be used to evaluate the performance of trajectory generation algorithms in producing human-like movements before they are actually executed. For validation purposes, 68 subjects are required to judge their comfort. The results of three experimental campaigns involving a physical interaction with a robot demonstrate a globally consistent trend between the preference in terms of perceived comfort and the distribution of the suggested human-likeness index.",
+    "authors": [
+      "Rosanna Coccaro",
+      "Enrico Ferrentino",
+      "Antonio Parziale",
+      "Angelo Marcelli",
+      "Pasquale Chiacchio"
+    ],
+    "published": "2026-07-09T15:53:51+00:00",
+    "updated": "2026-07-09T15:53:51+00:00",
+    "url": "http://arxiv.org/abs/2607.08620v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.08620v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.08575v1",
+    "title": "FabriVLA: A Lightweight Vision-Language-Action Model for Precise Multi-Task Manipulation",
+    "abstract": "We present FabriVLA, a lightweight Vision-Language-Action model for Precise Multi-Task Manipulation. FabriVLA combines an InternVL3.5 vision-language backbone with a flow-matching action head featuring gated self-attention across action tokens and shallow VLM layer fusion for enriched spatial context. The model is trained via single stage joint optimization from a pretrained VLM and randomly initialized action head. On the Meta-World MT50 benchmark spanning 50 diverse manipulation tasks, FabriVLA achieves a tier-average success rate of 90.0%, demonstrating that a compact VLA built on a 1B scale VLM can achieve strong performance without relying on multi billion parameter VLA backbones.",
+    "authors": [
+      "Shiyuan Yang",
+      "Borong Zhang",
+      "Jizheng Zhang",
+      "Zhijia Tao",
+      "Junfei Guo",
+      "Donglai Ran",
+      "Xu Bian",
+      "Qingbiao Li"
+    ],
+    "published": "2026-07-09T15:06:43+00:00",
+    "updated": "2026-07-09T15:06:43+00:00",
+    "url": "http://arxiv.org/abs/2607.08575v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.08575v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.08504v1",
+    "title": "Early to Share, Late to Save: Synchronisation-Driven Communication Gating in Bandwidth-Constrained Cooperative VLN",
+    "abstract": "Most cooperative Vision-Language Navigation (VLN) methods assume unlimited communication, not considering real-world applications where bandwidth is restricted and information efficiency is critical. We introduce \\textbf{bandwidth-constrained cooperative VLN} and propose \\textbf{hindsight gating}: a lightweight supervised gate that labels communication-critical steps post-hoc from navigation failures, avoiding the high variance of REINFORCE. Contrary to the intuition that agents should communicate when uncertain, we observe a consistent counter-intuitive pattern: trained gates fire predominantly in early episode steps and more often when agents are confident, across all budget levels ($B \\in \\{1,3,5\\}$). We explain this through \\textbf{recurrent hidden-state alignment}: early communication injects grounded trajectory representations that persist and compound through subsequent Gated Recurrent Unit (GRU) updates, achieving $+0.072$ cumulative alignment gain with $B{=}3$ transmissions, approaching unconstrained communication ($+0.078$) at 260\\% greater alignment efficiency than random gating ($+0.020$) and 320\\% greater efficiency than entropy-based gating ($+0.017$). Our results establish a new communication regime for bandwidth-limited embodied agents: synchronise representations early, navigate independently later. Our codebase is available at: https://github.com/AravG13/bandwidth-constrained-cooperative-vln",
+    "authors": [
+      "Arav Gupta",
+      "Nivedan Yakolli",
+      "Avinash Gautam"
+    ],
+    "published": "2026-07-09T14:00:17+00:00",
+    "updated": "2026-07-09T14:00:17+00:00",
+    "url": "http://arxiv.org/abs/2607.08504v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.08504v1",
+    "categories": [
+      "cs.MA",
+      "cs.RO"
+    ],
+    "primary_category": "cs.MA"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.08448v1",
+    "title": "Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives via Memory-Guided Agents",
+    "abstract": "Language-conditioned manipulation requires both precise contact-rich control and robust reasoning over language, scenes, and long horizons. End-to-end Vision-Language-Action (VLA) models provide strong local visuomotor skills, but they are trained on in-distribution task trajectories and often fail under deployment perturbations such as semantic retargeting, goal re-binding, spatial-layout shifts, and unstable local contacts. LLM coding agents provide complementary semantic and compositional reasoning, but purely analytic primitives struggle with irregular grasping, constrained placement, and articulated-object interaction. We present Harness VLA, a memory-augmented agentic framework that exposes a frozen VLA as a retryable contact-rich primitive and composes it with a small fixed library of analytic primitives for grounding, staging, transport, navigation, and release. Rather than expanding the skill library, the harness learns the operating range of these fixed primitives from task-specific execution traces, global success rules, and failure models. By lifting semantic re-grounding, non-contact execution, and VLA re-staging to the planner while reserving the frozen VLA for local contact-rich phases, Harness VLA extends pretrained VLAs beyond their original trajectory distribution without finetuning. Across perturbed tabletop, household kitchen, and clean-to-randomized bimanual manipulation, Harness VLA improves over the strongest relevant baselines by 38.6 and 25.4 percentage points on LIBERO-Pro and RoboCasa365, respectively, and reaches 58.4% on RoboTwin C2R.",
+    "authors": [
+      "Yixian Zhang",
+      "Huanming Zhang",
+      "Feng Gao",
+      "Xiao Li",
+      "Zhihao Liu",
+      "Chunyang Zhu",
+      "Jiaxing Qiu",
+      "Yuchen Yan",
+      "Jiyuan Liu",
+      "Wenhao Tang",
+      "Zhengru Fang",
+      "Yi Nie",
+      "Changxu Wei",
+      "Yu Wang",
+      "Wenbo Ding",
+      "Chao Yu"
+    ],
+    "published": "2026-07-09T13:08:54+00:00",
+    "updated": "2026-07-09T13:08:54+00:00",
+    "url": "http://arxiv.org/abs/2607.08448v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.08448v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.08375v1",
+    "title": "WCog-VLA: A Dual-Level World-Cognitive Vision-Language-Action Model for End-to-End Autonomous Driving",
+    "abstract": "Vision-Language-Action (VLA) models have advanced end-to-end autonomous driving. However, existing methods either lack comprehensive world cognition or suffer from fragmented world foresight, inherently confining these models to reactive driving. To address this limitation, we propose WCog-VLA, a novel dual-level World-Cognitive VLA framework that successfully bridges semantic world forecasting with generative world evolution to achieve proactive autonomous driving. At the semantic level, WCog-VLA unifies world cognition and reasoning by incorporating 3D spatial perception and injecting agent tokens to capture the world dynamics, while concurrently enabling Game-theoretic Chain-of-Thought (Game-CoT) reasoning. At the generative level, we introduce the Aligned Decoupled Diffusion Transformer (ADDT) as a powerful generative world model that synthesizes physically-plausible joint multi-agent trajectories. Through scene representation alignment, ADDT reduces the number of denoising steps required and thus significantly accelerates inference. To facilitate strategic reasoning, we further construct a large-scale dataset featuring 85k Game-CoT annotations. Extensive experiments on the NAVSIM benchmark demonstrate that WCog-VLA achieves a State-Of-The-Art (SOTA) PDMS score of 92.9.",
+    "authors": [
+      "Xuerun Yan",
+      "Zhexi Lian",
+      "Nuoheng Zhang",
+      "Shiyu Fang",
+      "Haoran Wang",
+      "Chen Lv",
+      "Jia Hu",
+      "Binyang Song"
+    ],
+    "published": "2026-07-09T11:49:57+00:00",
+    "updated": "2026-07-09T11:49:57+00:00",
+    "url": "http://arxiv.org/abs/2607.08375v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.08375v1",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.08283v1",
+    "title": "TFP: Temporally Conditioned Memory-Fusion Policies for Visuomotor Learning",
+    "abstract": "Vision--Language--Action (VLA) policies such as $π_{0.5}$ and OpenVLA perform well on many manipulation tasks, but they are often reactive: the next action is predicted from the current observation, instruction, and proprioceptive state. This assumption breaks down in stage-dependent manipulation, where visually similar states may require different actions depending on latent task progress and previous interaction outcomes. We argue that such tasks require not only memory, but dynamics-aware belief updates: the policy should preserve task progress during stable or occluded phases and revise its belief near contact, release, or subgoal transitions. We introduce Temporally Conditioned Memory-Fusion Policies (TFP), a lightweight memory-action framework for VLA backbones. TFP maintains an episode-local task-progress belief with Liquid Time-Constant dynamics and injects the updated belief directly into the flow-matching action decoder through adaptive modulation. This lets temporally accumulated context shape the generated action chunk, rather than serving only as passive history context. With a 3.3B-parameter model, TFP improves the average success rate from \\(96.9\\%\\) to \\(98.75\\%\\) on LIBERO and from \\(91.4\\%\\) to \\(93.77\\%\\) on LIBERO-plus. On the memory-focused MIKASA ShellGameTouch diagnostic, TFP achieves success up to \\(75.0\\%\\). Mechanistic analyses show that write-gain changes near manipulation events are about \\(6\\times\\) larger than far non-event phases, and hidden-state interventions show that the belief causally modulates generated action chunks. These results suggest that compact, event-sensitive memory dynamics can improve VLA policies under occlusion, visual perturbation, and stage-dependent task structure.",
+    "authors": [
+      "Yushen Liang",
+      "Yue Peng",
+      "Baosheng Jin",
+      "Tianluo Zhang",
+      "Xinyu Zhang",
+      "Shuyi Zhou",
+      "Zhuoran Chen",
+      "Xinqi Liu",
+      "Shenji Wan"
+    ],
+    "published": "2026-07-09T09:24:30+00:00",
+    "updated": "2026-07-09T09:24:30+00:00",
+    "url": "http://arxiv.org/abs/2607.08283v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.08283v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.08182v1",
+    "title": "LEEVLA: Seeing What Matters in Latent Environment Evolution for Vision-Language-Action",
+    "abstract": "Vision-language-action (VLA) models aim to map multimodal inputs to robot actions. However, most existing approaches struggle to cover complex dynamic scenarios due to treating all visual tokens uniformly and reasoning with human-selected factors, which lack mechanisms to emphasize task-critical evidence and ignore underlying factors. To address this issue, we propose LEEVLA, a VLA architecture for seeing what matters in Latent Environment Evolution that explicitly guides the model toward informative regions while preserving the structured evolution of latent world representations. To identify salient and instruction-relevant regions, we introduce drift-guided dynamic prioritization (DGDP), which combines dynamic position prioritization (DPP) with semantic drift guidance (SDG) to guide the VLA agent where to attend during training. On top of this, we introduce structured feature flow generation (SFFG), which models how these prioritized features should evolve in latent space via prototype-to-periphery (P2P) prediction, and a mutual-neighborhood contrastive (MC) loss to maintain topological consistency among neighborhoods. Together, DGDP and SFFG form a task-aware \"where-how\" training framework. Extensive experiments on VLA benchmarks show that LEEVLA consistently outperforms prior methods, confirming that explicit task-evidence guidance and structured latent reasoning are both crucial for scalable VLA. Our code is available at https://github.com/LyuQi127/LEEVLA.",
+    "authors": [
+      "Qi Lyu",
+      "Baicheng Liu",
+      "Xudong Wang",
+      "Jiahua Dong",
+      "Lianqing Liu",
+      "Zhi Han"
+    ],
+    "published": "2026-07-09T07:28:21+00:00",
+    "updated": "2026-07-09T07:28:21+00:00",
+    "url": "http://arxiv.org/abs/2607.08182v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.08182v1",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.08072v1",
+    "title": "Post-Training in End-to-End Autonomous Driving",
+    "abstract": "End-to-end models that map multimodal inputs directly to future trajectories/maneuvers have emerged as an increasingly prominent research paradigm in autonomous driving. This class of models includes both Vision-Language-Action models and trajectory-generative planners. Unlike classic machine learning applications, autonomous vehicles operate in safety-critical and interaction-intensive environments where traditional open-loop imitation of expert demonstrations is not sufficient to ensure reliability. In particular, small execution errors can accumulate over time, while recovery behaviors are scarce in training data. In addition, long-horizon objectives such as safety and driving comfort are not captured by pointwise labels either. These limitations have motivated a shift toward post-training techniques, which further refine driving policies beyond pure imitation. This survey presents a unified view of post-training for autonomous driving by defining its scope and organizing the existing literature into four major families based on the form of supervision they use. For each family, we discuss its capabilities, limitations, and open challenges. We aim to facilitate a systematic understanding of this emerging area and stimulate future research on reliable and efficient post-training for autonomous driving.",
+    "authors": [
+      "Ruining Yang",
+      "Muxing Wang",
+      "Yixiao Chen",
+      "Tongfei Guo",
+      "Yi Xu",
+      "Can Cui",
+      "Zichong Yang",
+      "Yitian Zhang",
+      "Ziran Wang",
+      "Yun Fu",
+      "Lili Su"
+    ],
+    "published": "2026-07-09T03:00:47+00:00",
+    "updated": "2026-07-09T03:00:47+00:00",
+    "url": "http://arxiv.org/abs/2607.08072v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.08072v1",
+    "categories": [
+      "cs.CV",
+      "cs.RO"
+    ],
+    "primary_category": "cs.CV"
+  }
+]

@@ -1,6 +1,6 @@
 const latestArticle = {
-  "title": "具身智能中文日报｜2026-07-11",
-  "date": "2026-07-11",
+  "title": "具身智能中文日报｜2026-07-12",
+  "date": "2026-07-12",
   "subtitle": "聚焦VLA、Sim2Real、Diffusion Policy，追踪论文、开源项目与产业动态。",
   "theme": "tech-dark",
   "accent_color": "#4F8CFF",
@@ -18,7 +18,7 @@ const latestArticle = {
   "executive_summary": [
     {
       "title": "核心结论 1",
-      "content": "本次采集得到论文 20 篇、GitHub 项目 20 个、行业/公司动态 20 条。",
+      "content": "本次采集得到论文 12 篇、GitHub 项目 20 个、行业/公司动态 20 条。",
       "card_type": "核心摘要卡",
       "importance_score": 96,
       "tags": [
@@ -140,7 +140,7 @@ const latestArticle = {
     {
       "name": "Genesis-Embodied-AI/genesis-world",
       "summary": "该项目可能聚焦仿真到真实迁移，主要语言为 Python。",
-      "why_follow": "仓库星标数约为 29543，可用于观察开源社区对仿真到真实迁移的实现方向。",
+      "why_follow": "仓库星标数约为 29542，可用于观察开源社区对仿真到真实迁移的实现方向。",
       "source_url": "https://github.com/Genesis-Embodied-AI/genesis-world",
       "card_type": "开源项目卡",
       "importance_score": 93,
@@ -152,7 +152,7 @@ const latestArticle = {
     {
       "name": "YanjieZe/awesome-humanoid-robot-learning",
       "summary": "该项目可能聚焦人形机器人控制，主要语言为 Python。",
-      "why_follow": "仓库星标数约为 2583，可用于观察开源社区对人形机器人控制的实现方向。",
+      "why_follow": "仓库星标数约为 2585，可用于观察开源社区对人形机器人控制的实现方向。",
       "source_url": "https://github.com/YanjieZe/awesome-humanoid-robot-learning",
       "card_type": "开源项目卡",
       "importance_score": 91,
@@ -165,7 +165,7 @@ const latestArticle = {
     {
       "name": "NVlabs/ProtoMotions",
       "summary": "该项目可能聚焦仿真到真实迁移，主要语言为 Python。",
-      "why_follow": "仓库星标数约为 2091，可用于观察开源社区对仿真到真实迁移的实现方向。",
+      "why_follow": "仓库星标数约为 2098，可用于观察开源社区对仿真到真实迁移的实现方向。",
       "source_url": "https://github.com/NVlabs/ProtoMotions",
       "card_type": "开源项目卡",
       "importance_score": 87,
@@ -177,7 +177,7 @@ const latestArticle = {
     {
       "name": "FluxVLA/FluxVLA",
       "summary": "该项目可能聚焦视觉-语言-动作模型，主要语言为 Python。",
-      "why_follow": "仓库星标数约为 523，可用于观察开源社区对视觉-语言-动作模型的实现方向。",
+      "why_follow": "仓库星标数约为 525，可用于观察开源社区对视觉-语言-动作模型的实现方向。",
       "source_url": "https://github.com/FluxVLA/FluxVLA",
       "card_type": "开源项目卡",
       "importance_score": 86,
@@ -190,7 +190,7 @@ const latestArticle = {
     {
       "name": "sou350121/VLA-Handbook",
       "summary": "该项目可能聚焦视觉-语言-动作模型，主要语言为 HTML。",
-      "why_follow": "仓库星标数约为 375，可用于观察开源社区对视觉-语言-动作模型的实现方向。",
+      "why_follow": "仓库星标数约为 378，可用于观察开源社区对视觉-语言-动作模型的实现方向。",
       "source_url": "https://github.com/sou350121/VLA-Handbook",
       "card_type": "开源项目卡",
       "importance_score": 83,
@@ -203,22 +203,21 @@ const latestArticle = {
   ],
   "industry_updates": [
     {
-      "title": "行业动态 1：仿真到真实迁移",
-      "summary": "该动态与仿真到真实迁移相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "title": "行业动态 1：具身智能评测与数据集",
+      "summary": "该动态与具身智能评测与数据集相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://www.therobotreport.com/are-suppliers-ready-for-new-robot-safety-standards/",
+      "source_url": "https://www.therobotreport.com/stem-education-classroom-introducing-botball/",
       "card_type": "行业动态卡",
-      "importance_score": 89,
+      "importance_score": 86,
       "tags": [
-        "具身智能",
-        "Sim2Real"
+        "具身智能"
       ]
     },
     {
       "title": "行业动态 2：仿真到真实迁移",
       "summary": "该动态与仿真到真实迁移相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://www.therobotreport.com/why-robotics-teams-need-virtual-gyms-before-deployment/",
+      "source_url": "https://www.therobotreport.com/are-suppliers-ready-for-new-robot-safety-standards/",
       "card_type": "行业动态卡",
       "importance_score": 86,
       "tags": [
@@ -227,40 +226,39 @@ const latestArticle = {
       ]
     },
     {
-      "title": "行业动态 3：视觉-语言-动作模型",
+      "title": "行业动态 3：仿真到真实迁移",
+      "summary": "该动态与仿真到真实迁移相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
+      "source_url": "https://www.therobotreport.com/why-robotics-teams-need-virtual-gyms-before-deployment/",
+      "card_type": "行业动态卡",
+      "importance_score": 83,
+      "tags": [
+        "具身智能",
+        "Sim2Real"
+      ]
+    },
+    {
+      "title": "行业动态 4：视觉-语言-动作模型",
       "summary": "该动态与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
       "source_url": "https://www.therobotreport.com/how-path-robotics-uses-ai-optimize-robotic-welding/",
       "card_type": "行业动态卡",
-      "importance_score": 80,
+      "importance_score": 77,
       "tags": [
         "具身智能",
         "机器人视觉"
       ]
     },
     {
-      "title": "行业动态 4：扩散策略机器人控制",
+      "title": "行业动态 5：扩散策略机器人控制",
       "summary": "该动态与扩散策略机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
       "source_url": "https://www.therobotreport.com/xtend-secures-u-s-patent-autonomous-navigation-technology/",
       "card_type": "行业动态卡",
-      "importance_score": 77,
+      "importance_score": 74,
       "tags": [
         "具身智能",
         "Diffusion Policy",
-        "机器人"
-      ]
-    },
-    {
-      "title": "行业动态 5：人形机器人控制",
-      "summary": "该动态与人形机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
-      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://www.therobotreport.com/ai%c2%b2-robotics-raises-735m-3b-valuation-wheeled-humanoid-robots/",
-      "card_type": "行业动态卡",
-      "importance_score": 78,
-      "tags": [
-        "具身智能",
-        "人形机器人",
         "机器人"
       ]
     }
@@ -426,36 +424,36 @@ const latestArticle = {
       "importance_score": 60
     },
     {
-      "name": "行业动态 1：仿真到真实迁移",
-      "url": "https://www.therobotreport.com/are-suppliers-ready-for-new-robot-safety-standards/",
+      "name": "行业动态 1：具身智能评测与数据集",
+      "url": "https://www.therobotreport.com/stem-education-classroom-introducing-botball/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
       "name": "行业动态 2：仿真到真实迁移",
+      "url": "https://www.therobotreport.com/are-suppliers-ready-for-new-robot-safety-standards/",
+      "type": "行业动态",
+      "card_type": "来源链接卡",
+      "importance_score": 60
+    },
+    {
+      "name": "行业动态 3：仿真到真实迁移",
       "url": "https://www.therobotreport.com/why-robotics-teams-need-virtual-gyms-before-deployment/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
-      "name": "行业动态 3：视觉-语言-动作模型",
+      "name": "行业动态 4：视觉-语言-动作模型",
       "url": "https://www.therobotreport.com/how-path-robotics-uses-ai-optimize-robotic-welding/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
-      "name": "行业动态 4：扩散策略机器人控制",
+      "name": "行业动态 5：扩散策略机器人控制",
       "url": "https://www.therobotreport.com/xtend-secures-u-s-patent-autonomous-navigation-technology/",
-      "type": "行业动态",
-      "card_type": "来源链接卡",
-      "importance_score": 60
-    },
-    {
-      "name": "行业动态 5：人形机器人控制",
-      "url": "https://www.therobotreport.com/ai%c2%b2-robotics-raises-735m-3b-valuation-wheeled-humanoid-robots/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
