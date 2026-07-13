@@ -1,0 +1,185 @@
+[
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.09590v1",
+    "title": "PAC-ACT: Post-training Actor-Critic for Action Chunking Transformers",
+    "abstract": "Precision industrial contact manipulation requires reliable robot policies under pose perturbations and contact-force constraints. Vision-language-action models offer broad generalization but often introduce high inference latency and GPU-memory cost, while vision-action chunking policies are more suitable for real-time industrial control. However, these policies are usually trained by behavior cloning and suffer from distribution shift in contact-rich tasks. This paper proposes PAC-ACT, a reinforcement-learning post-training framework for pretrained Action Chunking Transformer policies. PAC-ACT reformulates policy optimization at the chunk level, constructs an ACT-transferred actor-critic architecture, and introduces a hybrid behavior-prior constraint to preserve the pretrained action distribution during online fine-tuning. Experiments on industrial precision-contact benchmarks show that PAC-ACT improves task success, contact stability, and force safety while retaining low latency and low GPU-memory usage. On the Contour task, PAC-ACT significantly reduces peak contact force and decreases the proportion of force readings above 60 N by 46 times. Sparse-reward ablations further show that the proposed behavior-prior constraint enables effective exploration under randomized initial poses.",
+    "authors": [
+      "Yujie Pang",
+      "Zudong Li"
+    ],
+    "published": "2026-07-10T16:42:17+00:00",
+    "updated": "2026-07-10T16:42:17+00:00",
+    "url": "http://arxiv.org/abs/2607.09590v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.09590v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.09520v1",
+    "title": "Seeing is Free, Speaking is Not: Uncovering the True Energy Bottleneck in Edge VLM Inference",
+    "abstract": "Vision-Language Models (VLMs) are the perceptual backbone of embodied AI, but their energy footprint on edge hardware remains poorly understood. Existing efficiency efforts focus predominantly on reducing visual tokens, implicitly treating visual processing as the dominant energy cost. We overturn this implicit assumption through the first systematic energy profiling of on-device VLM inference, spanning five models across three architecture families, four input resolutions, and two hardware platforms (NVIDIA RTX 3070 and Jetson Orin NX). Our analysis yields three findings. First, average inference power is a model-intrinsic constant, invariant to input resolution, image complexity, and prompt type, with less than 5% variation across all conditions. This means that all energy variation across inputs must arise from variation in inference time, not from variation in power draw. Second, each output token costs 11 to 39x more wall-clock time than each input token due to the compute-bound and memory-bound asymmetry between prefill and decode, making output token count the dominant driver of both latency and energy. Third, image complexity, measured by the number of objects in an image, induces up to 4.1x energy differences at identical resolution. This variation arises not from increased visual processing cost, but from differences in output length. These findings expose a fundamental limitation of visual token pruning: even removing all visual tokens saves at most 10% of total energy for fixed-token models. Across models spanning 1 billion to 8 billion parameters, controlling output length saves up to 97% of total energy, with the energy dominance of decoding growing stronger at larger model scale. In short, the true energy bottleneck in edge VLM inference is not what the model sees, but how much it says.",
+    "authors": [
+      "Junfei Zhan",
+      "Haoxun Shen",
+      "Mingang Guo",
+      "Zixuan Huang",
+      "Tengjiao He"
+    ],
+    "published": "2026-07-10T15:31:06+00:00",
+    "updated": "2026-07-10T15:31:06+00:00",
+    "url": "http://arxiv.org/abs/2607.09520v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.09520v1",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.09519v1",
+    "title": "DemoBridge: A Simulation-in-the-Loop Toolkit for Single-View Human Demonstration Retargeting",
+    "abstract": "We present DemoBridge, an toolkit that turns a single-view RGB stereo recording of a human hand demonstration into an executable, physics-validated robot-arm trajectory. Retargeting across the embodiment gap is hard. A robot arm reaches a target with a long, articulated body whose links carry far more collision volume than a hand. Solving inverse kinematics for the mapped end-effector pose often yields no collision-free solution, and a trajectory imposes this at every waypoint. A single view adds noise, leaving the demonstrated reference inaccurate. At the core of DemoBridge is a single collision-aware planner. It optimizes the whole joint trajectory at once, reasoning jointly over alternative grasp poses, whole-arm and grasped-object collision, and fidelity to the demonstrated path. A physics simulator runs in the loop. It validates each phase as it is produced and backtracks on failure, so a demonstration that cannot be reproduced as given is re-planned rather than discarded. The resulting action sequence is dynamically stable and faithful to the demonstrated manipulation. It also doubles as a ready-to-use simulation rollout for policy learning. Grasp timing is inferred automatically, and the perception backends, robot, and pipeline stages are swappable from configuration. We evaluate whole-pipeline retargeting on three real-demonstration tasks and the planner on a controlled synthetic benchmark. Our code is available at https://gitlab.kuleuven.be/u0123974/demo-bridge/ .",
+    "authors": [
+      "Zehao Wang",
+      "Fabien Despinoy",
+      "Sergey Zakharov",
+      "Tinne Tuytelaars",
+      "Rahaf Aljundi"
+    ],
+    "published": "2026-07-10T15:31:04+00:00",
+    "updated": "2026-07-10T15:31:04+00:00",
+    "url": "http://arxiv.org/abs/2607.09519v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.09519v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.09365v1",
+    "title": "PhysV2A: Reachability-Gated and Semantic-Mask-Constrained Feasibility Completion for Video-to-Robot Manipulation",
+    "abstract": "Video-based manipulation provides object-centric motion priors from human demonstrations, generated videos, or RGB-D observations, but such priors are typically embodiment-agnostic and cannot be directly executed by a specific robot. This paper presents \\textbf{PhysV2A}, a reachability-gated and semantic-mask-constrained feasibility-completion framework for converting video-derived 6D object motion into robot-executable manipulation trajectories. The key idea is to treat grasp feasibility as trajectory-conditioned rather than local: each RGB-D-generated 6-DoF grasp candidate is rigidly coupled with the recovered object motion to form a grasp-conditioned TCP trajectory hypothesis. PhysV2A then performs hierarchical reachability-gated selection, where infeasible grasp--trajectory pairs are rejected by robot-centric kinematic checks and surviving candidates are ranked by downstream execution suitability. For the selected reachable trajectory, a VLM-assisted and rule-validated S-Mask identifies task-critical and relaxable Cartesian components, enabling semantic-mask-constrained manipulability refinement through redundancy-first optimization and bounded Cartesian relaxation. Real-robot experiments on four tabletop manipulation tasks show that PhysV2A improves task success over representative video-prior and IK-only baselines, reduces kinematic-feasibility failures, and produces better-conditioned trajectories with bounded semantic deviations.",
+    "authors": [
+      "Haohui Huang",
+      "Junda Duan",
+      "Tao Teng",
+      "Chenguang Yang"
+    ],
+    "published": "2026-07-10T12:43:00+00:00",
+    "updated": "2026-07-10T12:43:00+00:00",
+    "url": "http://arxiv.org/abs/2607.09365v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.09365v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.09330v1",
+    "title": "Communication-Efficient Digital-Twin Coordination for Heterogeneous LLM Embodied Agents over Computing Power Networks",
+    "abstract": "Embodied agent teams powered by heterogeneous large language models (LLMs) are being widely deployed in physical artificial intelligence such as smart factories, warehouses, and service robotics. To enable collaboration among such an agent team, efficient coordination mechanisms that operate reliably under limited network resources are required. However, existing heterogeneous LLM-agent coordination frameworks that rely on multi-round natural-language-based conversations introduce three coupled challenges. First, inter-agent dialogue incurs communication overhead that grows rapidly with team size. Second, the quality of coordination is constrained by the heterogeneous capabilities of the agent team's LLMs. Third, agents may suffer from action delays due to iterative negotiation. To address these challenges, we propose LDT-Coord, a networked coordination framework built upon a lightweight digital twin (DT). Specifically, each agent independently selects its intended action and reports both the action decision and a structured temporal constraint over shared resources to the DT server, thereby decoupling coordination performance from natural-language reasoning ability. Then, DT executes a training-free, rule-based orchestrator algorithm to resolve cross-agent conflicts and returns coordination instructions to prevent such conflicts. To further reduce communication overhead, we formulate agent reporting control as a constrained partially observable Markov decision process (C-POMDP) and solve it with the PPO-Lagrangian algorithm. Simulation results show that LDT-Coord achieves a task success rate comparable to conventional coordination methods while reducing communication overhead by more than 70x and maintaining robustness under LLM heterogeneity.",
+    "authors": [
+      "Nuocheng Yang",
+      "Sihua Wang",
+      "Zihan Chen",
+      "Tony Q. S. Quek",
+      "Changchuan Yin"
+    ],
+    "published": "2026-07-10T12:10:31+00:00",
+    "updated": "2026-07-10T12:10:31+00:00",
+    "url": "http://arxiv.org/abs/2607.09330v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.09330v1",
+    "categories": [
+      "cs.AI",
+      "cs.MA"
+    ],
+    "primary_category": "cs.AI"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.09323v1",
+    "title": "Effects of Robotic Touch on Older Users During Walking Guidance by a Humanoid Robot",
+    "abstract": "The shortage of healthcare staff is a challenge in geriatric care. To address this, robots can be integrated into care settings to provide assistance and emotional support. A promising application is walking guidance, particularly benefiting older adults as navigation skills deteriorate with aging. As walking guidance involves direct contact, the aim of this study is to understand how older adults perceive and respond to different touch modes during guided walking. 24 older adults (68 - 88 yrs.) walked four times a ten-meter trajectory guided by the robot TIAGo Pro in four contact conditions: no physical contact (NC); physical contact through holding the robot's wrist with the hand (HH); physical interaction through linking arms with the robot (LA); and physical contact through resting the forearm on the robots forearm (FC). A multimodal assessment approach included electrocardiogram, electrodermal activity, contact force, distance to robot, and questionnaires. Physiological results reveal a slight increase in stress levels during robot interaction. Behavioural and subjective measures, however, show overall acceptance of robotic touch. The two conditions corresponding to larger interaction forces (HH and FC) were associated with lower relative distances between participant and robot, indicating a higher trust and confidence. Questionnaire responses supported these findings, evidencing greater perceived safety, trust and comfort in these conditions. This study provides insights for the design of robotic walking guidance assistance, indicating that gentle, stable touch is preferred by older adults in comparison to contactless interaction.",
+    "authors": [
+      "Leonie Leven",
+      "Marko Ackermann",
+      "Christian Werner",
+      "Melina Schmetterer",
+      "Theresa Buchner",
+      "Monika Eckstein",
+      "Katja Mombaur"
+    ],
+    "published": "2026-07-10T12:06:14+00:00",
+    "updated": "2026-07-10T12:06:14+00:00",
+    "url": "http://arxiv.org/abs/2607.09323v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.09323v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.09185v1",
+    "title": "Causally Debiased Latent Action Model for Embodied Action Conditioned World Models",
+    "abstract": "Action-conditioned world models (ACWMs) aim to simulate future observations conditioned on embodied actions, offering a promising foundation for robot planning, policy evaluation, and data augmentation. However, learning controllable ACWMs requires large-scale action-labeled data, which remains costly to collect in the real world. Latent action models (LAMs) mitigate this bottleneck by inferring latent actions from unlabeled videos, but existing LAMs are typically trained with reconstruction-only objectives and therefore entangle action-relevant dynamics with action-irrelevant visual factors such as backgrounds and untouched objects. In this work, we identify this action-irrelevant bias as a key obstacle to controllable ACWMs and introduce evaluation metrics to measure latent-action bias, action following, and robustness. We propose CD-LAM, a causally debiased framework for LAM-based ACWMs. CD-LAM introduces three efficient fine-tuning objectives: embodiment-centric reconstruction, action-centric contrastive learning, and latent space calibration, which together encourage embodiment-focused, action-aware, and calibrated non-collapsed latent action representations. Experiments on 2B and 14B ACWM backbones show that CD-LAM substantially improves latent-action controllability, downstream robot-action following, visual fidelity, and adaptation efficiency, requiring only 6k fine-tuning steps and more than 12$\\times$ fewer robot-action adaptation updates than the baseline.",
+    "authors": [
+      "Yufan Wei",
+      "Kun Zhou",
+      "Lingjun Mao",
+      "Zijun Zhang",
+      "Ziming Xu",
+      "Ziqiao Xi",
+      "Shuang Liang",
+      "Ruobing Han",
+      "Yuchen Yan",
+      "Xinyue Wang",
+      "Fan Feng",
+      "Biwei Huang"
+    ],
+    "published": "2026-07-10T08:20:27+00:00",
+    "updated": "2026-07-10T08:20:27+00:00",
+    "url": "http://arxiv.org/abs/2607.09185v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.09185v1",
+    "categories": [
+      "cs.CV",
+      "cs.RO"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.09042v1",
+    "title": "Learning More from Less: Reinforcement Learning from Hindsight",
+    "abstract": "Reinforcement learning (RL) is increasingly used to post-train vision-language-action (VLA) models, but every update consumes robot rollouts that are slow and costly to collect, making sample efficiency a central concern. Manipulation tasks typically provide only sparse rewards, so a weak policy fails almost every rollout early in training and has little to learn from, even when those failures execute coherent behavior. Such a failure, however, is a success at a different task. We present Learning from Hindsight (LfH), which brings hindsight relabeling to RL post-training of VLAs by scoring failed rollouts against the tasks they actually achieved. A single vision-language model relabels both the instruction and the reward, proposing a hindsight instruction for a group of failed rollouts and scoring how well each satisfies it, and the policy trains on the relabeled and original rollouts jointly. Because VLAs generalize across language, relabeling in language lets the policy learn more from the same trajectories. On out-of-distribution LIBERO-PRO tasks, where standard RL improves only slowly, LfH achieves $5\\times$ improvement in sample efficiency, and outperforms a dense progress-reward baseline. The gains hold across VLA backbones and on a physical Franka robot.",
+    "authors": [
+      "Iris Xu",
+      "Sunshine Jiang",
+      "John Marangola",
+      "Nitish Dashora",
+      "Richard Li",
+      "Thomas Liu",
+      "Zexue He",
+      "Yuheng Zhi",
+      "Alex Pentland",
+      "Pulkit Agrawal",
+      "Zhang-Wei Hong"
+    ],
+    "published": "2026-07-10T02:17:41+00:00",
+    "updated": "2026-07-10T02:17:41+00:00",
+    "url": "http://arxiv.org/abs/2607.09042v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.09042v1",
+    "categories": [
+      "cs.LG"
+    ],
+    "primary_category": "cs.LG"
+  }
+]
