@@ -1,0 +1,492 @@
+[
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.13033v1",
+    "title": "DenseReward: Dense Reward Learning via Failure Synthesis for Robotic Manipulation",
+    "abstract": "Reinforcement learning holds great promise for improving robot policies beyond the limits of imitation learning. However, its practical adoption remains bottlenecked by the lack of reliable vision-language reward models that provide dense and informative feedback. Two key challenges remain: acquiring diverse failure data at scale and obtaining fine-grained reward signals beyond sparse trajectory-level success labels. Collecting failure trajectories typically requires laborious human effort, while pseudo-failures constructed by relabeling successful demonstrations fail to capture the diverse physical failure modes that arise during robot execution. Meanwhile, existing reward models often predict sparse binary or trajectory-level rewards, which provide limited guidance for efficient policy optimization. We introduce DenseReward, a dense robotic reward model that addresses both challenges. To train DenseReward, we develop an automated failure data generation pipeline that synthesizes physically realistic failure trajectories in simulation without human labeling, covering diverse failure modes such as collisions, missed grasps, object drops, and recovery behaviors. DenseReward predicts dense frame-level reward scores from visual observations and language instructions, enabling fine-grained estimation of task progress throughout an episode. Experiments show that DenseReward outperforms general-purpose VLMs and existing robotic reward models in dense reward prediction across both simulated and real-world manipulation. We further demonstrate that DenseReward provides effective reward guidance for downstream model predictive control and reinforcement learning. We release the dataset, trained reward models, and evaluation suite to support the development of failure-aware dense reward modeling for robot learning.",
+    "authors": [
+      "Yu Fang",
+      "Wanxi Dong",
+      "Jiaqi Liu",
+      "Yue Yang",
+      "Mingxiao Huo",
+      "Yao Mu",
+      "Huaxiu Yao",
+      "Li Erran Li",
+      "Daniel Szafir",
+      "Mingyu Ding"
+    ],
+    "published": "2026-07-14T17:59:29+00:00",
+    "updated": "2026-07-14T17:59:29+00:00",
+    "url": "http://arxiv.org/abs/2607.13033v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.13033v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.13017v1",
+    "title": "FlowWAM: Optical Flow as a Unified Action Representation for World Action Models",
+    "abstract": "World Action Models (WAMs) are able to leverage pretrained video generators for both world modeling and action prediction. However, directly leveraging such video generators for control raises a new challenge: how to represent actions in a suitable form that aligns with pretrained video generators while carrying enough motion cues for accurate control. Existing numerical actions fail to satisfy the former, and prior visual action representations overlook the temporal motion structure across frames. We address this issue with FlowWAM, a dual-stream diffusion framework that adopts optical flow as a unified, video-native action representation. Flow videos share the same format as RGB videos and encode rich per-pixel displacement. By jointly modeling them within a shared pretrained video generator, FlowWAM can naturally implement two modes of WAMs. In policy mode, FlowWAM generates flow for action prediction, while in world-model mode, it uses target flow sequences to guide future video generation. Moreover, since flow can be easily extracted from raw videos without action labels, FlowWAM can leverage large-scale action-unlabeled video datasets for pretraining. We empirically find that our flow-based action representation delivers gains across both modes. On RoboTwin manipulation, FlowWAM raises the success rate to 92.94% on the Clean setting and 92.14% on Random, outperforming both VLA and WAM baselines. On WorldArena world modeling, it achieves the best overall EWMScore (63.71) with an 18.4% relative improvement in trajectory accuracy. More results can be found on our project website: https://flow-wam.github.io .",
+    "authors": [
+      "Yixiang Chen",
+      "Peiyan Li",
+      "Yuan Xu",
+      "Qisen Ma",
+      "Jiabing Yang",
+      "Kai Wang",
+      "Jianhua Yang",
+      "Dong An",
+      "He Guan",
+      "Gaoteng Liu",
+      "Jianlou Si",
+      "Jun Huang",
+      "Jing Liu",
+      "Nianfeng Liu",
+      "Yan Huang",
+      "Liang Wang"
+    ],
+    "published": "2026-07-14T17:57:12+00:00",
+    "updated": "2026-07-14T17:57:12+00:00",
+    "url": "http://arxiv.org/abs/2607.13017v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.13017v1",
+    "categories": [
+      "cs.RO",
+      "cs.CV"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.12992v1",
+    "title": "ChunkFlow: Towards Continuity-Consistent Chunked Policy Learning",
+    "abstract": "Vision-language action (VLA) models increasingly adopt chunked action heads to satisfy real-time constraints; however, this introduces boundary jitter: overlapping regions between consecutive chunks often yield inconsistent predictions, degrading temporal coherence and the task success rate. Existing methods, such as inference-time blending, merely reweight mismatched proposals without correcting underlying errors, leading to residual accumulation under biased or noisy histories. We propose ChunkFlow, a seam-aware training-and-execution framework for chunked policies that aligns chunk structure with boundary execution. It partitions each chunk into frozen, editable, and future zones, applies deterministic overlap blending at execution, and trains raw predictions with seam and first- and second-order continuity losses. History corruption and scheduled sampling improve robustness to executed-history errors, while an AWAC fine-tuning stage adapts the policy without removing these structural regularizers. Under mild smoothness assumptions, pre-blending seam discrepancies provably decay with increasing overlap. Experiments on CALVIN, LIBERO, and real robots show an improved success-stability trade-off with low-latency inference. Project page: https://cytoderm-ai.github.io/chunkflow.",
+    "authors": [
+      "Zhao Yang",
+      "Yinan Shi",
+      "Mingyuan Yao",
+      "Wenyao Xue",
+      "Yawei Jueluo",
+      "Longjun Liu"
+    ],
+    "published": "2026-07-14T17:43:25+00:00",
+    "updated": "2026-07-14T17:43:25+00:00",
+    "url": "http://arxiv.org/abs/2607.12992v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.12992v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.12965v1",
+    "title": "MAMMOTH: A Multi-Modal End-to-End Policy for Off-Road Mobility Robust to Missing Modality",
+    "abstract": "Reliable autonomous navigation in unstructured off-road environments remains a critical unsolved challenge due to extreme terrain diversity, drastic illumination variations and acute sensor degradation. Recent developments have approached the problem as a traversability costmap estimation or visual navigation task. However, many exhibit heavy reliance on RGB modality, leading to poor performance in varied illumination such as glares, shadows or low ambient light. Achieving robust generalization in such conditions requires integrating modalities that provide supplementary scene information. Such multi-modal methods suffer from a rigid dependency on the presence of near-perfect sensor inputs, leaving them unable to robustly handle sensor degradation or individual modality failure. To address these limitations, we introduce MAMMOTH (MAsking Multi-Modal inputs for Off-road Traversability Heuristic-informed navigation), a unified end-to-end navigation policy for robust off-road visual-goal-conditioned navigation and undirected exploration. Specifically, MAMMOTH efficiently fuses multi-modal observations (RGB, Thermal, 3D Pointcloud and Ego Velocity) and is trained with a modality dropout scheme, enabling it to generalize to missing modalities at inference time. Furthermore, we employ a diffusion policy to learn the joint conditional probability distribution of physically-grounded trajectories and a intrinsic traversability heuristic. MAMMOTH utilizes this heuristic to prefer safer, smoother trajectories. We validate MAMMOTH through extensive real-world robot experiments in distinct off-road environments, including night-time operation. Our results demonstrate superior performance, with significant improvements in collision avoidance, terrain-aware planning and generalization to missing modalities. The code and dataset used for this work will be made publicly available.",
+    "authors": [
+      "Ahaan Kotian",
+      "Shivani Subramanyan",
+      "Suresh Sundaram"
+    ],
+    "published": "2026-07-14T17:04:47+00:00",
+    "updated": "2026-07-14T17:04:47+00:00",
+    "url": "http://arxiv.org/abs/2607.12965v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.12965v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.12931v1",
+    "title": "ExToken: Structured Exploration for Efficient Vision-Language-Action Reinforcement Fine-tuning",
+    "abstract": "Reinforcement Learning (RL) has demonstrated significant potential for improving Vision-Language-Action (VLA) models on complex manipulation tasks. However, its practical scalability remains severely limited by the substantial cost of environmental interactions. In this work, we first investigate the exploration stagnation bottleneck in current VLA-RL frameworks and reveal that trajectory diversity is fundamentally more important to sample efficiency than the sheer quantity of collected rollouts. Motivated by these insights, we introduce RL Exploration Token (ExToken), a simple yet general framework that condition VLA policies on discrete behavioral priors derived from offline demonstrations for structured exploration. By conditioning the policy on different tokens during rollout collection, ExToken encourages the agent to explore diverse behavioral modes, substantially improving state-action coverage and exploration efficiency. To bridge exploration during training with deterministic inference at deployment, ExToken further incorporates a state-conditioned token selector that adaptively predicts effective behavioral modes for unseen scenarios. Extensive experiments across simulated and real-world robotic manipulation tasks demonstrate that ExToken consistently accelerates convergence, improves task performance, and exhibits strong robustness under highly constrained interaction budgets.",
+    "authors": [
+      "Yilun Kong",
+      "Yunpeng Qing",
+      "Guozheng Ma",
+      "Haoyu Wang",
+      "Li Shen",
+      "Zhi Hou",
+      "Dacheng Tao"
+    ],
+    "published": "2026-07-14T16:04:41+00:00",
+    "updated": "2026-07-14T16:04:41+00:00",
+    "url": "http://arxiv.org/abs/2607.12931v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.12931v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.12894v1",
+    "title": "Hy-Embodied-VLM-1.0: Efficient Physical-World Agents",
+    "abstract": "Building capable embodied agents requires not only multimodal perception and understanding, but also agentic capabilities for reasoning about actions, adapting to evolving situations, and interacting with the physical world. In this report, we introduce Hy-Embodied-VLM-1.0, an efficient and powerful embodied foundation model specifically designed for embodied agents operating in the physical world. To cultivate such capabilities from the pre-training stage onward, we define an action-centric capability taxonomy comprising three progressive dimensions: Action-Relevant State Understanding, Action-Transition Reasoning, and Sequential and Adaptive Reasoning. Guided by this taxonomy, we develop a systematic data pipeline and curate data mixtures spanning both pre-training and post-training. To deliver strong physical-world understanding and interaction capabilities while supporting latency-sensitive deployment, we build our model on the Hy3-A3B language backbone and the Hy-ViT2 vision encoder. Its efficient Mixture-of-Experts architecture combines strong model capacity with high inference efficiency. We evaluate Hy-Embodied-VLM-1.0 on a comprehensive suite of 38 benchmarks covering embodied perception, physical-world understanding, and embodied reasoning. The model achieves the best performance among similarly sized models on 19 of the 38 benchmarks and substantially outperforms strong competitors, including Qwen3.6-A3B and Cosmos 3. Compared with the previous-generation Hy-Embodied-0.5 MoT-2B, Hy-Embodied-VLM-1.0 improves average performance by 8.4%. Despite activating only 3B parameters, it achieves performance close to that of the previous-generation model with 32B activated parameters. Beyond static benchmark evaluation, Hy-Embodied-VLM-1.0 also demonstrates strong performance on embodied agentic tasks requiring multi-turn interaction and long-horizon reasoning.",
+    "authors": [
+      "Ziyi Wang",
+      "Xumin Yu",
+      "Yongming Rao",
+      "Yonggen Ling",
+      "Yunheng Li",
+      "Oran Wang",
+      "Mingqi Gao",
+      "Yuchen Zhou",
+      "Yves Liang",
+      "Zuyan Liu",
+      "Yani Zhang",
+      "Rui Huang",
+      "Xiaoran Xu",
+      "Bowen Yuan",
+      "Yifu Yuan",
+      "Xu Tan",
+      "He Zhang",
+      "Yufei Huang",
+      "Shenghao Zhang",
+      "Hongsheng Wu",
+      "Han Hu",
+      "Zhengyou Zhang"
+    ],
+    "published": "2026-07-14T15:34:17+00:00",
+    "updated": "2026-07-14T15:34:17+00:00",
+    "url": "http://arxiv.org/abs/2607.12894v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.12894v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.12892v1",
+    "title": "UR-VC: Unsupervised Robotic Value Correction for Time-Derived Progress Proxies",
+    "abstract": "Modern robot learning systems increasingly rely on dense progress or value signals to evaluate intermediate states, guide policy learning, and detect task completion, making the quality of these signals critical. Since such dense labels are rarely available at scale, normalized time within a demonstration is often used as a scalable substitute: later frames are treated as higher progress. However, this time-derived label is only a noisy proxy for physical task progress. In contact-rich manipulation, a robot may make progress and then lose it through slips, failed grasps, or partial undoing, while the time-derived label continues to increase monotonically. We introduce Unsupervised Robotic Value Correction (UR-VC), an offline, training-free method for correcting time-derived progress labels. UR-VC exploits a simple regularity in demonstration data: similar states often recur across different episodes, but at different timestamps. Instead of trusting the timestamp from a single trajectory, UR-VC retrieves similar states from other episodes and aggregates their time-derived labels to obtain a corrected progress estimate. UR-VC requires no manual progress labels, reward annotations, or additional value model. We evaluate UR-VC on real bimanual cloth flatten-and-fold data, a long-horizon deformable-object manipulation task with visible intermediate progress. The corrected labels capture local regressions and non-uniform progress that normalized time cannot represent, while preserving the overall task trend. We further use the corrected signal to construct advantage labels for VLA training, following recent advantage-conditioned policy learning. UR-VC shows a positive trend in real-robot task success under matched data, model, and training settings.",
+    "authors": [
+      "Lirui Zhao",
+      "Modi Shi",
+      "Li Chen",
+      "Qi Liu",
+      "Ping Luo",
+      "Hongyang Li"
+    ],
+    "published": "2026-07-14T15:33:33+00:00",
+    "updated": "2026-07-14T15:33:33+00:00",
+    "url": "http://arxiv.org/abs/2607.12892v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.12892v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.12702v1",
+    "title": "Vision-Based Dribbling for Humanoid Soccer via Privileged Representation Learning",
+    "abstract": "Recent advances in humanoid robotics have highlighted the importance of deployable loco-manipulation skills. Dribbling a soccer ball while evading active opponents requires simultaneous balance, precise ball control, and awareness of a dynamic adversary under onboard sensing and real-time constraints. Existing approaches typically separate perception and motion, which can be effective in controlled settings but may fail under occlusions, fast ball movements, and complex opponent interactions, since perception is not directly optimized for control. We propose an integrated approach in which a temporal depth encoder is embedded into a reinforcement learning policy through a task-specific projection layer. We apply this framework to a simulated Booster T1 humanoid robot and show that it is possible to learn vision-based, opponent-aware dribbling directly from depth observations, without explicit state estimation or privileged scene information. The learned policy achieves 100% success in nominal target-driven dribbling and 96% success with a single static obstacle, while reaching 46% success against an actively moving ball-attacker opponent. These results demonstrate that the proposed framework supports robust vision-based dribbling in nominal and moderately dynamic settings, and provides a strong foundation for handling more challenging moving-adversary scenarios.",
+    "authors": [
+      "Flavio Maiorana",
+      "Valerio Spagnoli",
+      "Eugenio Bugli",
+      "Flavio Volpi",
+      "Daniele Affinita",
+      "Vincenzo Suriani",
+      "Daniele Nardi",
+      "Luca Iocchi"
+    ],
+    "published": "2026-07-14T12:27:58+00:00",
+    "updated": "2026-07-14T12:27:58+00:00",
+    "url": "http://arxiv.org/abs/2607.12702v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.12702v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.12659v1",
+    "title": "Jetson-PI: Towards Onboard Real-Time Robot Control via Foresight-Aligned Asynchronous Inference",
+    "abstract": "Vision-Language-Action (VLA) models have achieved impressive performance on diverse embodied tasks. However, deploying VLA models on low-power onboard devices, such as the Jetson Orin, remains challenging due to their high computational complexity, which leads to substantial inference latency and low control frequency. Asynchronous inference can partially mask this latency by parallelizing action execution and subsequent inference, but it introduces two critical issues: perception-execution misalignment and long reaction time. In this paper, we propose Jetson-PI, a method for efficient VLA deployment on onboard devices via Foresight-Aligned Asynchronous Correction. To address misalignment, we train a lightweight future correction module that predicts future environment representation conditioned on committed actions, enabling the action expert to directly predict actions from the future time step. To reduce reaction time, we introduce confidence-based scheduling optimization that adaptively balances VLM and action expert invocations, complemented by system-level accelerations including CUDA graph reuse, GPU-resident intermediate buffering, and flow unrolling. Extensive experiments demonstrate that Jetson-PI achieves 8.66x and 5.41x improvements in control frequency compared with naive PyTorch and vla.cpp on NVIDIA Jetson Orin, while outperforming VLASH by 14.8\\% in average success rate on the LIBERO benchmark. The code of our asynchronous algorithm is available on https://github.com/PKU-SEC-Lab/Jetson-PI, and our efficient llama.cpp-based inference engine is available on https://github.com/PKU-SEC-Lab/Jetson-PI-Edge.",
+    "authors": [
+      "Zebin Yang",
+      "Qi Wang",
+      "Yunhe Wang",
+      "Xiurui Guo",
+      "Bo Yu",
+      "Shaoshan Liu",
+      "Jiafeng Xu",
+      "Hao Dong",
+      "Meng Li"
+    ],
+    "published": "2026-07-14T11:38:36+00:00",
+    "updated": "2026-07-14T11:38:36+00:00",
+    "url": "http://arxiv.org/abs/2607.12659v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.12659v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.12630v1",
+    "title": "Instance-Enriched Semantic Maps for Visual Language Navigation",
+    "abstract": "Visual Language Navigation (VLN) aims to enable an embodied agent to navigate complex environments by following natural language instructions. Recent approaches build semantic spatial maps and leverage Large Language Models (LLMs) for reasoning and decision making. Despite these advances, existing systems lack instance-level object detail and robustness to diverse user queries, limiting reliable navigation in complex indoor environments. To address these limitations, we propose Instance-Enriched Semantic Maps, a unified framework with three key contributions: (1) Instance-level two-and-a-half-dimensional (2.5D) rich information mapping that constructs maps from color and depth observations via open-vocabulary panoptic segmentation, preserving vertical distinctions and capturing small objects, while storing diverse semantic attributes and natural language captions enriched with room-level context. (2) Robust query processing via LLM-based target selection, which dynamically routes queries across type-specialized experts and integrates their outputs through score-level fusion, enabling consistent goal selection across diverse query formulations. (3) Storage-efficient semantic representation that achieves approximately 96% reduction compared to three-dimensional (3D) scene-graph approaches while preserving sufficient spatial information for navigation. The proposed 2.5D representation outperforms the 3D baseline by over 27% in prediction-normalized Area Under the Curve (AUC). In navigation experiments, our method achieves over 17% improvement in object retrieval and over 23% in navigation success compared to the baseline across diverse query types. The project page is available at https://rcilab.github.io/iesm_vln.",
+    "authors": [
+      "Jiho Hong",
+      "Eunae Kang",
+      "Sanghyun Kim",
+      "Young-Sik Shin"
+    ],
+    "published": "2026-07-14T11:09:48+00:00",
+    "updated": "2026-07-14T11:09:48+00:00",
+    "url": "http://arxiv.org/abs/2607.12630v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.12630v1",
+    "categories": [
+      "cs.RO",
+      "cs.CV"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.12571v1",
+    "title": "TrustVLA: Mechanism-Guided Inference-Time Defense Against Vision-Language-Action Backdoors",
+    "abstract": "Vision-Language-Action (VLA) models are deployed through pipelines that end users cannot audit, and a poisoned VLA can behave normally on clean observations while a small visual trigger redirects a long-horizon robot policy before any failure becomes observable. Existing vision or language defenses rarely explain what a triggered VLA representation looks like or how to recover behavior without retraining. We study this gap through two independently proposed VLA attacks from groups with distinct injection strategies, BadVLA and INFUSE; the latter persists after downstream clean adaptation. Across the evaluated poisoned models, we identify a recurring internal mechanism: a \\emph{compact causal footprint}, namely a small visual support that is attention-seeded, spatially compact, and \\emph{causal} in a precise sense -- masking it returns a clean-calibrated evidence-evolution score to the normal operating region. This footprint motivates TrustVLA, a mechanism-guided inference-time defense that adapts the Dirichlet evidence framework from trusted classification to monitor per-token, per-layer epistemic uncertainty in VLA policies. With only a small clean calibration set, TrustVLA (i)~detects abnormal evidence evolution, (ii)~localizes the compact support by counterfactual mechanism-score drop, and (iii)~recovers the observation by localized inpainting. Across OpenVLA/LIBERO and $π_{0.5}$ transfer evaluations, TrustVLA reduces attack success while preserving clean-task performance, providing a retraining-free, mechanism-guided defense for visual-triggered VLA backdoors.",
+    "authors": [
+      "Pinhan Fu",
+      "Xianda Guo",
+      "Xuetao Li",
+      "Wenke Huang",
+      "Ruilin Wang",
+      "Weiheng Zhao",
+      "Wei Sui",
+      "Mang Ye"
+    ],
+    "published": "2026-07-14T09:43:52+00:00",
+    "updated": "2026-07-14T09:43:52+00:00",
+    "url": "http://arxiv.org/abs/2607.12571v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.12571v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.12503v1",
+    "title": "DynTrace: Tracking Dynamic Object Evidence for 4D Spatio-Temporal Reasoning in MLLMs",
+    "abstract": "4D spatio-temporal reasoning, jointly modeling 3D spatial structure and temporal evolution, is essential for understanding dynamic worlds and enabling embodied interaction. While current Multimodal Large Language Models (MLLMs) show strong capabilities in static scene understanding and coarse-grained 4D tasks, they still have notable limitations in continuous dynamic scene perception, especially in tracking dynamic object evidence for coherent 4D spatio-temporal reasoning. This shortcoming stems mainly from relying on sparse frame-level observations, fragmenting continuous dynamic cues and leaving models unable to disentangle genuine object dynamics from camera-induced apparent motion. Inspired by humans tracking dynamic cues while compensating for viewpoint changes, we propose DynTrace, a training-free framework for 4D spatio-temporal reasoning with two complementary components. Dynamic Trajectory Visualization (DTV) reprojects world-coordinate trajectories onto the image plane, providing geometry-informed visual priors that disentangle genuine object dynamics from camera-induced apparent motion. Meanwhile, the Dynamic Trace Token (DT-Token), organized into a Dynamic Trace Graph (DTG), tracks object-level dynamic cues, trace evolution, and key moments, maintaining continuous dynamic object evidence for coherent 4D reasoning. Together, these two components equip MLLMs with continuously tracked dynamic object evidence, grounded in geometry-informed visual priors and structured spatio-temporal traces. DynTrace consistently improves open-source MLLMs, achieving state-of-the-art results on Dyn-Bench, VLM4D, and DSI-Bench, validating the importance of tracking dynamic object evidence for robust 4D spatio-temporal reasoning.",
+    "authors": [
+      "Rongxin Gao",
+      "Yuzhi Huang",
+      "Dongxuan Liu",
+      "Chu Li",
+      "Zhenye Wang",
+      "Jie Wu",
+      "Shuzhao Xie",
+      "Jingyan Jiang",
+      "Xinghao Ding",
+      "Xiaotong Tu",
+      "Yue Huang"
+    ],
+    "published": "2026-07-14T08:35:07+00:00",
+    "updated": "2026-07-14T08:35:07+00:00",
+    "url": "http://arxiv.org/abs/2607.12503v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.12503v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.12477v1",
+    "title": "Self in Space: Benchmarking Self-Awareness and Spatial Cognition in UAV Embodied Intelligence",
+    "abstract": "Autonomous UAV systems increasingly rely on multimodal large language models (MLLMs) to operate in complex real-world environments. Such embodied scenarios require not only understanding the surrounding space but also maintaining a coherent representation of the agent itself. However, existing UAV-oriented approaches and benchmarks remain largely environment-centric, primarily focusing on spatial understanding tasks, with the agent's self-awareness remaining implicit. To address this gap, we introduce SIS-Bench, a benchmark for evaluating embodied spatial intelligence in UAV scenarios under a unified self-in-space formulation. SIS-Bench organizes evaluation along two complementary dimensions, space and self, and a three-level hierarchy of perception, memory, and reasoning. It contains 4,856 question--answer pairs across 13 tasks derived from 1,646 real-world UAV videos through a task-conditioned construction pipeline with expert verification. Extensive evaluations reveal that current MLLMs exhibit fundamental limitations in modeling dynamic and agent-centered processes. In particular, we observe a clear imbalance between spatial cognition and self-awareness, as well as a progressive performance degradation across cognitive levels. Motivated by these findings, we further explore a motion-aware representation that incorporates self-related dynamics through optical flow and visual feature fusion. Experimental results show that modeling agent motion consistently improves perception and memory performance, not only in spatial cognition but also in self-awareness, and generalizes to downstream UAV decision-making tasks. Our results highlight the importance of self-awareness for advancing embodied spatial intelligence, and provide both a new benchmark and empirical evidence for motion-aware self-in-space modeling.",
+    "authors": [
+      "Zhishan Zou",
+      "Guoyan Sun",
+      "Zhiwei Wei",
+      "Jiancheng Pan",
+      "Yujie Li",
+      "Mugen Peng",
+      "Wenjia Xu"
+    ],
+    "published": "2026-07-14T08:04:31+00:00",
+    "updated": "2026-07-14T08:04:31+00:00",
+    "url": "http://arxiv.org/abs/2607.12477v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.12477v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.12466v1",
+    "title": "Deployable Human Preference Alignment in Robotics: Learning Representative Rewards from Diverse Human Preferences",
+    "abstract": "Aligning robot policies with human preferences is essential for deployment to diverse end users. In per-user alignment approach, preference feedback is often sparse, so learning becomes unstable and vulnerable to human preference noise, and a growing number of individualized policies makes validation difficult before deployment. A single shared policy approach to user alignment avoids this cost but fails to capture heterogeneous preferences and often neglects minority preferences. To address these challenges, we introduce Preference-based REward Clustering (PREC), a novel framework that learns a compact set of policies from binary preference labels provided by diverse users. From a dataset of user trajectories and their preference labels, PREC first sets the labels aside and aggregates trajectories across users to learn a population-level shared trajectory encoder, alleviating limited per-user coverage and avoiding label noise during representation learning. Using this representation, PREC jointly assigns users to preference-coherent clusters and learns a representative reward model per cluster using preference labels, from which a policy is optimized for each cluster. Clustering similar users compensates for the limited number of labels available from each user and mitigates the effect of label noise. At the same time, maintaining a manageable number of reward models reduces the validation burden at deployment. Experiments across diverse simulated locomotion environments show that PREC groups users who label different trajectory subsets into preference-coherent clusters more accurately than baseline methods. Under sparse and noisy feedback, policies trained with PREC improve all three social welfare metrics over an existing single shared-policy user-alignment approach and even outperform per-user alignment approaches.",
+    "authors": [
+      "Taehyung Kim",
+      "Gwangmo Lee",
+      "Minjun Chang",
+      "Sunghyun Lim",
+      "Jongeun Choi"
+    ],
+    "published": "2026-07-14T07:50:43+00:00",
+    "updated": "2026-07-14T07:50:43+00:00",
+    "url": "http://arxiv.org/abs/2607.12466v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.12466v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.12356v1",
+    "title": "VistaVLA: Geometry- and Semantic-Aware 3D Gaussian-Grounded VLA for Robotic Manipulation",
+    "abstract": "Vision-Language-Action (VLA) models have emerged as a powerful end-to-end paradigm for robotic manipulation by mapping language instructions and 2D visual inputs directly to actions. However, these models lack an explicit, scene-level 3D representation, limiting their ability to reason over spatial layouts and geometric constraints. While recent efforts incorporate explicit 3D cues, such as depth maps or point clouds, to improve geometric awareness, they primarily capture low-level structures and lack high-level semantic grounding in 3D space. In human cognition, interaction with the physical world relies on a 3D semantic cognitive map - an internal mental model that integrates spatial layouts with semantic context to enable persistent, viewpoint-invariant reasoning. In light of this, we present VistaVLA, a novel two-stage framework that constructs a geometry- and semantics-aware 3D cognitive representation from 3D Gaussian primitives and grounds it as compact context tokens for VLA policy learning. Specifically, VistaVLA lifts multi-view vision-language features into 3D Gaussian primitives, forming geometry-anchored semantic tokens that align view-consistent spatial grounding with 2D visual feature spaces. To make this 3D representation computationally tractable for effective VLA control, we introduce Merge-then-Query (MtQ), a token summarization mechanism. MtQ compresses dense Gaussian primitives into a highly compact set of spatially informative tokens, achieving a 99% token reduction while preserving action-relevant 3D layouts and semantic context. Extensive evaluations in both simulated and real-world environments demonstrate the effectiveness of VistaVLA. Notably, in real-world scenarios, VistaVLA improves success rates by 22.8% across seven real-world tasks and by 30.0% over the VLA-Adapter baseline on challenging out-of-distribution tasks.",
+    "authors": [
+      "Mohan Liu",
+      "Zhihao Gu",
+      "Xuanyu Chen",
+      "Haitian Zhang",
+      "Kaimin Mao",
+      "Yan Wu",
+      "Wei-Yun Yau",
+      "Lin Wang"
+    ],
+    "published": "2026-07-14T05:08:50+00:00",
+    "updated": "2026-07-14T05:08:50+00:00",
+    "url": "http://arxiv.org/abs/2607.12356v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.12356v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.12297v1",
+    "title": "MobileSAM2: Lightweight Segment Anything for Spatial Intelligence",
+    "abstract": "The recent large video foundation model, SAM2, enables segment anything in both images and videos, serving as a powerful base model for various applications. However, many of such use cases require to operate on resource-constrained devices like mobile phones and laptops. In this work, we aim to make SAM2 more mobile-friendly by distilling the heavyweight SAM2 into a lightweight model, facilitating segment anything in both images and videos on mobile devices. To this end, we propose Hypergraphical Knowledge Distill (HyperKD), which introduces the idea of hypergraph into knowledge distillation, aiming to effectively model and transfer SAM2's generalizable and comprehensive knowledge. HyperKD consists of Temporal HyperKD and Granularity HyperKD that construct hypergraphs to explicitly model and extract the generalizable temporal knowledge and the comprehensive multi-granularity knowledge from SAM2 respectively, which are then distilled into the lightweight student model by aligning it with the constructed hypergraphs. Besides, we present MobileSAM2, a new family of lightweight SAM2 that balances efficiency and effectiveness via searching the best model architectures with HyperKD during model size reduction. Extensive experiments validate MobileSAM2 across multiple benchmarks and show promising generalization performance on embodied AI tasks.",
+    "authors": [
+      "Kai Jiang",
+      "Jiaxing Huang",
+      "Jingyi Zhang",
+      "Weiying Xie",
+      "Yunsong Li",
+      "Yufei Wang",
+      "Aoran Xiao",
+      "Dacheng Tao"
+    ],
+    "published": "2026-07-14T03:10:11+00:00",
+    "updated": "2026-07-14T03:10:11+00:00",
+    "url": "http://arxiv.org/abs/2607.12297v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.12297v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.12287v1",
+    "title": "Reducing Temporal Redundancy for Efficient Vision-Language-Action Inference",
+    "abstract": "Vision-Language-Action (VLA) models exhibit strong generalization for robotic manipulation, yet their high inference latency limits real time deployment. We identify two primary sources of temporal redundancy in existing VLA pipelines: repeated visual encoding of highly similar consecutive frames and multi step iterative sampling in diffusion based policies. To address this, we propose a system level acceleration strategy that reduces computation in both perception and action generation. On the perception side, we incrementally update only tokens corresponding to dynamic scene regions instead of re-encoding entire frames. On the policy side, we compress diffusion sampling into a compact 2-step schedule through efficiency oriented training while preserving action precision. Experiments on Libero, RobotWin, and Real Robot Platforms demonstrate over 2 times speedup while maintaining high performance, achieving up to 98% success rate on general manipulation benchmarks. Our codes will be released on Github.",
+    "authors": [
+      "Yuzhou Wu",
+      "Yuxin Zheng",
+      "Muchun Niu",
+      "Yishan Yang",
+      "Tianhao Liu",
+      "hanwen kang",
+      "Jiajian Jing",
+      "Linfeng Zhang",
+      "Chuan Wen"
+    ],
+    "published": "2026-07-14T02:48:31+00:00",
+    "updated": "2026-07-14T02:48:31+00:00",
+    "url": "http://arxiv.org/abs/2607.12287v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.12287v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.12206v1",
+    "title": "RegHead: Non-Humanoid Head Blendshapes via Feed-Forward Registration",
+    "abstract": "We present RegHead, a framework for constructing semantic blendshape sets for animatable non-humanoid head avatars. With a fixed expression vocabulary, semantic blendshapes provide a low-dimensional and interpretable animation interface and support cross-identity retargeting. Building such blendshape sets remains expensive because (i) expression-consistent supervision is scarce, (ii) generated 4D assets typically lack correspondence, and (iii) facial motion is highly localized. We propose (1) a large-scale dataset of non-humanoid identities paired with a shared expression vocabulary, obtained by expanding a small artist-rigged library via fine-tuned image editing; (2) a dense stochastic anchor motion representation tailored to localized facial deformations; and (3) a fast feed-forward registration model that converts unregistered expression meshes into a corresponded blendshape basis by predicting anchor-based deformations from the neutral shape. Experiments show that our approach produces higher-fidelity expression meshes than baselines, while running orders of magnitude faster than optimization. We further demonstrate real-time retargeting from human face tracking signals to non-humanoid characters, capturing both head pose and localized facial motions. Our project page is available at https://snap-research.github.io/RegHead/.",
+    "authors": [
+      "Jiahao Luo",
+      "Hao Zhang",
+      "Jianqi Chen",
+      "Yijie He",
+      "Jiaxu Zou",
+      "Michael Vasilkovsky",
+      "Sergei Korolev",
+      "Sergey Tulyakov",
+      "Chaoyang Wang",
+      "Peter Wonka",
+      "James Davis",
+      "Jian Wang"
+    ],
+    "published": "2026-07-13T23:16:29+00:00",
+    "updated": "2026-07-13T23:16:29+00:00",
+    "url": "http://arxiv.org/abs/2607.12206v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.12206v1",
+    "categories": [
+      "cs.CV",
+      "cs.GR"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.12181v1",
+    "title": "Analysis of Mutual and Referential Human and Robot Gazes in a Collaborative Word Association Game",
+    "abstract": "Robot gaze is a major component of human-robot dialogue coordination. Most studies of gaze in human-robot dialogue focus on face-to-face social conversations, but little is known about gaze in demanding task-focused interactions. In this paper, we investigate how the gaze of a robot game partner affects human visual attention and if humans tend to direct confirmation-seeking gazes towards the robot. In our study, we let participants play a collaborative word association game with a NAO robot acting as an embodied, LLM-driven conversational partner. Our experiments are conducted under two conditions, which implement mutual and referential gazes of the robot respectively. We record participants' gaze using eye tracking glasses and analyze the interactions using gaze coordinates, speech segments, key events and areas of interests. We find that robot gaze orientation does not affect the time to first fixation on words the robot proposed. We also find that participants gaze more often at the robot when their dialogue line contains confirmation requests, compared to when it does not. Our results indicate (likely also due to the cognitively demanding nature of the game) that the verbal aspect of this task overshadows the effects of referential robot gaze. These findings offer valuable insights for designing and validating robot gaze and turn-taking behavior in collaborative tasks which require coordination and efficient communication.",
+    "authors": [
+      "Jens V. Rüppel",
+      "Tim Schreiter",
+      "Andrey Rudenko",
+      "Achim J. Lilienthal"
+    ],
+    "published": "2026-07-13T22:00:47+00:00",
+    "updated": "2026-07-13T22:00:47+00:00",
+    "url": "http://arxiv.org/abs/2607.12181v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.12181v1",
+    "categories": [
+      "cs.RO",
+      "cs.HC"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.12115v1",
+    "title": "A Behavioral State Vocabulary in Sony ERS-111 R-CODE",
+    "abstract": "This paper presents a corpus-level analysis of generated behavior diagrams derived from Sony's R-CODE sample distribution for the ERS-111 AIBO. Rather than reading each script in isolation, the study compares named states across the corpus to identify the recurring control vocabulary that structures the sample set. The resulting aggregate shows that many superficially different routines are built from a compact embodied grammar centered on initialization, sensing, iterative action, synchronization, and recovery. In addition to historical analysis, the paper argues that this form of state-based abstraction is useful as an intermediate representation for constructing new encapsulated behavior routines, especially on constrained native robotic systems where deterministic control, direct hardware access, and modular behavioral composition remain important.",
+    "authors": [
+      "Christopher A. Tucker"
+    ],
+    "published": "2026-07-13T19:42:54+00:00",
+    "updated": "2026-07-13T19:42:54+00:00",
+    "url": "http://arxiv.org/abs/2607.12115v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.12115v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  }
+]
