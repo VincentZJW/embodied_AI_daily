@@ -1,0 +1,477 @@
+[
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.21588v1",
+    "title": "AXIS: A Growable Community-Driven Data Engine for Scalable Robot Manipulation",
+    "abstract": "Learning effective robot manipulation policies requires diverse, high-quality demonstrations, yet existing data pipelines are often difficult to scale because they rely on specialized hardware, centralized operators, or fixed task suites. We present AXIS, a growable community-driven data engine and benchmark for scalable robot learning, which enables browser-based teleoperation for large-scale demonstration collection, automatically generates and validates new manipulation tasks, and transforms community-collected demonstrations into training-ready data through automated success checking, quality filtering, trajectory smoothing, and visual and physics-based augmentation. The AXIS dataset currently contains 207 diverse tasks and 50K+ trajectories. Meanwhile, AXIS organizes data into task snapshots and evaluates policies with a systematic held-out protocol. We compare vision-language-action (VLA) policies under a unified AXIS evaluation suite and analyze scaling behavior across different data volumes. Continual pretraining on AXIS substantially improves the overall success rate of $π_{0.5}$ by 5.8%, outperforms the model pretrained on RoboCasa365 by 37.3%, and exhibits consistent scaling with increasing data volume, with the largest gains observed under layout, sensor-noise, and camera perturbations.",
+    "authors": [
+      "Mengfei Zhao",
+      "Dihong Huang",
+      "Yikai Tang",
+      "Peihao Li",
+      "Mingxuan Yan",
+      "Ruiqi Zhuang",
+      "Yanjia Huang",
+      "Jie Wang",
+      "Hai Zhai",
+      "Tony Zhou",
+      "Rui Zhang",
+      "Zhexi Luo",
+      "Yuchen Huang",
+      "Jianfei Yang",
+      "Jiachen Li"
+    ],
+    "published": "2026-07-23T17:58:08+00:00",
+    "updated": "2026-07-23T17:58:08+00:00",
+    "url": "http://arxiv.org/abs/2607.21588v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.21588v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.21571v1",
+    "title": "Beyond Episodic Evaluation: Memory Architectural Bottlenecks in Sequential Embodied Question Answering",
+    "abstract": "Embodied question answering (EQA) is traditionally evaluated under an episodic formulation, where agents solve each task independently and reset internal state between episodes. However, real-world robots operate continuously and must accumulate, retain, and selectively reuse information acquired from prior interactions. Despite this practical requirement, the architectural mechanisms needed to support sequential memory in EQA remain underexplored. In this work, we investigate how different memory architectures behave when EQA agents are evaluated sequentially, with multiple questions answered in the same scene while memory is carried forward across queries. We find that simply preserving existing memory is often insufficient. Agents that retain only traversability information, such as 2D occupancy maps, remember where the robot has explored but not the visual-semantic evidence needed for later questions. Agents trained on short-horizon episodic data face a different challenge: when exposed to continuous, multi-query histories, their inherited context suffers from severe temporal mismatch, rather than forming a reusable scene representation. To overcome this architectural bottleneck, we highlight the necessity of structured, spatially grounded memory: architectures that map persistent visual observations onto metric 3D geometry preserve visual-semantic evidence in a coherent scene representation. Extensive experiments in simulated environments reveal that this form of memory breaks the accuracy-efficiency tradeoff in sequential settings, simultaneously achieving higher answer accuracy and lower navigation costs. We further validate these findings on a real-world mobile robot, demonstrating that spatially grounded visual memory is critical for enabling continuous, intelligent operation in physical environments.",
+    "authors": [
+      "Zikui Cai",
+      "Kaushal Janga",
+      "Tan Dat Dao",
+      "Seungjae Lee",
+      "Shivin Dass",
+      "Mingyo Seo",
+      "Kaiyu Yue",
+      "Mintong Kang",
+      "Nandhu Pillai",
+      "Monte Hoover",
+      "Aadi Palnitkar",
+      "Ruchit Rawal",
+      "Ruijie Zheng",
+      "Bo Li",
+      "Yuke Zhu",
+      "Roberto Martín-Martín",
+      "Tom Goldstein",
+      "Furong Huang"
+    ],
+    "published": "2026-07-23T17:50:45+00:00",
+    "updated": "2026-07-23T17:50:45+00:00",
+    "url": "http://arxiv.org/abs/2607.21571v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.21571v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.21522v1",
+    "title": "GS-Agent: Creating 4D Physical Worlds With Generative Simulation",
+    "abstract": "Creating dynamic and physically realistic 4D worlds from natural language descriptions is both fascinating and challenging. Traditional computer graphics methods rely on manual creation, requiring extensive human effort to fine-tune materials, motions, and visual fidelity. Recent advances in generative foundation models have sparked interest in learning to generate such 4D worlds from large-scale data; however, existing methods still struggle to ensure physical plausibility and controllability. In this work, we take a different path by leveraging foundation models to construct an agentic system that emulates how humans traditionally create 4D worlds, yet automates the entire process. We present GS-Agent, an end-to-end multi-agent framework that integrates physics engines in the loop to generate realistic, dynamic, and controllable 4D physical worlds from natural language. Inspired by how humans build 4D worlds, GS-Agent decomposes the task into entity management, covering 3D asset curation, material tuning, placement, and motion control, and rendering configuration, including camera and lighting manipulation. Multiple agents with distinct expertise interact with the physics engine via code, seek multimodal feedback, and collaborate to iteratively construct 4D worlds that align with the given descriptions. Experimental results show that GS-Agent effectively converts natural language into diverse and physically plausible 4D worlds exhibiting rich interactions among liquids, deformable objects, and rigid bodies, while achieving cinematic camera and lighting control. We envision GS-Agent as a foundation for a new paradigm in 4D world generation, empowering creative content creation and physical AI. Project page at https://umass-embodied-agi.github.io/gs-agent/",
+    "authors": [
+      "Hongxin Zhang",
+      "Chunru Lin",
+      "Junyan Li",
+      "Zhou Xian",
+      "Tsun-Hsuan Wang",
+      "Chuang Gan"
+    ],
+    "published": "2026-07-23T17:04:36+00:00",
+    "updated": "2026-07-23T17:04:36+00:00",
+    "url": "http://arxiv.org/abs/2607.21522v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.21522v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.CL",
+      "cs.CV"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.21400v1",
+    "title": "VoLN: Vision-Only Long-Horizon Navigation---Paradigm, Benchmark, and Method",
+    "abstract": "Vision-and-Language Navigation (VLN) enables embodied agents to follow natural-language instructions. However, route-level instructions commonly encode spatial priors, such as orientation, distance, and layout, that are not explicitly available from onboard sensing at deployment in open, GPS-denied environments. Benchmark performance under such interfaces therefore jointly reflects visual navigation ability and the use of route structure explicitly supplied by the task description. As a complementary formulation, we propose Vision-Only Long-Horizon Navigation (VoLN), which shifts route-relevant information from externally supplied instructions and global guidance to locally observable in-scene cues. In VoLN, goal views specify the destination, while route-relevant information is available only through locally observable in-scene cues that the agent must detect, interpret, and select online. We instantiate VoLN for aerial navigation through VoLN-UAV, a 7,210-episode benchmark that combines long-horizon goal-directed flight, continuous 3D motion, large viewpoint changes, and context-dependent beacon selection. We further provide VoLN-MLLM as an initial reference baseline. It aligns self-supervised visual features with a structured semantic space and predicts short-horizon waypoint segments from observation history, goal views, retrieved visual--semantic tokens, and proprioception. On the five-environment Test-Unseen split, it obtains success rates of 7.4%, 4.5%, and 1.8% on Easy, Normal, and Hard episodes, respectively. These results provide an initial evaluation of VoLN and reveal substantial remaining challenges in long-horizon evidence integration, cross-view goal matching, and closed-loop stability. Project page: https://admire-ljb.github.io/VoLN-UAV/",
+    "authors": [
+      "Jiabin Lou",
+      "Haopeng Wang",
+      "Yuanshuai Wang",
+      "Xinyu Liu",
+      "Xuxin Lv",
+      "Yuxin Guo",
+      "Lei Huang",
+      "Rongye Shi",
+      "Wenjun Wu"
+    ],
+    "published": "2026-07-23T15:02:01+00:00",
+    "updated": "2026-07-23T15:02:01+00:00",
+    "url": "http://arxiv.org/abs/2607.21400v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.21400v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.20988v1",
+    "title": "HyWorldVLA: A Vision-Language-Action Model with Hybrid World Modeling for Autonomous Driving",
+    "abstract": "Vision-Language-Action (VLA) models augmented with world modeling represent a promising paradigm for end-to-end autonomous driving. While pixel-level future prediction enables fine-grained spatiotemporal reasoning, it compromises robustness in noisy driving scenarios. Conversely, latent-based world models alleviate this sensitivity but often incur limited interpretability and representational degradation due to absent pixel-level grounding. To reconcile this trade-off, we propose HyWorldVLA, a hybrid world-VLA framework that unifies pixel-level supervision and latent representation learning. In the pre-training stage, HyWorldVLA predicts video latents encoded by a pre-trained video VAE, while simultaneously reconstructing video frames to provide precise pixel-level grounding. During the subsequent co-fine-tuning phase, the model exclusively predicts latent features, which are fed into an action expert to generate trajectories. Extensive experiments on NAVSIM v1 and v2 benchmarks demonstrate that HyWorldVLA significantly outperforms both pixel-based and latent-based world model baselines. Notably, we present the first comprehensive qualitative and quantitative analysis of world model noise robustness in autonomous driving, establishing a new benchmark for evaluating future architectures.",
+    "authors": [
+      "Quanfu Yu",
+      "Xian Wu",
+      "Hao Xu",
+      "Liulong Ma"
+    ],
+    "published": "2026-07-23T07:11:41+00:00",
+    "updated": "2026-07-23T07:11:41+00:00",
+    "url": "http://arxiv.org/abs/2607.20988v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.20988v1",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.20834v1",
+    "title": "Offline RL with Hierarchical Action Chunking",
+    "abstract": "Offline goal-conditioned reinforcement learning (RL) holds the promise of learning general-purpose policies from static datasets. However, scaling these methods to long-horizon tasks remains a challenge due to the curse of horizon, where value estimation errors can compound through long chains of bootstrapped Bellman backups. Existing hierarchical approaches mitigate this by decomposing tasks into subgoals, yet they often rely on low-level controllers that suffer from myopic execution and biased value estimates. In this work, we propose Hierarchical Implicit Q-Chunking (HiQC), an offline goal-conditioned RL algorithm that combines high-level latent planning with low-level action chunking. By conditioning the low-level critic on temporally extended action sequences, HiQC enables unbiased k-step value backups, compressing the horizon at both the planning and execution levels. We theoretically demonstrate that this dual decomposition results in a tighter bound on value error under a bounded per-backup error model compared to standard hierarchy or flat chunking alone. Empirically, HiQC achieves the highest aggregate performance among the compared methods on the OGBench suite, with its largest gains on long-horizon navigation tasks such as humanoid-giant.",
+    "authors": [
+      "Ahad Jawaid"
+    ],
+    "published": "2026-07-23T01:48:46+00:00",
+    "updated": "2026-07-23T01:48:46+00:00",
+    "url": "http://arxiv.org/abs/2607.20834v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.20834v1",
+    "categories": [
+      "cs.LG"
+    ],
+    "primary_category": "cs.LG"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.20785v1",
+    "title": "Robostral Navigate",
+    "abstract": "Deploying navigation systems at scale requires a recipe that minimizes sensor assumptions, generalizes across robot embodiments, and trains efficiently. Yet, today's best systems depend on depth sensors, multi-camera rigs, or pre-built maps, limiting the hardware they support and increasing deployment cost. We introduce Robostral Navigate, an 8B vision-language model built around this scalability objective. The model consumes only a stream of monocular RGB images - the most ubiquitous sensor across robotic platforms and predicts waypoints by pointing to the next target location in the current camera view. Operating purely in image space, rather than robot-specific coordinates, makes the policy naturally robust to changes in camera intrinsics and scene scale, enabling deployment across wheeled, legged, and aerial robots without recalibration. We generate 2.4 million trajectories across 350k simulated scenes to reduce the reliance on real-world data collection and scale easily. We further introduce a prefix-caching training recipe that packs entire episodes into single training sequences, reducing training tokens by 22x and cutting training time from months to days. A tree-based attention mask prevents conditioning on previous ground-truth actions, encouraging visually grounded action prediction, and reinforcement learning is used to further improve exploration and recovery capabilities. On the Room-to-Room and Room-Across-Room in Continuous Environments (R2R-CE and RxR-CE) benchmarks, Robostral Navigate sets a new state of the art. On R2R-CE, it achieves a 77.4% success rate, surpassing the best monocular method by 10.5 points and the strongest depth- or multi-camera system by 5.3 points despite using only a single RGB camera. On RxR-CE, it reaches 75.1% success rate, outperforming all monocular baselines.",
+    "authors": [
+      "Arjun Majumdar",
+      "Avinash Sooriyarachchi",
+      "Benjamin Tibi",
+      "Chris Bamford",
+      "Elliot Chane-Sane",
+      "Guillaume Lample",
+      "Khyathi Raghavi Chandu",
+      "Ludovic Ho Fuh",
+      "Mathieu Poiree",
+      "Olivier Duchenne",
+      "Rosalie Millner",
+      "Srijan Mishra",
+      "Theo Cachet",
+      "Thomas Chabal"
+    ],
+    "published": "2026-07-22T23:13:05+00:00",
+    "updated": "2026-07-22T23:13:05+00:00",
+    "url": "http://arxiv.org/abs/2607.20785v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.20785v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.20771v1",
+    "title": "Emergent Compositional Skills in Mixture-of-Experts VLAs",
+    "abstract": "We consider the problem of learning compositional robot policies end-to-end from expert demonstrations, without any pre-specified notion of task decomposition or hierarchy. We ask whether a VLA trained with a simplified Mixture-of-Experts (MoE) action head can emergently learn to decompose tasks into reusable, interpretable primitives. We find that learned experts are heavily reused across tasks and consistently correspond to qualitatively distinct low-level behaviors, suggesting that the router implicitly learns to perform high-level sequencing while experts serve as compositional primitives. Our MoE matches the task performance of a monolithic baseline while demonstrating meaningful expert specialization, a step toward modular, interpretable robot policies that emerge from data alone.",
+    "authors": [
+      "Shlok Shah",
+      "Rhiaan Jhaveri",
+      "Tharun Kumar Tiruppali Kalidoss",
+      "Chirayu Nimonkar",
+      "Ishaan Javali"
+    ],
+    "published": "2026-07-22T22:36:52+00:00",
+    "updated": "2026-07-22T22:36:52+00:00",
+    "url": "http://arxiv.org/abs/2607.20771v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.20771v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.20679v1",
+    "title": "Towards Capability-Aware Traversability Navigation for Unstructured Environments",
+    "abstract": "Estimating traversability in unstructured environments requires conditioning on robot embodiment, as the same terrain can be traversable for one platform and unsafe for another. Existing methods often transfer predictions across morphologies through late-stage trajectory filtering rather than encoding platform constraints in the learned representation. We propose Capability-Aware Traversability (CAT), a framework that embeds physical limits directly into the spatial feature space. CAT grounds dense supervision masks in physical trajectories through an interactive annotation pipeline and modulates semantic terrain maps with robot-specific traversability vectors through Spatially-Adaptive Denormalization (SPADE) blocks. Across human-annotated and trajectory-aligned datasets, CAT leads all ranking-based metrics, improving AUROC by 11.0% on physically executed trajectories and AUPRC by 15.8% on human traces over the strongest baseline. Ablations show that spatial conditioning and per-robot prototypes produce capability sensitivity beyond generic path prediction. Deployments on a legged quadruped and a wheeled skid-steer demonstrate embodiment-aware obstacle avoidance on embedded hardware at 4.8 Hz.",
+    "authors": [
+      "Gianluca Capezzuto",
+      "Felipe Tommaselli",
+      "Matheus P. Angarola",
+      "Ricardo V. Godoy",
+      "Marcelo Becker"
+    ],
+    "published": "2026-07-22T19:28:57+00:00",
+    "updated": "2026-07-22T19:28:57+00:00",
+    "url": "http://arxiv.org/abs/2607.20679v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.20679v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.20399v1",
+    "title": "Towards Miniature Humanoid Tele-Loco-Manipulation Using Virtual Reality and Reinforcement Learning",
+    "abstract": "Full-sized humanoid robot capabilities have grown exponentially in recent years, aiming towards general-purpose deployment in human environments. A popular control method used by manufacturers utilizes Virtual Reality for upper-body teleoperation and Reinforcement Learning for lower-body balance and locomotion control. As a result, a single remote operator can see, manipulate, and navigate about a real, distant physical environment. This powerful control stack is often relegated to expensive full-sized robots, many of which are inaccessible to the research community. Miniature humanoids are more prevalent, but employ less biomimicry in their design (e.g. fewer sensors, Degrees of Freedom, etc) and lack similar developments. This paper describes a compliant full-body telepresence control stack developed from the ground up for miniature humanoids. Framework experimentation on ROBOTIS OP3 hardware showcases walking at speeds up to 0.45 m/s independent of arm motions. Tele-loco-manipulation is demonstrated via a cube relocation experiment with an expert human operator. On average, the teleoperated system moved 2 different 40 g cubes within 10 mins, walking a total distance of 5 m. Overall, the developed system shows potential for miniature humanoid tele-loco-manipulation.",
+    "authors": [
+      "Nicolas Kosanovic",
+      "Jordan Dowdy",
+      "Jean Chagas Vaz"
+    ],
+    "published": "2026-07-22T17:35:43+00:00",
+    "updated": "2026-07-22T17:35:43+00:00",
+    "url": "http://arxiv.org/abs/2607.20399v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.20399v1",
+    "categories": [
+      "cs.RO",
+      "cs.HC",
+      "cs.LG"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.20345v1",
+    "title": "Closing the Lab-to-Store Gap: A Data-Efficient Post-Training and Experience-Driven Learning VLA Framework for Retail Humanoids",
+    "abstract": "Closing the gap between benchmark performance and reliable real-world operation remains a central challenge for Vision-Language-Action (VLA) humanoid robots, which must handle execution errors, distribution shifts, and environmental variability. This paper presents DEED (Data-Efficient Post-Training and Experience-Driven Learning), a systems-level approach evaluated on a supermarket chip-restocking task using a Unitree G1-Edu humanoid robot and the GR00T N1.6 foundation model. DEED comprises three key components: (1) a data-efficient post-training pipeline with control-frequency alignment, data curation, task-relevant visual highlighting, and reduced VLA dependence; (2) a real-world study of experience-driven refinement, adapted from RECAP via a text-based advantage prefix and a vision-language value function; and (3) a latent-space analysis tool for studying in- and out-of-distribution behavior. Our results suggest that bridging the lab-to-store gap is primarily a systems integration challenge rather than an architectural one: careful data design and targeted post-training can transform a policy that fails under naive fine-tuning into a competent real-world system using only a single GPU.",
+    "authors": [
+      "Roger Sala Sisó",
+      "Tiago Silvério",
+      "Jakob Sand",
+      "Tran Nguyen Le"
+    ],
+    "published": "2026-07-22T16:30:51+00:00",
+    "updated": "2026-07-22T16:30:51+00:00",
+    "url": "http://arxiv.org/abs/2607.20345v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.20345v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.20293v1",
+    "title": "Evolving Cache Schedules for Fast Diffusion Policy Inference",
+    "abstract": "Diffusion policies achieve strong visuomotor control by iteratively denoising action chunks, but repeated denoising makes real-time deployment computationally demanding. Cache-based methods reduce inference cost by reusing intermediate activations, but existing training-free schedules typically allocate computation uniformly across blocks, ignoring heterogeneous redundancy across blocks and leading to a suboptimal performance-efficiency trade-off. To bridge this gap, we introduce Evolving Cache Schedules (EVO), a training-free acceleration framework that globally schedules cache refreshes via evolutionary search. EVO represents each candidate as a complete schedule over the block-timestep lattice. Thus, redundant transformer computations during iterative denoising can be skipped through cache reuse while preserving closed-loop rollout performance. To make the search practical, EVO introduces redundancy-aware initialization, which seeds the population with promising schedules, and target-conditioned early stopping, which verifies and terminates once a desired performance target is reached. The offline-optimized schedule can be directly plugged into pretrained diffusion policies without retraining. Extensive manipulation benchmarks show that EVO preserves near-full performance while substantially reducing computation, achieving up to 8.05x action-generation speedup and reducing FLOPs from 15.77G to as low as 1.96G. Source code is available at https://github.com/pillom/EVO.",
+    "authors": [
+      "Siying Wang",
+      "Kangye Ji",
+      "Di Wang",
+      "Fei Cheng"
+    ],
+    "published": "2026-07-22T15:40:11+00:00",
+    "updated": "2026-07-22T15:40:11+00:00",
+    "url": "http://arxiv.org/abs/2607.20293v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.20293v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.20289v1",
+    "title": "Courteous Anticipation: Improving Long-Lived Task Planning in Persistent Shared Environments",
+    "abstract": "We consider a task planning scenario in which robots sharing a persistent environment are assigned tasks one at a time from a held-out sequence. Standard task planners, lacking foresight of future tasks and inconsiderate of others' constraints, solve each task in isolation, leaving terminal states that increase future cost for all, side effects that compound over lengthy task sequences. To reduce cost over the sequence, a robot must anticipate how its actions now may impact performance on future tasks for all robots sharing the environment. Therefore, we present courteous anticipatory planning, wherein a model-based planner proposes candidate plans and selects the one that jointly minimizes immediate cost and aggregated expected future cost across all robots, estimated via independent per-robot learned estimators. This factored formulation avoids combinatorial joint rollouts and supports modular deployment: adding a robot requires only training its own estimator. We evaluate in two persistent PDDL domains, a home environment with robots that have similar capabilities but different responsibilities, and a restaurant environment where robots' distinct capabilities create states that other robots lack the capability to resolve. During lengthy task sequences, our planner reduces total cost by 10.43% versus myopic and 4.03% versus selfish anticipatory planning in a two-robot home environment and by 17.41% and 13.24%, respectively, in a three-robot restaurant.",
+    "authors": [
+      "Md Ridwan Hossain Talukder",
+      "Roshan Dhakal",
+      "Elizabeth Phillips",
+      "Gregory J. Stein"
+    ],
+    "published": "2026-07-22T15:36:11+00:00",
+    "updated": "2026-07-22T15:36:11+00:00",
+    "url": "http://arxiv.org/abs/2607.20289v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.20289v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.20207v1",
+    "title": "SeededGrasp: Language-Guided Grasping in Complex Scenes with Multiple Embodiments",
+    "abstract": "Practical robotic grasping in complex scenes requires both 3D spatial reasoning and alignment with task-specific requirements. Vision-language models (VLMs) offer a natural way to specify these requirements using language, but existing approaches either use a VLM to predict the grasp directly with limited spatial awareness, or train the VLM together with the grasping model, which requires significantly more data and compute. These limitations impede performance and have prevented scaling to multiple embodiments in complex scenes. We address this by proposing SeededGrasp, a novel data-efficient framework that enables a VLM to predict a seed point to be used as conditioning for a subsequent lightweight grasp-generation model. Our architecture decouples high-level semantic reasoning from low-level geometric execution, enabling multi-embodiment support while bypassing the need for expensive end-to-end training. To enable training such models, we release the first multi-embodiment tabletop grasping dataset comprising over 2.5M grasps in cluttered scenes. Experimental results demonstrate that our approach outperforms existing baselines, achieving 72% success in simulation and 78% in real-world grasping experiments. See our project site for data and code: https://uoft-isl.github.io/seeded-grasp/",
+    "authors": [
+      "Yang Xu",
+      "Gurpreet Singh Mukker",
+      "Raymond Wang",
+      "Jasper Gerigk",
+      "Maria Attarian",
+      "Igor Gilitschenski"
+    ],
+    "published": "2026-07-22T14:27:45+00:00",
+    "updated": "2026-07-22T14:27:45+00:00",
+    "url": "http://arxiv.org/abs/2607.20207v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.20207v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.20110v1",
+    "title": "Extreme-RGMT: Continual Learning of Highly Dynamic Skills for Robust Generalist Humanoid Control",
+    "abstract": "Humans can progressively acquire highly dynamic motor skills while preserving reliable everyday motor abilities. In contrast, existing humanoid controllers face a trade-off between generalist and specialist capabilities: generalist motion tracking policies struggle to reliably execute rare highly dynamic motions, whereas specialist training can degrade previously acquired behaviors. We introduce Extreme-RGMT, a two-stage continual learning framework for robust generalist humanoid control. The method first learns a generalist motion-tracking base policy from diverse multi-source motion data, then employs an asymmetric skill acquisition and capability consolidation mechanism to constrain policy drift on mastered motions while emphasizing difficult dynamic segments. To address the scarcity of highly dynamic motions, their high failure rates, and the resulting shortage of informative samples, Extreme-RGMT combines difficulty-aware sampling with advantage-prioritized trajectory resampling to emphasize critical segments. Experiments show that Extreme-RGMT achieves state-of-the-art generalist whole-body motion-tracking performance, including substantially improved completion of challenging highly dynamic motions. The resulting controller directly executes diverse unseen highly dynamic motions under fixed references and online inertial motion-capture inputs, advancing generalist whole-body motion-tracking controllers toward highly dynamic motor capabilities at the human-expert level.",
+    "authors": [
+      "Yubiao Ma",
+      "Han Yu",
+      "Kai Guo",
+      "Changtai Lv",
+      "Zhengquan Mao",
+      "Boyang Xing",
+      "Xuemei Ren",
+      "Dongdong Zheng"
+    ],
+    "published": "2026-07-22T13:10:22+00:00",
+    "updated": "2026-07-22T13:10:22+00:00",
+    "url": "http://arxiv.org/abs/2607.20110v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.20110v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.20061v1",
+    "title": "ReferTrack: Referring Then Tracking for Embodied Visual Tracking",
+    "abstract": "Embodied visual tracking (EVT) requires a mobile agent to continuously follow a specific target described in natural language using only onboard vision. While recent vision-language-action (VLA) policies unify target identification and trajectory planning, their chain-of-thought (CoT) reasoning often operates in abstract spatial latents that are difficult to supervise and weakly aligned with explicit image-space detections. To address this, we introduce ReferTrack, a referring-then-tracking paradigm that grounds EVT using a single forward-facing camera. Our model first selects the target from an indexed set of bounding boxes, then decodes tracking waypoints conditioned on this image-grounded decision. To preserve target motion cues over time, ReferTrack maintains a sliding-window queue of previously selected bounding boxes, injecting their geometric features into the visual history via temporal-viewpoint-bbox indicator (TVBI) tokens. We further enhance target identification by co-training on a custom Refer-QA dataset. On EVT-Bench, ReferTrack achieves state-of-the-art single-view performance with success rates of 89.4%, 73.3%, and 74.1% on the single-target, distracted, and ambiguity tracking splits, respectively -- matching or even surpassing several multi-camera baselines on identification-heavy tasks. Finally, real-world deployments on legged and humanoid robots validate its robust sim-to-real transfer capabilities. Code is available at https://github.com/MedlarTea/referTrack.",
+    "authors": [
+      "Hanjing Ye",
+      "Tianle Zeng",
+      "Jiazhao Zhang",
+      "Shaoan Wang",
+      "Zibo Zhang",
+      "Weisi Situ",
+      "Yuchen Zhou",
+      "Yonggen Ling",
+      "Hong Zhang"
+    ],
+    "published": "2026-07-22T12:05:13+00:00",
+    "updated": "2026-07-22T12:05:13+00:00",
+    "url": "http://arxiv.org/abs/2607.20061v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.20061v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.20033v2",
+    "title": "Robots Acquire Manipulation Skills in Seconds from a Single Human Video",
+    "abstract": "The ability to acquire skills rapidly and effortlessly while retaining those already mastered is essential for robots. However, current methods still rely on a cumbersome training-time loop that is costly and slow, while eroding skills already mastered. In this paper, we introduce HOST (Human-to-robot One-Shot Skill AcquisiTion), a framework that enables a robot to acquire skills in seconds from a single human video while retaining previously mastered skills. HOST resolves skill acquisition through a cascade of self-grounded prediction. It first estimates the robot's progress within the demonstrated task, then translates the upcoming progression into the robot's own future observations, and finally derives actions from these predicted observations. This cascade is trained on targets coupled to the video demonstration, obtained by mapping the robot trajectory and the video demonstration onto a shared task progress manifold, then redefining each target to align with the future progression of the video. HOST thereby enables the robot to actively follow the demonstrated procedure and adapt it to the robot's embodiment. HOST acquires novel skills at inference time from a single human video in an average of 29 seconds and achieves a 62% average success rate. It exceeds the zero-shot baseline by 45% while retaining previously mastered skills. HOST even exceeds the baseline fine-tuned on 50 robot demonstrations per task while requiring 50 times fewer demonstrations and acquiring each skill 507 times faster. Additional information about HOST is available on the project website.",
+    "authors": [
+      "Guangyan Chen",
+      "Meiling Wang",
+      "Te Cui",
+      "Zichen Zhou",
+      "Qi Shao",
+      "Shalfun Li",
+      "Hang Su",
+      "Roy Gan",
+      "Hao Wang",
+      "Mengyin Fu",
+      "Yi Yang",
+      "Yufeng Yue"
+    ],
+    "published": "2026-07-22T11:20:05+00:00",
+    "updated": "2026-07-23T03:38:42+00:00",
+    "url": "http://arxiv.org/abs/2607.20033v2",
+    "pdf_url": "https://arxiv.org/pdf/2607.20033v2",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.19919v1",
+    "title": "Diffusion ReRoll: Revisable Denoising for Robotic Sequential Prediction",
+    "abstract": "We propose Diffusion ReRoll, a diffusion-based framework for robotic sequential prediction that enables revisable denoising over horizons. Existing diffusion-based sequence predictors typically perform a single monotonic denoising process. In contrast, Diffusion ReRoll selectively re-noises regions that have become locally stable while the remaining regions continue denoising, so the re-noised regions can be refined again using context from the rest of the horizon. This structured re-noising enables iterative cross-horizon revision, allowing earlier and later segments to revise one another, while maintaining local consistency. We evaluate Diffusion ReRoll against full-sequence diffusion and causal denoising based on Diffusion Forcing across long-horizon planning, policy learning, and unified video-action modeling. On OGBench PointMaze and AntMaze, Diffusion ReRoll achieves relative gains in average success rate of 21% over Diffusion Forcing in matched guidance-based planning and 23% over Diffuser in matched goal-inpainting. In diffusion-policy-style action prediction, Diffusion ReRoll improves average success by 56.5% relative to Diffusion Policy across different prediction horizons and history lengths on the LIBERO-10 multi-task benchmark. In unified video-action prediction, Diffusion ReRoll improves policy and inverse dynamics performance, especially under out-of-distribution evaluation, and achieves the best action-video consistency. These results support structured re-noising as an effective mechanism for revisable robotic sequence generation.",
+    "authors": [
+      "Seonsoo Kim",
+      "Seongil Hong",
+      "Jun-Gill Kang"
+    ],
+    "published": "2026-07-22T08:50:40+00:00",
+    "updated": "2026-07-22T08:50:40+00:00",
+    "url": "http://arxiv.org/abs/2607.19919v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.19919v1",
+    "categories": [
+      "cs.RO",
+      "cs.LG"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.19903v1",
+    "title": "What Matters in Humanoid General Motion Tracking? An Empirical Study",
+    "abstract": "Humanoid general motion tracking requires policies that can follow diverse whole-body references while maintaining balance. Building such policies involves many practical design choices, and their individual effects are often hard to assess. We address this issue with an empirical study of common modeling and training factors used in recent humanoid motion-imitation pipelines. To make the study controlled and reproducible, we developed YAHMP, an open-source modular framework for training, evaluating, and deploying whole-body motion tracking policies on the Unitree G1. Within YAHMP, we define a nominal configuration and compare variants that differ in motion-command representation, observation history, action representation, actuation profile, hand-force randomization during training, and training approach. We evaluate the resulting policies on a test set of retargeted human motions and compare the nominal policy with TWIST2 as an external baseline trained on the same motion set. The results distinguish choices with clear tracking effects from choices that mainly change actuation effort, training complexity, or physical interaction capability. Finally, we deploy YAHMP policies zero-shot on the real Unitree G1, demonstrating diverse whole-body motion tracking, balance under external perturbations, and forceful interaction.",
+    "authors": [
+      "Fabio Amadio",
+      "Enrico Mingo Hoffman"
+    ],
+    "published": "2026-07-22T08:37:19+00:00",
+    "updated": "2026-07-22T08:37:19+00:00",
+    "url": "http://arxiv.org/abs/2607.19903v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.19903v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.19880v1",
+    "title": "EA-Nav: Learning Safe Visual Navigation Policies with Embodiment Awareness",
+    "abstract": "Cross-embodiment navigation is a key challenge in embodied intelligence. Due to differences in embodiment, the same visual observation may imply different actions for different agents, making prediction ambiguous when relying solely on vision. Existing studies mainly rely on reinforcement learning, which requires large-scale interaction and careful reward design, making it difficult to support scalable pretraining and real-world adaptation. In contrast, imitation-learning-based approaches remain limited. To address these challenges, we propose an imitation-learning-based embodiment-aware navigation framework with a modular multi-stage design. In pretraining, we construct a cross-embodiment navigation dataset from Internet videos and introduce embodiment geometry as conditional tokens to reduce action ambiguity under the same observation. In fine-tuning, we design a multimodal information injection mechanism based on a decoupled architecture. Specifically, we design a trajectory augmentation strategy to generate high-risk samples, which are used to train spatial perception and risk-aware correction separately, thereby explicitly incorporating embodiment geometry for safe navigation. Experimental results show that the proposed method effectively improves navigation performance across different embodiment settings, demonstrating the effectiveness of incorporating embodiment geometry into embodied navigation.",
+    "authors": [
+      "Jialu Zhang",
+      "Yong Du",
+      "Xianda Guo",
+      "Shunwang Sun",
+      "Xinqi Liu",
+      "Yue Sun",
+      "Guodong Lu",
+      "Wei Sui",
+      "Jituo Li"
+    ],
+    "published": "2026-07-22T08:10:49+00:00",
+    "updated": "2026-07-22T08:10:49+00:00",
+    "url": "http://arxiv.org/abs/2607.19880v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.19880v1",
+    "categories": [
+      "cs.RO",
+      "cs.CV"
+    ],
+    "primary_category": "cs.RO"
+  }
+]
