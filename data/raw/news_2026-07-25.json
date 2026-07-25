@@ -1,0 +1,164 @@
+[
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Photos: First look at J&J’s Ottava surgical robot",
+    "summary": "<p>The robot-in-table design is meant to save space in the operating room, with J&#038;J saying its novel architecture takes up 30-50% less space than boom-and-cart systems.</p> <p>The post <a href=\"https://www.therobotreport.com/photos-first-look-at-jjs-ottava-surgical-robot/\">Photos: First look at J&#038;J&#8217;s Ottava surgical robot</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/photos-first-look-at-jjs-ottava-surgical-robot/",
+    "published": "2026-07-25T14:00:13+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Generalist’s GEN-1 foundation model now supports a range of robot end effectors",
+    "summary": "<p>By training GEN-1 to work with new hands, Generalist said a single base model can learn sensorimotor policies on different robots.</p> <p>The post <a href=\"https://www.therobotreport.com/generalists-gen-1-foundation-model-now-supports-a-range-of-robot-end-effectors/\">Generalist&#8217;s GEN-1 foundation model now supports a range of robot end effectors</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/generalists-gen-1-foundation-model-now-supports-a-range-of-robot-end-effectors/",
+    "published": "2026-07-24T18:23:42+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "How time series databases unlock real-time data for robotics",
+    "summary": "<p>Discover how time series databases help robotics teams manage high-volume sensor data, power AI insights, and keep systems running at scale.</p> <p>The post <a href=\"https://www.therobotreport.com/how-time-series-databases-unlock-real-time-data-for-robotics/\">How time series databases unlock real-time data for robotics</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/how-time-series-databases-unlock-real-time-data-for-robotics/",
+    "published": "2026-07-24T16:28:39+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://spectrum.ieee.org/feeds/topic/robotics.rss",
+    "feed_title": "",
+    "title": "Video Friday: An Italian Humanoid Comes to Life",
+    "summary": "<img src=\"https://spectrum.ieee.org/media-library/humanoid-robot-with-red-armor-and-glowing-lights-stands-against-a-dark-background.png?id=67531350&amp;width=1245&amp;height=700&amp;coordinates=0%2C0%2C0%2C0\" /><br /><br /><p>Your weekly selection of awesome robot videos</p><p>Video Friday is your weekly selection of awesome robotics videos, collected by your friends at <em>IEEE Spectrum</em> robotics. We also post a weekly calendar of upcoming robotics events for the next few months. Please <a href=\"mailto:automaton@ieee.org?subject=Robotics%20event%20suggestion%20for%20Video%20Friday\">send us your events</a> for inclusion.</p><h5><a href=\"https://mrs.fel.cvut.cz/summer-school-2026/\">Summer School on Multi-Robot Systems</a>: 29 July–4 August 2026, PRAGUE</h5><h5><a href=\"https://actuate.foxglove.dev/\">Actuate 2026</a>: 18–19 August 2026, SAN FRANCISCO</h5><h5><a href=\"https://2026.ieee-iros.org/\">IROS 2026</a>: 27 September–1 October 2026, PITTSBURGH</h5><h5><a href=\"https://humanoidssummit.com/\">Humanoids Summit Seoul</a>: 22–23 September 2026, SEOUL</h5><p>Enjoy today’s videos!</p><div class=\"horizontal-rule\"></div><div><span style=\"display: none;\"> </span></div><blockquote class=\"rm-anchors\" id=\"mgf142yepjc\"><em>In just six months, our team turned GENE.01 into a fully functional humanoid platform that can walk, sense and interact. Its full-body multimodal skin perceives touch, proximity, force and temperature, bringing Physical AI closer to safe and natural collaboration with people. Not a render. Not a concept. This is GENE.01. The future of Physical AI is taking its first steps.</em></blockquote><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://gbionics.ai/\">Generative Bionics</a> ]</p><div class=\"horizontal-rule\"></div><blockquote class=\"rm-anchors\" id=\"iq3pccrfegq\"><em>Why create robot intelligence for just one hand, when we could have it learn from many? GEN-1, our latest embodied foundation model, now supports a broad range of end effectors from 5-finger hands, to specialized tools, and everything in between. Each hand is a different sensorimotor interface by which GEN-1 experiences the physical world. Scaling pretraining across thousands of these interfaces teaches GEN-1 a universal physical commonsense that transfers to new hands and new ways to grasp, push, pull, twist, and more.</em></blockquote><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>And to illustrate this concept, a surprise spatula.</p><p class=\"shortcode-media shortcode-media-youtube\"> <span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://generalistai.com/blog/towards-machines-with-a-thousand-hands\">Generalist</a> ]</p><div class=\"horizontal-rule\"></div><blockquote class=\"rm-anchors\" id=\"gu2nuedjiuq\"><em>This paper presents the design, fabrication, and flight validation of a flat-packable <a href=\"https://spectrum.ieee.org/foldable-airplane-could-ride-a-cubesat-to-mars-in-2022\" target=\"_blank\">flying wing</a> built primarily from corrugated cardboard. The aircraft is manufactured from three laser-cut sheets and assembled through a fold-and lock architecture that forms load-bearing wing structures with minimal tooling and no permanent fasteners. The full airframe can be assembled in under 15 minutes, demonstrating strong potential for rapid deployment, low-cost logistics, and scalable field use.</em></blockquote><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://airlab.sutd.edu.sg/\">AIR Lab</a> ]</p><div class=\"horizontal-rule\"></div><p class=\"rm-anchors\" id=\"hukrzo75_ww\">A $14k open-source data-collection system that includes beat-down capability.</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://github.com/haraduka/mevion\">MEVION</a> ]</p><p>Thanks, Kento!</p><div class=\"horizontal-rule\"></div><blockquote class=\"rm-anchors\" id=\"qzr0rmp2_5w\"><em>Together with Niantic Spatial and NVIDIA, [we] can now scan a real deployment site with off-the-shelf hardware, reconstruct it into a photorealistic Gaussian splat, and run massively parallel RL [<a href=\"https://spectrum.ieee.org/ai-institute\" target=\"_blank\">reinforcement learning</a>] training. The policies trained in our Gym environment then transfer zero-shot to the real robot and environments they were trained for. This enables faster deployment of more capable and robust policies for the end user.</em></blockquote><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://flexion.ai/news/niantic-spatial-flexion-and-nvidia-closing-the-sim2real-gap-for-humanoids\">Flexion</a> ]</p><div class=\"horizontal-rule\"></div><p class=\"rm-anchors\" id=\"w2bmy5cnhvs\">I don’t know why, but the version of TRON 2 with the stubby little legs is just adorable.</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://www.limxdynamics.com/en/products/tron2\">LimX Dynamics</a> ]</p><div class=\"horizontal-rule\"></div><p class=\"rm-anchors\" id=\"vmgiim6g_fg\">Uh, get a real job already...?</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://www.pndbotics.com/\">PNDbotics</a> ]</p><div class=\"horizontal-rule\"></div><p class=\"rm-anchors\" id=\"xtggy9lrisw\">Well I guess we can all stop asking what humanoid robots are good for.</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://en.engineai.com.cn/\">EngineAI</a> ]</p><div class=\"horizontal-rule\"></div><p class=\"rm-anchors\" id=\"143b_pm77ga\">I think the right thing to do here is only post the disclaimer included with this video: “This film is a conceptual creative production, and certain scenes are presented for demonstration purposes only and do not represent the actual in-store operating process. The final store environment, robot appearance, and functionality are subject to the actual deployment. During actual operations, the robot will autonomously perform only designated preparation steps for specified ice cream products, and its hands will be fitted with protective gloves that comply with applicable food safety requirements.”</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://www.sharpa.com/pages/north-at-work\">Sharpa</a> ]</p><div class=\"horizontal-rule\"></div><blockquote class=\"rm-anchors\" id=\"h_ztrvhjv8k\"><em><a href=\"https://spectrum.ieee.org/in-the-air-with-ziplines-medical-delivery-drones\" target=\"_blank\">Drone delivery</a> is now an essential part of the South West London Pathology (SWLP) modernization agenda. Since February 2026, our highly automated aircraft have been delivering urgent NHS samples across south west London, with service up to 85% faster than ground transport. We are thrilled to be part of this initiative, supporting clinicians in providing timely, effective care for patients and contributing to a greener, more resilient NHS.</em></blockquote><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://wing.com/news/elevating-healthcare-logistics-wing-apian-nhs-south-west-london-drone-deliveries\">Wing</a> ]</p><div class=\"horizontal-rule\"></div><blockquote class=\"rm-anchors\" id=\"tzpswti20e8\"><em>Take a closer look at what’s next for the Aurora Driver. Designed to move freight farther, faster, and more efficiently, this next generation of the Aurora Driver delivers greater performance, built to last one million miles, and cuts hardware cost in half. </em></blockquote><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://aurora.tech/newsroom/your-questions-about-our-latest-driverless-launch-answered\">Aurora</a> ]</p><div class=\"horizontal-rule\"></div><blockquote class=\"rm-anchors\" id=\"gj4p0pc6kwc\"><em>How does a robot learn to recognize an object it’s never encountered? In this case, a demo can be worth a thousand words. Short human demonstrations can be used to create fully automated training datasets, sidestepping the prompting limitations that hold back vision-language models. Rather than describing objects with language, the system tracks what a person touches and manipulates during a demo, follows those objects through time, and clusters detections to handle objects merging or splitting apart in the scene. This bypasses a core weakness of VLMs, which struggle to reliably detect unusual or novel objects even with repeated, carefully engineered prompts.</em></blockquote><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://rai-inst.com/resources/blog/show-dont-tell-detecting-novel-objects-by-watching-human-demonstrations/\">Robotics and AI Institute</a> ]</p><div class=\"horizontal-rule\"></div>",
+    "url": "https://spectrum.ieee.org/video-friday-physical-ai-robotics",
+    "published": "2026-07-24T15:30:01+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "NEURA Robotics establishes NEURA Gym RWTH Aachen to train physical AI",
+    "summary": "<p>NEURA Robotics has partnered with a German university for NEURA Gym RWTH Aachen, one of 10 facilities for training physical AI.</p> <p>The post <a href=\"https://www.therobotreport.com/neura-robotics-establishes-neura-gym-rwth-aachen-train-physical-ai/\">NEURA Robotics establishes NEURA Gym RWTH Aachen to train physical AI</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/neura-robotics-establishes-neura-gym-rwth-aachen-train-physical-ai/",
+    "published": "2026-07-24T12:30:42+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Holiday Robotics raises $105M for its FRIDAY wheeled humanoid",
+    "summary": "<p>Holiday's robot features a wheel-based mobile base, an upper body for dexterous manipulation, and hot-swappable batteries.</p> <p>The post <a href=\"https://www.therobotreport.com/holiday-robotics-raises-105m-wheeled-humanoid-friday/\">Holiday Robotics raises $105M for its FRIDAY wheeled humanoid</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/holiday-robotics-raises-105m-wheeled-humanoid-friday/",
+    "published": "2026-07-23T20:45:47+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Uber co-founder raises $1.7B for new robotics startup ATOMS",
+    "summary": "<p>Travis Kalanick, the former CEO of Uber, said with ATOMS, he hopes to create physical automation to transform industry.</p> <p>The post <a href=\"https://www.therobotreport.com/uber-co-founder-raises-1-7b-for-new-robotics-startup-atoms/\">Uber co-founder raises $1.7B for new robotics startup ATOMS</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/uber-co-founder-raises-1-7b-for-new-robotics-startup-atoms/",
+    "published": "2026-07-23T18:53:11+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "AMD unveils Kria module for real-time control, unified memory for robots",
+    "summary": "<p>AMD has launched the Ryzen AI Embedded X100 and Kria AI SoM, bringing unified memory and real-time control to challenge NVIDIA in robotics.</p> <p>The post <a href=\"https://www.therobotreport.com/amd-unveils-kria-module-real-time-control-unified-memory-robots/\">AMD unveils Kria module for real-time control, unified memory for robots</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/amd-unveils-kria-module-real-time-control-unified-memory-robots/",
+    "published": "2026-07-23T18:30:56+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Ropedia raises $22M to scale data collection for training robots",
+    "summary": "<p>Ropdeia's HOMIE is a head-mounted device, equipped with a 360º camera view, that captures first-person data for training robots.</p> <p>The post <a href=\"https://www.therobotreport.com/ropedia-raises-22m-scale-data-collection-training-robots/\">Ropedia raises $22M to scale data collection for training robots</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/ropedia-raises-22m-scale-data-collection-training-robots/",
+    "published": "2026-07-23T15:55:39+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Report shares the state of physical AI and robotics",
+    "summary": "<p>A report looks at how physical AI is increasingly enabling autonomous systems to perceive their environments, make decisions, and act in the real world.</p> <p>The post <a href=\"https://www.therobotreport.com/physical-ai-and-robotics/\">Report shares the state of physical AI and robotics</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/physical-ai-and-robotics/",
+    "published": "2026-07-22T20:48:30+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Medtronic to launch AI compute platform for the operating room",
+    "summary": "<p>Touch Surgery bridges pre-operative planning and training, intra-operative tele-mentoring and tele-proctoring, and post-operative insights.</p> <p>The post <a href=\"https://www.therobotreport.com/medtronic-launch-ai-compute-platform-operating-room/\">Medtronic to launch AI compute platform for the operating room</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/medtronic-launch-ai-compute-platform-operating-room/",
+    "published": "2026-07-22T17:22:00+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://blogs.nvidia.com/blog/category/industries/robotics/feed/",
+    "feed_title": "",
+    "title": "NVIDIA Open Sources First GPU-Accelerated Medical Physics Simulation Framework",
+    "summary": "Before a healthcare robot can be useful in the real world, it has to learn how the physical world pushes back. Anatomy varies. Instruments bend, press, slip and interact with tissue. Imaging can be noisy or incomplete. And the rare, edge scenarios developers most need to understand don’t appear on schedule. That creates one of [&#8230;]",
+    "url": "https://blogs.nvidia.com/blog/medical-physics-simulation-open-source/",
+    "published": "2026-07-22T13:00:11+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "U.K.-based Humanoid secures $152M in Series A funding",
+    "summary": "<p>Humanoid said it has reached a $1.35 billion valuation as it scales its AI-driven industrial robots and expands commercial deployments.</p> <p>The post <a href=\"https://www.therobotreport.com/uk-based-humanoid-secures-152m-in-series-a-funding/\">U.K.-based Humanoid secures $152M in Series A funding</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/uk-based-humanoid-secures-152m-in-series-a-funding/",
+    "published": "2026-07-21T23:43:12+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Vicarious Surgical officially shutting down",
+    "summary": "<p>Vicarious Surgical raised about $300 million in total, most of that from a special purpose acquisition company (SPAC) merger in 2021.</p> <p>The post <a href=\"https://www.therobotreport.com/vicarious-surgical-officially-shutting-down/\">Vicarious Surgical officially shutting down</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/vicarious-surgical-officially-shutting-down/",
+    "published": "2026-07-21T23:12:18+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Generative Bionics unveils humanoid robot with full-body tactile sensing",
+    "summary": "<p>Generative Bionics said its Gene.01 humanoid is fully sensorized, helping it quickly anticipate human presence and respond.</p> <p>The post <a href=\"https://www.therobotreport.com/generative-bionics-unveils-humanoid-robot-with-full-body-tactile-sensing/\">Generative Bionics unveils humanoid robot with full-body tactile sensing</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/generative-bionics-unveils-humanoid-robot-with-full-body-tactile-sensing/",
+    "published": "2026-07-21T19:44:26+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "MISUMI Americas releases reshoring report, supports manufacturing training bill",
+    "summary": "<p>MISUMI Americas has examined reshoring of U.S. manufacturing and supported legislation to send workers overseas for training.</p> <p>The post <a href=\"https://www.therobotreport.com/misumi-americas-releases-reshoring-report-supports-manufacturing-training-bill/\">MISUMI Americas releases reshoring report, supports manufacturing training bill</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/misumi-americas-releases-reshoring-report-supports-manufacturing-training-bill/",
+    "published": "2026-07-21T13:00:59+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Friction is key to making better robot world models",
+    "summary": "<p>Deploying world models in real robotic systems requires a step that receives less attention than the models themselves: conditioning.</p> <p>The post <a href=\"https://www.therobotreport.com/friction-is-key-to-making-better-robot-world-models/\">Friction is key to making better robot world models</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/friction-is-key-to-making-better-robot-world-models/",
+    "published": "2026-07-21T12:19:30+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://huggingface.co/blog/feed.xml",
+    "feed_title": "",
+    "title": "Grabette: an open system to record robot-manipulation data",
+    "summary": "",
+    "url": "https://huggingface.co/blog/grabette",
+    "published": "2026-07-21T00:00:00+00:00"
+  }
+]
