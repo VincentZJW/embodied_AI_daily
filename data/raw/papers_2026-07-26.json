@@ -1,0 +1,156 @@
+[
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.21588v1",
+    "title": "AXIS: A Growable Community-Driven Data Engine for Scalable Robot Manipulation",
+    "abstract": "Learning effective robot manipulation policies requires diverse, high-quality demonstrations, yet existing data pipelines are often difficult to scale because they rely on specialized hardware, centralized operators, or fixed task suites. We present AXIS, a growable community-driven data engine and benchmark for scalable robot learning, which enables browser-based teleoperation for large-scale demonstration collection, automatically generates and validates new manipulation tasks, and transforms community-collected demonstrations into training-ready data through automated success checking, quality filtering, trajectory smoothing, and visual and physics-based augmentation. The AXIS dataset currently contains 207 diverse tasks and 50K+ trajectories. Meanwhile, AXIS organizes data into task snapshots and evaluates policies with a systematic held-out protocol. We compare vision-language-action (VLA) policies under a unified AXIS evaluation suite and analyze scaling behavior across different data volumes. Continual pretraining on AXIS substantially improves the overall success rate of $π_{0.5}$ by 5.8%, outperforms the model pretrained on RoboCasa365 by 37.3%, and exhibits consistent scaling with increasing data volume, with the largest gains observed under layout, sensor-noise, and camera perturbations.",
+    "authors": [
+      "Mengfei Zhao",
+      "Dihong Huang",
+      "Yikai Tang",
+      "Peihao Li",
+      "Mingxuan Yan",
+      "Ruiqi Zhuang",
+      "Yanjia Huang",
+      "Jie Wang",
+      "Hai Zhai",
+      "Tony Zhou",
+      "Rui Zhang",
+      "Zhexi Luo",
+      "Yuchen Huang",
+      "Jianfei Yang",
+      "Jiachen Li"
+    ],
+    "published": "2026-07-23T17:58:08+00:00",
+    "updated": "2026-07-23T17:58:08+00:00",
+    "url": "http://arxiv.org/abs/2607.21588v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.21588v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.21571v1",
+    "title": "Beyond Episodic Evaluation: Memory Architectural Bottlenecks in Sequential Embodied Question Answering",
+    "abstract": "Embodied question answering (EQA) is traditionally evaluated under an episodic formulation, where agents solve each task independently and reset internal state between episodes. However, real-world robots operate continuously and must accumulate, retain, and selectively reuse information acquired from prior interactions. Despite this practical requirement, the architectural mechanisms needed to support sequential memory in EQA remain underexplored. In this work, we investigate how different memory architectures behave when EQA agents are evaluated sequentially, with multiple questions answered in the same scene while memory is carried forward across queries. We find that simply preserving existing memory is often insufficient. Agents that retain only traversability information, such as 2D occupancy maps, remember where the robot has explored but not the visual-semantic evidence needed for later questions. Agents trained on short-horizon episodic data face a different challenge: when exposed to continuous, multi-query histories, their inherited context suffers from severe temporal mismatch, rather than forming a reusable scene representation. To overcome this architectural bottleneck, we highlight the necessity of structured, spatially grounded memory: architectures that map persistent visual observations onto metric 3D geometry preserve visual-semantic evidence in a coherent scene representation. Extensive experiments in simulated environments reveal that this form of memory breaks the accuracy-efficiency tradeoff in sequential settings, simultaneously achieving higher answer accuracy and lower navigation costs. We further validate these findings on a real-world mobile robot, demonstrating that spatially grounded visual memory is critical for enabling continuous, intelligent operation in physical environments.",
+    "authors": [
+      "Zikui Cai",
+      "Kaushal Janga",
+      "Tan Dat Dao",
+      "Seungjae Lee",
+      "Shivin Dass",
+      "Mingyo Seo",
+      "Kaiyu Yue",
+      "Mintong Kang",
+      "Nandhu Pillai",
+      "Monte Hoover",
+      "Aadi Palnitkar",
+      "Ruchit Rawal",
+      "Ruijie Zheng",
+      "Bo Li",
+      "Yuke Zhu",
+      "Roberto Martín-Martín",
+      "Tom Goldstein",
+      "Furong Huang"
+    ],
+    "published": "2026-07-23T17:50:45+00:00",
+    "updated": "2026-07-23T17:50:45+00:00",
+    "url": "http://arxiv.org/abs/2607.21571v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.21571v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.21522v1",
+    "title": "GS-Agent: Creating 4D Physical Worlds With Generative Simulation",
+    "abstract": "Creating dynamic and physically realistic 4D worlds from natural language descriptions is both fascinating and challenging. Traditional computer graphics methods rely on manual creation, requiring extensive human effort to fine-tune materials, motions, and visual fidelity. Recent advances in generative foundation models have sparked interest in learning to generate such 4D worlds from large-scale data; however, existing methods still struggle to ensure physical plausibility and controllability. In this work, we take a different path by leveraging foundation models to construct an agentic system that emulates how humans traditionally create 4D worlds, yet automates the entire process. We present GS-Agent, an end-to-end multi-agent framework that integrates physics engines in the loop to generate realistic, dynamic, and controllable 4D physical worlds from natural language. Inspired by how humans build 4D worlds, GS-Agent decomposes the task into entity management, covering 3D asset curation, material tuning, placement, and motion control, and rendering configuration, including camera and lighting manipulation. Multiple agents with distinct expertise interact with the physics engine via code, seek multimodal feedback, and collaborate to iteratively construct 4D worlds that align with the given descriptions. Experimental results show that GS-Agent effectively converts natural language into diverse and physically plausible 4D worlds exhibiting rich interactions among liquids, deformable objects, and rigid bodies, while achieving cinematic camera and lighting control. We envision GS-Agent as a foundation for a new paradigm in 4D world generation, empowering creative content creation and physical AI. Project page at https://umass-embodied-agi.github.io/gs-agent/",
+    "authors": [
+      "Hongxin Zhang",
+      "Chunru Lin",
+      "Junyan Li",
+      "Zhou Xian",
+      "Tsun-Hsuan Wang",
+      "Chuang Gan"
+    ],
+    "published": "2026-07-23T17:04:36+00:00",
+    "updated": "2026-07-23T17:04:36+00:00",
+    "url": "http://arxiv.org/abs/2607.21522v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.21522v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.CL",
+      "cs.CV"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.21400v1",
+    "title": "VoLN: Vision-Only Long-Horizon Navigation---Paradigm, Benchmark, and Method",
+    "abstract": "Vision-and-Language Navigation (VLN) enables embodied agents to follow natural-language instructions. However, route-level instructions commonly encode spatial priors, such as orientation, distance, and layout, that are not explicitly available from onboard sensing at deployment in open, GPS-denied environments. Benchmark performance under such interfaces therefore jointly reflects visual navigation ability and the use of route structure explicitly supplied by the task description. As a complementary formulation, we propose Vision-Only Long-Horizon Navigation (VoLN), which shifts route-relevant information from externally supplied instructions and global guidance to locally observable in-scene cues. In VoLN, goal views specify the destination, while route-relevant information is available only through locally observable in-scene cues that the agent must detect, interpret, and select online. We instantiate VoLN for aerial navigation through VoLN-UAV, a 7,210-episode benchmark that combines long-horizon goal-directed flight, continuous 3D motion, large viewpoint changes, and context-dependent beacon selection. We further provide VoLN-MLLM as an initial reference baseline. It aligns self-supervised visual features with a structured semantic space and predicts short-horizon waypoint segments from observation history, goal views, retrieved visual--semantic tokens, and proprioception. On the five-environment Test-Unseen split, it obtains success rates of 7.4%, 4.5%, and 1.8% on Easy, Normal, and Hard episodes, respectively. These results provide an initial evaluation of VoLN and reveal substantial remaining challenges in long-horizon evidence integration, cross-view goal matching, and closed-loop stability. Project page: https://admire-ljb.github.io/VoLN-UAV/",
+    "authors": [
+      "Jiabin Lou",
+      "Haopeng Wang",
+      "Yuanshuai Wang",
+      "Xinyu Liu",
+      "Xuxin Lv",
+      "Yuxin Guo",
+      "Lei Huang",
+      "Rongye Shi",
+      "Wenjun Wu"
+    ],
+    "published": "2026-07-23T15:02:01+00:00",
+    "updated": "2026-07-23T15:02:01+00:00",
+    "url": "http://arxiv.org/abs/2607.21400v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.21400v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.20988v1",
+    "title": "HyWorldVLA: A Vision-Language-Action Model with Hybrid World Modeling for Autonomous Driving",
+    "abstract": "Vision-Language-Action (VLA) models augmented with world modeling represent a promising paradigm for end-to-end autonomous driving. While pixel-level future prediction enables fine-grained spatiotemporal reasoning, it compromises robustness in noisy driving scenarios. Conversely, latent-based world models alleviate this sensitivity but often incur limited interpretability and representational degradation due to absent pixel-level grounding. To reconcile this trade-off, we propose HyWorldVLA, a hybrid world-VLA framework that unifies pixel-level supervision and latent representation learning. In the pre-training stage, HyWorldVLA predicts video latents encoded by a pre-trained video VAE, while simultaneously reconstructing video frames to provide precise pixel-level grounding. During the subsequent co-fine-tuning phase, the model exclusively predicts latent features, which are fed into an action expert to generate trajectories. Extensive experiments on NAVSIM v1 and v2 benchmarks demonstrate that HyWorldVLA significantly outperforms both pixel-based and latent-based world model baselines. Notably, we present the first comprehensive qualitative and quantitative analysis of world model noise robustness in autonomous driving, establishing a new benchmark for evaluating future architectures.",
+    "authors": [
+      "Quanfu Yu",
+      "Xian Wu",
+      "Hao Xu",
+      "Liulong Ma"
+    ],
+    "published": "2026-07-23T07:11:41+00:00",
+    "updated": "2026-07-23T07:11:41+00:00",
+    "url": "http://arxiv.org/abs/2607.20988v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.20988v1",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.20834v1",
+    "title": "Offline RL with Hierarchical Action Chunking",
+    "abstract": "Offline goal-conditioned reinforcement learning (RL) holds the promise of learning general-purpose policies from static datasets. However, scaling these methods to long-horizon tasks remains a challenge due to the curse of horizon, where value estimation errors can compound through long chains of bootstrapped Bellman backups. Existing hierarchical approaches mitigate this by decomposing tasks into subgoals, yet they often rely on low-level controllers that suffer from myopic execution and biased value estimates. In this work, we propose Hierarchical Implicit Q-Chunking (HiQC), an offline goal-conditioned RL algorithm that combines high-level latent planning with low-level action chunking. By conditioning the low-level critic on temporally extended action sequences, HiQC enables unbiased k-step value backups, compressing the horizon at both the planning and execution levels. We theoretically demonstrate that this dual decomposition results in a tighter bound on value error under a bounded per-backup error model compared to standard hierarchy or flat chunking alone. Empirically, HiQC achieves the highest aggregate performance among the compared methods on the OGBench suite, with its largest gains on long-horizon navigation tasks such as humanoid-giant.",
+    "authors": [
+      "Ahad Jawaid"
+    ],
+    "published": "2026-07-23T01:48:46+00:00",
+    "updated": "2026-07-23T01:48:46+00:00",
+    "url": "http://arxiv.org/abs/2607.20834v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.20834v1",
+    "categories": [
+      "cs.LG"
+    ],
+    "primary_category": "cs.LG"
+  }
+]
