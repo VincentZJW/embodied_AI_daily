@@ -1,0 +1,210 @@
+[
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.22535v1",
+    "title": "Robot-Factored World Models via Robot Rendering",
+    "abstract": "Action-conditioned video world models predict future observations from an initial observation and an action signal. In robotics, actions influence future observations through two distinct processes: they are first realized into robot motion by the robot body and controller, and the scene then responds through contact and object motion. Conditioning directly on action commands asks the world model to learn the realization process itself, while conditioning on logged future states leaks the interaction outcomes it is meant to predict. We propose robot-factored world models, which move two robot-specific factors outside the world model. First, action realization: each command is rolled through the robot's own controller and kinematics into a deployment-available nominal trajectory, a middle signal that avoids both action-realization learning and future-state leakage. Second, robot rendering: this nominal trajectory is rendered through the robot URDF, factoring the robot's geometry, kinematics, and appearance out of the model and into explicit rendered robot geometry. To resolve depth ambiguity, we pair end-effector depth with scene depth, giving geometric cues for contact and occlusion beyond image-plane overlap. Together, camera-aware static RGB/depth context and rendered robot geometry form a shared visual world-model interface that stays consistent across viewpoints and robot embodiments, so the model sees the action only as visible robot geometry and learns how objects respond to it. Our experiments show that the rendered interface outperforms vector-conditioned baselines and generalizes to unseen robot embodiments at inference. We further demonstrate that our model generates robot manipulation videos from human demonstrations by retargeting and rendering the hand motion as robot geometry.",
+    "authors": [
+      "Byungjun Kim",
+      "Taeksoo Kim",
+      "Hyunsoo Cha",
+      "Hanbyul Joo"
+    ],
+    "published": "2026-07-24T17:59:57+00:00",
+    "updated": "2026-07-24T17:59:57+00:00",
+    "url": "http://arxiv.org/abs/2607.22535v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.22535v1",
+    "categories": [
+      "cs.RO",
+      "cs.CV"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.22530v1",
+    "title": "ViTacWorld: Scaling Visuo-Tactile World Models for Contact-Rich Robot Manipulation",
+    "abstract": "Contact-rich robot manipulation requires physical interaction cues that are often invisible to cameras, making tactile sensing essential for robust control. However, scaling visuo-tactile robot learning remains difficult because real tactile interaction data are expensive to collect, hardware-dependent, and limited in task and scene diversity. We present ViTacWorld, an action-conditioned visuo-tactile world model for scalable contact-rich robot manipulation. ViTacWorld leverages public real tactile datasets and a constructed simulation environment to scale visuo-tactile-action data, exploiting the fact that tactile signals are directly grounded in physical contact and can exhibit a smaller simulation-to-real gap than purely visual observations. The model is first pretrained with large-scale real and simulated visuo-tactile trajectories, and then finetuned with real-world policy rollouts to better match downstream manipulation behaviors. Given robot actions, ViTacWorld predicts temporally aligned visual observations and tactile feedback, enabling visuo-tactile-action rollout generation. To the best of our knowledge, ViTacWorld is the first framework that uses a world model for robot visuo-tactile-action trajectory generation and policy evaluation. It serves two roles: synthesizing rollouts to improve downstream tactile policies, and evaluating policies by predicting action-conditioned visuo-tactile outcomes under controlled action sequences. Experiments on contact-rich manipulation tasks show that ViTacWorld generates physically meaningful rollouts, improves policy performance through scalable data augmentation, and enables action-conditioned policy evaluation. Project page: https://vitacworld.github.io/",
+    "authors": [
+      "Yunao Huang",
+      "Shiyu Sang",
+      "Haotao Lu",
+      "Suting Ni",
+      "Shijie Wu",
+      "Ziyang Guo",
+      "Ye Shi",
+      "Jingya Wang"
+    ],
+    "published": "2026-07-24T17:59:33+00:00",
+    "updated": "2026-07-24T17:59:33+00:00",
+    "url": "http://arxiv.org/abs/2607.22530v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.22530v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.22434v1",
+    "title": "Robot Learning to Communicate through Projected Visual Abstractions",
+    "abstract": "Humans routinely communicate through abstractions of their bodies, including shadows, silhouettes, and reflections. Yet robots remain largely confined to expressing themselves through their physical morphology. Enabling robots to communicate through such projected visual abstractions requires reasoning not only about bodily motion but also about how that motion is transformed into an external representation perceived by an observer. Among these abstractions, shadows provide a particularly compelling example because they emerge directly from the robot's embodiment while remaining visually distinct from the body itself. Here, we present a robotic system capable of dynamic shadow expression using a 21-degree-of-freedom dexterous hand with compliant soft skin and a learned shadow self-model. The soft-skinned embodiment reduces light leakage to produce visually continuous silhouettes, while the differentiable self-model learns the mapping between hand configurations and projected shadow appearance through task-agnostic self-exploration. Given a target shadow image or video, the robot optimizes its hand configurations through gradient-based search over 1 the learned self-model and refines the solution through collision-aware simulation to obtain physically feasible motions. For dynamic shadow performance, we further introduce expressive-region objectives, temporal smoothness regularization, and keyframe-based optimization to preserve visually important motion cues while reducing optimization complexity. We demonstrate robotic shadow expression across sign-language gestures, hand-shadow puppetry, and animal motion imitation in both simulation and physical experiments. These results establish a framework for enabling robots to manipulate projected visual abstractions of themselves for communication and visual storytelling.",
+    "authors": [
+      "Danyang Yan",
+      "Boyuan Wang",
+      "Jiaxun Liu",
+      "Boyuan Chen"
+    ],
+    "published": "2026-07-24T15:52:36+00:00",
+    "updated": "2026-07-24T15:52:36+00:00",
+    "url": "http://arxiv.org/abs/2607.22434v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.22434v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.22355v1",
+    "title": "SiPhy: Single-Image Physical Property Reasoning",
+    "abstract": "Inferring physical properties such as mass, stiffness, and elasticity from a single image is essential for simulation and embodied AI, yet most existing approaches rely on multi-view reconstruction or physics-based supervision. We introduce SiPhy, a unified framework for single-image physical property reasoning that aligns 3D-aware visual cues, depth with language-based material knowledge. From one RGB image, SiPhy samples pseudo-voxel points, extracts CLIP features, and grounds them to material candidates proposed by a VLM. A part-based contrastive aggregator enforces region consistency, while a heaviness-aware refinement improves thickness and volume estimation for dense objects. Across ABO-500, MVImgNet-100, and PhysXNet-100, SiPhy achieves state-of-the-art single-image performance, surpassing multi-view reconstruction methods by improving mass MnRE by up to 93% (vs. PUGS), reducing density MAE by 35.5% (vs. NeRF2Physics), and lowering Young's modulus error by 23.5%. We further validate SiPhy on real hand-object interaction datasets, demonstrating its potential as a data annotation engine for physical understanding from single-view imagery.",
+    "authors": [
+      "Hoang Le",
+      "Joonwoo Kwon",
+      "Elkhan Ismayilzada",
+      "Yufei Zhang",
+      "Zijun Cui"
+    ],
+    "published": "2026-07-24T14:36:37+00:00",
+    "updated": "2026-07-24T14:36:37+00:00",
+    "url": "http://arxiv.org/abs/2607.22355v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.22355v1",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.22249v1",
+    "title": "Design and Human Evaluation of Tactile Withdrawal Reflexes for a Skin-Covered Robot Arm",
+    "abstract": "Nociception is a protective biological mechanism that links harmful stimulation to a reaction. This paper investigates artificial nociception for a robotic arm with whole-body tactile sensing. We present a complete pipeline that maps pressure changes from sensitive skin on a robot manipulator to bio-inspired withdrawal motions. The system first converts skin pressure into a scalar pain gain using a nonlinear continuous model. We compare three reflexes: (i) uniform reflex moves four robot joints by a fixed amount, whereby the withdrawal is approximated by a movement of the arm \"toward the base\", independent of where the robot was touched; (ii) biologically motivated location-dependent joint-space withdrawal derived from human withdrawal reflex characteristics; (iii) Cartesian space withdrawal along the surface normal of the contacted skin pad. All behaviors are integrated in a reflex controller that interrupts the task, executes the withdrawal, and returns to a pre-contact pose. A user study with 15 participants compared the strategies using Godspeed questionnaire subscales, custom perceived-naturalness and safety items, forced-choice comparisons, and qualitative feedback. Interestingly, participants rated more highly the uniform reflex behavior over one or both competitors on the anthropomorphism, animacy, and likeability Godspeed subscales and on the Naturalness and Realism custom scale. When asked to compare the conditions, the uniform reflex was scored best in \"felt safest\", \"most human-like\", and \"most natural\". This suggests that predictability of the robot behavior is key for user acceptance. The Cartesian reflex was judged the most appropriate reaction to touch. The bio-inspired reflex did not lead any evaluated measure. This may be partly attributed to the embodiment gap between the robot arm and human arm and participants having different expectations from a robot manipulator.",
+    "authors": [
+      "Laura Babayeva",
+      "Lukas Rustler",
+      "Matej Hoffmann"
+    ],
+    "published": "2026-07-24T12:31:44+00:00",
+    "updated": "2026-07-24T12:31:44+00:00",
+    "url": "http://arxiv.org/abs/2607.22249v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.22249v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.22020v1",
+    "title": "Embodying Multi-Hand Manipulation Policies by Searching the Assignment and Null Spaces",
+    "abstract": "Learned manipulation policies increasingly predict motions for abstract \"hands\" and are attractive in practice because they rely on easily collected demonstrations and transfer across robot platforms. Executing these trajectories on multi-arm robots, however, is not trivial. Multi-hand policy outputs must be assigned to physical arms, each arm must realize a configuration-space motion that tracks its prescribed end-effector trajectory, and all arms must respect kinematic limits and avoid collisions. In the absence of algorithms that directly address this problem, practitioners typically extend single-arm inverse-kinematics (IK) pipelines in an ad hoc way, with no guarantees of feasibility or safety. In this work, we close this execution gap with a search-based framework that is theoretically complete for grounding policy-generated multi-hand trajectories onto physical multi-arm systems. Building on Conflict-Based Search, our method explicitly searches over both the discrete assignment of trajectories to arms and the continuous Jacobian null spaces of redundant manipulators, using redundancy to avoid inter-arm collisions while tracking the prescribed motions. This unified treatment of assignment and null-space motion yields a practically efficient planner that safely realizes coordinated manipulation-policy outputs on multi-arm robots. See omcbsa.github.io for more.",
+    "authors": [
+      "Yorai Shaoul",
+      "Jiaoyang Li",
+      "Maxim Likhachev"
+    ],
+    "published": "2026-07-24T06:37:52+00:00",
+    "updated": "2026-07-24T06:37:52+00:00",
+    "url": "http://arxiv.org/abs/2607.22020v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.22020v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.22014v1",
+    "title": "Zero-Shot Mission-Level Evaluation for Aerial MLLM Agents",
+    "abstract": "Multimodal Large Language Models (MLLMs) are emerging as core reasoning modules for embodied agents, yet it remains unclear how well general-purpose models can solve long-horizon embodied tasks from a single high-level instruction. We introduce MissionBench, a benchmark for mission-level evaluation of MLLMs in aerial 3D environments. It comprises 120 missions across five simulated 3D environments and four task families. Agents must autonomously plan, navigate, and report outcomes using only egocentric observations and its action history, without aerial-specific fine-tuning. Across 22 open- and closed-source MLLMs, the strongest model succeeds on fewer than 35% of missions compared to 84.4% human performance, highlighting the difficulty of multi-step embodied tasks. Despite large variations between model families, we observe gains from scaling, indicating that larger general-purpose models possess stronger zero-shot embodied capabilities. Our analysis shows that mission-level competence requires coordinating multiple capabilities beyond spatial perception, including multi-step planning and adaptive reasoning. This motivates closed-loop evaluation and highlights both the promise and risk of scaling-driven improvements for embodied AI.",
+    "authors": [
+      "Suman Navaratnarajah",
+      "Taehyoung Kim",
+      "Jona Ruthardt",
+      "Ishaan Bhimwal",
+      "Ryousuke Yamada",
+      "Yannik Blei",
+      "Wolfram Burgard",
+      "Yuki M Asano"
+    ],
+    "published": "2026-07-24T06:22:50+00:00",
+    "updated": "2026-07-24T06:22:50+00:00",
+    "url": "http://arxiv.org/abs/2607.22014v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.22014v1",
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.CV",
+      "cs.RO"
+    ],
+    "primary_category": "cs.AI"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.21964v1",
+    "title": "ACME: A Multi-Cultural, Multi-Embodiment Social-Navigation Dataset",
+    "abstract": "Understanding how robots and humans move in shared spaces is essential for designing effective social robot navigation policies and predicting human behavior. However, existing datasets often lack the diversity needed to capture differences in culture, geography, and human-robot interaction-factors that strongly shape appropriate social behavior. To address this gap, we introduce ACME: A Cross-cultural, Multi-Embodiment dataset for social navigation. A large-scale data collection effort across 8 sites in 5 countries, using 7 robot embodiments, ACME is a large and diverse multi-modal dataset aimed at advancing social navigation research, providing 29.35 hours of onboard robot data and 43.5 hours of overhead pedestrian tracking data. Unlike prior datasets, it focuses on capturing goal-driven social navigation behavior in complex social scenarios with explicit robot-crowd interaction through robot speech. To facilitate learning navigation policies and predicting pedestrian trajectories, ACME provides 3D and 2D scene features, odometry, interaction information, and human-annotated pedestrian trajectory labels. We make ACME easy to use by providing both human-readable data for each sensor modality as well as raw binary data. Our qualitative and quantitative analyses show that our dataset captures more challenging scenarios and a broader distribution of pedestrian behavior than previous datasets.",
+    "authors": [
+      "Shashank Rao Marpally",
+      "Allan Wang",
+      "Atharva Ghotavadekar",
+      "Renato Alexandre Ribeiro",
+      "Nhat Le",
+      "Pilar Bachiller-Burgos",
+      "Pranav Goyal",
+      "Subham Agrawal",
+      "Yasuhiro Nitta",
+      "Howard Ziyu Han",
+      "Daeun Song",
+      "Masaki Kuribayashi",
+      "Kohei Uehara",
+      "Xiyue Wang",
+      "Yangzhe Kong",
+      "Duc M. Nguyen",
+      "Amirreza Payandeh",
+      "Gerardo Pérez-González",
+      "Alejandro Torrejón-Harto",
+      "Jeeho Ahn",
+      "Tisha Jain",
+      "Andrew Stratton",
+      "Elvin Yang",
+      "Jorge de Heuvel",
+      "Nico Ostermann-Myrau",
+      "Sai Anudeep Sajja",
+      "Mithilya Raj",
+      "Daisuke Sato",
+      "Gaston Rouquette",
+      "Nikolas Martelaro",
+      "Maki Sugimoto",
+      "Hironobu Takagi",
+      "Chieko Asakawa",
+      "Maren Bennewitz",
+      "Aaron Steinfeld",
+      "Xuesu Xiao",
+      "Christoforos Mavrogiannis",
+      "Harold Soh"
+    ],
+    "published": "2026-07-24T04:23:21+00:00",
+    "updated": "2026-07-24T04:23:21+00:00",
+    "url": "http://arxiv.org/abs/2607.21964v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.21964v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  }
+]
