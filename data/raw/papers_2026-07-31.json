@@ -1,0 +1,481 @@
+[
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.28625v1",
+    "title": "ACE-Data-0: Human-Centric Ambient Capture as Embodied Data Engine",
+    "abstract": "Embodied intelligence faces a fundamental data bottleneck. Models must capture how first-person perception, whole-body motion, dexterous manipulation, object state, sound, and touch evolve together as humans pursue goals over time. Existing datasets fragment this experience across viewpoints, modalities, or spatial scales, leaving the full perception-action loop only partially observed. We introduce the Ambient Capture Engine (ACE), a human-centric data engine that transforms real home environments into spatially calibrated, temporally synchronized recording studios. ACE operates at two complementary scales: a table-scale configuration resolves hand-object manipulation, while a room-scale configuration captures whole-body motion, locomotion, and interactions across a furnished home. ACE records egocentric and multi-view exocentric video, full-body and articulated hand motion, object geometry and 6-DoF trajectories, audio, and tactile signals as a unified multisensory stream. Using ACE, we build ACE-Data-0, comprising 150 hours and 17M video frames across 200 task categories, performed by 50 participants in 2 environments, for a total of 75,000 interaction episodes. The dataset spans atomic manipulation, long-horizon chains of household activities, and human-scene interaction, while preserving natural behavioral variation through goal-level rather than step-by-step instructions. We further introduce a hierarchical benchmark that progresses from signals to scene components and then to interactions. Evaluations of state-of-the-art methods expose substantial gaps under contact, occlusion, egomotion, and long temporal horizons. ACE-Data-0 provides synchronized human demonstrations with aligned perceptual, kinematic, and contact supervision, offering a scalable foundation for imitation learning, world models, vision-language-action systems, and embodied AI.",
+    "authors": [
+      "Yukang Cao",
+      "Haozhe Xie",
+      "Beichen Wen",
+      "Runmao Yao",
+      "Yinghao Liu",
+      "Yue Huang",
+      "Zhichao Liao",
+      "Yunxiang Wang",
+      "Haiheng Liu",
+      "Xingshun Tian",
+      "Dawei Su",
+      "Long Zhuo",
+      "Dacheng Tao",
+      "Xiaogang Wang",
+      "Liang Pan",
+      "Ziwei Liu"
+    ],
+    "published": "2026-07-30T17:59:50+00:00",
+    "updated": "2026-07-30T17:59:50+00:00",
+    "url": "http://arxiv.org/abs/2607.28625v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.28625v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.28623v1",
+    "title": "PAC-MAN: Perception-Aware CBF-RL for Whole-Body Safety in Humanoid Dodgeball",
+    "abstract": "We present PAC-MAN, a perception-aware CBF-RL framework that couples control-barrier safety with deployment-realistic onboard sensing for whole-body humanoid dodgeball. The deployed policy sees the ball only as segmentation-masked depth from a head-mounted camera, while training-time CBF guidance represents clearance to every body link, and an adversarial motion prior regularizes the resulting evasive reflexes. We evaluate on a controlled any-link contact benchmark with seeded throws in two regimes: single throws and a deployment loop in which the robot walks back to its station and recovers between throws. On this benchmark, the policy comes within a few points of a privileged state oracle: a fixed onboard camera alone is adequate for evasion. We find that usable barrier structure depends on perceptual observability: Joint-CBF gives the best performance with accurate ball states, degrades under fixed-camera observations when used only as training guidance, and recovers with a ball-tracking gimbal or privileged runtime filter. We therefore deploy a lightweight Link-CBF policy zero-shot on the Unitree G1 in the real world, where it tolerates imperfect perception, succeeds on 95% of throws, and uses semantic segmentation to dodge different balls.",
+    "authors": [
+      "Lizhi Yang",
+      "Junheng Li",
+      "Aaron D. Ames"
+    ],
+    "published": "2026-07-30T17:59:35+00:00",
+    "updated": "2026-07-30T17:59:35+00:00",
+    "url": "http://arxiv.org/abs/2607.28623v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.28623v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.28596v1",
+    "title": "FA-RDP: A Frequency-Adaptive Reactive Diffusion Policy for Contact-Rich Manipulation",
+    "abstract": "In contact-rich manipulation, action multimodality and reactivity dominate different stages of a single episode. Before contact, multiple trajectories might be equally valid, making it important to preserve diverse action modes. After contact, geometric constraints and force limits narrow the solution space, while successful execution demands rapid responses to force feedback. However, standard diffusion policies use a fixed inference frequency and sampling steps throughout the episode, forcing a fundamental compromise: low-frequency, multi-step sampling better preserves pre-contact multimodality but responds slowly to force feedback, whereas high-frequency sampling improves reactivity but tends to collapse distinct pre-contact modes. To resolve this tradeoff, we present FA-RDP, a frequency-adaptive reactive diffusion policy. A shared multi-frequency visual-force Transformer predicts action chunks at both low and high frequencies, while a learned multimodality indicator dynamically selects multi-step low-frequency sampling before contact and one-step high-frequency sampling as action ambiguity decreases. We further introduce Manifold Consistency Distillation (MCD), which reparameterizes the diffusion network to predict actions on the robot action manifold while retaining DDPM-based residual supervision. Experiments on three contact-rich manipulation tasks show that FA-RDP achieves the highest success rate while preserving diverse pre-contact trajectory modes. Code and videos are available at https://fa-rdp.github.io.",
+    "authors": [
+      "Lifeng Zhuo",
+      "Wendi Chen",
+      "Han Xue",
+      "Shirun Tang",
+      "Jun Lv",
+      "Cewu Lu",
+      "Chuan Wen"
+    ],
+    "published": "2026-07-30T17:47:49+00:00",
+    "updated": "2026-07-30T17:47:49+00:00",
+    "url": "http://arxiv.org/abs/2607.28596v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.28596v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.28560v1",
+    "title": "X-NavDP: Generalizing Navigation Diffusion Policy to Novel Behavior and Embodiments with Group Q-score Reweighted Matching",
+    "abstract": "Pretraining navigation diffusion policies rely on large-scale expert demonstrations. These data are typically generated by a fully-informed oracle planner suited to a single nominal robot. This limits the policy's generalization to diverse embodiments and challenging scenarios (e.g., escaping dead ends or detouring long obstacles) that demand diverse local reactive behaviors with only onboard local observations. Post-training the policy with reinforcement learning (RL) offers a principled remedy. However, previous RL for diffusion approaches lead to only marginal improvements. This is because the intractable likelihood of diffusion policies renders policy gradients unstable in addition to inefficient policy exploration. To address these challenges, we propose a data-efficient diffusion RL post-training framework - GQRM (Group Q-score Reweighted Matching). Our framework introduces two complementary designs: (i) a self-bootstrapped exploration strategy with behavior perturbation that preserves the pretrained policy prior, and (ii) a group Q-score normalization mechanism that computes per-trajectory values on each state for efficient reweighted score matching. By conducting distributed online RL training across heterogeneous embodiments, the resulting fine-tuned policy, X-NavDP, achieves state-of-the-art cross-embodiment visual navigation performance, improving the overall success rate from 61.20% to 84.28% in simulation and 10% to 65% in real-world hard cases. The code and model are publicly available at https://yty-sky.github.io/x-navdp-project-page.",
+    "authors": [
+      "Tianyu Yang",
+      "Yiming Zeng",
+      "Wenzhe Cai",
+      "Yuqiang Yang",
+      "Jiaqi Peng",
+      "Hui Cheng",
+      "Jiangmiao Pang",
+      "Tai Wang"
+    ],
+    "published": "2026-07-30T17:26:12+00:00",
+    "updated": "2026-07-30T17:26:12+00:00",
+    "url": "http://arxiv.org/abs/2607.28560v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.28560v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.28442v1",
+    "title": "ViewMind3D: Modular View-Aware Inference for Training-Free 3D-QA",
+    "abstract": "Recent advances in large language models (LLMs) and vision-language models (VLMs) have enabled new possibilities for 3D question answering (3D-QA), a key capability for embodied AI and robotic perception. However, most existing methods rely on 3D-specific training or fine-tuning with costly annotations, limiting their scalability and real-world applicability. We present \\textbf{ViewMind3D}, a fully training-free and modular framework for 3D spatial reasoning over multi-view observations of a scene without requiring complete 3D reconstruction. The framework decomposes the 3D-QA task into four interpretable components: (1) question-driven multi-view selection, (2) guided visual grounding with language-conditioned object cues, (3) spatial context encoding via a bird's-eye-view (BEV) viewpoint indicator, and (4) structured answer generation through role-based reasoning. This design enables structured, robust, and interpretable reasoning without requiring model tuning. Experimental results on ScanQA and SQA3D show that ViewMind3D achieves competitive performance compared to prior training-free and fine-tuned 3D-LLMs. In particular, our method improves performance on spatially grounded question types, such as ``What'' questions in SQA3D, while maintaining strong overall accuracy (50.8\\%) and achieving 73.4 CIDEr on ScanQA. These results demonstrate that effective 3D reasoning can be achieved through modular orchestration of general-purpose LLMs and VLMs for robotic perception in real-world environments.",
+    "authors": [
+      "Ping-Kun Chiang",
+      "Kun-Ru Wu",
+      "Po-han Li",
+      "Sandeep Chinchali",
+      "Ufuk Topcu",
+      "Yu-Chee Tseng"
+    ],
+    "published": "2026-07-30T16:14:30+00:00",
+    "updated": "2026-07-30T16:14:30+00:00",
+    "url": "http://arxiv.org/abs/2607.28442v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.28442v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.28394v1",
+    "title": "Hand-Object Interaction in the Age of Large Foundation Models:Reconstruction, Generation, and Embodied Transfer",
+    "abstract": "Hand-object interaction (HOI) modeling remains challenging because it requires joint reasoning about hand articulation, object geometry, contact, semantics, and dynamics under severe visual uncertainty. Foundation models introduce transferable prior knowledge learned from large-scale cross-domain data, offering new ways to address these challenges beyond task-specific data and models. However, the rapidly growing literature remains fragmented, and existing studies typically describe these methods simply as ``using large models'' without systematically characterizing what knowledge is introduced, where it enters the HOI pipeline, or which HOI uncertainty it helps reduce. This survey presents the first systematic review of foundation-model priors for HOI. We organize the literature into six HOI tasks spanning reconstruction and generation. More importantly, we establish a taxonomy of eight foundation-model sub-priors grouped into geometric, semantic, and visual families. Geometric priors encompass shape retrieval, shape reconstruction, and spatial reconstruction; semantic priors include semantic grounding and language reasoning; and visual priors cover visual representation, image generation, and video generation. Based on this taxonomy, we systematically analyze how different priors are represented, injected, and adapted across HOI pipelines and tasks. Beyond how foundation models empower HOI, we further examine how HOI-derived knowledge is used in robot learning, including human-data pretraining, human-to-robot skill transfer, and HOI-to-robot data generation. Finally, we summarize datasets and evaluation protocols, and discuss limitations and future directions toward more generalizable HOI systems. To support long-term progress, we curate a live repository that continuously aggregates emerging methods and benchmarks.",
+    "authors": [
+      "Weiquan Lin",
+      "Yu Deng",
+      "Shiyang Liu",
+      "Luping Xiao",
+      "Xu Tang",
+      "Junzhi Yu",
+      "Jiaolong Yang",
+      "Lei Zhang",
+      "Xingyu Chen"
+    ],
+    "published": "2026-07-30T15:48:16+00:00",
+    "updated": "2026-07-30T15:48:16+00:00",
+    "url": "http://arxiv.org/abs/2607.28394v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.28394v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.28382v1",
+    "title": "SemAnCorr: Semantic Anchored Correspondence for Zero-Shot Manipulation Skill Transfer",
+    "abstract": "Transferring manipulation skills across object instances that share functionality but differ in geometry remains a fundamental challenge in robot learning. While recent correspondence methods leverage dense visual descriptors and 3D feature fields, nearest-neighbor feature matching often produces spatially incoherent correspondences that fail to recover the local geometric frames required for reliable skill transfer. We introduce SemAnCorr, a training-free framework that establishes dense correspondence by selecting semantically consistent anchor regions through joint pose-correspondence optimization and propagating these constraints over the object surface using functional maps. The resulting correspondences preserve both semantic consistency and geometric coherence, enabling object-centric manipulation skills to transfer across geometrically diverse instances. We evaluate SemAnCorr on a dense correspondence benchmark built on PartNet-Mobility, achieving 90.8% semantic accuracy in our benchmark evaluation while improving geometric coherence over recent state-of-the-art baselines. Finally, we show that these improvements translate directly into real-world manipulation performance: using a single demonstration, SemAnCorr enables substantially more reliable zero-shot manipulation skill transfer to previously unseen objects than existing correspondence methods. Videos and additional visualizations are available at [https://semancorr.github.io](https://semancorr.github.io) .",
+    "authors": [
+      "Xiaoxiang Dong",
+      "William Baron",
+      "Hongyi Chen",
+      "Uksang Yoo",
+      "Jeffrey Ichnowski",
+      "Weiming Zhi"
+    ],
+    "published": "2026-07-30T15:41:39+00:00",
+    "updated": "2026-07-30T15:41:39+00:00",
+    "url": "http://arxiv.org/abs/2607.28382v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.28382v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.28256v1",
+    "title": "When Robots Exchange Meaning: A Demo of Goal-Oriented Semantic Communications for Collaborative Robotics",
+    "abstract": "Collaborative robotics is a representative task-oriented 6G use-case, where communication quality should be reflected in mission execution, environment understanding, and closed-loop operation rather than packet delivery alone. This demo paper presents a robot-edge semantic communication (SemCom) testbed integrating robot-side visual compression, edge-side semantic mapping, and dashboard-based mission interaction. A mobile robot equipped with RGB-D sensing and LiDAR runs ROS 2, while a Jetson Orin edge node performs reconstruction, RTAB-Map mapping, semantic object handling, and browserbased visualization. As an initial proof of concept, RGB frames are encoded on the robot into VQ-VAE tokens using an ONNX Runtime encoder and reconstructed on the edge using a PyTorch decoder. A 320 X 240 image is represented by an 80 X 60 token grid with a packed payload of 5400 bytes, corresponding to a 42.67X reduction relative to model-input RGB bytes. The reconstructed visual stream is further associated with depth, pose, and 3D mapping information to generate a semantic map for downstream robotic applications. The demo exposes the full path from semantic visual transport to object-level map interaction, and provides a practical platform for future task-aware 6G networking studies at the intersection of SemCom, embodied AI, and physical AI-enabled robotics. A video of the demo is available at https://tinyurl.com/Tos09",
+    "authors": [
+      "Peizheng Li",
+      "Xinyi Lin",
+      "Sajida Gufran",
+      "Adnan Aijaz"
+    ],
+    "published": "2026-07-30T14:16:23+00:00",
+    "updated": "2026-07-30T14:16:23+00:00",
+    "url": "http://arxiv.org/abs/2607.28256v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.28256v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.28243v1",
+    "title": "EgoGenesis: Egocentric World-Action Modeling with Online Anchored Projective Memory and Action-3D RoPE",
+    "abstract": "Egocentric video offers rich manipulation experience for embodied AI, yet collecting diverse egocentric data across scenes, objects, motions, and embodiments remains costly. We present \\method, an egocentric world-action simulator that synthesizes controllable, high-quality manipulation videos to expand scarce real-world training data. \\method{} builds on a pretrained video generation prior and introduces two geometry-aware conditioning mechanisms. Online Anchored Projective Memory (OAPM) preserves a first-frame 3D scene anchor while periodically refreshing a recent state during autoregressive generation. Action-3D Rotary Position Embedding (A3D-RoPE) encodes end-effector motion with camera-aware 3D rotary coordinates, injecting action geometry into skeleton-to-video cross-attention for precise control. Together, these components improve visual fidelity, geometric stability, and action alignment in long egocentric rollouts. Moreover, augmenting 400 real trajectories with 400 \\method-generated trajectories improves out-of-distribution real-robot success from 77\\% to 84\\% on single-arm tasks and from 53\\% to 70\\% on dual-arm tasks, demonstrating that the synthesized data substantially improve downstream WAM generalization.",
+    "authors": [
+      "Zexuan Yan",
+      "Yuzhou Wu",
+      "Yue Ma",
+      "Zonghang He",
+      "Kaibo Yin",
+      "Xiaobing Tu",
+      "Yinggui Wang",
+      "Jinkui Ren",
+      "Xiantao Zhang",
+      "Shijian Wang",
+      "Jinghong Liu",
+      "Linfeng Zhang"
+    ],
+    "published": "2026-07-30T14:06:26+00:00",
+    "updated": "2026-07-30T14:06:26+00:00",
+    "url": "http://arxiv.org/abs/2607.28243v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.28243v1",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.28226v1",
+    "title": "Security of World-Model-Based Embodied AI: A Lifecycle of Threats, Defenses, and Evaluation",
+    "abstract": "World models give embodied AI a predictive core: they compress observations into states, simulate action-conditioned futures, and enable planning beyond reactive control. This predictive layer, however, opens a new security boundary-compromise can propagate from data, sensors, prompts, or feedback into physical action. Rather than treating world models as an isolated component, this survey traces threats across their entire lifecycle-from data construction and representation learning, through state grounding and imagination, to trajectory evaluation, execution, and long-term adaptation via memory and tools. We show that familiar attack families: poisoning, backdoors, adversarial examples, sensor spoofing, prompt injection, trajectory manipulation, and supply-chain attacks take on distinct meanings when they corrupt world states, learned dynamics, affordance estimates, or safety costs. We also highlight a duality: world models can serve as runtime safety shields, yet when compromised or over-trusted they generate predictive safety illusions. The survey offers a lifecycle taxonomy, maps existing attacks to world-model security properties, outlines evaluation protocols for safety failures, and structures defenses across provenance, robust grounding, uncertainty-aware prediction, trajectory gating, feedback auditing, and deployment assurance.",
+    "authors": [
+      "Fazhong Liu",
+      "Zhuoyan Chen",
+      "Haozhen Tan",
+      "Yan Meng",
+      "Guoxing Chen",
+      "Haojin Zhu"
+    ],
+    "published": "2026-07-30T13:58:33+00:00",
+    "updated": "2026-07-30T13:58:33+00:00",
+    "url": "http://arxiv.org/abs/2607.28226v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.28226v1",
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "primary_category": "cs.CR"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.27967v1",
+    "title": "MARS-RA: Rank Aggregation for Credit Assignment via Multimodal Comparisons in Embodied Multi-Agent Cooperation",
+    "abstract": "Credit assignment is a fundamental challenge in cooperative multi-agent reinforcement learning, particularly in embodied AI settings characterized by limited and delayed feedback as well as dynamically changing numbers of active agents. We propose MARS-RA, a framework that reformulates credit assignment as a rank aggregation problem using contribution-based pairwise comparisons among agents generated by large multimodal models. This shift from absolute to relative estimation ensures robustness against noise and dynamic agent participation, converting comparison results into contribution scores for potential-based reward shaping. We provide theoretical justification for the convergence and robustness of the proposed framework, and show that Shapley values can be used as an interpretive reference. Experimental results on challenging tasks of different types indicate that MARS-RA can guide agents toward effective cooperation.",
+    "authors": [
+      "Dawei Wang",
+      "Di Zhao",
+      "Xinyuan Liu",
+      "Marci Chi Ma",
+      "Xiaoyang Liu",
+      "Chengming Zhou",
+      "Gary Ushaw",
+      "Richard Davison"
+    ],
+    "published": "2026-07-30T10:14:24+00:00",
+    "updated": "2026-07-30T10:14:24+00:00",
+    "url": "http://arxiv.org/abs/2607.27967v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.27967v1",
+    "categories": [
+      "cs.AI"
+    ],
+    "primary_category": "cs.AI"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.27933v1",
+    "title": "The Geometric Nature and a Free Proxy for Flow-Matching Uncertainty",
+    "abstract": "Flow matching (FM) has become a popular action head paradigm for modern embodied models. However, as a conditional generative model, it does not explicitly expose its inherent uncertainty, producing faulty action chunks even when it misinterprets the scene or encounters out-of-distribution (OOD) inputs. Therefore, determining when an FM-generated action can be trusted is essential for safe deployment, yet existing uncertainty estimation methods on real-time control suffer from several issues: extra training budget, high computational overhead, and low generalization ability. In this work, we provide a geometric interpretation of FM uncertainty in the velocity field, showing that uncertainty manifests as deviation from an ideal affine-isotropic contraction field. Building on this observation, we introduce denoising acceleration ($\\mathrm{accel}$), a highly-generalizable and cost-free uncertainty proxy that measures the bending of the denoising trajectory from a single forward pass, without additional model evaluations, training, or resampling. We theoretically and empirically demonstrate that $\\mathrm{accel}$ is a faithful proxy for FM uncertainty and further test its utility in online failure detection. Results show that $\\mathrm{accel}$ identifies failing rollouts well before termination, matching or even outperforming costly resampling- and training-based baselines across settings under realistic deployment budget. Code and demos available at: https://github.com/rrrrrrzy/fm-geometry.",
+    "authors": [
+      "Ziyang Rao",
+      "Yiren Zhao",
+      "Weiyu Guo",
+      "Ben Fei",
+      "Yandong Guo",
+      "Hui Xiong"
+    ],
+    "published": "2026-07-30T09:44:46+00:00",
+    "updated": "2026-07-30T09:44:46+00:00",
+    "url": "http://arxiv.org/abs/2607.27933v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.27933v1",
+    "categories": [
+      "cs.AI"
+    ],
+    "primary_category": "cs.AI"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.27881v1",
+    "title": "RoboBRIDGE: A Modular Framework for Bridging Policies to Robust Real-World Robotic Agents",
+    "abstract": "Vision-Language-Action (VLA) models have attracted growing interest as a scalable approach to robotic manipulation. While these models are effective action predictors, deploying them as robotic agents exposes critical gaps: no mechanism for failure recovery, inconsistent execution over long horizons, and limited robustness to shifts in observations, tasks, or embodiments. Existing solutions address these limitations individually through model retraining or environment-specific modules, yet what is needed is a general framework that systematically transforms a pretrained VLA into a robotic agent. We present RoboBRIDGE, a modular framework that provides an orchestration layer over five coordinated modules, namely Monitor, Perceptor, Planner, Controller, and Robot Interface, to compose robust robotic agents from off-the-shelf components, including pretrained VLAs. The Monitor pairs rapid failure detection with hierarchical recovery to correct errors before they cascade. When the environment diverges from the current plan, the Planner triggers replanning while the Perceptor updates scene understanding asynchronously, avoiding execution stalls. Within the Controller, primitive skill fine-tuning factors manipulation into domain-invariant primitives with dedicated LoRA adapters, reducing sensitivity to domain shifts when a VLA is used. Across LIBERO, RoboCasa, and real-world case studies spanning multiple robot platforms and VLA backbones, RoboBRIDGE consistently outperforms both standalone policies and prior augmented VLA deployments. These results suggest that reliable robotic agency does not arise from scaling action predictors alone, but from structured orchestration around them.",
+    "authors": [
+      "Sihyung Yoon",
+      "Minjong Yoo",
+      "Sanghyun Ahn",
+      "Seojeong Choi",
+      "Honguk Woo"
+    ],
+    "published": "2026-07-30T08:55:45+00:00",
+    "updated": "2026-07-30T08:55:45+00:00",
+    "url": "http://arxiv.org/abs/2607.27881v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.27881v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.27784v1",
+    "title": "DexDirect: Direct Kinesthetic Arm Guidance for Efficient Dexterous Demonstration Collection",
+    "abstract": "Scalable collection of dexterous manipulation demonstrations remains a major bottleneck for robot learning. High-fidelity interfaces often require costly hardware and extensive setup, while low-setup, low cost alternatives tend to provide less precise control and impose greater cognitive workload on operators. We present DexDirect, a direct kinesthetic arm guidance for efficient dexterous demonstration collection. The operator drags a 6-DoF gravity-compensated robot arm directly by a handle, while a single webcam retargets operator's other hand onto a 16 joints 13-DoF dexterous robot hand. User studies suggest DexDirect collects 17.2x and 3.2x more successful demonstrations compared to purely vision (AnyTeleop) and pose-tracking (TeleDex) baselines. An adapted NASA-TLX shows DexDirect greatly reduces mental demand, effort, and frustration, despite raising physical demand. A diffusion policy trained on DexDirect demonstrations reaches a 90% success rate on a cube pick-and-place task. These results suggest that direct kinesthetic arm guidance combined with vision-based hand retargeting provides an efficient low-setup and scalable interface for collecting dexterous manipulation demonstrations",
+    "authors": [
+      "Beom Jun Kim",
+      "Shiu-Jen Wang",
+      "Jonathan Liu",
+      "Alvin Zhu",
+      "Quanyou Wang",
+      "Hanzhang Fang",
+      "Feng Xu",
+      "Mingzhang Zhu",
+      "Yuchen Cui",
+      "Dennis W. Hong"
+    ],
+    "published": "2026-07-30T07:17:28+00:00",
+    "updated": "2026-07-30T07:17:28+00:00",
+    "url": "http://arxiv.org/abs/2607.27784v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.27784v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.27782v1",
+    "title": "RedFlow: Redirect Failure into Action-Level Corrections for Flow-matching VLA Policy",
+    "abstract": "Flow-matching Vision-Language-Action (VLA) policies have shown strong potential for robotic manipulation but often suffer from compounding errors caused by distribution shifts during deployment. While offline reinforcement learning (RL) provides a practical way to improve deployed policies using rollout data, existing methods either ignore failure data or exploit it only at the trajectory level, resulting in low learning efficiency and persistent errors. We propose **RedFlow**, a fine-grained offline RL framework that redirects failure experiences into action-level corrective supervision for flow-matching VLA policies. RedFlow consists of two key components: (1) a **Context-Aware Corrective Matching** mechanism that identifies failure-inducing actions and retrieves successful alternatives from similar contexts as corrective targets, and (2) an **Adaptive Redirection Objective** that jointly reinforces successful actions, suppresses undesirable ones, and redirects recoverable failures toward corrective targets. By converting both successful and failed experiences into dense supervision, RedFlow enables robust recovery learning from mixed-quality data. Experiments on the LIBERO benchmark and three real-world manipulation tasks show that RedFlow consistently outperforms state-of-the-art offline RL baselines, improving the real-world success rate from 56.7% to 74.7%. It also matches strong on-policy methods (PPO, GRPO, and DDPO) while requiring roughly an order of magnitude fewer training samples.",
+    "authors": [
+      "Zhengyang Yan",
+      "Junhao Li",
+      "Fangqi Zhu",
+      "Zijun Wang",
+      "Quanxin Shou",
+      "Yikun Miao",
+      "Xiaoyi Pang",
+      "Zicong Hong",
+      "Song Guo"
+    ],
+    "published": "2026-07-30T07:14:39+00:00",
+    "updated": "2026-07-30T07:14:39+00:00",
+    "url": "http://arxiv.org/abs/2607.27782v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.27782v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.27703v1",
+    "title": "SpatialCLI: Learning to Reason With Spatial Tools, Then Without Them",
+    "abstract": "Vision-language models (VLMs) are increasingly used in embodied agents to interpret visual inputs, reason about spatial relationships, and make task-level decisions based on that reasoning. However, a fundamental capability mismatch remains: general VLMs can reason about the overall task but often miss the visual details that determine success, while specialist vision models can capture those details but cannot translate them into task-level decisions. In this work, we propose SpatialCLI, a framework that teaches VLMs to reason with spatial tools and progressively internalize the specialist perceptual capabilities they provide. SpatialCLI proceeds in three stages: (1) Call exposes specialist vision models as spatial tools to augment the VLM's perception; (2) Learn uses Cold-Start SFT and agentic RL to improve tool use; and (3) Internalize verbalizes successful tool-use trajectories to internalize specialist perceptual capabilities. We further introduce SpatialCLI-Bench, a 516-example benchmark for compositional perception across localization, segmentation, depth, and pose. On MindCube, SpatialCLI raises Qwen3-VL-8B-Instruct from 29.3% to 84.6% with tools, surpassing GPT-5.6 Sol with tools (72.1%), while retaining 73.8% without tools after internalization.",
+    "authors": [
+      "Yang Zhou",
+      "Zixuan Huang",
+      "Sunzhu Li",
+      "Zhuo Yang",
+      "Chen Zhang",
+      "Shunian Chen",
+      "Caijun Yan",
+      "Jianyao Xu",
+      "Shunyu Liu",
+      "Weijie Fu",
+      "Peiliang Li",
+      "Xiaozhi Chen",
+      "Yuxiang Cai"
+    ],
+    "published": "2026-07-30T05:39:01+00:00",
+    "updated": "2026-07-30T05:39:01+00:00",
+    "url": "http://arxiv.org/abs/2607.27703v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.27703v1",
+    "categories": [
+      "cs.AI"
+    ],
+    "primary_category": "cs.AI"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.27627v1",
+    "title": "Arm2Air: Cross-Embodiment Skeleton Transfer for 3D Relay Formation",
+    "abstract": "Unmanned aerial vehicle (UAV) relay networks can restore connectivity after communication infrastructure is damaged. Urban relay placement is difficult because line-of-sight blockage, communication range, altitude, and three-dimensional obstacles must be considered jointly. Arm2Air transfers obstacle-avoidance skeletons from robot arms to UAV relay placement through cross-embodiment transfer. Source-domain robot-arm motions from a pretrained Neural MP model are converted into ordered skeletons that pretrain a transformer-based transfer platform, which is then adapted to the UAV domain using limited target data and Low-Rank Adaptation. The transferred skeleton initializes a relay chain that is refined for connectivity, bottleneck capacity, delay, and movement cost. On nine held-out high-clutter 3D urban maps, Arm2Air reduced median end-to-end planning runtime by 64.9 percent relative to the fastest conventional planner. On the high-obstruction group of a separate 30-map dense urban holdout, it increased bottleneck capacity by 32.6 percent, reduced capacity variance by 74.7 percent, reduced maximum hop distance by 13.2 percent, reduced hop-distance variance by 75.2 percent, and reduced relay displacement by 16.9 percent relative to IMPC-MD. With only three target-domain training maps, Arm2Air reduced relay-position root mean square error by 53.6 percent relative to training from scratch while updating 0.134 million parameters, compared with 1.383 million for Scratch and Full Fine-tuning. These results demonstrate computationally and data-efficient UAV relay placement and suggest a broader principle for transferring ordered structural priors across heterogeneous embodied tasks.",
+    "authors": [
+      "Dohun Lee",
+      "Kyeonghyun Yoo",
+      "Seokmin Kim",
+      "Byongho Lee",
+      "Seungjoo Oh",
+      "Hwangnam Kim"
+    ],
+    "published": "2026-07-30T03:32:19+00:00",
+    "updated": "2026-07-30T03:32:19+00:00",
+    "url": "http://arxiv.org/abs/2607.27627v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.27627v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.27599v1",
+    "title": "World Action Planner: Generalizable Decision-Making with Action-Conditioned World Models",
+    "abstract": "Building generalizable agents for diverse applications remains a fundamental challenge. While imitation learning-based policies succeed in specific training environments, they often fail to generalize to novel scenes and tasks. In this work, we propose World Action Planner, a robot planning system that leverages the reasoning capabilities of Vision-Language Models (VLMs) and the physical grounding of a multi-task pose-image conditioned world model. Our system enables an agent to propose initial action plans and iteratively refine them via optimization and search, reasoning over imagined world model rollouts. We demonstrate that our approach achieves superior performance across compositional tasks, new layouts, and zero-shot generalization scenarios, significantly outperforming state-of-the-art end-to-end policy models such as VLAs and WAMs. Project website at worldactionplanner.github.io",
+    "authors": [
+      "Xiangcheng Zhang",
+      "Yilun Du"
+    ],
+    "published": "2026-07-30T02:41:52+00:00",
+    "updated": "2026-07-30T02:41:52+00:00",
+    "url": "http://arxiv.org/abs/2607.27599v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.27599v1",
+    "categories": [
+      "cs.AI",
+      "cs.RO"
+    ],
+    "primary_category": "cs.AI"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.27549v1",
+    "title": "Cross-Embodiment Transfer via Behavior-Aligned Representations",
+    "abstract": "Recent progress in large-scale imitation learning for robot manipulation has been driven by leveraging datasets across a wide range of robot embodiments. However, achieving significant cross-embodiment transfer is often still challenging. In this work, we study the role of using behavior-aligned representations (e.g., object bounding boxes, language motions, end-effector traces of robot motion) in vision-language-action (VLA) models to promote cross-embodiment transfer. We hypothesize that by possessing invariances across embodiments while being predictive of robot actions, these representations can help unify large-scale cross-embodiment data to enhance transfer. To assess our hypothesis, we develop a simulation-based benchmark designed to assess transfer with diverse cross-embodiment data to new embodiments. Using this benchmark, we compare different representations and ways of incorporating them. We identify that end-effector traces can be particularly beneficial for transfer, representations are generally more useful with larger prior datasets, and can be used to benefit from action-free data. We also demonstrate that they can enhance sim-to-real cross-embodiment transfer, improving task completion progress of real robot policies pre-trained on simulation data by 28%. We provide videos of our evaluations at our website: https://ajaysridhar.com/barx/.",
+    "authors": [
+      "Ajay Sridhar",
+      "Jensen Gao",
+      "Jonathan Yang",
+      "Jean Mercat",
+      "Suneel Belkhale",
+      "Dorsa Sadigh"
+    ],
+    "published": "2026-07-30T00:49:53+00:00",
+    "updated": "2026-07-30T00:49:53+00:00",
+    "url": "http://arxiv.org/abs/2607.27549v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.27549v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.CV",
+      "cs.LG"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2607.27443v1",
+    "title": "Leveraging Trajectory Graphs for Pre-Execution Error Diagnosis in Agentic LLM Systems",
+    "abstract": "Large Language Model~(LLM)-based agents have demonstrated exceptional performance across a wide range of complex interactive tasks. However, they often struggle with long-horizon interactive tasks common in domains, such as embodied AI. The complexity and vast action spaces in these settings lead to compounding errors, where a single suboptimal action can derail an entire trajectory, causing the agent to exhaust its limited step budget on inefficient or unrecoverable paths. To overcome this without costly fine-tuning, we draw inspiration from software debugging, where execution logs are analyzed to preemptively catch errors. We propose \\textit{Trajectory Graph Copilot}, a novel framework that acts as a ``copilot'' for LLM agents by diagnosing potential action errors before they are executed. At its core,\\textit{Graph Debugger} models historical trajectories as a probabilistic graph and uses a Graph Neural Network to identify sequential action patterns that frequently lead to failure. Functioning as a proactive diagnostic sandbox, our method provides early warnings on potentially flawed actions, prompting the agent to self-correct. This pre-action error diagnosis prevents costly mistakes, significantly enhancing the agent's ability to complete long-horizon tasks successfully. The extensive experiments on four benchmarks with three LLM agents demonstrate a $14.69\\%$ pass ratio improvement on average.",
+    "authors": [
+      "Xu Zheng",
+      "Zhuomin Chen",
+      "Chaohao Lin",
+      "Hua Wei",
+      "Haifeng Chen",
+      "Wei Cheng",
+      "Dongsheng Luo"
+    ],
+    "published": "2026-07-29T20:14:43+00:00",
+    "updated": "2026-07-29T20:14:43+00:00",
+    "url": "http://arxiv.org/abs/2607.27443v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.27443v1",
+    "categories": [
+      "cs.AI"
+    ],
+    "primary_category": "cs.AI"
+  }
+]
