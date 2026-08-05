@@ -1,0 +1,477 @@
+[
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.03938v1",
+    "title": "Bimanual Manipulation Within an 8 GB Budget: Zero-Copy Sensing and Quantized ACT on an Entry-Level Jetson",
+    "abstract": "Bimanual manipulation policies trained with imitation learning are typically evaluated on workstation or datacenter-class GPUs, leaving the cost of deploying them on embedded hardware largely uncharacterized. We present a bimanual SO-101 system running entirely on an NVIDIA Jetson Orin Nano Super (8 GB), the entry-level tier of NVIDIA's embedded line, using a desktop GPU (RTX 3070) only for offline training, evaluated on pick-and-place of a deformable beanbag. First, we build a GStreamer capture pipeline backed by NVMM buffers that removes redundant host-device copies from three-camera sensing. Contrary to expectation, the conventional path fit the memory budget and dropped no frames; what zero-copy sensing recovers is CPU headroom (peak single-core utilization 98.0% to 77.0%) and worst-case latency (117.31 ms to 101.52 ms). Second, we train ACT and Diffusion Policy on identical demonstrations, each at its own reference budget (100k gradient steps for ACT, 200k for Diffusion Policy). ACT converges to a task-competent policy (19/20 trials) while Diffusion Policy does not converge to a usable one (0/10) even at twice the step count, which we attribute to differing convergence costs rather than an accuracy ceiling. Third, we convert ACT to TensorRT. FP16 reduces mean inference latency from 114.02 ms to 17.93 ms (6.4x) and INT8 to 12.65 ms (9.0x), with task success preserved at all three precisions (19/20, 18/20, 19/20). We report two findings not previously documented for ACT: TensorRT's general-purpose INT8 calibration quantizes the ResNet18 backbone but accepts zero of 145 transformer layers, explaining INT8's negligible size reduction over FP16 (0.9%) despite a further 28% latency gain; and the need for quantization is conditional on ACT's action-chunking configuration, feasible in full precision at n_action_steps = 100 but not at the per-step re-prediction temporal ensembling requires.",
+    "authors": [
+      "Ekansh Singh",
+      "Eva Samuel",
+      "Alessandra Reneau",
+      "Ryan Schmeelk",
+      "Yashvi Gandhi"
+    ],
+    "published": "2026-08-04T17:09:41+00:00",
+    "updated": "2026-08-04T17:09:41+00:00",
+    "url": "http://arxiv.org/abs/2608.03938v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.03938v1",
+    "categories": [
+      "cs.RO",
+      "eess.SY"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.03924v1",
+    "title": "ETA: A New Agentic Paradigm for Embodied Tasks",
+    "abstract": "When will robots have their ChatGPT moment? Such a breakthrough requires a general-purpose robot that can handle unfamiliar tasks in unfamiliar environments, remain controllable over long interactions, and learn from experience. Today's embodied systems largely follow an end-to-end observation-to-action path. Despite rapid progress, they remain far from this goal: their generalization depends heavily on the coverage of robot training data, while long task execution remains difficult to control and inspect. To realize this goal, we introduce the Embodied Task Agent (ETA), a new paradigm for extending digital agents into the physical world, and release OpenETA as its open-source implementation. ETA centers the robot around a Planner that chooses one Tool call at a time, an Interface that controls execution, and a World that returns the result and a fresh observation. This loop allows the agent to verify outcomes, adapt its plan, and turn successful and failed interactions into reusable experience. OpenETA provides replaceable Planners, composable Tools and Skills, auditable memory, replayable trajectories, and common interfaces for simulation and real robots. For Codex, OpenETA can operate as a lightweight plugin that exposes only observe, mark_point, and move_to.",
+    "authors": [
+      "Yitong Chen",
+      "Zezheng Huai",
+      "Sixian Li",
+      "Yubang Wang",
+      "Haozhe Zhang",
+      "Yifei Zhang",
+      "Hechang Chen",
+      "Jingjing Gong",
+      "Yu-Gang Jiang",
+      "Xipeng Qiu"
+    ],
+    "published": "2026-08-04T16:56:09+00:00",
+    "updated": "2026-08-04T16:56:09+00:00",
+    "url": "http://arxiv.org/abs/2608.03924v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.03924v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.03851v1",
+    "title": "LiteMVS: Efficient Multi-View Stereo with Foundation Distillation and Expert Aggregation",
+    "abstract": "Real-time 3D perception is crucial for robotics, augmented reality, and embodied intelligence applications. Existing multi-view stereo (MVS) methods primarily rely on geometric correspondences, which often fail in textureless or repetitive regions, while monocular depth models leverage strong image-level priors but lack robust multi-view geometric constraints. More importantly, in robotics and embodied manipulation scenarios, high-quality 3D geometry is not only essential for static reconstruction, but also serves as a critical foundation for learning temporally consistent 4D representations. To obtain visual representations with stronger structural awareness and greater potential for spatiotemporal extension, we present LiteMVS, a lightweight multi-view depth estimation model that integrates plane-sweep geometric reasoning with strong monocular semantic and structural priors. The central idea of LiteMVS is to efficiently inject high-level monocular knowledge, obtained from lightweight segmentation models and large-scale vision foundation models, into a multi-view stereo framework. In particular, LiteMVS enriches the cost volume with semantic descriptors and employs a Mixture-of-Experts (MoE) formulation to enable adaptive geometric aggregation across depth hypotheses. Moreover, geometric priors distilled from vision foundation models further strengthen monocular guidance without increasing inference cost. Through this design, LiteMVS not only improves depth estimation and 3D reconstruction quality in static scenes, but also provides a more reliable geometric foundation for subsequent temporal modeling and 4D representation learning. Experiments on ScanNetv2 and 7-Scenes demonstrate that LiteMVS achieves high-quality depth prediction and 3D reconstruction while maintaining competitive efficiency.",
+    "authors": [
+      "Tianbao Zhang",
+      "Zeyu Liu",
+      "Shuyu Wu",
+      "Fanxing Li",
+      "Zhaoxin Fan",
+      "Wenjun Wu",
+      "Danping Zou"
+    ],
+    "published": "2026-08-04T15:54:32+00:00",
+    "updated": "2026-08-04T15:54:32+00:00",
+    "url": "http://arxiv.org/abs/2608.03851v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.03851v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.03727v1",
+    "title": "Track4Action: Distilling World-Centric 3D Tracker into Vision-Language-Action Policies",
+    "abstract": "Action labels tell a vision-language-action (VLA) policy which robot commands to imitate, but not how those commands change the 3D world. The aligned demonstration clip contains this missing supervision because its $K$ frame transitions record the geometry, motion, visibility, and camera change produced during the corresponding $K$ actions. We introduce Track4Action, a framework that distills this realized transition from a frozen world-centric 3D tracker into a current-observation VLA policy. During training, Track4World encodes the clip $V_{t:t+K}$ into a pooled tracker feature. Learnable track queries infer this feature from current VLA hidden states, match it in a shared space, and condition a flow-matching action head through a feature-wise gate. The tracker feature only defines the alignment target, so neither the clip nor the tracker is used at deployment. Track4Action reaches 82.3% on zero-shot LIBERO-Plus, improving the alignment-free variant by 7.6 points and LaMP by 3.0 points. It obtains 80.44% and 81.48% on the clean and randomized RoboTwin 2.0 splits, and 67.5% average success across four physical bimanual tasks, 25.0 points above the alignment-free variant. The gains across simulation and physical tasks support action-aligned 3D tracker features as privileged supervision for tracker-free VLA deployment. Our project page is available at https://wing0night.github.io/track4action-project-page.",
+    "authors": [
+      "Chenyi Wang",
+      "Xinkai Wang",
+      "Bokai Lin",
+      "Jialin Tian",
+      "Fucheng Zhang",
+      "Cewu Lu",
+      "Lixin Yang"
+    ],
+    "published": "2026-08-04T14:25:13+00:00",
+    "updated": "2026-08-04T14:25:13+00:00",
+    "url": "http://arxiv.org/abs/2608.03727v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.03727v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.03682v1",
+    "title": "PhyAI: Real-Time Physical AI at the Edge, Scalable Rollouts in the Cloud",
+    "abstract": "Physical AI policies require inference throughout their lifecycle, including model evaluation, cloud reinforcement learning rollout, edge GPU serving, and onboard deployment. Although these settings share the same checkpoint and action semantics, they often rely on separate inference programs. To unify them, we build PhyAI, a Physical AI inference engine with a single runtime that keeps architecture-specific conditioning, solver, cache, and output logic in model adapters while sharing graph execution, kernels, memory management, and parallel services. The same codebase runs vision-language-action (VLA) models and world-action models (WAMs) on single or multiple GPUs across onboard, edge, and cloud deployments. We used the adapter interface to add MiniCPM-Robot on the day of its release. PhyAI achieves 1.40x-4.65x speedups over the official implementations of pi0, pi0.5, GR00T N1.7, and MiniCPM-Robot. On Cosmos3-Nano-Policy-DROID it reduces latency from 2.46 to 1.18 s on eight H20 GPUs (CFG=2, TP=4), a 2.08x speedup. Specialized runtimes remain faster in several configurations, so our goal is one runtime with competitive latency rather than the fastest result in every case. Detailed profiles reveal why different models need different execution policies: on a Hopper-series GPU at batch size one, the pi0.5 action expert accounts for 8.8% of FLOPs but 57.2% of latency; at batch size 32 its share drops to 13.5% and throughput reaches about 100 samples/s. Cosmos3 remains generation-dominated and gains only 14.3% throughput as batch size increases from 1 to 16. We further introduce the control-time Roofline, which distinguishes inference-bound from environment-bound control; the measured pi0.5 points on four LIBERO suites are environment-bound while Cosmos3 stays inference-bound. Code and benchmarks: https://github.com/mingti-org/phyai.",
+    "authors": [
+      "Chenghua Wang",
+      "Daliang Xu",
+      "Dongqi Cai",
+      "Duojin Sun",
+      "Hao Zhang",
+      "Haoze Qian",
+      "Huaiyuan Zhang",
+      "Jinshuo Cui",
+      "Kezhao Zhao",
+      "Longxi Gao",
+      "Mengwei Xu",
+      "Rongjie Yi",
+      "Tianyue Zhang",
+      "Weikai Xie",
+      "Xiyuan Tan",
+      "Xuanzhe Liu",
+      "Yingying Qin",
+      "Yiwen Lu",
+      "Yuan Yao",
+      "Yuezhi Zu",
+      "Yunhan Guo",
+      "Ziqi Guo"
+    ],
+    "published": "2026-08-04T13:53:48+00:00",
+    "updated": "2026-08-04T13:53:48+00:00",
+    "url": "http://arxiv.org/abs/2608.03682v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.03682v1",
+    "categories": [
+      "cs.AI",
+      "cs.RO"
+    ],
+    "primary_category": "cs.AI"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.03563v1",
+    "title": "Unified Visuomotor Targets: Supervising VLAs Beyond Physical Actions",
+    "abstract": "VLA models are trained to predict robot actions from visual and language observations. This is a natural choice, but it creates a mismatch: VLMs encode rich, high-level representations of scenes and goals, while robot actions are low-level signals with limited task structure. We ask whether changing what the policy is trained to predict, rather than how it is architecturally designed, can yield better and more efficiently trained policies. We propose UVT (Unified Visuomotor Target), a unified latent prediction target that jointly encodes motor control and visual scene transition information, requiring no architectural changes and no additional data. Applied to two representative VLA systems across simulation benchmarks and real bimanual manipulation tasks, UVT improves training efficiency, final task performance, and policy robustness, with particularly strong gains under limited training budgets and challenging environmental conditions. Rollout videos and additional qualitative results are available at our project webpage: https://unified-visuomotor-targets.github.io/",
+    "authors": [
+      "Zhenyang Feng",
+      "Unnat Jain"
+    ],
+    "published": "2026-08-04T12:29:30+00:00",
+    "updated": "2026-08-04T12:29:30+00:00",
+    "url": "http://arxiv.org/abs/2608.03563v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.03563v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.03556v1",
+    "title": "Human Centric Embodied Intelligence for Soft Wearable Robotics",
+    "abstract": "Soft wearable robots have evolved rapidly from proof-of-concept devices into promising platforms for rehabilitation, occupational assistance, and human augmentation. As the field matures, its central challenge extends beyond the development of softer materials and more capable actuators to the integration of sensing, intelligence, and human adaptation into systems that users can wear comfortably, trust, and benefit from over extended periods. This transition motivates the concept of Human-Centric Embodied Intelligence (HCEI), in which intelligence emerges from the coupled human-robot system through the interaction of morphology, multimodal sensing, adaptive cognition, compliant actuation, and the wearer's own physiological and behavioral adaptation. To organize this perspective, this review introduces the Perception-Cognition-Actuation-Augmentation (PCAA) framework, which positions perception and cognition as the primary drivers of design, shifting development beyond the conventional actuator-first paradigm. Using this framework, the review synthesizes advances in soft materials, wearable sensing, artificial intelligence, actuation, human-robot interaction, digital twins, clinical translation, manufacturing, regulation, and ethics, highlighting how these interdependent components collectively shape long-term personalization and real-world deployment. By providing a unified conceptual framework and design perspective, this review aims to guide future research, foster interdisciplinary collaboration, and accelerate the translation of next-generation soft wearable robots toward personalized, predictive, and human-centric wearable intelligence.",
+    "authors": [
+      "Rainier Natividad",
+      "Raye Chen-Hua Yeow"
+    ],
+    "published": "2026-08-04T12:26:14+00:00",
+    "updated": "2026-08-04T12:26:14+00:00",
+    "url": "http://arxiv.org/abs/2608.03556v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.03556v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.03483v1",
+    "title": "Continue or Replan? Bernoulli-Continuation Policy Learning for Adaptive Horizon Execution",
+    "abstract": "Existing chunk-based Vision-Language-Action (VLA) models execute a fixed number of actions (i.e., execution horizon) before replanning, turning replanning into a task-agnostic periodic schedule that is independent of task progress. As a result, when no replanning boundary falls before a critical manipulation stage, it is executed from a stale chunk rather than a freshly replanned one. To address this limitation, we propose Bernoulli-Continuation Policy (BCP), a lightweight, plug-and-play framework for adaptive horizon execution that keeps the base VLA frozen. Given a fixed-length action chunk, its continuation head decomposes execution-horizon selection into a sequence of continue-or-replan decisions, which imposes an ordinal, prefix-sharing inductive bias over candidate horizons rather than treating them as independent classes. Since the optimal horizon for each chunk is not observable, we train this head with reinforcement learning from trajectory-level outcomes and introduce a Replanning-Efficiency Reward that jointly rewards task success and efficient VLA usage, discouraging the policy from collapsing to unnecessarily short horizons. On RoboTwin 2.0 with LingBot-VLA as the base policy, BCP improves the average success rate by +11.08% on 13 low-success tasks and from 89.88% to 93.94% (+4.06%) across all 50 tasks. Although trained only under the Clean setting, BCP generalizes to the Randomized setting, raising the average success rate by +4.06%. It also transfers to a different base policy $π_{0.5}$, achieving a better result on LIBERO (+1.7%) and, notably, on the harder LIBERO-PRO (+6.8%). On a real robot, BCP lifts success from 74% to 92% and from 44% to 84% on two manipulation tasks. Meanwhile, its negligible overhead, combined with higher success, makes BCP's overall runtime even lower than the fixed-horizon baselines.",
+    "authors": [
+      "Weichen Xu",
+      "Zhenhua Liu",
+      "Lin Luo",
+      "Yaobo Liang",
+      "Chengtang Yao",
+      "Qingyu Mei",
+      "Jian Cao",
+      "Xixin Cao",
+      "Xing Zhang",
+      "Jiaolong Yang",
+      "Baining Guo"
+    ],
+    "published": "2026-08-04T11:21:08+00:00",
+    "updated": "2026-08-04T11:21:08+00:00",
+    "url": "http://arxiv.org/abs/2608.03483v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.03483v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.CV",
+      "cs.LG"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.03387v1",
+    "title": "RoboReact: Agentic Skill Distillation from Generated Egocentric Videos for Generalizable Whole-Body Manipulation",
+    "abstract": "Humanoid robots have the potential to perform dexterous manipulation in human environments, yet acquiring diverse and generalizable skills remains costly due to expensive hardware data collection and labor-intensive annotation. Recent advances in video generative models provide a promising opportunity to synthesize rich manipulation experiences from visual observations, but transferring such imagined behaviors into executable whole-body humanoid skills remains largely unexplored. In this work, we present RoboReact, a framework that automatically synthesizes whole-body humanoid manipulation skills from a single egocentric RGB-D observation. RoboReact generates human manipulation videos, extracts geometry-preserving interaction keyframes through depth-aware 3D reconstruction, and retargets them to high-DoF humanoid platforms while preserving hand-object interaction geometry. To bridge the gap between imagined plans and physical execution, RoboReact performs online object-centric re-grounding and leverages a vision-language model-guided refinement loop to adapt skills under geometric mismatch and execution deviations. The refined skills are executed through a whole-body controller, enabling coordinated whole-body manipulation and dexterous interaction. Experiments on real humanoid robots demonstrate that RoboReact generalizes across diverse object configurations and robustly recovers from execution disturbances without requiring teleoperation or human demonstrations. These results highlight the potential of combining generative models, vision-language reasoning, and closed-loop control for scalable humanoid skill acquisition.",
+    "authors": [
+      "Shuliang He",
+      "Shuai Wang",
+      "Bo Yue",
+      "Junchi Teng",
+      "Changyu Wang",
+      "Guiliang Liu"
+    ],
+    "published": "2026-08-04T09:37:06+00:00",
+    "updated": "2026-08-04T09:37:06+00:00",
+    "url": "http://arxiv.org/abs/2608.03387v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.03387v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.03361v1",
+    "title": "The Evolutionary Origin of Values: implications for AI alignment, sentience and existential risk",
+    "abstract": "AI systems based on Large Language Models (LLMs) have prompted fears that they may harbor hidden goals, seek to dominate or eliminate humanity, or even suffer as sentient beings. We address these concerns by tracing the evolutionary origin of value in biological organisms. Values emerge from autopoiesis: living systems must actively maintain themselves against perturbation and dissipation. Natural selection has equipped them with hierarchies of \"vicarious selectors\" that guide their behavior toward fitness. LLMs, by contrast, are allopoietic and allotelic: they produce outputs for others, and their goals derive from user prompts rather than an autonomous drive. They lack the intrinsic motivation for self-preservation, dominance, or resource competition that underlies existential-risk scenarios, and the embodied vulnerability required for feeling or suffering. Still, because LLMs learn statistical patterns from human-generated text, they implicitly absorb human values as well as knowledge, allowing them to focus on what is relevant. That is why the \"orthogonality thesis\" separating intelligence from values does not apply to them. Such separation would in fact expose any intelligence to the frame problem: the combinatorial explosion of the search space that makes any realistic utility function physically uncomputable. That also precludes the convergence of instrumental values thesis. We conclude that the real alignment challenge lies not in preventing rogue AI agency, but in ensuring LLMs intelligently apply learned ethical values.",
+    "authors": [
+      "Francis Heylighen"
+    ],
+    "published": "2026-08-04T09:09:31+00:00",
+    "updated": "2026-08-04T09:09:31+00:00",
+    "url": "http://arxiv.org/abs/2608.03361v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.03361v1",
+    "categories": [
+      "cs.CY",
+      "cs.AI"
+    ],
+    "primary_category": "cs.CY"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.03244v1",
+    "title": "UniNav: A Unified World-Action Diffusion Model for Visual Navigation",
+    "abstract": "Image-goal visual navigation is a fundamental capability for embodied agents. Existing navigation policies efficiently predict waypoint trajectories but lack visual foresight, while navigation world models can anticipate future observations but often require costly planning rollouts. We present UniNav, a unified world-action model that generates future visual observations and continuous waypoint trajectories through a single diffusion process. Given history frames and a goal image, UniNav jointly denoises visual and waypoint tokens within a single transformer, unifying future prediction and action generation in a shared framework. To improve spatial grounding, we incorporate geometry-aware camera tokens. We also train on both trajectory-labeled navigation data and video-only data, enabling the model to benefit from diverse videos without waypoint annotations. Based on this unified framework, we introduce two variants: UniNav-Full jointly predicts interpretable future observations and their corresponding trajectories, while UniNav-Fast removes future-image tokens at inference for efficient trajectory prediction. Experiments on navigation benchmarks show that UniNav outperforms the strongest baseline in ATE across all datasets. With one-step inference, UniNav-Fast achieves a latency of 0.1s without a substantial accuracy drop. Code will be released.",
+    "authors": [
+      "Changqing Zhou",
+      "Yueru Luo",
+      "Zeyu Jiang",
+      "Changhao Chen"
+    ],
+    "published": "2026-08-04T07:15:45+00:00",
+    "updated": "2026-08-04T07:15:45+00:00",
+    "url": "http://arxiv.org/abs/2608.03244v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.03244v1",
+    "categories": [
+      "cs.AI"
+    ],
+    "primary_category": "cs.AI"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.03234v1",
+    "title": "Learning Context-Aware Motion Priors for Humanoid Control",
+    "abstract": "Motion priors provide powerful guidance for learning naturalistic humanoid behaviors. However, existing methods typically learn a general, task-agnostic prior from the entire reference dataset and apply it uniformly throughout policy training. As a result, the prior cannot distinguish which reference motions are relevant to the current task context, potentially providing irrelevant or conflicting guidance. We present Context-Aware Motion Priors (CMP), a framework that adapts a general motion prior to the current task context without manual skill labels, dataset partitioning, or a separate skill discovery stage. Specifically, CMP learns context-motion compatibility using high-advantage policy rollouts, while a demonstration-based objective keeps the learned relevance grounded in the reference distribution. The resulting relevance scores reweight reference supervision for training a lightweight context-conditioned adapter. To evaluate the effectiveness and generality of CMP, we instantiate it with both Adversarial Motion Priors and Score-Matching Motion Priors. Across five humanoid control tasks, CMP consistently improves task performance and sample efficiency, learns meaningful context-motion alignment, and remains robust to imbalanced reference distributions. These results show that adapting motion priors to task contexts provides more relevant guidance for humanoid policy learning.",
+    "authors": [
+      "Yunyang Mo",
+      "Yi Gu",
+      "Yangchen Zhou",
+      "Hanyang Cao",
+      "Renjing Xu"
+    ],
+    "published": "2026-08-04T07:05:31+00:00",
+    "updated": "2026-08-04T07:05:31+00:00",
+    "url": "http://arxiv.org/abs/2608.03234v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.03234v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.03231v1",
+    "title": "Structure-Aware Robust Fine-Tuning: Defending Vision-Language-Action Robots Against Physical Attention Hijacking",
+    "abstract": "Vision-Language-Action (VLA) policies promise general robotic manipulation, but their robustness against physical-world attacks remains fragile. In particular, we show that physically realizable adversarial patches can reliably induce failures by triggering a mechanism we call policy-critical action-to-vision attention hijacking, where action-conditioned attention is diverted from task-relevant regions to a localized patch. To demonstrate the threat, we propose Attention-Guided Semantic Disruption (AGSD), an Expectation-over-Transformation (EOT) optimized printable patch that jointly (i) concentrates action-to-vision attention on the patch and (ii) disrupts vision-language semantic alignment, yielding strong cross-task and cross-architecture transfer. To mitigate such attacks, we introduce Structure-Aware Robust Fine-Tuning (SARF), a zero-inference-overhead defense that fine-tunes only the visual encoder using feature anchoring, policy-critical attention correction, and language-guided geometric consistency restricted to semantically relevant regions. On LIBERO, SARF reduces OpenVLA's failure rate under AGSD from 100% to 14.2%-56.8% (28.6% average) across suites while preserving clean performance, and on a real PiPER manipulator it improves average success under AGSD from 23.0% to 65.0%. These results highlight mechanism-level robustness as a practical path to securing VLA robots against physical attention hijacking.",
+    "authors": [
+      "Jinquan Zhang",
+      "Dongfu Yin",
+      "Run Yang",
+      "Yufeng Yan",
+      "Zhen Tian",
+      "F. Richard Yu"
+    ],
+    "published": "2026-08-04T07:03:05+00:00",
+    "updated": "2026-08-04T07:03:05+00:00",
+    "url": "http://arxiv.org/abs/2608.03231v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.03231v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.03227v1",
+    "title": "PFM-HR: Pose Flow Matching for Humanoid Robots",
+    "abstract": "Motion priors improve reinforcement learning for physics-based humanoid tracking, but temporal priors require ordered motion clips, while pose priors provide limited guidance for policy-induced pose transitions. We present Pose Flow Matching for Humanoid Robots (PFM-HR), a reusable flow matching prior trained directly on large scale unordered pose data. PFM-HR introduces the Pose Geometry Score (PGS), which quantifies how joint coordinate changes during rollouts align with the local geometry of pose variation captured by the prior. Using PGS to modulate the tracking reward guides policy exploration toward structured pose changes while keeping the prior frozen across tracking tasks. Experiments demonstrate that PFM-HR improves both single motion and general motion tracking, especially for highly dynamic motions.",
+    "authors": [
+      "Yukang Gao",
+      "Yi Gu",
+      "Yangchen Zhou",
+      "Xingyu Chen",
+      "Zhaorui Wang",
+      "Fanghai Zhang",
+      "Hanyang Cao",
+      "Zhengyang Shen",
+      "Ji Ma",
+      "Runhan Zhang",
+      "Lei Han",
+      "Renjing Xu"
+    ],
+    "published": "2026-08-04T06:58:54+00:00",
+    "updated": "2026-08-04T06:58:54+00:00",
+    "url": "http://arxiv.org/abs/2608.03227v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.03227v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.03207v1",
+    "title": "DRIFT: Derailing Denoising Trajectories of Flow-Matching VLAs with Adversarial Patch Attack",
+    "abstract": "Flow-matching vision-language-action (VLA) models such as pi0 generate robot actions by integrating a learned denoising velocity field, and have been reported to resist adversarial perturbations that readily fool autoregressive VLAs. We show that this robustness is largely illusory: it stems from prior attacks ignoring the multi-step denoising ODE. We introduce DRIFT (Denoising Redirection via Input perturbation of the Flow-matching Trajectory), a test-time universal adversarial patch placed on the robot's gripper that attacks the denoising velocity field of an off-the-shelf policy. Our central finding is counterintuitive: attacking only the first denoising step is both stronger and cheaper than attacking a wider window of steps, which we explain through a gradient conflict unique to input-space optimization and which is exactly opposite to the training-time backdoor regime. On pi0 and pi0.5 across four LIBERO suites, DRIFT breaks essentially all originally-solvable tasks with a small single patch, far exceeding action- and embedding-space attack baselines.",
+    "authors": [
+      "Hoseong Tae",
+      "Jong-Seok Lee"
+    ],
+    "published": "2026-08-04T06:47:26+00:00",
+    "updated": "2026-08-04T06:47:26+00:00",
+    "url": "http://arxiv.org/abs/2608.03207v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.03207v1",
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.03127v1",
+    "title": "DigitCode: Symbolic Tokenization of Hand Motion by Anatomical Units",
+    "abstract": "Hand motion carries the finest-grained information in human activity, yet the representations behind hand generation, understanding, and robot learning are overwhelmingly continuous--joint angles or MANO parameters. These are accurate but unstructured: a finger cannot be indexed or edited as a symbol, and nothing marks a pose as anatomically valid. Discrete symbolic representations supply exactly this structure, and Hand Labanotation (HL) has shown they are feasible for the hand, writing motion as a T x 40 grid of one fixed direction symbol per bone. Building on this grid, we ask the question underneath it: the anatomical unit a symbol should span--bone, finger, or whole hand. DigitCode answers it by adapting, grouping, and layering HL's alphabet along the hand's unit hierarchy within one code, cutting the symbolic representation's quantization error by three quarters. The lever is the unit, not the quantizer family: at a fixed unit, training-free and learned strong quantizers are interchangeable on reconstruction, while moving down the anatomical hierarchy is what shifts accuracy. The hierarchy also tracks what downstream tasks need. Because a finger is a genuine, enumerable unit, one per-finger token doubles as a training-free, editable handle for jobs a continuous representation cannot address--repairing malformed generated hands, and retargeting them onto robots. We release HandTok, a reproducible testbed, so hand tokenizers can be compared unit-for-unit. Project page: https://digitcode-demo.github.io.",
+    "authors": [
+      "Haoyu Gu",
+      "Haotian Lu",
+      "Jingrun Du",
+      "Xiao-Ping Zhang"
+    ],
+    "published": "2026-08-04T04:55:47+00:00",
+    "updated": "2026-08-04T04:55:47+00:00",
+    "url": "http://arxiv.org/abs/2608.03127v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.03127v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.03103v1",
+    "title": "A Hierarchical Approach to Imitation Learning for Manipulation Tasks Requiring Time Varying Forces",
+    "abstract": "Diffusion policies have shown strong performance in learning complex, multi-modal behaviors for robotic manipulation. However, their application to contact-rich disassembly tasks remains limited by a key trade-off: the iterative denoising process introduces inference latencies that makes high frequency control difficult, which is essential for realizing dynamic interactions such as chiseling and prying. Recent action-chunking techniques mitigate latency but use an open-loop execution window, rendering the system blind to rapid force transients caused by fracture events. To bridge this gap, we introduce the Diffusion Policy Augmented by Fast Trajectory Generation (DPA-FTG). Compared to recent visual-tactile approaches that focus on positional correction, DPA-FTG decouples low-frequency planning from high-frequency force regulation. At the high level ($5$ Hz), a conditional diffusion model predicts a sequence of latent parameters for selecting a strategy from a learned vocabulary of task primitives. At the low level ($60$ Hz), a lightweight, force-conditioned policy acts as a neural impedance controller, modulating execution in real-time to maintain contact stability. We validate our approach on a bimanual battery disassembly task involving the separation of a compliant sheet. Experimental evaluation demonstrates that DPA-FTG outperforms state-of-the-art baselines, including Reactive Diffusion Policy (RDP).",
+    "authors": [
+      "Rishabh Shukla",
+      "Adithya Santhosh",
+      "Shaili Gandhi",
+      "Samrudh Moode",
+      "Satyandra K. Gupta"
+    ],
+    "published": "2026-08-04T04:21:00+00:00",
+    "updated": "2026-08-04T04:21:00+00:00",
+    "url": "http://arxiv.org/abs/2608.03103v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.03103v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.03052v1",
+    "title": "How Should Vision-Language-Action Models Use Proprioceptive State?",
+    "abstract": "Recent Vision-Language-Action (VLA) models almost universally take robot proprioceptive state as input, yet wire it in incompatible ways -- serialized into text prompts, projected into the vision-language prefix, or fed directly to the action expert -- and almost always as a single current frame. Three questions remain open: (1) whether, and on which tasks, current state actually improves closed-loop control; (2) how much state history helps, and whether its benefit reflects genuine temporal variation rather than added conditioning capacity; and (3) where state should enter the model -- the vision-language backbone or the action-generation module. We answer these questions through controlled experiments on a flow-matching VLA, fixing the backbone, training data, action representation, and evaluation protocol throughout. We implement five representative interfaces -- discrete state prompt, VLM prefix, action prefix, state expert, and feature modulation -- under matched implementation details, and evaluate them on 45 atomic tasks spanning three task families plus 20 composite tasks; we then sweep the state-history length from 1 to 96 frames to examine how historical state information affects model performance. The experiments yield systematic answers to all three questions, distilled into testable design principles for state-aware VLAs.",
+    "authors": [
+      "Yiren Zhao",
+      "Ziyang Chen",
+      "Ziyang Rao",
+      "Pengteng Li",
+      "He Zhang",
+      "Weiyu Guo",
+      "Yandong Guo",
+      "Rushi Dai"
+    ],
+    "published": "2026-08-04T03:05:47+00:00",
+    "updated": "2026-08-04T03:05:47+00:00",
+    "url": "http://arxiv.org/abs/2608.03052v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.03052v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.03034v1",
+    "title": "PACE: Adaptive Budget Allocation for Time-Efficient Embodied Planning",
+    "abstract": "Reasoning-enhanced large language models have achieved remarkable improvements in planning tasks, yet their deployment in embodied systems remains impractical due to prohibitive inference delays-often exceeding minutes per planning instance. The fundamental bottleneck stems from the serial nature of existing paradigms: models must complete all reasoning before any action execution, leaving execution time windows entirely unexploited. We introduce PACE (Planning with Adaptive Cognitive Effort), a framework that enables interleaved reasoning and execution through two key innovations: an Interleaved Think-Act architecture that pipelines cognitive processing with action execution, and a Dynamic Budget Allocator that adapts reasoning token budgets to available execution time windows. On the Robotouille benchmark using Qwen3-8B-AWQ, PACE achieves a 10% success rate-representing a 67% improvement over the ReAct+Think baseline-while delivering 6.9 times acceleration in thinking time compared to unconstrained reasoning. The framework hides 66.8% of thinking time within execution windows, demonstrating that strategic cognitive effort allocation can simultaneously improve both planning quality and time efficiency. These results provide evidence that time-aware architectural innovations enable reasoning models to operate in latency-sensitive embodied domains where they were previously impractical.",
+    "authors": [
+      "Yuchen Huang",
+      "Xijiang Ying",
+      "Zhenhua Ma",
+      "Xiaxiang Yuan",
+      "Zhijie Gao",
+      "Jiayi Huang",
+      "Ruichi Mao",
+      "Jiazheng Zhang",
+      "Hongsheng Ti",
+      "Maotao Tian",
+      "Rong Shi",
+      "Lu Zhao",
+      "Shizhuang Zhang",
+      "Zhuo Cui",
+      "He Wang",
+      "Ling Liu",
+      "Wei Zhang"
+    ],
+    "published": "2026-08-04T02:29:46+00:00",
+    "updated": "2026-08-04T02:29:46+00:00",
+    "url": "http://arxiv.org/abs/2608.03034v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.03034v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.02990v1",
+    "title": "EmbodiedVAE: Disentangled Video VAE for Efficient and Controllable Embodied Manipulation",
+    "abstract": "Latent diffusion models (LDMs) have recently significantly advanced embodied learning in constructing powerful embodied manipulation world models. However, despite the remarkable performance, existing LDMs predominantly rely on Variational Autoencoders (VAEs) optimized for natural scenes while failing to account for the unique characteristics of embodied manipulation scenarios, yielding latent representations that are neither compact nor controllable, thereby hindering efficient training of LDMs and precise robotic control. To solve this problem, we present EmbodiedVAE, a novel video VAE that provides compact yet controllable latent representations tailored for the robotic manipulation world models. Specifically, EmbodiedVAE adopts a dual-encoder, single-decoder architecture with an asymmetric spatio-temporal compression module, which automatically disentangles the robot arm's motion from background environment, resulting in overall compactness while providing explicit embodied latent to support fine-grained action control. To further preserve the temporal consistency of learned robotic motion latent, we introduce an optimal-transport-based consistency module that explicitly enforces motion fidelity and inter-frame coherence. Extensive experiments demonstrate that our proposed EmbodiedVAE achieves superior reconstruction quality with high compression rate, while enabling more precise action control in robotic manipulation scenarios with an average of 2dB PSNR improvement over state-of-the-art video VAEs.",
+    "authors": [
+      "Jiayi Luo",
+      "Hanxin Zhu",
+      "Chen Gao",
+      "Jiankun Wang",
+      "Cong Wang",
+      "Tianyu He",
+      "Jianxin Li",
+      "Zhibo Chen"
+    ],
+    "published": "2026-08-04T01:01:18+00:00",
+    "updated": "2026-08-04T01:01:18+00:00",
+    "url": "http://arxiv.org/abs/2608.02990v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.02990v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  }
+]
