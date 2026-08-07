@@ -1,6 +1,90 @@
 [
   {
     "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.06375v1",
+    "title": "$ω$-0: A Latent Predictive World Action Model for Concurrent Humanoid Loco-Manipulation",
+    "abstract": "Humanoid household tasks often require concurrent loco-manipulation, where the robot must move, adjust posture, maintain balance, and manipulate objects as a single coordinated behavior. Yet existing humanoid policies typically decompose locomotion and manipulation, while recent world-action models remain either arm-centric or video-centered. We present $ω$-0, a latent predictive whole-body world-action model for real-world humanoid concurrent loco-manipulation. Given a language instruction, current visual observation, and robot proprioceptive state, $ω$-0 directly predicts controller-compatible whole-body action latents for real-robot execution. Rather than reconstructing future videos, $ω$-0 learns compact future observation embeddings as a lightweight predictive objective, coupling latent visual foresight with diffusion-based whole-body action generation. The model supports egocentric RGB, exocentric RGB, and exocentric depth inputs, and leverages controller-based simulation replay to ground human/public visual-motion priors into robot-executable action latents. We further collect $ω$-HOME, a 40+ hour real-world household humanoid dataset with synchronized multi-view observations, whole-body SMPL motions, robot states, and action latents. Real-world experiments on 11 household tasks demonstrate that a single $ω$-0 model can produce smooth manipulate-while-moving behaviors and consistently outperform representative imitation learning, VLA, humanoid, and WAM baselines.",
+    "authors": [
+      "Zhe Li",
+      "Zhenzhe Zhang",
+      "Yangyang Wei",
+      "Wenjie Zhang",
+      "Xichen Yuan",
+      "Peiyuan Zhi",
+      "Gen Li",
+      "Xinying Guo",
+      "Fengjie Gao",
+      "Jianfei Yang",
+      "Shanghang Zhang"
+    ],
+    "published": "2026-08-06T17:59:31+00:00",
+    "updated": "2026-08-06T17:59:31+00:00",
+    "url": "http://arxiv.org/abs/2608.06375v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.06375v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.06374v1",
+    "title": "DyPES-VLA: Learning Shared Dynamics Priors and Embodiment-Specific Control for Cross-Embodiment Manipulation",
+    "abstract": "Vision-Language-Action (VLA) models have become a powerful paradigm for robot manipulation, but training a single generalist policy for heterogeneous robot embodiments remains an open problem. Existing methods have two main limitations. First, they underuse dynamics priors shared across diverse visual and interaction data, limiting cross-embodiment transfer. Second, they require extensive manual preprocessing to convert embodiment-specific actions into a common format. To overcome these limitations, we propose DyPES-VLA, a cross-embodiment VLA that learns shared Dynamics Priors and Embodiment-Specific control. First, we learn shared dynamics priors by training the vision-language model (VLM) with a future-prediction objective on cross-embodiment data, driving the shared query representation to capture object motion, contact, and interaction-induced scene changes. Second, an embodiment-specific Mixture-of-Experts (MoE) action head translates these shared dynamics priors into executable controls directly in each embodiment's native action space, without manually pre-aligning heterogeneous actions into a common format. This head shares attention layers to capture common temporal action structures, while its embodiment-specific feed-forward experts resolve the unique kinematic constraints and control semantics of distinct embodiments. As a generalist policy, our \\ourmethod achieves state-of-the-art performance across simulation and real-world evaluations, reaching 98.0% success on LIBERO, 59.25% on RoboCasa-GR1, and 89.02% on RoboTwin~2.0.",
+    "authors": [
+      "Junfeng Li",
+      "Junjie He",
+      "Zhide Zhong",
+      "Yangyang Zheng",
+      "Pingyue Sheng",
+      "Jiayu Dong",
+      "Ruixin Li",
+      "Haodong Yan",
+      "Jiaguan Zhu",
+      "Tianran Zhang",
+      "Runze Yu",
+      "Wen Chen",
+      "Liuqing Yang",
+      "Yuxiang Gao",
+      "Haoang Li"
+    ],
+    "published": "2026-08-06T17:59:20+00:00",
+    "updated": "2026-08-06T17:59:20+00:00",
+    "url": "http://arxiv.org/abs/2608.06374v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.06374v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.06332v1",
+    "title": "GeniWorld: A Generalizable Interactive World Model for Robotic Manipulation via Visual Actions",
+    "abstract": "Generalist robot policies exhibit strong capabilities, but their robustness in complex and unseen environments remains limited. Scaling robot learning and evaluation in diverse real-world environments remains costly and challenging. Action-conditioned world models offer a promising alternative, but they often suffer from limited action controllability and poor generalization to out-of-distribution (OOD) scenarios. To this end, we present GeniWorld, an interactive world model for robots that generalizes robustly across unseen scenarios. Building on pretrained video generative models, we use URDF-based rendering to transform numerical actions into visual action representations, enabling spatially grounded action control. By explicitly decoupling embodiment kinematics from environmental dynamics, our model mitigates scene overfitting and facilitates modeling of robot-environment interactions. To achieve closed-loop control, we construct an autoregressive video prediction model integrated with high-frequency robot kinematic control, enabling interaction with both robot policies and human teleoperators. In our experiments, even when trained solely on limited fixed-scene data, our model achieves superior in-domain performance and robust zero-shot generalization to highly randomized, unseen environments. For downstream applications, GeniWorld serves as a scalable policy evaluator that remains reliable under environmental perturbations. Furthermore, even with limited real-world demonstrations, GeniWorld generates diverse manipulation trajectories within the world model, improving downstream policy performance and robustness in complex environments.",
+    "authors": [
+      "Chenghao Gu",
+      "Hanyang Yu",
+      "Jingbo Zhang",
+      "Haitao Lin",
+      "Wenyao Zhang",
+      "Jinghe Wang",
+      "Hanglei Jin",
+      "Shuzhao Xie",
+      "Jingyan Jiang",
+      "Zhi Wang"
+    ],
+    "published": "2026-08-06T17:40:32+00:00",
+    "updated": "2026-08-06T17:40:32+00:00",
+    "url": "http://arxiv.org/abs/2608.06332v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.06332v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
     "id": "http://arxiv.org/abs/2608.06221v1",
     "title": "Robot Learning from Human Demonstrations: Handwritten Alphabet Trajectories and Human-Likeness Evaluation",
     "abstract": "Learning from demonstration (LfD) provides a developmental framework through which robots can develop motor skills by observing and imitating human dynamics, reducing reliance on explicit programming to teach a skill to a robot. The resulting human-like robot motion is recognised as a key factor in building trust and enabling natural collaboration in human-robot interaction. This paper presents a framework for learning human-like robot motion from demonstration, including data collection, probabilistic trajectory learning, and perceptual user evaluation. A dataset of 3,142 handwriting demonstrations was collected from 22 participants across all 52 Latin alphabet character-case combinations via a touchscreen teleoperation interface, capturing planar position, contact force, and timing. Building on the widely used Gaussian Mixture Model and Gaussian Mixture Regression approach for learning from demonstration, the framework is extended in this work by incorporating force and normalised time dimensions to enable richer representation of human dynamics, and adapting it to handle non-continuous, multi-segment trajectories, enabling generalisation across demonstrations. A user study with 21 participants evaluated the perceived human-likeness of the generated trajectories using a continuous scale anchored between robotic and human-like motion, normalised to 0-100 where 50 represents the neutral midpoint. The generated trajectories achieved an overall human-likeness score of 71.50 (SD=22.56), indicating that the majority of trajectories were perceived as more human-like. Participants identified geometric positioning and trajectory sequence as the most influential perceptual factors, and reported positive attitudes toward human-like robot behaviour. The datasets are released as open-source, providing a reproducible benchmark for developing and evaluating human-like robot motion methods.",
@@ -401,71 +485,6 @@
     "categories": [
       "cs.RO",
       "cs.CV"
-    ],
-    "primary_category": "cs.RO"
-  },
-  {
-    "source": "arXiv",
-    "id": "http://arxiv.org/abs/2608.05137v1",
-    "title": "SmartMage: Dynamic Modality Orchestration for 3D Scene Understanding",
-    "abstract": "Understanding 3D scenes is fundamental to embodied intelligence, requiring joint reasoning over heterogeneous information from multiple modalities, including visual and geometric cues. However, the relevance of these modalities often varies across queries. Existing Multimodal Large Language Models (MLLMs) typically rely on fixed modality combinations, overlooking query-dependent modality needs. Such a rigid design can introduce semantic noise from irrelevant modalities while underutilizing more informative ones, leading to wasted computation and diluted reasoning. To address these challenges, this paper proposes SmartMage, a unified MLLM that dynamically orchestrates heterogeneous modalities for semantic-aware 3D scene understanding. Specifically, SmartMage incorporates: (1) a Semantic-guided Modality Adaptive RouTng (SMART) module that selects task-relevant modalities using semantic priors, text-modality alignment, and modality quality; and (2) a Modality-Aware Gating Expert (MAGE) module that leverages modality priors to guide expert activation, fostering adaptive specialization in multimodal reasoning. Empirically, SmartMage achieves state-of-the-art performance across five 3D scene understanding benchmarks, and attains competitive results on RGB-only video understanding benchmarks. In our diagnostic benchmark ScanFacet, tasks are divided into fine-grained semantic categories, enabling analysis of modality combinations preferred by each semantic type. The observed modality-semantic patterns provide further evidence of SmartMage's effectiveness. Project page: https://yuecheong.github.io/SmartMage/.",
-    "authors": [
-      "Yue Zhang",
-      "Yingzhao Jian",
-      "Yunqiu Xu",
-      "Xiaoxiao Sun",
-      "Hehe Fan"
-    ],
-    "published": "2026-08-05T17:56:35+00:00",
-    "updated": "2026-08-05T17:56:35+00:00",
-    "url": "http://arxiv.org/abs/2608.05137v1",
-    "pdf_url": "https://arxiv.org/pdf/2608.05137v1",
-    "categories": [
-      "cs.CV"
-    ],
-    "primary_category": "cs.CV"
-  },
-  {
-    "source": "arXiv",
-    "id": "http://arxiv.org/abs/2608.05084v1",
-    "title": "Learning When to Stop: Prefix-Optimal Dynamic Diffusion Policies for Continuous Control",
-    "abstract": "Diffusion policies are a powerful policy class for continuous control, but their iterative denoising process creates a substantial computational bottleneck. Reducing this cost requires adapting the number of denoising steps to the difficulty of each action while preserving task performance. We introduce Prefix-Optimal Generative Policies (POGP), a framework that learns a prefix value function at every intermediate denoising step through a Bellman-style recursion over the denoising chain. The prefix value function serves two purposes: it provides an auxiliary training objective that encourages intermediate outputs to become high-quality actions, and it enables a test-time stopping rule that terminates denoising when additional steps are unlikely to produce meaningful improvement. Across four MuJoCo environments and comparisons with 12 baselines, POGP reduces the required number of denoising iterations by approximately 2.7-fold while retaining near-full task performance. Compared with state-of-the-art dynamic diffusion baselines, prefix training also improves final task performance by approximately 3.5%. These results indicate that supervising intermediate denoising steps is useful not only for adaptive early stopping, but also as an auxiliary objective that improves the learned policy.",
-    "authors": [
-      "Rohit Kumar Salla",
-      "Manoj Saravanan",
-      "Simon Stepputtis"
-    ],
-    "published": "2026-08-05T17:24:55+00:00",
-    "updated": "2026-08-05T17:24:55+00:00",
-    "url": "http://arxiv.org/abs/2608.05084v1",
-    "pdf_url": "https://arxiv.org/pdf/2608.05084v1",
-    "categories": [
-      "cs.LG",
-      "cs.RO"
-    ],
-    "primary_category": "cs.LG"
-  },
-  {
-    "source": "arXiv",
-    "id": "http://arxiv.org/abs/2608.05078v1",
-    "title": "SpikingNav: Robust Embodied Navigation with Spiking Neural Policies",
-    "abstract": "Embodied navigation requires an agent to make sequential decisions from egocentric observations in a physical environment. Existing Artificial Neural Network (ANN)-based navigation models have achieved strong performance, yet they often rely on dense computation and may degrade under visual corruptions. Spiking neural networks (SNNs) provide event-driven computation and intrinsic temporal dynamics, which are promising for compact and robust navigation on resource-constrained platforms. However, whether spike-based sensing and policy dynamics can improve robustness in visually rich embodied navigation remains an open problem. This paper proposes SpikingNav, a spiking framework for robust indoor embodied navigation. It contains a Spiking Sensing Encoder (SSE) and a Spiking Policy Network (SPN). The SSE extracts task-conditioned visual features with a spike-based backbone. The SPN maintains a recurrent policy state through membrane integration, thresholding, and spike-triggered reset. In this way, SpikingNav exploits the dynamic properties and spike activations of SNNs to improve navigation performance and robustness. We evaluate SpikingNav on PointNav and ObjectNav under clean observations and visual corruptions. SpikingNav achieves competitive clean performance and stronger robustness with fewer parameters and lower per-step computation than a matched ANN baseline. For instance, SpikingNav improves ObjectNav success from 31.05% to 34.12%, and raises the average success under visual corruptions from 8.45% to 13.71%, demonstrating the benefits of spike-based sensing and policy dynamics. We further validate the deployability of our spike-based sensing method on the Thruster-V2 neuromorphic chip. This physical hardware validation shows that SpikingNav can be instantiated on a real neuromorphic substrate for cyber-physical systems.",
-    "authors": [
-      "Jiahong Zhang",
-      "Sijun Shen",
-      "Dehua Wu",
-      "Yifan Lin",
-      "Xuechen Xia",
-      "Xu Chu",
-      "Youhui Zhang",
-      "GuoqiLi"
-    ],
-    "published": "2026-08-05T17:21:09+00:00",
-    "updated": "2026-08-05T17:21:09+00:00",
-    "url": "http://arxiv.org/abs/2608.05078v1",
-    "pdf_url": "https://arxiv.org/pdf/2608.05078v1",
-    "categories": [
-      "cs.RO"
     ],
     "primary_category": "cs.RO"
   }
