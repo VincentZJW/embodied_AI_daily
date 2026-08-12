@@ -1,0 +1,482 @@
+[
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.11204v1",
+    "title": "Surgical WAM: A World-Action Model for Data-Efficient Surgical Robot Learning",
+    "abstract": "Learning reliable surgical manipulation policies is bottlenecked by the scarcity of action-labeled demonstrations: teleoperated surgical robot (e.g., dVRK) trajectories with synchronized kinematics are costly to collect, while surgical tasks demand precise contact handling, long-horizon reasoning, and bimanual coordination. Endoscopic video is comparatively inexpensive and abundant relative to synchronized video--kinematics trajectories, and a natural way to exploit it is to learn world models of surgical scenes. However, existing surgical world models use video primarily for simulation or policy evaluation, and rarely translate the learned dynamics into closed-loop control. This gap raises our central question: under a fixed budget of action-labeled demonstrations, does action-free video pretraining improve closed-loop surgical manipulation? To answer it, we introduce the Surgical World-Action Model (Surgical WAM), a unified generative model built on Cosmos Policy that jointly predicts future endoscopic observations and executable surgical robot action chunks. Surgical WAM first learns surgical visual dynamics from action-free video and is then fine-tuned on the fixed action-labeled budget; at deployment, it acts as a closed-loop, receding-horizon controller that executes a short prefix of each predicted action chunk and replans from the resulting observation. On a suite of four simulated surgical manipulation tasks, video pretraining improves the average success rate from 63.5% to 77.8%, including an absolute gain of 20 percentage points on PegTransfer, with the largest improvements on contact-rich and bimanual tasks. These results demonstrate that action-free video provides transferable visual dynamics priors for learning surgical robot control with limited action supervision, positioning data-efficient video pretraining as a practical path toward scaling up surgical robot learning.",
+    "authors": [
+      "Wenrui Bao",
+      "Tianyun Jiang",
+      "Zhiben Chen",
+      "Ser-Nam Lim",
+      "Peter D. Peng",
+      "Yuzhang Shang"
+    ],
+    "published": "2026-08-11T17:59:13+00:00",
+    "updated": "2026-08-11T17:59:13+00:00",
+    "url": "http://arxiv.org/abs/2608.11204v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.11204v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.CV"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.11150v1",
+    "title": "CausalSplat: Towards Comprehensive Hierarchical Reasoning in 3D Gaussian Splatting",
+    "abstract": "While 3D Gaussian Splatting (3DGS) has advanced open vocabulary scene understanding, existing methods remain confined to explicit queries. They struggle to interpret implicit intents, complex spatial constraints, and commonsense reasoning required for practical embodied interactions. To address this gap, we introduce the task of reasoning 3D Gaussian segmentation and construct two benchmarks, Causal-LERF and Causal-ScanNet. These benchmarks systematically evaluate commonsense, spatial, affordance, and counterfactual reasoning. Evaluations reveal that current state of the art methods perform poorly on these reasoning challenges. Therefore, we propose CausalSplat, a framework that integrates vision-language models with 3D scene graphs to disentangle explicit structural perception from implicit logical inference. Extensive experiments demonstrate that CausalSplat achieves state of the art performance on our reasoning benchmarks while showing strong generalizability on standard referring and open vocabulary 3D segmentation tasks. Project Page: https://jiayuding031020.github.io/CausalSplat",
+    "authors": [
+      "Jiayu Ding",
+      "Meilu Song",
+      "Yun Chen",
+      "Wei Gao",
+      "Ge Li"
+    ],
+    "published": "2026-08-11T17:09:49+00:00",
+    "updated": "2026-08-11T17:09:49+00:00",
+    "url": "http://arxiv.org/abs/2608.11150v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.11150v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.11051v1",
+    "title": "HUI360: A 360° Egocentric Dataset and Baselines for Human-Robot Interaction Anticipation",
+    "abstract": "As robots increasingly operate in human-populated environments, anticipating human intentions is essential for enabling proactive and socially aware behavior. Automatic anticipation of human-robot interactions is thus emerging as a crucial perception challenge for embodied agents. To this end, we introduce HUI360, the largest dataset for human-robot interaction anticipation in the wild and its set of baselines. The dataset was collected from a mobile robot, in the wild, over multiple days within a 3-month period, and in several environments, capturing natural, spontaneous behaviors from both passersby and users, and encompassing a diverse range of individuals. This variety enables evaluating and improving the generalization capabilities of interaction anticipation models. We designed a pipeline and share code for automatic interaction annotation in arbitrary 360-degree equirectangular videos, along with interfaces for manual refinement. Using this pipeline, we release the HUI360 open set of 1M pre-processed annotations, including detailed 2D poses, facial keypoints, and segmentation masks, obtained using state-of-the-art computer vision methods and manually curated to ensure high-quality tracking and interaction annotation. Additionally, we release the raw panoptic 360-degree images captured from the robot's egocentric viewpoint (on demand, for research purpose only in compliance with GDPR). Finally, we establish benchmark baselines for interaction anticipation, including the first cross-dataset evaluations for this task: to this end, we also release 6M annotations for another existing in-the-wild outdoor dataset collected from a mobile robot (SSUP-HRI). Dataset and code can be found at https://hucebot.github.io/hui360.",
+    "authors": [
+      "Raphael Lorenzo-Louis",
+      "Fabio Amadio",
+      "Bertrand Luvison",
+      "Serena Ivaldi"
+    ],
+    "published": "2026-08-11T15:22:14+00:00",
+    "updated": "2026-08-11T15:22:14+00:00",
+    "url": "http://arxiv.org/abs/2608.11051v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.11051v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.11017v1",
+    "title": "R4DSG: Relative 4D Scene Graph Memory for Object-Centric Question Answering in Long Egocentric Video",
+    "abstract": "Long-horizon egocentric video is a rich substrate for wearable AI assistants, but object-centric questions such as where an item was moved, when it last changed state, or why it was relocated remain difficult because caption- and transcript-based memories rarely preserve persistent object identity or structured spatial change. Existing long-video QA methods mainly emphasize temporal grounding and clip retrieval, while prior 3D scene-graph methods typically assume stronger geometry than free-motion wearable RGB video provides, including point clouds, RGB-D input, posed views, sparse reconstruction, or reconstructed scenes. R4DSG introduces a relative 4D scene graph memory for long egocentric video. Instead of storing raw graph sequences, R4DSG converts video into compact queryable memory entries indexed by time, place, persistent objects, anchor-relative change, and local interaction context. The main idea is to separate stable anchors from dynamic objects, maintain persistent object identity across frames, and represent object state through anchor-relative transitions rather than a globally aligned world model. Built on recent RGB-only advances in promptable video segmentation, temporal propagation, and relative 3D lifting, the method produces a retrieval-ready memory directly usable for long-horizon question answering. Evaluation on a 255-question object-related subset from EgoLifeQA shows, under question-only retrieval, a 6.7-point overall gain over EgoRAG-Text and a 12.5-point gain on when questions, which highlights the value of temporally organized object memory. These results position relative 4D scene graphs as a practical memory substrate for wearable assistants, AR systems, and embodied multimedia agents. GitHub Page: https://dualtransparency.github.io/R4DSG/.",
+    "authors": [
+      "Ke Ma",
+      "Yamin Mao",
+      "Weiming Li",
+      "Shuai Tan",
+      "Yijie Zhong",
+      "Hao Chen",
+      "Haofen Wang",
+      "Meng Wang"
+    ],
+    "published": "2026-08-11T15:00:15+00:00",
+    "updated": "2026-08-11T15:00:15+00:00",
+    "url": "http://arxiv.org/abs/2608.11017v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.11017v1",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.HC",
+      "cs.MM"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.10976v1",
+    "title": "XCoT-VLA: Executable Chain-of-Thought for Vision-Language-Action Driving",
+    "abstract": "Vision-Language-Action (VLA) models can connect scene understanding, semantic reasoning, and trajectory generation for autonomous driving. However, verbose natural-language Chain-of-Thought (CoT) is poorly suited to real-time control because it is open-ended, costly to decode, and difficult to optimize as an action-facing representation. We propose XCoT-VLA, which replaces descriptive rationales with compact executable CoT tokens learned from automatically constructed Reason-Action supervision. Logged trajectories provide action evidence, while scene context supplies causal semantics. The predicted XCoT sequence remains in context and conditions fixed trajectory queries through shared multimodal self-attention. Deterministic token-function routing applies the Reason FFN to XCoT tokens and the Control FFN to trajectory queries for flow-matching trajectory generation. We further introduce XCoT Policy Optimization (XCPO) as an optional refinement extension in the same executable token space. XCoT-VLA reduces longitudinal ADE from 1.645 to 1.323 on a general-distribution set and lateral FDE from 1.616 to 0.648 in lane-change scenarios. By representing driving-oriented reasoning with only 2-6 executable XCoT tokens, our method substantially reduces autoregressive reasoning overhead and remains within the real-time planning budget. These results demonstrate that driving-oriented reasoning can be compact, executable, and directly connected to trajectory generation.",
+    "authors": [
+      "Foundation Model Team",
+      "XPeng Inc"
+    ],
+    "published": "2026-08-11T14:33:21+00:00",
+    "updated": "2026-08-11T14:33:21+00:00",
+    "url": "http://arxiv.org/abs/2608.10976v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.10976v1",
+    "categories": [
+      "cs.AI"
+    ],
+    "primary_category": "cs.AI"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.10915v1",
+    "title": "ComBodied Agents: a New Paradigm of Human-Centric Agentic AI",
+    "abstract": "After an older adult misses a medication dose, a software agent can send another reminder and an embodied agent can bring the medication. Yet neither explains whether the person forgot, is confused, has side effects, or deliberately refused, nor what support is appropriate. This reveals a structural gap in Agentic AI: Digital Agents primarily transform software states, while Embodied Agents transform physical states; neither makes a person's evolving state and agency the primary object of modeling, intervention, and evaluation. We introduce Combodied Agents, a human-centered paradigm that perceives, models, predicts, and supports individual human-state trajectories over time, using software tools, sensors, wearables, robots, and human services as action channels rather than end goals. We unify fragmented capabilities across personal assistants, health agents, AI companions, and adaptive human--AI systems into a closed loop: event-based multimodal perception reconstructs meaningful personal events; longitudinal, correctable memory provides temporal context; Personal World Models estimate future personal states and outcomes under alternative decisions and interventions; and an admissible intervention policy selects proportionate support under consent, uncertainty, safety, reversibility, and user control. Feedback from the person and environment updates the loop. Rather than requiring an exhaustive Human Digital Twin, the framework uses purpose-bounded, uncertainty-aware, user-correctable representations. We organize the design space by human-state targets, relational contexts, and agent roles, and propose scenario-centered evaluation, agency-preservation metrics, benchmark requirements, edge-native personal models, and governance directions. Combodied Agents shift Agentic AI from external task completion toward sustained human benefit.",
+    "authors": [
+      "Qianggang Ding",
+      "Xingyao Wang",
+      "Rui Feng",
+      "Zhibin Wang",
+      "Feixiang Wang",
+      "Kelong Mao",
+      "Hao Sun",
+      "Zhiyao Luo",
+      "Jiankai Tang",
+      "Lei Li",
+      "Jiadong Guo",
+      "Minheng Ni",
+      "Weicong Lin",
+      "Chenxi Yang",
+      "Hongxiang Gao",
+      "Zhenghua Chen",
+      "Yang Bai",
+      "Min Wu",
+      "Jun Cheng",
+      "Huazhu Fu",
+      "Dacheng Tao",
+      "Bang Liu"
+    ],
+    "published": "2026-08-11T13:35:58+00:00",
+    "updated": "2026-08-11T13:35:58+00:00",
+    "url": "http://arxiv.org/abs/2608.10915v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.10915v1",
+    "categories": [
+      "cs.AI"
+    ],
+    "primary_category": "cs.AI"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.10864v1",
+    "title": "Multi-View Relational Distillation for Spatial Reasoning with Vision-Language Models",
+    "abstract": "Vision-language models (VLMs) have achieved strong image and video understanding, yet their visual-spatial representations remain geometrically fragile, leading to failures in spatial reasoning needed for embodied AI, robotics, and autonomous driving. Prior approaches to geometry grounding either fine-tune VLMs on spatial question answering, which can perpetuate spurious visual representations, or fuse features from large geometry-grounded vision models, which substantially increases model size at inference. Knowledge distillation from geometry-grounded vision models offers an alternative, but directly matching multi-view teacher features can disrupt the pretrained alignment between visual and textual representations, degrading object- and language-semantic capabilities. We propose multi-view relational distillation (MVRD), which distills patch-wise cosine similarities across views instead of the teacher features themselves. These relations encode geometric correspondences adequate for spatial understanding, while leaving the student representation underdetermined, allowing it to remain close to its pretrained vision- language space. Across representative VLMs, MVRD improves visual-spatial reasoning, outperforming supervised fine-tuning and feature distillation while approaching feature fusion methods with considerably fewer added parameters and lower latency. We show that MVRD makes visual representations more geometric while retaining language alignment, and generalizes to 3D scene understanding tasks such as object grounding, dense captioning, and question answering.",
+    "authors": [
+      "Kiet T. Nguyen",
+      "Hanbo Shim",
+      "Jinwoo Kim",
+      "Seunghoon Hong"
+    ],
+    "published": "2026-08-11T12:34:41+00:00",
+    "updated": "2026-08-11T12:34:41+00:00",
+    "url": "http://arxiv.org/abs/2608.10864v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.10864v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.10824v1",
+    "title": "Neural Introspection Gating for Adaptive KV-Cache Reuse in Vision-Language-Action Models",
+    "abstract": "Vision-Language-Action(VLA) models map camera images and language instructions directly to motor commands through a single autoregressive transformer. In real-time control, they still spend substantial compute recomputing key-value(KV) representations for visual tokens that barely change across neighboring frames. Recent work such as VLA-Cache reduces that cost by reusing KV states for visually static patches, but its policy relies only on observation-space heuristics and does not account for the model's own uncertainty. We propose Gated VLA-Cache, a lightweight, training-free extension that augments visual-similarity caching with neural introspection. The method monitors the logit margin between the top two predicted action tokens, a zero-cost confidence signal available during decoding. When the margin drops below a threshold, the cache is invalidated and a full recompute is triggered. Evaluated on four LIBERO benchmark suites with both OpenVLA and OpenVLA-OFT, Gated VLA-Cache improves reliability when blind caching hurts. On LIBERO-Goal and LIBERO-Long, it recovers over 100% of the lost accuracy while retaining 80% of the compute savings.",
+    "authors": [
+      "Zhijie Wu",
+      "Kento Kawaharazuka",
+      "Kei Okada"
+    ],
+    "published": "2026-08-11T11:53:10+00:00",
+    "updated": "2026-08-11T11:53:10+00:00",
+    "url": "http://arxiv.org/abs/2608.10824v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.10824v1",
+    "categories": [
+      "cs.RO",
+      "cs.CV"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.10756v1",
+    "title": "Embodied Multimodal Grounding for Open-Vocabulary Mobile Manipulation via Semantic 3D Gaussian Splatting",
+    "abstract": "Embodied mobile manipulation requires language, visual observations, three-dimensional scene structure, and action feasibility to be aligned before execution. We study open-vocabulary target grounding with few-shot manipulation in local household workspaces and present an embodied multimodal grounding framework that integrates active multi-view Semantic 3D Gaussian Splatting (Semantic-3DGS), reachability-aware base positioning, and a diffusion-based vision-language-action policy. A task-driven local Semantic-3DGS serves as a shared interface across active sensing, language-conditioned 3D localization, obstacle-aware scene reasoning, base preparation, and semantic conditioning of the action model. To preserve pretrained action priors, the 3D semantic cues are injected only into the late action-expert blocks. In expanded 50-trial real-robot evaluations against representative vision-language-action (VLA) approaches, the full system achieves 60% long-horizon success compared with 40% for PointVLA and 28% for DexVLA, and reaches 74% success in heavily cluttered manipulation compared with 52% for the single-view variant and 46% for PointVLA. It also maintains 75% success under a 75 cm height shift and eliminates photo-induced false grasps. These results indicate that explicit, refreshable 3D semantic grounding can improve robustness under clutter, occlusion, viewpoint variation, and embodiment constraints.",
+    "authors": [
+      "Huosen Ou",
+      "Dongni Song",
+      "Yuncong Wang",
+      "Tao Zhou",
+      "Yiding Ji"
+    ],
+    "published": "2026-08-11T10:16:30+00:00",
+    "updated": "2026-08-11T10:16:30+00:00",
+    "url": "http://arxiv.org/abs/2608.10756v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.10756v1",
+    "categories": [
+      "cs.RO",
+      "cs.CV"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.10718v1",
+    "title": "TCAM for Autonomous Deformable Manipulation: The RMC2 Champion System for WBCD 2026 Track 4",
+    "abstract": "This technical report describes the RMC2 Team's champion solution for the WBCD 2026 Track 4: Deformable Manipulation Challenge. The task requires a robot to pick a single T-shirt from a stack, load it onto a printing pallet, align the collar with a target area, and smooth the printing region, a sequence that involves single-layer separation, deformable transport, precise placement, and contact-rich surface adjustment. The competition strongly incentivizes fully autonomous execution, motivating the development of an autonomous solution. We built a fully autonomous system around the TCAM (TermiBrain Causal Action Model) framework, with the design principle that hardware, perception, data, and learning should jointly reduce the physical interaction complexity the policy must handle. A custom 3D-printed gripper designed for single-layer fabric separation improves picking reliability on a dual-arm ARX X5 platform. A wrist-centric four-camera setup pairs upper fisheye cameras for task-level context with lower RGB cameras for close-range gripper-cloth contact observation. We combine portable UMI-style demonstrations with real-robot demonstrations collected on the deployable platform to provide both broad manipulation priors and deployment-specific dynamics. TCAM ties these components into a closed loop: each trajectory is analyzed to identify the physical factors contributing to its outcome, driving targeted data recollection and policy fine-tuning. The policy outputs 30-step end-effector delta-pose action chunks from a multi-view VLA backbone. In the final competition, our system loaded 25 T-shirts at an average of approximately 23 seconds per attempt, with 22 achieving the required surface smoothness, securing first place in Track 4.",
+    "authors": [
+      "Guangrui Shen",
+      "Zhili He",
+      "Shigang Wang",
+      "Yuanjun Sun",
+      "Qing Yu"
+    ],
+    "published": "2026-08-11T09:35:39+00:00",
+    "updated": "2026-08-11T09:35:39+00:00",
+    "url": "http://arxiv.org/abs/2608.10718v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.10718v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.10618v1",
+    "title": "Toward the Cognitive--Physical Limits of Embodied Intelligence through a World-Model-Centric Autonomous Racing Agent",
+    "abstract": "Embodied artificial intelligence aims to develop agents that perceive, reason, and act through continuous interaction with the physical world. However, most embodied systems are still evaluated within conservative safety margins or moderate interaction regimes, leaving their capability boundaries under extreme conditions insufficiently understood. Autonomous racing provides a stringent testbed by combining high-frequency localization and perception, adversarial interaction, near-saturated vehicle dynamics, and strict safety constraints. Existing systems push high-speed performance but rarely model and refine cognitive and physical limits jointly. Here we show that a world-model-centric autonomous racing agent provides a concrete step toward exploring these coupled limits. The framework learns predictive world models from near-limit successes and failures to capture interaction evolution, ego dynamics, and feasible-motion boundaries, coupling world-state construction, future-aware reasoning, and near-limit control in a closed-loop refinement process. Training data were collected from real-vehicle autonomous racing, where the onboard system maintained robust localization and perception at speeds up to 256.3 km/h and peak lateral acceleration of 26.8 m/s$^2$. In full-scale simulated racing, the well trained world-model-centric agent achieves an 88.3% interaction success rate across various challenging simulated racing scenarios. Closed-loop refinement of the world model and policy further improved utilization of cognitive-physical limits, recovery from failure modes, and generalization across varying conditions and unseen circuits. These results suggest a boundary-aware methodology in which world models help embodied agents represent, predict, and continually refine their capability boundaries for safer real-world deployment.",
+    "authors": [
+      "Zitong Shan",
+      "Baichuan Lou",
+      "Yanxin Zhou",
+      "Shuge Wu",
+      "Xianqi He",
+      "Bolin Zhao",
+      "Sheng Zhao",
+      "Zhouheng Li",
+      "Chee Kiong Ong",
+      "King Ho Holden Li",
+      "Chen Lv"
+    ],
+    "published": "2026-08-11T08:01:35+00:00",
+    "updated": "2026-08-11T08:01:35+00:00",
+    "url": "http://arxiv.org/abs/2608.10618v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.10618v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.10600v1",
+    "title": "BooST: Bridging Semantics and Motions for Efficient Skill Transfer",
+    "abstract": "Skill abstraction---the process of learning reusable and temporally extended behaviors---has emerged as a key paradigm for improving sample efficiency and generalization in robot learning. For efficient skill transfer to real robots, learned skills must generalize across tasks and domains, remain robust to visual and dynamic perturbations, and be efficient enough for practical deployment. However, existing methods typically satisfy only a subset of these properties, as they capture either high-level semantic intent (what) or low-level motion dynamics (how). This incomplete skill transfer yields weak priors for policy learning, thereby demanding substantial in-domain data for downstream adaptation. To address these challenges, we introduce BooST, a two-stage framework that explicitly bridges semantics and motions to satisfy all three desiderata. BooST first leverages a cross-modal VQ-VAE to capture both semantic intent and motion dynamics, yielding a unified skill representation. It then distills this representation into a lightweight policy for efficient downstream adaptation to new tasks. Extensive experiments across simulation and real-robot settings demonstrate that BooST achieves superior few-shot adaptation, cross-domain skill transfer, and robustness to dynamic visual distractors, while maintaining a lightweight yet expressive design suitable for real-world deployment.",
+    "authors": [
+      "Jusuk Lee",
+      "Daesol Cho",
+      "Jonghun Shin",
+      "Seungyeon Yoo",
+      "Jonghae Park",
+      "Taekbeom Lee",
+      "H. Jin Kim"
+    ],
+    "published": "2026-08-11T07:35:12+00:00",
+    "updated": "2026-08-11T07:35:12+00:00",
+    "url": "http://arxiv.org/abs/2608.10600v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.10600v1",
+    "categories": [
+      "cs.RO",
+      "cs.CV",
+      "cs.LG"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.10484v1",
+    "title": "Lost in Reconstruction: Aligning Action Representations with Language in Vision-Language-Action Models",
+    "abstract": "Action verbs describe not only the physical outcomes of actions, but also how those actions are performed. Yet action representations in vision-language-action models (VLAs) are typically optimized for reconstruction under L1/L2 losses in raw action space, where numerical proximity need not reflect linguistically meaningful distinctions. On BridgeV2, we show that action trajectories contain verb-grounding information beyond visual state changes, and that reconstruction-only discrete tokenization systematically erodes this information. To address this problem, we introduce SALT, a Semantically ALigned action Tokenizer that augments a VQ-VAE-style tokenizer with an auxiliary objective requiring a frozen vision-language model to recover the episode instruction from quantized action latents. Policies trained with SALT achieve 71.9% average success in SimplerEnv, compared with 42.7% for a reconstruction-only VQ-VAE tokenizer and 31.2% for FAST. SALT also develops verb-specialized codes while maintaining reconstruction fidelity. These results show that robot action trajectories provide a source of language grounding and that preserving this structure in action representations can substantially improve language-conditioned control.",
+    "authors": [
+      "Li Wenjie",
+      "Yash Jangir",
+      "Ignacy Stepka",
+      "Yash Agarwal",
+      "Marion Kipsang",
+      "Yonatan Bisk"
+    ],
+    "published": "2026-08-11T04:57:17+00:00",
+    "updated": "2026-08-11T04:57:17+00:00",
+    "url": "http://arxiv.org/abs/2608.10484v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.10484v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.10413v1",
+    "title": "DriveVLA-M0: Failure-Aware Memory Augmentation for Autonomous Driving",
+    "abstract": "Vision-Language-Action (VLA) models have recently emerged as a promising paradigm for end-to-end autonomous driving by enabling unified reasoning across perception, language, and planning. However, existing approaches lack mechanisms to exploit past failures or adapt to distribution shifts, causing the model to persistently underperform on similar scenarios where it has previously failed. In this paper, we propose DriveVLA-M0, a retrieval-augmented VLA with failure-aware latent memory. We construct a latent memory pool that stores failure cases along with their structure scene representations and expert trajectory labels, and design a dedicated Retrieve Model that decouples static road structure and dynamic agent interactions to enable structurally grounded retrieval. At inference time, retrieved cases are injected into the model via a lightweight decoupled LoRA-based test-time training (TTT) mechanism, allowing targeted and scenario-specific correction without modifying the backbone. Extensive experiments on NAVSIMv1 and NAVSIMv2 benchmark demonstrate that our approach consistently outperforms prior methods, achieving 94.1 PDMS on Navtest and 47.0 EPDMS on Navhard with only 26.44 ms TTT backward latency overhead. Furthermore, we show that DriveVLA-M0 scales effectively with additional memory, enabling training-free performance gains through memory expansion. The code is available at https://github.com/ZebinX/DriveVLA-M0.",
+    "authors": [
+      "Zebin Xing",
+      "Yupeng Zheng",
+      "Qiang Chen",
+      "Linbo Wang",
+      "Yichen Zhang",
+      "Pengxuan Yang",
+      "Junli Wang",
+      "Deheng Qian",
+      "Xiaoqing Ye",
+      "Junyu Han",
+      "Yifeng Pan",
+      "Qichao Zhang",
+      "Dongbin Zhao"
+    ],
+    "published": "2026-08-11T03:01:46+00:00",
+    "updated": "2026-08-11T03:01:46+00:00",
+    "url": "http://arxiv.org/abs/2608.10413v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.10413v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.10393v1",
+    "title": "Hidden in Plain Sight: Diffusion-Based Unrestricted Robotic Attacks on Vision-Language-Action Models",
+    "abstract": "Vision-Language-Action (VLA) models have shown strong capabilities in controlling robots across diverse manipulation tasks. However, their adversarial robustness remains largely underexplored, and exploiting this weakness can lead to physical-world harm. Existing attacks on VLA models often rely on pixel-space perturbations or white-box access, resulting in noticeable artifacts and limited deployability in real-world robotic systems. In this work, we propose DURA, a diffusion-based unrestricted robotic attack that generates visually natural adversarial patches for VLA models. DURA supports both white-box and black-box attack settings, where the black-box setting requires only the predicted actions of the victim model. By optimizing along the latent trajectory of a pretrained diffusion model, DURA generates visually natural patches while steering the robot toward attacker-specified target actions. Extensive experiments in both simulation and the real physical world show that DURA consistently outperforms existing methods. Our findings expose a safety risk for physically deployed VLA models and call for stronger defenses.",
+    "authors": [
+      "Jiahui Han",
+      "Yuhui Yao",
+      "Xin Wang",
+      "Jiafei Cao",
+      "Mingxuan Zhang",
+      "Danfeng Shan",
+      "Huiqi Deng",
+      "Guanchu Wang",
+      "Xia Hu"
+    ],
+    "published": "2026-08-11T02:41:08+00:00",
+    "updated": "2026-08-11T02:41:08+00:00",
+    "url": "http://arxiv.org/abs/2608.10393v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.10393v1",
+    "categories": [
+      "cs.AI",
+      "cs.RO"
+    ],
+    "primary_category": "cs.AI"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.10346v1",
+    "title": "Towards Unified Dynamic Face Landmark Detection",
+    "abstract": "Although advancements in face landmark detection (FLD) methods continue to push performance boundaries, they overlook two major functional limitations: (1) different network parameters need to be trained independently for each ``$N$-point'' benchmark dataset, and (2) a model trained on an ``$N$-point'' dataset reliably outputs only the $N$ landmarks. In our work, we first conceptualize Face Part-Anchored Landmark Positions (FPALPs), wherein each landmark is treated as a progression value between zero (start) and one (end) along a face part's contour. Every landmark can be expressed in the FPALP format, irrespective of its source dataset, hence unlocking the ability to unify all ``$N$-point'' datasets into a single dataset. Secondly, we represent each landmark with an FPALP-based query, refine it progressively with a cross-modality decoder, and predict its coordinates based on the final representation. Our approach, called Unified Dynamic FLD, embodies these two design choices and streamlines the landmark detection pipeline by enabling (1) a single model to learn on any number of ``$N$-point'' datasets, and (2) yield any number of specific landmark predictions by loading the designated landmark queries at runtime. Extensive experiments on multiple benchmark datasets show that our method delivers these benefits while remaining competitive with, and in several cases outperforming existing state-of-the-art methods.",
+    "authors": [
+      "Sebastian Regalado",
+      "Varshanth R. Rao",
+      "Ruowei Jiang",
+      "Parham Aarabi",
+      "Igor Gilitschenski"
+    ],
+    "published": "2026-08-11T01:14:53+00:00",
+    "updated": "2026-08-11T01:14:53+00:00",
+    "url": "http://arxiv.org/abs/2608.10346v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.10346v1",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.10278v1",
+    "title": "Chain of Spatial Thoughts: Modality-Agnostic Spatial Grounding for Vision Language Models",
+    "abstract": "Spatial understanding is fundamental to embodied intelligence, underpinning applications such as robotic manipulation, embodied navigation, and autonomous driving. Although recent vision-language models (VLMs) have achieved impressive performance on spatial reasoning benchmarks, state-of-the-art approaches typically rely on additional spatial encoders or architectural modifications during inference, increasing computational cost. We introduce Space Tokens, a lightweight, architecture-agnostic framework that equips VLMs with explicit continuous spatial representations without requiring additional inference-time modules. By distilling scene-level 3D geometry and object-centric spatial attributes into continuous latent tokens, our method enables these modalities to be directly incorporated into a chain-of-thought reasoning process, thereby improving the VLM's spatial reasoning capabilities. At the same time, the learned representations can be explicitly decoded to verify that they encode meaningful geometric information, while the unified token interface remains extensible to additional modalities. Experiments on VSI-Bench improve Qwen3-VL-8B by 4.3% and SenseNova-SI-1.3 by 1.3%, while achieving state-of-the-art performance on object size (79.2%) and room size estimation (75.7%). These results demonstrate that continuous spatial tokens provide an effective, interpretable, and computationally efficient mechanism for integrating geometric reasoning into large vision-language models.",
+    "authors": [
+      "Hunter Schofield",
+      "Mohammed Elmahgiubi",
+      "Mohammad Mahdavian",
+      "Richard Shi",
+      "Jinjun Shan",
+      "Amir Rasouli",
+      "Dongfeng Bai"
+    ],
+    "published": "2026-08-10T22:20:07+00:00",
+    "updated": "2026-08-10T22:20:07+00:00",
+    "url": "http://arxiv.org/abs/2608.10278v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.10278v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.10220v1",
+    "title": "Whole-Body Planning for Humanoids Navigating Confined Spaces via Self-Collision Avoidance References",
+    "abstract": "Humanoid locomotion in highly confined environments requires navigating dense environmental obstacles and complex self-collision bounds while maintaining multi-contact dynamic feasibility. Traditional trajectory optimizers frequently struggle in these restricted spaces, as navigating the large collision space with splines on particle abstractions is insufficient and leads to poor local minima. To address this, we propose a three-stage whole-body planning framework that formulates kinematic path planning directly over kinematically reachable rigid-body volumes. By integrating differentiable collision avoidance into a reachability-constrained formulation, our framework synthesizes volume-informed guides that reliably guide a full-order trajectory optimizer over long horizons. We show that these optimized plans serve as high-quality references to train a residual reinforcement learning policy for robust online execution. We validate our approach on the Unitree G1 humanoid across three benchmark testbeds exceeding NIST emergency response standards, achieving restricted confinement ratios ($C_r < 1.5$). Our framework generates feasible trajectories across 12-to-18-second tasks with complex foot and hand contacts where standard baselines fail, while the learned policy successfully tracks these plans under extensive domain randomization in physics simulation.",
+    "authors": [
+      "Carlos Gonzalez",
+      "Luis Sentis"
+    ],
+    "published": "2026-08-10T20:45:19+00:00",
+    "updated": "2026-08-10T20:45:19+00:00",
+    "url": "http://arxiv.org/abs/2608.10220v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.10220v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.09876v1",
+    "title": "Energy-Structured Latent World Models with Neural Time Fields for Physically Constistent Open-World Motion Planning",
+    "abstract": "Physically consistent motion planning remains a fundamental challenge in embodied AI, as generated trajectories must strictly conform to real-world execution dynamics. While latent world models offer a promising approach by predicting these dynamics, existing methods learn unconstrained future representations where absorbed physics remains implicit. Therefore, they fail to form reusable physical knowledge, which compromises reliability in unpredictable open-world navigation. To address this, we propose a novel Energy-Structured Latent World Model (ELWM). Our key idea is to structure the ELWM latent state to explicitly carry energy and momentum, ensuring strictly causal transitions via dissipation and control ports. Trained on multimodal RGB-D and inertial interaction histories, our model guarantees physically consistent predictions. We further implement this for motion planning by constructing Physics-Conditioned Neural Time Fields (PC-NTF), a key technical cornerstone that integrates ELWM into an arrival time field via the Eikonal equation to yield a physically-informed navigation policy. Across held-out scenes, our evaluation reveals significant improvements. Compared to generic latent models, PC-NTF reduces 0.8-s motion-prediction NRMSE from 0.36 to 0.29. Against Active Neural Time Fields, it improves navigation success from 81.3% to 89.7% and SPL from 0.64 to 0.73, while cutting the physical collision rate from 12.1% to 5.8% and the Eikonal residual from 0.083 to 0.031. Beyond these targeted gains, our results demonstrate that embedding explicit physical structures into latent spaces intrinsically bridges the gap between predictive world models and safe, dynamically feasible motion planning.",
+    "authors": [
+      "Yapeng Liu",
+      "Yuanzhao Zhai",
+      "Bo Ding",
+      "Huaimin Wang",
+      "Lin Wang"
+    ],
+    "published": "2026-08-10T17:31:18+00:00",
+    "updated": "2026-08-10T17:31:18+00:00",
+    "url": "http://arxiv.org/abs/2608.09876v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.09876v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.09853v1",
+    "title": "RynnValue: Scaling Robotic Value Foundation Models with Temporal Distance",
+    "abstract": "General-purpose reward models are increasingly the bottleneck for scaling robot learning, yet the recipe for learning value-related capabilities from large-scale heterogeneous corpora remains underexplored. Existing approaches tie supervision to task-internal anchors such as preferences or normalized progress, none of which transfer cleanly across embodiments and data sources. We introduce RynnValue, an open-source value foundation model for robotic manipulation that replaces these anchors with temporal distance, the directed cost-to-go from an observation to the language-specified goal. Because temporal-distance labels can be derived directly from timestamps, RynnValue scales to over 7,000 hours and roughly 3M instruction-conditioned clips without preference or progress annotations. To make temporal-value learning reliable at scale, we combine random temporal sampling, temporal-order shuffling, and value-isolation attention, suppressing shortcuts that would leave predictions insensitive to failures and regressions. Trained without preference labels, RynnValue attains an average Kendall's tau_a of 0.675 on RBM-EVAL-OOD, surpassing the fully preference-supervised state of the art (0.655) and more than doubling a progress-only counterpart (0.292), while generalizing zero-shot to unseen tasks, embodiments, and viewpoints. Converted into dense rewards via potential-based shaping, it raises real-world policy success from 52.5% to 72.5% online and from 63.8% to 82.5% offline. These results establish temporal distance as a scalable supervision target and practical reward interface for generalist robot policies.",
+    "authors": [
+      "Dongchi Huang",
+      "Hongyin Zhang",
+      "Bohan Hou",
+      "Siteng Huang",
+      "Zhian Su",
+      "Hang Guo",
+      "Tong Lu",
+      "Zhaofeng Xu",
+      "Jiahao Tang",
+      "Jianfei Yang",
+      "Donglin Wang",
+      "Peixi Peng",
+      "Mingxiu Chen",
+      "Deli Zhao",
+      "Xin Li"
+    ],
+    "published": "2026-08-10T17:09:37+00:00",
+    "updated": "2026-08-10T17:09:37+00:00",
+    "url": "http://arxiv.org/abs/2608.09853v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.09853v1",
+    "categories": [
+      "cs.RO",
+      "cs.CV",
+      "cs.LG"
+    ],
+    "primary_category": "cs.RO"
+  }
+]
