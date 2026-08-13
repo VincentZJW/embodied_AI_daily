@@ -1,0 +1,511 @@
+[
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.12308v1",
+    "title": "DreamFly: Causal Memory and Receding-Horizon Diffusion Planning for Aerial Vision-Language Navigation",
+    "abstract": "Aerial vision-language navigation (VLN) requires an embodied agent to integrate visual evidence over time, plan future actions, and determine when it has reached a navigation goal under partial observability. Although recent VLA models offer a promising perception-to-action paradigm, adapting them to aerial navigation remains challenging due to limited historical context, short planning horizons, and unreliable implicit termination. To address these challenges, we propose DreamFly, a diffusion-based aerial VLN framework built on Dream-VLA. DreamFly introduces a causally aligned historical memory that augments the current visual representation using only observations preceding the current decision step, enabling temporal reasoning without future information leakage. We further formulate navigation as receding-horizon diffusion planning, where the policy predicts a $K$-step action chunk but executes only the first action before replanning. This plan-$K$, execute-one strategy uses future actions as auxiliary planning targets while preserving closed-loop visual feedback. Finally, LiteStop estimates the stop probability directly from action logits at the initial all-mask state, decoupling explicit termination from action generation. Experiments on the OpenFly benchmark demonstrate consistent improvements in seen and unseen environments. DreamFly achieves 32.04%/29.46% SR and 28.22%/23.54% SPL on the test-seen/test-unseen splits, respectively, outperforming all compared methods on both metrics while attaining the lowest navigation error. These results demonstrate the effectiveness of jointly modeling historical context, future action structure, and explicit termination for aerial VLN.",
+    "authors": [
+      "Yan Deng",
+      "Fei Xu"
+    ],
+    "published": "2026-08-12T17:54:33+00:00",
+    "updated": "2026-08-12T17:54:33+00:00",
+    "url": "http://arxiv.org/abs/2608.12308v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.12308v1",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.12179v1",
+    "title": "Map-Det3D: Metric Feed-Forward 3D Reconstruction Prior for Multi-view 3D Object Detection from Streaming Inputs",
+    "abstract": "Metric 3D object detection is a core capability for embodied agents, yet most reliable systems lean on depth sensors, trading away cost, power, and integration simplicity. This motivates monocular 3D detection, which avoids additional constraints, yet it faces a major obstacle: from a single image, depth, and especially absolute scale, are underconstrained. As a result, the prevailing pattern of detecting in 2D and then predicting 3D attributes is often brittle, since modest range errors can dominate 3D localization, and the learned scale prior can fail when cameras, motion, or environments undergo domain shifts. To address this, we propose Map-Det3D, an online multi-view 3D object detection model that brings detection directly into a 3D space reconstructed from RGB. We map a short temporal window into multiple views and repurpose a feed-forward metric 3D reconstruction model as our geometric backbone while tuning its object-aware capabilities. Building on this representation, Map-Det3D directly predicts boxes in metric 3D space, without the widely used 2D-to-3D lifting. Experiments across different benchmarks show that this design supports strong online performance and robust transfer without adaptation, suggesting that training reconstruction priors for detection is a practical route to stable metric 3D detection from monocular video. Code and models are available at https://royyang0714.github.io/Map-Det3D.",
+    "authors": [
+      "Yung-Hsu Yang",
+      "Luigi Piccinelli",
+      "Samuel Rota Bulò",
+      "Sunghwan Hong",
+      "Denis Rozumny",
+      "Johannes Schönberger",
+      "Zuria Bauer",
+      "Hermann Blum",
+      "Peter Kontschieder",
+      "Marc Pollefeys"
+    ],
+    "published": "2026-08-12T15:33:42+00:00",
+    "updated": "2026-08-12T15:33:42+00:00",
+    "url": "http://arxiv.org/abs/2608.12179v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.12179v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.12122v1",
+    "title": "HandEdit: A Unified Benchmark for Egocentric Human-to-Robot Dexterous Hand Image Editing",
+    "abstract": "Robotic manipulation with dexterous hands is a cornerstone of Embodied AI, yet its progress is stifled by the high cost of collecting embodiment-aware teleoperation data. While abundant egocentric videos of human hands offer a scalable alternative, the profound discrepancies in appearance, articulation, and camera viewpoints between human and robotic data raise significant challenges for co-training. Though existing general image-editing models demonstrate strong capabilities, they lack necessary embodiment-specific priors to fully bridge this gap. In this work, we present HandEdit, a unified large-scale embodiment-aware image-editing dataset and benchmark specifically designed to transform human hands and arms into various dexterous robotic embodiments within egocentric frames. HandEdit comprises over 200M editing instances derived from five diverse source datasets, covering 26 distinct URDFs, including 13 hand-only and 13 hand-arm configurations. Alongside the dataset, we establish a unified benchmark protocol with two tracks: Hand-only and Hand-Arm, supporting URDF-conditioned evaluation. We conduct extensive evaluations of 11 representative image-editing baselines using a multi-dimensional metric suite, including generic similarity metrics, VLM-based judgment, and embodiment-aware metrics. HandEdit serves as a critical resource at the intersection of image editing and robotics: it advances embodiment-aware editing models while enabling scalable dexterous robotic learning from abundant human video data, paving the way for more generalizable Embodied AI.",
+    "authors": [
+      "Zhenjie Yang",
+      "Xingyu Jiao",
+      "Guopeng Zhong",
+      "Shuzhe Yang",
+      "Shi Che",
+      "Chao Wu",
+      "Chenyu Jiang",
+      "Dongjie Zhang",
+      "Yideng Zhang",
+      "Zheng Zhang",
+      "Muyun Jiang",
+      "Haisheng Su",
+      "Shuang Jin",
+      "Donghang Zhang",
+      "Chao Yang",
+      "Li Chen",
+      "Hongyang Li",
+      "Zuxuan Wu",
+      "Yu-Gang Jiang",
+      "Xiaosong Jia",
+      "Junchi Yan"
+    ],
+    "published": "2026-08-12T14:41:53+00:00",
+    "updated": "2026-08-12T14:41:53+00:00",
+    "url": "http://arxiv.org/abs/2608.12122v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.12122v1",
+    "categories": [
+      "cs.RO",
+      "cs.CV"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.12063v1",
+    "title": "Learning Loco-Manipulation From SMPC Demonstrations With Sparse Offline-to-Online RL",
+    "abstract": "Integrating locomotion and manipulation is essential for robot autonomy, but scaling standard Reinforcement Learning (RL) to complex tasks is severely bottlenecked by the slow, manual process of dense reward shaping. To bypass this limitation, we leverage Sample-based Model Predictive Control (SMPC) entirely in simulation as an automated, rapidly tunable expert to generate massive offline datasets. Because this data solves the fundamental exploration problem, we can train an off-policy RL agent using purely sparse task rewards, drastically reducing the time required to learn new skills and eliminating the need for manual tuning. Integrating this high-level agent with a low-level dynamic stability controller yields more optimal behaviors that strictly align with true task objectives, ultimately allowing the learned policies to surpass the original optimal control teacher. We validate the robustness of this sim-to-real framework by successfully deploying complex loco-manipulation skills across different morphologies, including an arm-equipped Spot quadruped and a G1 humanoid.",
+    "authors": [
+      "Martin Schuck",
+      "Maks Sorokin",
+      "Simone Manni",
+      "Duy Ta",
+      "Angela P. Schoellig",
+      "Marco Hutter",
+      "Simon Le Cleac'H",
+      "Jan Brüdigam"
+    ],
+    "published": "2026-08-12T13:48:56+00:00",
+    "updated": "2026-08-12T13:48:56+00:00",
+    "url": "http://arxiv.org/abs/2608.12063v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.12063v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.11876v1",
+    "title": "D3D-GEN: Robot-Aware Domain-Grounded Interactive 3D World Generation for Social Robotics",
+    "abstract": "Training and validation of Embodied AI for social navigation critically depends on realistic simulation environments, yet many current approaches fail to find a balance between realism and simulability. We propose D3D-GEN, a novel world generation system that combines a domain agent with a retrieval-augmented generation (RAG) pipeline grounded in that domain. Our system enables users to rapidly generate domain-grounded, fully interactive 3D worlds by automating both the collection of domain knowledge and the synthesis of realistic floorplans and object placements, without dependence on any fixed 3D model database. Given a domain description prompt, the research agent collects publicly accessible domain-specific data and constructs a persistent domain database. Using this database, our RAG pipeline generates plausible floorplans and object placements by dynamically querying a user-provided semantic database, which can be easily extended or modified. The output is a fully interactive 3D world loadable by the popular simulators Isaac Sim and Gazebo. With our approach, we have built databases for several common domains (indoor residential, hospital, office) and generated dozens of distinct, plausible simulation environments for each domain. We present D3D-GEN with a local web frontend that facilitates rapid, interactive world generation for robot simulation.",
+    "authors": [
+      "Anh Duc Do",
+      "Volodymyr Scherbyna",
+      "Tai Duc Nguyen",
+      "Spaarsh Thakkar",
+      "Zhengcheng Shen",
+      "Teham Buiyan",
+      "Archan Misra",
+      "Linh Kästner"
+    ],
+    "published": "2026-08-12T10:03:01+00:00",
+    "updated": "2026-08-12T10:03:01+00:00",
+    "url": "http://arxiv.org/abs/2608.11876v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.11876v1",
+    "categories": [
+      "cs.RO",
+      "cs.HC"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.11769v1",
+    "title": "Policy-Induced Hand Priors in Humanoid Dual-Arm Manipulation: Diagnosing and Mitigating Initial-Pose Dependence",
+    "abstract": "Vision-language-action (VLA) policies are expected to operate robustly across variations in the robot's initial configuration, yet aggregate task success can conceal pose-specific failures and inappropriate hand selection. This work investigates initial-pose dependence in VLA-based humanoid dual-arm manipulation. We characterize the initial-condition-dependent early hand preference as a policy-induced hand prior and quantify it using HandPriorScore, residual hand bias, and target responsiveness. Evaluations across multiple policies and 17 initial configurations reveal strong initial-pose--policy interactions: the same pose produces substantially different success rates across policies, while a single policy exhibits large performance variation across poses. Specific initial arm configurations can suppress or induce an asymmetric hand preference, with the resulting effect varying in direction and strength across policies. Wrist-camera observations also influence hand selection and task performance. Expanding initial-pose coverage in the training dataset substantially improves robustness, while targeted augmentation around a low-performing configuration increases its success rate. Comparisons across training configurations show that sufficient exposure to the target simulation task is beneficial, whereas the effect of real or auxiliary data depends on pose coverage, simulation ratio, and observation availability. These findings characterize a pose-conditioned hand prior, identify a localized initial arm configuration as a causal handle on hand-selection behavior, and demonstrate how data coverage and training composition affect initial-pose robustness.",
+    "authors": [
+      "Chaeyeon Jung",
+      "Juyoun Park"
+    ],
+    "published": "2026-08-12T08:13:44+00:00",
+    "updated": "2026-08-12T08:13:44+00:00",
+    "url": "http://arxiv.org/abs/2608.11769v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.11769v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.11739v1",
+    "title": "G0.5: One Autoregressive Stream for Robot Reasoning and Action",
+    "abstract": "The prevailing recipe for Vision-Language-Action (VLA) models couples a pretrained VLM with a separately trained flow-matching action expert. This makes the VLM a context encoder rather than a decision-maker. We introduce G0.5, a pretrained autoregressive VLA in which a single transformer decoder emits reasoning and action tokens under a single objective. Three components make this tractable at foundation-model scale: a learnable cross-embodiment action tokenizer that maps heterogeneous robot actions into a shared vocabulary; a native chain-of-thought stream interleaving task decomposition, object grounding, and action hints with action tokens; and a visual memory module that injects multi-second history through the vision encoder. Because reasoning and action share a single set of weights, the pretrained VLM's capabilities carry over to physical behavior: the model follows instructions closely, and prompts directly steer action granularity, task horizon, and out-of-distribution scene handling without further training. Pretrained on a large collection of robot datasets together with VQA samples, G0.5 surpasses state-of-the-art models across 7 independent regimes: real-world fine-tuning on R1lite and R1pro robots (76.7\\% vs.\\ 53.3\\% for $π_{0.5}$ and 24.4\\% for GR00T-N1.7), the 2025 BEHAVIOR Challenge on 50 long-horizon household mobile manipulation tasks using a generalist policy (31.4\\% vs.\\ 26.3\\% for $π_{0.5}$ and 26.1\\% for the challenge winner), DROID post-training followed by zero-shot transfer to an unseen environment and objects (82.5\\%), a language-following Pick-and-Place benchmark, LIBERO (98.9\\%), RoboTwin 2.0 (93.3\\%), and SimplerEnv-Bridge (87.3\\%).",
+    "authors": [
+      "Yicheng Liu",
+      "Zibin Dong",
+      "Baijun Ye",
+      "Tianyuan Yuan",
+      "Tao Jiang",
+      "Anqi Yang",
+      "Shicheng Cao",
+      "Haonan Liu",
+      "Yue Sun",
+      "Zihan Guo",
+      "Xiao Liu",
+      "Dong Ke",
+      "Changxun Pan",
+      "Chenru Wu",
+      "Tailai Cheng",
+      "Xiaoshu Ren",
+      "Xinlei Zhang",
+      "Jianning Cui",
+      "Zijie Zhao",
+      "Haoyu Zhang",
+      "Kaiming Xu",
+      "Haodong Yang",
+      "Bowen Zhang",
+      "Jiahui Niu",
+      "Shaoting Zhu",
+      "Shiduo Zhang",
+      "Hang Zhao"
+    ],
+    "published": "2026-08-12T07:26:47+00:00",
+    "updated": "2026-08-12T07:26:47+00:00",
+    "url": "http://arxiv.org/abs/2608.11739v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.11739v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.11692v1",
+    "title": "HUGIN: Enhancing Vision-Language Planning for Autonomous Logistics Sorting",
+    "abstract": "Autonomous logistics sorting systems (ALSS) are an important industrial application of embodied AI, which requires joint planning over spatially disjoint camera views. We formulate this setting as Joint Multi-Scene Understanding (JMSU). With open-world visual understanding and task-planning capabilities, vision-language models (VLMs) are promising candidates for JMSU. However, directly applying existing VLMs to JMSU is non-trivial due to scarce cross-scene supervision and attention dispersion caused by long visual context in JMSU. To address these challenges, we propose HUGIN, a training framework with two complementary components. Endogenous Data Augmentation recombines verified atomic facts under operating constraints, while Global Context Ranking aligns the instruction representation more strongly with the complete visual context than with a partial visual context. To support ongoing research, we construct a high-quality industrial sorting dataset and benchmark named SortingBench from four layouts of autonomous logistics sorting systems. Across five open VLMs, HUGIN consistently outperforms matched baselines; for example, the accuracy on SortingBench of Qwen3-VL-8B increases from 63.6% to 78.8%. Additional experiments verify the effectiveness of each component and JMSU's spillover benefits in embodied tasks. Deployment tests involving more than 15,000 packages support the practical viability of VLM-based planning for autonomous logistics sorting.",
+    "authors": [
+      "Xikai Sun",
+      "Cangtian Zhou",
+      "Kebin Liu",
+      "Ke Ma",
+      "Xu Wang",
+      "Zaishu Chen",
+      "Haotian Wang",
+      "Li Liu",
+      "Yunhao Liu"
+    ],
+    "published": "2026-08-12T06:04:27+00:00",
+    "updated": "2026-08-12T06:04:27+00:00",
+    "url": "http://arxiv.org/abs/2608.11692v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.11692v1",
+    "categories": [
+      "cs.AI"
+    ],
+    "primary_category": "cs.AI"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.11671v1",
+    "title": "StellaVLA: In-Context Structured Demonstration for Generalizable Vision-Language-Action Models",
+    "abstract": "Vision-Language-Action (VLA) models can follow instructions and manipulate objects, but their performance often collapses out of distribution (OOD), when the scene, viewpoint, or object differs from training. Adapting to each new situation typically requires collecting more data and fine-tuning. We present StellaVLA, a framework that instead adapts at test time by conditioning on a single retrieved demonstration. The key idea is to move beyond imitating what an expert did and instead convey why: an automated offline pipeline converts each raw trajectory into a structured demonstration, e.g., a task plan, sub-goal descriptions, and verbalized 3D motion, at zero human-annotation cost. Provided as in-context guidance, this structured demonstration lets the policy reason about the task rather than mimic a pixel trajectory, which also makes it transferable across embodiments (real-robot, human-hand, or XR demonstrations). A parallel dual-training design internalizes this reasoning during training through a joint action-and-language objective, while inference uses the action expert alone, preserving real-time, high-frequency control with no added latency. On the VLA-Arena leaderboard(Aug 1, 2026), StellaVLA ranks first with an overall score of 0.63, versus 0.44 and 0.22 for the strong prior models ($π_{0.5}$ and LingBot-VLA), and it further leads on LIBERO with 98.8% average success rate and LIBERO-Plus with 85.1% success rate. Our real-robot benchmark demonstrates that StellaVLA can use both human/robot demos and human-to-robot (XR) demos as in-context structured demonstration to help VLA model adapt to OOD tasks.",
+    "authors": [
+      "Siyu Xu",
+      "Yunke Wang",
+      "Zijian Wang",
+      "Dihao Zhu",
+      "Chenghao Xia",
+      "Chengbin Du",
+      "Daochang Liu",
+      "Tao Huang",
+      "Chang Xu"
+    ],
+    "published": "2026-08-12T05:30:53+00:00",
+    "updated": "2026-08-12T05:30:53+00:00",
+    "url": "http://arxiv.org/abs/2608.11671v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.11671v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.11605v1",
+    "title": "Foresight Without Seeing: Latent Futures for World Action Models",
+    "abstract": "World Action Models (WAMs) couple future visual prediction with robot action generation, enabling policies to model how the physical world evolves during interaction. Existing WAMs differ in how predictive dynamics are exposed to the action pathway. Explicit-future WAMs provide direct access to predicted scene evolution, but incur substantial inference costs from iterative video denoising. In contrast, direct-policy WAMs efficiently predict actions from the current observation but lack an explicit inference-time interface for exposing predictive dynamics to the Action DiT. To bridge this gap, we propose ForeWAM, a dynamics-conditioned direct-policy WAM that provides predictive context for action generation without decoding future videos. At its core, Future-KV performs a single Video DiT prefill over the current visual latent and stochastic future slots, and reuses the resulting layer-wise key-value states throughout action denoising. We further introduce dynamics registers supervised by a frozen latent action teacher, encouraging the implicit future states to capture interaction-induced transitions such as object motion, contact changes, and task progress. Ground-truth future observations and the teacher are used only during training; deployment requires neither and performs no future video generation. Without embodied robot data pretraining, the standard and accelerated variants of ForeWAM achieve average success rates of 96.7% and 96.9% on LIBERO, respectively. The standard variant further achieves 61.6% success on LIBERO-Plus. These results demonstrate that direct-policy WAMs can retain efficient action prediction while exposing predictive dynamics to the action pathway without explicitly generating future observations.",
+    "authors": [
+      "Jiakai Huang",
+      "Zhongbo Wu",
+      "Zheng Zhang",
+      "Zihan Wang",
+      "Shan You",
+      "Tao Huang"
+    ],
+    "published": "2026-08-12T03:27:43+00:00",
+    "updated": "2026-08-12T03:27:43+00:00",
+    "url": "http://arxiv.org/abs/2608.11605v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.11605v1",
+    "categories": [
+      "cs.AI"
+    ],
+    "primary_category": "cs.AI"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.11417v1",
+    "title": "Locomotion Variability and User Experience in Smart Wheelchair Human-Robot Interaction",
+    "abstract": "Human movement is inherently variable, with variability structured according to task relevance: movements are typically more consistent at task-critical points and more flexible elsewhere. In human-robot interaction (HRI), however, model-based assistance strategies commonly assume deterministic human behavior and suppress such variability, potentially altering how interactions are experienced and lowering sense of agency. While movement variability is increasingly recognized as functionally meaningful, its deliberate preservation in assisted interaction, and its consequences for user experience, remain underexplored. In this paper, we empirically investigate how different assistance strategies shape human movement variability, task performance, and subjective interaction experience in a shared control setting. We introduce an autonomy-supportive shared control strategy that preserves users' natural movement structure. This approach is evaluated in a user study in which participants push an intelligent powered wheelchair under three conditions: no assistance, conventional variability-reducing assistance, and variability-preserving assistance. While task-relevant performance remained comparable across assisted modes, preserving natural movement variability led to more favorable interaction experiences. In particular, participants reported significantly higher perceived agency compared to conventional assistance and highest perceived usefulness. These findings suggest that variability-aware assistance can support both performance and user autonomy in physical human-robot collaboration. More broadly, the results highlight the importance of designing assistive robotic systems that respect the embodied structure of human movement rather than treating variability as noise to be neglected or eliminated.",
+    "authors": [
+      "Sean Kille",
+      "Adina M. Panchea",
+      "Balint Varga",
+      "Sören Hohmann"
+    ],
+    "published": "2026-08-11T20:33:26+00:00",
+    "updated": "2026-08-11T20:33:26+00:00",
+    "url": "http://arxiv.org/abs/2608.11417v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.11417v1",
+    "categories": [
+      "cs.RO",
+      "cs.HC",
+      "eess.SY"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.11363v1",
+    "title": "Adaptation of Generalist Robot Policies with Minimal Data",
+    "abstract": "A central goal in robot learning is to move beyond task-specific human data collection toward robots that improve through autonomous interaction. Yet fully autonomous learning remains difficult with current policies: sparse rewards and weak zero-shot exploration make it unlikely that a robot will discover successful behavior from scratch. We study minimal-data adaptation, a regime in which a pre-trained robot policy must learn a new task from as little as one demonstration followed by autonomous online interaction. This setting serves as the closest tractable proxy for fully autonomous improvement, allowing us to study whether minimal human guidance can bootstrap autonomous learning and what algorithmic ingredients make it feasible. We build MiDAS, a simple offline-to-online RL recipe that first anchors a pre-trained VLA to the target task with behavior cloning on single/few demonstrations, then improves it through value-based online RL on a residual policy parameterization. Across LIBERO and RoboCasa, MiDAS recovers strong task performance from as little as one demonstration, substantially outperforming baselines and generalizing beyond demonstrated conditions. We further evaluate MiDAS on a bimanual YAM platform. Starting from a fragile low-success policy obtained from a single demonstration, MiDAS improves its robustness and learns new successful behaviors over ~6 hours of online interaction. To the best of our knowledge, this is the first demonstration of reliable robot policy adaptation from a single task demonstration.",
+    "authors": [
+      "Shreyas Kowshik",
+      "Sreyas Venkataraman",
+      "Leo Wang",
+      "Niharika Pant",
+      "Max Simchowitz",
+      "Aviral Kumar"
+    ],
+    "published": "2026-08-11T19:15:26+00:00",
+    "updated": "2026-08-11T19:15:26+00:00",
+    "url": "http://arxiv.org/abs/2608.11363v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.11363v1",
+    "categories": [
+      "cs.RO",
+      "cs.LG"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.11350v1",
+    "title": "Self-Evolving Embodied Agents via Skill-Harness Evolution",
+    "abstract": "Embodied agents are increasingly built as systems around foundation models, where performance depends not only on model weights but also on the skills, context, action interfaces, and execution harness surrounding the model. While supervised fine-tuning and reinforcement learning can adapt agents to new environments, they require additional data, rewards, and training runs; meanwhile, many train-free code-centric approaches rely on programmable robot APIs that may be unavailable in fixed-interface settings. We propose SHAPER, a self-evolving framework for train-free embodied adaptation that keeps model parameters frozen and improves the non-parametric agent system by evolving reusable skills and a context-code harness through target-environment rollouts. In SHAPER, the same frozen model can serve as both planner and optimizer, refining its external skills and context-code harness without parameter updates. We evaluate SHAPER on VLABench and ESI-Bench, covering embodied agents with different low-level action interfaces, and compare against pure execution, supervised fine-tuning, and test-time-scaling baselines such as verifier-free selection and voting. Our results suggest that skill-and-harness optimization is a practical route to self-evolving embodied agents when model training is expensive, unavailable, or undesirable.",
+    "authors": [
+      "Peidong Wang",
+      "Zhiming Ma",
+      "Ying Chang",
+      "Xufang Luo",
+      "Xiaocui Yang",
+      "Shi Feng",
+      "Yuqing Yang",
+      "Dongsheng Li"
+    ],
+    "published": "2026-08-11T18:55:58+00:00",
+    "updated": "2026-08-11T18:55:58+00:00",
+    "url": "http://arxiv.org/abs/2608.11350v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.11350v1",
+    "categories": [
+      "cs.CL",
+      "cs.RO"
+    ],
+    "primary_category": "cs.CL"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.11338v1",
+    "title": "Better, Faster, Stronger: Programmatic Skill Learning Best Reduces Agent Cost",
+    "abstract": "Recently, the practice of augmenting LLM agent capability with skills has gained prevalence. We explore the cost effective adaptation of agents to novel domains by means of learning skills. Existing works focus on performance gain over cost effectiveness. As a result, little is known about what skill learning strategies save cost. We argue that among all the different skill learning methods, those that view skills as programs can achieve the best cost reduction. By executing sequences of actions deterministically, a program-augmented agent can reliably and cheaply achieve goals that would otherwise require trial and error and risk degenerate behavior over long horizons. An agent can learn at inference time by incrementally discovering these programs and equipping them for future tasks. We hypothesize that past trajectories contain enough signal to guide skill learning, even without replay or validation, provided the agent can learn to analyze them. To test our claims, we propose SpeedRunner, a coding agent that analyzes trajectories and refactors skills for better performance on future tasks. Across three different embodied environments, we show that SpeedRunner consistently achieves the frontier in learning and cost reduction while remaining robust against distribution shifts and environmental randomness.",
+    "authors": [
+      "Zixi Huang",
+      "Xiheng Wang",
+      "Andrew Wang",
+      "William Jurayj",
+      "Bernal Jiménez Gutiérrez",
+      "Daniel Khashabi",
+      "Nicholas Andrews"
+    ],
+    "published": "2026-08-11T18:42:23+00:00",
+    "updated": "2026-08-11T18:42:23+00:00",
+    "url": "http://arxiv.org/abs/2608.11338v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.11338v1",
+    "categories": [
+      "cs.CL",
+      "cs.LG"
+    ],
+    "primary_category": "cs.CL"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.11204v1",
+    "title": "Surgical WAM: A World-Action Model for Data-Efficient Surgical Robot Learning",
+    "abstract": "Learning reliable surgical manipulation policies is bottlenecked by the scarcity of action-labeled demonstrations: teleoperated surgical robot (e.g., dVRK) trajectories with synchronized kinematics are costly to collect, while surgical tasks demand precise contact handling, long-horizon reasoning, and bimanual coordination. Endoscopic video is comparatively inexpensive and abundant relative to synchronized video--kinematics trajectories, and a natural way to exploit it is to learn world models of surgical scenes. However, existing surgical world models use video primarily for simulation or policy evaluation, and rarely translate the learned dynamics into closed-loop control. This gap raises our central question: under a fixed budget of action-labeled demonstrations, does action-free video pretraining improve closed-loop surgical manipulation? To answer it, we introduce the Surgical World-Action Model (Surgical WAM), a unified generative model built on Cosmos Policy that jointly predicts future endoscopic observations and executable surgical robot action chunks. Surgical WAM first learns surgical visual dynamics from action-free video and is then fine-tuned on the fixed action-labeled budget; at deployment, it acts as a closed-loop, receding-horizon controller that executes a short prefix of each predicted action chunk and replans from the resulting observation. On a suite of four simulated surgical manipulation tasks, video pretraining improves the average success rate from 63.5% to 77.8%, including an absolute gain of 20 percentage points on PegTransfer, with the largest improvements on contact-rich and bimanual tasks. These results demonstrate that action-free video provides transferable visual dynamics priors for learning surgical robot control with limited action supervision, positioning data-efficient video pretraining as a practical path toward scaling up surgical robot learning.",
+    "authors": [
+      "Wenrui Bao",
+      "Tianyun Jiang",
+      "Zhiben Chen",
+      "Ser-Nam Lim",
+      "Peter D. Peng",
+      "Yuzhang Shang"
+    ],
+    "published": "2026-08-11T17:59:13+00:00",
+    "updated": "2026-08-11T17:59:13+00:00",
+    "url": "http://arxiv.org/abs/2608.11204v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.11204v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.CV"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.11150v2",
+    "title": "CausalSplat: Towards Comprehensive Hierarchical Reasoning in 3D Gaussian Splatting",
+    "abstract": "While 3D Gaussian Splatting (3DGS) has advanced open vocabulary scene understanding, existing methods remain confined to explicit queries. They struggle to interpret implicit intents, complex spatial constraints, and commonsense reasoning required for practical embodied interactions. To address this gap, we introduce the task of reasoning 3D Gaussian segmentation and construct two benchmarks, Causal-LERF and Causal-ScanNet. These benchmarks systematically evaluate commonsense, spatial, affordance, and counterfactual reasoning. Evaluations reveal that current state of the art methods perform poorly on these reasoning challenges. Therefore, we propose CausalSplat, a framework that integrates vision-language models with 3D scene graphs to disentangle explicit structural perception from implicit logical inference. Extensive experiments demonstrate that CausalSplat achieves state of the art performance on our reasoning benchmarks while showing strong generalizability on standard referring and open vocabulary 3D segmentation tasks. Project Page: https://jiayuding031020.github.io/CausalSplat",
+    "authors": [
+      "Jiayu Ding",
+      "Meilu Song",
+      "Yun Chen",
+      "Wei Gao",
+      "Ge Li"
+    ],
+    "published": "2026-08-11T17:09:49+00:00",
+    "updated": "2026-08-12T06:41:14+00:00",
+    "url": "http://arxiv.org/abs/2608.11150v2",
+    "pdf_url": "https://arxiv.org/pdf/2608.11150v2",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.11051v1",
+    "title": "HUI360: A 360° Egocentric Dataset and Baselines for Human-Robot Interaction Anticipation",
+    "abstract": "As robots increasingly operate in human-populated environments, anticipating human intentions is essential for enabling proactive and socially aware behavior. Automatic anticipation of human-robot interactions is thus emerging as a crucial perception challenge for embodied agents. To this end, we introduce HUI360, the largest dataset for human-robot interaction anticipation in the wild and its set of baselines. The dataset was collected from a mobile robot, in the wild, over multiple days within a 3-month period, and in several environments, capturing natural, spontaneous behaviors from both passersby and users, and encompassing a diverse range of individuals. This variety enables evaluating and improving the generalization capabilities of interaction anticipation models. We designed a pipeline and share code for automatic interaction annotation in arbitrary 360-degree equirectangular videos, along with interfaces for manual refinement. Using this pipeline, we release the HUI360 open set of 1M pre-processed annotations, including detailed 2D poses, facial keypoints, and segmentation masks, obtained using state-of-the-art computer vision methods and manually curated to ensure high-quality tracking and interaction annotation. Additionally, we release the raw panoptic 360-degree images captured from the robot's egocentric viewpoint (on demand, for research purpose only in compliance with GDPR). Finally, we establish benchmark baselines for interaction anticipation, including the first cross-dataset evaluations for this task: to this end, we also release 6M annotations for another existing in-the-wild outdoor dataset collected from a mobile robot (SSUP-HRI). Dataset and code can be found at https://hucebot.github.io/hui360.",
+    "authors": [
+      "Raphael Lorenzo-Louis",
+      "Fabio Amadio",
+      "Bertrand Luvison",
+      "Serena Ivaldi"
+    ],
+    "published": "2026-08-11T15:22:14+00:00",
+    "updated": "2026-08-11T15:22:14+00:00",
+    "url": "http://arxiv.org/abs/2608.11051v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.11051v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.11017v1",
+    "title": "R4DSG: Relative 4D Scene Graph Memory for Object-Centric Question Answering in Long Egocentric Video",
+    "abstract": "Long-horizon egocentric video is a rich substrate for wearable AI assistants, but object-centric questions such as where an item was moved, when it last changed state, or why it was relocated remain difficult because caption- and transcript-based memories rarely preserve persistent object identity or structured spatial change. Existing long-video QA methods mainly emphasize temporal grounding and clip retrieval, while prior 3D scene-graph methods typically assume stronger geometry than free-motion wearable RGB video provides, including point clouds, RGB-D input, posed views, sparse reconstruction, or reconstructed scenes. R4DSG introduces a relative 4D scene graph memory for long egocentric video. Instead of storing raw graph sequences, R4DSG converts video into compact queryable memory entries indexed by time, place, persistent objects, anchor-relative change, and local interaction context. The main idea is to separate stable anchors from dynamic objects, maintain persistent object identity across frames, and represent object state through anchor-relative transitions rather than a globally aligned world model. Built on recent RGB-only advances in promptable video segmentation, temporal propagation, and relative 3D lifting, the method produces a retrieval-ready memory directly usable for long-horizon question answering. Evaluation on a 255-question object-related subset from EgoLifeQA shows, under question-only retrieval, a 6.7-point overall gain over EgoRAG-Text and a 12.5-point gain on when questions, which highlights the value of temporally organized object memory. These results position relative 4D scene graphs as a practical memory substrate for wearable assistants, AR systems, and embodied multimedia agents. GitHub Page: https://dualtransparency.github.io/R4DSG/.",
+    "authors": [
+      "Ke Ma",
+      "Yamin Mao",
+      "Weiming Li",
+      "Shuai Tan",
+      "Yijie Zhong",
+      "Hao Chen",
+      "Haofen Wang",
+      "Meng Wang"
+    ],
+    "published": "2026-08-11T15:00:15+00:00",
+    "updated": "2026-08-11T15:00:15+00:00",
+    "url": "http://arxiv.org/abs/2608.11017v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.11017v1",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.HC",
+      "cs.MM"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.10976v1",
+    "title": "XCoT-VLA: Executable Chain-of-Thought for Vision-Language-Action Driving",
+    "abstract": "Vision-Language-Action (VLA) models can connect scene understanding, semantic reasoning, and trajectory generation for autonomous driving. However, verbose natural-language Chain-of-Thought (CoT) is poorly suited to real-time control because it is open-ended, costly to decode, and difficult to optimize as an action-facing representation. We propose XCoT-VLA, which replaces descriptive rationales with compact executable CoT tokens learned from automatically constructed Reason-Action supervision. Logged trajectories provide action evidence, while scene context supplies causal semantics. The predicted XCoT sequence remains in context and conditions fixed trajectory queries through shared multimodal self-attention. Deterministic token-function routing applies the Reason FFN to XCoT tokens and the Control FFN to trajectory queries for flow-matching trajectory generation. We further introduce XCoT Policy Optimization (XCPO) as an optional refinement extension in the same executable token space. XCoT-VLA reduces longitudinal ADE from 1.645 to 1.323 on a general-distribution set and lateral FDE from 1.616 to 0.648 in lane-change scenarios. By representing driving-oriented reasoning with only 2-6 executable XCoT tokens, our method substantially reduces autoregressive reasoning overhead and remains within the real-time planning budget. These results demonstrate that driving-oriented reasoning can be compact, executable, and directly connected to trajectory generation.",
+    "authors": [
+      "Foundation Model Team",
+      "XPeng Inc"
+    ],
+    "published": "2026-08-11T14:33:21+00:00",
+    "updated": "2026-08-11T14:33:21+00:00",
+    "url": "http://arxiv.org/abs/2608.10976v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.10976v1",
+    "categories": [
+      "cs.AI"
+    ],
+    "primary_category": "cs.AI"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.10915v2",
+    "title": "ComBodied Agents: a New Paradigm of Human-Centric Agentic AI",
+    "abstract": "After an older adult misses a medication dose, a software agent can send another reminder and an embodied agent can bring the medication. Yet neither explains whether the person forgot, is confused, has side effects, or deliberately refused, nor what support is appropriate. This reveals a structural gap in Agentic AI: Digital Agents primarily transform software states, while Embodied Agents transform physical states; neither makes a person's evolving state and agency the primary object of modeling, intervention, and evaluation. We introduce Combodied Agents, a human-centered paradigm that perceives, models, predicts, and supports individual human-state trajectories over time, using software tools, sensors, wearables, robots, and human services as action channels rather than end goals. We unify fragmented capabilities across personal assistants, health agents, AI companions, and adaptive human--AI systems into a closed loop: event-based multimodal perception reconstructs meaningful personal events; longitudinal, correctable memory provides temporal context; Personal World Models estimate future personal states and outcomes under alternative decisions and interventions; and an admissible intervention policy selects proportionate support under consent, uncertainty, safety, reversibility, and user control. Feedback from the person and environment updates the loop. Rather than requiring an exhaustive Human Digital Twin, the framework uses purpose-bounded, uncertainty-aware, user-correctable representations. We organize the design space by human-state targets, relational contexts, and agent roles, and propose scenario-centered evaluation, agency-preservation metrics, benchmark requirements, edge-native personal models, and governance directions. Combodied Agents shift Agentic AI from external task completion toward sustained human benefit.",
+    "authors": [
+      "Qianggang Ding",
+      "Xingyao Wang",
+      "Rui Feng",
+      "Zhibin Wang",
+      "Feixiang Yao",
+      "Kelong Mao",
+      "Hao Sun",
+      "Zhiyao Luo",
+      "Jiankai Tang",
+      "Lei Li",
+      "Jiadong Guo",
+      "Minheng Ni",
+      "Weicong Lin",
+      "Chenxi Yang",
+      "Hongxiang Gao",
+      "Zhenghua Chen",
+      "Yang Bai",
+      "Min Wu",
+      "Jun Cheng",
+      "Huazhu Fu",
+      "Dacheng Tao",
+      "Bang Liu"
+    ],
+    "published": "2026-08-11T13:35:58+00:00",
+    "updated": "2026-08-12T09:22:00+00:00",
+    "url": "http://arxiv.org/abs/2608.10915v2",
+    "pdf_url": "https://arxiv.org/pdf/2608.10915v2",
+    "categories": [
+      "cs.AI"
+    ],
+    "primary_category": "cs.AI"
+  }
+]
