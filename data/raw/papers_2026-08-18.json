@@ -1,0 +1,523 @@
+[
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.16889v1",
+    "title": "Don't Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and Transition-aware Memory",
+    "abstract": "Long-horizon robot manipulation chains many contact-rich skills into one multi-stage task. Vision-language-action (VLA) models increasingly master the individual skills, yet the chain still fails: errors compound beyond the policy's ability to correct, and one subtask silently constrains the next. A promising recipe freezes the VLA and puts an LLM agent in charge: it plans in language, moves in free space with analytic primitives, invokes the VLA only for contact-rich segments, and writes adaptation into language memory. Applied to long horizons, it breaks twice. (1) Competence comes from whole-task exploration at test time, whose cost is multiplicative in stages: if one stage needs T episodes, a K-stage task needs about T^K, and a failure does not reveal which stage caused it. (2) It has no representation of transitions: the VLA primitive carries an exit but no entry condition, so a subtask can succeed in a form its successor cannot use. We present BATON. Against (1), BATON makes the subtask the unit of exploration: each is explored in the cheap short-horizon regime and its solution stored in memory; a long-horizon trajectory is then composed from these solutions rather than discovered whole. Cost becomes additive (T*K) and every failure is attributed to a single stage. Against (2), BATON equips exploration with a transition-aware memory. Within a subtask, a verifier agent governs the invocation transition: the VLA is called only after the wrist view confirms the scene is ready. Across subtasks, a handoff transition restores an entry state disturbed by the predecessor's residue, and a lookahead transition selects the strategy whose outcome the successor can inherit. No parameters are updated. On the long-horizon benchmark RoboMemArena, BATON improves task success by 11.6% and cumulative success by 14.9% over the SoTA.",
+    "authors": [
+      "Bingxin Xu",
+      "Yuzhang Shang",
+      "Emilio Ferrara"
+    ],
+    "published": "2026-08-17T17:59:57+00:00",
+    "updated": "2026-08-17T17:59:57+00:00",
+    "url": "http://arxiv.org/abs/2608.16889v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.16889v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.CV"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.16885v1",
+    "title": "$τ_0$-VLA: a Hierarchical Robot Foundation Model with World-Model-Guided Test-Time Computation",
+    "abstract": "Long-horizon robot manipulation requires a robot to both execute individual skills reliably and sequence them coherently over extended tasks. Most hierarchical vision-language-action (VLA) models make each such decision with a single forward pass, leaving no mechanism to allocate additional computation to difficult or consequential choices. We introduce $τ_0$-VLA, a hierarchical robot foundation model that formulates high-level subtask generation as a compute-scalable inference problem through world-model-guided test-time computation. At each inference step, the high-level policy uses execution memory to generate a subtask and, when needed, searches over alternatives before committing to its output. A low-level policy then executes the generated subtask across multiple robot embodiments. The policy is trained on 40,115 hours of heterogeneous real-world data with multimodal co-training. Across in-domain and distribution-shifted settings, allocating additional test-time computation substantially improves next-subtask prediction accuracy, and these gains translate into higher closed-loop success on long-horizon robot manipulation tasks.",
+    "authors": [
+      "Xiaowei Cai",
+      "Yunuo Cai",
+      "Bingao Chen",
+      "Jingxiao Chen",
+      "Zhi Chen",
+      "Siyuan Feng",
+      "Tengyu Hou",
+      "Jingshun Huang",
+      "Han Jiang",
+      "Runkun Ju",
+      "Dong Li",
+      "Mingxiang Li",
+      "Shaowei Li",
+      "Xinchen Li",
+      "Yifan Li",
+      "Yi Liu",
+      "Zhongyuan Liu",
+      "Jianlan Luo",
+      "Junwen Miao",
+      "Ruiqi Ni",
+      "Buqing Nie",
+      "Mingjie Pan",
+      "Xinlin Ren",
+      "Jianheng Song",
+      "Jiaxu Wang",
+      "Peiqi Wang",
+      "Sen Wang",
+      "Xiaoyan Wang",
+      "Dafeng Wei",
+      "Dongming Wu",
+      "Pengwei Xie",
+      "Pu Yang",
+      "Hangjian Ye",
+      "Xiangyu Yue",
+      "Jinyu Zhang",
+      "Qinglin Zhang",
+      "Xueyong Zhao",
+      "Pengfei Zhou",
+      "Yue Zhou"
+    ],
+    "published": "2026-08-17T17:59:11+00:00",
+    "updated": "2026-08-17T17:59:11+00:00",
+    "url": "http://arxiv.org/abs/2608.16885v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.16885v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.16843v1",
+    "title": "Security of Foundation-Model-Powered Embodied Agents: Attack Surfaces, Attacks, Defenses, and Evaluation",
+    "abstract": "Foundation models are increasingly used for perception, reasoning, planning, and action generation in embodied agents, creating security risks that can propagate from digital inputs to physical behavior. Existing surveys often organize threats by mechanisms such as jailbreaks, prompt injection, backdoors, poisoning, or adversarial examples, but these categories do not consistently identify where an adversary first enters the embodied control loop. We present a trust-boundary-centric survey of foundation-model-powered embodied-agent security. Using a first-compromised-trust-boundary principle, we separate attack surface from attack mechanism and organize the system into five layers and twelve attack surfaces spanning the model supply chain, user instructions, context and memory, physical semantic environments, multimodal perception, world state, internal reasoning, task planning, action interfaces, middleware, multi-agent communication, and execution control. Based on 58 attack records and 61 defense records collected through August 15, 2026, we analyze representative attacks, cross-layer propagation, defense placement, and evaluation practices. Our quantitative analysis shows that attack research is concentrated on multimodal perception and action interfaces, while defenses are especially concentrated on action-level and runtime protection. Context and long-term memory, middleware and networking, world-state integrity, and multi-agent trust remain comparatively underexplored. We conclude with open challenges in state provenance, compositional defenses, long-horizon attack propagation, physical realizability, Byzantine multi-robot behavior, and unified closed-loop evaluation.",
+    "authors": [
+      "Jiawei Liu",
+      "Jiacheng Guo",
+      "Tian Zhang",
+      "Yiwei Xu",
+      "Juan Wang",
+      "Jinlin Fan",
+      "Bowen Xiao"
+    ],
+    "published": "2026-08-17T17:28:49+00:00",
+    "updated": "2026-08-17T17:28:49+00:00",
+    "url": "http://arxiv.org/abs/2608.16843v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.16843v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.16837v1",
+    "title": "HAF: Adapting Generalist VLAs to Humanoid Whole-Body Loco-manipulation via Hierarchical Action Flow and Spectral Latent RL",
+    "abstract": "Humanoid robots hold great promise as general-purpose agents in human-centered environments, yet generalist vision-language-action (VLA) foundation models are not readily applicable to humanoid whole-body loco-manipulation. The high dimensionality and interdependence of humanoid motions make it challenging for conventional single-stage VLA architectures to coordinate locomotion, waist posture, and dual-arm manipulation effectively. Moreover, policies trained through offline behavior cloning can remain suboptimal during real-world deployment. Although online reinforcement learning can refine policies through real-world interaction, directly tuning large VLA backbones demands excessive computation and may introduce safety risks during real-robot exploration. To address these bottlenecks, we introduce HAF (Humanoid Adaptation Framework), a two-part framework consisting of HAF-VLA and HAF-Steer that transfers off-the-shelf generalist VLA foundation models to humanoid whole-body loco-manipulation. HAF-VLA is a hierarchical action-flow generator built on a pretrained flow-matching VLA. It splits full-body action denoising into three sequential stages with stage embeddings and cross-stage KV caches that retain kinematic dependencies, avoiding incoherent whole-body actions from one-shot generation. On top of the frozen HAF-VLA, HAF-Steer is a latent offline-to-online RL pipeline that leverages flow-matching invertibility and DCT-based dimensionality reduction to restrict RL optimization to a compact noise subspace and train a regularized SAC policy. This avoids updating the large VLA backbone and enables efficient real-world policy refinement. Evaluated on seven real-world humanoid loco-manipulation tasks, HAF surpasses vanilla single-stage VLA baselines and improves whole-body coordination and task performance. Project website: https://grange007.github.io/HAF .",
+    "authors": [
+      "Langzhe Gu",
+      "Chengkai Hou",
+      "Meng Li",
+      "Xinhua Wang",
+      "Jiaming Liu",
+      "Xinyuan Lv",
+      "Bowei Zhang",
+      "Shuanghao Bai",
+      "Guangrun Li",
+      "Jingyang He",
+      "Gaole Dai",
+      "Ziluo Ding",
+      "Zhiyuan Xu",
+      "Kuan Cheng",
+      "Jian Tang",
+      "Zhengping Che",
+      "Shanghang Zhang"
+    ],
+    "published": "2026-08-17T17:22:33+00:00",
+    "updated": "2026-08-17T17:22:33+00:00",
+    "url": "http://arxiv.org/abs/2608.16837v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.16837v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.16806v1",
+    "title": "When State Becomes an Attack Surface: State-Semantic Injection in LLM-Driven Embodied Agents",
+    "abstract": "Large Language Models (LLMs) have demonstrated capabilities in in-context learning, task decomposition, step-by-step reasoning, and code generation, driving their gradual evolution from text generation models into the core of agents capable of perceiving environments, invoking tools, and executing tasks. Traditional LLM Agents typically obtain information through webpages, documents, databases, or external tools and generate corresponding invocation sequences according to user goals; when this technology is further integrated with robotic systems, large language models begin to undertake functions such as task understanding, high-level planning, and behavioral decision-making. SayCan combines the task reasoning capability of language models with the affordances of robotic skills, while Code as Policies and ProgPrompt generate robot task plans through policy code and programmatic prompting, respectively, and VoxPoser uses language models and vision-language models to construct three-dimensional value maps to guide robotic manipulation \\cite{6,7,8,9}. Vision-language-action models such as PaLM-E, RT-2, and GR00T N1 further strengthen the connection among language, visual perception, and robotic actions \\cite{10,11,12}. In such LLM-driven embodied agents, the model not only needs to understand user instructions, but also needs to combine scene states, object attributes, spatial relations, and execution feedback to complete task grounding, and then hand the generated action plan to skill libraries, motion planners, or controllers for execution.",
+    "authors": [
+      "Jiawei Liu",
+      "Jiacheng Guo",
+      "Tian Zhang",
+      "Yiwei Xu",
+      "Juan Wang",
+      "Jinlin Fan",
+      "Bowen Xiao",
+      "Chi Guo",
+      "Keyan Guo",
+      "Hongxin Hu"
+    ],
+    "published": "2026-08-17T17:02:07+00:00",
+    "updated": "2026-08-17T17:02:07+00:00",
+    "url": "http://arxiv.org/abs/2608.16806v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.16806v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.16794v1",
+    "title": "Neurosymbolic Embodied Agents",
+    "abstract": "Language and vision-language models generate plausible embodied plans but do not guarantee executability, as their outputs can violate environment dynamics or act on incorrectly grounded entities. We present a neurosymbolic agent that factors long-horizon household tasks into task-directed visual exploration and constrained symbolic planning. In the first phase, a vision-language model and exploration harness acquire goal-relevant predicates and instance bindings from egocentric observations and grounded interactions, producing a symbolic initial state. In the second, a PDDL transition model restricts decoding to tokens that extend applicable actions. Monte Carlo tree search then evaluates executable continuations using a domain-independent planning heuristic. The resulting plans are executable by construction under the transition model, with transfer to the environment conditioned on correct visual grounding. On VirtualHome and ALFWorld, open 4B-27B models exceed 90% success in both environments, and our smallest agent substantially outperforms a 27B direct visual policy in each. Constraints and search prove complementary rather than interchangeable: in ALFWorld either alone solves under a third of tasks, whereas their combination solves over 95%. The method also uses several times fewer generated tokens than extended thinking and far fewer model-visible images than direct interaction, and residual failures localize to state acquisition rather than plan generation without any specialized training.",
+    "authors": [
+      "Mohammad Albinhassan",
+      "Yuming Feng",
+      "Alessandra Russo",
+      "Pranava Madhyastha"
+    ],
+    "published": "2026-08-17T16:50:59+00:00",
+    "updated": "2026-08-17T16:50:59+00:00",
+    "url": "http://arxiv.org/abs/2608.16794v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.16794v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.16715v1",
+    "title": "MatchingPolicy: Correspondence-Aware Policy Enables Cross-Object In-Context Learning",
+    "abstract": "In-context imitation learning enables few-shot policy generalization but struggles to maintain performance on unseen objects and novel scenarios. To address this, we introduce MatchingPolicy, a correspondence-driven framework that explicitly decouples demonstration-to-scene matching from policy learning. Central to our method is a correspondence-aware diffusion policy that conditions robotic actions directly on dense semantic correspondences. This architectural separation resolves the inherent conflict between correspondence identification and action adaptation, enabling robust out-of-distribution transfer. Our framework integrates vision foundation models with a novel two-stage matching algorithm to dynamically establish reliable correspondences. Extensive evaluations on RLBench and real-world manipulation tasks confirm that MatchingPolicy achieves superior few-shot performance, generalizing reliably across unseen object instances and semantic categories.",
+    "authors": [
+      "Qijin She",
+      "Hanyang Yu",
+      "Zeming Li",
+      "Ping Tan"
+    ],
+    "published": "2026-08-17T15:29:58+00:00",
+    "updated": "2026-08-17T15:29:58+00:00",
+    "url": "http://arxiv.org/abs/2608.16715v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.16715v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.16697v1",
+    "title": "FabriMAE I Trust Myself? Self-Evaluating VLA Action Generation with Markov Attention Entropy",
+    "abstract": "Vision-Language-Action models (VLAs) integrate visual perception, language instruction, and action generation into end-to-end policies across heterogeneous architectures. However, enabling VLAs to self-evaluate their action generation reliability without external supervision remains a major challenge. Existing methods either rely on expert annotations or estimate uncertainty only from output statistics, largely ignoring internal signals. In this work, we observe that internal visual modality entropy exhibits consistent distinctions between successful and failed tasks across heterogeneous VLAs. Although VLAs' architectures differ in their action generation, we show that they share a common latent action generation abstraction evolving under visual perception, language instruction, and state input, which we formulate as a Conditional Generative Markov Chain. Based on this formulation, we propose MAE (Markov Attention Entropy), a self-evaluation framework that directly converts internal attention signals into architecture-aware reliability scores, and introduce LIBERO-Reflect, a 4,000-episode benchmark combining 2,000 standard episodes and 2,000 challenging episodes across four subsets. Extensive experiments across heterogeneous VLA architectures and diverse scenarios show that MAE consistently outperforms state-of-the-art baselines on AUPR, AUROC, and FPR@95. We further instantiate FabriMAE for verifier-free test-time action selection, showing that MAE-guided multiple sampling improves PI-family robustness on LIBERO-Plus with small observed runtime overhead.",
+    "authors": [
+      "Aniri",
+      "Chen Yilin",
+      "Jinhe Bi",
+      "Junfei Guo",
+      "Donglai Ran",
+      "Xu Bian",
+      "Zengjie Jin",
+      "Yujun Wang",
+      "Yijun Tian",
+      "Volker Tresp",
+      "Fei Shen",
+      "Tat-Seng Chua",
+      "Yunpu Ma"
+    ],
+    "published": "2026-08-17T15:14:53+00:00",
+    "updated": "2026-08-17T15:14:53+00:00",
+    "url": "http://arxiv.org/abs/2608.16697v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.16697v1",
+    "categories": [
+      "cs.AI"
+    ],
+    "primary_category": "cs.AI"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.16686v1",
+    "title": "Closing the Affective Loop: Multimodal Speaker-Listener Emotion-Dynamics-Aware Empathetic Social Robots",
+    "abstract": "Empathetic social robots should respond not only to what users say, but also to how their emotions dynamically evolve during interaction. However, existing empathetic dialogue systems are often text-centered and primarily model empathy as a one-way mapping from the user's emotion to the system response, limiting their ability to capture embodied speaker--listener affective exchange. We present AffectLoop, a multimodal speaker-listener emotion-dynamics-aware spoken dialogue system implemented on the Misty II robot. The system tracks the speaker's verbal and facial affective dynamics, estimates the robot listener's own verbal and behavioral affective state, and conditions LLM-based response generation on both affective streams. The robot then generates a short spoken empathetic response together with emotionally congruent embodied behavior, forming a closed speaker--listener affective loop. We evaluate the system in a pilot within-subject study with five participants, comparing it with an otherwise identical utterance-conditioned baseline that omits the speaker- and listener-affective-state inputs. The proposed system received higher overall impression ratings, especially for empathetic response and user satisfaction. Post-hoc log analysis further showed higher speaker-listener affective alignment and stronger valence-based distress recovery. These preliminary results suggest that explicitly modeling both speaker emotional dynamics and listener affective state can improve embodied empathetic interaction.",
+    "authors": [
+      "Zi Haur Pang",
+      "Casey Kennington",
+      "Tatsuya Kawahara"
+    ],
+    "published": "2026-08-17T15:08:38+00:00",
+    "updated": "2026-08-17T15:08:38+00:00",
+    "url": "http://arxiv.org/abs/2608.16686v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.16686v1",
+    "categories": [
+      "cs.HC",
+      "cs.CL",
+      "cs.RO"
+    ],
+    "primary_category": "cs.HC"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.16642v1",
+    "title": "Throwing a Tight Spiral American Football by a Humanoid Robot",
+    "abstract": "Accurate throwing of the American football requires precise regulation of release conditions, where coupled linear and angular momentum determine flight stability and targeting accuracy. While prior work on robotic object throwing has largely focused on generating dynamically feasible release velocities using open-gripper paradigms, explicit control of spin injection at detachment remains underexplored, particularly for aerodynamically anisotropic objects like the American football. In this paper, we present the spin-stabilized controlled tight spiral throw of an American football by a humanoid robot. Achieving this requires (i) accurately reaching the desired coupled momentum, which often involves high degrees-of-freedom (DoF) movements completed within approximately half a second, and (ii) managing the complex transient contact dynamics that arise during the sub-100-millisecond release phase, when the football is effectively underactuated as it moves partially across the fingers. To this end, we develop a coupled whole-body control strategy where the lower body is performing informed stabilization while the upper body is further divided into two phases with (i) a throw phase accelerating the football to a target state through trajectory optimization and tracking, and (ii) a follow-through phase utilizing model predictive control to actively control the wrist and remaining in-contact fingers. The proposed framework is empirically validated on a 29-DoF Unitree G1 humanoid equipped with a 7-DoF Dex3-1 three-fingered gripper. The thrown American football reaches up to 93.6% spin efficiency and a 0.286 radians linear-velocity-to-nose-alignment (nose-angle) error (where an ``ideal'' tight spiral corresponds to 100 % spin efficiency and 0 radians nose-angle error) at up to a 5.35 m/s linear velocity and an angular velocity of 14.5 rad/s.",
+    "authors": [
+      "Zaid Mahboob",
+      "Bowen Weng"
+    ],
+    "published": "2026-08-17T14:40:54+00:00",
+    "updated": "2026-08-17T14:40:54+00:00",
+    "url": "http://arxiv.org/abs/2608.16642v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.16642v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.16590v1",
+    "title": "Zetta $ζ$: An Efficient Closed-Loop Embodied Harness for Self-Evolving Physical Intelligence",
+    "abstract": "Embodied agents are increasingly used to close the gap left by end-to-end policy models. Yet the agentic path has not realized closed-loop learning in physical execution: existing harnesses remain largely open-loop, following fixed skills during rollout and reflecting only after an episode completes. Such post-hoc reflection cannot govern execution as it unfolds, because physical interaction requires decisions to track rapidly changing robot-environment states at a frequency beyond today's large agentic models. We present Zetta, a closed-loop embodied harness that evolves code-based runtime critics and recovery skills online while keeping the base policy frozen. Through three timescale-separated loops, Zetta provides action-frequency governance, rollout-level critic-recovery proposal, and validation-gated skill updates. Together with Z-Infra, a rollout infrastructure decoupling agent logic from heterogeneous execution resources, Zetta achieves state-of-the-art success on LIBERO-Pro and RoboCasa under our current rollout budget, reaching 90.8% and 93.6%, with an 11.1x inference speedup; success continues to scale with self-exploration experience; learned skills transfer zero-shot, and clear robotic \"Aha Moments\" emerge. These results show that closed-loop harness self-evolution opens a scaling path for reliable physical intelligence.",
+    "authors": [
+      "Xin Ding",
+      "Liang Mi",
+      "Mingzhe Huang",
+      "Zixuan Wang",
+      "Chao Zhang",
+      "Zixu Hao",
+      "Fu Chen",
+      "Xiangyu Li",
+      "Yikai Zheng",
+      "Yaoyu Guo",
+      "Weijun Wang",
+      "Kun Li",
+      "Hao Wu",
+      "Yunxin Liu",
+      "Ting Cao"
+    ],
+    "published": "2026-08-17T13:49:43+00:00",
+    "updated": "2026-08-17T13:49:43+00:00",
+    "url": "http://arxiv.org/abs/2608.16590v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.16590v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.16556v1",
+    "title": "DeepInsight II: One Trace from Benchmark to Robot",
+    "abstract": "Across a Physical AI stack, evaluation maturity is inversely aligned with deployment risk: foundation models enjoy mature, standardized harnesses, while the embodied layers on which deployment actually turns remain fragmented across benchmark-specific simulators, embodiments, and interfaces. The first DeepInsight report (v1) unified evaluation across this stack behind three abstractions---task, resource, and result---but its quantitative evidence centered on the foundation-model layer; navigation and manipulation (System 1) and whole-body control (System 0) remained simulation case studies, and physical execution was outside its empirical scope. DeepInsight II keeps that substrate fixed and quantifies the embodied half. First, it reproduces released-checkpoint references across two navigation and four manipulation benchmarks under their native protocols. Second, MotionBench places four released whole-body controllers under one workload and metric contract, then carries a qualified within-family cohort from parallel simulation to matched real-robot trials in which simulated and physical rollouts share a parent trace identity while retaining execution-domain-specific records, making the sim-to-real gap a native reduction rather than a reconciliation across toolchains. Third, a composed System 2--1--0 study extends trace localization into five evidence-grounded handoff labels, each mapped to a concrete repair action, with a measured repairability criterion and physical episodes testing the same attribution under hardware-observable state. The contribution is therefore not a new evaluation architecture, but empirical continuity from benchmark execution to matched robot evidence and repair-oriented diagnosis.",
+    "authors": [
+      "Siyi Li",
+      "Yuchen Kang",
+      "Wuliang Wang",
+      "Zhengjie Zhang",
+      "Jiangpin Liu",
+      "Jianhao Yao",
+      "Jie Chen"
+    ],
+    "published": "2026-08-17T13:25:24+00:00",
+    "updated": "2026-08-17T13:25:24+00:00",
+    "url": "http://arxiv.org/abs/2608.16556v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.16556v1",
+    "categories": [
+      "cs.AI"
+    ],
+    "primary_category": "cs.AI"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.16555v1",
+    "title": "Co-design of Neural and Muscle Network based on Embodied Perceptron Representation",
+    "abstract": "Recent advances in AI technologies have enabled the advanced design of complex control policies. In contrast, focusing on the body, many robots still employ simple bodies that can limit adaptability to environments. Studies in embodied robotics have shown that well-designed bodies can partially replace the role of control and computation with physical body-environment interactions, yet such designs still depend heavily on expert intuition. There is a need for a systematic theoretical framework for body design, as well as a method for joint optimization of the body and controller. To address this, we introduce the Embodied Perceptron, a theoretical framework that unifies neural networks and physical body systems. In this view, the body itself acts as a perceptron: mechanical parameters correspond to weights, and physical nonlinearities play the role of activation functions. By representing physical constraints as weights and nonlinear properties as activation functions, a physical body can be modeled in neural-network form. The system representation enables us to explicitly and theoretically explain that the body can substitute for part of the neural control. As an application, we co-optimize control policy and muscle configuration in a musculoskeletal robot and show that the resulting embodied intelligence can provide inherent stability, improve learning efficiency, and drastically reduce model size-even with a single-neuron controller. The results bridge the informational and physical worlds and provide a pathway toward understanding and systematic design of embodied AI systems.",
+    "authors": [
+      "Siyuan Tao",
+      "Yoichi Masuda",
+      "Hiroyuki Nabae",
+      "Masato Ishikawa"
+    ],
+    "published": "2026-08-17T13:25:09+00:00",
+    "updated": "2026-08-17T13:25:09+00:00",
+    "url": "http://arxiv.org/abs/2608.16555v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.16555v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.16503v1",
+    "title": "NebulaVLA: A Dual-Frequency Vision-Language-Action Model With Guide Action for Robotic Manipulation",
+    "abstract": "Real-world deployment of Vision-Language-Action (VLA) models is often bottlenecked by efficiency-performance trade-offs, cross-embodiment generalization, and execution smoothness. We present NebulaVLA, an asynchronous dual-frequency architecture that decouples high-level semantic reasoning from low-level action control, optimizing computational resources and modularity. To bridge semantic gaps across heterogeneous robots, we introduce GESTURE-7, a unified language-grounded action representation. Furthermore, our Guide Action algorithm enforces kinematic continuity via mask-based smoothness constraints. Comprehensive evaluations demonstrate that NebulaVLA significantly outperforms synchronous baselines, achieving an 85.5\\% average success rate on LIBERO-Plus and accelerating action generation by \\textasciitilde 2.7$\\times$. This asynchronous design enables highly efficient and responsive control for practical robotics.",
+    "authors": [
+      "Cong Zhao",
+      "Shuai Tian",
+      "Xu Zhang",
+      "Baocheng Ni",
+      "Xinguo Song",
+      "Xueying Sun",
+      "Shu Jiang",
+      "Shouchang Yang",
+      "Bo Tang",
+      "Jin Deng",
+      "Ge Zhu",
+      "YongCheng Wang",
+      "Jin Xu",
+      "Ri Yang"
+    ],
+    "published": "2026-08-17T12:40:23+00:00",
+    "updated": "2026-08-17T12:40:23+00:00",
+    "url": "http://arxiv.org/abs/2608.16503v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.16503v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.16476v1",
+    "title": "Exposing the Long-tail in Embodied Urban Navigation via Scalable Learning from In-the-Wild Videos",
+    "abstract": "Learning embodied urban navigation policies from real-world data is constrained by the cost of task-specific data collection and the limited coverage of rare yet safety-critical scenarios. To address these challenges, we present a scalable framework for learning point-goal urban navigation from web-scale in-the-wild egocentric videos while systematically exposing its long tail. The framework automatically annotates uncurated web videos with metric trajectories and structured navigation semantics, which are then used to train a vision-language-action policy for interpretable navigation planning. We characterize the long tail based on model performance and the distribution of perception-motion patterns, and employ reflection-based analysis to diagnose recurring failure modes. Experiments on web-video data and real-world urban navigation tasks demonstrate effective knowledge transfer from unconstrained videos and reveal coherent long-tail structures beyond aggregate navigation performance.",
+    "authors": [
+      "Bingyi Xia",
+      "Han Bao",
+      "Zhewei Chen",
+      "Hanjing Ye",
+      "Jingwen Yu",
+      "Yuhan Pang",
+      "Wenjun Xu",
+      "Jiankun Wang"
+    ],
+    "published": "2026-08-17T12:15:59+00:00",
+    "updated": "2026-08-17T12:15:59+00:00",
+    "url": "http://arxiv.org/abs/2608.16476v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.16476v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.16447v1",
+    "title": "HaReCAP: Habitual-action Grounding for Recursive Large Language Model Agents",
+    "abstract": "Long-horizon embodied tasks require LLM agents to iteratively decompose high-level goals, revise plans in response to environmental feedback, and ground leaf-level subgoals into valid executable actions. Recursive context-management methods such as ReCAP improve planning stability through multi-level task decomposition and parent-node refinement, but still repeatedly invoke the LLM at leaf nodes to ground atomic subtasks into exact valid actions. We refer to this final grounding step as last-mile grounding redundancy, which accumulates into substantial LLM-call and token overhead during long-horizon execution. To mitigate this issue, we propose HaReCAP (Habitual-action Grounded ReCAP), a low-intrusion leaf grounding extension for ReCAP. HaReCAP extracts frequent leaf decisions from successful trajectories and compiles them offline into auditable and abstainable one-step leaf-reflex rules. At runtime, it skips the leaf LLM call only when a rule can uniquely determine a legal action in the current valid-action set; otherwise, it falls back to the original ReCAP. This design avoids repeatedly carrying the full recursive context into the LLM for routine leaf action grounding, while preserving the original recursive control flow. We evaluate HaReCAP on Robotouille and ALFWorld with Qwen3.5-27B as the main model. On tasks solved by both ReCAP and HaReCAP, HaReCAP reduces token consumption by 14.67%, 17.93%, and 20.08% on Robotouille synchronous, Robotouille asynchronous, and ALFWorld, respectively. The results show that HaReCAP can serve as a low-intrusion extension to ReCAP-style recursive context-management frameworks, reducing last-mile grounding redundancy across environments and models on commonly successful trajectories.",
+    "authors": [
+      "Shen Liu",
+      "Zhenguo Xu",
+      "Shaopu Wang",
+      "Yike Gao",
+      "Chunlei Wang"
+    ],
+    "published": "2026-08-17T11:47:03+00:00",
+    "updated": "2026-08-17T11:47:03+00:00",
+    "url": "http://arxiv.org/abs/2608.16447v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.16447v1",
+    "categories": [
+      "cs.AI",
+      "cs.RO"
+    ],
+    "primary_category": "cs.AI"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.16229v1",
+    "title": "Planner-Conditioned Diffusion for Coordinated Multi-Agent Exploration",
+    "abstract": "Coordinated multi-agent exploration requires not only efficient individual coverage but also non-redundant coverage across agents over extended planning horizons. Conventional approaches rely on hand-crafted coordination rules, while end-to-end multi-agent learning methods are difficult to scale and train. Diffusion-based planners such as DARE offer a promising alternative by generating long-horizon trajectories instead of single-step actions, but existing methods are trained on a narrow planner distribution, limiting behavioral diversity and inference-time controllability. We propose a Planner-Conditioned Diffusion Policy (PCDP) for graph-based multi-agent exploration. PCDP is trained on demonstrations from multiple planner styles with planner identity as an explicit conditioning input, enabling a single shared model to learn a multimodal trajectory distribution and generate diverse, controllable trajectory candidates from the same observation. Rather than learning coordination end-to-end, we reuse this multimodal single-agent policy across all agents and introduce coordination through local reranking, in which nearby agents jointly select the trajectory combination with minimal predicted overlap. We evaluate PCDP against classical and diffusion-based baselines on 100 held-out maps in a four-agent simulation setting. PCDP matches the perfect success rate of the diffusion-based baselines while improving mean max-agent travel, total team travel, and agent imbalance. Crucially, reranking alone over a single-planner baseline yields only marginal gains, indicating that planner-conditioned multimodality is the main contributor to improved coordination. Qualitative simulation results and real-robot experiments with two agents further validate that diverse long-horizon trajectory generation produces emergent spatial separation between agents without any explicit repulsion mechanism.",
+    "authors": [
+      "Marcus Yu Siong Teo",
+      "Jeric Lew",
+      "Tanishq Duhan",
+      "Guillaume Sartoretti"
+    ],
+    "published": "2026-08-17T08:07:20+00:00",
+    "updated": "2026-08-17T08:07:20+00:00",
+    "url": "http://arxiv.org/abs/2608.16229v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.16229v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.16222v1",
+    "title": "HiPHI: A Large-Scale Benchmark for High-Precision Human Motion and Object-Interaction",
+    "abstract": "Humanoid intelligence requires learning over an extremely diverse space of whole-body motions and physically grounded interactions. However, existing embodied datasets remain fundamentally limited: internet-scale video data lack precise physical states and interaction grounding, while laboratory motion datasets provide high fidelity but only narrow behavioral coverage. This mismatch creates a critical bottleneck for scalable humanoid policy learning. We present HiPHI, a 600+ hour scale high-fidelity whole-body human motion dataset designed to systematically maximize coverage of the human motion and interaction manifold. HiPHI is theoretically guided by FrameNet, a linguistic framework organizing human primitives. Created using an optical motion capture pipeline, HiPHI provides sub-millimeter spatial marker tracking accuracy for full-body human motion and mesh-level object trajectories. We further introduce a benchmark suite evaluating motion-space diversity, interaction grounding, object consistency, and physical AI applications. Our analyses demonstrate that HiPHI significantly expands motion coverage compared to existing motion datasets while maintaining high-fidelity interaction quality, and establishes a scalable data foundation for training, evaluating, and generalizing humanoid policies in real-world embodied tasks, where similar extensions are also applicable to motion prior models in computer graphics.",
+    "authors": [
+      "Jiahao Ji",
+      "Ji Ma",
+      "Runhan Zhang",
+      "Runyi Yu",
+      "Wenjia Wang",
+      "Weiheng Chi",
+      "Qianqian Peng",
+      "Weichao Yan",
+      "Yongfei Gu",
+      "Ye Tian",
+      "Ting Wu",
+      "Longwei Li",
+      "Chun Yuan",
+      "Ruoli Dai",
+      "Lei Han"
+    ],
+    "published": "2026-08-17T07:54:26+00:00",
+    "updated": "2026-08-17T07:54:26+00:00",
+    "url": "http://arxiv.org/abs/2608.16222v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.16222v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.16195v1",
+    "title": "RoboStriker: Latent-Space Strategic Games for Autonomous Humanoid Boxing",
+    "abstract": "Achieving human-level competitive intelligence and physical agility in humanoid robots remains a profound challenge, particularly in contact-rich and highly dynamic tasks such as boxing. While Multi-Agent Reinforcement Learning offers a principled framework for strategic interaction, its direct application to unstructured raw motor spaces inevitably leads to joint-level physical collapse, preventing the emergence of any viable combat tactics. To resolve this fundamental conflict between strategic exploration and physical feasibility, we formulate the humanoid combat task as a novel two-player latent-space zero-sum Markov game. Under standard regularity and approximate best-response assumptions, we show that the latent formulation induces an equivalent game over the decoder-reachable action manifold, providing an approximate-Nash interpretation of the resulting self-play dynamics. To instantiate this theoretical formulation, we propose RoboStriker, a hierarchical framework that decouples high-level reasoning from low-level execution. It first distills the tracking expertise of predefined boxing motions into a topologically bounded latent manifold. This structured latent foundation subsequently drives multi-agent co-evolution via Latent-Space Neural Fictitious Self-Play. Extensive experimental results demonstrate that gaming within this structured latent space substantially outperforms direct exploration. By constraining strategic exploration through a pretrained motion decoder, RoboStriker substantially reduces the catastrophic balance failures observed in raw action-space methods and achieves superior tactical performance in both competitive win rates and striking efficiency. Finally, we successfully deploy and validate our learned combat policies on real-world humanoid robots. Our code and video and supplementary materials are available at RoboStriker.",
+    "authors": [
+      "Kangning Yin",
+      "Kaige Liu",
+      "Zhe Cao",
+      "Wentao Dong",
+      "Weishuai Zeng",
+      "Tianyi Zhang",
+      "Qiang Zhang",
+      "Jingbo Wang",
+      "Jiangmiao Pang",
+      "Yang Li",
+      "Ming Zhou",
+      "Weinan Zhang"
+    ],
+    "published": "2026-08-17T07:19:09+00:00",
+    "updated": "2026-08-17T07:19:09+00:00",
+    "url": "http://arxiv.org/abs/2608.16195v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.16195v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2608.16172v1",
+    "title": "SparkVLA: Stop-Aware Hierarchical VLA with Adaptive Action Chunking for Long-Horizon Manipulation",
+    "abstract": "At every re-observation point in a hierarchical Vision-Language-Action (VLA) system, two interface decisions must be made: when to terminate the current subtask and how far to execute the proposed action chunk. These decisions are mutually dependent---the optimal stopping point depends on what the executor plans to do, while the optimal execution length depends on where the subtask boundary lies---yet existing architectures evaluate them in isolation, an asymmetry neither module can overcome alone. We present SparkVLA, a stop-aware hierarchical VLA that resolves this mutual dependency by formulating both decisions as a single ranking: Stop competes against every action-prefix length in a unified candidate set, and the system selects the highest-scoring option, eliminating threshold tuning and requiring only offline ordinal preferences. An Anchor-Conditioned Context Encoding module caches a history-aware subtask anchor encoding onset-state memory and goal semantics, guiding visual-token pruning toward task-relevant regions; a Stop-Aware Action-Prefix Selection head scores all candidates via full self bnattention at chunk boundaries for efficiency. On RoboCerebra, SparkVLA achieves 47.12% success rate, surpassing the official hierarchical baseline by 30.57% and the strongest reproducible method by 26.83% Real-robot experiments on multi-step tasks further validate these gains on physical hardware.",
+    "authors": [
+      "Xunyao Lei",
+      "Renjun Wu",
+      "Tianlin Huo",
+      "Xuesong Li"
+    ],
+    "published": "2026-08-17T06:43:11+00:00",
+    "updated": "2026-08-17T06:43:11+00:00",
+    "url": "http://arxiv.org/abs/2608.16172v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.16172v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  }
+]
