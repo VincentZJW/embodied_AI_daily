@@ -1,6 +1,6 @@
 const latestArticle = {
-  "title": "具身智能中文日报｜2026-08-22",
-  "date": "2026-08-22",
+  "title": "具身智能中文日报｜2026-08-23",
+  "date": "2026-08-23",
   "subtitle": "聚焦VLA、Sim2Real、Diffusion Policy，追踪论文、开源项目与产业动态。",
   "theme": "tech-dark",
   "accent_color": "#4F8CFF",
@@ -18,7 +18,7 @@ const latestArticle = {
   "executive_summary": [
     {
       "title": "核心结论 1",
-      "content": "本次采集得到论文 20 篇、GitHub 项目 20 个、行业/公司动态 17 条。",
+      "content": "本次采集得到论文 9 篇、GitHub 项目 20 个、行业/公司动态 17 条。",
       "card_type": "核心摘要卡",
       "importance_score": 96,
       "tags": [
@@ -139,7 +139,7 @@ const latestArticle = {
     {
       "name": "Genesis-Embodied-AI/genesis-world",
       "summary": "该项目可能聚焦仿真到真实迁移，主要语言为 Python。",
-      "why_follow": "仓库星标数约为 29792，可用于观察开源社区对仿真到真实迁移的实现方向。",
+      "why_follow": "仓库星标数约为 29794，可用于观察开源社区对仿真到真实迁移的实现方向。",
       "source_url": "https://github.com/Genesis-Embodied-AI/genesis-world",
       "card_type": "开源项目卡",
       "importance_score": 93,
@@ -151,7 +151,7 @@ const latestArticle = {
     {
       "name": "NVlabs/ProtoMotions",
       "summary": "该项目可能聚焦仿真到真实迁移，主要语言为 Python。",
-      "why_follow": "仓库星标数约为 2325，可用于观察开源社区对仿真到真实迁移的实现方向。",
+      "why_follow": "仓库星标数约为 2326，可用于观察开源社区对仿真到真实迁移的实现方向。",
       "source_url": "https://github.com/NVlabs/ProtoMotions",
       "card_type": "开源项目卡",
       "importance_score": 90,
@@ -163,7 +163,7 @@ const latestArticle = {
     {
       "name": "Octoday-Hub/Embodied-AI",
       "summary": "该项目可能聚焦人形机器人控制，主要语言为 未知。",
-      "why_follow": "仓库星标数约为 2275，可用于观察开源社区对人形机器人控制的实现方向。",
+      "why_follow": "仓库星标数约为 2289，可用于观察开源社区对人形机器人控制的实现方向。",
       "source_url": "https://github.com/Octoday-Hub/Embodied-AI",
       "card_type": "开源项目卡",
       "importance_score": 88,
@@ -176,7 +176,7 @@ const latestArticle = {
     {
       "name": "fan-ziqi/rl_sar",
       "summary": "该项目可能聚焦仿真到真实迁移，主要语言为 C++。",
-      "why_follow": "仓库星标数约为 1437，可用于观察开源社区对仿真到真实迁移的实现方向。",
+      "why_follow": "仓库星标数约为 1438，可用于观察开源社区对仿真到真实迁移的实现方向。",
       "source_url": "https://github.com/fan-ziqi/rl_sar",
       "card_type": "开源项目卡",
       "importance_score": 84,
@@ -200,22 +200,21 @@ const latestArticle = {
   ],
   "industry_updates": [
     {
-      "title": "行业动态 1：视觉-语言-动作模型",
-      "summary": "该动态与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "title": "行业动态 1：具身智能评测与数据集",
+      "summary": "该动态与具身智能评测与数据集相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://www.therobotreport.com/robots-dont-run-themselves-workforce-powering-physical-ai/",
+      "source_url": "https://www.therobotreport.com/use-digital-twin-explore-automation-before-committing-capital/",
       "card_type": "行业动态卡",
       "importance_score": 86,
       "tags": [
-        "具身智能",
-        "机器人视觉"
+        "具身智能"
       ]
     },
     {
       "title": "行业动态 2：视觉-语言-动作模型",
       "summary": "该动态与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://www.therobotreport.com/technology-could-bring-robot-mowers-one-half-american-lawns/",
+      "source_url": "https://www.therobotreport.com/robots-dont-run-themselves-workforce-powering-physical-ai/",
       "card_type": "行业动态卡",
       "importance_score": 83,
       "tags": [
@@ -224,39 +223,38 @@ const latestArticle = {
       ]
     },
     {
-      "title": "行业动态 3：仿真到真实迁移",
+      "title": "行业动态 3：视觉-语言-动作模型",
+      "summary": "该动态与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
+      "source_url": "https://www.therobotreport.com/technology-could-bring-robot-mowers-one-half-american-lawns/",
+      "card_type": "行业动态卡",
+      "importance_score": 80,
+      "tags": [
+        "具身智能",
+        "机器人视觉"
+      ]
+    },
+    {
+      "title": "行业动态 4：仿真到真实迁移",
       "summary": "该动态与仿真到真实迁移相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
       "source_url": "https://www.therobotreport.com/how-software-defined-manufacturing-fits-into-real-factory-operations/",
       "card_type": "行业动态卡",
-      "importance_score": 83,
+      "importance_score": 80,
       "tags": [
         "具身智能",
         "Sim2Real"
       ]
     },
     {
-      "title": "行业动态 4：具身智能评测与数据集",
+      "title": "行业动态 5：具身智能评测与数据集",
       "summary": "该动态与具身智能评测与数据集相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
       "source_url": "https://www.therobotreport.com/amazons-bhavana-chandrashekhar-speaks-robobusiness-women-in-robotics-lunch/",
       "card_type": "行业动态卡",
-      "importance_score": 77,
+      "importance_score": 74,
       "tags": [
         "具身智能"
-      ]
-    },
-    {
-      "title": "行业动态 5：人形机器人控制",
-      "summary": "该动态与人形机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
-      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://www.therobotreport.com/schaeffler-plans-to-mass-manufacture-gearboxes-for-humanoids-in-2027/",
-      "card_type": "行业动态卡",
-      "importance_score": 78,
-      "tags": [
-        "具身智能",
-        "人形机器人",
-        "机器人"
       ]
     }
   ],
@@ -421,36 +419,36 @@ const latestArticle = {
       "importance_score": 60
     },
     {
-      "name": "行业动态 1：视觉-语言-动作模型",
-      "url": "https://www.therobotreport.com/robots-dont-run-themselves-workforce-powering-physical-ai/",
+      "name": "行业动态 1：具身智能评测与数据集",
+      "url": "https://www.therobotreport.com/use-digital-twin-explore-automation-before-committing-capital/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
       "name": "行业动态 2：视觉-语言-动作模型",
+      "url": "https://www.therobotreport.com/robots-dont-run-themselves-workforce-powering-physical-ai/",
+      "type": "行业动态",
+      "card_type": "来源链接卡",
+      "importance_score": 60
+    },
+    {
+      "name": "行业动态 3：视觉-语言-动作模型",
       "url": "https://www.therobotreport.com/technology-could-bring-robot-mowers-one-half-american-lawns/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
-      "name": "行业动态 3：仿真到真实迁移",
+      "name": "行业动态 4：仿真到真实迁移",
       "url": "https://www.therobotreport.com/how-software-defined-manufacturing-fits-into-real-factory-operations/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
-      "name": "行业动态 4：具身智能评测与数据集",
+      "name": "行业动态 5：具身智能评测与数据集",
       "url": "https://www.therobotreport.com/amazons-bhavana-chandrashekhar-speaks-robobusiness-women-in-robotics-lunch/",
-      "type": "行业动态",
-      "card_type": "来源链接卡",
-      "importance_score": 60
-    },
-    {
-      "name": "行业动态 5：人形机器人控制",
-      "url": "https://www.therobotreport.com/schaeffler-plans-to-mass-manufacture-gearboxes-for-humanoids-in-2027/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
