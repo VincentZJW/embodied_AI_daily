@@ -57,19 +57,19 @@
     {
       "name": "Genesis-Embodied-AI/genesis-world",
       "summary": "该项目可能聚焦仿真到真实迁移，主要语言为 Python。",
-      "why_follow": "仓库星标数约为 29823，可用于观察开源社区对仿真到真实迁移的实现方向。",
+      "why_follow": "仓库星标数约为 29830，可用于观察开源社区对仿真到真实迁移的实现方向。",
       "url": "https://github.com/Genesis-Embodied-AI/genesis-world"
     },
     {
       "name": "TianxingChen/Embodied-AI-Guide",
       "summary": "该项目可能聚焦人形机器人控制，主要语言为 未知。",
-      "why_follow": "仓库星标数约为 15665，可用于观察开源社区对人形机器人控制的实现方向。",
+      "why_follow": "仓库星标数约为 15671，可用于观察开源社区对人形机器人控制的实现方向。",
       "url": "https://github.com/TianxingChen/Embodied-AI-Guide"
     },
     {
       "name": "Octoday-Hub/Embodied-AI",
       "summary": "该项目可能聚焦人形机器人控制，主要语言为 未知。",
-      "why_follow": "仓库星标数约为 2367，可用于观察开源社区对人形机器人控制的实现方向。",
+      "why_follow": "仓库星标数约为 2376，可用于观察开源社区对人形机器人控制的实现方向。",
       "url": "https://github.com/Octoday-Hub/Embodied-AI"
     },
     {
@@ -81,40 +81,40 @@
     {
       "name": "FluxVLA/FluxVLA",
       "summary": "该项目可能聚焦视觉-语言-动作模型，主要语言为 Python。",
-      "why_follow": "仓库星标数约为 636，可用于观察开源社区对视觉-语言-动作模型的实现方向。",
+      "why_follow": "仓库星标数约为 638，可用于观察开源社区对视觉-语言-动作模型的实现方向。",
       "url": "https://github.com/FluxVLA/FluxVLA"
     }
   ],
   "news": [
     {
-      "title_zh": "行业动态 1：视觉-语言-动作模型",
+      "title_zh": "行业动态 1：人形机器人控制",
+      "summary": "该动态与人形机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
+      "url": "https://www.therobotreport.com/differences-between-decentralized-centralized-power-swarm-robotics/"
+    },
+    {
+      "title_zh": "行业动态 2：视觉-语言-动作模型",
       "summary": "该动态与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
       "url": "https://www.therobotreport.com/from-teach-repeat-to-selfpath-ai-next-robotics-leap/"
     },
     {
-      "title_zh": "行业动态 2：机器人操作与抓取",
+      "title_zh": "行业动态 3：机器人操作与抓取",
       "summary": "该动态与机器人操作与抓取相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
       "url": "https://www.therobotreport.com/deere-faces-headwinds-in-q3-update-and-announces-10m-reservoir-rd-partnership/"
     },
     {
-      "title_zh": "行业动态 3：人形机器人控制",
+      "title_zh": "行业动态 4：人形机器人控制",
       "summary": "该动态与人形机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
       "url": "https://www.therobotreport.com/exl-acquires-physical-ai-model-developer-imerit/"
     },
     {
-      "title_zh": "行业动态 4：人形机器人控制",
+      "title_zh": "行业动态 5：人形机器人控制",
       "summary": "该动态与人形机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
       "url": "https://spectrum.ieee.org/video-friday-microduck-robot"
-    },
-    {
-      "title_zh": "行业动态 5：机器人操作与抓取",
-      "summary": "该动态与机器人操作与抓取相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
-      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "url": "https://www.therobotreport.com/locus-getting-grasp-one-robotics-biggest-challenges-manipulation/"
     }
   ],
   "terms": [
@@ -197,27 +197,27 @@
     },
     {
       "name": "RSS 动态 1",
-      "url": "https://www.therobotreport.com/from-teach-repeat-to-selfpath-ai-next-robotics-leap/",
+      "url": "https://www.therobotreport.com/differences-between-decentralized-centralized-power-swarm-robotics/",
       "type": "行业动态"
     },
     {
       "name": "RSS 动态 2",
-      "url": "https://www.therobotreport.com/deere-faces-headwinds-in-q3-update-and-announces-10m-reservoir-rd-partnership/",
+      "url": "https://www.therobotreport.com/from-teach-repeat-to-selfpath-ai-next-robotics-leap/",
       "type": "行业动态"
     },
     {
       "name": "RSS 动态 3",
-      "url": "https://www.therobotreport.com/exl-acquires-physical-ai-model-developer-imerit/",
+      "url": "https://www.therobotreport.com/deere-faces-headwinds-in-q3-update-and-announces-10m-reservoir-rd-partnership/",
       "type": "行业动态"
     },
     {
       "name": "RSS 动态 4",
-      "url": "https://spectrum.ieee.org/video-friday-microduck-robot",
+      "url": "https://www.therobotreport.com/exl-acquires-physical-ai-model-developer-imerit/",
       "type": "行业动态"
     },
     {
       "name": "RSS 动态 5",
-      "url": "https://www.therobotreport.com/locus-getting-grasp-one-robotics-biggest-challenges-manipulation/",
+      "url": "https://spectrum.ieee.org/video-friday-microduck-robot",
       "type": "行业动态"
     }
   ]

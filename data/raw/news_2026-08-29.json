@@ -3,6 +3,15 @@
     "source": "RSS",
     "feed_url": "https://www.therobotreport.com/feed/",
     "feed_title": "",
+    "title": "The differences between decentralized and centralized power in swarm robotics",
+    "summary": "<p>A robotic swarm typically relies on centralized or decentralized power management, but a hybrid approach could offer the best of both.</p> <p>The post <a href=\"https://www.therobotreport.com/differences-between-decentralized-centralized-power-swarm-robotics/\">The differences between decentralized and centralized power in swarm robotics</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/differences-between-decentralized-centralized-power-swarm-robotics/",
+    "published": "2026-08-29T12:25:31+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
     "title": "From teach and repeat to SelfPath AI: The next robotics leap",
     "summary": "<p>John Black, chief technology officer at Brian Corp, shares insights on how to build trust for robotics fleets and AI.</p> <p>The post <a href=\"https://www.therobotreport.com/from-teach-repeat-to-selfpath-ai-next-robotics-leap/\">From teach and repeat to SelfPath AI: The next robotics leap</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
     "url": "https://www.therobotreport.com/from-teach-repeat-to-selfpath-ai-next-robotics-leap/",
@@ -142,14 +151,5 @@
     "summary": "<p>For agricultural and construction equipment makers to stay relevant as workforces dwindle, they need to add AI, says Agtonomy's founder.</p> <p>The post <a href=\"https://www.therobotreport.com/the-next-big-ai-play-isnt-apps-or-humanoids-its-machines-with-brains-and-brawn/\">The next big AI play isn&#8217;t apps or humanoids; it&#8217;s machines with brains and brawn</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
     "url": "https://www.therobotreport.com/the-next-big-ai-play-isnt-apps-or-humanoids-its-machines-with-brains-and-brawn/",
     "published": "2026-08-24T22:53:33+00:00"
-  },
-  {
-    "source": "RSS",
-    "feed_url": "https://www.therobotreport.com/feed/",
-    "feed_title": "",
-    "title": "XPeng Motors humanoid robot unit Dogotix raises $900M",
-    "summary": "<p>Dogotix, the humanoid unit of XPeng Motors, has attained a valuation of $6.3 billion as it plans to produce robots at scale.</p> <p>The post <a href=\"https://www.therobotreport.com/xpeng-motors-humanoid-robot-unit-dogotix-raises-900m/\">XPeng Motors humanoid robot unit Dogotix raises $900M</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
-    "url": "https://www.therobotreport.com/xpeng-motors-humanoid-robot-unit-dogotix-raises-900m/",
-    "published": "2026-08-24T20:07:09+00:00"
   }
 ]

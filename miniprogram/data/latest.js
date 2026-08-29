@@ -138,7 +138,7 @@ const latestArticle = {
     {
       "name": "Genesis-Embodied-AI/genesis-world",
       "summary": "该项目可能聚焦仿真到真实迁移，主要语言为 Python。",
-      "why_follow": "仓库星标数约为 29823，可用于观察开源社区对仿真到真实迁移的实现方向。",
+      "why_follow": "仓库星标数约为 29830，可用于观察开源社区对仿真到真实迁移的实现方向。",
       "source_url": "https://github.com/Genesis-Embodied-AI/genesis-world",
       "card_type": "开源项目卡",
       "importance_score": 93,
@@ -150,7 +150,7 @@ const latestArticle = {
     {
       "name": "TianxingChen/Embodied-AI-Guide",
       "summary": "该项目可能聚焦人形机器人控制，主要语言为 未知。",
-      "why_follow": "仓库星标数约为 15665，可用于观察开源社区对人形机器人控制的实现方向。",
+      "why_follow": "仓库星标数约为 15671，可用于观察开源社区对人形机器人控制的实现方向。",
       "source_url": "https://github.com/TianxingChen/Embodied-AI-Guide",
       "card_type": "开源项目卡",
       "importance_score": 91,
@@ -163,7 +163,7 @@ const latestArticle = {
     {
       "name": "Octoday-Hub/Embodied-AI",
       "summary": "该项目可能聚焦人形机器人控制，主要语言为 未知。",
-      "why_follow": "仓库星标数约为 2367，可用于观察开源社区对人形机器人控制的实现方向。",
+      "why_follow": "仓库星标数约为 2376，可用于观察开源社区对人形机器人控制的实现方向。",
       "source_url": "https://github.com/Octoday-Hub/Embodied-AI",
       "card_type": "开源项目卡",
       "importance_score": 88,
@@ -188,7 +188,7 @@ const latestArticle = {
     {
       "name": "FluxVLA/FluxVLA",
       "summary": "该项目可能聚焦视觉-语言-动作模型，主要语言为 Python。",
-      "why_follow": "仓库星标数约为 636，可用于观察开源社区对视觉-语言-动作模型的实现方向。",
+      "why_follow": "仓库星标数约为 638，可用于观察开源社区对视觉-语言-动作模型的实现方向。",
       "source_url": "https://github.com/FluxVLA/FluxVLA",
       "card_type": "开源项目卡",
       "importance_score": 83,
@@ -201,36 +201,12 @@ const latestArticle = {
   ],
   "industry_updates": [
     {
-      "title": "行业动态 1：视觉-语言-动作模型",
-      "summary": "该动态与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
-      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://www.therobotreport.com/from-teach-repeat-to-selfpath-ai-next-robotics-leap/",
-      "card_type": "行业动态卡",
-      "importance_score": 86,
-      "tags": [
-        "具身智能",
-        "机器人视觉"
-      ]
-    },
-    {
-      "title": "行业动态 2：机器人操作与抓取",
-      "summary": "该动态与机器人操作与抓取相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
-      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://www.therobotreport.com/deere-faces-headwinds-in-q3-update-and-announces-10m-reservoir-rd-partnership/",
-      "card_type": "行业动态卡",
-      "importance_score": 83,
-      "tags": [
-        "具身智能",
-        "机器人"
-      ]
-    },
-    {
-      "title": "行业动态 3：人形机器人控制",
+      "title": "行业动态 1：人形机器人控制",
       "summary": "该动态与人形机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://www.therobotreport.com/exl-acquires-physical-ai-model-developer-imerit/",
+      "source_url": "https://www.therobotreport.com/differences-between-decentralized-centralized-power-swarm-robotics/",
       "card_type": "行业动态卡",
-      "importance_score": 84,
+      "importance_score": 90,
       "tags": [
         "具身智能",
         "人形机器人",
@@ -238,10 +214,34 @@ const latestArticle = {
       ]
     },
     {
+      "title": "行业动态 2：视觉-语言-动作模型",
+      "summary": "该动态与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
+      "source_url": "https://www.therobotreport.com/from-teach-repeat-to-selfpath-ai-next-robotics-leap/",
+      "card_type": "行业动态卡",
+      "importance_score": 83,
+      "tags": [
+        "具身智能",
+        "机器人视觉"
+      ]
+    },
+    {
+      "title": "行业动态 3：机器人操作与抓取",
+      "summary": "该动态与机器人操作与抓取相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
+      "source_url": "https://www.therobotreport.com/deere-faces-headwinds-in-q3-update-and-announces-10m-reservoir-rd-partnership/",
+      "card_type": "行业动态卡",
+      "importance_score": 80,
+      "tags": [
+        "具身智能",
+        "机器人"
+      ]
+    },
+    {
       "title": "行业动态 4：人形机器人控制",
       "summary": "该动态与人形机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://spectrum.ieee.org/video-friday-microduck-robot",
+      "source_url": "https://www.therobotreport.com/exl-acquires-physical-ai-model-developer-imerit/",
       "card_type": "行业动态卡",
       "importance_score": 81,
       "tags": [
@@ -251,14 +251,15 @@ const latestArticle = {
       ]
     },
     {
-      "title": "行业动态 5：机器人操作与抓取",
-      "summary": "该动态与机器人操作与抓取相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "title": "行业动态 5：人形机器人控制",
+      "summary": "该动态与人形机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://www.therobotreport.com/locus-getting-grasp-one-robotics-biggest-challenges-manipulation/",
+      "source_url": "https://spectrum.ieee.org/video-friday-microduck-robot",
       "card_type": "行业动态卡",
-      "importance_score": 74,
+      "importance_score": 78,
       "tags": [
         "具身智能",
+        "人形机器人",
         "机器人"
       ]
     }
@@ -424,36 +425,36 @@ const latestArticle = {
       "importance_score": 60
     },
     {
-      "name": "行业动态 1：视觉-语言-动作模型",
+      "name": "行业动态 1：人形机器人控制",
+      "url": "https://www.therobotreport.com/differences-between-decentralized-centralized-power-swarm-robotics/",
+      "type": "行业动态",
+      "card_type": "来源链接卡",
+      "importance_score": 60
+    },
+    {
+      "name": "行业动态 2：视觉-语言-动作模型",
       "url": "https://www.therobotreport.com/from-teach-repeat-to-selfpath-ai-next-robotics-leap/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
-      "name": "行业动态 2：机器人操作与抓取",
+      "name": "行业动态 3：机器人操作与抓取",
       "url": "https://www.therobotreport.com/deere-faces-headwinds-in-q3-update-and-announces-10m-reservoir-rd-partnership/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
-      "name": "行业动态 3：人形机器人控制",
+      "name": "行业动态 4：人形机器人控制",
       "url": "https://www.therobotreport.com/exl-acquires-physical-ai-model-developer-imerit/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
-      "name": "行业动态 4：人形机器人控制",
+      "name": "行业动态 5：人形机器人控制",
       "url": "https://spectrum.ieee.org/video-friday-microduck-robot",
-      "type": "行业动态",
-      "card_type": "来源链接卡",
-      "importance_score": 60
-    },
-    {
-      "name": "行业动态 5：机器人操作与抓取",
-      "url": "https://www.therobotreport.com/locus-getting-grasp-one-robotics-biggest-challenges-manipulation/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
