@@ -1,6 +1,6 @@
 const latestArticle = {
-  "title": "具身智能中文日报｜2026-09-04",
-  "date": "2026-09-04",
+  "title": "具身智能中文日报｜2026-09-05",
+  "date": "2026-09-05",
   "subtitle": "聚焦VLA、Sim2Real、Diffusion Policy，追踪论文、开源项目与产业动态。",
   "theme": "tech-dark",
   "accent_color": "#4F8CFF",
@@ -18,7 +18,7 @@ const latestArticle = {
   "executive_summary": [
     {
       "title": "核心结论 1",
-      "content": "本次采集得到论文 20 篇、GitHub 项目 20 个、行业/公司动态 18 条。",
+      "content": "本次采集得到论文 20 篇、GitHub 项目 20 个、行业/公司动态 19 条。",
       "card_type": "核心摘要卡",
       "importance_score": 96,
       "tags": [
@@ -139,7 +139,7 @@ const latestArticle = {
     {
       "name": "Genesis-Embodied-AI/genesis-world",
       "summary": "该项目可能聚焦仿真到真实迁移，主要语言为 Python。",
-      "why_follow": "仓库星标数约为 29875，可用于观察开源社区对仿真到真实迁移的实现方向。",
+      "why_follow": "仓库星标数约为 29882，可用于观察开源社区对仿真到真实迁移的实现方向。",
       "source_url": "https://github.com/Genesis-Embodied-AI/genesis-world",
       "card_type": "开源项目卡",
       "importance_score": 93,
@@ -151,7 +151,7 @@ const latestArticle = {
     {
       "name": "Octoday-Hub/Embodied-AI",
       "summary": "该项目可能聚焦人形机器人控制，主要语言为 未知。",
-      "why_follow": "仓库星标数约为 2433，可用于观察开源社区对人形机器人控制的实现方向。",
+      "why_follow": "仓库星标数约为 2439，可用于观察开源社区对人形机器人控制的实现方向。",
       "source_url": "https://github.com/Octoday-Hub/Embodied-AI",
       "card_type": "开源项目卡",
       "importance_score": 91,
@@ -162,12 +162,24 @@ const latestArticle = {
       ]
     },
     {
+      "name": "NVlabs/ProtoMotions",
+      "summary": "该项目可能聚焦仿真到真实迁移，主要语言为 Python。",
+      "why_follow": "仓库星标数约为 2367，可用于观察开源社区对仿真到真实迁移的实现方向。",
+      "source_url": "https://github.com/NVlabs/ProtoMotions",
+      "card_type": "开源项目卡",
+      "importance_score": 87,
+      "tags": [
+        "具身智能",
+        "Sim2Real"
+      ]
+    },
+    {
       "name": "leggedrobotics/pace-sim2real",
       "summary": "该项目可能聚焦仿真到真实迁移，主要语言为 Python。",
       "why_follow": "仓库星标数约为 692，可用于观察开源社区对仿真到真实迁移的实现方向。",
       "source_url": "https://github.com/leggedrobotics/pace-sim2real",
       "card_type": "开源项目卡",
-      "importance_score": 87,
+      "importance_score": 84,
       "tags": [
         "具身智能",
         "Sim2Real"
@@ -179,22 +191,10 @@ const latestArticle = {
       "why_follow": "仓库星标数约为 650，可用于观察开源社区对视觉-语言-动作模型的实现方向。",
       "source_url": "https://github.com/FluxVLA/FluxVLA",
       "card_type": "开源项目卡",
-      "importance_score": 86,
+      "importance_score": 83,
       "tags": [
         "具身智能",
         "VLA",
-        "机器人视觉"
-      ]
-    },
-    {
-      "name": "sii-research/tau-0-vla",
-      "summary": "该项目可能聚焦视觉-语言-动作模型，主要语言为 Python。",
-      "why_follow": "仓库星标数约为 608，可用于观察开源社区对视觉-语言-动作模型的实现方向。",
-      "source_url": "https://github.com/sii-research/tau-0-vla",
-      "card_type": "开源项目卡",
-      "importance_score": 78,
-      "tags": [
-        "具身智能",
         "机器人视觉"
       ]
     }
@@ -204,7 +204,7 @@ const latestArticle = {
       "title": "行业动态 1：视觉-语言-动作模型",
       "summary": "该动态与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://www.therobotreport.com/how-fpgas-become-the-gatekeepers-of-physical-ai-security/",
+      "source_url": "https://www.therobotreport.com/arm-institute-gets-90m-for-10-projects-to-modernize-military-manufacturing/",
       "card_type": "行业动态卡",
       "importance_score": 86,
       "tags": [
@@ -213,22 +213,22 @@ const latestArticle = {
       ]
     },
     {
-      "title": "行业动态 2：机器人操作与抓取",
-      "summary": "该动态与机器人操作与抓取相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "title": "行业动态 2：仿真到真实迁移",
+      "summary": "该动态与仿真到真实迁移相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://www.therobotreport.com/calling-all-robotics-startups-apply-now-2026-robotics-startup-radar/",
+      "source_url": "https://spectrum.ieee.org/cyborg-rescue-roach",
       "card_type": "行业动态卡",
-      "importance_score": 83,
+      "importance_score": 86,
       "tags": [
         "具身智能",
-        "机器人"
+        "Sim2Real"
       ]
     },
     {
       "title": "行业动态 3：视觉-语言-动作模型",
       "summary": "该动态与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://www.therobotreport.com/lyte-raises-165m-help-robots-better-sense-their-surroundings/",
+      "source_url": "https://www.therobotreport.com/enovis-to-acquire-ecential-robotics-for-180m/",
       "card_type": "行业动态卡",
       "importance_score": 80,
       "tags": [
@@ -237,27 +237,27 @@ const latestArticle = {
       ]
     },
     {
-      "title": "行业动态 4：仿真到真实迁移",
-      "summary": "该动态与仿真到真实迁移相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "title": "行业动态 4：视觉-语言-动作模型",
+      "summary": "该动态与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://www.therobotreport.com/robot-com-partners-sodexo-rolls-out-more-sidewalk-delivery-robots/",
-      "card_type": "行业动态卡",
-      "importance_score": 80,
-      "tags": [
-        "具身智能",
-        "Sim2Real"
-      ]
-    },
-    {
-      "title": "行业动态 5：仿真到真实迁移",
-      "summary": "该动态与仿真到真实迁移相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
-      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://www.therobotreport.com/medtronic-invests-700m-in-surgical-partner-cornerstone-robotics/",
+      "source_url": "https://www.therobotreport.com/how-fpgas-become-the-gatekeepers-of-physical-ai-security/",
       "card_type": "行业动态卡",
       "importance_score": 77,
       "tags": [
         "具身智能",
-        "Sim2Real"
+        "机器人视觉"
+      ]
+    },
+    {
+      "title": "行业动态 5：机器人操作与抓取",
+      "summary": "该动态与机器人操作与抓取相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
+      "source_url": "https://www.therobotreport.com/calling-all-robotics-startups-apply-now-2026-robotics-startup-radar/",
+      "card_type": "行业动态卡",
+      "importance_score": 74,
+      "tags": [
+        "具身智能",
+        "机器人"
       ]
     }
   ],
@@ -401,6 +401,13 @@ const latestArticle = {
       "importance_score": 60
     },
     {
+      "name": "NVlabs/ProtoMotions",
+      "url": "https://github.com/NVlabs/ProtoMotions",
+      "type": "GitHub",
+      "card_type": "来源链接卡",
+      "importance_score": 60
+    },
+    {
       "name": "leggedrobotics/pace-sim2real",
       "url": "https://github.com/leggedrobotics/pace-sim2real",
       "type": "GitHub",
@@ -415,43 +422,36 @@ const latestArticle = {
       "importance_score": 60
     },
     {
-      "name": "sii-research/tau-0-vla",
-      "url": "https://github.com/sii-research/tau-0-vla",
-      "type": "GitHub",
-      "card_type": "来源链接卡",
-      "importance_score": 60
-    },
-    {
       "name": "行业动态 1：视觉-语言-动作模型",
-      "url": "https://www.therobotreport.com/how-fpgas-become-the-gatekeepers-of-physical-ai-security/",
+      "url": "https://www.therobotreport.com/arm-institute-gets-90m-for-10-projects-to-modernize-military-manufacturing/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
-      "name": "行业动态 2：机器人操作与抓取",
-      "url": "https://www.therobotreport.com/calling-all-robotics-startups-apply-now-2026-robotics-startup-radar/",
+      "name": "行业动态 2：仿真到真实迁移",
+      "url": "https://spectrum.ieee.org/cyborg-rescue-roach",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
       "name": "行业动态 3：视觉-语言-动作模型",
-      "url": "https://www.therobotreport.com/lyte-raises-165m-help-robots-better-sense-their-surroundings/",
+      "url": "https://www.therobotreport.com/enovis-to-acquire-ecential-robotics-for-180m/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
-      "name": "行业动态 4：仿真到真实迁移",
-      "url": "https://www.therobotreport.com/robot-com-partners-sodexo-rolls-out-more-sidewalk-delivery-robots/",
+      "name": "行业动态 4：视觉-语言-动作模型",
+      "url": "https://www.therobotreport.com/how-fpgas-become-the-gatekeepers-of-physical-ai-security/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
-      "name": "行业动态 5：仿真到真实迁移",
-      "url": "https://www.therobotreport.com/medtronic-invests-700m-in-surgical-partner-cornerstone-robotics/",
+      "name": "行业动态 5：机器人操作与抓取",
+      "url": "https://www.therobotreport.com/calling-all-robotics-startups-apply-now-2026-robotics-startup-radar/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
