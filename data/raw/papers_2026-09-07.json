@@ -1,0 +1,326 @@
+[
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.05404v1",
+    "title": "Diffusion TV: Experiencing Diffusion Models through Tangible, Embodied Interaction",
+    "abstract": "Diffusion TV is an interactive AI art installation that offers a tangible and embodied experience of diffusion models through a modified CRT TV. By physically manipulating the TV's antenna, audiences control the clarity of AI-generated images and sounds, metaphorically enacting the denoising process that underlies diffusion-based generation. Using the tuning knob, participants switch between three channels featuring AI-generated animals from the Past (extinct species), Present (endangered species), and Future (speculative creatures), situating the interaction within a temporal and ecological narrative. Through continuous audiovisual feedback and physical interaction, Diffusion TV foregrounds the generative process over final outputs, allowing audiences to explore intermediate states as experiential material. Rather than providing explicit technical explanation, the work presents an alternative, embodied mode of explainable AI that invites exploratory engagement with and reflection on generative technologies.",
+    "authors": [
+      "Sihwa Park"
+    ],
+    "published": "2026-09-04T17:51:48+00:00",
+    "updated": "2026-09-04T17:51:48+00:00",
+    "url": "http://arxiv.org/abs/2609.05404v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.05404v1",
+    "categories": [
+      "cs.HC",
+      "cs.AI"
+    ],
+    "primary_category": "cs.HC"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.05401v1",
+    "title": "Same Trajectory, Contradictory Rewards (ROBORMBENCH): Paraphrase Fragility in Vision Language Reward Models",
+    "abstract": "Vision-language models are increasingly used as reward functions for robotic learning, but this role requires paraphrase invariance: the same trajectory should receive the same reward under semantically equivalent goal descriptions. We show that current VLM reward models often violate this property. Paraphrasing the instruction alone can substantially change predicted progress scores, and can even flip identical robot behavior between failure and success. To measure this failure mode, we introduce ROBORMBENCH, a benchmark with 2,390 real-robot trajectories, ground-truth progress labels, and 21,673 verified paraphrases spanning lexical, syntactic, and action-goal rewrites. Across proprietary and open-source VLMs, paraphrase-induced instability is widespread and severe, grows under more divergent rewrites, and is not reliably reduced by scale or explicit reasoning. Dedicated reward models trained with trajectory-grounded supervision are substantially more stable. These results show that paraphrase robustness is a core requirement for reliable VLM-based reward modeling in robotics.",
+    "authors": [
+      "Wonje Jeung",
+      "Sangyeon Yoon",
+      "Hyesoo Hong",
+      "Yoonjun Cho",
+      "Dongjae Jeon",
+      "Bumjun Kim",
+      "Jean Oh",
+      "Youngjae Yu",
+      "Albert No"
+    ],
+    "published": "2026-09-04T17:47:58+00:00",
+    "updated": "2026-09-04T17:47:58+00:00",
+    "url": "http://arxiv.org/abs/2609.05401v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.05401v1",
+    "categories": [
+      "cs.RO",
+      "cs.CL"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.05376v1",
+    "title": "What Matters, When? Diagnosing and Improving Conditional Visual Grounding in Visuomotor Imitation Policies",
+    "abstract": "Visuomotor imitation policies can achieve high performance under in-distribution visual conditions yet fail when visually similar objects or receptacles are introduced. We study this behavior as a problem of conditional visual grounding: the visual target required for successful control changes with the manipulation phase and, in more complex tasks, with the observed task state. Using Action Chunking with Transformers (ACT), we systematically introduce distractor objects and receptacles with controlled color and shape similarity and localize failures to picking and placement. We find that distractor sensitivity is specific to both the type of visual similarity and the manipulation stage. Guided by this diagnosis, we evaluate distractor augmentation, phase-dependent attention regularization, and appearance-based visual prompting as complementary interventions for improving target selection while preserving spatial information required for control. These interventions substantially improve robustness in simulation and on a physical UR3e. We further examine the same failure pattern in a pretrained vision-language-action policy on a state-conditioned instrument-handling task, where the observed state of a medical instrument determines the correct destination. Together, the results show that visual distractors can cause incorrect object or destination selection even when the underlying manipulation skill remains intact, and that explicitly improving target selection can substantially recover performance across distinct visuomotor policy-learning regimes.",
+    "authors": [
+      "Vivek Chavan",
+      "Pengtao Xie",
+      "Yahuan Shi",
+      "Oliver Heimann",
+      "Kevin Haninger",
+      "Jörg Krüger"
+    ],
+    "published": "2026-09-04T17:27:35+00:00",
+    "updated": "2026-09-04T17:27:35+00:00",
+    "url": "http://arxiv.org/abs/2609.05376v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.05376v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.CV"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.05369v1",
+    "title": "Towards Neuro-Symbolic Procedural Reasoning for Long-Horizon Vision-Language-Action Manipulation",
+    "abstract": "Vision-language-action (VLA) models can execute short manipulation skills, but remain brittle in long-horizon procedures requiring persistent task state, dependency-aware reasoning, conditional decisions, and reliable grounding. We investigate a neuro-symbolic framework that combines learned VLA control with explicit task graphs and multimodal procedural memory. Task graphs encode action dependencies, valid transitions, and branch conditions, while memory maintains the active step, completed actions, textual context, and task-relevant visual evidence. Together, these structures guide object selection, destination grounding, subgoal dispatch, and verification of expected state transitions. Human demonstrations provide additional spatial and temporal guidance through gaze or saliency cues. To isolate their effect on policy learning, our initial study bypasses cross-view gaze transfer and directly annotates pseudo-gaze in robot-view teleoperation videos. The resulting guidance is used during VLA fine-tuning and inference. We study two long-horizon manipulation domains, workspace clearing and surgical-instrument handling, which require ordered execution, visually grounded decisions, and conditional branching. We evaluate correct-object and destination selection, subtask completion, task progress, step-order consistency, complete-task success, and procedural or execution mistakes. This work positions structured symbolic reasoning and demonstration-derived visual guidance as complementary mechanisms for reliable long-horizon VLA manipulation.",
+    "authors": [
+      "Vivek Chavan",
+      "Yahuan Shi",
+      "Oliver Heimann",
+      "Kevin Haninger",
+      "Jörg Krüger"
+    ],
+    "published": "2026-09-04T17:14:50+00:00",
+    "updated": "2026-09-04T17:14:50+00:00",
+    "url": "http://arxiv.org/abs/2609.05369v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.05369v1",
+    "categories": [
+      "cs.RO",
+      "cs.CV"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.05361v1",
+    "title": "Development of a Humanoid Robot Prototype for Multimodal Human-Robot Interaction",
+    "abstract": "Human-robot interaction (HRI) enables intuitive and intelligent collaboration between humans and robots in real-world environments. This paper introduces a humanoid robot prototype designed as a flexible testbed for developing and integrating artificial intelligence (AI) modules in HRI tasks. The system features a 12 degree-of-freedom (DOFs) dual-arm mechanism and a 2 DOFs head with an expressive LCD screen to express facial emotions. All hardware components are controlled by a custom-designed controller board with real-time AI processing supported by an onboard Jetson module. The system incorporates three AI modules: (1) gesture recognition using MediaPipe Pose and an LSTM classifier, (2) object detection with YOLO and 3D localization, and (3) voice-command processing through speech recognition and large language model(LLM)-based semantic parsing. The platform is validated through experiments on positioning accuracy, with results showing average manipulation errors of approximately 1.83 cm. To demonstrate its versatility, experimental results show over 90% task accuracy, with gesture recognition reaching 96%, speech recognition reaching 92%. The results confirm the effectiveness of the proposed system as a reproducible and accessible humanoid platform for research and prototyping in HRI.",
+    "authors": [
+      "Thang Tran Viet",
+      "Thanh Nguyen Canh",
+      "Huy Uong Gia",
+      "Phuc Dinh Van",
+      "Son Tran Duc",
+      "Ngoc Minh Do",
+      "Xiem HoangVan"
+    ],
+    "published": "2026-09-04T17:06:47+00:00",
+    "updated": "2026-09-04T17:06:47+00:00",
+    "url": "http://arxiv.org/abs/2609.05361v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.05361v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.05324v1",
+    "title": "RoboSPA: Can VLA Models Go Beyond Simple Scenes and Short-Horizon Tasks?",
+    "abstract": "Vision-Language-Action (VLA) models have shown promising progress in language-conditioned robotic manipulation. However, existing datasets and benchmarks mainly evaluate task completion under predefined settings, offering limited insight into model reasoning under increasing spatial and procedural complexity. We introduce \\textbf{RoboSPA} (\\textbf{Robo}t \\textbf{S}patial-\\textbf{P}rocedural \\textbf{A}ssessment), a large-scale robotic manipulation dataset and benchmark for diagnosing embodied reasoning in VLA models. \\texttt{RoboSPA} focuses on two core dimensions, Fine-Grained Spatial Reasoning and Long-Horizon Procedural Planning, covering 10 task categories and 56 base tasks. Each task is instantiated across five difficulty levels, yielding 280 variants with increasing spatial ambiguity and procedural complexity. We collect 527K trajectories across multiple embodiments and diverse scenes. Beyond binary success rate, \\texttt{RoboSPA} introduces diagnostic metrics for more detailed evaluation. Experiments on representative VLA models show that current systems still struggle with complex spatial relations, precise low-level execution, and memory-intensive planning. These results establish \\texttt{RoboSPA} as a challenging diagnostic benchmark for developing more capable, reliable, and generalizable embodied agents. Our data and code are available at https://github.com/fanzhenxuan/RoboSPA.",
+    "authors": [
+      "Zhenxuan Fan",
+      "Bo Zhang",
+      "Yutong Lin",
+      "Yuqian Yuan",
+      "Juekai Lin",
+      "Liang Liang",
+      "Zhuoyi Huang",
+      "Wenqiao Zhang",
+      "Juncheng Li",
+      "Siliang Tang",
+      "Jun Xiao",
+      "Yueting Zhuang"
+    ],
+    "published": "2026-09-04T16:19:01+00:00",
+    "updated": "2026-09-04T16:19:01+00:00",
+    "url": "http://arxiv.org/abs/2609.05324v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.05324v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.CV"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.05282v1",
+    "title": "Temporal Tactile Encoding and Compliance for Intent-Aware Robot-to-Human Bimanual Handover",
+    "abstract": "Reliable robot-to-human handover requires the robot to infer when the person is ready to receive the object, and release it safely, comfortably, and at the right time. This is challenging because visual observations alone may not disambiguate clear taking intent from accidental contact, weak grasping, wrong-direction forces, or transient interactions. In this work we treat human-robot handover as an intrinsically multimodal problem. Our approach couples a VLA model with a compliance controller that reduces interaction forces during object transfer. We finetune the VLA model with human demonstrations using RGB observation, temporally encoded tactile feedback and proprioception. We evaluate the complete system in a human-subject study against two baselines: one without tactile feedback and one using tactile feedback without compliance control. We hypothesize that combining compliance and temporal tactile encoding yields the most reliable and comfortable handovers, as compliance facilitates physical interaction while tactile history captures sustained taking intent. Performance is measured through objective metrics and an ad-hoc questionnaire. The results show that the two components provide complementary benefits and substantially outperform the baselines. Code and data will be released upon acceptance.",
+    "authors": [
+      "Pasquale Marra",
+      "Stefano Berti",
+      "Gabriele Mario Caddeo",
+      "Lorenzo Natale"
+    ],
+    "published": "2026-09-04T15:34:47+00:00",
+    "updated": "2026-09-04T15:34:47+00:00",
+    "url": "http://arxiv.org/abs/2609.05282v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.05282v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.05260v1",
+    "title": "One Word, Different Action: A Real-Robot Benchmark for Language-Conditioned Embodied Reasoning",
+    "abstract": "Natural-language instruction changes can directly alter robot behavior. A reliable embodied system should preserve its action when the task is unchanged and update it correctly when the task itself changes. We introduce One Word, Different Action, a real-robot benchmark built on physical decision states and executable actions, using task-preserving and task-changing instruction pairs to jointly evaluate Decision Invariance and Decision Sensitivity, with further evaluation under multi-constraint reasoning and real-RGB grounding. Experiments show that modern models are near saturation on single-constraint instruction changes, yet several models degrade noticeably when multiple task constraints must be integrated into one executable decision. These results suggest that the more salient remaining challenge is no longer recognizing an isolated instruction change, but reliably composing multiple task requirements into a correct robot action decision.",
+    "authors": [
+      "Yiwei Liu",
+      "Luwei Yang",
+      "Shunbo Lei"
+    ],
+    "published": "2026-09-04T15:21:58+00:00",
+    "updated": "2026-09-04T15:21:58+00:00",
+    "url": "http://arxiv.org/abs/2609.05260v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.05260v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.05178v1",
+    "title": "LIBERO-RECOVER: Beyond Task Success Towards Failure Recovery in Robotic Manipulation Models",
+    "abstract": "Vision-Language-Action (VLA) or World Action (WAM) models have recently demonstrated remarkable performance in robotic manipulation. On LIBERO, SOTA method have achieved nearly 100\\% success rates, seemingly suggesting that the models are ready for deployment in real world. However, near perfect performance on existing benchmarks can be misleading: success under ideal conditions does not imply real world robustness. Existing benchmarks primarily evaluate task completion from predefined initial states, while real world interactions inevitably involve failures such as failed grasps, collisions, and unintended object movements. A robot must therefore not only execute tasks successfully, but also recognize and recover from failures to continue the task. Yet this capability remains largely unmeasured, revealing a critical gap between benchmark performance and real world reliability. To address this gap, we introduce LIBERO-Recover Benchmark, a large scale benchmark for failure recovery in robotic manipulation. Built upon LIBERO, we collect real execution failures from SOTA embodied models and construct 1,000+ scenarios across four recovery levels: (1) Action Retry, (2) Action Adaptation, (3) Object State Recovery, and (4) Environmental Recovery. We evaluate four core capabilities: spatial understanding, object structure reasoning, interaction understanding, and topological reasoning. As the first large-scale benchmark for embodied failure recovery, LIBERO-Recover shifts evaluation from \\emph{Can the robot succeed?''} to \\emph{Can the robot recover after failure?''}, promoting robust and generalizable embodied agents. The project will be avaible in \\textcolor{blue}{https://liulin815.github.io/LIBERO-Recovery/}.",
+    "authors": [
+      "Lin Liu",
+      "Zhicheng Bao",
+      "Lu Zhang",
+      "Ziying Song",
+      "Wu Yang",
+      "Shuai Tao",
+      "Wulong Liu",
+      "Huchuan Lu"
+    ],
+    "published": "2026-09-04T14:15:27+00:00",
+    "updated": "2026-09-04T14:15:27+00:00",
+    "url": "http://arxiv.org/abs/2609.05178v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.05178v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.05037v1",
+    "title": "How do LLMs Evaluate Perceived Moral Agency? Investigating Moral Decision-Making in Human-Artificial Agents Interactions",
+    "abstract": "As LLMs take on roles requiring moral advice, understanding how they attribute moral agency becomes critical. Humans possess moral agency, the capacity to make ethically guided decisions and bear responsibility for their consequences, a well-established construct in moral psychology. Yet as artificial agents (AAs) such as robots, drones, and disembodied AI systems become increasingly embedded in smart city environments, the question of whether and how moral agency is attributed to them takes on new urgency. This paper presents, to the best of our knowledge, the first empirical study comparing how humans and LLMs evaluate perceived moral agency (PMA) across human and autonomous artificial agents varying in embodiment, situated in plausible smart city scenarios. Using an adaptation of a validated PMA scale, we applied a protocol to 190 human participants as well as various LLMs. Our evaluation reveals higher perceptions of moral agency in humans than in AAs. However, when facing moral dilemmas in concrete scenarios, LLMs reason outward from the situation, prioritizing harm severity and contextual urgency over any stable assessment of the agent itself, amplifying a context-sensitivity also present in human raters. These findings are particularly relevant as LLMs become increasingly involved in everyday moral decisions.",
+    "authors": [
+      "Fernanda Mansilla",
+      "Aloysius Tok",
+      "Bahia Guellaï",
+      "Farah Benamara",
+      "Nancy F. Chen"
+    ],
+    "published": "2026-09-04T11:56:59+00:00",
+    "updated": "2026-09-04T11:56:59+00:00",
+    "url": "http://arxiv.org/abs/2609.05037v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.05037v1",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "primary_category": "cs.CL"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.04958v1",
+    "title": "MINT: A Unified Model for World-Space Camera and Hand Motion Estimation from Scalable Egocentric Pipeline Supervision",
+    "abstract": "Recovering camera and hand motion in world coordinates from egocentric video is a key capability for activity understanding, robot learning, and augmented reality. Existing systems typically decompose this problem into separate stages for camera motion, depth, hand reconstruction, and trajectory refinement, resulting in substantial computational overhead and preventing the joint modeling of camera and hand motion. We introduce MINT (Minting IN-the-Wild Trajectories), the first foundation model that directly produces complete world-space two-hand trajectories from ego-centric RGB video. From a single shared spatiotemporal video representation, MINT jointly predicts the camera trajectory, camera-frame hand states, and per-frame hand presence, and then produces world-space hand motion via explicit coordinate transformations. Training such a model at scale is challenging, since paired world-space camera and hand annotations are scarce. We therefore develop an open-source labeling EGOPIPELINE that converts large collections of public egocentric videos into structured camera-and-hand trajectory supervision. MINT is first pretrained on these large-scale pseudo-labels and then fine-tuned on a small set of high-quality joint annotations. Across public benchmarks, MINT achieves [xxx] improvement in world-space hand trajectory accuracy, [xxx] improvement in camera trajectory estimation, and [xxx] faster end-to-end trajectory generation than the labeling pipeline, while generalizing zero-shot to unseen egocentric datasets. We release the model, training and inference code, labeling pipeline, and a curated 1,021-hour egocentric trajectory dataset.",
+    "authors": [
+      "Zijie Zhu",
+      "Weiren Cai",
+      "Yizhou Wang",
+      "Zhenjie Yang",
+      "Yide Liu",
+      "Jiahao Chen",
+      "Guanqi He"
+    ],
+    "published": "2026-09-04T10:05:11+00:00",
+    "updated": "2026-09-04T10:05:11+00:00",
+    "url": "http://arxiv.org/abs/2609.04958v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.04958v1",
+    "categories": [
+      "cs.CV",
+      "cs.RO"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.04893v1",
+    "title": "Reasoning Without Inference Cost: Latent Semantic Scaffolding for Robot VLA Policies",
+    "abstract": "Vision-language-action (VLA) models are trained by imitation and capture what action to take but not why; adding causal reasoning improves manipulation, but current methods pay for it at inference time - generating reasoning tokens or rolling out predicted future states at every step, a cost that compounds over long horizons. We ask whether this benefit can instead be captured during training and discarded before deployment. We introduce Latent Semantic Scaffolding (LSS), an auxiliary loss applied during human-demonstration pretraining that aligns a VLA's action-token representations to text embeddings of physical-reasoning rationales through a small projection head. The head is dropped at inference, leaving the unmodified base policy with zero added cost. Our central finding concerns alignment granularity: aligning each action token to the rationale of its own manipulation phase (Dense LSS) rather than to a single pooled episode-level embedding (Pooled LSS) yields representations that transfer markedly better to held-out tasks. Dense LSS attains both the best in-distribution success and the best transfer to tasks unseen during alignment, whereas pooled alignment over-specializes to the training task. A representational probe shows Dense LSS induces roughly twice the per-phase separability in the backbone, supporting that phase-local alignment is the operative mechanism.",
+    "authors": [
+      "Andrew Ting Yan Li",
+      "Zhuo Li",
+      "Zhelin Yang",
+      "Zhipeng Dong",
+      "Quentin Rouxel",
+      "Fei Chen"
+    ],
+    "published": "2026-09-04T08:49:31+00:00",
+    "updated": "2026-09-04T08:49:31+00:00",
+    "url": "http://arxiv.org/abs/2609.04893v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.04893v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.04802v1",
+    "title": "Linguistic Trajectory Encoding for Efficient Long-Horizon Spatial Memory in Embodied Agents",
+    "abstract": "Embodied agents performing long-horizon tasks require a memory representation in which the state transitions of dynamic objects remain queryable in natural language across hours-to-days observation horizons. Existing systems either drop fine-grained motion (clip-level video-language embeddings), keep it only as raw coordinates (geometric SLAM), or organise it around immediate task context (agent working memories). None of them gives the agent a per-object timeline whose state transitions are themselves queryable in language. Our key contribution is \\textbf{Linguistic Trajectory Encoding} (LTE), which compresses dynamic object motion histories via a hybrid representation combining natural language descriptions, sparse spatial anchors, and visual anchors. LTE adapts compression to motion complexity by anchoring periods without reliable observations to the last seen location, while representing motion with geometric waypoints and linguistic descriptions to preserve accuracy. To evaluate these capabilities across extended time horizons, we construct the \\textbf{Spatial Memory Benchmark} (SMB) from EgoLife multi-day recordings, targeting capabilities absent in existing benchmarks: semantic trajectory retrieval and long-horizon object retrieval. On SMB, the LTE-based system achieves $45.3\\%$ success in semantic trajectory retrieval and $48.7\\%$ in long-horizon object retrieval, outperforming structured-memory and VLM baselines (best prior: $31.9\\%$ and $34.4\\%$). LTE achieves trajectory compression by factors of $8.7\\times$ to $26.1\\times$ with sub-second query latency on $24$\\,h video. On Ego4D natural-language queries, the system reaches $28.75\\%$ / $55.10\\%$ R@1/R@5, $+15.80$ / $+31.30$ pts over EgoVLPv2.",
+    "authors": [
+      "Tianyidan Xie",
+      "Shenyi Wang",
+      "Qiang Tang",
+      "Mingjie Wang",
+      "Zhicheng Qiu",
+      "Xuanfu Li",
+      "Zhan Xu",
+      "Jian Yang",
+      "Lanjun Wang",
+      "Zili Yi"
+    ],
+    "published": "2026-09-04T07:00:48+00:00",
+    "updated": "2026-09-04T07:00:48+00:00",
+    "url": "http://arxiv.org/abs/2609.04802v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.04802v1",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.04759v1",
+    "title": "Dressing in Motion: A Human Motion-Aware Diffusion Policy for Robot-Assisted Dressing",
+    "abstract": "Robotic dressing assistance is a promising solution for supporting older adults with physical impairments in daily living. However, dressing under human motion remains challenging, as complex garment--human contact and occlusions make it difficult to generate actions aligned with arm movements. In this letter, we propose a visuomotor policy that learns dressing skills from static expert demonstrations and generalizes to dynamic user-motion scenarios. A diffusion policy tailored to garment--human interaction geometry learns from partially observed point clouds with varied arm postures. We then introduce an object-centric representation based on PDE diffusion to capture the axial distribution of the arm. By sampling motion-relevant regions and registering them across consecutive observations, the proposed method approximates arm motion and reactively adapts the executed trajectory. We evaluate our method in simulation and a real-world human study involving nine participants, three garment types, and six arm-motion patterns. Results show that our method outperforms baselines in dressing progress, freedom of movement, and user comfort. The project website is https://anonymous.4open.science/w/dressing-in-motion.",
+    "authors": [
+      "Haoxiang Sun",
+      "Fangyuan Wang",
+      "Songhao Huang",
+      "Justina Y. W. Liu",
+      "Jihong Zhu",
+      "Peng Zhou",
+      "David Navarro-Alarcon"
+    ],
+    "published": "2026-09-04T05:42:04+00:00",
+    "updated": "2026-09-04T05:42:04+00:00",
+    "url": "http://arxiv.org/abs/2609.04759v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.04759v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  }
+]
