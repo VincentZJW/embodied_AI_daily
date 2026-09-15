@@ -1,1 +1,520 @@
-[]
+[
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.15988v1",
+    "title": "ResSafe: Learning Safety Filtering with Residual Reinforcement Learning for Humanoids",
+    "abstract": "Safe control of humanoid robots remains challenging due to their high-dimensional dynamics, contact-rich interactions, and sensitivity to disturbances. Although reinforcement learning has enabled effective locomotion and motion tracking, learned policies can still generate unsafe actions that lead to instability or falls. In this work, we propose residual reinforcement learning as an implicit safety-filtering mechanism for safe humanoid control. Instead of relying on a single nominal policy to simultaneously balance performance, safety, and robustness, we decouple performance and safety. The nominal policy focuses solely on task performance, while a residual policy learns safety corrections. This decoupling leads to a better performance--safety Pareto trade-off and avoids the need for careful tuning of multiple competing reward terms within a single policy training. We show that the residual policy can act as an implicit safety filter.",
+    "authors": [
+      "Gechen Qu",
+      "Tong Zhang",
+      "Bike Zhang",
+      "Yen-Jen Wang",
+      "Koushil Sreenath",
+      "Claire Tomlin",
+      "Jason Jangho Choi"
+    ],
+    "published": "2026-09-14T17:59:50+00:00",
+    "updated": "2026-09-14T17:59:50+00:00",
+    "url": "http://arxiv.org/abs/2609.15988v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.15988v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.15940v1",
+    "title": "Beyond Single-Axis Testing: Paired Evaluation of Compound Robustness in Vision-Language-Action Policies",
+    "abstract": "Vision-language-action policies are typically evaluated one perturbation at a time, providing a useful diagnosis of their sensitivity to individual distribution shifts. Real-world deployment, however, may involve several shifts simultaneously, and it remains unclear how these individual robustness measurements compose. We ask whether compound robustness can be inferred from single-axis evaluations. We introduce LIBERO-CTRL, a six-axis benchmark that pairs each initial state across single-axis conditions and a matched simultaneous condition. This design reveals two opposing outcome changes that aggregate success rates cannot distinguish: emergent failures, where all single-axis rollouts succeed but the simultaneous rollout fails, and compensated successes, where at least one single-axis rollout fails but the simultaneous rollout succeeds. Because one transition decreases compound success while the other increases it, they can cancel, making aggregate compound performance appear consistent with single-axis measurements even when individual outcomes differ substantially. These opposing transitions can largely cancel in aggregate: even when the difference between the two transition rates is not statistically distinguishable from zero, as many as 29.0% of matched initial states still change outcome. Across six policies and three severity levels, such outcome changes reach 34.5% in the most affected condition. The relative prevalence of the two transitions varies across policies and severities, while the transition rates remain similar under independent re-evaluation of stochastic policies. Compound robustness therefore cannot be characterized from aggregate single-axis success rates alone; matched per-instance evaluation is needed to reveal how joint perturbations alter behavior.",
+    "authors": [
+      "Hiroki Sawada",
+      "Shunichi Kasahara"
+    ],
+    "published": "2026-09-14T17:44:54+00:00",
+    "updated": "2026-09-14T17:44:54+00:00",
+    "url": "http://arxiv.org/abs/2609.15940v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.15940v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.15870v1",
+    "title": "WLA$^3$: World Latent Action Modeling for Semantics, Dynamics, and Kinematics",
+    "abstract": "Scaling generalist policy models with heterogeneous data is limited by the lack of unified, low-noise action supervision. Human egocentric videos are abundant, but only a small fraction comes with high-quality hand-action labels. Observed world transitions offer a common source of action-related supervision across data sources. We introduce WLA$^3$ (World Latent Action Modeling for Semantics, Dynamics, and Kinematics), a unified generalist policy model framework built around representations learned by a World Latent Action Model (WLAM). WLAM first learns how multimodal world states change over a local interval, encoding synchronized camera views and available embodiment-state changes into a compact local latent action and a richer transition feature. Reconstruction from partial modalities and consistency across overlapping windows encourage robust transition representations. WLA$^3$ reuses them across semantics, dynamics, and kinematics: local latent actions support action-sensitive physical-dynamics modeling, segment-level features directly supervise the VLM through a Semantic Latent Aggregate (SLA), and an action expert jointly predicts latent actions together with embodiment-specific robot controls. Human videos provide scalable transition supervision, while robot trajectories ground the shared representation in executable native controls. On LARYBench, the final 32D latent action reaches 67.89\\% average classification accuracy. WLA$^3$ achieves 81.9% average success across six real-robot tasks versus 66.2% for $π_{0.5}$. Performance improves as generalist policy model mid-training data scales, and human videos support human-to-robot transfer. Project page can be found at https://wla-3.github.io/.",
+    "authors": [
+      "Peidong Liu",
+      "Zhiyuan Xiang",
+      "Mingyang Li",
+      "Wenhao Li",
+      "Jiale Zhang",
+      "Jiahao Sun",
+      "Jiawei Li"
+    ],
+    "published": "2026-09-14T16:59:00+00:00",
+    "updated": "2026-09-14T16:59:00+00:00",
+    "url": "http://arxiv.org/abs/2609.15870v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.15870v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.15726v1",
+    "title": "Bench2Dex: Benchmarking Visuo-Tactile Bimanual Dexterous Manipulation Across Dexterous Hands",
+    "abstract": "Tactile sensing provides contact information that can be difficult to infer from vision alone, but tactile hardware for dexterous hands has not converged to a common design. Dexterous hands differ in finger structure, contact surfaces, and sensor layouts, while simulated tactile signals still differ from measurements produced by physical sensors. These factors make it difficult to study visuo-tactile manipulation across diverse dexterous hands within a consistent experimental setting. We present Bench2Dex, a simulation benchmark for visuo-tactile bimanual manipulation across 12 dexterous hands. We adapt existing robot models with a shared simulated tactile interface that converts local contact geometry into image-like tactile observations. The interface provides a consistent observation format across different hand morphologies without attempting to reproduce the output of a specific physical tactile sensor. Bench2Dex includes 26 bimanual manipulation tasks that involve tool use, articulated-object interaction, and multi-stage manipulation, together with about 1.3K human-teleoperated demonstrations. The benchmark provides synchronized visual, tactile, proprioceptive, action, and object-state observations, together with executable task metrics. For robustness, we group seven perturbation types into invariance axis, where the correct action does not change, and equivariance axis, where the correct action changes together with the perturbation. We evaluate ACT, Diffusion Policy, pi0.5, and GR00T N1.5 on Bench2Dex and report their performance and failure modes. Bench2Dex is meant as a platform for studying visuo-tactile learning across dexterous hands. It does not assume that simulated tactile observations can replace real tactile sensing; it offers a shared setting for algorithm development while tactile hardware and simulation models are still evolving.",
+    "authors": [
+      "Zhenjie Yang",
+      "Yideng Zhang",
+      "Dongjie Zhang",
+      "Chenyu Jiang",
+      "Xianshuai Liu",
+      "Yufeng Li",
+      "Zuhao Ge",
+      "Xingyu Jiao",
+      "Zheng Zhang",
+      "Kaiyu He",
+      "He Wang",
+      "Yuwen Zhong",
+      "Yi Deng",
+      "Muyun Jiang",
+      "Xianliang Huang",
+      "Haisheng Su",
+      "Donghang Zhang",
+      "Jian Zhang",
+      "Xue Yang",
+      "Hongyang Li",
+      "Zuxuan Wu",
+      "Yu-Gang Jiang",
+      "Xiaosong Jia",
+      "Junchi Yan"
+    ],
+    "published": "2026-09-14T15:22:59+00:00",
+    "updated": "2026-09-14T15:22:59+00:00",
+    "url": "http://arxiv.org/abs/2609.15726v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.15726v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.CV"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.15213v1",
+    "title": "X-WBC: A Cross-Embodiment Foundation Model for Humanoid Whole-Body Control",
+    "abstract": "Scaling humanoid whole-body control toward general-purpose deployment requires large human motion corpora and training experience shared across robot bodies. Existing methods usually train one policy per robot, leaving motion experience isolated across embodiments. We introduce X-WBC, a cross-embodiment foundation framework that separates relatively shared human motion semantics from embodiment-specific physical execution. Human-centered command tokens align full human motion, robot reference motion, and sparse VR observations. A causal Transformer learns reusable temporal structure from mixed multi-robot rollouts, while lightweight robot-specific modules map the shared representation to each robot's proprioception and action space. Across nine simulated embodiments, external motions, and four real robots, experiments show that joint training improves tracking, the aligned representation supports consistent control across command sources, and the learned policy remains competitive beyond the training corpus. These results support heterogeneous humanoids as joint data sources and establish cross-embodiment joint training as a practical route toward whole-body control foundation models.",
+    "authors": [
+      "Juntong Zhang",
+      "Chun Gu",
+      "Li Zhang"
+    ],
+    "published": "2026-09-14T08:34:48+00:00",
+    "updated": "2026-09-14T08:34:48+00:00",
+    "url": "http://arxiv.org/abs/2609.15213v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.15213v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.15195v1",
+    "title": "HarnessVLN: Unifying Training-Free Embodied Navigation through an Agent Harness",
+    "abstract": "Embodied navigation requires agents to interpret visual observations, accumulate spatial knowledge, and execute actions to follow instructions or locate objects. Training-based methods face generalization challenges, while training-free methods exploit multimodal large language models (MLLMs) but often lack mechanisms to reconcile proposed actions with spatial evidence, task progress, and execution failures. We present HarnessVLN, a zero-shot, training-free framework whose Agent Harness coordinates perception, retrieval, grounding, navigation, recovery, and termination through a unified tool interface. The Harness validates planner proposals against spatial evidence, geometric feasibility, and subgoal consistency, incorporating structured tool feedback into subsequent decisions. Hierarchical event memory tracks task progress and execution history, while a persistent Spatiotemporal Graph maintains reusable spatial evidence and failure annotations for verification and recovery. A replaceable Navigation Executor converts validated targets into executable motions, allowing the same Harness protocol to support instruction-following and object-goal navigation. HarnessVLN achieves success rates of 60.8%, 53.9%, 76.0%, and 59.3% on R2R, RxR, HM3D-v2, and HM3D-OVON, respectively, surpassing prior training-free SOTA results. Humanoid deployment further demonstrates its applicability to both tasks in real-world environments. The project page is: https://harnessvln.netlify.app/.",
+    "authors": [
+      "Yang Chen",
+      "Lirong Che",
+      "Zhenyu Huang",
+      "Wenbo Fu",
+      "Chuang Wang",
+      "Xu Cao",
+      "Daqi Liu",
+      "Yuzhe Yang",
+      "Jian Su",
+      "Lan-Zhe Guo"
+    ],
+    "published": "2026-09-14T08:15:56+00:00",
+    "updated": "2026-09-14T08:15:56+00:00",
+    "url": "http://arxiv.org/abs/2609.15195v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.15195v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.15169v1",
+    "title": "GRAVA: Grounded Reasoning-to-Action Representation and Learning for Autonomous Driving",
+    "abstract": "Driving vision-language-action (VLA) models increasingly reason before acting, but their intermediate reasoning is often weakly grounded in physical scene evidence and loosely connected to executable behavior. We present GRAVA, a framework built around Grounded Reasoning-to-Action (GRA), which unifies grounding, reasoning, and action generation in a single autoregressive stream. GRA links action-relevant language references to 2D visual regions and ego-centric physical states, organizes object interactions and decisions in a trajectory-anchored typed graph, and serializes this structure into grounded reasoning. A single VLM generates this reasoning followed by a compact Executable Planner action that is deterministically decoded into a continuous trajectory. We further introduce an agentic GRA data construction pipeline that combines forward scene grounding with backward trajectory anchoring, and use it to build GR-NavSim with 2.2M grounded question-answer pairs and 70K GRA reasoning traces. A progressive training strategy develops grounded cognition through pre-training, establishes the reasoning-to-action interface through imitation, and improves driving behavior through reinforcement learning and exploration. Using about 60% of the available human driving demonstrations for action supervision, GRAVA-8B achieves state-of-the-art performance among purely autoregressive driving models on the full NAVSIM benchmark. On an internal long-tail benchmark, full GRA improves key-object compliance and Closed-loop Driving Score by 19.3% and 20.5% over action-only prediction, respectively. These results show the benefit of preserving action-relevant physical evidence from grounded reasoning through executable action generation.",
+    "authors": [
+      "Xiao Liu",
+      "Haoyu Li",
+      "Jianghao Leng",
+      "Lin Wang",
+      "Chao Sun"
+    ],
+    "published": "2026-09-14T07:55:04+00:00",
+    "updated": "2026-09-14T07:55:04+00:00",
+    "url": "http://arxiv.org/abs/2609.15169v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.15169v1",
+    "categories": [
+      "cs.CV",
+      "cs.RO"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.15162v1",
+    "title": "LieSpline-DP: Lie-Group B-Spline Diffusion Policy for Smooth Robot Manipulation",
+    "abstract": "Diffusion Policy (DP) is a powerful Learning from Demonstration (LfD) method for robotic manipulation, yet it suffers from discontinuous and non-smooth trajectories. Spline-based action representations promote smooth motion within individual action chunks, but existing spline-based methods neither guarantee cross-chunk $C^2$ continuity nor account for the group structure of $\\mathrm{SE}(3)$. We therefore propose LieSpline-DP, a Lie-group B-spline diffusion policy that generates end-effector trajectories directly on $\\mathrm{SE}(3)$ and couples consecutive plans by sharing their boundary control poses, ensuring $C^2$ continuity throughout the entire planned trajectory. Across three real-robot tasks, LieSpline-DP produces lower trajectory jerk and higher task success rates than the DP baseline. The gains are particularly pronounced in real-world tasks involving liquids and flexible objects: in our real-robot experiments, LieSpline-DP achieved a 100% success rate on both pouring and bucket hooking, whereas the DP baseline achieved only 10% and 30%, respectively.",
+    "authors": [
+      "Erxuan Xie",
+      "Bang Liu",
+      "Pingyun Nie",
+      "Xingkai Liu",
+      "Zhuang Fu",
+      "Bo Zhang"
+    ],
+    "published": "2026-09-14T07:45:55+00:00",
+    "updated": "2026-09-14T07:45:55+00:00",
+    "url": "http://arxiv.org/abs/2609.15162v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.15162v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.15014v1",
+    "title": "Steering Generative Robot Policies with Lexicographic Preferences",
+    "abstract": "Pretrained generative robot policies can produce effective behaviors across diverse environments, but deployment can lead to requirements and preferences that may not have been represented during training. Furthermore, at deployment, an operator, user, or application may assign these requirements and preferences a priority order that can vary across deployments. For example, embodiment-specific feasibility constraints may need to be satisfied first, while user-specific preferences guide behavior among the feasible options. We show that a frozen generative robot policy---based on either diffusion or flow matching---can be steered at inference time to respect such lexicographically ordered deployment objectives. To achieve this, we introduce two modifications to the sampler. First, we apply dynamic-barrier guidance to sampled trajectories, constraining lower-priority updates so that higher-priority costs do not increase (up to first order). Second, we select the executed sample using a cascade that successively filters candidate samples according to each priority level. The policy weights remain unchanged. On a navigation benchmark, we demonstrate that our method improves success, traversability, and preference compliance over the frozen policy, and achieves substantially better compliance than tuned weighted-sum baselines. The same method transfers to a flow-matching manipulation policy on LIBERO, where it improves compliance without reducing task success. A controlled manipulation study further shows that, in settings where a fixed weight can match the desired ordering, the dynamic barrier reaches comparable best performance over a substantially wider range of parameter settings.",
+    "authors": [
+      "Yixuan Jia",
+      "Jonathan P. How"
+    ],
+    "published": "2026-09-14T04:27:07+00:00",
+    "updated": "2026-09-14T04:27:07+00:00",
+    "url": "http://arxiv.org/abs/2609.15014v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.15014v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.15012v1",
+    "title": "Atomic Motion Coordinate for Language-Steerable and Force-Responsive Manipulation",
+    "abstract": "Can changing only the language instruction redirect a VLA policy's end effector, or does the visually driven motion prior dominate? We present Atomic Motion Coordinate, a geometry-grounded coordinate for steerable and force-responsive manipulation. Each arm owns thirteen signed translation, rotation, and hold atoms grounded from text and forward kinematics with vision withheld, and the coordinate is injected into every action-expert block via weighted codebook alignment. Contact history modulates the same coordinate through a bounded spherical residual that is recomputed from a fixed nominal latent to regenerate only the unexecuted horizon suffix. Across 7,520 offline horizon interventions, opposite-atom separation reaches 92.5/83.1% (single/dual) versus 39.1/24.0% for LA4VLA-style. Across 50 real-robot trials per task, AMC raises OOD fruit progress from 60.5% to 87.8%; force adaptation raises Plug/Vase from 59.0/71.5% to 78.5/75.2%.",
+    "authors": [
+      "Jiaqi Zhai",
+      "Jingkai Zhao",
+      "Chen Yang",
+      "Siyuan Ma",
+      "Yutian Zhang",
+      "Liwen Yang",
+      "Qinglian Wu",
+      "Weiqi Fan",
+      "Yifei Wang",
+      "Yi Zheng",
+      "Chenxi Gu",
+      "Dong Wei",
+      "Wei Zhang"
+    ],
+    "published": "2026-09-14T04:19:59+00:00",
+    "updated": "2026-09-14T04:19:59+00:00",
+    "url": "http://arxiv.org/abs/2609.15012v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.15012v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.15005v1",
+    "title": "IMPACT-VLA: Interaction-aware Multimodal Propagation Attribution via Counterfactual Trajectories for Vision-Language-Action Policies",
+    "abstract": "Vision-Language-Action (VLA) policies perform robot manipulation tasks using multimodal inputs such as visual observations, proprioceptive states, and language instructions. However, it remains unclear at which execution stages each modality contributes to final task success and how input interventions propagate through subsequent states, observations, and actions. Existing attribution approaches primarily measure local sensitivity or temporally aggregated importance, limiting their ability to capture phase-dependent contributions and cross-phase dependencies. We propose Interaction-aware Multimodal Propagation Attribution via Counterfactual Trajectories for Vision-Language-Action Policies (IMPACT-VLA). IMPACT-VLA constructs behavioral phases from action transitions in a successful reference rollout, aligns them with policy query boundaries, and defines phase-modality blocks as attribution units. It then performs closed-loop counterfactual re-execution to quantify each block's contribution to final task success. We further analyze cross-phase non-additive interactions and trajectory propagation while distinguishing behavioral from functional recovery. Across 30 LIBERO robot manipulation tasks using OpenVLA-OFT, dominant-modality transitions occurred in 25 tasks (83.3%), and closed-loop attribution identified task-critical information more faithfully than Static Action Perturbation. Later-block marginal gains for negatively interacting pairs increased by approximately 3.3x under early-phase input replacement, while functional recovery could occur without behavioral recovery. These results reveal when multimodal inputs support task success and how their contributions become conditionally coupled during closed-loop execution.",
+    "authors": [
+      "Jinwoong Kim",
+      "Sangjin Park"
+    ],
+    "published": "2026-09-14T04:13:17+00:00",
+    "updated": "2026-09-14T04:13:17+00:00",
+    "url": "http://arxiv.org/abs/2609.15005v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.15005v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.14973v1",
+    "title": "PhysBrain 1.5: From Vision-Language Models to Physical Foundation Models",
+    "abstract": "We present PhysBrain 1.5, a unified model for understanding physical environments, generating actions, and predicting future states. Motivated by the physical loop of observation, interaction, and environmental change, we bring these capabilities into a common learning framework. Starting from a general vision--language model, we encode language responses, end-effector motion, and dense visual targets as discrete sequences and jointly optimize them with autoregressive next-token prediction. Pre-training draws its embodied supervision entirely from human interaction videos, using task-centered episodes to pair semantic and spatial context with recovered motion and subsequent observations. We then adapt the model through supervised fine-tuning on a mixture of human demonstrations, robot trajectories, and simulated experience. Across 28 embodied understanding benchmarks, our 8B model achieves an average score of 72.5, setting a new open-source state of the art and performing on par with leading proprietary models such as GPT-6-Astra and Gemini 3.6 Flash. It achieves the best open-source results on 14 benchmarks while retaining general multimodal capabilities. Beyond these understanding evaluations, qualitative examples show the model's ability to produce end-effector trajectories and predict future scenes through spatially aligned RGB, depth, and robot-mask outputs.",
+    "authors": [
+      "DeepCybo Team",
+      "Yu Bin",
+      "Haipeng Cao",
+      "Zheng Chang",
+      "Kai Chen",
+      "Youning Chen",
+      "Kailin Deng",
+      "Yichao Du",
+      "Xiaotong Fu",
+      "Haoyang Ge",
+      "Yunlong Guo",
+      "Chenliu Hao",
+      "Jiyan He",
+      "Xuguo He",
+      "Yakun Hou",
+      "Kai Hu",
+      "Cong Huang",
+      "Tuopusen Huang",
+      "Yu Huang",
+      "Hong Li",
+      "Peize Li",
+      "Shijie Lian",
+      "Xiaopeng Lin",
+      "Yun Lin",
+      "Haibao Liu",
+      "Haochen Liu",
+      "Qiuzhi Liu",
+      "Shengcai Liu",
+      "Zhiqiang Liu",
+      "Tao Luo",
+      "Peng Ren",
+      "Shuo Ren",
+      "Chaoyi Ruan",
+      "Zhaolong Shen",
+      "Yukun Shi",
+      "Qiyuan Su",
+      "Yuxuan Tian",
+      "Yining Wang",
+      "Changti Wu",
+      "Hao Wu",
+      "Xueyin Xu",
+      "Ruoqi Yang",
+      "Zhaoyang Yang",
+      "Hang Yuan",
+      "Zhaoyang Zeng",
+      "Hanwen Zhang",
+      "Ruimeng Zhang",
+      "Yao Zhang",
+      "Yibo Zhang",
+      "Yuxiang Zhang",
+      "Zhirui Zhang",
+      "Ziyi Zhang",
+      "Zubin Zheng",
+      "Zishen Zhuang"
+    ],
+    "published": "2026-09-14T03:25:46+00:00",
+    "updated": "2026-09-14T03:25:46+00:00",
+    "url": "http://arxiv.org/abs/2609.14973v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.14973v1",
+    "categories": [
+      "cs.CV",
+      "cs.RO"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.14647v1",
+    "title": "Skill Composition for Legged Robot Reinforcement Learning",
+    "abstract": "Robots, and humanoid robots in particular, are increasingly competent at individual behaviors, each obtained by training a specialized controller. A specialized skill is quick to train, converges reliably because the problem it faces is narrow, and can be validated on its own, none of which is true of a single end-to-end policy asked to cover everything. What remains fragile is the transition between them. We argue that the composition of independent sub-policies deserves to be treated as a research problem in its own right, rather than as an implementation detail left to whatever mechanism happens to be at hand. Reliable composition is what turns a collection of separate skills into a repertoire that can be used, extended and shared. More fundamentally, if control can be passed between specialized policies safely, and at any moment, the choice of what the robot should do next can be delegated to a component of an entirely different nature, such as a planner, an automaton or a symbolic controller, whose behavior can be inspected in advance. The policies would then only ever have to act, and what the robot can be trusted to do would become verifiable.",
+    "authors": [
+      "Daniel Gigliotti",
+      "Flavio Maiorana",
+      "Fabio Patrizi",
+      "Luca Iocchi"
+    ],
+    "published": "2026-09-13T16:32:17+00:00",
+    "updated": "2026-09-13T16:32:17+00:00",
+    "url": "http://arxiv.org/abs/2609.14647v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.14647v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.14615v1",
+    "title": "Open-UniMo: Towards Unified Motion-Language Understanding and Generation in the Open World",
+    "abstract": "Unified motion generation and understanding is crucial for embodied AI systems that can both synthesize and interpret human actions in open-world environments. Existing motion-language models often treat motion as an auxiliary modality of a language model, leading to text-dominated representations and limited cross-modal interaction. Moreover, the next-token prediction paradigm is not naturally suited to long motion sequences, where autoregressive generation may accumulate prediction errors. To address these challenges, we propose Open-UniMo, a unified Large Motion-Language Model (LMLM) trained on million-scale open-world motion-language data. Open-UniMo promotes modality parity by extending Qwen's vocabulary of about 150K text tokens with 64K motion tokens, enabling motion and language to share a unified token space. We further introduce motion-consistent Chain-of-Thought reasoning as an intermediate representation to bridge language semantics and motion dynamics. Open-UniMo is trained with a two-stage pipeline, where supervised fine-tuning establishes CoT-guided bidirectional motion-language mapping and Group Relative Policy Optimization (GRPO) improves semantic alignment while mitigating cumulative errors in autoregressive motion-token generation. To support comprehensive evaluation, we propose Open-MoBench, a VLM-guided benchmark for assessing text-to-motion (T2M) generation, motion-to-text (M2T) understanding, and bidirectional consistency. Extensive experiments show that Open-UniMo achieves state-of-the-art performance on both conventional metrics and Open-MoBench. Furthermore, ablation studies reveal that M2T understanding is not primarily limited by motion-token vocabulary size; instead, coupling M2T with the learnable T2M generation path yields stronger cross-modal representations, demonstrating that generation can facilitate understanding in AR-based motion-language modeling.",
+    "authors": [
+      "Guocun Wang",
+      "Kenkun Liu",
+      "Guorui Song",
+      "Jing Lin",
+      "Zhe Huang",
+      "Luyuan Zhang",
+      "Dake Zhong",
+      "Choo Sin Wai",
+      "Xiaoguang Han",
+      "Haoqian Wang"
+    ],
+    "published": "2026-09-13T15:46:41+00:00",
+    "updated": "2026-09-13T15:46:41+00:00",
+    "url": "http://arxiv.org/abs/2609.14615v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.14615v1",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.14561v1",
+    "title": "GLAM: Training a latent world model over global spatiotemporal memory for active exploration and navigation",
+    "abstract": "Active exploration and semantic navigation require an embodied agent to build memory from partial observations, predict how the evolution of observed spatial memory may support future motion, and convert that prediction into actionable plans. We present GLAM, a goal-conditioned latent world model trained over global spatiotemporal memory, and GLAM NAV, the complete navigation system built around it. Given historical map tokens, a navigation goal, and the current robot pose, GLAM jointly predicts future map representations and robot-centric waypoint latents, allowing future spatial context and navigation intent to be inferred in a shared representation space. The model follows a JEPA-like latent prediction paradigm, operates directly on map-level latent tokens rather than RGB reconstruction, and uses a pretrained waypoint encoder-decoder to supervise and decode navigation plans within GLAM NAV. Training data are collected by replaying ObjectNav expert trajectories in Habitat over HM3D v0.2 scene assets and slicing them into multi-timescale prediction samples. On a controlled HM3D-ObjectNav subset reproduction setting, GLAM NAV improves over a reproduced BSC-Nav baseline in both success rate and success weighted by path length.",
+    "authors": [
+      "I-Tak Ieong",
+      "Ruizhi Feng",
+      "Zhaoyang Lu",
+      "Yifei Cao",
+      "Jiayao Zhao",
+      "Leon Li",
+      "Senhua Zhu",
+      "Wenbo Ding"
+    ],
+    "published": "2026-09-13T14:47:33+00:00",
+    "updated": "2026-09-13T14:47:33+00:00",
+    "url": "http://arxiv.org/abs/2609.14561v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.14561v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.14473v1",
+    "title": "PuzzleMate: Benchmarking MLLMs for Egocentric Puzzle Assistance",
+    "abstract": "Personal AI assistants hold the potential to evolve from digital interfaces into embodied companions capable of guiding users through complex physical activities. For these assistants to become integral to daily life, they must do more than identify objects; they must provide precise, step-by-step instructions that align with a user's real-time progress. While Multimodal Large Language Models (MLLMs) show promise in general visual understanding, their ability to deliver grounded, sequential guidance for fine-grained manipulation tasks remains largely unverified. In this paper, we choose the jigsaw puzzle as a strategic testbed for this capability. Unlike general object recognition, puzzle solving demands high-precision spatial reasoning, the ability to distinguish between minute geometric variations, and a rigorous adherence to sequential logic. We investigate this capability through PuzzleMate, a novel framework focused on jigsaw puzzle solving captured through an egocentric viewpoint. We deploy PuzzleMate in a user-in-the-loop study to evaluate how well state-of-the-art MLLMs perceive the current puzzle state and generate actionable next-step instructions. Our analysis reveals seven key bottlenecks that limit their effectiveness. Building on these insights, we propose a benchmark that enables systematic evaluation of MLLMs' reasoning capabilities for puzzle solving. Our findings reveal a substantial performance gap in current models like GPT-5.2 and Gemini-2.5-Pro; while these MLLMs are highly capable, they struggle to navigate the intricate reasoning and sequential logic essential for jigsaw puzzle assistance.",
+    "authors": [
+      "Avijit Dasgupta",
+      "Shayon Dasgupta",
+      "Zakaria Laskar",
+      "C. V. Jawahar",
+      "Karteek Alahari"
+    ],
+    "published": "2026-09-13T12:29:03+00:00",
+    "updated": "2026-09-13T12:29:03+00:00",
+    "url": "http://arxiv.org/abs/2609.14473v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.14473v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.14432v1",
+    "title": "EMoG: Emotion-Modulated Gait Generation for Expressive Humanoid Locomotion",
+    "abstract": "Existing humanoid locomotion systems primarily focus on stability and task execution, while integrating expressiveness with explicit locomotion control remains challenging. We propose EMoG, an emotion-modulated gait generation framework for expressive humanoid locomotion. EMoG introduces an emotional-style code with continuously adjustable intensity. Conditioned on this code and physical commands, a lightweight MLP generates expressive, command-consistent periodic gait trajectories in real time, which are tracked by a unified reinforcement learning policy for physical execution. To support training, we collect a large-scale emotion-annotated gait dataset from professional performers and develop an automated pipeline to extract physically consistent periodic gait cycles. EMoG also integrates an LLM-based parser that converts free-form language into emotional style and motion parameters for interactive control. Experiments demonstrate continuous gait-style modulation with perceptible expressive cues while maintaining command tracking. EMoG provides a practical approach to parameterized emotional-style walking for human-robot interaction.",
+    "authors": [
+      "Yi Lu",
+      "Tianhao Jiang",
+      "Honglong Tian",
+      "Yumeng Zhang",
+      "Qingrui Zhao",
+      "Zhengtao Wang",
+      "Xiao-Xiao Long",
+      "Qiu Shen",
+      "Xun Cao"
+    ],
+    "published": "2026-09-13T11:14:14+00:00",
+    "updated": "2026-09-13T11:14:14+00:00",
+    "url": "http://arxiv.org/abs/2609.14432v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.14432v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.14310v1",
+    "title": "VLBiMan++: Expanding the Generalization Boundary of Vision-Language Anchored One-Shot Bimanual Manipulation",
+    "abstract": "Generalizable bimanual robotic manipulation requires a reusable task prior that can persist across increasingly diverse tasks, objects, scenes, embodiments, and execution conditions, thus avoiding the prohibitive cost of large-scale teleoperated demonstrations and policy retraining. In this work, we present VLBiMan++, an extended framework that expands the generalization boundary of vision-language anchored one-shot bimanual manipulation. Starting from a single human demonstration, VLBiMan++ performs task-aware decomposition to identify reusable and adaptable skill components, and employs vision-language grounded geometric adaptation to transfer these skills to novel configurations without retraining. Building on this foundation, we systematically extend generalization along five dimensions: task generalization through diverse and long-horizon skill compositions; object generalization across unseen categories, varying geometries, and more complex articulated or deformable objects; scene generalization under clutter, occlusion, and dynamic interference; embodiment generalization across heterogeneous dual-arm robotic platforms; and deployment generalization through prolonged closed-loop execution under repeated external perturbations. To support this broader scope, we further introduce object-state-aware adaptation and lightweight trajectory optimization mechanisms that accommodate changes beyond simple rigid 6-DoF pose variations while preserving reliable bimanual coordination. Extensive real-world experiments demonstrate that VLBiMan++ maintains strong task success and adaptation capability across these increasingly challenging settings. Overall, VLBiMan++ advances one-shot bimanual manipulation from demonstrating isolated transferability toward a more systematic and scalable framework for generalization across tasks, objects, scenes, embodiments, and long-term deployment conditions.",
+    "authors": [
+      "Huayi Zhou",
+      "Wei Gao",
+      "Yiyang Han",
+      "Kui Jia",
+      "Hui Huang"
+    ],
+    "published": "2026-09-13T06:10:51+00:00",
+    "updated": "2026-09-13T06:10:51+00:00",
+    "url": "http://arxiv.org/abs/2609.14310v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.14310v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.14261v1",
+    "title": "VGFM: Expressive Robot Policies via Dense Value Guidance in Flow Matching",
+    "abstract": "Recent robot learning paradigms increasingly rely on large offline datasets of robotic interactions to train control policies. Expressive generative models enable rich and multimodal action representations, expanding the capability of this paradigm for complex robotic control. However, policy improvement with multi-step generative actors remains challenging. In offline reinforcement learning (RL), incorporating value-based objectives along generative trajectories often introduces substantial training complexity, including backpropagation through time (BPTT), auxiliary architectures, or distillation losses. We propose Value-Guided Flow Matching (VGFM), a scalable offline RL framework that enables dense value-guided shaping within a flow-based policy while avoiding BPTT and additional algorithmic overhead. VGFM parameterizes the policy as a conditional flow-matching model in action (x-prediction) space, ensuring that each intermediate flow step produces a valid robot action that can be directly evaluated by a standard offline RL critic. This design allows value guidance to be applied at randomly sampled flow times without differentiating through the entire generative trajectory, while preserving inference-time flexibility by varying the discretization of the underlying flow ODE without retraining. Evaluated on robotic locomotion and manipulation tasks in OGBench, VGFM achieves strong performance across a wide range of tasks under rigorous evaluation protocols. With minimal hyperparameter tuning, these results demonstrate that VGFM provides a simple, scalable, and effective approach for expressive policy learning in long-horizon, goal-oriented robotic control.",
+    "authors": [
+      "Prajwal Koirala",
+      "Mark Campbell"
+    ],
+    "published": "2026-09-13T03:50:52+00:00",
+    "updated": "2026-09-13T03:50:52+00:00",
+    "url": "http://arxiv.org/abs/2609.14261v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.14261v1",
+    "categories": [
+      "cs.RO",
+      "cs.LG"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.14254v1",
+    "title": "Embracing Flow Unsteadiness: A High-Throughput Learning Platform Enables Vortex-Exploiting Bioinspired Propulsion",
+    "abstract": "Biological swimmers and flyers exploit unsteady vortices for propulsion, whereas engineered vehicles usually suppress them as disturbances. Learning such flow exploitation in machines is difficult because real-fluid interaction data are scarce and unstructured exploration is unstable in high-dimensional, history-dependent flows. Here we present REEF, a co-designed physical-learning framework that integrates SHOAL, an eight-channel high-throughput array for real fluid--structure interaction, with V-STAR, a staged algorithm that converts these interactions into policies through imitation, offline internalization, and online adaptation. Across lift-based, drag-based, and momentum-jet propulsors, REEF expands the attainable force envelope to more than twice that of parameterized search. Particle image velocimetry shows that these gains arise from coordinated vortex formation, growth, and force projection, rather than refinement of a fixed motion-to-force mapping. Force-trained policies transfer zero-shot to free-moving robots whose body motion changes the surrounding flow, suggesting that REEF learns transferable wake-coupling principles for embodied propulsion in unsteady fluids.",
+    "authors": [
+      "Fei Han",
+      "Xinyu Cui",
+      "Zhipeng Wang",
+      "Ning Yang",
+      "Hang Xu",
+      "Haifeng Zhang",
+      "Zhongming Hu",
+      "Jun Wang",
+      "Junfeng Du",
+      "Dixia Fan"
+    ],
+    "published": "2026-09-13T03:11:55+00:00",
+    "updated": "2026-09-13T03:11:55+00:00",
+    "url": "http://arxiv.org/abs/2609.14254v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.14254v1",
+    "categories": [
+      "physics.flu-dyn",
+      "cs.RO"
+    ],
+    "primary_category": "physics.flu-dyn"
+  }
+]
