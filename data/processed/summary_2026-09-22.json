@@ -1,23 +1,69 @@
 {
   "date": "2026-09-22",
   "core_conclusions": [
-    "本次采集得到论文 0 篇、GitHub 项目 20 个、行业/公司动态 19 条。",
+    "本次采集得到论文 20 篇、GitHub 项目 20 个、行业/公司动态 20 条。",
     "本次运行未记录采集错误。",
     "当前未配置 OpenAI API Key，因此摘要为规则生成版本；配置后可生成更准确的中文理解和翻译。",
     "从招聘视角看，VLA、机器人操作、Sim2Real 和人形机器人仍是值得持续追踪的方向。"
   ],
-  "papers": [],
+  "papers": [
+    {
+      "title_zh": "论文 1：扩散策略机器人控制",
+      "reason": "该论文与扩散策略机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文精读摘要。",
+      "highlights": [
+        "已从 arXiv API 合规获取元数据。",
+        "当前为规则摘要，未进行深度语义翻译。"
+      ],
+      "url": "http://arxiv.org/abs/2609.24840v1"
+    },
+    {
+      "title_zh": "论文 2：扩散策略机器人控制",
+      "reason": "该论文与扩散策略机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文精读摘要。",
+      "highlights": [
+        "已从 arXiv API 合规获取元数据。",
+        "当前为规则摘要，未进行深度语义翻译。"
+      ],
+      "url": "http://arxiv.org/abs/2609.24815v1"
+    },
+    {
+      "title_zh": "论文 3：仿真到真实迁移",
+      "reason": "该论文与仿真到真实迁移相关，建议配置 OpenAI API Key 后生成更准确的中文精读摘要。",
+      "highlights": [
+        "已从 arXiv API 合规获取元数据。",
+        "当前为规则摘要，未进行深度语义翻译。"
+      ],
+      "url": "http://arxiv.org/abs/2609.24778v1"
+    },
+    {
+      "title_zh": "论文 4：人形机器人控制",
+      "reason": "该论文与人形机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文精读摘要。",
+      "highlights": [
+        "已从 arXiv API 合规获取元数据。",
+        "当前为规则摘要，未进行深度语义翻译。"
+      ],
+      "url": "http://arxiv.org/abs/2609.24742v1"
+    },
+    {
+      "title_zh": "论文 5：视觉-语言-动作模型",
+      "reason": "该论文与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文精读摘要。",
+      "highlights": [
+        "已从 arXiv API 合规获取元数据。",
+        "当前为规则摘要，未进行深度语义翻译。"
+      ],
+      "url": "http://arxiv.org/abs/2609.24682v1"
+    }
+  ],
   "github_projects": [
     {
       "name": "Genesis-Embodied-AI/genesis-world",
       "summary": "该项目可能聚焦仿真到真实迁移，主要语言为 Python。",
-      "why_follow": "仓库星标数约为 29969，可用于观察开源社区对仿真到真实迁移的实现方向。",
+      "why_follow": "仓库星标数约为 29971，可用于观察开源社区对仿真到真实迁移的实现方向。",
       "url": "https://github.com/Genesis-Embodied-AI/genesis-world"
     },
     {
       "name": "NVlabs/ProtoMotions",
       "summary": "该项目可能聚焦仿真到真实迁移，主要语言为 Python。",
-      "why_follow": "仓库星标数约为 2390，可用于观察开源社区对仿真到真实迁移的实现方向。",
+      "why_follow": "仓库星标数约为 2391，可用于观察开源社区对仿真到真实迁移的实现方向。",
       "url": "https://github.com/NVlabs/ProtoMotions"
     },
     {
@@ -29,46 +75,46 @@
     {
       "name": "zjwzcx/Awesome-Astra-Embodied-AI",
       "summary": "该项目可能聚焦人形机器人控制，主要语言为 未知。",
-      "why_follow": "仓库星标数约为 943，可用于观察开源社区对人形机器人控制的实现方向。",
+      "why_follow": "仓库星标数约为 988，可用于观察开源社区对人形机器人控制的实现方向。",
       "url": "https://github.com/zjwzcx/Awesome-Astra-Embodied-AI"
     },
     {
       "name": "leggedrobotics/pace-sim2real",
       "summary": "该项目可能聚焦仿真到真实迁移，主要语言为 Python。",
-      "why_follow": "仓库星标数约为 761，可用于观察开源社区对仿真到真实迁移的实现方向。",
+      "why_follow": "仓库星标数约为 764，可用于观察开源社区对仿真到真实迁移的实现方向。",
       "url": "https://github.com/leggedrobotics/pace-sim2real"
     }
   ],
   "news": [
     {
-      "title_zh": "行业动态 1：视觉-语言-动作模型",
+      "title_zh": "行业动态 1：仿真到真实迁移",
+      "summary": "该动态与仿真到真实迁移相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
+      "url": "https://www.therobotreport.com/intel-discusses-infrastructure-needed-to-scale-physical-ai-robobusiness/"
+    },
+    {
+      "title_zh": "行业动态 2：视觉-语言-动作模型",
       "summary": "该动态与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "url": "https://www.therobotreport.com/iac-completes-autonomous-racing-event-at-laguna-seca/"
+      "url": "https://www.therobotreport.com/why-outdoor-robots-fail-how-to-build-systems-that-survive/"
     },
     {
-      "title_zh": "行业动态 2：机器人操作与抓取",
-      "summary": "该动态与机器人操作与抓取相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "title_zh": "行业动态 3：视觉-语言-动作模型",
+      "summary": "该动态与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "url": "https://blogs.nvidia.com/blog/physical-ai-halos-safety/"
+      "url": "https://www.therobotreport.com/isaac-ros-5-0-brings-ai-agents-robotics-development-says-nvidia/"
     },
     {
-      "title_zh": "行业动态 3：人形机器人控制",
-      "summary": "该动态与人形机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "title_zh": "行业动态 4：具身智能评测与数据集",
+      "summary": "该动态与具身智能评测与数据集相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "url": "https://www.therobotreport.com/boston-dynamics-opens-metaplant-application-center-train-atlas-humanoid-robots/"
+      "url": "https://spectrum.ieee.org/sustainability-robotics-barbara-mazzolai"
     },
     {
-      "title_zh": "行业动态 4：人形机器人控制",
-      "summary": "该动态与人形机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "title_zh": "行业动态 5：视觉-语言-动作模型",
+      "summary": "该动态与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "url": "https://www.therobotreport.com/what-do-you-do-with-a-humanoid-robot-when-it-breaks-down/"
-    },
-    {
-      "title_zh": "行业动态 5：机器人操作与抓取",
-      "summary": "该动态与机器人操作与抓取相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
-      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "url": "https://www.therobotreport.com/hirebotics-adds-line-tracking-linear-rail-capabilities-cobots/"
+      "url": "https://blogs.nvidia.com/blog/isaac-ros-5-0-agentic-open-source-robotics/"
     }
   ],
   "terms": [
@@ -100,6 +146,31 @@
   ],
   "sources": [
     {
+      "name": "arXiv 论文 1",
+      "url": "http://arxiv.org/abs/2609.24840v1",
+      "type": "论文"
+    },
+    {
+      "name": "arXiv 论文 2",
+      "url": "http://arxiv.org/abs/2609.24815v1",
+      "type": "论文"
+    },
+    {
+      "name": "arXiv 论文 3",
+      "url": "http://arxiv.org/abs/2609.24778v1",
+      "type": "论文"
+    },
+    {
+      "name": "arXiv 论文 4",
+      "url": "http://arxiv.org/abs/2609.24742v1",
+      "type": "论文"
+    },
+    {
+      "name": "arXiv 论文 5",
+      "url": "http://arxiv.org/abs/2609.24682v1",
+      "type": "论文"
+    },
+    {
       "name": "Genesis-Embodied-AI/genesis-world",
       "url": "https://github.com/Genesis-Embodied-AI/genesis-world",
       "type": "GitHub"
@@ -126,27 +197,27 @@
     },
     {
       "name": "RSS 动态 1",
-      "url": "https://www.therobotreport.com/iac-completes-autonomous-racing-event-at-laguna-seca/",
+      "url": "https://www.therobotreport.com/intel-discusses-infrastructure-needed-to-scale-physical-ai-robobusiness/",
       "type": "行业动态"
     },
     {
       "name": "RSS 动态 2",
-      "url": "https://blogs.nvidia.com/blog/physical-ai-halos-safety/",
+      "url": "https://www.therobotreport.com/why-outdoor-robots-fail-how-to-build-systems-that-survive/",
       "type": "行业动态"
     },
     {
       "name": "RSS 动态 3",
-      "url": "https://www.therobotreport.com/boston-dynamics-opens-metaplant-application-center-train-atlas-humanoid-robots/",
+      "url": "https://www.therobotreport.com/isaac-ros-5-0-brings-ai-agents-robotics-development-says-nvidia/",
       "type": "行业动态"
     },
     {
       "name": "RSS 动态 4",
-      "url": "https://www.therobotreport.com/what-do-you-do-with-a-humanoid-robot-when-it-breaks-down/",
+      "url": "https://spectrum.ieee.org/sustainability-robotics-barbara-mazzolai",
       "type": "行业动态"
     },
     {
       "name": "RSS 动态 5",
-      "url": "https://www.therobotreport.com/hirebotics-adds-line-tracking-linear-rail-capabilities-cobots/",
+      "url": "https://blogs.nvidia.com/blog/isaac-ros-5-0-agentic-open-source-robotics/",
       "type": "行业动态"
     }
   ]
