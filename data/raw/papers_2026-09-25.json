@@ -1,0 +1,489 @@
+[
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.28431v1",
+    "title": "LiMA: Bridging Long-term Imagination to Real-time Dexterous Manipulation via Asynchronous Diffusion",
+    "abstract": "Dexterous manipulation demands long-term foresight and rapid reactive control. Vision-Language-Action (VLA) models, while proficient in high-level reasoning, often lack a fine-grained understanding of physical dynamics and spatial perception. Conversely, World-Action Models (WAMs) typically suffer from high inference latency due to iterative generation. These deficiencies result in a critical temporal misalignment where the model's intent fails to adapt to rapid physical contact changes. To overcome this fundamental bottleneck, we propose LiMA, an asynchronous dual-system generative framework that systematically decouples intent planning from reactive execution. LiMA organizes computation into a multi-scale hierarchy: a slow system handles sparse long-horizon spatiotemporal intent generation, while a fast system focuses on dense high-frequency motion refinement. To align sparse intent predictions with dense action trajectories, we introduce a Latent Schrödinger Bridge Coupling mechanism that formulates refinement as an entropy-regularized probabilistic transport process. LiMA reduces inference latency by 45.8% compared with Cosmos-Policy via asynchronous decoupling. Evaluated across six bimanual dexterous manipulation tasks spanning multiple horizons, LiMA achieves an overall success rate of 70.8% and an average subtask success rate of 78.9%, while maintaining performance in unseen scenarios. The project website is available at https://ccdcs.github.io/LiMA_repo/",
+    "authors": [
+      "Ning Chen",
+      "Yankai Fu",
+      "Junkai Zhao",
+      "Qianpu Sun",
+      "Guocai Yao",
+      "Pengwei Wang",
+      "Zhongyuan Wang",
+      "Shanghang Zhang"
+    ],
+    "published": "2026-09-23T17:31:52+00:00",
+    "updated": "2026-09-23T17:31:52+00:00",
+    "url": "http://arxiv.org/abs/2609.28431v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.28431v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.28429v1",
+    "title": "Watch, Recall, Act: Always-On Robots in Concurrent Embodied Streams",
+    "abstract": "An always-on robot faces an endless stream that never resets: instructions arrive and lapse, the scene changes, and its own past actions reshape what it must reason about. Today's action models are built for the opposite: a fixed instruction, no mid-task intervention, single-step reasoning. In an open-ended world a robot must watch a live stream for far-future cues, recall its own far-past actions, and act on them under dual-arm concurrency. We present ARMS (Always-on Robot in Multi-modal Streams), a deliberately simple streaming policy: a single pretrained $π$0.5 backbone augmented by three lightweight modules that turn live perception, embodied states, and the robot's own past actions into context the backbone reads before it acts. The modules update this context asynchronously, so watching and recalling never block acting and the two arms act at once. Rather than inventing new mechanisms, ARMS integrates these learned context providers with an agent-causal self-history that logs which arm did what, and when. To supervise them without extra annotation, we build ARMS Dataset, whose staged construction script itself labels every module from real dual-arm teleoperation. Trained on it, ARMS reaches 45% on the combined task against 28% for the strongest of our four main baselines, and ablations confirm the memory module, the embodied-state head, and asynchronous concurrency are each necessary.",
+    "authors": [
+      "Ding Yi",
+      "Peiwen Sun",
+      "Chenchu Rong",
+      "Jianan Wang",
+      "Xili Dai",
+      "Xiangyu Yue",
+      "Xi Lin"
+    ],
+    "published": "2026-09-23T17:29:40+00:00",
+    "updated": "2026-09-23T17:29:40+00:00",
+    "url": "http://arxiv.org/abs/2609.28429v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.28429v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.28378v1",
+    "title": "ForgetMimic: Motion Unlearning for Reinforcement Learning Humanoid Control",
+    "abstract": "Humanoid control, leveraging human demonstrations, has achieved diverse, agile, and natural locomotion behaviors through reinforcement learning (RL). While this paradigm has yielded remarkable performance in physical humanoid control, how to eliminate specific motions from learned policies remains insufficiently explored. Addressing this issue is motivated by pressing safety and privacy concerns: the removal of malicious, poisoned, or suboptimal motions, as well as copyright-protected motions subject to the right to be forgotten under regulations such as the GDPR, is of critical importance. To this end, we propose {ForgetMimic}, the first motion-level unlearning method designed specifically for physical-world humanoid control. The core idea of ForgetMimic is as follows: given a policy $π_θ$ trained on $N$ motions, our method degrades performance on a target subset of $K$ motions while preserving the effectiveness of the remaining $N-K$ motions. Furthermore, we identify and resolve two key training mechanisms in robot control that lead to unlearning failure. We conduct extensive experiments on the Unitree G1 and H2 humanoid robots across 12 motions, including Dance, Fight, Flip, and others. Experimental results demonstrate that ForgetMimic effectively eliminates memory of designated motions while maintaining the normal operation of all other motions.",
+    "authors": [
+      "Xukun Luan",
+      "Zhongxiang Lei",
+      "Chen Gong",
+      "Shaowei Li",
+      "Yuanguo Bi",
+      "Jinyan Liu"
+    ],
+    "published": "2026-09-23T16:54:25+00:00",
+    "updated": "2026-09-23T16:54:25+00:00",
+    "url": "http://arxiv.org/abs/2609.28378v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.28378v1",
+    "categories": [
+      "cs.RO",
+      "cs.CR",
+      "cs.LG"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.28366v1",
+    "title": "AnchorReasoning: A Visual Grounding and Causal Reasoning Dataset in Long-Tail Autonomous Driving Scenarios",
+    "abstract": "Vision-language models (VLMs) offer a promising approach to long-tail autonomous driving, but existing driving datasets provide limited supervision for connecting decision-critical visual evidence with reasoning and planning. We introduce AnchorReasoning, a visually grounded reasoning dataset built on WOD-E2E, containing 416,119 annotated frames and 395,379 decision-critical elements across four major categories and 19 fine-grained types. Each frame is organized as a visually grounded chain-of-thought (VG-CoT) that links decision-critical element identification and localization, element attributes and implications, driving-action rationale, and action and trajectory planning. We further develop a curriculum supervised fine-tuning strategy that progressively learns these hierarchical capabilities, together with an object-size-aware grounding metric for evaluating localization quality. Experiments across eight general-purpose, embodied-AI, and AV-specific backbones show that VG-CoT supervision improves grounded reasoning and trajectory prediction. Across models, 5-s ADE and FDE decrease by 7.84 and 11.86, while RFS Frame and Cluster improve by 1.66 and 1.70. These gains are achieved with 18.5 fewer reasoning tokens and 0.32 s/frame lower inference latency on average, demonstrating the value of visually grounded, decision-focused supervision for VLM reasoning and planning in long-tail autonomous driving.",
+    "authors": [
+      "Zhipeng Bao",
+      "Wenjie Zhao",
+      "Tianle Zhu",
+      "Haohua Que",
+      "Chence Yang",
+      "Geng Yuan",
+      "Qianwen Li"
+    ],
+    "published": "2026-09-23T16:38:06+00:00",
+    "updated": "2026-09-23T16:38:06+00:00",
+    "url": "http://arxiv.org/abs/2609.28366v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.28366v1",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.28314v1",
+    "title": "TANDEM: Task and Motion Planning with As-Needed Demonstrations for Efficient Vision-Language-Action Model Fine-tuning",
+    "abstract": "Human teleoperators spend substantial time demonstrating behaviors that robots can already perform autonomously, limiting the scalability of data collection for robot foundation models. Task and motion planning (TAMP) can automate many of these behaviors, but a fixed planning domain may not support every stage of a long-horizon manipulation task. We present TANDEM (Tamp with As-Needed Demonstrations for Efficient Model fine-tuning), a system that combines TAMP with selective human teleoperation to collect demonstrations for tasks beyond the planner's capabilities. Our key idea is to represent human assistance as an on-demand planning capability. Given a language instruction and visual observation, TANDEM uses pretrained vision-language models to extend the planning domain with missing predicates and human-executed magic operators. This allows the planner to interleave autonomous and human-executed stages without task-specific intervention points. After each human stage, TANDEM re-perceives the scene and checks whether the intended effects hold before resuming autonomous planning. To support fine-tuning vision-language-action (VLA) models, TANDEM also uses example pretraining trajectories to align planner-generated motions with the target model's pretraining distribution. We evaluate TANDEM on five long-horizon manipulation tasks beyond the TAMP domain's capabilities. On a representative long-horizon task, TANDEM collects 2.9x as many demonstrations as full-task teleoperation at the same human intervention time. Fine-tuning a pretrained π_{0.5}-DROID model on 20 TANDEM demonstrations per task increases average task success from 0% to 60% across the five tasks.",
+    "authors": [
+      "Samrat Sahoo",
+      "Liang Ji",
+      "Tom Silver",
+      "Yixuan Huang"
+    ],
+    "published": "2026-09-23T15:57:01+00:00",
+    "updated": "2026-09-23T15:57:01+00:00",
+    "url": "http://arxiv.org/abs/2609.28314v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.28314v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.28256v1",
+    "title": "MemBodied: Recurrent Associative Memory for Vision-Language-Action Models",
+    "abstract": "Vision-Language-Action models provide a strong foundation for general-purpose robot control, yet a vast majority of policies do not preserve and leverage episode-level information beyond the current observation. This limitation is consequential in history-dependent manipulation tasks that depend on information available only in past observations. Retaining past observations in context can aid in recovering this information, but at the significant cost of ever-growing, bloated context and inference latency. We thus introduce MemBodied, a fixed-size episodic memory with two complementary components: an associative state that records interactions across policy calls and an episode anchor that preserves a compact representation of the initial scene as a reference. At each policy call, the model conditions action generation on the current input and the memory components, rather than directly using past observations. Across five evaluated RMBench tasks requiring memory, MemBodied achieves $7.81\\times$ the mean success rate of a stateless policy and $2.98\\times$ of vanilla recurrent memory, while outperforming the strongest memory-augmented baseline by $1.3\\times$ with $10\\times$ fewer added parameters. On the fully observable LIBERO-Long suite, it reached 90.6%, a 5.4% improvement over the stateless $π_0$ policy. These findings support MemBodied as a practical alternative to expanding the policy context for history-dependent manipulation.",
+    "authors": [
+      "Tej Deep Pala",
+      "Navonil Majumder",
+      "Bryce Goh",
+      "Raphael Yee",
+      "Jianfei Yang",
+      "Liming Chen",
+      "Soujanya Poria"
+    ],
+    "published": "2026-09-23T15:19:19+00:00",
+    "updated": "2026-09-23T15:19:19+00:00",
+    "url": "http://arxiv.org/abs/2609.28256v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.28256v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.CV"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.28236v1",
+    "title": "EmbodiedMemory-Bench: Benchmarking Embodied Memory for Long-Horizon Embodied Tasks",
+    "abstract": "Long-horizon embodied interaction requires agents to retain and continually update information about the environment as they observe, act, and encounter change. Yet current agents struggle to maintain such memory reliably. Our analysis traces this limitation to four key deficiencies: weak fine-grained visual memory, unreliable dynamic world-state tracking, failing to record world state revealed by interaction outcomes, and limited generalization from prior experience. However, existing benchmarks do not directly assess these memory capabilities during long-horizon embodied interaction. To address this gap, we introduce EmbodiedMemory-Bench (EMem-Bench), comprising 2,554 interactive episodes across four task families. EMem-Bench requires agents to build and update memory from interaction history, then use it to complete a later task by acting in the environment. We further present Embodied-Memorizer (EMem), an external memory system that organizes embodied experience into spatial, event, and scene memories. We also train EMem-8B, an 8B policy that manages and uses these memories. We evaluate a diverse range of open-source and proprietary MLLMs and representative multimodal memory systems. Results show that current models remain weak and uneven across the four challenges. Under matched backbones, EMem achieves the best overall performance among the evaluated memory systems and improves both open-source and proprietary models, while EMem-8B further improves over its backbone. Project page: https://zju-omniai.github.io/EmbodiedMemoryBench/",
+    "authors": [
+      "Lizhou Liang",
+      "Xinyu Zhong",
+      "Miao Pan",
+      "Xiaohe Zhou",
+      "Xuanyu Liu",
+      "Qinfeng Li",
+      "Peng Li",
+      "Jintao Chen",
+      "Xuhong Zhang",
+      "Wenqi Zhang"
+    ],
+    "published": "2026-09-23T15:00:42+00:00",
+    "updated": "2026-09-23T15:00:42+00:00",
+    "url": "http://arxiv.org/abs/2609.28236v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.28236v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.28175v1",
+    "title": "DAVIS: A Depth-Only End-to-End Active-Vision Framework for Humanoid Soccer Skills",
+    "abstract": "Humanoid soccer contact skills require more than producing high-impact foot-ball contacts: the robot must close the loop over perception, approach, alignment, impact, and recovery while its own motion induces substantial viewpoint changes, frequent loss of the ball from view, and uncertain contact outcomes. In this work, we ask a compact yet stricter question: can a humanoid learn soccer contact skills using only a head-mounted depth image, proprioceptive history, and an optional low-dimensional task command, and directly output 25-DoF joint PD targets without extra runtime perception or planning modules? To this end, we propose DAVIS, a depth-only end-to-end framework for humanoid soccer skills that learns visibility-aware auxiliary geometry during training, and combines GT-to-prediction annealing, task curricula, and AMP-style motion priors to smoothly bridge privileged supervision and real deployment. Built on this framework, we instantiate representative soccer contact skills, including goal-directed shooting and directional dribbling, through task-specific definitions of objects, commands, rewards, and curricula, and validate them through simulation, Noetix E1 real-robot experiments, and ablations.",
+    "authors": [
+      "Jiakang Jin",
+      "Yixiao Huo",
+      "Pengyuan Wang",
+      "Yinan Han",
+      "Tingxuan Zhang",
+      "Zhuobing Zhao",
+      "Xuanxin Zhou",
+      "Zhangchen Ye",
+      "Enxuan Ruan",
+      "Yifei Bao",
+      "Jiankun Yang",
+      "Chenghao Sun",
+      "Wenhao Cui",
+      "Xiaoyu Tian",
+      "Yiming Li"
+    ],
+    "published": "2026-09-23T14:19:45+00:00",
+    "updated": "2026-09-23T14:19:45+00:00",
+    "url": "http://arxiv.org/abs/2609.28175v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.28175v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.28161v1",
+    "title": "Dissecting Advantage-Guided Post-Training for Vision-Language-Action Policies",
+    "abstract": "Advantage-guided reinforcement learning provides a practical way to post-train vision-language-action (VLA) policies using limited robot data. However, its performance depends on several coupled choices, including how critic-derived advantages are constructed, calibrated, and used for policy training. Existing recipes often combine these choices into a single end-to-end procedure, making their individual effects difficult to identify. In this work, we dissect advantage-guided VLA post-training through a controlled empirical study that separates these design choices while accounting for their distinct estimands. We develop stage-specific offline evaluation methods to screen alternative choices efficiently, without requiring extensive real-robot policy evaluations for every possible combination. The staged evaluation identifies a modular recipe that combines temporal-difference advantage construction, group-wise calibration, and continuous advantage weighting. Across four real-world bimanual tasks, the resulting recipe improves mean task progress and success over the SFT initialization by 0.42 and 0.63, respectively. Moreover, the proposed evaluation diagnostics show an overall alignment with downstream real-world performance, supporting their use for interpreting empirical outcomes and selecting advantage-guided post-training designs in practice.",
+    "authors": [
+      "Jiahang Cao",
+      "Hanye Zhao",
+      "Hang Lai",
+      "Shenyu Zhang",
+      "Xiaoshen Han",
+      "Xinghang Li",
+      "Futeng Liu",
+      "Wanli Peng",
+      "Heyun Wang",
+      "Yunhong Wang",
+      "Jason Li",
+      "Yong Yu",
+      "Weinan Zhang"
+    ],
+    "published": "2026-09-23T14:10:14+00:00",
+    "updated": "2026-09-23T14:10:14+00:00",
+    "url": "http://arxiv.org/abs/2609.28161v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.28161v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.28131v1",
+    "title": "DEAL-Grasp: Decoupled Alignment Representation for Geometry-Aware Dexterous Grasp Generation",
+    "abstract": "Synthesizing realistic articulated hand-object interactions is a fundamental problem in virtual reality, embodied intelligence, and digital human applications. Existing methods for dexterous grasp synthesis typically regress or denoise poses in a joint space that couples global rigid motion with local articulation, which often yields unstable samples and physically implausible contacts. We introduce DEAL-Grasp, built upon the Decoupled Alignment (DEAL) representation, which reformulates grasp synthesis as alignment-space generation: the interaction state comprises task-space geometric anchors and articulation parameters, from which the rigid transform is recovered via closed-form Procrustes alignment while preserving local articulation. On this mixed state, we model grasp generation using heterogeneous-state flow matching with component-wise vector fields, incorporating time-adaptive physical regularization during training. At inference, grasps are synthesized solely by integrating the learned vector field, without test-time optimization or auxiliary physical guidance. Across MultiDex and zero-shot RealDex benchmarks, DEAL-Grasp attains high force-perturbation success rates alongside minimal penetration and high diversity of generated grasps, while substantially reducing native inference latency compared to optimization-heavy baselines. The project page is available at https://wmtlab.github.io/DEAL-Grasp/.",
+    "authors": [
+      "Fuqiang Zhao",
+      "Qian Liu"
+    ],
+    "published": "2026-09-23T13:56:26+00:00",
+    "updated": "2026-09-23T13:56:26+00:00",
+    "url": "http://arxiv.org/abs/2609.28131v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.28131v1",
+    "categories": [
+      "cs.RO",
+      "cs.GR"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.27747v1",
+    "title": "Less Language, More Latents: Annotation-Efficient VLAs for Driving",
+    "abstract": "Vision-language-action models (VLA) promise human-steerable autonomous driving, but their training is bottlenecked by the scarcity of frames paired with natural-language instructions: while camera streams and expert trajectories are logged at scale, language annotations (e.g., turn left at the intersection) remain scarce and expensive to acquire. To address this challenge, we introduce Latent Action Driving Annotations (LADA), a three-stage pipeline that transforms abundant unlabelled observation-trajectory pairs into a substrate for language-conditioned control. First, we train a latent action model with a vector-quantised bottleneck, producing a compact codebook of high-level vehicle intents. Second, a small language-annotated subset is used to train a vision-language translator to map observations and language instructions into this codebook. Third, we train a driving VLA on observation-latent-action pairs over the full unlabelled corpus. Using fewer than 5% of language annotations and without leveraging any auxiliary chain-of-thought reasoning or visual question answering streams, LADA achieves a Driving Score of 87.98 and a Success Rate of 70.46% on the closed-loop Bench2Drive benchmark, matching or surpassing fully supervised baselines.",
+    "authors": [
+      "Alexey Zakharov",
+      "Kemal Oksuz",
+      "Puneet K. Dokania"
+    ],
+    "published": "2026-09-23T12:00:04+00:00",
+    "updated": "2026-09-23T12:00:04+00:00",
+    "url": "http://arxiv.org/abs/2609.27747v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.27747v1",
+    "categories": [
+      "cs.RO",
+      "cs.LG"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.27734v1",
+    "title": "InfiNoVA: Infinite Novel View Augmentation for Viewpoint Invariant Robot Policies",
+    "abstract": "Vision-Language-Action (VLA) policies often rely strongly on the camera viewpoints seen during training, causing substantial performance degradation when deployed from unseen perspectives. Collecting demonstrations from sufficiently diverse physical viewpoints is expensive and still provides only sparse coverage of the viewpoint space. We introduce InfiNoVA, a data-augmentation framework that converts synchronized multi-camera demonstrations into a dense distribution of geometrically consistent training views. InfiNoVA reconstructs each manipulation trajectory as a time-varying 3D Gaussian representation and renders novel observations from sampled camera poses while preserving the original state-action correspondence. This explicit scene representation improves frame-level fidelity and temporal consistency while reducing task-critical hallucinations observed in generative novel-view synthesis. Across four real-world manipulation tasks, policies trained with InfiNoVA achieve 5.4x higher average success under unseen randomized viewpoints than both VISTA-based augmentation and the unaugmented policy. InfiNoVA further achieves 1.7x higher success than training directly on all five physical camera views. These results show that dense, geometrically grounded viewpoint augmentation provides a practical route toward camera-robust robot policies without modifying the underlying policy architecture.",
+    "authors": [
+      "Sai Puneeth Reddy Gottam",
+      "Elmar Rueckert",
+      "Vedant Dave"
+    ],
+    "published": "2026-09-23T11:47:58+00:00",
+    "updated": "2026-09-23T11:47:58+00:00",
+    "url": "http://arxiv.org/abs/2609.27734v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.27734v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.27656v1",
+    "title": "InternW0: A Foundational Physical World Model for Efficient Real-World Interactions",
+    "abstract": "Physical intelligence requires more than predicting how the world may evolve: predictions must remain actionable as the world continues to change. We introduce InternW0, the first instantiation of the InternW physical world model series from Shanghai AI Laboratory, built around omnimodal interfaces, asynchronous multi-frequency processing, and local physical modeling under partial observations and external influences. InternW0 jointly learns future visual dynamics and continuous robot control through an asymmetric video--action architecture with flow matching. A high-capacity video expert provides longer-horizon predictive context, while a lightweight action expert operates at a faster timescale. Instead of regenerating the future for every action update, InternW0 reuses layerwise K/V and adapts it to newly observed states through observation-conditioned context routing. Domain-specific interfaces and soft prompts support heterogeneous embodiments, while contact-aware post-training incorporates force and tactile signals for contact-rich manipulation. We train InternW0 on approximately 7,200 hours of heterogeneous robot and egocentric data, including EgoLab, a 275-hour real-laboratory egocentric dataset. Evaluation spans simulation benchmarks and real-world scientific tasks, including a 15-stage metal--organic framework synthesis workflow and 5-stage contact- and force-aware dexterous manipulation for general-purpose quantitative pipetting. These results advance scalable, asynchronous, and science-native physical world models for universal and efficient real-world interactions.",
+    "authors": [
+      "Jisong Cai",
+      "Yao Mu",
+      "Ganlin Yang",
+      "Zhe Cao",
+      "Zhangzheng Tu",
+      "Xing Gao",
+      "Kailin Li",
+      "Xinyu Zhan",
+      "Lixin Yang",
+      "Yangkun Zhu",
+      "Haoxiang Ma",
+      "Ming Zhou",
+      "Qiaojun Yu",
+      "Yufei Xue",
+      "Liqun He",
+      "Yifei Yao",
+      "Yifan Zhu",
+      "Long Ling",
+      "Bingqi Jiang",
+      "Haoyu Guo",
+      "Xueyue Zhu",
+      "Bowen Zhou",
+      "Bin Zhao",
+      "Tianfan Xue",
+      "Chunhua Shen",
+      "Weinan Zhang"
+    ],
+    "published": "2026-09-23T10:20:56+00:00",
+    "updated": "2026-09-23T10:20:56+00:00",
+    "url": "http://arxiv.org/abs/2609.27656v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.27656v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.27612v1",
+    "title": "RegenHarness: A Robot Agent Harness with Evidence-Gated Recursive Self-Improvement",
+    "abstract": "Long-horizon robot execution requires a clear distinction between a model's proposal, a controller's termination, and verified task completion. We present RegenHarness, an evidence-gated robot-agent harness connecting task planning to heterogeneous robot skills. Its execution architecture couples a model loop for context-conditioned proposals with an agent loop for dispatch, observation, verification, commitment, and bounded recovery. Four role-isolated contexts separate planning, supervision, verification, and recovery inputs. Versioned memory distinguishes observed facts from accepted task progress, while an identity- and version-bound commit gate controls updates to trusted task state. The runtime combines duplicate-dispatch control, resource leases, and recovery budgets under explicit backend contracts, and checks the original user goal before reporting completion. To our knowledge, we are the first to introduce an evidence-gated recursive self-improvement (RSI) protocol for embodied robotic agents. Across missions, execution records motivate candidate changes to context rules, task templates, routing, and recovery policies; fixed regression checks and release authorization govern their acceptance; versioned rollout and rollback preserve configuration traceability. This RSI protocol revises the harness configuration without online model-weight updates or permission to weaken the commit gate. A real quadruped deployment documents voice-triggered warehouse navigation, panoramic inspection, visual analysis, message delivery, return, and spoken reporting through linked audio, images, trajectories, and receipts. A separate circuit demonstrates why completion depends on execution history rather than endpoint proximity alone. Together, the cases demonstrate integrated perception, physical execution, communication, and history-dependent completion in real-world robot tasks.",
+    "authors": [
+      "Kailin Wang",
+      "Haoxiang Jie",
+      "Yaoyuan Yan",
+      "Zhiyou Heng",
+      "Zhaosong Li"
+    ],
+    "published": "2026-09-23T09:29:04+00:00",
+    "updated": "2026-09-23T09:29:04+00:00",
+    "url": "http://arxiv.org/abs/2609.27612v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.27612v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.27580v1",
+    "title": "Action-Directed Information for Distributed Control and Agentic Interaction",
+    "abstract": "Distributed intelligence concerns systems in which semi-autonomous components with local dynamics and partial observations coordinate through information exchange to maintain a shared function. This paper proposes an operational way to study such systems: measure information at the interface where a message changes a receiving action, then connect that measure to function by intervention and disturbance evaluation. We instantiate this proposal in DI-Walker, a two-dimensional four-limb embodied plant controlled by frozen Cross-Entropy-Method policies. We compare a controller using each limb's own realized-force sensor with one using the realized-force sensors of peer limbs. Under limb loss, limb slip, and weak central-control dropout, Peer-Sensor has lower late tracking error in several conditions. A corrected finite-history action-predictive estimator shows a substantially larger peer-message gain under compound failure. A future scalar functional-prediction estimator does not show the same stable advantage. We interpret this discrepancy as a methodological result: information useful for an intermediate control action can be hidden by later plant dynamics, redundancy, and context. The paper relates this result to Predictive Information, Transfer Entropy, Directed Information, information-to-go/IT-PAC ideas, empowerment, and the robust control data-rate perspective, while explicitly distinguishing operational predictive gains from exact Directed Information, channel capacity, and a formal data-rate theorem.",
+    "authors": [
+      "Shlomo Dubnov"
+    ],
+    "published": "2026-09-23T09:00:01+00:00",
+    "updated": "2026-09-23T09:00:01+00:00",
+    "url": "http://arxiv.org/abs/2609.27580v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.27580v1",
+    "categories": [
+      "eess.SY",
+      "cs.IT",
+      "cs.RO"
+    ],
+    "primary_category": "eess.SY"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.27547v1",
+    "title": "EBRL: Asynchronous Embodied RL by Multi-Grained Resource Management",
+    "abstract": "Embodied reinforcement learning (RL) improves model capabilities with a pipeline of environment simulation, action generation, and model updates. These stages show heterogeneous CPU and GPU demands, making efficient resource utilization difficult. Recent systems overlap rollout (simulation and generation) with training for efficiency, but exclusive GPU allocation and synchronized barrier in rollout still leave substantial hardware resource waste. In this paper, we present EBRL, an asynchronous embodied RL training system with two core techniques. The asynchronous pipelined scheduler overlaps rollout and training, pipelines simulation and generation across environment groups, and carries out each environment independently, eliminating synchronization stalls. The fine-grained resource manager pools CPU cores and GPU streaming multiprocessors, and uses stage profiles and runtime feedback to adjust resource quotas and batch sizes to meet the shifting demands among stages. We implement EBRL on RLinf and evaluate it with four embodied policies and four simulation benchmarks across heterogeneous GPU testbeds. Experiments show that EBRL achieves 1.30-3.47 times the end-to-end rollout throughput and 2.5 times of training convergency compared to the SOTA embodied RL systems.",
+    "authors": [
+      "Liang Mi",
+      "Weijun Wang",
+      "Bowen Gao",
+      "Tianze Yu",
+      "Zixu Hao",
+      "Han Xiao",
+      "Xin Ding",
+      "Mingzhe Huang",
+      "Xin He",
+      "Lu Shi",
+      "Hao Wu",
+      "Haipeng Dai",
+      "Guihai Chen",
+      "Yunxin Liu",
+      "Ting Cao"
+    ],
+    "published": "2026-09-23T08:36:21+00:00",
+    "updated": "2026-09-23T08:36:21+00:00",
+    "url": "http://arxiv.org/abs/2609.27547v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.27547v1",
+    "categories": [
+      "cs.LG",
+      "cs.DC"
+    ],
+    "primary_category": "cs.LG"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.27493v1",
+    "title": "Information Capacity of Generative Video Compression: Quantifying the Rate-Compute Exchange at Identical Quality",
+    "abstract": "Under the AI Flow framework, communication networks distribute intelligence across devices, edge servers, and clouds, and computation at the receiver becomes a resource that can substitute for transmitted bits. Generative video compression (GVC) embodies this exchange by sending compact tokens with ultra-low bitrate and letting a generative decoder synthesize the video, yet how much bandwidth savings a unit of decoder compute actually achieves has never been quantified. To fill this vacancy, we model reconstruction quality as a two-factor power law in data rate and decoder compute, which fits measured DISTS of two GVC decoders with a mean error below 3%, and define the information capacity (IC) as the negative logarithmic slope along an iso-quality contour, namely the fraction of rate saved per fractional increase in compute at identical quality. IC is dimensionless and unit-invariant, thus enabling an architecture-agnostic comparison. It forms a field over the operating plane, locating where additional denoising steps are worth their cost. Across five datasets, the 14B decoder trades more compute for fewer rate about ten times more efficiently than the 1.3B decoder. IC also varies significantly across datasets, indicating imbalanced performance on the rate-compute trade-off in GVC methods.",
+    "authors": [
+      "Cheng Yuan",
+      "Jiawei Shao",
+      "Xuelong Li"
+    ],
+    "published": "2026-09-23T07:56:15+00:00",
+    "updated": "2026-09-23T07:56:15+00:00",
+    "url": "http://arxiv.org/abs/2609.27493v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.27493v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.27489v1",
+    "title": "Passing: An Endless Journey through Reconstructed Spacetime with AI-Generated Sound",
+    "abstract": "This paper introduces Passing, an interactive audiovisual installation that generates an endless journey from a single continuous monorail-window recording by reconstructing it as a spatiotemporal volume. Rather than replaying the footage linearly, the work resamples its spatial and temporal structure along nonlinear trajectories, producing a continuously passing landscape whose depth, speed, and temporal order become unstable. A camera-based viewer-presence detection system estimates whether a viewer is present in the viewing zone and uses this presence state to influence transitions among rendered video sequences. The resulting video stream is fed into SpecMaskFoley, a real-time video-to-audio synthesis model that generates a synchronized soundscape for the reconfigured image. The model is not used to reconstruct an objectively correct soundtrack, but functions as a speculative listener, proposing a possible auditory interpretation of a world whose conventional spatial and temporal premises have been disrupted. Passing distributes creative agency across the artist, who defines the rules of spacetime reconstruction; the AI model, which interprets the emergent visual flow as sound; and the audience, whose embodied presence influences the audiovisual trajectory. Through this structure, the work investigates how authorship and listening may be negotiated among human intention, machine inference, and audience interpretation. Artwork page: https://ryufurusawa.com/passing",
+    "authors": [
+      "Akira Takahashi",
+      "Chihiro Nagashima",
+      "Zhi Zhong",
+      "Shusuke Takahashi",
+      "Yuki Mitsufuji"
+    ],
+    "published": "2026-09-23T07:48:16+00:00",
+    "updated": "2026-09-23T07:48:16+00:00",
+    "url": "http://arxiv.org/abs/2609.27489v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.27489v1",
+    "categories": [
+      "cs.SD",
+      "cs.AI"
+    ],
+    "primary_category": "cs.SD"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.27468v1",
+    "title": "CereVLA: Cerebellum-Inspired Consequence-Aware Residual Governance for Efficient Vision-Language-Action Execution",
+    "abstract": "Action-chunked vision-language-action (VLA) policies improve inference efficiency, but limited feedback within committed action chunks can lead to accumulated execution errors. Residual adaptation can correct such deviations without retraining the VLA; however, existing corrections are typically optimized for reference-action consistency without explicitly considering their downstream consequences. To address this limitation, we present Cerebellum-Inspired Consequence-Aware Residual Governance (CereVLA), a unified framework that integrates lightweight residual refinement and predictive consequence evaluation into frozen VLA execution. Corrective actions are first generated by flow-based residual refinement, and their short- and interval-horizon consequences are then evaluated by a recurrent state-space model and a history-aware classifier. Residual corrections predicted to be unfavorable are selectively suppressed by a lightweight governor. Comparisons with state-of-the-art methods on LIBERO-10 and LIBERO-GOAL demonstrate the effectiveness of CereVLA. On SO-101, CereVLA increases task success from 57.5% to 90.0% and reduces mean control steps by 19.6% among successful trials, relative to the frozen SmolVLA baseline.",
+    "authors": [
+      "Shuai Zeng",
+      "Yuxuan Liang",
+      "Hangmiao Hu",
+      "Fobao Zhou",
+      "Zixiang Wang",
+      "Wenxi Hong",
+      "Hang Zhao"
+    ],
+    "published": "2026-09-23T07:30:58+00:00",
+    "updated": "2026-09-23T07:30:58+00:00",
+    "url": "http://arxiv.org/abs/2609.27468v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.27468v1",
+    "categories": [
+      "cs.CV",
+      "eess.SY"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2609.27455v1",
+    "title": "Latent evolving World Action Model",
+    "abstract": "World Action Models (WAMs) jointly model action generation and environment dynamics and are mostly built on pretrained Video Diffusion Models (VDMs). In VDM-based WAMs, observations are first encoded by a VAE, and the resulting compressed latents are then processed by large video diffusion backbones to extract effective features for action generation. However, this paradigm ties WAM performance and training cost to large-scale video generation pretraining, limiting WAM efficiency and scalability. In this paper, we theoretically and empirically investigate how visual representations affect action generation in WAMs. Our results show that predictive embeddings from Joint-Embedding Predictive Architecture (JEPA) encoders better support action generation than compressed VAE latents, with I-JEPA performing best in our encoder comparison. Based on these findings, we propose LeWAM, which conditions action generation on JEPA embeddings and models environment evolution by predicting future embeddings in the same space, without relying on a video diffusion backbone. We further find that imitation learning matches demonstrated actions but does not distinguish better actions from worse ones, even though small action deviations can greatly affect task success. To address this limitation without additional environment interaction or the human oversight required for resets and safety, we introduce Demonstration-Guided DPO (DemoDPO), an offline preference refinement stage that derives preference supervision directly from demonstrations.With only 0.4B trainable parameters, LeWAM achieves an average success rate of 92.28\\% on RoboTwin 2.0, comparable to that of state-of-the-art VLAs and WAMs, and maintains practical effectiveness on real-world manipulation tasks.",
+    "authors": [
+      "Xueji Fang",
+      "Boqiang Duan",
+      "Hua Wu",
+      "Jingdong Wang",
+      "Guo-Jun Qi"
+    ],
+    "published": "2026-09-23T07:22:43+00:00",
+    "updated": "2026-09-23T07:22:43+00:00",
+    "url": "http://arxiv.org/abs/2609.27455v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.27455v1",
+    "categories": [
+      "cs.CV",
+      "cs.RO"
+    ],
+    "primary_category": "cs.CV"
+  }
+]
