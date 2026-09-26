@@ -3,6 +3,15 @@
     "source": "RSS",
     "feed_url": "https://www.therobotreport.com/feed/",
     "feed_title": "",
+    "title": "From 14 cities to 15,000: What it will take to scale robotaxis?",
+    "summary": "<p>While robotaxis prove their driving ability, scaling the industry globally requires solving the unglamorous challenge of fast, local vehicle servicing.</p> <p>The post <a href=\"https://www.therobotreport.com/from-14-cities-to-15000-what-it-will-take-to-scale-robotaxis/\">From 14 cities to 15,000: What it will take to scale robotaxis?</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/from-14-cities-to-15000-what-it-will-take-to-scale-robotaxis/",
+    "published": "2026-09-26T12:34:55+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
     "title": "Amazon to invest $100M in new Indiana manufacturing facility",
     "summary": "<p>The new facility will produce products that power Amazon's fulfillment and robotics network across North America.</p> <p>The post <a href=\"https://www.therobotreport.com/amazon-to-invest-100m-in-new-indiana-manufacturing-facility/\">Amazon to invest $100M in new Indiana manufacturing facility</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
     "url": "https://www.therobotreport.com/amazon-to-invest-100m-in-new-indiana-manufacturing-facility/",
@@ -151,15 +160,6 @@
     "summary": "<p>Learn practical strategies for building reliable outdoor robots from WiBotic, Burro, and Nextpower at RoboBusiness in Silicon Valley.</p> <p>The post <a href=\"https://www.therobotreport.com/why-outdoor-robots-fail-how-to-build-systems-that-survive/\">Why outdoor robots fail (and how to build systems that survive)</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
     "url": "https://www.therobotreport.com/why-outdoor-robots-fail-how-to-build-systems-that-survive/",
     "published": "2026-09-22T18:00:37+00:00"
-  },
-  {
-    "source": "RSS",
-    "feed_url": "https://www.therobotreport.com/feed/",
-    "feed_title": "",
-    "title": "Isaac ROS 5.0 brings AI agents to robotics development, says NVIDIA",
-    "summary": "<p>The release brings new agentic workflows and platform support to NVIDIA Isaac ROS to help developers deploy robotics applications faster. </p> <p>The post <a href=\"https://www.therobotreport.com/isaac-ros-5-0-brings-ai-agents-robotics-development-says-nvidia/\">Isaac ROS 5.0 brings AI agents to robotics development, says NVIDIA</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
-    "url": "https://www.therobotreport.com/isaac-ros-5-0-brings-ai-agents-robotics-development-says-nvidia/",
-    "published": "2026-09-22T17:51:19+00:00"
   },
   {
     "source": "RSS",

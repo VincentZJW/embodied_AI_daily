@@ -161,7 +161,7 @@ const latestArticle = {
     {
       "name": "zjwzcx/Awesome-Astra-Embodied-AI",
       "summary": "该项目可能聚焦人形机器人控制，主要语言为 未知。",
-      "why_follow": "仓库星标数约为 1020，可用于观察开源社区对人形机器人控制的实现方向。",
+      "why_follow": "仓库星标数约为 1024，可用于观察开源社区对人形机器人控制的实现方向。",
       "source_url": "https://github.com/zjwzcx/Awesome-Astra-Embodied-AI",
       "card_type": "开源项目卡",
       "importance_score": 88,
@@ -186,7 +186,7 @@ const latestArticle = {
     {
       "name": "FluxVLA/FluxVLA",
       "summary": "该项目可能聚焦视觉-语言-动作模型，主要语言为 Python。",
-      "why_follow": "仓库星标数约为 712，可用于观察开源社区对视觉-语言-动作模型的实现方向。",
+      "why_follow": "仓库星标数约为 714，可用于观察开源社区对视觉-语言-动作模型的实现方向。",
       "source_url": "https://github.com/FluxVLA/FluxVLA",
       "card_type": "开源项目卡",
       "importance_score": 83,
@@ -199,24 +199,36 @@ const latestArticle = {
   ],
   "industry_updates": [
     {
-      "title": "行业动态 1：机器人操作与抓取",
+      "title": "行业动态 1：视觉-语言-动作模型",
+      "summary": "该动态与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
+      "source_url": "https://www.therobotreport.com/from-14-cities-to-15000-what-it-will-take-to-scale-robotaxis/",
+      "card_type": "行业动态卡",
+      "importance_score": 86,
+      "tags": [
+        "具身智能",
+        "机器人视觉"
+      ]
+    },
+    {
+      "title": "行业动态 2：机器人操作与抓取",
       "summary": "该动态与机器人操作与抓取相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
       "source_url": "https://www.therobotreport.com/amazon-to-invest-100m-in-new-indiana-manufacturing-facility/",
       "card_type": "行业动态卡",
-      "importance_score": 86,
+      "importance_score": 83,
       "tags": [
         "具身智能",
         "机器人"
       ]
     },
     {
-      "title": "行业动态 2：机器人基础模型",
+      "title": "行业动态 3：机器人基础模型",
       "summary": "该动态与机器人基础模型相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
       "source_url": "https://www.therobotreport.com/general-robotics-is-betting-on-modular-intelligence-not-one-robot-brain/",
       "card_type": "行业动态卡",
-      "importance_score": 88,
+      "importance_score": 85,
       "tags": [
         "具身智能",
         "机器人基础模型",
@@ -224,23 +236,10 @@ const latestArticle = {
       ]
     },
     {
-      "title": "行业动态 3：人形机器人控制",
-      "summary": "该动态与人形机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
-      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://spectrum.ieee.org/video-friday-goose-household-robots",
-      "card_type": "行业动态卡",
-      "importance_score": 84,
-      "tags": [
-        "具身智能",
-        "人形机器人",
-        "机器人"
-      ]
-    },
-    {
       "title": "行业动态 4：人形机器人控制",
       "summary": "该动态与人形机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://www.therobotreport.com/agility-robotics-maker-of-digit-humanoid-exploring-wheeled-robots/",
+      "source_url": "https://spectrum.ieee.org/video-friday-goose-household-robots",
       "card_type": "行业动态卡",
       "importance_score": 81,
       "tags": [
@@ -250,15 +249,16 @@ const latestArticle = {
       ]
     },
     {
-      "title": "行业动态 5：视觉-语言-动作模型",
-      "summary": "该动态与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "title": "行业动态 5：人形机器人控制",
+      "summary": "该动态与人形机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://www.therobotreport.com/farmers-are-facing-more-pressure-cnh-says-robotics-can-help/",
+      "source_url": "https://www.therobotreport.com/agility-robotics-maker-of-digit-humanoid-exploring-wheeled-robots/",
       "card_type": "行业动态卡",
-      "importance_score": 74,
+      "importance_score": 78,
       "tags": [
         "具身智能",
-        "机器人视觉"
+        "人形机器人",
+        "机器人"
       ]
     }
   ],
@@ -423,36 +423,36 @@ const latestArticle = {
       "importance_score": 60
     },
     {
-      "name": "行业动态 1：机器人操作与抓取",
+      "name": "行业动态 1：视觉-语言-动作模型",
+      "url": "https://www.therobotreport.com/from-14-cities-to-15000-what-it-will-take-to-scale-robotaxis/",
+      "type": "行业动态",
+      "card_type": "来源链接卡",
+      "importance_score": 60
+    },
+    {
+      "name": "行业动态 2：机器人操作与抓取",
       "url": "https://www.therobotreport.com/amazon-to-invest-100m-in-new-indiana-manufacturing-facility/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
-      "name": "行业动态 2：机器人基础模型",
+      "name": "行业动态 3：机器人基础模型",
       "url": "https://www.therobotreport.com/general-robotics-is-betting-on-modular-intelligence-not-one-robot-brain/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
-      "name": "行业动态 3：人形机器人控制",
+      "name": "行业动态 4：人形机器人控制",
       "url": "https://spectrum.ieee.org/video-friday-goose-household-robots",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
-      "name": "行业动态 4：人形机器人控制",
+      "name": "行业动态 5：人形机器人控制",
       "url": "https://www.therobotreport.com/agility-robotics-maker-of-digit-humanoid-exploring-wheeled-robots/",
-      "type": "行业动态",
-      "card_type": "来源链接卡",
-      "importance_score": 60
-    },
-    {
-      "name": "行业动态 5：视觉-语言-动作模型",
-      "url": "https://www.therobotreport.com/farmers-are-facing-more-pressure-cnh-says-robotics-can-help/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
