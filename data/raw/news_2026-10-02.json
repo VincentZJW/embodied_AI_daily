@@ -1,0 +1,164 @@
+[
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Top 10 robotics stories of September 2026",
+    "summary": "<p>In September 2026, live events such as IMTS, ROSCon, and iROS brought a flood of robotics developments.</p> <p>The post <a href=\"https://www.therobotreport.com/top-10-robotics-stories-of-september-2026/\">Top 10 robotics stories of September 2026</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/top-10-robotics-stories-of-september-2026/",
+    "published": "2026-10-01T20:42:08+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Boston Dynamics drops pinkie on new humanoid hand",
+    "summary": "<p>Boston Dynamics engineers taped their pinkies and ring fingers together for a day to learn what they weren’t able to do.</p> <p>The post <a href=\"https://www.therobotreport.com/boston-dynamics-drops-pinkie-on-new-humanoid-hand/\">Boston Dynamics drops pinkie on new humanoid hand</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/boston-dynamics-drops-pinkie-on-new-humanoid-hand/",
+    "published": "2026-10-01T17:52:51+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Precision In Motion. Vishay Precision Group, Inc. (VPG) to Showcase Custom Sensing Capabilities for Humanoid Robotics at RoboBusiness 2026",
+    "summary": "<p>As humanoid robots move from research labs into factories, warehouses, homes, and other shared spaces, accurate physical feedback becomes crucial.</p> <p>The post <a href=\"https://www.therobotreport.com/precision-in-motion-vishay-precision-group-inc-vpg-to-showcase-custom-sensing-capabilities-for-humanoid-robotics-at-robobusiness-2026/\">Precision In Motion. Vishay Precision Group, Inc. (VPG) to Showcase Custom Sensing Capabilities for Humanoid Robotics at RoboBusiness 2026</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/precision-in-motion-vishay-precision-group-inc-vpg-to-showcase-custom-sensing-capabilities-for-humanoid-robotics-at-robobusiness-2026/",
+    "published": "2026-10-01T15:29:55+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Your Robot’s Safety Functions Already Work. What If the Input Lies?",
+    "summary": "<p>A robot can follow its safety rules and still act on manipulated information. See what this means for robot safety and how teams can strengthen their testing and evidence.</p> <p>The post <a href=\"https://www.therobotreport.com/your-robots-safety-functions-already-work-what-if-the-input-lies/\">Your Robot’s Safety Functions Already Work. What If the Input Lies?</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/your-robots-safety-functions-already-work-what-if-the-input-lies/",
+    "published": "2026-10-01T15:02:19+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://spectrum.ieee.org/feeds/topic/robotics.rss",
+    "feed_title": "",
+    "title": "Atlas Robot’s New Hand May Outperform Humanlike Designs",
+    "summary": "<img src=\"https://spectrum.ieee.org/media-library/close-up-of-a-robotic-hand-with-three-fingers-and-a-thumb-making-a-gesture-similar-to-the-sign-of-the-horns.jpg?id=67879402&amp;width=1245&amp;height=700&amp;coordinates=0%2C260%2C0%2C261\" /><br /><br /><p><span>Today, </span><a href=\"https://bostondynamics.com/\" target=\"_blank\">Boston Dynamics</a><span> is <a href=\"https://bostondynamics.com/blog/robot-hands-for-modern-ai-and-real-work/\" target=\"_blank\">announcing</a> a redesigned hand for its </span><a href=\"https://spectrum.ieee.org/atlas-humanoid-robot\" target=\"_self\">Atlas robot</a><span>. The previous generation could do some </span><a href=\"https://spectrum.ieee.org/robots-ces-2026\" target=\"_self\">crazy superhuman</a><span> things with its three fingers, but it was never intended for mass production in the tens or hundreds of thousands. Switching from research hardware to a scalable product makes previously ignorable questions suddenly paramount: How can you make a hand that does everything you need it to do but is also rugged and reliable and cost-effective? It’s questions like these that drove the design of the new Atlas hand, and while it doesn’t look much like a human hand, it might be a hand that makes it out into the real world.</span></p><p class=\"shortcode-media shortcode-media-youtube\"> <span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span> <small class=\"image-media media-caption\">- YouTube</small> <small class=\"image-media media-photo-credit\"> <a href=\"https://www.youtube.com/watch?v=4whgw2gLBS8\" target=\"_blank\">www.youtube.com</a> </small> </p><p>Compared to the almost <a href=\"https://clonerobotics.com/hand\" target=\"_blank\">eerily humanlike hands</a> designed by a litany of other <a href=\"https://www.1x.tech/discover/neos-hands\" target=\"_blank\">humanoid</a> <a href=\"https://www.unitree.com/Dex5-S\" rel=\"noopener noreferrer\" target=\"_blank\">robotics</a> <a href=\"https://www.figure.ai/\" rel=\"noopener noreferrer\" target=\"_blank\">companies</a>, Atlas’s new hand does look awfully clunky. We’ve certainly seen some of those robots with much more humanlike hands perform dexterous manipulation tasks that are, speaking as someone who has personally witnessed robots haplessly fumble their way through the world for nearly two decades now, nothing short of incredible. And it’s not just what these hands can do—it’s how they look while doing it, as slim, graceful mechanical copies of our own hands. They seem like science fiction, and to some extent, that’s exactly what they are.</p><p>“Hands are a ruthless design trade-off,” <a href=\"https://www.linkedin.com/in/alberto-rodriguez-5457661a8/\" rel=\"noopener noreferrer\" target=\"_blank\">Alberto Rodriguez</a>, director of robot behavior at Boston Dynamics, tells <em>IEEE Spectrum</em>. “There’s no way around it, you’re always giving up on something. And many of the current designs are giving up on things like reliability and manufacturability.” This is what invariably happens when you try and cram everything necessary to make a robotic hand function into the form factor of a human hand: it’s going to be either very fragile or very expensive, and likely both at the same time. The unfortunate reality is that for now, and likely for the immediate future, all that these sorts of hands are good for are research and demos.</p><p>With Atlas’s new hand, Boston Dynamics is making the design trade-offs necessary to achieve a hand that, according to the press release, is capable of a vast array of useful tasks, including using tools; is strong and rugged; can be cleanly simulated; can be mass-manufactured and repaired at reliably low cost; and is close enough in form factor to a human hand that human demonstrations can be used to train it.</p><p>You’ll notice that “looks cosmetically like a human hand” is nowhere on that list, and this new hand doesn’t. Rodriguez explains that getting rid of the pinky was a straightforward decision, agreed on after his team spent a day with their pinkies taped to their ring fingers. But why even add a fourth finger, when the previous generation of Atlas’ hand seemed to do well with only three? It’s not just the extra finger, but a complete redesign that almost doubled the degrees of freedom between the old hand and the new, going from 7 to 13. </p><p class=\"shortcode-media shortcode-media-rebelmouse-image\"> <img alt=\"Close-up of a splayed robotic hand with three fingers and a thumb.\" class=\"rm-shortcode\" id=\"8b02e\" src=\"https://spectrum.ieee.org/media-library/close-up-of-a-splayed-robotic-hand-with-three-fingers-and-a-thumb.jpg?id=67879501&amp;width=980\" /> <small class=\"image-media media-photo-credit\">Boston Dynamics</small></p><p>“We also added the ability for the fingers to splay open, because we knew that it was important for one finger to be able to move against another, and we also knew that we needed to be able to hold the handle of a tool with a trigger,” Rodriguez says, which includes many common tools like drills or welding torches. “We’re convinced that from a product perspective, this hand should be able to do everything we need it to do for the foreseeable horizon.” And that ability to finger splay goes beyond what human hands are capable of. According to Rodriguez, “With reinforcement learning, we can discover uses for these superhuman extra motions and exploit them.”</p><p>Reliability, manufacturability, and cost are all closely related. By reducing the degrees of freedom relative to other more anthropomorphic hand designs down to just 13, Boston Dynamics can use fewer, larger, and more powerful actuators. The actuators are embedded directly into the joints themselves in a direct drive configuration, with a transmission that allows the motors to be back-driven and react to force and contact. Each actuator pack is a single unit that can be easily replaced, and there are no delicate tendons or cables across joints to stretch and break. “What we’re working on right now is figuring out what needs to change in the fine details of our design if we want to make 100,000 of these hands a year,” Rodriguez says.</p><p>Not every humanoid company will make the trade-offs that Boston Dynamics has done here, and there’s still plenty of room for creativity when it comes to hand design. But if humanoids with hands are going to scale, some difficult decisions will have to be made, and it’ll take some compromise to deliver on the promises that the humanoid industry has committed to.</p>",
+    "url": "https://spectrum.ieee.org/robust-robot-hand",
+    "published": "2026-10-01T14:40:12+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "How Maven Robotics plans to automate industrial work, one task at a time",
+    "summary": "<p>With the $100 million it raised earlier this month, Maven Robotics is looking towards mass producing its mobile manipulator robot.</p> <p>The post <a href=\"https://www.therobotreport.com/how-maven-robotics-plans-automate-industrial-work-one-task-at-a-time/\">How Maven Robotics plans to automate industrial work, one task at a time</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/how-maven-robotics-plans-automate-industrial-work-one-task-at-a-time/",
+    "published": "2026-10-01T12:30:39+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "ANYbotics launches Shift to streamline robot fleet operations, scale inspections",
+    "summary": "<p>ANYbotics designed Shift to help maintenance teams run industrial inspections, detect failing equipment, and turn data into work orders.</p> <p>The post <a href=\"https://www.therobotreport.com/anybotics-launches-shift-streamline-robot-fleet-operations-scale-autonomous-inspections/\">ANYbotics launches Shift to streamline robot fleet operations, scale inspections</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/anybotics-launches-shift-streamline-robot-fleet-operations-scale-autonomous-inspections/",
+    "published": "2026-10-01T07:59:59+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "The Robot Report parent Arrowfly launches AI for Engineers platform, events for engineers navigating AI",
+    "summary": "<p>The initiative for engineers includes a news desk, a conference, research, and an advisory board, grounded in trusted editorial brands.</p> <p>The post <a href=\"https://www.therobotreport.com/robot-report-parent-arrowfly-launches-ai-for-engineers-platform-events-engineers-navigating-ai/\">The Robot Report parent Arrowfly launches AI for Engineers platform, events for engineers navigating AI</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/robot-report-parent-arrowfly-launches-ai-for-engineers-platform-events-engineers-navigating-ai/",
+    "published": "2026-09-30T14:03:31+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Innodata opens motion-capture lab to help humanoids move more like people",
+    "summary": "<p>Innodata uses Vicon cameras to measure movements with sub-millimeter accuracy and to collect real-world training data for robots.</p> <p>The post <a href=\"https://www.therobotreport.com/innodata-opens-motion-capture-lab-help-humanoids-move-more-like-people/\">Innodata opens motion-capture lab to help humanoids move more like people</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/innodata-opens-motion-capture-lab-help-humanoids-move-more-like-people/",
+    "published": "2026-09-30T12:59:12+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Tackling construction labor shortages: ASI and SoftBank partner on autonomous fleets",
+    "summary": "<p>ASI and SoftBank join forces with $225M to scale brand-agnostic autonomous heavy equipment across infrastructure projects.</p> <p>The post <a href=\"https://www.therobotreport.com/tackling-construction-labor-shortages-asi-softbank-partner-autonomous-fleets/\">Tackling construction labor shortages: ASI and SoftBank partner on autonomous fleets</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/tackling-construction-labor-shortages-asi-softbank-partner-autonomous-fleets/",
+    "published": "2026-09-30T12:30:17+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "ForceN to give a crash course on force and torque sensing for humanoids at RoboBusiness",
+    "summary": "<p>Attendees will learn about the many ways they can use force and torque sensors in humanoids and how to avoid breaking them while doing it.</p> <p>The post <a href=\"https://www.therobotreport.com/forcen-gives-crash-course-force-torque-sensing-humanoids-robobusiness-2026/\">ForceN to give a crash course on force and torque sensing for humanoids at RoboBusiness</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/forcen-gives-crash-course-force-torque-sensing-humanoids-robobusiness-2026/",
+    "published": "2026-09-29T19:52:46+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Meet Flourish One, the Raspberry Pi-powered humanoid built for busy parents",
+    "summary": "<p>Flourish is releasing a $3,555 phone-trainable home robot, targeting busy parents with personalized, cloud-trained chore automation.</p> <p>The post <a href=\"https://www.therobotreport.com/meet-flourish-one-raspberry-pi-powered-humanoid-built-busy-parents/\">Meet Flourish One, the Raspberry Pi-powered humanoid built for busy parents</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/meet-flourish-one-raspberry-pi-powered-humanoid-built-busy-parents/",
+    "published": "2026-09-29T14:00:12+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "State of Robots in Manufacturing",
+    "summary": "<p>The Robot Report looks at recent advances in automation for manufacturing, from improvements in technologies and use cases to the potential of humanoids and AI.</p> <p>The post <a href=\"https://www.therobotreport.com/state-of-robots-in-manufacturing/\">State of Robots in Manufacturing</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/state-of-robots-in-manufacturing/",
+    "published": "2026-09-29T13:22:56+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://spectrum.ieee.org/feeds/topic/robotics.rss",
+    "feed_title": "",
+    "title": "A Day in the Life of a Roboticist: Charlie Kemp",
+    "summary": "<img src=\"https://spectrum.ieee.org/media-library/man-standing-beside-a-tall-wheeled-robot-smiling-and-waving-at-the-camera.jpg?id=67880303&amp;width=1245&amp;height=700&amp;coordinates=0%2C187%2C0%2C188\" /><br /><br /><p>Building useful robots starts with understanding the people who use them. For Charlie Kemp, cofounder and chief technology officer of Hello Robot, that means developing assistive robots that can help people with everyday tasks and support greater independence.</p><p>In this <a href=\"https://robotsguide.com/\" target=\"_blank\">Robots Guide</a> profile, Kemp shares his path from studying artificial intelligence at MIT to building Stretch, explains how working with people with disabilities has shaped his approach, and offers advice for aspiring roboticists. <a href=\"https://robotsguide.com/learn/a-day-in-the-life-of-a-roboticist-charlie-kemp\" rel=\"noopener noreferrer\" target=\"_blank\">Read the full profile on IEEE’s Robots Guide.</a></p>",
+    "url": "https://robotsguide.com/learn/a-day-in-the-life-of-a-roboticist-charlie-kemp",
+    "published": "2026-09-28T21:48:56+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Gecko Robotics works with NVIDIA to add AI agent security and control",
+    "summary": "<p>Gecko Robotics is using the new NVIDIA Open Agent Safety Platform to ensure the secure autonomous control of systems.</p> <p>The post <a href=\"https://www.therobotreport.com/gecko-robotics-works-with-nvidia-adds-ai-agent-security-and-control/\">Gecko Robotics works with NVIDIA to add AI agent security and control</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/gecko-robotics-works-with-nvidia-adds-ai-agent-security-and-control/",
+    "published": "2026-09-28T17:41:32+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Robonomics on the threshold: Economic autonomy, smart cities, and crypto wallets for humanoids",
+    "summary": "<p>Economics is both a robotics impetus and a constraint, as systems make deliveries on streets or do chores in households.</p> <p>The post <a href=\"https://www.therobotreport.com/robotics-threshold-economic-autonomy-crypto-wallets-humanoids/\">Robonomics on the threshold: Economic autonomy, smart cities, and crypto wallets for humanoids</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/robotics-threshold-economic-autonomy-crypto-wallets-humanoids/",
+    "published": "2026-09-28T13:56:56+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Raise Robotics to discuss scaling field robots at RoboBusiness",
+    "summary": "<p>Raise Robotics said attendees will learn a decision rule for allocating engineering capacity and a vocabulary for two hidden failure modes.</p> <p>The post <a href=\"https://www.therobotreport.com/raise-robotics-discuss-scaling-field-robots-robobusiness/\">Raise Robotics to discuss scaling field robots at RoboBusiness</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/raise-robotics-discuss-scaling-field-robots-robobusiness/",
+    "published": "2026-09-28T13:22:53+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://spectrum.ieee.org/feeds/topic/robotics.rss",
+    "feed_title": "",
+    "title": "Video Friday: Life’s Better With a Little Robot Goose",
+    "summary": "<img src=\"https://spectrum.ieee.org/media-library/mobile-assistive-robot-with-articulated-arm-beside-coffee-table-in-cozy-living-room.png?id=67853191&amp;width=1245&amp;height=700&amp;coordinates=0%2C0%2C0%2C0\" /><br /><br /><p><span>Video Friday is your weekly selection of awesome robotics videos, collected by your friends at </span><em>IEEE Spectrum</em><span> robotics. We also post a weekly calendar of upcoming robotics events for the next few months. Please </span><a href=\"mailto:automaton@ieee.org?subject=Robotics%20event%20suggestion%20for%20Video%20Friday\">send us your events</a><span> for inclusion.</span></p><h5><a href=\"https://2026.ieee-iros.org/\">IROS 2026</a>: 27 September–1 October 2026, PITTSBURGH</h5><h5><a href=\"https://www.corl.org/\">CoRL 2026</a>: 9–12 November 2026, AUSTIN, TEXAS</h5><h5><a href=\"https://2026.ieee-humanoids.org/\">Humanoids 2026</a>: 6–9 December 2026, SANTA CLARA, CALIF.</h5><p>Enjoy today’s videos!</p><div class=\"horizontal-rule\"></div><div><span style=\"display: none;\"> </span></div><blockquote class=\"rm-anchors\" id=\"e502xyw7e1g\"><em>Life’s better with a little Goose.</em></blockquote><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://www.therobotworks.ai/\">The Robot Works</a> ]</p><p>Thanks, Dave!</p><div class=\"horizontal-rule\"></div><p class=\"rm-anchors\" id=\"mai4evtj4dm\">Skydio has introduced the F10, a charmingly lopsided <a href=\"https://spectrum.ieee.org/skydio-camera-drone-autonomous-flying\" target=\"_blank\">fixed-wing drone</a>, that uses a robot arm for autonomous launch and capture.</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>Unfortunately, based on the frequency of that flashing LED on the drone, this video appears to have sped up the capture (and likely the launch) by a substantial amount.</p><p>[ <a href=\"https://www.skydio.com/f10\">Skydio</a> ]</p><div class=\"horizontal-rule\"></div><p class=\"rm-anchors\" id=\"lqdeoreu6bi\">I want a bunch of these little guys. I don’t know what I’d do with them. But I want them.</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://freeformrobotics.org/publications/\">Freeform Robotics</a> ]</p><div class=\"horizontal-rule\"></div><blockquote class=\"rm-anchors\" id=\"lfkoi0mvwos\"><em>Walking robots are everywhere now…. But 30 years ago, they were brand new. The first ever robot that could walk by itself was the <a href=\"https://spectrum.ieee.org/honda-p2-robot-ieee-milestone\" target=\"_blank\">Honda P2</a>. The P2 featured motors and hydraulics in the hips, knees, and ankles to walk around, and weighed over 300 pounds.</em></blockquote><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://spectrum.ieee.org/honda-p2-robot-ieee-milestone\">IEEE Spectrum</a> ]</p><div class=\"horizontal-rule\"></div><blockquote class=\"rm-anchors\" id=\"lat2rikjhto\"><em>Precision biomimetic dexterous hand, priced from US $6,500.</em></blockquote><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://www.unitree.com/Dex2-5\">Unitree</a> ]</p><div class=\"horizontal-rule\"></div><p class=\"rm-anchors\" id=\"jimw_ligkvq\">What if all it took to train a drone to do acrobatics was to tell it whether you like the way it flies?</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://rpg.ifi.uzh.ch/docs/IROS26_Geles_PbRL.pdf\">UZH Robotics and Perception Group</a> ]</p><div class=\"horizontal-rule\"></div><p class=\"rm-anchors\" id=\"ktncpptpsqe\">Why build a <a href=\"https://spectrum.ieee.org/video-friday-robotic-hands-2674168909\" target=\"_blank\">humanoid hand</a> when a <a href=\"https://spectrum.ieee.org/aussies-win-amazon-robotics-challenge\" target=\"_blank\">robot hand</a> can do stuff like this?</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://generalroboticslab.com/cartesian_handv1\">General Robotics Lab</a> ]</p><div class=\"horizontal-rule\"></div><blockquote class=\"rm-anchors\" id=\"etzdogql56c\"><em>Diane Heinle, a mechanical engineer at Boston Dynamics, answers questions about endurance testing for Stretch, how her team simulates years of wear on robot parts over a brief time in the lab, and why there are bird heads on them.</em></blockquote><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://bostondynamics.com/blog/ask-a-roboticist-meet-diane/\">Boston Dynamics</a> ]</p><div class=\"horizontal-rule\"></div><blockquote class=\"rm-anchors\" id=\"0qus7bzzkas\"><em>ULOHA brings learning from demonstrations to two robot arms working underwater. We developed custom leader–follower hardware and software extending LeRobot to connect teleoperation, demonstration collection, and autonomous manipulation. The video shows the robots lifting objects together, passing objects between arms, opening a container, and catching a sponge as it rises through the water. We also explore how bubbles and action-execution timing affect learned behaviors.</em></blockquote><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://mertcookimg.github.io/uloha/\">ULOHA</a> ]</p><p>Thanks, Masato!</p><div class=\"horizontal-rule\"></div><p class=\"rm-anchors\" id=\"n6cl5gi0c0u\">Usually, ballbots rely on an internal pendulum, but here’s a different approach.</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://generalroboticslab.com/MARBLE\">General Robotics Lab</a> ]</p><div class=\"horizontal-rule\"></div><blockquote class=\"rm-anchors\" id=\"hnlfompekgk\"><em>From long-horizon manipulation to tactile-guided actions, this video highlights selected collaborations that explore what Astribot robots can do.</em></blockquote><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://www.astribot.com/en/product\">Astribot</a> ]</p><div class=\"horizontal-rule\"></div><p class=\"rm-anchors\" id=\"vu5w9_nmet4\">This is one of those tasks that looks a little boring but is actually both very tricky and very useful.</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://arxiv.org/abs/2509.10979\">HiPeR Lab</a> ]</p><div class=\"horizontal-rule\"></div><p class=\"rm-anchors\" id=\"5u0rzdl7jvi\">That tiny little excavator playing in flour is adorbs.</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://arxiv.org/abs/2609.12677v1\">ETH Zurich Robotic Systems Lab</a> ]</p><div class=\"horizontal-rule\"></div><p class=\"rm-anchors\" id=\"vh9ucogdwcm\">How do you fit a humanoid robot into a box?</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://www.limxdynamics.com/en/products/luna\">LimX Dynamics</a> ]</p><div class=\"horizontal-rule\"></div><p class=\"rm-anchors\" id=\"bykyz9qwqcw\">And now, this.</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><blockquote><em>At the Opening Ceremony of WorldSkills Shanghai 2026 on 22 September, 19 Unitree humanoid robots performed alongside 120 dancers, presenting the world’s largest-scale performance featuring full-size general-purpose humanoid robots before an audience of more than 10,000 people, with a fully AI-driven autonomous robot cluster performance live-streamed worldwide in real time.</em></blockquote><p>[ <a href=\"https://unitree.com/\">Unitree</a> ]</p><div class=\"horizontal-rule\"></div><blockquote class=\"rm-anchors\" id=\"fd9mleerkpg\"><em>A microwave box creates a surprisingly tricky vision system challenge: there’s a picture of a microwave on the side of the box, and that microwave has a window. From the camera’s perspective, it’s a box inside a box inside a box.</em></blockquote><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://www.picklerobot.com/\">Pickle Robot Company</a> ]</p><div class=\"horizontal-rule\"></div><p class=\"rm-anchors\" id=\"l6bsqc5cccw\">What exactly is Physical AI? Personally I think it’s just what robotics has always been, more or less, except that everything has to have “AI” in it now, so here we are.</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://www.csail.mit.edu/news/\">MIT CSAIL</a> ]</p><div class=\"horizontal-rule\"></div><blockquote class=\"rm-anchors\" id=\"dx_dlmrlh60\"><em>As the evolution of the UR Series, the g‑Series is designed to accelerate how robots are integrated into complete automation systems. It connects more directly with cameras, higher power EOATs, and control systems, eliminating external cabling and hardware to streamline integration. This enables cleaner and faster deployment of advanced automation.</em></blockquote><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://www.universal-robots.com/news-and-media/news-center/universal-robots-unveils-gen-7-new-platform-industrial-automation-physical-ai/\">Universal Robots</a> ]</p><div class=\"horizontal-rule\"></div>",
+    "url": "https://spectrum.ieee.org/video-friday-goose-household-robots",
+    "published": "2026-09-25T16:00:04+00:00"
+  }
+]
