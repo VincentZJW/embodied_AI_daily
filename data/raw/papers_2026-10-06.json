@@ -1,0 +1,445 @@
+[
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2610.04741v1",
+    "title": "Robot Learning with Visual Predicted Force",
+    "abstract": "Force-aware manipulation typically relies on specialized force or tactile sensors. We show that force-aware manipulation can instead be achieved through visual force prediction from the deformation of a compliant Fin Ray gripper. Our approach trains two models. First, we train a visual force estimator on calibration data and use it to annotate task demonstrations with force estimates. Second, we train an action--force proposal policy on these force-augmented demonstrations to jointly generate candidate robot actions and their associated forces. At test time, we sample candidate actions and the forces they are expected to produce, then execute the action whose predicted force is closest to a target from the demonstrations. We evaluate our approach on berry picking, empty-can grasping, in-hand reorientation, and plug insertion. Our results show that visual force prediction can guide inference-time action selection for contact-rich manipulation without requiring force or tactile sensors at deployment.",
+    "authors": [
+      "Haonan Chen",
+      "Feiyang Wu",
+      "Yuxiang Ma",
+      "Mustafa Mete",
+      "Pengfei Ye",
+      "Junxuan Shen",
+      "Cheng Zhu",
+      "Aurora Ruggeri",
+      "Kelvin Cheung",
+      "Jiayuan Mao",
+      "Edward Adelson",
+      "Jiajun Wu",
+      "Robert D. Howe",
+      "Yilun Du"
+    ],
+    "published": "2026-10-03T20:11:33+00:00",
+    "updated": "2026-10-03T20:11:33+00:00",
+    "url": "http://arxiv.org/abs/2610.04741v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.04741v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2610.04681v1",
+    "title": "RoboIRS: Inference-Time Internal Representation Steering for Generalist Robot Policies",
+    "abstract": "Vision-language-action (VLA) and world-action models (WAMs) often degrade under out-of-distribution task variations despite retaining partial task capability. To recover such capability, we propose RoboIRS, an inference-time internal representation steering method that uses successful and failed rollouts to train linear classifiers, select outcome-relevant intervention locations, and derive task-specific steering directions without updating policy parameters. On 15 simulation tasks with a frozen $π0.5$ policy, RoboIRS improves the average success rate from 44.4% to 66.2%, outperforming alternative inference-time intervention baselines while adding little inference time. We further validate RoboIRS on real-robot manipulation using the same $π0.5$ policy and demonstrate its applicability to a world-action model Cosmos Policy, where the average success rate improves from 35.4% to 55.4%. These results show that directly steering internal robot-policy representations can improve the performance of robot policies at inference time. Project website is available at https://rollingoat.github.io/roboirs/.",
+    "authors": [
+      "Jiuzhou Lei",
+      "Chang Liu",
+      "Dayou Li",
+      "Zhiyuan Zhang",
+      "Xiao Liang",
+      "Yu She",
+      "Zhiwen Fan",
+      "Minghui Zheng"
+    ],
+    "published": "2026-10-03T17:50:39+00:00",
+    "updated": "2026-10-03T17:50:39+00:00",
+    "url": "http://arxiv.org/abs/2610.04681v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.04681v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2610.04659v1",
+    "title": "PermVLA: Factorization Order as a Regularizer for VLA Learning",
+    "abstract": "Vision-language-action (VLA) policies commonly learn action chunks through a fixed left-to-right (LTR) factorization, although the same expert trajectory distribution admits many valid chain-rule factorizations. We identify factorization order as an overlooked regularization choice and introduce causally anchored permutation (CAP), which samples action reveal orders with a tunable chronological prefix. Its auxiliary objective trains one shared policy to predict actions from different known subsets of the same expert chunk, while deployment retains deterministic LTR control. We call this conditional-set augmentation: it creates multiple conditional prediction problems from one expert chunk without adding demonstrations. This discourages reliance on the single chronological prefix used by ordinary teacher forcing. Controlled experiments show that CAP consistently outperforms standard LTR training on LIBERO and LIBERO-Plus, with the same advantage appearing in cross-dataset CALVIN evaluation. A diagnostic that measures the expected squared difference between a chunk's joint log likelihood under two reveal orders verifies that CAP training internalizes agreement across reveal orders. These findings position sampled subset-conditioned auxiliary objectives as a general recipe for constructing VLA regularizers, illustrated by an extension to diffusion action generators.",
+    "authors": [
+      "Yanqiao Chen",
+      "Yuhan Rui",
+      "Dongsheng Hou",
+      "Zijie Nie",
+      "Yutong Wan",
+      "Qi Hao"
+    ],
+    "published": "2026-10-03T17:15:26+00:00",
+    "updated": "2026-10-03T17:15:26+00:00",
+    "url": "http://arxiv.org/abs/2610.04659v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.04659v1",
+    "categories": [
+      "cs.AI",
+      "cs.RO"
+    ],
+    "primary_category": "cs.AI"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2610.04616v1",
+    "title": "PerturBot: Breaking Shortcut Priors in Vision-Language-Action Models with Perturbative Training",
+    "abstract": "A vision--language--action (VLA) policy can complete complex tasks while ignoring the evidence that should determine its actions. An object held near the wrist camera can displace the instructed target. Language and action show the same pattern: a familiar noun can trigger the operation it was paired with in training even after the verb changes, and a gripper that closed on nothing may lift anyway. We call these dependencies modality shortcuts: regularities in successful demonstrations make visual, lexical, or motor cues sufficient to predict expert actions without the task evidence needed for the underlying decision. More demonstrations of the same kind can raise task success while leaving these shortcuts intact. We propose Perturbot which makes task-relevant evidence easier to use and shortcuts insufficient on their own: it applies task-preserving wrist-view perturbations, enriches instructions with decision-relevant captions, and adds random and failed trajectory segments relabeled with the behavior they contain. It complements scaling by changing what is scaled, and leaves inference unchanged. Moreover, we propose GroundingFscore, an offline score that diagnoses how severely a policy relies on modality shortcuts. Task success rate shows whether a policy improves, while GroundingFscore reveals whether the policy scales healthily, relying on task evidence rather than shortcuts. Together, Perturbot and GroundingFscore provide a training-and-evaluation framework for disentangling VLA decisions from shortcut priors while preserving responsiveness to task-relevant evidence.",
+    "authors": [
+      "Mingyu Liu",
+      "Chonghao Sima",
+      "Tianjian Feng",
+      "Hanqing Wang",
+      "Cong Chen",
+      "Hao Chen",
+      "Chunhua Shen"
+    ],
+    "published": "2026-10-03T15:57:51+00:00",
+    "updated": "2026-10-03T15:57:51+00:00",
+    "url": "http://arxiv.org/abs/2610.04616v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.04616v1",
+    "categories": [
+      "cs.RO",
+      "cs.CV"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2610.04609v1",
+    "title": "Exploiting Hierarchical Controller Structure in Contextual Parameter Learning for Humanoid Loco-Manipulation",
+    "abstract": "Hierarchical control architectures are widely used to decompose complex control problems into interacting control levels and are particularly important in robotics, where planning, whole-body motion, and lower-level control must be coordinated across different levels of abstraction and time scales. Their overall closed-loop performance, however, depends strongly on parameters distributed across the hierarchy, such that tuning controllers on different levels independently may neglect relevant cross-layer interactions. We propose a contextual Bayesian optimization framework for joint parameter learning in hierarchical control systems. Rather than modeling closed-loop performance only as a scalar black-box function, we retain separate observations of task performance, realization quality, and control effort. A correlated multi-output Gaussian process models these performance components, while their known aggregation into the overall closed-loop objective is evaluated analytically. The formulation exploits three complementary consequences of hierarchical control: informative performance quantities exposed by the hierarchy, coupling between parameters of different controller levels, and variations of these relations with operating conditions. We evaluate the approach for humanoid loco-manipulation, jointly tuning a centroidal predictive controller and a whole-body controller for physical box pushing under varying box mass. The proposed method achieves the lowest mean empirical regret during both training and adaptation among the considered baselines.",
+    "authors": [
+      "Sebastian Hirt",
+      "Lukas Theiner",
+      "Jan Peters",
+      "Rolf Findeisen"
+    ],
+    "published": "2026-10-03T15:49:45+00:00",
+    "updated": "2026-10-03T15:49:45+00:00",
+    "url": "http://arxiv.org/abs/2610.04609v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.04609v1",
+    "categories": [
+      "cs.RO",
+      "cs.LG"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2610.04607v1",
+    "title": "ForeAct3D: Policy-Grounded Future World Modeling for VLA Policies",
+    "abstract": "Robots need to anticipate how their actions will change the world, since manipulation success hinges on the resulting contacts and object motions. However, existing Vision-Language-Action (VLA) policies that predict future observations from shared features leave the forecast decoupled from the actions the policy will actually execute, and impose no physical constraints on how the scene may evolve. We introduce ForeAct3D, a framework for policy-grounded future world modeling within VLA policies. Learnable geometric queries decode depth, semantic segmentation, and camera pose from the policy representation into current and future semantic 3D scene states, and the future queries are conditioned on the policy-generated action chunk to ground the forecast in the planned interaction. A physical-consistency closure relates the two states through background staticity and instance-level rigidity, and anchors the wrist-camera pose to end-effector kinematics. These objectives shape the shared representation used for action generation during training, and no future prediction is required at inference. Without robot pretraining, ForeAct3D achieves 98.3\\% average success on LIBERO and an average task length of 3.73 on CALVIN, outperforming its base policy on every suite. Ablations show that semantic 3D supervision, physical consistency, and action conditioning each improve manipulation performance, and that action conditioning substantially improves future object localization. Real-world experiments on spatial placement, object insertion, and sequential manipulation further raise average success from 6.7\\% to 37.8\\% over the base policy. The project page and code are available at https://github.com/anthonytao80-crypto/ForeAct3D.",
+    "authors": [
+      "Zhe Tao",
+      "Feiran Wang",
+      "Gaowen Liu",
+      "Ramana Rao Kompella$",
+      "Yan Yan"
+    ],
+    "published": "2026-10-03T15:49:04+00:00",
+    "updated": "2026-10-03T15:49:04+00:00",
+    "url": "http://arxiv.org/abs/2610.04607v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.04607v1",
+    "categories": [
+      "cs.RO",
+      "cs.CV"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2610.04536v1",
+    "title": "WasserMan: Benchmark for Underwater Manipulation Policy Learning",
+    "abstract": "Underwater manipulation couples visual decisions, contact forces and a thruster-controlled floating base. We introduce WasserMan, to our knowledge the first multi-task simulation benchmark for visuomotor learning of floating-base underwater contact manipulation. It provides ten expert-solvable tasks, two vehicle-arm platforms, a bimanual configuration and underwater dynamics. Nine tasks have learned-policy evaluations. We compare ACT, diffusion policies (DP) and behavioral cloning on six tasks, with three training runs and equal sampled-window budgets. Pretrained SmolVLA adds evaluations on three tasks. In the tested settings, removing integral action can prevent completion, while changing action interfaces can reduce learned-policy success despite successful expert replay. Currents produce task-dependent changes in completion and actuation effort. Versioned tasks, demonstrations and per-episode evidence support a protocol separating expert feasibility, learned completion and execution effort.",
+    "authors": [
+      "Danil Belov",
+      "Artem Erkhov",
+      "Sergei Parsegov",
+      "Pavel Osinenko"
+    ],
+    "published": "2026-10-03T14:05:38+00:00",
+    "updated": "2026-10-03T14:05:38+00:00",
+    "url": "http://arxiv.org/abs/2610.04536v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.04536v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2610.04529v1",
+    "title": "TAME:Topology-Aware Text-Driven Motion Editing across Heterogeneous Humanoid Skeletons",
+    "abstract": "Text-driven motion editing modifies an existing motion sequence according to a text instruction while preserving the content of the source motion. Existing methods are typically built for a single, fixed skeletal topology, which limits their use in animation pipelines where characters differ in joint count and skeletal hierarchy. We present Topology-Aware Motion Editor (TAME), a flow-matching transformer that edits motions on humanoid skeletons of varying topology. TAME represents motion as per-joint, per-frame tokens and models interactions among joints, across frames, and with the text instruction through skeletal, temporal, and text cross-attention layers. To make the skeletal attention follow each character's hierarchy, TAME replaces full joint attention with Topology-Constrained Skeletal Propagation (TCSP), which restricts attention to one-hop kinematic neighbors in the skeleton's adjacency matrix. We further introduce Edit-Focused Representation Alignment (EFRA), a self-distilled representation alignment strategy that aligns student features with cleaner EMA-teacher features exclusively on edit-relevant joint-time tokens, making edits faithful to the instruction. To make this setting trainable and comparable, we construct TopoMotionFix, a multi-topology extension of MotionFix with seen- and unseen-topology evaluation protocols. TAME outperforms previous methods in edit alignment and source preservation on MotionFix and reliably edits motions on unseen skeletons in TopoMotionFix.",
+    "authors": [
+      "Qichen Zheng",
+      "Siyuan Yang",
+      "Chong Wang",
+      "Jun Liu",
+      "Shijian Lu",
+      "Alex Kot",
+      "Kwok-Yan Lam"
+    ],
+    "published": "2026-10-03T13:49:43+00:00",
+    "updated": "2026-10-03T13:49:43+00:00",
+    "url": "http://arxiv.org/abs/2610.04529v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.04529v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2610.04494v1",
+    "title": "DreamTest: World-Model Surrogates for Search-Based Testing of Deep Reinforcement Learning Agents",
+    "abstract": "Testing deep reinforcement learning (DRL) agents in cyber-physical systems aims to uncover diverse failures before deployment, but each execution can be expensive. Surrogate-assisted testing reduces this cost by learning to predict which test configurations are likely to fail. Prior surrogates treat the system as a black box and predict pass or fail outcomes directly; we instead model how a test unfolds and estimate failure from an imagined episode. We introduce DreamTest, a world-model surrogate for testing DRL agents. DreamTest adapts a recurrent state-space model to learn agent behaviour and environment dynamics from the agent's training log. Given a candidate configuration, imagined rollouts produce a failure score that guides search without executing every candidate in a simulator or real system. We evaluate DreamTest for failure prediction, test generation, and failure diversity on Parking, Humanoid, and DonkeyCar. Mean area under the precision-recall curve (AUPRC) exceeds the strongest baseline by 97%, 12%, and 39%, respectively, and gains on five out-of-distribution test sets reach 145%, 29%, and 44%. Under the same simulator-validation budget, the best \"DreamTest + search\" combinations find 29%, 22%, and 79% more novel failures on average. Across clusterings with k = 2-40, failures generated with DreamTest cover the most behavioural clusters for almost all k, indicating that DreamTest consistently discovers behaviourally diverse failures.",
+    "authors": [
+      "Qinghua Xu",
+      "Guancheng Wang",
+      "Boxi Yu",
+      "Liting Lin",
+      "Lionel Briand"
+    ],
+    "published": "2026-10-03T12:51:02+00:00",
+    "updated": "2026-10-03T12:51:02+00:00",
+    "url": "http://arxiv.org/abs/2610.04494v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.04494v1",
+    "categories": [
+      "cs.SE",
+      "cs.LG"
+    ],
+    "primary_category": "cs.SE"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2610.04438v1",
+    "title": "RAGrasp: Geometry-Semantic Template Retrieval and Grasp Transfer",
+    "abstract": "We present RAGrasp, a retrieval-augmented pipeline for planar parallel-jaw grasping from a compact set of locally collected, grasp-annotated RGB-D (color and depth) templates. Unlike task-specific predictors trained primarily on large public or synthetic grasp datasets, RAGrasp requires no end-to-end retraining for a new deployment.Its template memory is constructed from observations collected with the deployment camera, robot, and gripper in the target workspace, thereby aligning stored examples with the local sensing and embodiment conditions. The system uses self-supervised DINOv2 visual fea- tures together with appearance and depth cues to prompt the Segment Anything Model 2 (SAM2), which isolates the query object. A two-stage geometry-semantic retrieval cascade then selects a template, and a confidence gate chooses one of two grasp- transfer estimators. The transferred grasp is refined using mask- support and silhouette-contact constraints before calibrated 2D- to-3D conversion. In real-world trials, RAGrasp achieves 20/20 successful grasps on seen objects and 19/20 on unseen objects. Within the evaluated setting, the results demonstrate deployment- specific grasp adaptation from limited local annotation and tolerance to the tested viewpoint and illumination changes.",
+    "authors": [
+      "Shenzhe Zhu",
+      "Chengxiao He",
+      "Jan Harder"
+    ],
+    "published": "2026-10-03T10:59:13+00:00",
+    "updated": "2026-10-03T10:59:13+00:00",
+    "url": "http://arxiv.org/abs/2610.04438v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.04438v1",
+    "categories": [
+      "cs.AI",
+      "cs.RO"
+    ],
+    "primary_category": "cs.AI"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2610.04432v1",
+    "title": "Video2World: Benchmarking Coding Agents for Interactive World Modeling from Embodied Videos",
+    "abstract": "Building interactive simulators from real-world observations is a promising way to scale embodied data, but current pipelines still rely heavily on manual environment construction and calibration. We study whether frontier foundation models and coding agents can automate this process end to end. We formulate \\emph{autonomous video-to-simulation} as a software engineering task in which an agent observes an embodied video, constructs the corresponding simulated environment and robot behavior, and iteratively refines the result through execution feedback. To evaluate this capability, we introduce \\textbf{Video2World}, a benchmark comprising 222 reconstruction instances derived from 189 robot and human demonstration videos. Video2World measures reconstructed worlds along geometric fidelity, dynamic fidelity, and functional correctness, capturing spatial perception, physical reasoning, and executable interaction. Evaluating 9 frontier coding-agent systems reveals a sharp improvement in Task success beginning with Claude Opus 5, rising from below 5\\% to over 15\\%, while substantial gaps to human-assisted reconstruction remain. We further find that worlds that look better could work worse: better visual fidelity does not always lead to higher task success. This echoes the broader gap between perceptual realism and factual correctness observed in generative models.",
+    "authors": [
+      "Jinzhou Tang",
+      "Zijun Zhang",
+      "Jing Yang",
+      "Yuchen Yan",
+      "Kun Zhou",
+      "Lingjun Mao",
+      "Ruobing Han",
+      "Jinglin Cao",
+      "Wenpeng Xu",
+      "Lukun He",
+      "Minghao Fu",
+      "Fan Feng",
+      "Biwei Huang"
+    ],
+    "published": "2026-10-03T10:46:52+00:00",
+    "updated": "2026-10-03T10:46:52+00:00",
+    "url": "http://arxiv.org/abs/2610.04432v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.04432v1",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.RO"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2610.04391v1",
+    "title": "AgenticTactileVLA: Contact-Guided Execution-Time Supervision for Generalizable Dexterous Manipulation without VLA Retraining",
+    "abstract": "Vision-language-action policies may predict a transferable manipulation strategy yet fail to realize it reliably on the encountered object: objects compatible with the same grasp differ in geometry and compliance, and visual feedback degrades under closure occlusion. AgenticTactileVLA is presented as an execution-time supervisor that shifts part of object-specific adaptation from prediction to physical interaction. A fixed VLA provides the approach and hand targets; the supervisor decides whether to remain transparent, refine finger flexion, retain or release the corrected configuration, return control to the VLA for retry, or select a compliant hand-control regime. It uses finger-position and motor-effort feedback as proprioceptive contact evidence and requires neither tactile sensors nor VLA retraining. On a Unitree G1 with a BrainCo Revo2 hand, a randomized matched-block evaluation on five objects held out from VLA training yields 61.3% completion for the base VLA, 72.0% for unconditional close-to-stall control, and 84.0% for the supervisor under a shared budget; the gain is positive on every object and persists under moderate pose perturbations. Ablations show the gain is not explained by extended closure alone, and that selective triggering reduces correction episodes by 65.7% with no detected change in completion. A retention audit shows acceptance predicts retention in 88.9% of held-out cases, while compliant objects expose conservative false rejection. A thin-walled-cup study demonstrates contextual routing to compliant control, matching an always-compliant reference. These results suggest that contact-guided execution-time adaptation can improve the object-level generalization of a fixed VLA to held-out objects by adapting physical realization without object-specific retraining.",
+    "authors": [
+      "Elizaveta Semenyakina",
+      "Ivan Snegirev",
+      "Mikhail Kiselev",
+      "Miguel Altamirano Cabrera",
+      "Artem Lykov",
+      "Hajira Amjad",
+      "Dzmitry Tsetserukou"
+    ],
+    "published": "2026-10-03T09:29:02+00:00",
+    "updated": "2026-10-03T09:29:02+00:00",
+    "url": "http://arxiv.org/abs/2610.04391v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.04391v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2610.04303v1",
+    "title": "What to Preserve in Recursive Computation: A Local Predictive Sufficiency Principle",
+    "abstract": "Recursive computation repeatedly compresses or reuses intermediate states, creating a simple tension: information that must remain useful across longer recursive paths is also exposed to more opportunities for loss before reaching the final prediction. Existing reconstruction or local-prediction objectives provide tractable supervision, but do not ensure that the retained information remains sufficient for subsequent recursive computation. We identify local predictive sufficiency with recursive predictive closure: controlling local predictive deficiencies at individual interfaces controls the resulting discrepancy at the root. We then turn this principle into a tractable training procedure. Starting from a variational characterization, we derive finite predictive tests and an empirical predictive deficiency that measures predictive value retained across compression. Its predictive sensitivities define margin-relaxed half-space constraints on parameter updates, and we project the host optimizer's proposed update onto their intersection only when predictive preservation would otherwise be violated. Across temporal graphs, language memory, vision-language-action control, and recursive self-improvement, the method matches or improves the corresponding host models under matched compression budgets, with larger gains under heavier recursive or memory demands, while better preserving predictive information across successive transformations. Crucially, the same task-agnostic predictive-preservation principle is instantiated across all four settings through host-compatible interventions while keeping the endpoint task, backbone, and evaluation protocol fixed. These results establish predictive preservation at recursive interfaces as a general training principle for recursive compression.",
+    "authors": [
+      "Peilin Wang",
+      "Feng Shiyang",
+      "Hongfu Gao",
+      "Cencheng Zhao",
+      "Di Yuan",
+      "Hui Chen",
+      "Guiguang Ding"
+    ],
+    "published": "2026-10-03T05:33:40+00:00",
+    "updated": "2026-10-03T05:33:40+00:00",
+    "url": "http://arxiv.org/abs/2610.04303v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.04303v1",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "primary_category": "cs.LG"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2610.04301v1",
+    "title": "EnvDreamer: Large-Scale Multimodal-to-Environment Generation for Embodied AI",
+    "abstract": "Large datasets and high capacity models have accelerated progress in vision and language. This work introduces a platform aimed at bringing comparable gains to embodied learning, world models, and robotics. We present EnvDreamer, a framework that uses large language and vision language models to generate Unreal Engine 5 environments for embodied AI and robot training. EnvDreamer enables sampling of large, diverse, interactive, customizable, and validator passed virtual environments for training and evaluation across navigation, interaction, and manipulation. We illustrate the platform with a large set of generated scenes and simple baselines. Policies trained on EnvDreamer generated environments, without explicit mapping or human task supervision, achieve competitive results on multiple embodied benchmarks spanning navigation, rearrangement, and manipulation. EnvDreamer also supports image-conditioned reconstruction for real-to-sim studies. Finally, we release EnvDreamer-20k, a dataset of 20,000 validator passed environments with task programs, scene graphs, trajectories, and metadata to support reproducible benchmarking.",
+    "authors": [
+      "Kabir Swain",
+      "Sijie Han",
+      "Antonio Torralba"
+    ],
+    "published": "2026-10-03T05:28:33+00:00",
+    "updated": "2026-10-03T05:28:33+00:00",
+    "url": "http://arxiv.org/abs/2610.04301v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.04301v1",
+    "categories": [
+      "cs.AI"
+    ],
+    "primary_category": "cs.AI"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2610.04266v1",
+    "title": "Real-Time Conformal-Seeded Hybrid Inverse Kinematics for Offset Redundant Manipulators",
+    "abstract": "This paper presents a conformal-seeded hybrid strategy for solving inverse kinematics of offset, redundant 7-DoF robot arms of the humanoid class. Analytical inverse kinematics (AIK) provides closed-form solutions with very low computational cost. However, for offset kinematic structures, the exact closed-form solution is generally unavailable, and practical AIK must rely on an approximate or simplified kinematic model. In contrast, numerical inverse kinematics (NIK) can achieve high-precision solutions on the full kinematic model. However, its convergence is highly sensitive to initialization. To overcome these limitations, we propose a two-stage hybrid inverse kinematics framework with conformal-calibrated seed selection. First, an approximate analytical model efficiently enumerates a finite set of candidate joint solutions. Second, we rank these candidates using a lightweight learned predictor of post-refinement difficulty, wrapped by split-conformal prediction into a calibrated upper bound that serves as the selection score. The best-ranked seed is then refined using a Levenberg-Marquardt solver on the full kinematic model. The proposed method combines fast candidate generation, learned seed ranking with a calibrated difficulty bound, and accurate numerical refinement, achieving real-time performance of less than 40us and a success rate of 100% in our evaluation on reachable targets. We validate the approach through large-scale stochastic simulation across the workspace and experimental demonstrations with motion planning on a humanoid robot arm. Demonstration videos are available at https://youtu.be/aeiBmw1XRbw.",
+    "authors": [
+      "Duc Cuong Vu",
+      "Van Tung Nguyen",
+      "Duc Hai Nguyen",
+      "Manh Cuong Nguyen",
+      "Vu Trung Tran",
+      "Minh Nhat Vu"
+    ],
+    "published": "2026-10-03T03:45:09+00:00",
+    "updated": "2026-10-03T03:45:09+00:00",
+    "url": "http://arxiv.org/abs/2610.04266v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.04266v1",
+    "categories": [
+      "cs.RO",
+      "eess.SY"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2610.04255v1",
+    "title": "Grounded in Time: A Multi-Source Dataset and Benchmark for Temporal Grounding in Robotic Manipulation",
+    "abstract": "Robotic manipulation often requires inferring task-relevant states from past interactions when the current observation alone is insufficient to determine the appropriate action. Despite progress in benchmarking memory-augmented vision-language-action (VLA) models, application-oriented tasks requiring history-dependent semantic inference remain underrepresented. We introduce GiT (Grounded in Time), a dataset and benchmark for grounding manipulation decisions in past events across biolaboratory, household, and industrial scenarios. It includes real-robot and Universal Manipulation Interface (UMI) style demonstrations covering 18 bimanual tasks, together with simulation data and a ManiSkill-based evaluation suite covering nine tasks. Fine-grained subtask annotations and annotated counterfactual task pairs, in which similar current observations require different actions depending on prior events, support policy learning and targeted evaluation of history use. Evaluations of representative end-to-end VLA models in simulation and on selected real-world tasks reveal substantial room for improvement in history-dependent manipulation. The dataset and benchmark are available at the project page.",
+    "authors": [
+      "Yi Wang",
+      "Yang Yang",
+      "Guangqi Xu",
+      "Sumin Lin",
+      "Ning Kang",
+      "Pengxiang Lu",
+      "Xiaotong Chen",
+      "Zeyu Xue",
+      "Ping Deng",
+      "Xing Liu",
+      "Chenguang Yang",
+      "Zhenyu Lu"
+    ],
+    "published": "2026-10-03T03:25:24+00:00",
+    "updated": "2026-10-03T03:25:24+00:00",
+    "url": "http://arxiv.org/abs/2610.04255v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.04255v1",
+    "categories": [
+      "cs.RO",
+      "cs.CV"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2610.04250v1",
+    "title": "ROOT: Discovering Rewards for User-Specified Embodied Behaviors",
+    "abstract": "Reinforcement learning for embodied control remains constrained by the difficulty of reward specification. Although recent large language model (LLM)-based methods can synthesize reward functions from natural-language descriptions, they often fail to capture subtle behavioral properties that humans care about, such as natural gait, posture, and movement style. This limitation arises because many desired behaviors are easier to recognize visually than to encode in a reward function. We introduce Reward Optimization via Observable Trees (ROOT), a framework for discovering reward functions that align learned policies with user-specified embodied behaviors. Rather than relying solely on scalar training statistics, ROOT casts reward design as an observation-guided search over a persistent experiment tree that stores reward programs, trained policies, and rollout observations, together with behavioral insights distilled by a video-language model, to diagnose behavioral failures and guide subsequent reward refinements. We evaluate ROOT on seven tasks across four embodiments: simulated Hopper, HalfCheetah, Ant, Unitree Go2, and as well as the real-world Unitree Go2. ROOT produces behaviors that better align with user intent than those generated by existing LLM-based reward-generation methods, achieving up to 86.8% locomotion-completeness accuracy and improving Vid-LLM behavioral alignment from 3.56/5 to 4.14/5, a 16.5% improvement over baselines. Human evaluations further support these results, with ROOT preferred in 51-63% of pairwise comparisons.",
+    "authors": [
+      "Eren Sadikoglu",
+      "Aditya Taparia",
+      "Xinyuan Liu",
+      "Ransalu Senanayake"
+    ],
+    "published": "2026-10-03T03:19:52+00:00",
+    "updated": "2026-10-03T03:19:52+00:00",
+    "url": "http://arxiv.org/abs/2610.04250v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.04250v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2610.04238v1",
+    "title": "Humanoid Rickshaw Pulling: Whole-Body Locomotion under Coupled Wheeled Loads",
+    "abstract": "Humanoid robots could transport payloads substantially heavier than themselves by pulling passive wheeled vehicles instead of carrying the load. This capability, however, creates a coupled locomotion problem: the robot must maintain persistent upper-body contact while adapting to unknown, configuration-dependent forces arising from the payload, vehicle, and terrain. We present a whole-body control framework for humanoid rickshaw pulling that tracks commanded vehicle motion while preserving balance and stable grasps under uncertain load dynamics. During training, a privileged teacher exploits vehicle states, interaction forces, and load properties. Its actions and latent are distilled into a history-conditioned student that implicitly infers coupled dynamics from proprioceptive responses, followed by reinforcement-learning fine-tuning. Comparisons with \\emph{No History} and \\emph{Only History} baselines show that the resulting policy achieves accurate vehicle tracking while reducing vehicle oscillation, torso tilt, and actuation cost. Behavioral analysis shows that Unitree G1 propels the rickshaw and generates gait-synchronized whole-body reactions that stabilize its lateral and roll motions. Moreover, pulling redistributes joint effort and yields a lower robot-normalized cost-of-transport proxy than unloaded walking over most tested load--speed conditions. On hardware, a single policy performs starting, sustained pulling, turning, and stopping with both rigid payloads and human passengers, handling a loaded rickshaw mass of up to 115~kg without load-specific retuning. These results demonstrate robust heavy-load transportation through coordinated and persistent humanoid--vehicle interaction.",
+    "authors": [
+      "Yangzhi Yang",
+      "Xiansheng Lin",
+      "Zhaoming Xie",
+      "Xiaobin Xiong"
+    ],
+    "published": "2026-10-03T03:00:09+00:00",
+    "updated": "2026-10-03T03:00:09+00:00",
+    "url": "http://arxiv.org/abs/2610.04238v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.04238v1",
+    "categories": [
+      "cs.RO",
+      "cs.LG"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2610.04231v1",
+    "title": "Continual Humanoid Motion Learning",
+    "abstract": "Humanoid whole-body controllers can now track a diverse set of dynamic motions, but they are typically trained offline and then frozen, so teaching such a controller a new skill tends to erode the skills it already mastered. We study continual learning for humanoid whole-body motion, where a single controller must acquire skills from a sequential task stream without revisiting past data. We introduce Similarity-guided LoRA-PNN, a progressive neural network (PNN) policy that prevents catastrophic forgetting by construction while reusing knowledge across skills through lightweight low-rank adaptation. A two-level motion-similarity measure, built from dynamic time warping aggregated by optimal transport, decides which prior skill to build on and how much new capacity to allocate, yielding strong forward transfer and large efficiency gains. Across six sequentially learned skill categories, our similarity-guided LoRA policy attains the best forward transfer (0.125 vs. 0.079) and the highest average accuracy among all methods, while saving up to 94.5% of trainable parameters and 40.8% of training time. The resulting controller reaches 96.13% sim-to-sim transfer and is deployed on a physical Unitree G1. Our code is available at https://anonymous.4open.science/r/continual-humanoid-learning-35D3.",
+    "authors": [
+      "Zhewen He",
+      "Hao Huang",
+      "Geeta Chandra Raju Bethala",
+      "Chong Yu",
+      "Tao Chen",
+      "Anthony Tzes",
+      "Yi Fang"
+    ],
+    "published": "2026-10-03T02:45:37+00:00",
+    "updated": "2026-10-03T02:45:37+00:00",
+    "url": "http://arxiv.org/abs/2610.04231v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.04231v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  }
+]
