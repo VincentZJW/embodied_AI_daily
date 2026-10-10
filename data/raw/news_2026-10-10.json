@@ -1,0 +1,164 @@
+[
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Why humanoid robot demos still fail the generalization test",
+    "summary": "<p>How better data and human judgment can help robots move beyond demos toward reliable real-world performance.</p> <p>The post <a href=\"https://www.therobotreport.com/why-humanoid-robot-demos-still-fail-the-generalization-test/\">Why humanoid robot demos still fail the generalization test</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/why-humanoid-robot-demos-still-fail-the-generalization-test/",
+    "published": "2026-10-09T19:28:41+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Boston Dynamics gives more insight into its redesigned humanoid hand",
+    "summary": "<p>The Robot Report spoke with Alberto Rodriguez, the director of robot behavior for Atlas at Boston Dynamics, about the humanoid's new hand.</p> <p>The post <a href=\"https://www.therobotreport.com/boston-dynamics-gives-more-insight-into-its-redesigned-humanoid-hand/\">Boston Dynamics gives more insight into its redesigned humanoid hand</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/boston-dynamics-gives-more-insight-into-its-redesigned-humanoid-hand/",
+    "published": "2026-10-09T16:59:57+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://spectrum.ieee.org/feeds/topic/robotics.rss",
+    "feed_title": "",
+    "title": "Video Friday: Robot Decommissioning Takes a Fun Turn",
+    "summary": "<img src=\"https://spectrum.ieee.org/media-library/smiling-humanoid-robot-in-robe-free-falls-into-deep-pit-filled-with-colorful-balls.jpg?id=68398684&amp;width=1245&amp;height=700&amp;coordinates=0%2C0%2C0%2C1\" /><br /><br /><p><span>Video Friday is your weekly selection of awesome robotics videos, collected by your friends at </span><em>IEEE Spectrum</em><span> robotics. We also post a weekly calendar of upcoming robotics events for the next few months. Please </span><a href=\"mailto:automaton@ieee.org?subject=Robotics%20event%20suggestion%20for%20Video%20Friday\">send us your events</a><span> for inclusion.</span></p><h5><a href=\"https://www.corl.org/\">CoRL 2026</a>: 9–12 November 2026, AUSTIN</h5><h5><a href=\"https://2026.ieee-humanoids.org/\">Humanoids 2026</a>: 6–9 December 2026, SANTA CLARA, CA</h5><p>Enjoy today’s videos!</p><div class=\"horizontal-rule\"></div><div><span style=\"display: none;\"> </span></div><p class=\"rm-anchors\" id=\"vsqiozzff-g\">It’s possible that I wasn’t the only one who thought that <a href=\"https://spectrum.ieee.org/video-friday-bioinspired-robotics\" target=\"_blank\">Figure’s recent stunt</a> was somewhat ridiculous.</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>Devanthro is in fact selling these plastic balls for $1000 each, and they’ll arrive in time for Christmas.</p><p>[ <a href=\"https://devanthro.myshopify.com/\">Devanthro</a> ]</p><div class=\"horizontal-rule\"></div><p class=\"rm-anchors\" id=\"hfvuu1kmi-a\">Not that anyone uses ringtones anymore, but if we did, this would be absolutely everywhere and I’d be loving it.</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://pollen-robotics.com/\">Pollen</a> ]</p><div class=\"horizontal-rule\"></div><p class=\"rm-anchors\" id=\"lanimroojeo\">Let’s not get too excited, but this thread-like linear motor is pretty sweet.</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.75156\">Ecole Polytechnique Fédérale de Lausanne LMTS</a> ]</p><div class=\"horizontal-rule\"></div><p class=\"rm-anchors\" id=\"oejn1ggmsi8\">What is this robot for? It’s for doing exactly what you see here, that’s what it’s for.</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://rai-inst.com/resources/blog/introducing-exploy-simplifying-rl-policy-deployment-in-autonomous-robotics/\">RAI Institute</a> ]</p><div class=\"horizontal-rule\"></div><blockquote class=\"rm-anchors\" id=\"oxeomba-eew\"><em>Humanoid robots still struggle to plan contact-rich whole-body manipulation from egocentric RGB and proprioception. Workhorse learns such manipulation from robot-free human demonstrations. On a real Unitree G1, Workhorse sorts boxes with its hands and a kick, catches a thrown box, and topples and climbs a suitcase.</em></blockquote><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>Yeah that happens to me too when I have a communication failure.</p><p>[ <a href=\"https://hybridrobotics.github.io/workhorse/\">Hybrid Robotics</a> ]</p><div class=\"horizontal-rule\"></div><p class=\"rm-anchors\" id=\"vg9ycujrxag\">A car wash that models your vehicle then cleans it with robot arms? Interesting idea.</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>The recent reviews from this location suggest that the robots aren’t quite up to snuff yet, but really seems like there’s potential here.</p><p>[ <a href=\"https://www.kuka.com/en-us/industries/solutions-database/2026/09/touchless-car-washing-with-robots/\">KUKA</a> ]</p><div class=\"horizontal-rule\"></div><p class=\"rm-anchors\" id=\"_14hvdlehym\">So this is not the worst idea I’ve ever seen for what to do with humanoid robots.</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://www.ehangzhou.gov.cn/2026-10/08/c_299254.htm\">DEEP Robotics</a> ]</p><div class=\"horizontal-rule\"></div><p class=\"rm-anchors\" id=\"7owu19bs0zw\">Some lovely manipulation with a deceptively simple gripper.</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://generalistai.com/blog/gen-1.5\">Generalist</a> ]</p><div class=\"horizontal-rule\"></div><p class=\"rm-anchors\" id=\"ufoymnzvlvu\">I am genuinely embarrassed to say that this <a href=\"https://spectrum.ieee.org/how-boston-dynamics-taught-its-robots-to-dance\" target=\"_blank\">robot dances</a> better than I do.</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://generalroboticslab.com/CoDance\">General Robotics Lab</a> ]</p><div class=\"horizontal-rule\"></div><blockquote class=\"rm-anchors\" id=\"jwskw4u0-py\"><em>MIT researchers developed SANDO, a new navigation system that helps robots safely navigate unfamiliar environments while avoiding moving obstacles. The system can rapidly plan and adjust a collision-free path using onboard sensors and computing, with safety backed by mathematical guarantees.</em></blockquote><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://news.mit.edu/2026/planning-system-ensures-robots-flight-path-will-remain-collision-free-1007\">MIT News</a> ]</p><div class=\"horizontal-rule\"></div><p class=\"rm-anchors\" id=\"y1qepwfahu8\">Can you spot the part of this video that I’m side eyeing?</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>Yep, it’s where the middle clip starts after the hand already has a good grip on that peelable strip.</p><p>[ <a href=\"https://sanctuary.ai/\">Sanctuary AI</a> ]</p><div class=\"horizontal-rule\"></div><blockquote class=\"rm-anchors\" id=\"uhdcii-icjs\"><em>Inspired by feather stars, the NC State researchers report a soft underwater swimming robot capable of achieving three distinct swimming modes—jellyfish-like vertical swimming, fish-like directional steering, and rotor-like 3D reorientation—using only two pneumatic inputs.</em></blockquote><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://news.ncsu.edu/2026/10/feather-star-robot/\">NC State University</a> ]</p><div class=\"horizontal-rule\"></div><p class=\"rm-anchors\" id=\"pwuq4whzskm\">Here’s a series of mini-keynotes from ICRA earlier this year, on manipulation, humaonids, and embodied design.</p><p class=\"shortcode-media shortcode-media-youtube\"><span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span></p><p>[ <a href=\"https://2026.ieee-icra.org/program/keynote-sessions/\">ICRA 2026</a> ]</p><div class=\"horizontal-rule\"></div>",
+    "url": "https://spectrum.ieee.org/video-friday-reachy-mini-raps",
+    "published": "2026-10-09T15:30:02+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Groceryshop 2026 shows that retail robots are ready to scale, use AI",
+    "summary": "<p>Groceryshop 2026 not only featured mobile robots for taking inventory, but it also showed how retail automation is evolving.</p> <p>The post <a href=\"https://www.therobotreport.com/groceryshop-2026-shows-retail-robots-ready-scale-use-ai/\">Groceryshop 2026 shows that retail robots are ready to scale, use AI</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/groceryshop-2026-shows-retail-robots-ready-scale-use-ai/",
+    "published": "2026-10-09T12:25:47+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "SafeWorld emerges from stealth to build, deploy robot safety simulation technologies",
+    "summary": "<p>SafeWorld’s platform provides testing and simulation software to help enterprises evaluate and deploy robots safely and responsibly.</p> <p>The post <a href=\"https://www.therobotreport.com/safeworld-emerges-stealth-build-deploy-robot-safety-simulation-technologies/\">SafeWorld emerges from stealth to build, deploy robot safety simulation technologies</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/safeworld-emerges-stealth-build-deploy-robot-safety-simulation-technologies/",
+    "published": "2026-10-08T21:09:48+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Jabil discusses the pace of humanoid robot development and production",
+    "summary": "<p>Jabil, which is working with robot developers such as Apptronik, provides a design perspective on humanoid progress.</p> <p>The post <a href=\"https://www.therobotreport.com/jabil-discusses-pace-humanoid-robot-development-production/\">Jabil discusses the pace of humanoid robot development and production</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/jabil-discusses-pace-humanoid-robot-development-production/",
+    "published": "2026-10-08T16:16:21+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Helm.ai reaches $70M in signed commercial contracts for its foundation models",
+    "summary": "<p>Helm.ai trained its foundation models using its unsupervised 'deep teaching' methodology to master the structure of the physical world itself.</p> <p>The post <a href=\"https://www.therobotreport.com/helm-ai-reaches-70m-signed-commercial-contracts-foundation-models/\">Helm.ai reaches $70M in signed commercial contracts for its foundation models</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/helm-ai-reaches-70m-signed-commercial-contracts-foundation-models/",
+    "published": "2026-10-08T15:55:31+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "AWS launches open-source Physical AI Toolchain for robotics",
+    "summary": "<p>The toolchain combines AWS and NVIDIA tools for synthetic data generation, model training, simulation and validation, edge deployment, and continuous improvement.</p> <p>The post <a href=\"https://www.therobotreport.com/aws-launches-open-source-physical-ai-toolchain-for-robotics/\">AWS launches open-source Physical AI Toolchain for robotics</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/aws-launches-open-source-physical-ai-toolchain-for-robotics/",
+    "published": "2026-10-08T13:23:58+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://spectrum.ieee.org/feeds/topic/robotics.rss",
+    "feed_title": "",
+    "title": "This Disembodied Hand Is All the Robot You Need",
+    "summary": "<img src=\"https://spectrum.ieee.org/media-library/a-detached-robotic-hand-using-its-five-fingers-to-walk.jpg?id=68383398&amp;width=1245&amp;height=700&amp;coordinates=0%2C187%2C0%2C188\" /><br /><br /><p><a href=\"https://spectrum.ieee.org/biomimetic-anthropomorphic-robot-hand\" target=\"_blank\">A hand</a> attached to the end of an arm is a given for most humans, but what if robots didn’t have to play by the same rules as we do? Researchers from ETH Zurich have turned an off-the-shelf robotic hand into <a href=\"https://srl-ethz.github.io/website-fingers-as-legs/\" rel=\"noopener noreferrer\" target=\"_blank\">a completely self-contained robot</a> that walks on its fingertips while using those same fingers to manipulate its environment.</p><p>Besides making the perfect Halloween accessory for anyone planning to dress up as a member of the Addams Family—who were famously accompanied by a disembodied walking hand <a href=\"https://en.wikipedia.org/wiki/Thing_(The_Addams_Family)\" rel=\"noopener noreferrer\" target=\"_blank\">called Thing</a>—this robotic hand could make it possible to operate controls and handle objects in places a traditional robot arm can’t reach, the researchers say.</p><p class=\"shortcode-media shortcode-media-youtube\"> <span class=\"rm-shortcode\" style=\"display: block; padding-top: 56.25%;\"></span> <small class=\"image-media media-photo-credit\"><a href=\"https://www.youtube.com/watch?v=93BLyBPAfYs\" target=\"_blank\">Soft Robotics Lab, ETH Zurich/YouTube</a></small> </p><p><a href=\"https://srl.ethz.ch/the-group/people/amirhossein-kazemipour.html\" rel=\"noopener noreferrer\" target=\"_blank\">Amirhossein Kazemipour</a>, a Ph.D. candidate in the <a href=\"https://srl.ethz.ch/\" rel=\"noopener noreferrer\" target=\"_blank\">Soft Robotics Lab at ETH Zurich</a> who led the project, believes this hand could prove useful in contexts like fiddly maintenance tasks in industrial settings, or in search and rescue, where a robot could detach its hand to explore confined spaces too tight for the rest of its body. More broadly, he says, the work is a step toward a new approach to robotics in which body parts are not confined to a single role.</p><p>“I wanted to see how much a robotic hand could do without the rest of the robot,” Kazemipour told <em><em>IEEE Spectrum</em></em>. “Instead of having this traditional view of robotic parts, what if we could use those parts to do other tasks that they are not designed to do?”</p><p>This is <a href=\"https://spectrum.ieee.org/epfl-lasa\" target=\"_blank\">not the first attempt</a> to <a href=\"https://www.nature.com/articles/s41467-025-67675-8\" rel=\"noopener noreferrer\" target=\"_blank\">get a robot hand to walk</a>, but previous work has typically relied on specially designed hands. The ETH team instead decided to use off-the-shelf hardware from <a href=\"https://www.wuji.tech/en/\" rel=\"noopener noreferrer\" target=\"_blank\">Wuji Technology</a>, augmented with an 80-gram backpack containing a battery, an inertial measurement unit (IMU), and a Raspberry Pi Zero. Kazemipour says they decided to go with a commercial robot hand because they didn’t want to compromise on the hand’s manipulation capabilities. This introduced significant challenges, he adds, because a hand’s shape is optimized for grasping rather than crawling.</p><h2>How to Walk With Fingers</h2><p>To teach the hand to walk, the researchers trained a model in simulation using reinforcement learning—an approach in which models learn skills through many rounds of trial and error, receiving rewards for getting closer to the desired behavior along with penalties when they diverge from it. But Kazemipour says the unusual geometry of a hand meant they couldn’t just reuse methods used to train other kinds of legged robots. Standard quadrupeds or bipeds tend to be symmetrical on their left and right sides, which simplifies walking and balance, he says. Hands, in contrast, are not at all symmetrical, with fingers of different lengths and an opposable thumb.</p><p>In addition to rewards for moving at the right speed and in the right direction and penalties for things like wobbling or jerky movement, the team introduced a novel way to keep the hand in a crawling stance during the simulated training. To account for unequal digit length, they gave each finger its own target position relative to the palm, based on where it naturally sits when in the crawling posture. They then penalized the fingers for straying too far from that reference point, creating what they describe as “virtual springs” that pull the fingers back to the crawling stance. Crucially, the penalties for fingers moving forward and backward are significantly less than those for moving side to side, so taking steps in that way costs the hand very little compared with the rewards it receives for moving.</p><p>The team also trained separate models for skills like righting the hand when it falls over, pressing keys on a keyboard, and pushing objects to a target. All four models fit on the onboard computer, says Kazemipour, and the controller can switch between them as necessary. In real-world tests, the hand crawled across 14 different surfaces including smooth floors, metal grates, grass, and gravel. Other experiments confirmed that it could make both right and left turns, and hit an average speed of 9 centimeters per second. The hand was able to right itself in 21 of 25 trials. When given a video feed from an overhead camera, it even managed to autonomously push a 41-gram cube to targets up to 40 cm away 15 times in a row.</p><p>“What interests me most about this work is that the same fingers can move the hand, support its weight, and interact with its surroundings,” says <a href=\"https://www.rcast.u-tokyo.ac.jp/en/research/people/staff-inami_masahiko.html\" rel=\"noopener noreferrer\" target=\"_blank\">Masahiko Inami</a>, a professor at the University of Tokyo whose group has developed <a href=\"https://dl.acm.org/doi/10.1145/3745900.3746081\" rel=\"noopener noreferrer\" target=\"_blank\">hand-shaped walking robots</a>. He agrees that a mobile hand could be useful for reaching confined spaces and operating controls that an entire arm could not easily access, though he says practical deployment would require onboard perception and more robust navigation. <a href=\"https://smbys.github.io/#:~:text=Hideki%20Shimobayashi%20explores%20the%20Physical,of%20Tokyo%20(advised%20by%20Dr.\" rel=\"noopener noreferrer\" target=\"_blank\">Hideki Shimobayashi</a>, a Ph.D. student in Inami’s lab, also points out that walking puts very different loads on a hand compared to grasping, so durability may be a challenge.</p><p>However, <a href=\"https://www.me.columbia.edu/faculty/matei-ciocarlie\" rel=\"noopener noreferrer\" target=\"_blank\">Matei Ciocarlie</a>, an associate professor of mechanical engineering at Columbia University, says it’s a “cool result” that suggests robot hands don’t have to be restricted to the same capabilities as their human counterparts. “One can imagine an entirely new class of mobile manipulators that are simultaneously dexterous, able to traverse complex terrain, and able to manipulate payloads comparable in size to themselves,” he says.</p><p>Kazemipour sees his work as part of a longer-term vision for robots made up of parts that are not tied to a single job or even a single body plan, something he calls “autonomous modular embodiments.” “Robotic body parts should not be permanently assigned to a single function,” he says. “They can dynamically transition between roles, between being components of one embodiment system and autonomous agents, according to the task.”</p>",
+    "url": "https://spectrum.ieee.org/walking-robotic-hand",
+    "published": "2026-10-08T12:00:02+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "PTC acquisition positions Schneider Electric to challenge Siemens",
+    "summary": "<p>The Schneider Electric acquisition of PTC gives it a 'digital thread' from design through operations, but it needs to integrate data and software, says Interact Analysis.</p> <p>The post <a href=\"https://www.therobotreport.com/ptc-acquisition-positions-schneider-electric-challenge-siemens/\">PTC acquisition positions Schneider Electric to challenge Siemens</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/ptc-acquisition-positions-schneider-electric-challenge-siemens/",
+    "published": "2026-10-07T21:07:53+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Teradyne Robotics, Elite Robots settle cobot dispute",
+    "summary": "<p>Teradyne Robotics and Elite Robots have settled their software dispute, ending the legal case without disclosing the terms of the agreement.</p> <p>The post <a href=\"https://www.therobotreport.com/terayne-robotics-elite-robots-settle-cobot-dispute/\">Teradyne Robotics, Elite Robots settle cobot dispute</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/terayne-robotics-elite-robots-settle-cobot-dispute/",
+    "published": "2026-10-07T16:20:52+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://spectrum.ieee.org/feeds/topic/robotics.rss",
+    "feed_title": "",
+    "title": "HiPHI: A Large-Scale Benchmark for High-Precision Human Motion and Object Interaction",
+    "summary": "<img src=\"https://spectrum.ieee.org/media-library/noitom-robotics-logo-with-stylized-nr-monogram-on-transparent-background.png?id=68382308&amp;width=980\" /><br /><br /><p><span>This White Paper gives robotics researchers and engineers an overview of a new large-scale motion capture dataset built to close the data gap limiting humanoid robot learning. It also shows how policies trained on the dataset transfer to a real humanoid robot.</span></p><p><strong>What you will learn about: </strong></p><ul><li>Why humanoid robot learning, a central problem in embodied AI and Physical AI, needs data that internet video and existing motion capture datasets cannot provide. </li><li><span><span>How </span><span>FrameNet</span><span>, a linguistic framework for human action, can guide motion capture collection to systematically cover a broad range of whole-body motion.</span></span> </li><li><span><span>Why synchronized object trajectories and meshes make human-object interaction data useful for teaching </span><span>robots</span> real-world tasks such as carrying, pushing, and pulling.</span> </li><li><span>How reinforcement learning policies trained on this motion capture data improve with scale, and how sim-to-real transfer carries them onto a physical humanoid robot.</span></li></ul><div><a href=\"https://content.knowledgehub.wiley.com/hiphi-a-large-scale-benchmark-for-high-precision-human-motion-and-object-interaction/\" target=\"_blank\">Download this free whitepaper now!</a></div>",
+    "url": "https://content.knowledgehub.wiley.com/hiphi-a-large-scale-benchmark-for-high-precision-human-motion-and-object-interaction/",
+    "published": "2026-10-07T13:49:48+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Harmonic Drive to share how integrated actuators can reduce engineering at RoboBusiness",
+    "summary": "<p>Attendees will learn how integrated actuators can reduce engineering effort by simplifying system integration.</p> <p>The post <a href=\"https://www.therobotreport.com/harmonic-drive-share-how-integrated-actuators-reduce-engineering-robobusiness/\">Harmonic Drive to share how integrated actuators can reduce engineering at RoboBusiness</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/harmonic-drive-share-how-integrated-actuators-reduce-engineering-robobusiness/",
+    "published": "2026-10-07T12:24:09+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Boston Dynamics appoints former Amazon exec Rohit Prasad as new CEO",
+    "summary": "<p>Before Boston Dynamics, Prasad served as senior vice president and head scientist for Alexa and artificial general intelligence at Amazon.</p> <p>The post <a href=\"https://www.therobotreport.com/boston-dynamics-appoints-former-amazon-executive-rohit-prasad-new-ceo/\">Boston Dynamics appoints former Amazon exec Rohit Prasad as new CEO</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/boston-dynamics-appoints-former-amazon-executive-rohit-prasad-new-ceo/",
+    "published": "2026-10-06T21:00:30+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Pegasus 1.6 brings video understanding to physical AI, says TwelveLabs",
+    "summary": "<p>TwelveLabs says its Pegasus 1.6 model understands first-person video and supports workflows including labeling for robotics developers.</p> <p>The post <a href=\"https://www.therobotreport.com/pegasus-1-6-brings-video-understanding-physical-ai-says-twelvelabs/\">Pegasus 1.6 brings video understanding to physical AI, says TwelveLabs</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/pegasus-1-6-brings-video-understanding-physical-ai-says-twelvelabs/",
+    "published": "2026-10-06T20:07:48+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Sovereign AI, same landlord — thoughts on the physical AI race",
+    "summary": "<p>While physical AI architecture alternatives are growing in number, NVIDIA has taken a sovereign strategy to ensuring its role. </p> <p>The post <a href=\"https://www.therobotreport.com/sovereign-ai-same-landlord-thoughts-physical-ai-race/\">Sovereign AI, same landlord &#8212; thoughts on the physical AI race</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/sovereign-ai-same-landlord-thoughts-physical-ai-race/",
+    "published": "2026-10-06T17:47:50+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "FireDome builds autonomous ‘artillery’ for wildfire defense",
+    "summary": "<p>FireDome builds autonomous wildfire defense systems to protect communities and infrastructure before firefighters arrive.</p> <p>The post <a href=\"https://www.therobotreport.com/firedome-builds-autonomous-artillery-for-wildfire-defense/\">FireDome builds autonomous &#8216;artillery&#8217; for wildfire defense</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/firedome-builds-autonomous-artillery-for-wildfire-defense/",
+    "published": "2026-10-06T16:00:31+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Overview AI launches OV Spark line of AI inspection cameras",
+    "summary": "<p>The OV Spark and OV Spark Pro AI inspection cameras are available now through Overview AI and its distribution partners.</p> <p>The post <a href=\"https://www.therobotreport.com/overview-ai-launches-ov-spark-line-ai-inspection-cameras/\">Overview AI launches OV Spark line of AI inspection cameras</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/overview-ai-launches-ov-spark-line-ai-inspection-cameras/",
+    "published": "2026-10-06T14:51:48+00:00"
+  }
+]
