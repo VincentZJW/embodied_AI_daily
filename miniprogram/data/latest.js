@@ -1,6 +1,6 @@
 const latestArticle = {
-  "title": "具身智能中文日报｜2026-10-10",
-  "date": "2026-10-10",
+  "title": "具身智能中文日报｜2026-10-11",
+  "date": "2026-10-11",
   "subtitle": "聚焦VLA、Sim2Real、人形机器人，追踪论文、开源项目与产业动态。",
   "theme": "tech-dark",
   "accent_color": "#4F8CFF",
@@ -163,7 +163,7 @@ const latestArticle = {
     {
       "name": "zchoi/Awesome-Embodied-Robotics-and-Agent",
       "summary": "该项目可能聚焦视觉-语言-动作模型，主要语言为 未知。",
-      "why_follow": "仓库星标数约为 1898，可用于观察开源社区对视觉-语言-动作模型的实现方向。",
+      "why_follow": "仓库星标数约为 1899，可用于观察开源社区对视觉-语言-动作模型的实现方向。",
       "source_url": "https://github.com/zchoi/Awesome-Embodied-Robotics-and-Agent",
       "card_type": "开源项目卡",
       "importance_score": 84,
@@ -175,7 +175,7 @@ const latestArticle = {
     {
       "name": "zjwzcx/Awesome-Astra-Embodied-AI",
       "summary": "该项目可能聚焦人形机器人控制，主要语言为 未知。",
-      "why_follow": "仓库星标数约为 1112，可用于观察开源社区对人形机器人控制的实现方向。",
+      "why_follow": "仓库星标数约为 1123，可用于观察开源社区对人形机器人控制的实现方向。",
       "source_url": "https://github.com/zjwzcx/Awesome-Astra-Embodied-AI",
       "card_type": "开源项目卡",
       "importance_score": 85,
@@ -188,7 +188,7 @@ const latestArticle = {
     {
       "name": "leggedrobotics/pace-sim2real",
       "summary": "该项目可能聚焦仿真到真实迁移，主要语言为 Python。",
-      "why_follow": "仓库星标数约为 783，可用于观察开源社区对仿真到真实迁移的实现方向。",
+      "why_follow": "仓库星标数约为 786，可用于观察开源社区对仿真到真实迁移的实现方向。",
       "source_url": "https://github.com/leggedrobotics/pace-sim2real",
       "card_type": "开源项目卡",
       "importance_score": 81,
@@ -200,23 +200,22 @@ const latestArticle = {
   ],
   "industry_updates": [
     {
-      "title": "行业动态 1：人形机器人控制",
-      "summary": "该动态与人形机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "title": "行业动态 1：视觉-语言-动作模型",
+      "summary": "该动态与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://www.therobotreport.com/why-humanoid-robot-demos-still-fail-the-generalization-test/",
+      "source_url": "https://www.therobotreport.com/why-dexterity-is-physical-ai-real-bottleneck/",
       "card_type": "行业动态卡",
-      "importance_score": 90,
+      "importance_score": 86,
       "tags": [
         "具身智能",
-        "人形机器人",
-        "机器人"
+        "机器人视觉"
       ]
     },
     {
       "title": "行业动态 2：人形机器人控制",
       "summary": "该动态与人形机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://www.therobotreport.com/boston-dynamics-gives-more-insight-into-its-redesigned-humanoid-hand/",
+      "source_url": "https://www.therobotreport.com/why-humanoid-robot-demos-still-fail-the-generalization-test/",
       "card_type": "行业动态卡",
       "importance_score": 87,
       "tags": [
@@ -229,7 +228,7 @@ const latestArticle = {
       "title": "行业动态 3：人形机器人控制",
       "summary": "该动态与人形机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://spectrum.ieee.org/video-friday-reachy-mini-raps",
+      "source_url": "https://www.therobotreport.com/boston-dynamics-gives-more-insight-into-its-redesigned-humanoid-hand/",
       "card_type": "行业动态卡",
       "importance_score": 84,
       "tags": [
@@ -239,26 +238,27 @@ const latestArticle = {
       ]
     },
     {
-      "title": "行业动态 4：具身智能评测与数据集",
+      "title": "行业动态 4：人形机器人控制",
+      "summary": "该动态与人形机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
+      "source_url": "https://spectrum.ieee.org/video-friday-reachy-mini-raps",
+      "card_type": "行业动态卡",
+      "importance_score": 81,
+      "tags": [
+        "具身智能",
+        "人形机器人",
+        "机器人"
+      ]
+    },
+    {
+      "title": "行业动态 5：具身智能评测与数据集",
       "summary": "该动态与具身智能评测与数据集相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
       "source_url": "https://www.therobotreport.com/groceryshop-2026-shows-retail-robots-ready-scale-use-ai/",
       "card_type": "行业动态卡",
-      "importance_score": 77,
+      "importance_score": 74,
       "tags": [
         "具身智能"
-      ]
-    },
-    {
-      "title": "行业动态 5：仿真到真实迁移",
-      "summary": "该动态与仿真到真实迁移相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
-      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://www.therobotreport.com/safeworld-emerges-stealth-build-deploy-robot-safety-simulation-technologies/",
-      "card_type": "行业动态卡",
-      "importance_score": 77,
-      "tags": [
-        "具身智能",
-        "Sim2Real"
       ]
     }
   ],
@@ -423,36 +423,36 @@ const latestArticle = {
       "importance_score": 60
     },
     {
-      "name": "行业动态 1：人形机器人控制",
-      "url": "https://www.therobotreport.com/why-humanoid-robot-demos-still-fail-the-generalization-test/",
+      "name": "行业动态 1：视觉-语言-动作模型",
+      "url": "https://www.therobotreport.com/why-dexterity-is-physical-ai-real-bottleneck/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
       "name": "行业动态 2：人形机器人控制",
-      "url": "https://www.therobotreport.com/boston-dynamics-gives-more-insight-into-its-redesigned-humanoid-hand/",
+      "url": "https://www.therobotreport.com/why-humanoid-robot-demos-still-fail-the-generalization-test/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
       "name": "行业动态 3：人形机器人控制",
+      "url": "https://www.therobotreport.com/boston-dynamics-gives-more-insight-into-its-redesigned-humanoid-hand/",
+      "type": "行业动态",
+      "card_type": "来源链接卡",
+      "importance_score": 60
+    },
+    {
+      "name": "行业动态 4：人形机器人控制",
       "url": "https://spectrum.ieee.org/video-friday-reachy-mini-raps",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
-      "name": "行业动态 4：具身智能评测与数据集",
+      "name": "行业动态 5：具身智能评测与数据集",
       "url": "https://www.therobotreport.com/groceryshop-2026-shows-retail-robots-ready-scale-use-ai/",
-      "type": "行业动态",
-      "card_type": "来源链接卡",
-      "importance_score": 60
-    },
-    {
-      "name": "行业动态 5：仿真到真实迁移",
-      "url": "https://www.therobotreport.com/safeworld-emerges-stealth-build-deploy-robot-safety-simulation-technologies/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
