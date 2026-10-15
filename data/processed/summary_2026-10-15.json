@@ -14,16 +14,16 @@
         "已从 arXiv API 合规获取元数据。",
         "当前为规则摘要，未进行深度语义翻译。"
       ],
-      "url": "http://arxiv.org/abs/2610.18874v1"
+      "url": "http://arxiv.org/abs/2610.20609v1"
     },
     {
-      "title_zh": "论文 2：机器人基础模型",
-      "reason": "该论文与机器人基础模型相关，建议配置 OpenAI API Key 后生成更准确的中文精读摘要。",
+      "title_zh": "论文 2：扩散策略机器人控制",
+      "reason": "该论文与扩散策略机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文精读摘要。",
       "highlights": [
         "已从 arXiv API 合规获取元数据。",
         "当前为规则摘要，未进行深度语义翻译。"
       ],
-      "url": "http://arxiv.org/abs/2610.18873v1"
+      "url": "http://arxiv.org/abs/2610.20606v1"
     },
     {
       "title_zh": "论文 3：仿真到真实迁移",
@@ -32,89 +32,89 @@
         "已从 arXiv API 合规获取元数据。",
         "当前为规则摘要，未进行深度语义翻译。"
       ],
-      "url": "http://arxiv.org/abs/2610.18872v1"
+      "url": "http://arxiv.org/abs/2610.20579v1"
     },
     {
-      "title_zh": "论文 4：视觉-语言-动作模型",
-      "reason": "该论文与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文精读摘要。",
+      "title_zh": "论文 4：人形机器人控制",
+      "reason": "该论文与人形机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文精读摘要。",
       "highlights": [
         "已从 arXiv API 合规获取元数据。",
         "当前为规则摘要，未进行深度语义翻译。"
       ],
-      "url": "http://arxiv.org/abs/2610.18869v1"
+      "url": "http://arxiv.org/abs/2610.20552v1"
     },
     {
-      "title_zh": "论文 5：视觉-语言-动作模型",
-      "reason": "该论文与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文精读摘要。",
+      "title_zh": "论文 5：扩散策略机器人控制",
+      "reason": "该论文与扩散策略机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文精读摘要。",
       "highlights": [
         "已从 arXiv API 合规获取元数据。",
         "当前为规则摘要，未进行深度语义翻译。"
       ],
-      "url": "http://arxiv.org/abs/2610.18867v1"
+      "url": "http://arxiv.org/abs/2610.20524v1"
     }
   ],
   "github_projects": [
     {
       "name": "Genesis-Embodied-AI/genesis-world",
       "summary": "该项目可能聚焦仿真到真实迁移，主要语言为 Python。",
-      "why_follow": "仓库星标数约为 30058，可用于观察开源社区对仿真到真实迁移的实现方向。",
+      "why_follow": "仓库星标数约为 30064，可用于观察开源社区对仿真到真实迁移的实现方向。",
       "url": "https://github.com/Genesis-Embodied-AI/genesis-world"
     },
     {
       "name": "TianxingChen/Embodied-AI-Guide",
       "summary": "该项目可能聚焦人形机器人控制，主要语言为 未知。",
-      "why_follow": "仓库星标数约为 16454，可用于观察开源社区对人形机器人控制的实现方向。",
+      "why_follow": "仓库星标数约为 16484，可用于观察开源社区对人形机器人控制的实现方向。",
       "url": "https://github.com/TianxingChen/Embodied-AI-Guide"
     },
     {
       "name": "YanjieZe/awesome-humanoid-robot-learning",
       "summary": "该项目可能聚焦人形机器人控制，主要语言为 Python。",
-      "why_follow": "仓库星标数约为 2819，可用于观察开源社区对人形机器人控制的实现方向。",
+      "why_follow": "仓库星标数约为 2823，可用于观察开源社区对人形机器人控制的实现方向。",
       "url": "https://github.com/YanjieZe/awesome-humanoid-robot-learning"
     },
     {
       "name": "zchoi/Awesome-Embodied-Robotics-and-Agent",
       "summary": "该项目可能聚焦视觉-语言-动作模型，主要语言为 未知。",
-      "why_follow": "仓库星标数约为 1902，可用于观察开源社区对视觉-语言-动作模型的实现方向。",
+      "why_follow": "仓库星标数约为 1905，可用于观察开源社区对视觉-语言-动作模型的实现方向。",
       "url": "https://github.com/zchoi/Awesome-Embodied-Robotics-and-Agent"
     },
     {
       "name": "zjwzcx/Awesome-Astra-Embodied-AI",
       "summary": "该项目可能聚焦人形机器人控制，主要语言为 未知。",
-      "why_follow": "仓库星标数约为 1150，可用于观察开源社区对人形机器人控制的实现方向。",
+      "why_follow": "仓库星标数约为 1154，可用于观察开源社区对人形机器人控制的实现方向。",
       "url": "https://github.com/zjwzcx/Awesome-Astra-Embodied-AI"
     }
   ],
   "news": [
     {
-      "title_zh": "行业动态 1：机器人操作与抓取",
+      "title_zh": "行业动态 1：视觉-语言-动作模型",
+      "summary": "该动态与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
+      "url": "https://www.therobotreport.com/stryker-invests-400m-into-cmr-surgical/"
+    },
+    {
+      "title_zh": "行业动态 2：视觉-语言-动作模型",
+      "summary": "该动态与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
+      "url": "https://www.therobotreport.com/how-adi-is-helping-robotics-startups-scale-2/"
+    },
+    {
+      "title_zh": "行业动态 3：人形机器人控制",
+      "summary": "该动态与人形机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
+      "url": "https://www.therobotreport.com/agility-robotics-chooses-nyobolt-ultra-fast-charging-digit-5-humanoid/"
+    },
+    {
+      "title_zh": "行业动态 4：机器人操作与抓取",
       "summary": "该动态与机器人操作与抓取相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
       "url": "https://www.therobotreport.com/robobusiness-2026-panel-discusses-reshoring-with-robots/"
     },
     {
-      "title_zh": "行业动态 2：人形机器人控制",
+      "title_zh": "行业动态 5：人形机器人控制",
       "summary": "该动态与人形机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
       "url": "https://www.therobotreport.com/timken-precision-drives-puts-motion-challenge-first-humanoid-robots/"
-    },
-    {
-      "title_zh": "行业动态 3：仿真到真实迁移",
-      "summary": "该动态与仿真到真实迁移相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
-      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "url": "https://www.therobotreport.com/nysofa-expands-partnership-intuition-robotics-bring-elliq-more-seniors/"
-    },
-    {
-      "title_zh": "行业动态 4：仿真到真实迁移",
-      "summary": "该动态与仿真到真实迁移相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
-      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "url": "https://www.therobotreport.com/hello-robot-ak-robotics-discuss-how-robots-navigate-crowded-indoor-spaces-robobusiness/"
-    },
-    {
-      "title_zh": "行业动态 5：机器人操作与抓取",
-      "summary": "该动态与机器人操作与抓取相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
-      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics/"
     }
   ],
   "terms": [
@@ -147,27 +147,27 @@
   "sources": [
     {
       "name": "arXiv 论文 1",
-      "url": "http://arxiv.org/abs/2610.18874v1",
+      "url": "http://arxiv.org/abs/2610.20609v1",
       "type": "论文"
     },
     {
       "name": "arXiv 论文 2",
-      "url": "http://arxiv.org/abs/2610.18873v1",
+      "url": "http://arxiv.org/abs/2610.20606v1",
       "type": "论文"
     },
     {
       "name": "arXiv 论文 3",
-      "url": "http://arxiv.org/abs/2610.18872v1",
+      "url": "http://arxiv.org/abs/2610.20579v1",
       "type": "论文"
     },
     {
       "name": "arXiv 论文 4",
-      "url": "http://arxiv.org/abs/2610.18869v1",
+      "url": "http://arxiv.org/abs/2610.20552v1",
       "type": "论文"
     },
     {
       "name": "arXiv 论文 5",
-      "url": "http://arxiv.org/abs/2610.18867v1",
+      "url": "http://arxiv.org/abs/2610.20524v1",
       "type": "论文"
     },
     {
@@ -197,27 +197,27 @@
     },
     {
       "name": "RSS 动态 1",
-      "url": "https://www.therobotreport.com/robobusiness-2026-panel-discusses-reshoring-with-robots/",
+      "url": "https://www.therobotreport.com/stryker-invests-400m-into-cmr-surgical/",
       "type": "行业动态"
     },
     {
       "name": "RSS 动态 2",
-      "url": "https://www.therobotreport.com/timken-precision-drives-puts-motion-challenge-first-humanoid-robots/",
+      "url": "https://www.therobotreport.com/how-adi-is-helping-robotics-startups-scale-2/",
       "type": "行业动态"
     },
     {
       "name": "RSS 动态 3",
-      "url": "https://www.therobotreport.com/nysofa-expands-partnership-intuition-robotics-bring-elliq-more-seniors/",
+      "url": "https://www.therobotreport.com/agility-robotics-chooses-nyobolt-ultra-fast-charging-digit-5-humanoid/",
       "type": "行业动态"
     },
     {
       "name": "RSS 动态 4",
-      "url": "https://www.therobotreport.com/hello-robot-ak-robotics-discuss-how-robots-navigate-crowded-indoor-spaces-robobusiness/",
+      "url": "https://www.therobotreport.com/robobusiness-2026-panel-discusses-reshoring-with-robots/",
       "type": "行业动态"
     },
     {
       "name": "RSS 动态 5",
-      "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
+      "url": "https://www.therobotreport.com/timken-precision-drives-puts-motion-challenge-first-humanoid-robots/",
       "type": "行业动态"
     }
   ]
