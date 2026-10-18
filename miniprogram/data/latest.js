@@ -1,6 +1,6 @@
 const latestArticle = {
-  "title": "具身智能中文日报｜2026-10-17",
-  "date": "2026-10-17",
+  "title": "具身智能中文日报｜2026-10-18",
+  "date": "2026-10-18",
   "subtitle": "聚焦VLA、Sim2Real、人形机器人，追踪论文、开源项目与产业动态。",
   "theme": "tech-dark",
   "accent_color": "#4F8CFF",
@@ -138,7 +138,7 @@ const latestArticle = {
     {
       "name": "Genesis-Embodied-AI/genesis-world",
       "summary": "该项目可能聚焦仿真到真实迁移，主要语言为 Python。",
-      "why_follow": "仓库星标数约为 30071，可用于观察开源社区对仿真到真实迁移的实现方向。",
+      "why_follow": "仓库星标数约为 30080，可用于观察开源社区对仿真到真实迁移的实现方向。",
       "source_url": "https://github.com/Genesis-Embodied-AI/genesis-world",
       "card_type": "开源项目卡",
       "importance_score": 93,
@@ -150,7 +150,7 @@ const latestArticle = {
     {
       "name": "TianxingChen/Embodied-AI-Guide",
       "summary": "该项目可能聚焦人形机器人控制，主要语言为 未知。",
-      "why_follow": "仓库星标数约为 16513，可用于观察开源社区对人形机器人控制的实现方向。",
+      "why_follow": "仓库星标数约为 16522，可用于观察开源社区对人形机器人控制的实现方向。",
       "source_url": "https://github.com/TianxingChen/Embodied-AI-Guide",
       "card_type": "开源项目卡",
       "importance_score": 91,
@@ -163,7 +163,7 @@ const latestArticle = {
     {
       "name": "YanjieZe/awesome-humanoid-robot-learning",
       "summary": "该项目可能聚焦人形机器人控制，主要语言为 Python。",
-      "why_follow": "仓库星标数约为 2827，可用于观察开源社区对人形机器人控制的实现方向。",
+      "why_follow": "仓库星标数约为 2829，可用于观察开源社区对人形机器人控制的实现方向。",
       "source_url": "https://github.com/YanjieZe/awesome-humanoid-robot-learning",
       "card_type": "开源项目卡",
       "importance_score": 88,
@@ -176,7 +176,7 @@ const latestArticle = {
     {
       "name": "NVlabs/ProtoMotions",
       "summary": "该项目可能聚焦仿真到真实迁移，主要语言为 Python。",
-      "why_follow": "仓库星标数约为 2449，可用于观察开源社区对仿真到真实迁移的实现方向。",
+      "why_follow": "仓库星标数约为 2453，可用于观察开源社区对仿真到真实迁移的实现方向。",
       "source_url": "https://github.com/NVlabs/ProtoMotions",
       "card_type": "开源项目卡",
       "importance_score": 84,
@@ -188,7 +188,7 @@ const latestArticle = {
     {
       "name": "zchoi/Awesome-Embodied-Robotics-and-Agent",
       "summary": "该项目可能聚焦视觉-语言-动作模型，主要语言为 未知。",
-      "why_follow": "仓库星标数约为 1906，可用于观察开源社区对视觉-语言-动作模型的实现方向。",
+      "why_follow": "仓库星标数约为 1905，可用于观察开源社区对视觉-语言-动作模型的实现方向。",
       "source_url": "https://github.com/zchoi/Awesome-Embodied-Robotics-and-Agent",
       "card_type": "开源项目卡",
       "importance_score": 78,
@@ -203,7 +203,7 @@ const latestArticle = {
       "title": "行业动态 1：视觉-语言-动作模型",
       "summary": "该动态与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://www.therobotreport.com/adi-explains-the-race-to-make-ai-physical/",
+      "source_url": "https://www.therobotreport.com/how-to-choose-bldc-motor-robotic-arms-mobile-robots/",
       "card_type": "行业动态卡",
       "importance_score": 86,
       "tags": [
@@ -212,12 +212,24 @@ const latestArticle = {
       ]
     },
     {
-      "title": "行业动态 2：人形机器人控制",
+      "title": "行业动态 2：视觉-语言-动作模型",
+      "summary": "该动态与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
+      "source_url": "https://www.therobotreport.com/adi-explains-the-race-to-make-ai-physical/",
+      "card_type": "行业动态卡",
+      "importance_score": 83,
+      "tags": [
+        "具身智能",
+        "机器人视觉"
+      ]
+    },
+    {
+      "title": "行业动态 3：人形机器人控制",
       "summary": "该动态与人形机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
       "source_url": "https://www.therobotreport.com/rise-machines-canceled-why-humanoids-ai-are-helpers-not-enemies/",
       "card_type": "行业动态卡",
-      "importance_score": 87,
+      "importance_score": 84,
       "tags": [
         "具身智能",
         "人形机器人",
@@ -225,38 +237,26 @@ const latestArticle = {
       ]
     },
     {
-      "title": "行业动态 3：视觉-语言-动作模型",
+      "title": "行业动态 4：视觉-语言-动作模型",
       "summary": "该动态与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
       "source_url": "https://www.therobotreport.com/why-opportunity-charging-is-winning-as-robot-fleets-scale/",
       "card_type": "行业动态卡",
-      "importance_score": 80,
+      "importance_score": 77,
       "tags": [
         "具身智能",
         "机器人视觉"
       ]
     },
     {
-      "title": "行业动态 4：具身智能评测与数据集",
+      "title": "行业动态 5：具身智能评测与数据集",
       "summary": "该动态与具身智能评测与数据集相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
       "source_url": "https://www.therobotreport.com/massrobotics-opens-applications-healthcare-robotics-startup-catalyst-program/",
       "card_type": "行业动态卡",
-      "importance_score": 77,
+      "importance_score": 74,
       "tags": [
         "具身智能"
-      ]
-    },
-    {
-      "title": "行业动态 5：仿真到真实迁移",
-      "summary": "该动态与仿真到真实迁移相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
-      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://spectrum.ieee.org/video-friday-reconfigurable-robots",
-      "card_type": "行业动态卡",
-      "importance_score": 77,
-      "tags": [
-        "具身智能",
-        "Sim2Real"
       ]
     }
   ],
@@ -422,35 +422,35 @@ const latestArticle = {
     },
     {
       "name": "行业动态 1：视觉-语言-动作模型",
+      "url": "https://www.therobotreport.com/how-to-choose-bldc-motor-robotic-arms-mobile-robots/",
+      "type": "行业动态",
+      "card_type": "来源链接卡",
+      "importance_score": 60
+    },
+    {
+      "name": "行业动态 2：视觉-语言-动作模型",
       "url": "https://www.therobotreport.com/adi-explains-the-race-to-make-ai-physical/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
-      "name": "行业动态 2：人形机器人控制",
+      "name": "行业动态 3：人形机器人控制",
       "url": "https://www.therobotreport.com/rise-machines-canceled-why-humanoids-ai-are-helpers-not-enemies/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
-      "name": "行业动态 3：视觉-语言-动作模型",
+      "name": "行业动态 4：视觉-语言-动作模型",
       "url": "https://www.therobotreport.com/why-opportunity-charging-is-winning-as-robot-fleets-scale/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
-      "name": "行业动态 4：具身智能评测与数据集",
+      "name": "行业动态 5：具身智能评测与数据集",
       "url": "https://www.therobotreport.com/massrobotics-opens-applications-healthcare-robotics-startup-catalyst-program/",
-      "type": "行业动态",
-      "card_type": "来源链接卡",
-      "importance_score": 60
-    },
-    {
-      "name": "行业动态 5：仿真到真实迁移",
-      "url": "https://spectrum.ieee.org/video-friday-reconfigurable-robots",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
