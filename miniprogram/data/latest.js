@@ -1,6 +1,6 @@
 const latestArticle = {
-  "title": "具身智能中文日报｜2026-10-21",
-  "date": "2026-10-21",
+  "title": "具身智能中文日报｜2026-10-22",
+  "date": "2026-10-22",
   "subtitle": "聚焦VLA、Sim2Real、人形机器人，追踪论文、开源项目与产业动态。",
   "theme": "tech-dark",
   "accent_color": "#4F8CFF",
@@ -27,7 +27,7 @@ const latestArticle = {
     },
     {
       "title": "核心结论 2",
-      "content": "部分来源采集失败：论文数据：HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)",
+      "content": "部分来源采集失败：论文数据：arXiv API 当前限流，请稍后重试。",
       "card_type": "核心摘要卡",
       "importance_score": 93,
       "tags": [
@@ -62,7 +62,7 @@ const latestArticle = {
     {
       "name": "Genesis-Embodied-AI/genesis-world",
       "summary": "该项目可能聚焦仿真到真实迁移，主要语言为 Python。",
-      "why_follow": "仓库星标数约为 30094，可用于观察开源社区对仿真到真实迁移的实现方向。",
+      "why_follow": "仓库星标数约为 30101，可用于观察开源社区对仿真到真实迁移的实现方向。",
       "source_url": "https://github.com/Genesis-Embodied-AI/genesis-world",
       "card_type": "开源项目卡",
       "importance_score": 93,
@@ -72,10 +72,10 @@ const latestArticle = {
       ]
     },
     {
-      "name": "TianxingChen/Embodied-AI-Guide",
-      "summary": "该项目可能聚焦人形机器人控制，主要语言为 未知。",
-      "why_follow": "仓库星标数约为 16576，可用于观察开源社区对人形机器人控制的实现方向。",
-      "source_url": "https://github.com/TianxingChen/Embodied-AI-Guide",
+      "name": "YanjieZe/awesome-humanoid-robot-learning",
+      "summary": "该项目可能聚焦人形机器人控制，主要语言为 Python。",
+      "why_follow": "仓库星标数约为 2836，可用于观察开源社区对人形机器人控制的实现方向。",
+      "source_url": "https://github.com/YanjieZe/awesome-humanoid-robot-learning",
       "card_type": "开源项目卡",
       "importance_score": 91,
       "tags": [
@@ -85,12 +85,24 @@ const latestArticle = {
       ]
     },
     {
-      "name": "YanjieZe/awesome-humanoid-robot-learning",
-      "summary": "该项目可能聚焦人形机器人控制，主要语言为 Python。",
-      "why_follow": "仓库星标数约为 2833，可用于观察开源社区对人形机器人控制的实现方向。",
-      "source_url": "https://github.com/YanjieZe/awesome-humanoid-robot-learning",
+      "name": "NVlabs/ProtoMotions",
+      "summary": "该项目可能聚焦仿真到真实迁移，主要语言为 Python。",
+      "why_follow": "仓库星标数约为 2424，可用于观察开源社区对仿真到真实迁移的实现方向。",
+      "source_url": "https://github.com/NVlabs/ProtoMotions",
       "card_type": "开源项目卡",
-      "importance_score": 88,
+      "importance_score": 87,
+      "tags": [
+        "具身智能",
+        "Sim2Real"
+      ]
+    },
+    {
+      "name": "zjwzcx/Awesome-Astra-Embodied-AI",
+      "summary": "该项目可能聚焦人形机器人控制，主要语言为 未知。",
+      "why_follow": "仓库星标数约为 1189，可用于观察开源社区对人形机器人控制的实现方向。",
+      "source_url": "https://github.com/zjwzcx/Awesome-Astra-Embodied-AI",
+      "card_type": "开源项目卡",
+      "importance_score": 85,
       "tags": [
         "具身智能",
         "人形机器人",
@@ -98,60 +110,50 @@ const latestArticle = {
       ]
     },
     {
-      "name": "NVlabs/ProtoMotions",
-      "summary": "该项目可能聚焦仿真到真实迁移，主要语言为 Python。",
-      "why_follow": "仓库星标数约为 2433，可用于观察开源社区对仿真到真实迁移的实现方向。",
-      "source_url": "https://github.com/NVlabs/ProtoMotions",
+      "name": "StanfordVL/GibsonEnv",
+      "summary": "该项目可能聚焦仿真到真实迁移，主要语言为 C。",
+      "why_follow": "仓库星标数约为 947，可用于观察开源社区对仿真到真实迁移的实现方向。",
+      "source_url": "https://github.com/StanfordVL/GibsonEnv",
       "card_type": "开源项目卡",
-      "importance_score": 84,
+      "importance_score": 81,
       "tags": [
         "具身智能",
         "Sim2Real"
-      ]
-    },
-    {
-      "name": "zchoi/Awesome-Embodied-Robotics-and-Agent",
-      "summary": "该项目可能聚焦视觉-语言-动作模型，主要语言为 未知。",
-      "why_follow": "仓库星标数约为 1906，可用于观察开源社区对视觉-语言-动作模型的实现方向。",
-      "source_url": "https://github.com/zchoi/Awesome-Embodied-Robotics-and-Agent",
-      "card_type": "开源项目卡",
-      "importance_score": 78,
-      "tags": [
-        "具身智能",
-        "机器人视觉"
       ]
     }
   ],
   "industry_updates": [
     {
-      "title": "行业动态 1：视觉-语言-动作模型",
-      "summary": "该动态与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "title": "行业动态 1：人形机器人控制",
+      "summary": "该动态与人形机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://www.therobotreport.com/reservoir-launches-new-agricultural-robotics-incubator-for-washington-growers/",
+      "source_url": "https://www.therobotreport.com/agco-to-deploy-agility-digit-humanoid-in-kansas-factory/",
       "card_type": "行业动态卡",
-      "importance_score": 86,
+      "importance_score": 90,
       "tags": [
         "具身智能",
-        "机器人视觉"
+        "人形机器人",
+        "机器人"
       ]
     },
     {
-      "title": "行业动态 2：视觉-语言-动作模型",
-      "summary": "该动态与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "title": "行业动态 2：人形机器人控制",
+      "summary": "该动态与人形机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://www.therobotreport.com/robobusiness-rebrands-as-robotics-summit-expo-west/",
+      "source_url": "https://www.therobotreport.com/a-guide-to-day-2-of-robobusiness-2026/",
       "card_type": "行业动态卡",
-      "importance_score": 83,
+      "importance_score": 87,
       "tags": [
         "具身智能",
-        "机器人视觉"
+        "人形机器人",
+        "机器人"
       ]
     },
     {
       "title": "行业动态 3：视觉-语言-动作模型",
       "summary": "该动态与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://www.therobotreport.com/2027-trr50-robotics-innovation-awards-open-nominations/",
+      "source_url": "https://www.therobotreport.com/reservoir-launches-new-agricultural-robotics-incubator-for-washington-growers/",
       "card_type": "行业动态卡",
       "importance_score": 80,
       "tags": [
@@ -163,7 +165,7 @@ const latestArticle = {
       "title": "行业动态 4：视觉-语言-动作模型",
       "summary": "该动态与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://www.therobotreport.com/avenda-health-expands-unfold-ai-platform-support-intraoperative-prostate-cancer-care/",
+      "source_url": "https://www.therobotreport.com/robobusiness-rebrands-as-robotics-summit-expo-west/",
       "card_type": "行业动态卡",
       "importance_score": 77,
       "tags": [
@@ -175,7 +177,7 @@ const latestArticle = {
       "title": "行业动态 5：视觉-语言-动作模型",
       "summary": "该动态与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://www.therobotreport.com/a-guide-to-day-1-of-robobusiness-2026/",
+      "source_url": "https://www.therobotreport.com/2027-trr50-robotics-innovation-awards-open-nominations/",
       "card_type": "行业动态卡",
       "importance_score": 74,
       "tags": [
@@ -282,64 +284,64 @@ const latestArticle = {
       "importance_score": 78
     },
     {
-      "name": "TianxingChen/Embodied-AI-Guide",
-      "url": "https://github.com/TianxingChen/Embodied-AI-Guide",
-      "type": "GitHub",
-      "card_type": "来源链接卡",
-      "importance_score": 75
-    },
-    {
       "name": "YanjieZe/awesome-humanoid-robot-learning",
       "url": "https://github.com/YanjieZe/awesome-humanoid-robot-learning",
       "type": "GitHub",
       "card_type": "来源链接卡",
-      "importance_score": 72
+      "importance_score": 75
     },
     {
       "name": "NVlabs/ProtoMotions",
       "url": "https://github.com/NVlabs/ProtoMotions",
       "type": "GitHub",
       "card_type": "来源链接卡",
+      "importance_score": 72
+    },
+    {
+      "name": "zjwzcx/Awesome-Astra-Embodied-AI",
+      "url": "https://github.com/zjwzcx/Awesome-Astra-Embodied-AI",
+      "type": "GitHub",
+      "card_type": "来源链接卡",
       "importance_score": 69
     },
     {
-      "name": "zchoi/Awesome-Embodied-Robotics-and-Agent",
-      "url": "https://github.com/zchoi/Awesome-Embodied-Robotics-and-Agent",
+      "name": "StanfordVL/GibsonEnv",
+      "url": "https://github.com/StanfordVL/GibsonEnv",
       "type": "GitHub",
       "card_type": "来源链接卡",
       "importance_score": 66
     },
     {
-      "name": "行业动态 1：视觉-语言-动作模型",
-      "url": "https://www.therobotreport.com/reservoir-launches-new-agricultural-robotics-incubator-for-washington-growers/",
+      "name": "行业动态 1：人形机器人控制",
+      "url": "https://www.therobotreport.com/agco-to-deploy-agility-digit-humanoid-in-kansas-factory/",
       "type": "行业动态",
       "card_type": "来源链接卡",
-      "importance_score": 63
+      "importance_score": 67
     },
     {
-      "name": "行业动态 2：视觉-语言-动作模型",
-      "url": "https://www.therobotreport.com/robobusiness-rebrands-as-robotics-summit-expo-west/",
+      "name": "行业动态 2：人形机器人控制",
+      "url": "https://www.therobotreport.com/a-guide-to-day-2-of-robobusiness-2026/",
       "type": "行业动态",
       "card_type": "来源链接卡",
-      "importance_score": 60
+      "importance_score": 64
     },
     {
       "name": "行业动态 3：视觉-语言-动作模型",
-      "url": "https://www.therobotreport.com/2027-trr50-robotics-innovation-awards-open-nominations/",
+      "url": "https://www.therobotreport.com/reservoir-launches-new-agricultural-robotics-incubator-for-washington-growers/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
       "name": "行业动态 4：视觉-语言-动作模型",
-      "url": "https://www.therobotreport.com/avenda-health-expands-unfold-ai-platform-support-intraoperative-prostate-cancer-care/",
+      "url": "https://www.therobotreport.com/robobusiness-rebrands-as-robotics-summit-expo-west/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
       "name": "行业动态 5：视觉-语言-动作模型",
-      "url": "https://www.therobotreport.com/a-guide-to-day-1-of-robobusiness-2026/",
+      "url": "https://www.therobotreport.com/2027-trr50-robotics-innovation-awards-open-nominations/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
