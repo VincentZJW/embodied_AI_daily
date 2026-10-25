@@ -1,6 +1,6 @@
 {
-  "title": "具身智能中文日报｜2026-10-24",
-  "date": "2026-10-24",
+  "title": "具身智能中文日报｜2026-10-25",
+  "date": "2026-10-25",
   "subtitle": "聚焦VLA、Sim2Real、机器人基础模型，追踪论文、开源项目与产业动态。",
   "theme": "tech-dark",
   "accent_color": "#4F8CFF",
@@ -139,7 +139,7 @@
     {
       "name": "Genesis-Embodied-AI/genesis-world",
       "summary": "该项目可能聚焦仿真到真实迁移，主要语言为 Python。",
-      "why_follow": "仓库星标数约为 30115，可用于观察开源社区对仿真到真实迁移的实现方向。",
+      "why_follow": "仓库星标数约为 30118，可用于观察开源社区对仿真到真实迁移的实现方向。",
       "source_url": "https://github.com/Genesis-Embodied-AI/genesis-world",
       "card_type": "开源项目卡",
       "importance_score": 93,
@@ -149,10 +149,10 @@
       ]
     },
     {
-      "name": "Octoday-Hub/Embodied-AI",
+      "name": "TianxingChen/Embodied-AI-Guide",
       "summary": "该项目可能聚焦人形机器人控制，主要语言为 未知。",
-      "why_follow": "仓库星标数约为 2909，可用于观察开源社区对人形机器人控制的实现方向。",
-      "source_url": "https://github.com/Octoday-Hub/Embodied-AI",
+      "why_follow": "仓库星标数约为 16658，可用于观察开源社区对人形机器人控制的实现方向。",
+      "source_url": "https://github.com/TianxingChen/Embodied-AI-Guide",
       "card_type": "开源项目卡",
       "importance_score": 91,
       "tags": [
@@ -162,12 +162,25 @@
       ]
     },
     {
-      "name": "YanjieZe/awesome-humanoid-robot-learning",
-      "summary": "该项目可能聚焦人形机器人控制，主要语言为 Python。",
-      "why_follow": "仓库星标数约为 2848，可用于观察开源社区对人形机器人控制的实现方向。",
-      "source_url": "https://github.com/YanjieZe/awesome-humanoid-robot-learning",
+      "name": "Octoday-Hub/Embodied-AI",
+      "summary": "该项目可能聚焦人形机器人控制，主要语言为 未知。",
+      "why_follow": "仓库星标数约为 2923，可用于观察开源社区对人形机器人控制的实现方向。",
+      "source_url": "https://github.com/Octoday-Hub/Embodied-AI",
       "card_type": "开源项目卡",
       "importance_score": 88,
+      "tags": [
+        "具身智能",
+        "人形机器人",
+        "机器人"
+      ]
+    },
+    {
+      "name": "YanjieZe/awesome-humanoid-robot-learning",
+      "summary": "该项目可能聚焦人形机器人控制，主要语言为 Python。",
+      "why_follow": "仓库星标数约为 2853，可用于观察开源社区对人形机器人控制的实现方向。",
+      "source_url": "https://github.com/YanjieZe/awesome-humanoid-robot-learning",
+      "card_type": "开源项目卡",
+      "importance_score": 85,
       "tags": [
         "具身智能",
         "人形机器人",
@@ -180,34 +193,34 @@
       "why_follow": "仓库星标数约为 1907，可用于观察开源社区对视觉-语言-动作模型的实现方向。",
       "source_url": "https://github.com/zchoi/Awesome-Embodied-Robotics-and-Agent",
       "card_type": "开源项目卡",
-      "importance_score": 81,
+      "importance_score": 78,
       "tags": [
         "具身智能",
         "机器人视觉"
-      ]
-    },
-    {
-      "name": "zjwzcx/Awesome-Astra-Embodied-AI",
-      "summary": "该项目可能聚焦人形机器人控制，主要语言为 未知。",
-      "why_follow": "仓库星标数约为 1200，可用于观察开源社区对人形机器人控制的实现方向。",
-      "source_url": "https://github.com/zjwzcx/Awesome-Astra-Embodied-AI",
-      "card_type": "开源项目卡",
-      "importance_score": 82,
-      "tags": [
-        "具身智能",
-        "人形机器人",
-        "机器人"
       ]
     }
   ],
   "industry_updates": [
     {
-      "title": "行业动态 1：机器人基础模型",
+      "title": "行业动态 1：人形机器人控制",
+      "summary": "该动态与人形机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
+      "source_url": "https://www.therobotreport.com/teradyne-robotics-partners-sereact-scale-physical-ai-retail-logistics/",
+      "card_type": "行业动态卡",
+      "importance_score": 90,
+      "tags": [
+        "具身智能",
+        "人形机器人",
+        "机器人"
+      ]
+    },
+    {
+      "title": "行业动态 2：机器人基础模型",
       "summary": "该动态与机器人基础模型相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
       "source_url": "https://www.therobotreport.com/eka-robotics-raises-150m-scale-vision-force-action-model-robots/",
       "card_type": "行业动态卡",
-      "importance_score": 91,
+      "importance_score": 88,
       "tags": [
         "具身智能",
         "机器人基础模型",
@@ -215,23 +228,23 @@
       ]
     },
     {
-      "title": "行业动态 2：具身智能评测与数据集",
+      "title": "行业动态 3：具身智能评测与数据集",
       "summary": "该动态与具身智能评测与数据集相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
       "source_url": "https://www.therobotreport.com/webinar-discuss-how-fcc-robotics-ruling-affects-automation-buyers/",
       "card_type": "行业动态卡",
-      "importance_score": 83,
+      "importance_score": 80,
       "tags": [
         "具身智能"
       ]
     },
     {
-      "title": "行业动态 3：人形机器人控制",
+      "title": "行业动态 4：人形机器人控制",
       "summary": "该动态与人形机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
       "source_url": "https://www.therobotreport.com/generative-bionics-to-launch-physical-ai-data-factory-in-italy/",
       "card_type": "行业动态卡",
-      "importance_score": 84,
+      "importance_score": 81,
       "tags": [
         "具身智能",
         "人形机器人",
@@ -239,27 +252,15 @@
       ]
     },
     {
-      "title": "行业动态 4：仿真到真实迁移",
+      "title": "行业动态 5：仿真到真实迁移",
       "summary": "该动态与仿真到真实迁移相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
       "source_url": "https://spectrum.ieee.org/video-friday-rubiks-cube-robot",
       "card_type": "行业动态卡",
-      "importance_score": 80,
+      "importance_score": 77,
       "tags": [
         "具身智能",
         "Sim2Real"
-      ]
-    },
-    {
-      "title": "行业动态 5：视觉-语言-动作模型",
-      "summary": "该动态与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
-      "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://www.therobotreport.com/dream-labs-raises-90m-and-launches-dream-api/",
-      "card_type": "行业动态卡",
-      "importance_score": 74,
-      "tags": [
-        "具身智能",
-        "机器人视觉"
       ]
     }
   ],
@@ -396,6 +397,13 @@
       "importance_score": 63
     },
     {
+      "name": "TianxingChen/Embodied-AI-Guide",
+      "url": "https://github.com/TianxingChen/Embodied-AI-Guide",
+      "type": "GitHub",
+      "card_type": "来源链接卡",
+      "importance_score": 60
+    },
+    {
       "name": "Octoday-Hub/Embodied-AI",
       "url": "https://github.com/Octoday-Hub/Embodied-AI",
       "type": "GitHub",
@@ -417,43 +425,36 @@
       "importance_score": 60
     },
     {
-      "name": "zjwzcx/Awesome-Astra-Embodied-AI",
-      "url": "https://github.com/zjwzcx/Awesome-Astra-Embodied-AI",
-      "type": "GitHub",
+      "name": "行业动态 1：人形机器人控制",
+      "url": "https://www.therobotreport.com/teradyne-robotics-partners-sereact-scale-physical-ai-retail-logistics/",
+      "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
-      "name": "行业动态 1：机器人基础模型",
+      "name": "行业动态 2：机器人基础模型",
       "url": "https://www.therobotreport.com/eka-robotics-raises-150m-scale-vision-force-action-model-robots/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
-      "name": "行业动态 2：具身智能评测与数据集",
+      "name": "行业动态 3：具身智能评测与数据集",
       "url": "https://www.therobotreport.com/webinar-discuss-how-fcc-robotics-ruling-affects-automation-buyers/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
-      "name": "行业动态 3：人形机器人控制",
+      "name": "行业动态 4：人形机器人控制",
       "url": "https://www.therobotreport.com/generative-bionics-to-launch-physical-ai-data-factory-in-italy/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
     },
     {
-      "name": "行业动态 4：仿真到真实迁移",
+      "name": "行业动态 5：仿真到真实迁移",
       "url": "https://spectrum.ieee.org/video-friday-rubiks-cube-robot",
-      "type": "行业动态",
-      "card_type": "来源链接卡",
-      "importance_score": 60
-    },
-    {
-      "name": "行业动态 5：视觉-语言-动作模型",
-      "url": "https://www.therobotreport.com/dream-labs-raises-90m-and-launches-dream-api/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
