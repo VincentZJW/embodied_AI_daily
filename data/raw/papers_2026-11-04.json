@@ -1,0 +1,477 @@
+[
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.03647v1",
+    "title": "Pixel-UMI: Learning Environment-Aware Whole-Body Manipulation from Sensorized Human Demonstrations",
+    "abstract": "Sensorized human demonstrations offer scalable data for mobile manipulation, but embodiment differences complicate policy learning. We present Pixel-UMI, a pipeline for learning environment-aware whole-body policies from human data. We first introduce Environment-Aware Retargeting (EAR), which combines reconstructed scene geometry with demonstrated head and gripper trajectories to determine robot posture and generate collision-aware joint and base targets. Delay-calibrated action assignment converts these trajectories into actions. However, kinematic differences can leave residual pose errors, creating viewpoint mismatches between human demonstrations and robot observations. We therefore introduce Retargeting-Error-Aware Masking (REAM), which uses these errors during training to reduce reliance on mismatched views at deployment. Finally, because estimated actions cannot fully capture contact-rich interactions, we collect on-policy human corrections through DAgger to improve performance. We evaluate Pixel-UMI on five challenging tasks spanning articulated-object manipulation, deformable-object handling, constrained-space reaching, whole-body collision avoidance, and contact-rich bimanual coordination, achieving 87.0% average task progress. Video results are available at https://pixel-robot.com/pixel-umi",
+    "authors": [
+      "Jason Jingzhou Liu",
+      "Tony Tao",
+      "Deepak Pathak",
+      "Ruslan Salakhutdinov"
+    ],
+    "published": "2026-11-02T18:59:32+00:00",
+    "updated": "2026-11-02T18:59:32+00:00",
+    "url": "http://arxiv.org/abs/2611.03647v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.03647v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.CV",
+      "cs.LG",
+      "eess.SY"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.03648v1",
+    "title": "Pixel: A Co-Designed Full-Stack Robot System for Learning General-Purpose Mobile Manipulation",
+    "abstract": "General-purpose mobile manipulation requires a combination of capable robot hardware, scalable demonstration collection, expressive whole-body control, and effective policy learning. Yet these components are often developed independently, creating mismatches that limit the capabilities of the complete system. We present Pixel, a co-designed full-stack system for learning general-purpose mobile manipulation. Pixel combines a low-cost wheeled humanoid with human-aligned kinematics and compliant grippers, multiple teleoperation and robot-free human data-collection interfaces, a unified whole-body controller, and a common policy learning pipeline across human and robot demonstrations. A hierarchical learning stack further enables language-conditioned visuomotor control and long-horizon task execution. We evaluate the system across hardware, data collection, and policy learning, and demonstrate mobile-manipulation behaviors requiring dexterity, active perception, navigation, and whole-body coordination. We hope that Pixel provides an integrated and extensible foundation for studying how robot hardware, data, control, and learning can be designed together for robot learning. More results at https://pixel-robot.com/pixel",
+    "authors": [
+      "Tony Tao",
+      "Jason Jingzhou Liu",
+      "Ruslan Salakhutdinov",
+      "Deepak Pathak"
+    ],
+    "published": "2026-11-02T18:59:32+00:00",
+    "updated": "2026-11-02T18:59:32+00:00",
+    "url": "http://arxiv.org/abs/2611.03648v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.03648v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.CV",
+      "cs.LG",
+      "eess.SY"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.03646v1",
+    "title": "EgoActionBench: Benchmarking Dense Action Captioning for Egocentric Human Videos",
+    "abstract": "Learning from human data offers a scalable path toward embodied intelligence, yet it requires models to accurately understand fine-grained human actions from egocentric observations. However, existing benchmarks remain limited in action atomicity, temporal precision, and hand-action association. We introduce EgoActionBench, a benchmark that represents continuous human manipulation as temporally localized atomic actions associated with the left hand, right hand, or both hands. EgoActionBench contains 1,407 episodes with 41,132 human-refined action annotations. To evaluate such dense predictions, we propose an evaluation protocol that retrieves temporally eligible candidates, selects a prediction by content agreement, and scores semantic fidelity and temporal overlap alongside action precision and recall, jointly capturing what happens, when it happens, and which hand performs it. We benchmark 20 baseline models and systems on EgoActionBench and further adapt two backbones, Qwen3-VL-4B and LLaVA-OneVision-2-8B, through supervised fine-tuning followed by reinforcement learning on automatically annotated training episodes. EgoAction improves EgoActionScore by 15.9 and 23.2 points on the two backbones, and both adapted models outperform all open-source baselines. Our experiments reveal substantial limitations of current models in action atomicity, temporal precision, and hand-action association, highlighting the gap between general video understanding and the action understanding required for embodied intelligence.",
+    "authors": [
+      "Yujiao Shen",
+      "Jiahe Song",
+      "Haitian Li",
+      "Jingkang Yang",
+      "Ziwei Liu"
+    ],
+    "published": "2026-11-02T18:59:29+00:00",
+    "updated": "2026-11-02T18:59:29+00:00",
+    "url": "http://arxiv.org/abs/2611.03646v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.03646v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.03622v1",
+    "title": "D&A: Decoupling Description and Assessment Enables VLMs as Zero-Shot Robotic Reward Models",
+    "abstract": "Vision-Language Models (VLMs) hold promise for zero-shot video task-progress estimation in robot learning, yet existing frameworks frequently suffer from confirmation bias, hallucinating progress in failed executions due to implicit success assumptions or relative temporal ranking designs. Naive prompting of frontier models collapses into a binary success detector that fails to capture nuanced, non-linear progress and failures. While post-training approaches can mitigate this through explicit training, they demand expensive real-world robotics data and require computationally intensive post-training for every individual base model. To resolve these limitations, we introduce D&A (Describe & Assess): our approach decouples progress estimation into an objective, task-grounded textual description of scene dynamics followed by an assessment phase using explicit rubrics. By compelling the VLM to synthesize an explicit, text-based definition of absolute success before scoring, the framework anchors evaluations to an external, global criterion rather than the video's internal timeline. Empirical results demonstrate that our method calibrates zero-shot estimates and mitigates confirmation bias, providing fine-grained, partial progress metrics that accurately penalize failed executions while correctly interpolating successful runs. Being purely prompt-based, D&A generalizes across tasks, embodiments, and benchmarks---matching or surpassing post-trained reward models---and its reward estimates enable efficient downstream reinforcement learning.",
+    "authors": [
+      "Marius Memmel",
+      "Shawn Yin",
+      "Urvi Rutia",
+      "Angad Wadhwa",
+      "Eldon Li",
+      "Gavin Angeloff",
+      "Ankit Goyal",
+      "Jesse Zhang",
+      "Dieter Fox",
+      "Fabio Ramos",
+      "Anqi Li",
+      "Abhishek Gupta"
+    ],
+    "published": "2026-11-02T18:52:11+00:00",
+    "updated": "2026-11-02T18:52:11+00:00",
+    "url": "http://arxiv.org/abs/2611.03622v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.03622v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.CL",
+      "cs.LG",
+      "eess.SY"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.03501v1",
+    "title": "When Robots Outweigh Objects: How Inertia Mismatch Shapes Robot Policy Learning",
+    "abstract": "Conventional robot arms can be extremely heavy compared with the everyday objects they manipulate, creating a significant inertia mismatch at contact. Even a small accidental bump from a heavy arm can knock a light object out of place. Modern learning methods have nevertheless demonstrated a wide range of successful manipulation behaviors on these platforms, suggesting that even extreme inertia mismatch can be overcome with sufficient data. However, it remains unclear whether high inertia imposes a hidden cost on learning, potentially worsening scaling with data or lowering the performance ceiling of modern robot learning methods. We investigate this question through controlled simulation experiments that vary robot and object masses. We find that reinforcement learning succeeds across a broad range of mass combinations, while behavior cloning learns more reliable policies when a lighter robot manipulates a heavier object, and more data narrows the resulting gap without closing it. Behavior cloning likewise degrades on a simulated robot arm as its motors reflect more inertia through their gearing, even though its weight stays the same. Finally, because new hardware is rarely an option, we explore ways to lower contact inertia on the arm one already has, either by choosing a lower-inertia workspace before collecting data or by steering the demonstrator toward lower-inertia solutions of the task. In both simulated cases, the lower-inertia demonstrations are imitated more reliably. Project website: https://younghyopark.me/inertia-mismatch/",
+    "authors": [
+      "Younghyo Park",
+      "Antonia Bronars",
+      "Pulkit Agrawal"
+    ],
+    "published": "2026-11-02T17:40:05+00:00",
+    "updated": "2026-11-02T17:40:05+00:00",
+    "url": "http://arxiv.org/abs/2611.03501v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.03501v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.03168v1",
+    "title": "Rollout then Recycle: 3,718 Labelled Real-Robot Episodes from Benchmarking 7 Policies on 12 Tasks",
+    "abstract": "We release all 3,718 episodes from the ArmnetBench v0.1 evaluation (arXiv:2607.24481), which contains 600 teleoperated demonstrations and 3,118 rollouts of seven imitation-learning and vision-language-action policies on 12 tabletop tasks, recorded on low-cost SO-101 arms; 73% of the rollouts are failures. Every policy for a task was trained or fine-tuned on the same 50 demonstrations and rolled out on the same cell, so the corpus contains many policies' failures on shared tasks. An operator labelled every rollout successful, suboptimal or failure. Each episode has three camera views, joint states and actions and is available on the Hugging Face Hub in LeRobot v3.0 and a reward-model format. This note documents how the episodes were collected and the limitations that could affect their use.",
+    "authors": [
+      "Praveen Selvaraj",
+      "Lorenzo Uttini",
+      "Ville Kuosmanen"
+    ],
+    "published": "2026-11-02T14:08:08+00:00",
+    "updated": "2026-11-02T14:08:08+00:00",
+    "url": "http://arxiv.org/abs/2611.03168v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.03168v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.03163v1",
+    "title": "FineCraft: Enhancing VLA Models for Fine-Grained Manipulation",
+    "abstract": "Fine-grained manipulation couples instruction grounding, local visual precision, and sustained execution. We present FineCraft, a framework that adapts pretrained models for fine-grained manipulation in the MetaFine Challenge. A task-routed mixture of policies selects independently adapted DINOv2-DiT or pretrained $π_{0.5}$ policies through a common observation-action interface. Local visual features help identify the instructed object parts, demonstrations and expert continuations teach the required actions, and new observations guide replanning during execution. FineCraft ranks fourth with an overall score of $0.878$, exceeding the published reference on all five tasks. Official results and local diagnostics characterize performance across visual perturbations, instruction changes, and multi-stage manipulation. Code is available at https://github.com/eqcy/FineCraft",
+    "authors": [
+      "Shuaike Zhang",
+      "Ziheng Quan",
+      "Junhao Ran",
+      "Muhe Ding",
+      "Shaokun Wang",
+      "Jianlong Wu"
+    ],
+    "published": "2026-11-02T14:03:49+00:00",
+    "updated": "2026-11-02T14:03:49+00:00",
+    "url": "http://arxiv.org/abs/2611.03163v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.03163v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.03138v1",
+    "title": "KlaskTron: An Open-Source Platform for Physical Adversarial Multi-Agent RL",
+    "abstract": "Progress in robot learning, particularly physical multi-agent reinforcement learning (MARL), is currently challenged by a limited availability of accessible, standardized benchmarks. While simulation-based MARL has produced remarkable emergent behaviors, from coordinated team play to complex tool use, translating these advances to physical systems remains difficult. A key barrier is infrastructural: physical platforms are often prohibitively expensive, require specialized facilities, or lack open mechanisms and designs for reproducibility. We introduce KlaskTron, an open-source, low-cost (<\\$2500 USD), desktop-scale robotic testbed for adversarial MARL based on the dynamic tabletop game KLASK. The platform features dual CoreXY gantries with high-torque brushless motors, enabling the high-speed, precise manipulation required for competitive play. Crucially, we provide a complete ecosystem: hardware designs (CAD, BOM), a GPU-native digital twin in NVIDIA Isaac Lab for high-fidelity modeling and simulation, and a validated sim-to-real baseline using a learned neural actuator model. We demonstrate that this baseline enables zero-shot policy transfer, with trained agents exhibiting emergent adversarial behaviors. To ensure full reproducibility of our results, all project assets are released publicly: hardware CAD/BOM and assembly documentation at [https://idscethzurich.github.io/klask_hardware], inference software stack at [https://github.com/IDSCETHZurich/klask_software] and the simulation and MARL setup at [https://github.com/IDSCETHZurich/klask_rl].",
+    "authors": [
+      "Aswin Ramachandran",
+      "Jona Schulz",
+      "Maurus Derungs",
+      "Carlo Angelini",
+      "Tobias Meier",
+      "Raffaello D'Andrea"
+    ],
+    "published": "2026-11-02T13:49:53+00:00",
+    "updated": "2026-11-02T13:49:53+00:00",
+    "url": "http://arxiv.org/abs/2611.03138v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.03138v1",
+    "categories": [
+      "cs.RO",
+      "cs.AR",
+      "cs.MA"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.03103v1",
+    "title": "VLALagBench: Understanding When and Why VLA Inference Latency Matters",
+    "abstract": "Vision-language-action (VLA) models offer a promising path toward general-purpose robot manipulation. While inference latency can affect task success in a constantly evolving physical world, the relationship between latency and task success rate remains poorly understood. In this paper, we introduce VLALagBench, a comprehensive benchmark for studying VLA inference latency sensitivity across task types, object speeds, execution modes (synchronous and asynchronous), and VLA policies. Using VLALagBench, we find that even a modest inference latency of 100 ms can nearly halve task success on moving targets, with sensitivity varying substantially across tasks and policies. These differences reflect task-specific requirements for precision and continuous motion. By overlapping inference with action execution, asynchronous execution can recover some of the lost success at the cost of more frequent inference requests. Building on these findings, we develop an empirical model that predicts task success from limited calibration data, achieving root-mean-square prediction errors of only 5.7-7.8% across various VLA policies. Given an inference system's latency and per-robot throughput, these predictions guide the selection of system-specific VLA algorithm configurations to maximize task success. We believe VLALagBench and these findings provide a solid foundation for future robotics algorithm-system co-design.",
+    "authors": [
+      "Qi Wen",
+      "Borui Xu",
+      "Hussein Amro",
+      "Hongshi Tan",
+      "Hanmin Lin",
+      "Chaoyi Ruan",
+      "Shanghao Liu",
+      "Gang Yang",
+      "Yuejiang Liu",
+      "Jiafei Duan",
+      "Bingsheng He",
+      "Jason Clemons",
+      "Christos Kozyrakis",
+      "Wenqi Jiang"
+    ],
+    "published": "2026-11-02T13:18:36+00:00",
+    "updated": "2026-11-02T13:18:36+00:00",
+    "url": "http://arxiv.org/abs/2611.03103v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.03103v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.03063v1",
+    "title": "Networked AI: Architecture, Theory, and Applications",
+    "abstract": "Recent advances in Artificial Intelligence (AI), particularly large-scale deep learning, have been driven by monolithic or offline training on massive curated datasets. While successful, these approaches face structural limitations: escalating data and computational demands, limited online adaptability, and a lack of system-level intelligence in open, non-stationary environments. This paper presents Networked AI - a networked intelligent system composed of interacting, heterogeneous, and continuously evolving AI agents. We establish a hierarchical layered architecture comprising an Agent Layer for heterogeneous capability construction, an Interaction Layer for signal-processing-guided online data extraction, and a Regulation Layer for stability-constrained collective evolution. Foundations in data science, signal processing, and system control are hereby synthesized into a unified theoretical framework of Networked AI, providing superior data efficiency, intelligence efficiency, interpretability, and scalability. Theoretical and experimental analysis demonstrates that Networked AI can approach near-linear scaling in resource demand, in contrast to the exponential increase in standalone end-to-end systems. It provides not only online adaptation to out-of-distribution environmental novelties, but also the autonomous evolution towards application-specific intelligence. Application frontiers are discussed for IoT spaces, embodied, spatial, and industrial intelligences, as well as the cellular infrastructure and beyond. Key open challenges are identified towards realizing locally autonomous, collectively intelligent, continuously evolving, globally regulated Networked AI.",
+    "authors": [
+      "Liang Song",
+      "Jiayue Jin",
+      "Peng Sun",
+      "Di Li",
+      "Yang Liu",
+      "Athanassios Skodras",
+      "Dimitris Ampeliotis",
+      "Yong Yuan",
+      "Amit Dvir",
+      "Jiangchuan Liu",
+      "Victor C. M. Leung",
+      "Qi Bi"
+    ],
+    "published": "2026-11-02T12:52:41+00:00",
+    "updated": "2026-11-02T12:52:41+00:00",
+    "url": "http://arxiv.org/abs/2611.03063v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.03063v1",
+    "categories": [
+      "cs.AI",
+      "cs.NI"
+    ],
+    "primary_category": "cs.AI"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.02968v1",
+    "title": "ReContact: Reconstruct and Retarget Human Contacts from Video for Contact-Rich Humanoid Manipulation",
+    "abstract": "Contact transitions allow humanoid robots to redistribute object support across the whole body, enabling manipulation beyond hand-only grasps. Human videos provide a scalable source of such transitions for robots to learn from. However, body occlusion disrupts object pose tracking and corrupts retargeted motion. Moreover, accurately reproducing the object trajectory does not ensure that the robot applies stabilizing forces at the intended contacts, risking slips or drops in later phases. To address these challenges, we propose ReContact, which reconstructs and retargets human-object interactions through an object-centric contact plan. The plan specifies contact phases, contact pairs, anchors, pressing directions, and sticking or sliding modes. Contact priors stabilize object pose reconstruction through occlusion. A residual policy over a frozen whole-body tracker is rewarded for making contact at planned anchors with forces aligned to the specified directions. In simulation, on a thigh-supported regrasp task, ReContact achieves the planned two-palm bottom hold in 83.5 of episodes over three training seeds, versus 0.16% for the best adapted baseline. One policy trained on 247 references re-solved for new placements raises in-workspace tube-transfer success from 20.4% (source reference only) to 97.8%. On a real Unitree G1, policies execute seven contact-rich manipulation and two loco-manipulation tasks.",
+    "authors": [
+      "Zhongkai Gu",
+      "Yang Liu",
+      "Wei Zhu",
+      "Mitsuhiro Hayashibe"
+    ],
+    "published": "2026-11-02T11:36:51+00:00",
+    "updated": "2026-11-02T11:36:51+00:00",
+    "url": "http://arxiv.org/abs/2611.02968v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.02968v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.02930v1",
+    "title": "PointPilot: Unified Robotic Manipulation via Object-Centric 3D Point Flow Prediction",
+    "abstract": "Generalization remains a central challenge in robotics, calling for policies that address domain variations from multiple dimensions such as diverse embodiments, camera poses, and/or scene layouts. In order to approach this problem, we introduce PointPilot, a task-focused and 3D aligned manipulation framework built on a 3D space point-flow prediction. Rather than modeling the global scene, PointPilot only represents task-focused objects (robot grippers treated as objects), avoiding the prediction of potentially redundant scene parts unrelated to the manipulation tasks. Moreover, PointPilot aligns 3D spatial representation in one unified coordinate and supports closed-loop and fully automatic action execution across different manipulation modes from object point flow without a separately trained action expert, while existing works typically need an extra action head or are (semi-)automatic and single-arm mode specific. Given sensor observations and language instructions, our model jointly learns subtask planning, task-relevant object grounding, and 3D point flow prediction in an end-to-end way. By processing heterogeneous data in a shared 3D point flow space, PointPilot is able to absorb demonstrations from different embodiments. Extensive simulative and real world experiments validate our method. Notably, we demonstrate zero-shot embodiment generalization with PointPilot. A single trained policy can be deployed on previously unseen embodiments and successfully complete manipulation tasks without any additional fine-tuning.",
+    "authors": [
+      "Yihan Fang",
+      "Yuxin Tian",
+      "Ruixiang Wang",
+      "Zhanqi Zhang",
+      "Xing Hu",
+      "Zhen Yang",
+      "Huayi Zhou",
+      "Yongyi Su",
+      "Wei Gao",
+      "Kui Jia"
+    ],
+    "published": "2026-11-02T10:58:29+00:00",
+    "updated": "2026-11-02T10:58:29+00:00",
+    "url": "http://arxiv.org/abs/2611.02930v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.02930v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.02902v1",
+    "title": "TailorRig: Controllable and Structured Auxiliary Skeleton Generation for Garment-Aware Rigging",
+    "abstract": "Humanoid rigging for modern characters with complex garments remains challenging due to the need for dense auxiliary skeletons and precise skinning control. Existing automatic methods primarily recover rigs from geometry, providing limited artist control over auxiliary articulation and often lacking explicit semantic or kinematic-chain structure for dense garment bones, leading to instability and weight bleeding. We present TailorRig, a framework that reformulates garment-aware humanoid rigging as a structured, controllable full-rig generation problem. This formulation shifts the goal from automatic rig recovery to artist-driven rig authoring, where both body-template compatibility and auxiliary articulation are explicit design choices. TailorRig exposes two explicit axes of artist control within a unified framework: a user-specified body skeleton template that preserves body-rig compatibility, and artist-provided semantic labels that drive an autoregressive generator to synthesize requested category-specific auxiliary bone chains. To robustly assign skinning weights under dense skeletal configurations, we further introduce a hierarchical chain-to-bone formulation: vertices are first associated to a kinematic chain, and bone weights are then refined within that chain, reducing weight bleeding between spatially adjacent but semantically unrelated structures. We evaluate TailorRig on a diverse set of characters and introduce Human-Mix, a large-scale dataset of over 38,000 humanoid models curated for garment-aware rigging. Experiments show that TailorRig improves skeleton accuracy, deformation stability, controllability, and practical usability over existing methods.",
+    "authors": [
+      "Yajing Chen",
+      "Xin Chen",
+      "Saidan Lu",
+      "Yeqi Yuan",
+      "Weikai Chen",
+      "Changyu Hu",
+      "Cheng Zeng",
+      "Xin Wang"
+    ],
+    "published": "2026-11-02T10:34:54+00:00",
+    "updated": "2026-11-02T10:34:54+00:00",
+    "url": "http://arxiv.org/abs/2611.02902v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.02902v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.02871v1",
+    "title": "ReGATE: Recurrent Gated Visual Fusion for Reactive Humanoid-Object Interaction",
+    "abstract": "Humanoid loco-manipulation requires coordinating object acquisition, transport, and release from onboard sensing while responding to user commands and incomplete visual observations. We present ReGATE, a whole-body controller that combines egocentric depth, proprioception, and online locomotion and contact commands. Built on a teacher-student framework, ReGATE integrates interaction-state estimation through a recurrent adapter that predicts object geometry and physical contact without an external object-pose estimator. Head-wise and global gates regulate visual updates to a proprioceptive pathway. A visual-grounding and corruption curriculum trains the adapter, while phase-aware initialization increases coverage of brief contact transitions. In simulation, ReGATE achieves 85.2% success across 330 static-object acquisition trials, compared with 48.5% for VisualMimic under the same protocol, and 85.9% across 440 moving-object acquisition trials. Deployment on a Unitree G1 demonstrates commanded grasp-transport-release sequences and acquisition of laterally displaced boxes. A qualitative hardware experiment further demonstrates successful box acquisition when the camera is occluded after an initial observation and before the contact command. To the best of our knowledge, this is the first work to extend recurrent gated fusion of onboard depth and proprioception from perceptive locomotion to humanoid loco-manipulation under interrupted visual sensing.",
+    "authors": [
+      "Hao Zhu",
+      "Jorge Peña-Queralta"
+    ],
+    "published": "2026-11-02T10:10:46+00:00",
+    "updated": "2026-11-02T10:10:46+00:00",
+    "url": "http://arxiv.org/abs/2611.02871v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.02871v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.02777v1",
+    "title": "Beyond Policy Patches: Distilling RL Specialists into Vision-Language-Action Policies",
+    "abstract": "Vision-language-action (VLA) policies can handle noncritical stages of long-horizon manipulation yet fail during short precision-critical phases. Lightweight reinforcement learning (RL) specialists can address these failures without directly applying RL to the full VLA, but retain auxiliary controllers and switching mechanisms at deployment. We study how to transfer their capabilities into a single flow-matching VLA. Direct imitation of specialist rollouts can reproduce action jitter and leave the VLA unprepared for states encountered during its own execution. We introduce REPAIR, a value-guided distillation framework that combines offline initialization with on-policy refinement. At each critical-phase observation, REPAIR queries the corresponding specialist for multiple action candidates and weights them using its critic to construct a supervision distribution. A shared weighted flow-matching objective trains the VLA first on observations from specialist-assisted rollouts, then on observations collected through its own execution. Specialists provide supervision without taking control during on-policy collection and are removed at deployment. Across six real-robot tasks with 30 evaluation trials per task, REPAIR achieves 100% success on all six tasks, with lower mean end-effector jerk than specialist-assisted execution on every task.",
+    "authors": [
+      "Zhennan Jiang",
+      "Tingying Xie",
+      "Shilong Ji",
+      "Shu'ang Yu",
+      "Tianxing Zhou",
+      "Yuhui Chen",
+      "Jiahuan Gao",
+      "Kaizhi Xie",
+      "Yuanfan Xu",
+      "Feng Gao",
+      "Yu Wang",
+      "Haoran Li",
+      "Dongbin Zhao",
+      "Chao Yu"
+    ],
+    "published": "2026-11-02T08:53:49+00:00",
+    "updated": "2026-11-02T08:53:49+00:00",
+    "url": "http://arxiv.org/abs/2611.02777v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.02777v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.02677v1",
+    "title": "Visuo-tactile Diffusion Policy for Robotic Manipulation with Auxiliary Tactile Dynamics Prediction",
+    "abstract": "Long-horizon robotic assembly requires reliable perception and action across grasping, alignment, and insertion. Vision captures global object pose and scene context, where as fingertip touch provides local contact cues that are especially useful as contact states change. We present a visuotactile diffusion policy that combines four-step histories from two camera views and two fingertip tactile images to condition action-sequence generation. A recurrent temporal representation integrates recent observations from both modalities. To encourage it to capture how contact evolves under action, an auxiliary objective predicts fingertip-image changes two steps ahead from the temporal representation and demonstrated actions. This objective is used only during training and adds no inference-time computation. Across three independent training seeds in MuJoCo assembly experiments, the full model achieves an average success rate of $59.0\\% \\pm 2.6\\%$, improving on the visual-only baseline ($42.7\\% \\pm 1.5\\%$) by 16.3 percentage points.",
+    "authors": [
+      "Kaihong Ouyang",
+      "Zihao Su",
+      "Chengxuan Zheng",
+      "Weiyi Lai",
+      "Dong Zhou"
+    ],
+    "published": "2026-11-02T07:32:10+00:00",
+    "updated": "2026-11-02T07:32:10+00:00",
+    "url": "http://arxiv.org/abs/2611.02677v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.02677v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.02660v1",
+    "title": "HeLM: Hierarchical Explicit Language Memory for Non-Markovian Manipulation",
+    "abstract": "Recent advances in Vision-Language-Action (VLA) models have enabled fine manipulation capabilities, yet performing tasks that require working memory remains a key challenge. Most existing VLA architectures operate under a Markovian assumption, mapping only the current observation to an action, which leads to failure in non-Markovian environments. Inspired by the human 'inner monologue', we propose Hierarchical Explicit Language Memory (HeLM), a hierarchical VLA framework that maintains task-relevant history in explicit language through factorized event detection and event-triggered memory updates. We evaluate HeLM across 10 non-Markovian real-world tasks with 56 variants, including five newly formulated inter-episode tasks that require persistent context across task boundaries. HeLM improves intra-episode success by 12.8 percentage points over the strongest baseline and achieves 78% subtask success on compositional generalization tasks, while using up to 4.5x less memory and running 2.5x faster than the keyframe baseline at long horizons.",
+    "authors": [
+      "Gyeonghun Kim",
+      "Donghoon Kim",
+      "Minsoo Choi",
+      "Suyun Lee"
+    ],
+    "published": "2026-11-02T07:20:12+00:00",
+    "updated": "2026-11-02T07:20:12+00:00",
+    "url": "http://arxiv.org/abs/2611.02660v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.02660v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.02629v1",
+    "title": "DexArena: A Unified Benchmark for Long-Horizon Dexterous Manipulation",
+    "abstract": "Long-horizon dexterous manipulation remains a fundamental challenge for robot learning, requiring the composition of multiple skills, precise bimanual coordination, generalizable visual understanding, and robust skill transitions. Yet existing manipulation benchmarks largely emphasize isolated skills or support only a limited range of end-effectors, making these capabilities difficult to evaluate systematically. We introduce DexArena, a benchmark designed to evaluate learning and generalization in long-horizon bimanual dexterous manipulation. DexArena features 10 long-horizon tasks and 30 stage-level tasks spanning diverse household and industrial scenarios. Each long-horizon task is composed of explicitly defined stages with physically grounded success conditions, enabling reliable evaluation of both intermediate progress and end-to-end task completion. A unified benchmark interface and verified human-teleoperated demonstrations enable testing different policy learning algorithms, with standardized simulation configurations, scene randomization, trajectory replay, and task-level evaluation. Through extensive baseline experiments, we identify substantial challenges in precise manipulation, generalization to scene variation, and skill composition. DexArena establishes a challenging and reproducible benchmark for developing robot learning methods that move toward generalizable long-horizon dexterous behavior.",
+    "authors": [
+      "Haonan Ping",
+      "Jianshu Hu",
+      "Yimin Wang",
+      "Yi Zhu",
+      "Pai Liang",
+      "Qiyan Jin",
+      "Qirui Bao",
+      "Ying Qian",
+      "Xinyang Ding",
+      "Hongfei Qiao",
+      "Tianle Xue",
+      "Yucheng Bai",
+      "Soo Wei Jie",
+      "Shuguang Li",
+      "Yutong Ban"
+    ],
+    "published": "2026-11-02T06:54:36+00:00",
+    "updated": "2026-11-02T06:54:36+00:00",
+    "url": "http://arxiv.org/abs/2611.02629v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.02629v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.02613v1",
+    "title": "MAPO: Mixture of Experts with Alternating Policy Optimization for Universal Humanoid Motion Tracking",
+    "abstract": "Universal humanoid motion tracking is essential for enabling humanoid robots to perform diverse tasks in human environments. To capture the wide diversity of human motions, mixture-of-experts (MoE) policies have been widely adopted, leveraging dynamic routing to enhance policy expressiveness. However, we identify that divergence between old and updated policies can be misestimated during policy-gradient updates of MoE policies, due to their dynamic routing. Because most policy-gradient algorithms regulate policy updates based on the divergence, this misestimation can lead to either overly conservative or excessively large updates, which can yield a suboptimal policy. In this paper, we propose Mixture of Experts with Alternating Policy Optimization (MAPO), which alternately optimizes the router and the experts to avoid the divergence misestimation. MAPO consistently tracks 182 motions that PPO with MoE fails to track, whereas PPO with MoE tracks only one motion that MAPO fails to track. MAPO also attains the highest tracking success rate among the compared methods and the lowest tracking error across most error metrics, demonstrating its superior performance. Videos can be found on the project website: https://mapo-corl2026.github.io/MAPO/",
+    "authors": [
+      "Seonghyeon Lim",
+      "Hyeonwoo Lee",
+      "Mincheol Kim",
+      "Kimin Lee",
+      "Hyun Myung"
+    ],
+    "published": "2026-11-02T06:40:14+00:00",
+    "updated": "2026-11-02T06:40:14+00:00",
+    "url": "http://arxiv.org/abs/2611.02613v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.02613v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.02555v1",
+    "title": "Sequential Recovery Updates for Learned Controllers under Successful-Trajectory Preservation",
+    "abstract": "A competent learned controller already recovers from many disturbances. Improving it means learning a correction, and learning when not to apply it. Freezing a skill's parameters does not settle the second half. In a controller that routes among frozen skills, a new entry rule can redirect the states an old skill succeeded on. We therefore constrain entry instead of parameters. Each update searches for a feedback skill at a measured failure. It fits an entry rule that reads observations and rejects every state on an accumulated successful trajectory. The skill is admitted only if the composed controller reproduces the new recovery on its own and replays every protected trajectory exactly. A finite-trajectory condition states when this preserves the previous controller. One mechanism runs on four streams: two motions on each of two humanoid systems. Two updates per stream add 62 recoveries over 192 withheld perturbations, and lose none of the base controller's successes. We then price that guarantee. Removing the constraint recovers 33 more conditions but stops eight protected ones from completing at all, and excluding only what admission proves necessary recovers none of that cost.",
+    "authors": [
+      "Zongtan Li",
+      "Tianming Liu",
+      "Ye Zhao"
+    ],
+    "published": "2026-11-02T05:28:18+00:00",
+    "updated": "2026-11-02T05:28:18+00:00",
+    "url": "http://arxiv.org/abs/2611.02555v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.02555v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  }
+]
