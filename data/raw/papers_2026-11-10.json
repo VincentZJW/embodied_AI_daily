@@ -1,0 +1,249 @@
+[
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.10949v1",
+    "title": "Explicitly capturing demonstrator multi-modality for distillation into diffusion policies",
+    "abstract": "The diversity of a distilled diffusion policy's outputs matters beyond how it impacts the policy's success rate. In particular, downstream applications like test-time search and policy improvement require exploration. Thus, we want to distill multi-modal demonstrators into diffusion policies which reproduce their conditional action distributions. Standard data collection for behavior cloning applies a sliding window to demonstration episodes, which pairs unique observation histories with actions. These datasets can be fit by a policy that is either multi-modal, or unimodal with high Lipschitz constant to capture a diversity of actions seen at nearby observation samples. Prior work finds that diffusion policies trained on sparse data learn the latter, memorizing one action per observation. We adapt vine sampling to behavior cloning data collection to resolve this ambiguity: at some states the demonstrator visits, query it $k$ times from exactly the same observation. On a synthetic task, we study how the number of actions per observation, $k$, affects the learned policy, and find that larger $k$ yields a policy that better matches the demonstrator's conditional distribution, including its multi-modality and diversity. On a 2D truck unloading task, vine sampling likewise leads to a policy closer to the demonstrator and substantially improves both best-of-$N$ and expert iteration performance.",
+    "authors": [
+      "Shao Yuan Chew Chia",
+      "Rebecca H. Jiang",
+      "Abhinav Agarwal",
+      "Andreas Hofmann",
+      "Leslie Pack Kaelbling",
+      "Russ Tedrake"
+    ],
+    "published": "2026-11-07T20:25:48+00:00",
+    "updated": "2026-11-07T20:25:48+00:00",
+    "url": "http://arxiv.org/abs/2611.10949v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.10949v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.10894v1",
+    "title": "Zero-Shot VLA Adaptation with Retrieved Guidance",
+    "abstract": "Pre-training large parametric \"Vision-Language-Action\" (VLA) models on large demonstration datasets has recently yielded promising results for general-purpose manipulation. However, these models still struggle under even small domain shifts relative to the training data, such as changes in camera viewpoint, background, object identity, or robot morphology. Motivated by the success of Retrieval-Augmented Generation (RAG) in language models, we pursue retrieval to boost VLA performance. Specifically, we seek to leverage retrieval from domain-mismatched, \"in-the-wild\" demonstration datasets like DROID to guide a VLA's behavior in a new target domain. To achieve this, we introduce RAGu, which overcomes robotics-specific challenges for RAG: (1) It incorporates simple geometric calibration to transform source demonstrations into the target setup and reduce cross-domain differences. (2) It uses a coarse-to-fine retrieval strategy that selects, from a large pool of pre-warped candidates, the trajectory most compatible with the base VLA. (3) It guides the VLA's flow-matching inference procedure rather than seeking to retrain the base model or expand its limited context window. We evaluate RAGu across real-world, simulation, sim-to-real transfer, and cross-embodiment humanoid manipulation. We find it improves real-world VLA success rates from 20% to 80% and outperforms the closest-related baselines in sim. Project website: raguvla.github.io",
+    "authors": [
+      "Subin Kim",
+      "Anh-Quan Pham",
+      "Dinesh Jayaraman"
+    ],
+    "published": "2026-11-07T18:35:49+00:00",
+    "updated": "2026-11-07T18:35:49+00:00",
+    "url": "http://arxiv.org/abs/2611.10894v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.10894v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.10872v1",
+    "title": "DreamVLA: From Generated Human Motions to Humanoid Vision-Language-Action Policies",
+    "abstract": "Training vision-language-action (VLA) policies typically depends on substantial robot demonstration data, making human teleoperation a costly and cumbersome bottleneck, particularly for whole-body humanoid interaction. Reinforcement learning in simulation offers an alternative for scaling this data, but designing task-specific rewards remains challenging. To address this, we propose DreamVLA, which uses generated motion trajectories to guide reinforcement learning (RL) in simulation, converting them into reliable task execution trajectories. These trajectories train VLA models in simulation without new task-specific teleoperation data. Our central contribution is a reference-conditioned DAgger distillation procedure: after a failed learner rollout, we restart the RL expert from a sampled learner state with the same reference suffix and aggregate successful corrective trajectories, addressing the distribution shift left by offline imitation. We evaluate picking from a platform, opening a drawer, pressing a button, and walking and picking from a platform, with ablations of DAgger iterations, residual RL, and generated dataset scale. Project website: ember-center-berkeley.github.io/DreamVLA.",
+    "authors": [
+      "Kevin Park",
+      "Izat Rasyad",
+      "Dvij Kalaria",
+      "Shankar Sastry"
+    ],
+    "published": "2026-11-07T17:48:28+00:00",
+    "updated": "2026-11-07T17:48:28+00:00",
+    "url": "http://arxiv.org/abs/2611.10872v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.10872v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.10771v1",
+    "title": "WorldFoundry: Towards Unified Infrastructure for World Intelligence",
+    "abstract": "Visual generative models increasingly blur the line between synthesizing observations and simulating environments. Yet visual plausibility alone does not constitute successful world modeling: compelling outputs may lack persistent state, physical dynamics, or causally consistent responses to interactions. We define a generative world model as a predictive dynamical system that maintains a persistent, history-conditioned representation of an environment, updates that representation in response to actions or interventions, and generates temporally coherent trajectories that reflect outcomes under observed and counterfactual interventions. From this definition, we derive an intelligence-oriented framework spanning perceptual grounding, persistent state modeling, controllable transformation, dynamics-aware prediction, and closed-loop interaction. We present WorldFoundry, open-source infrastructure for reproducible inference and evaluation across video, 3D and 4D, embodied action, and interactive world systems. WorldFoundry unifies model and benchmark discovery, runtime and asset preparation, execution orchestration, artifact management, and interactive visualization, while modality-specific adapters preserve native inputs, execution semantics, output representations, and evaluation protocols. Explicit manifests, durable artifact contracts, and evidence-aware scorecards separate execution readiness from evaluative claims, making each claim traceable to its supporting artifacts. The catalog contains 270 model entries, 74 benchmarks, and 62 registered metric entries, with readiness and execution evidence recorded separately. WorldFoundry enables reproducible comparison of persistent, controllable dynamics across heterogeneous systems, advancing the field from perceptual synthesis toward measurable world intelligence.",
+    "authors": [
+      "Juanxi Tian",
+      "Jiadong Hou",
+      "Baiang Li",
+      "Xin Lin",
+      "Zhengbo Jiao",
+      "Weijia Zhang",
+      "Yeying Jin",
+      "Truong Nguyen",
+      "Haitian Zheng",
+      "Zhifei Zhang",
+      "Jianfei Yang",
+      "Ming-Hsuan Yang",
+      "Felix Heide",
+      "Wei Xiong",
+      "Enze Xie",
+      "Wanhua Li"
+    ],
+    "published": "2026-11-07T14:59:22+00:00",
+    "updated": "2026-11-07T14:59:22+00:00",
+    "url": "http://arxiv.org/abs/2611.10771v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.10771v1",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.10769v1",
+    "title": "Look Ahead: Search-Driven Reasoning in Embodied AI",
+    "abstract": "Search allows a robotic policy to evaluate candidate futures before committing to an action. Motivated by test-time planning for vision-language action (VLA) models, we study selective search over action chunks in PushT using a frozen Action Chunking with Transformers (ACT) policy. Beam search generates perturbed alternatives around the policy prediction and scores them through rollouts from cloned simulator states. Across 50 evaluation episodes, beam search raises task success from 0% to 18% and increases average cumulative reward from 39.44 to 103.2. We introduce One Step Ahead (OSA), a gate that simulates the nominal policy chunk and invokes full search only when its predicted coverage drop exceeds a threshold. In the reported ablations, OSA preserves or improves success while reducing runtime by approximately 3x relative to full beam search. Ablations over tree depth, branching factor, beam width, and replanning frequency show that larger search budgets do not consistently improve performance. The results support selective test-time search for action-chunking policies; evaluation on language-conditioned VLAs and physical robots remains future work.",
+    "authors": [
+      "Ahmed Zeer",
+      "Osama Shbib",
+      "Muzaffer Kaan Yuce",
+      "Himmet Toprak Kesgin",
+      "Mehmet Fatih Amasyali"
+    ],
+    "published": "2026-11-07T14:58:46+00:00",
+    "updated": "2026-11-07T14:58:46+00:00",
+    "url": "http://arxiv.org/abs/2611.10769v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.10769v1",
+    "categories": [
+      "cs.AI"
+    ],
+    "primary_category": "cs.AI"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.10635v1",
+    "title": "Model-Based Imitation Learning For Monocular Vision-Based Navigation",
+    "abstract": "Reliable navigation with a single monocular limited field-of-view camera is challenging because the lack of depth measurements and limited spatial awareness complicate collision checking. Existing approaches to tackle these challenges fall into two categories. Model-based planners can incorporate explicit collision-avoidance guidance which leads to better generalization but are often computationally expensive and require manual tuning of the algorithmic parameters. In contrast, end-to-end approaches trained by imitation learning can be flexible but typically encode safety only implicitly and thus can suffer from high collision rates in novel scenarios. In this paper, we present a middle ground through model-based imitation learning. The model-based part is a learned collision model that can map a sequence of past images and a candidate control sequence to a distribution of worst-case obstacle clearance. This predictive distribution in turn is used to define a collision-risk cost in a trajectory optimization formulation. The imitation component uses human demonstrations to learn scene-dependent balancing of collision risk with other task costs such as goal progress. We also use it to learn the algorithmic parameters (e.g., a warm start) of our optimizer to accelerate the solution process. We show that our approach can demonstrate highly reliable navigation in cluttered environments on robots with different embodiments. We also demonstrate a substantial reduction in collision rate over recent end-to-end and model-based baselines.",
+    "authors": [
+      "Basant Sharma",
+      "Prajyot Jadhav",
+      "Saqi Hussain Kalan",
+      "Arun Kumar Singh"
+    ],
+    "published": "2026-11-07T10:24:06+00:00",
+    "updated": "2026-11-07T10:24:06+00:00",
+    "url": "http://arxiv.org/abs/2611.10635v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.10635v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.10552v1",
+    "title": "Seeing Isn't Enough: Unlocking Visual Reasoning by Bridging the Reasoning-Access Gap with TIGER",
+    "abstract": "Multimodal Large Language Models (MLLMs) inherit strong textual reasoning capabilities from their language backbones and text pretraining, but often fail to apply the same level of competency to visual inputs. We show that this degradation cannot be attributed to only perception failures, by evaluating models on semantically-equivalent text and rendered-text image inputs: models can accurately read text in the images and recover near-text performance when provided their own transcriptions, but just cannot reason well on the images directly. We characterize this discrepancy as a modality reasoning-access gap, where models fail to route perceived visual content into existing reasoning machinery accessible with text. To bridge this, we propose TIGER (Text-to-Image Gap-targeted training for Enhanced Reasoning), which first mines synthetic modality counterfactuals where a model succeeds on a text problem but fails when provided the corresponding rendered image, and post-trains the model on the image input via Group Relative Policy Optimization (GRPO), along with SFT and DPO variants. Importantly, although trained exclusively on synthetic rendered-text images with no multimodal annotations, TIGER results in model performance improvements across diverse real-world visual benchmarks including geometric diagrams (MathVerse), multi-disciplinary sciences (EMMA, MMMU), complex charts (ChartQAPro), and embodied spatial reasoning (RoboSpatial-Home). TIGER also complements existing state-of-the-art RLVR visual reasoning methods, yielding further performance gains. Analysis involving reasoning-subspace activation and activation patching provide support indicating that TIGER helps to align visual-to-reasoning pathways toward text reasoning states. Our implementation is available at https://github.com/minhngh/Tiger.",
+    "authors": [
+      "Gregory Kang Ruey Lau",
+      "Minh Huynh Nguyen",
+      "Bryan Kian Hsiang Low"
+    ],
+    "published": "2026-11-07T07:41:50+00:00",
+    "updated": "2026-11-07T07:41:50+00:00",
+    "url": "http://arxiv.org/abs/2611.10552v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.10552v1",
+    "categories": [
+      "cs.AI",
+      "cs.CV",
+      "cs.LG"
+    ],
+    "primary_category": "cs.AI"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.10443v1",
+    "title": "Spatial Representation Distillation and Knowledge Routing for Vision-Language-Action Models",
+    "abstract": "Understanding three-dimensional physical structure has become essential for vision-language-action models (VLAs). However, existing approaches either rely on explicit geometric inputs at inference time or adopt a single visual pathway, potentially compromising the visual-semantic knowledge inherited from pre-trained models. We present SPARK-VLA, Spatial Representation distillation and Knowledge routing for VLAs, a preserve-specialize-route framework for spatially adapting VLAs without requiring external 3D inputs or experts at inference. SPARK-VLA consists of two key components: (1) spatial representation distillation, which transfers 3D understanding from a frozen 3D expert to a LoRA-adapted visual branch by aligning attention responses while preserving the original visual pathway, and (2) a lightweight knowledge router, which selectively forwards action-relevant visual tokens to the language model using routing supervision derived from action-loss gradients. Across LIBERO, LIBERO-Plus, CALVIN, and real-world manipulation, SPARK-VLA achieves strong performance with only a 0.5B language backbone and approximately 53M trainable parameters, providing an effective and parameter-efficient approach to 3D-aware VLA learning. Code is available at https://github.com/park-jungin/spark-vla.",
+    "authors": [
+      "Jungin Park",
+      "Chaoran Zhu",
+      "Changjae Oh",
+      "Kwanghoon Sohn"
+    ],
+    "published": "2026-11-07T03:43:31+00:00",
+    "updated": "2026-11-07T03:43:31+00:00",
+    "url": "http://arxiv.org/abs/2611.10443v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.10443v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.10392v1",
+    "title": "Tiresias: Towards Language-Conditioned World Models",
+    "abstract": "World models enable planning through internal simulation, while natural language provides intuitive task specification. Yet, language-conditioned world modeling remains fragmented across domains with disparate action spaces, datasets, and evaluation protocols. We introduce LCWM, a shared task that maps an initial agent-view observation and a language instruction to an action sequence that fulfills the instruction. Its accompanying benchmark, LCWM-Bench, integrates 15 datasets across navigation, robotics, 3D gaming, and driving under a shared action interface and evaluation protocol, pairing 142,987 episodes with 428,961 instructions in three styles. We further propose Tiresias, an agent that plans via selective imagination: a language-conditioned diffusion policy generates candidate trajectories, a trajectory ranker shortlists them, and a video-pretrained world model imagines their visual consequences. A visual ranker evaluates these rollouts, complementing trajectory scores to select the final plan. Tiresias achieves competitive planning and imagination performance on LCWM-Bench. Ablations demonstrate the complementary benefits of trajectory ranking and visual verification, while experiments with alternative proposal methods show that the trained rankers remain effective beyond our diffusion policy. Together, LCWM-Bench and Tiresias provide a unified evaluation setting and an effective starting point for studying language-guided planning through world models.",
+    "authors": [
+      "Fengyi Wu",
+      "Yifei Dong",
+      "Yetong Sha",
+      "Lingdong Kong",
+      "Qiyu Hu",
+      "Bohan Xiong",
+      "Qi Dai",
+      "Alexander G. Hauptmann",
+      "Zhi-Qi Cheng"
+    ],
+    "published": "2026-11-07T01:50:19+00:00",
+    "updated": "2026-11-07T01:50:19+00:00",
+    "url": "http://arxiv.org/abs/2611.10392v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.10392v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.10366v1",
+    "title": "CPNav: Calibrated Vision-Language Navigation for Object-Goal Search in Unseen Environments",
+    "abstract": "Directing a robot to locate a target object in unseen environments remains a central challenge in embodied AI. Vision-Language Model (VLM)-based methods provide rich semantic reasoning but often produce uncalibrated and overconfident action decisions. We introduce CPNav, a navigation framework that combines collision-aware planning with statistically calibrated VLM action scoring for map-free object-goal navigation. From RGB-D input, CPNav constructs a navigability map, generates collision-free motion primitives, and queries two VLMs for goal detection and action scoring. The resulting scores are calibrated offline via conformal prediction (CP) using oracle actions obtained through a tree-structured exploration procedure with backtracking, providing finite-sample guarantees at a user-specified risk level. The CP layer is model-agnostic and can wrap any VLM policy. Online, calibrated VLM scores guide action selection, while a tree-structured exploration history records alternative actions and allows backtracking. We evaluate CPNav in both simulation and real-world hardware settings. In AI Habitat simulation, compared with the uncalibrated baseline method, CPNav achieves relative SR and SPL improvements of 6.2% and 11.4% on HM3D v0.2, and 12.4% and 8.8% on MP3D, respectively. In real-world deployment on a modified Hiwonder MentorPi robot, the corresponding improvements in SR and SPL are 24.9% and 15.2%, respectively. Code is available at https://github.com/practice-lab-ucla/CPnav.",
+    "authors": [
+      "Qizhao Chen",
+      "Yuanhong Zeng",
+      "Shoh Nishino",
+      "Anushri Dixit"
+    ],
+    "published": "2026-11-07T01:05:40+00:00",
+    "updated": "2026-11-07T01:05:40+00:00",
+    "url": "http://arxiv.org/abs/2611.10366v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.10366v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.10344v1",
+    "title": "MaRiO: Multi-agent Collaborative Reasoning via Shared Observations in MLLMs",
+    "abstract": "Multimodal Large Language Models (MLLMs) show strong visual perception capabilities, but existing evaluations largely focus on single-view or multi-view settings with shared camera parameters, leaving the challenge of multi-agent collaborative scenarios underexplored. In such settings, multiple agents observe a shared environment from independent viewpoints, and reliable decisions require reasoning across these independent observations of the same environment. To study this problem, we introduce MaRiO, a benchmark for evaluating multi-agent collaborative reasoning, and evaluate 23 state-of-the-art MLLMs on it. Our analysis reveals three key findings: (1) tasks governed by static perception are generally easier than tasks that require transformational event sequences; (2) most models struggle to resolve cross-agent correspondences, with errors increasing with scene complexity; and (3) models show limited ability to leverage geometric cues present in the scene. As an initial step toward addressing these challenges, we explore geometry-guided synthetic view augmentation that generates intermediate transition frames between agent observations, providing auxiliary spatial context that improves performance in certain categories. Overall, our results highlight that multi-agent collaborative reasoning remains an open challenge and an important direction for multimodal embodied systems. The code is available on the project page: https://omarftt.github.io/MaRiO-page/.",
+    "authors": [
+      "Nathaniel Redmond",
+      "Fidel Omar Tito Cruz",
+      "Devansh Sharma",
+      "Shehreen Azad",
+      "Sirshapan Mitra",
+      "Shruti Vyas",
+      "Yogesh S. Rawat"
+    ],
+    "published": "2026-11-07T00:26:23+00:00",
+    "updated": "2026-11-07T00:26:23+00:00",
+    "url": "http://arxiv.org/abs/2611.10344v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.10344v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  }
+]
