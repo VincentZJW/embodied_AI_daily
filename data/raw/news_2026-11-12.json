@@ -1,0 +1,182 @@
+[
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Serve Robotics opens robot delivery network for others to build on",
+    "summary": "<p>Serve Robotics says its on-demand delivery API allows third parties to develop new delivery services on its fleet of more than 2,000 robots.</p> <p>The post <a href=\"https://www.therobotreport.com/serve-robotics-opens-robot-delivery-network-for-others-to-build-on/\">Serve Robotics opens robot delivery network for others to build on</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/serve-robotics-opens-robot-delivery-network-for-others-to-build-on/",
+    "published": "2026-11-11T13:43:29+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Memories.ai builds standardized egocentric video pipeline",
+    "summary": "<p>Memories.ai provides standardized egocentric video collection and AI-powered annotation to build training data infrastructure for robotics.</p> <p>The post <a href=\"https://www.therobotreport.com/memories-ai-builds-standardized-egocentric-video-pipeline/\">Memories.ai builds standardized egocentric video pipeline</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/memories-ai-builds-standardized-egocentric-video-pipeline/",
+    "published": "2026-11-11T13:00:34+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Can AI agents program industrial robots without training data? Berkeley says yes",
+    "summary": "<p>UC Berkeley and NVIDIA have released open-source tools for teams of AI coding agents that write, simulate, and refine readable robot programs. </p> <p>The post <a href=\"https://www.therobotreport.com/can-ai-agents-program-industrial-robots-without-training-data-berkeley-says-yes/\">Can AI agents program industrial robots without training data? Berkeley says yes</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/can-ai-agents-program-industrial-robots-without-training-data-berkeley-says-yes/",
+    "published": "2026-11-11T12:55:16+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://blogs.nvidia.com/blog/category/industries/robotics/feed/",
+    "feed_title": "",
+    "title": "How AI Helps Recyclers Turn Mixed Waste Into Reusable Material",
+    "summary": "Vision AI and robotics pick what’s worth recovering out of conveyor belts of used clothing, bottles and mixed recyclables, diverting thousands of tons of materials from landfills.",
+    "url": "https://blogs.nvidia.com/blog/ai-recycling-startups/",
+    "published": "2026-11-11T03:00:20+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Dynamic Creatures partners with Sixth Wall Studio to bring Hasbro characters to life with robots",
+    "summary": "<p>The companies will combine Sixth Wall’s character authoring and alignment with Dynamic Creatures’ mobile, expressive robots.</p> <p>The post <a href=\"https://www.therobotreport.com/dynamic-creatures-partners-sixth-wall-studio-bring-hasbro-characters-life-with-robots/\">Dynamic Creatures partners with Sixth Wall Studio to bring Hasbro characters to life with robots</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/dynamic-creatures-partners-sixth-wall-studio-bring-hasbro-characters-life-with-robots/",
+    "published": "2026-11-10T18:31:17+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Why predictive maintenance matters more as factories add robots",
+    "summary": "<p>As robotics scales across industries, companies need a maintenance strategy to collect and use the right data to minimize downtime.</p> <p>The post <a href=\"https://www.therobotreport.com/why-predictive-maintenance-matters-more-as-factories-add-robots/\">Why predictive maintenance matters more as factories add robots</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/why-predictive-maintenance-matters-more-as-factories-add-robots/",
+    "published": "2026-11-10T16:13:40+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Intel and Altera expand collaboration to simplify sensor integration for physical AI",
+    "summary": "<p>Altera and Intel are working to make it easier to connect diverse sensors, turn data into real-time insights, and develop robotics.</p> <p>The post <a href=\"https://www.therobotreport.com/intel-altera-expand-collaboration-simplify-sensor-integration-physical-ai/\">Intel and Altera expand collaboration to simplify sensor integration for physical AI</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/intel-altera-expand-collaboration-simplify-sensor-integration-physical-ai/",
+    "published": "2026-11-10T14:47:10+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Axon invests $1.2B into Skydio and becomes its U.S. public safety distributor",
+    "summary": "<p>The partners plan to bring Skydio drones to public safety agencies across the U.S. as Axon expands its Drone as First Responder program.</p> <p>The post <a href=\"https://www.therobotreport.com/axon-invests-1-2b-into-skydio-and-becomes-its-u-s-public-safety-distributor/\">Axon invests $1.2B into Skydio and becomes its U.S. public safety distributor</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/axon-invests-1-2b-into-skydio-and-becomes-its-u-s-public-safety-distributor/",
+    "published": "2026-11-10T13:06:58+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "NVIDIA launches GR00T 2 and Isaac Lab 3.0 at CoRL",
+    "summary": "<p>NVIDIA also gave a look at how its partners, like Ambi Robotics, FieldAI, Flexion, Skild AI, RLWRLD, and more, are using these technologies. </p> <p>The post <a href=\"https://www.therobotreport.com/nvidia-launches-gr00t-2-isaac-lab-3-0-corl/\">NVIDIA launches GR00T 2 and Isaac Lab 3.0 at CoRL</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/nvidia-launches-gr00t-2-isaac-lab-3-0-corl/",
+    "published": "2026-11-09T21:52:05+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://deepmind.google/blog/rss.xml",
+    "feed_title": "",
+    "title": "Gemini Robotics 2.5 accelerates real-world general dexterity",
+    "summary": "Our most capable vision-language-action model enhances robot dexterity, reliability, and safety",
+    "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+    "published": "2026-11-09T19:51:47+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Boston Dynamics adds wheels to Atlas humanoid to test whole-body control",
+    "summary": "<p>Boston Dynamics combines classical motor control with whole-body reinforcement learning to power dynamic, wheeled locomotion for Atlas.</p> <p>The post <a href=\"https://www.therobotreport.com/boston-dynamics-adds-wheels-to-atlas-humanoid-to-test-whole-body-control/\">Boston Dynamics adds wheels to Atlas humanoid to test whole-body control</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/boston-dynamics-adds-wheels-to-atlas-humanoid-to-test-whole-body-control/",
+    "published": "2026-11-09T18:34:38+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "How to minimize Wi-Fi roaming interruptions for autonomous mobile robots",
+    "summary": "<p>Dedicated Wi-Fi scan architectures can improve robot mobility, reliability, and performance, says Synaptics.</p> <p>The post <a href=\"https://www.therobotreport.com/how-minimize-wi-fi-roaming-interruptions-autonomous-mobile-robots/\">How to minimize Wi-Fi roaming interruptions for autonomous mobile robots</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/how-minimize-wi-fi-roaming-interruptions-autonomous-mobile-robots/",
+    "published": "2026-11-09T15:40:41+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://spectrum.ieee.org/feeds/topic/robotics.rss",
+    "feed_title": "",
+    "title": "Can Agentic Robotics Solve Robotics’ Data-Scaling Problem?",
+    "summary": "<img src=\"https://spectrum.ieee.org/media-library/3d-rendering-of-a-scara-robotic-arm-carefully-dropping-a-syringe-into-a-sharps-box.jpg?id=68618830&amp;width=1245&amp;height=700&amp;coordinates=0%2C382%2C0%2C383\" /><br /><br /><p>Robotics companies are <a href=\"https://www.figure.ai/news/introducing-index\" rel=\"noopener noreferrer\" target=\"_blank\">investing</a> <a href=\"https://www.sunday.ai/\" rel=\"noopener noreferrer\" target=\"_blank\">heavily</a> in the belief that data will solve the most difficult problems in robotics. Once AI systems have ingested enough data from human demonstrations, the thinking goes, robots will be able to perform the vast majority of the manual tasks that humans now do. There are even <a href=\"https://www.ifirsthand.com/\" rel=\"noopener noreferrer\" target=\"_blank\">robotics</a> <a href=\"https://www.ifirsthand.com/\" rel=\"noopener noreferrer\" target=\"_blank\">companies</a> that exist solely to collect training data and sell it to other robotics companies in pursuit of this goal. </p><p>But whether data will finally bring us general-purpose robots is <a href=\"https://www.youtube.com/watch?v=PfvctjoMPk8\" rel=\"noopener noreferrer\" target=\"_blank\">an open question</a>. Nobody knows <a href=\"https://spectrum.ieee.org/global-robotic-brain\" target=\"_self\">how much data would be necessary</a>, <a href=\"https://www.youtube.com/watch?v=dB1mdFhO4oI\" rel=\"noopener noreferrer\" target=\"_blank\">what kind of data is important</a>, or whether <a href=\"https://spectrum.ieee.org/humanoid-robots-gill-pratt-darpa\" target=\"_self\">something else might be missing</a>. And there are other problems with a reliance on massive amounts of data: The resulting AI algorithms are essentially black boxes, which despite their high performance are difficult or impossible for humans to understand. This characteristic is becoming increasingly concerning in commercial deployments, where robots must be flexible, reliable, and safe.</p><p>At the <a href=\"https://www.corl.org/\" rel=\"noopener noreferrer\" target=\"_blank\">2026 Conference on Robot Learning</a> this week, University of California, Berkeley and Nvidia are jointly announcing a new approach to using AI to program robots for everyday practical tasks in industrial environments. Called <a href=\"https://berkeleyautomation.github.io/agentic-robotics/\" target=\"_blank\">agentic robotics</a>, this technique leverages the latest advances in AI coding tools while in some sense bringing robotics back to its roots—achieving a fundamental understanding of how a robot works, and then writing human-readable code to get it to do useful things, no data (and no humans) required.</p><h2>The Data Problem</h2><p>For decades, robots were programmed with model-based methods, meaning that their behavior was based on a detailed understanding (or model) of the physics and mathematics underlying the robot and its environment. Roboticists would first develop these models, and then write painstakingly detailed code telling their robots how to act. The resulting hand-tuned robotic systems could operate fast and reliably, but this approach has fallen out of favor because it requires both human time and human expertise. It’s much easier to just feed a huge amount of human demonstration data into a machine learning system, and the results that come out are both adaptable and reliable—up to a point.</p><p>“The imitation-learning paradigm has hit a plateau,” <a href=\"https://bit.ly/Goosebumps-Agentic-Robotics-memo-by-Ken-Goldberg\" rel=\"noopener noreferrer\" target=\"_blank\">explains</a> <a href=\"https://goldberg.berkeley.edu/\" rel=\"noopener noreferrer\" target=\"_blank\">Ken Goldberg</a>, a professor of robotics at UC Berkeley whose lab is presenting <a href=\"https://graph-robots.github.io/gap/\" rel=\"noopener noreferrer\" target=\"_blank\">a paper</a> on agentic robotics at this week’s conference. “It’s promising for things like home robots, where speed and reliability are less of an issue. But for industrial applications, it’s very hard to get the reliability that industry requires.” Goldberg, who is also a cofounder of the industrial robotics company <a href=\"https://www.ambirobotics.com/\" rel=\"noopener noreferrer\" target=\"_blank\">Ambi Robotics</a>, has experienced this problem firsthand, as have other companies that he’s been working with, including Siemens and Bosch. “You get good performance from data initially, but then things go wrong. So you start giving it more data. But then other things go wrong. It’s not clear that adding more data is going to get you there.”</p><p>The hope, according to Goldberg, is that with enough data, robots will somehow just start to work reliably, since that was the case with ChatGPT. “That’s what people have been counting on, and why investors are pouring money into these companies,” says Goldberg. “But everybody’s getting a little nervous that we haven’t hit that convergence point.”</p><h2>How Agentic Robotics Works</h2><p>The reason why language models like ChatGPT are so successful is that they can train on data at the scale of the internet. There is no dataset for robotics that approaches that scale, and while robotics companies are desperately attempting to generate the data that they think they need, it’s a slow, expensive process. Agentic robotics, a term popularized by Goldberg along with <a href=\"https://developer.nvidia.com/blog/author/spencerh/\" rel=\"noopener noreferrer\" target=\"_blank\">Spencer Huang</a>, director of product for robotics at Nvidia, is an attempt to turn programming robots from a <em><em>data</em></em> problem into a <em><em>coding</em></em> problem, which can directly leverage the scale of language models.</p><p>“This is really something that’s accelerated in the past year,” Goldberg says. “The quality of agentic coding has become so good that using them to write code for robots is now viable.” </p><p>Because agentic robotics is based on large language models, it’s easy to use—you can use natural language to tell the robot what to do. <a href=\"https://graph-robots.github.io/gap/\" rel=\"noopener noreferrer\" target=\"_blank\">One example used by the UC Berkeley researchers</a> was asking a robotic arm to pack groceries into a bag. First, this relatively complex (for a robot) task is decomposed into simpler subtasks, each of them assigned to a separate coding agent. In LLM-based software, a coding agent is an autonomous AI system that can plan, write, test, and modify software with minimal human intervention. You might have one individual agent tasked with perception to identify the groceries and the bag, a second focused on object manipulation with the arm’s gripper, and a third working on transporting objects with the arm once they’ve been grasped. </p><p>“We have all these robotics tools we’ve been building for the last couple decades,” explains Huang. “The problem was that a human had to go and write the code themselves. But object classifiers, pose estimation, task and motion planning, trajectory generation—everything is already there.” The coding agents can directly leverage all of that existing data contained within their language models to generate code of their own, tailored to their specific tasks.</p><h2>Solving the Simulation Bottleneck</h2><p>Once the agents have a plausible framework, they run their code in a simulation and see what happens, much like a human would. They can change starting conditions, identify failures, refine the code, and keep iterating until they’ve got a successful program. Of course, code that works in simulation can only ever be as versatile and reliable as the simulation is.</p><p>“Simulations are nontrivial to build,” Goldberg explains. The more accurate the simulation has the potential to be, the more parameters there are that need to be configured to achieve and maintain that accuracy, typically by a human on a task-by-task basis. Goldberg decided to try giving an AI agent direct access to these simulation parameters, and instructing it to match the simulation to a video of the real world.</p><p>“It gave us goose bumps. It was matching the whole environment, the lighting, the background, all these things that are super tedious to do. We would never have done that, but the agent did. Side by side, it was very hard to tell the difference between the simulation and the video.”</p><p>Nevertheless, no matter how good a simulated environment looks, navigating the gap between that environment and the real world is still an unsolved challenge for the robotics community, says <a href=\"https://www.intrinsic.ai/blog/authors/torsten-kroeger\" rel=\"noopener noreferrer\" target=\"_blank\">Torsten Kroeger</a>, chief science officer at <a href=\"https://www.intrinsic.ai/\" rel=\"noopener noreferrer\" target=\"_blank\">Alphabet’s company Intrinsic</a>. Kroeger, who is not directly involved in this research, continued: “I’m saying this respectfully, but there’s just no physics engine out there that can accurately model physical contact with the world.” But as with a team of human coders, the agents can troubleshoot when things inevitably don’t work quite right. The agents’ ability to work on the simulation itself offers significant advantages, because the agents can be fed video of a failed task with the goal of updating the simulation to match, while the coding agents then iterate to fix the problem.</p><p>As with anything done by AI, Huang is well aware that agents writing code for robots will have their flaws. “We all know that AI agents can create slop,” Huang says. “In order to counter that, we use adversarial agent setups—where one agent designs something and another agent tries to rip it apart and find flaws.”</p><p>In UC Berkeley’s <a href=\"https://graph-robots.github.io/gap/\" rel=\"noopener noreferrer\" target=\"_blank\">testing</a>, agentic robotics approaches were able to reach success rates of up to 99 percent, matching human hand-engineered performance, even in tasks where baseline imitation-learning techniques saw success rates of only 20 percent. But as Goldberg points out, agentic robotics is not just about performance but also efficiency and safety. “You’re using an off-the-shelf coding agent. You don’t need to collect any data. And the agent is generating code that you can actually understand and fix if necessary.”</p><h2>Real-World Agentic Robotics</h2><p>In the immediate future, the sweet spot for practical agentic robotics will be industrial manufacturing and manipulation tasks that require robust precision and accuracy, says Huang. “Right now, some of our partners in the semiconductor space need to place components within 0.3 millimeters. There’s no way you’re going to get something like <a href=\"https://www.nvidia.com/en-us/industries/robotics/isaac-groot/\" rel=\"noopener noreferrer\" target=\"_blank\">GR00T</a> [Nvidia’s humanoid-development platform] to do that today with any semblance of repeatability and robustness. What you get with agentic robotics is near-term applications.”</p><p>But the real value, Huang says, is in adapting to change. “At <a href=\"https://www.wistron.com/en/Newsroom/2024-05-31\" rel=\"noopener noreferrer\" target=\"_blank\">Wistron</a> in Taiwan [which manufactures baseboards for Nvidia GPUs], every time they add a new product, it takes a minimum of 8 hours to retask one robot. With agentic robotics, retasking takes a minute or two instead.”</p><p>Moving agentic robotics beyond these fairly well-constrained use cases may be difficult, but Huang sees this technique as a gateway toward more complex tasks. “Agentic robotics can generate tons of good-quality robotic code, which is data that we can use for training the next model.” Such code generation is only an iterative step toward a general-purpose capability, but Huang believes that agentic robotics may help redefine the very meaning of general intelligence in the context of robotics. “My thesis is that general intelligence for robotics will first come in the form of an agent orchestrating a mix of conventional technologies and specialized policies. To a human, it looks like general intelligence because the agent is coordinating everything under the hood.”</p><p>Intrinsic’s Kroeger is more cautious about placing trust in agents. “In the context of safety and security, how do we know that these agents are really doing the right thing all the time? It’s the <a href=\"https://en.wikipedia.org/wiki/AI_alignment#Alignment_problem\" rel=\"noopener noreferrer\" target=\"_blank\">alignment problem</a>. A human engineer <em><em>can</em></em> review everything, but the challenge will be once we start putting our trust in these agents. I can imagine that this will become a relevant conversation for the industry.”</p><p>For now, Goldberg is focused on working with real companies to put agentic robotics into practice. <a href=\"https://berkeleyautomation.github.io/vabar-website/\" rel=\"noopener noreferrer\" target=\"_blank\">A series of benchmarks</a> for agentic robotics developed with <a href=\"https://developer.nvidia.com/isaac/lab-arena\" rel=\"noopener noreferrer\" target=\"_blank\">Nvidia Isaac Lab-Arena</a> and the <a href=\"https://developer.nvidia.com/newton-physics\" rel=\"noopener noreferrer\" target=\"_blank\">Newton physics engine</a> will help researchers evaluate agent performance. “I don’t want to say that we have the solution, but I’m very excited about it,” he says. Adds Huang: “It’s a pivotal change in the way we’re doing things.”</p>",
+    "url": "https://spectrum.ieee.org/agentic-robotics",
+    "published": "2026-11-09T14:00:02+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://blogs.nvidia.com/blog/category/industries/robotics/feed/",
+    "feed_title": "",
+    "title": "Practice Makes Precise: At CoRL, NVIDIA and Partners Reveal How Robots Rehearse Delicate Work in Simulation",
+    "summary": "Simulation, which has long been the proving ground for robots learning to walk, roll and hop, is now helping researchers teach robots tasks that require a finer touch: aligning gears, connecting cables and assembling small components. The shift from locomotion to manipulation is taking center stage at this week’s Conference on Robot Learning (CoRL) in [&#8230;]",
+    "url": "https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/",
+    "published": "2026-11-09T14:00:01+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://blogs.nvidia.com/blog/category/industries/robotics/feed/",
+    "feed_title": "",
+    "title": "Korea Advances Physical AI Across Industries With NVIDIA",
+    "summary": "Tapping into the country’s strengths in manufacturing and engineering, NVIDIA is helping advance Korea’s physical AI ecosystem. The country’s industry leaders are applying accelerated computing, AI and simulation to everything from semiconductor manufacturing to robotics and autonomous vehicles. These efforts are helping bring physical AI from development into real-world production. Samsung Advances Semiconductor Engineering With [&#8230;]",
+    "url": "https://blogs.nvidia.com/blog/korea-physical-ai-ecosystem/",
+    "published": "2026-11-09T05:00:40+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "ARM Institute consortium grows to more than 500 organizations",
+    "summary": "<p>The ARM Institute reached the milestone as it prepares to host its 10th annual member meeting in Pittsburgh.</p> <p>The post <a href=\"https://www.therobotreport.com/arm-institute-members-grows-more-than-500-organizations/\">ARM Institute consortium grows to more than 500 organizations</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/arm-institute-members-grows-more-than-500-organizations/",
+    "published": "2026-11-08T13:00:23+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Robot integration brings high-precision production to midmarket manufacturers",
+    "summary": "<p>Properly integrated industrial and collaborative robots can help midmarket manufacturers, according to a columnist.</p> <p>The post <a href=\"https://www.therobotreport.com/robot-integration-brings-high-precision-production-to-midmarket-manufacturers/\">Robot integration brings high-precision production to midmarket manufacturers</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/robot-integration-brings-high-precision-production-to-midmarket-manufacturers/",
+    "published": "2026-11-07T13:32:59+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "How Point One turned GPS accuracy into a robotics platform",
+    "summary": "<p>Aaron Nathan explains how precise location technology like GPS is enabling robots to navigate, coordinate, and scale across real environments.</p> <p>The post <a href=\"https://www.therobotreport.com/how-point-one-turned-gps-accuracy-into-robotics-platform/\">How Point One turned GPS accuracy into a robotics platform</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/how-point-one-turned-gps-accuracy-into-robotics-platform/",
+    "published": "2026-11-06T21:47:35+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Boston Dynamics built Stretch Gen 2 for reliable, consistent performance",
+    "summary": "<p>Brian Donnelly, the VP and GM of logistics robotics at Boston Dynamics, said the new version of Stretch has been in the works for two and a half years. </p> <p>The post <a href=\"https://www.therobotreport.com/boston-dynamics-built-stretch-gen-2-for-reliable-consistent-performance/\">Boston Dynamics built Stretch Gen 2 for reliable, consistent performance</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/boston-dynamics-built-stretch-gen-2-for-reliable-consistent-performance/",
+    "published": "2026-11-06T21:34:44+00:00"
+  },
+  {
+    "source": "RSS",
+    "feed_url": "https://www.therobotreport.com/feed/",
+    "feed_title": "",
+    "title": "Industry experts discuss China blocking SoftBank acquisition of ABB Robotics",
+    "summary": "<p>China's prohibition of SoftBank's purchase of ABB Robotics reflects wider concerns about data and AI, say experts.</p> <p>The post <a href=\"https://www.therobotreport.com/industry-experts-discuss-china-blocking-softbank-acquisition-abb-robotics/\">Industry experts discuss China blocking SoftBank acquisition of ABB Robotics</a> appeared first on <a href=\"https://www.therobotreport.com\">The Robot Report</a>.</p>",
+    "url": "https://www.therobotreport.com/industry-experts-discuss-china-blocking-softbank-acquisition-abb-robotics/",
+    "published": "2026-11-06T20:41:17+00:00"
+  }
+]
