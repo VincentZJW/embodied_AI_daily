@@ -1,0 +1,496 @@
+[
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.17160v1",
+    "title": "XBot-Omni: An Omni-Modal Model for Embodied Understanding and Interaction",
+    "abstract": "Embodied interaction requires an agent to integrate multimodal perception with verbal and nonverbal behaviors to effectively communicate its intentions, including speech, body motion, and facial expressions. We present XBot-Omni, a Thinker--Talker--Actor architecture that extends the Omni paradigm to robotic modalities, including body motion and facial expressions, with ``X'' representing the extensibility to robotic-specific modalities. The Thinker processes text, images, audio, and video to formulate contextually appropriate responses, which are then realized by the Talker and Actor through speech and coordinated bodily expressions, respectively. In this report, we innovatively introduce the concept of ``Actor'' as a dedicated component for embodied agents: a coordinated, streaming module that leverages the native representations of the Thinker and Talker within an end-to-end pipeline, introducing only modest latency overhead. This unified architecture enables multimodal generation conditioned on omni-modal inputs directly to prevent information loss in staged designs. We comprehensively evaluate XBot-Omni across seven benchmarks, demonstrating strong multimodal understanding capabilities on both general-domain and robot-centric videos, as well as high-quality, natural, and well-coordinated motion generation. Furthermore, our results validate its capability to generate embodied multimodal responses directly from omni inputs, meeting the diverse requirements of embodied interaction. XBot-Omni enables robots not only to perceive the omni world but also to express themselves through speech and bodily behaviors, extending Omni models from conversational interaction to embodied communication in physical environments.",
+    "authors": [
+      "Kerui Gu",
+      "Xing Fu",
+      "Shuoyang Sun",
+      "Cheng Peng",
+      "Jingru Duan",
+      "Huayu Gu",
+      "Zhenyu Chen",
+      "Jiaxin Huang",
+      "Cheng Wen",
+      "Rui Zhen",
+      "Kairui Chen",
+      "Zhihui Peng",
+      "Shaoli Huang"
+    ],
+    "published": "2026-11-12T17:38:57+00:00",
+    "updated": "2026-11-12T17:38:57+00:00",
+    "url": "http://arxiv.org/abs/2611.17160v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.17160v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.17159v1",
+    "title": "Inner Product Regularization for Imitation Learning",
+    "abstract": "Robots that learn from demonstrations should extrapolate their policy despite state perturbations such as sensor noise, scene variation, and compounding errors. One approach to this robustness is regularization. Prior regularizers consider each state on its own and limit how sensitive the policy is to any perturbation at that state. By contrast, we explore how the policy's output shifts when given the same perturbation at different states. Our insight is that, locally, the robot should respond to state perturbations in a consistent manner: e.g., if changing an irrelevant object position does not impact the policy at one state, that same change should not shift the policy output at a nearby state. Applying this insight, we develop inner product regularization (InneR). We show that the inner product on action space induces an inner product on state space through the policy Jacobian (the Fisher information for stochastic policies), and that the null space of this inner product governs which state perturbations have a first-order effect on the policy. By clustering states whose inner products are aligned, averaging the inner products within each cluster, and minimizing the smallest eigenvalues of that average, InneR shapes the learned policy so that nearby states share a common null space. InneR enforces consistent responses to perturbations without limiting policy expressiveness, and can be appended to existing imitation learning pipelines for deterministic or stochastic policies. In simulated experiments, InneR makes learned policies more robust to irrelevant state dimensions and shifts between training and test distributions, whereas norm penalties often perform worse than behavior cloning. On a real robot arm performing three manipulation tasks, InneR raises the average success rate of a diffusion policy from 18% to 57% without additional data.",
+    "authors": [
+      "Benjamin A. Christie",
+      "Tianyu Qiu",
+      "Amy H. Choi",
+      "David Fridovich-Keil",
+      "Dylan P. Losey"
+    ],
+    "published": "2026-11-12T17:38:48+00:00",
+    "updated": "2026-11-12T17:38:48+00:00",
+    "url": "http://arxiv.org/abs/2611.17159v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.17159v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.17142v1",
+    "title": "FORGE: Force-Aware Multi-Granularity Control for Efficient Humanoid Loco-Manipulation",
+    "abstract": "Humanoid loco-manipulation requires coordinated locomotion, balance regulation, and manipulation under frequent contacts, making teleoperated demonstration collection difficult: a practical controller must simultaneously provide precision, stability, and contact awareness. We propose FORGE, a force-aware multi-granularity control system with a coarse-to-fine command space spanning velocity navigation, planar foot placement, wrist-pose tracking, and optional force-conditioning inputs. Policy training requires no full-body human motion trajectories or joint-angle references; deployment consumes only sparse bilateral wrist poses relative to the pelvis, coarse motion commands, and optional desired wrist-load inputs. For sustained contact, FORGE combines a momentum observer with a learned correction trained using simulator contact-force supervision. At deployment, it estimates low-frequency, wrist-equivalent interaction forces from proprioception and reconstructed low-level arm PD torques, without wrist force/torque sensors. A quasi-static virtual-target loop uses this estimate and an optional desired applied-force input to adapt the wrist target. A frozen locomotion prior and asymmetric residual actions stabilize manipulation-induced whole-body corrections. Experiments evaluate unified-control stability, task-space tracking, quasi-static wrist-equivalent force estimation, squeezing forces during sustained contact with a rigid box, and downstream diffusion-policy execution of a squat-and-lift task across payload conditions. Website: https://bb0928.github.io/forge/.",
+    "authors": [
+      "Liangjun Xing",
+      "Ke Fan",
+      "Kailin Li",
+      "Bin Wang",
+      "Xiaojie Niu",
+      "Qingwei Ben",
+      "Jiafei Cao",
+      "Wei Yao",
+      "Yebin Liu",
+      "Jingbo Wang",
+      "Weinan Zhang"
+    ],
+    "published": "2026-11-12T17:30:11+00:00",
+    "updated": "2026-11-12T17:30:11+00:00",
+    "url": "http://arxiv.org/abs/2611.17142v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.17142v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.17110v1",
+    "title": "SALA: Semantically Aligned Latent Actions Enable Dual-Axis Scaling of Embodied Foundation Models",
+    "abstract": "Embodied foundation models hinge on diverse robot interaction data, which are costly to collect. Egocentric human videos offer a complementary source of experience, and latent action models (LAMs) provide a popular means of leveraging these videos for policy supervision. Compared with world-action models (WAMs), LAMs can offer greater training efficiency and potentially lower inference costs by avoiding explicit pixel prediction during policy learning and execution. However, most existing LAMs learn latent actions solely through video reconstruction, which can cause their representations to cluster by visual appearance rather than by the underlying actions. As a result, they struggle to align human actions with their robot counterparts. To bridge the gap, we introduce SALA, which emphasizes establishing the semantic correspondence for latent actions. Without requiring paired data, we use the language descriptions of unpaired human and robot clips to estimate semantic similarities and supervise cross-embodiment correspondence. Specifically, we translate these similarities into soft neighborhood structures that guide human latent actions toward semantically related robot latents, while robot action reconstruction grounds the latent space in control. The resulting shared latent action space provides a unified supervision signal for training an embodied foundation model on both human and robot videos. Notably, latent action supervision enables scaling along two axes: (1) pre-training on increasing amounts of general human video consistently reduces robot action prediction error on downstream tasks, and (2) post-training on increasing amounts of task-specific human video substantially improves real-world robot task success rates.",
+    "authors": [
+      "Jiachun Jin",
+      "Zetong Zhou",
+      "Haonan Wang",
+      "Xiao Yang",
+      "Jun Zhu",
+      "Zhijie Deng"
+    ],
+    "published": "2026-11-12T17:04:50+00:00",
+    "updated": "2026-11-12T17:04:50+00:00",
+    "url": "http://arxiv.org/abs/2611.17110v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.17110v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.17060v1",
+    "title": "Ropedia Xperience 2: A Gold Standard for Scaling Physical AI Environments and Behaviors",
+    "abstract": "Large foundation models such as GPT-6 Astra and Claude Fable 5.1 have recently been shown to control robots directly from visual observations. They nevertheless remain brittle on long-horizon, contact-rich tasks in real-world environments. Further progress depends on two complementary resources: demonstrations of human behavior that supervise how tasks are performed, and interactive environments in which policies can be rolled out, evaluated, and improved in closed loop. Language models have advanced along well-characterized scaling laws; the corresponding question for physical AI is how capability scales with environments and behaviors, which first requires identifying which data to scale and how to produce and reuse such data continuously. To address this question, we introduce Ropedia Xperience 2, comprising 1,589 released metric-scale 3D scans and a collection of 4,230 egocentric recordings of 74 tasks (131 hours). We further show that each capture can be repurposed for robot learning: scenes are converted into physically interactive simulation environments, human motion is retargeted to whole-body robot trajectories, and additional robot behaviors are obtained through virtual teleoperation and automated long-horizon trajectory generation. We propose this joint capture of environments and behaviors as a gold standard for physical AI data collection, laying a data foundation for establishing scaling laws over environments and behaviors.",
+    "authors": [
+      "Hao Li",
+      "Fangzhou Hong",
+      "Zhaoxi Chen",
+      "Hui En Pang",
+      "Kairui Hu",
+      "Mingze Sun",
+      "Runmao Yao",
+      "Xinhao Ji",
+      "Xiyuan Zheng",
+      "Xuanli Chen",
+      "Yalun Dai",
+      "Yap Kim Hui",
+      "Dingwen Zhang",
+      "Yuanyuan Gao",
+      "Ziang Cao",
+      "Cheng Huang Yean",
+      "Jackson Peng",
+      "Rui Duan",
+      "Yaobo Liu",
+      "Zetong Wang",
+      "Ziwei Liu"
+    ],
+    "published": "2026-11-12T16:37:21+00:00",
+    "updated": "2026-11-12T16:37:21+00:00",
+    "url": "http://arxiv.org/abs/2611.17060v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.17060v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.16728v1",
+    "title": "EgoX: Egocentric Cross-Embodiment Manipulation with Embodiment Dreaming",
+    "abstract": "Generalist manipulation policies can benefit from the complementary experience of humans, real robots, and simulated agents. However, differences in morphology, sensing, and control interfaces make it difficult to learn effectively from their combined demonstrations. We introduce EgoX, an egocentric cross-embodiment learning framework that organizes heterogeneous demonstrations through semantically corresponding observation and action modalities. EgoX pretrains a Modularized Cross-Embodiment Transformer with Embodiment Dreaming (MXT+) on this mixture and fine-tunes it on target-embodiment demonstrations. Within each embodiment, MXT+ assigns a dedicated tokenizer to each observation modality and a dedicated expert to each action modality, with a Transformer trunk shared across embodiments. A training-only embodiment-dreaming objective predicts latent representations of future visual and proprioceptive states, encouraging the shared trunk to model each embodiment's dynamics. Across 13 task-embodiment pairs spanning five tasks and six robot embodiments, including five physical robots and one simulated humanoid, cross-embodiment pretraining raises MXT+'s average normalized task progress from 0.63 to 0.80 over training from scratch. The gains are particularly pronounced under out-of-distribution conditions, where average task progress increases from 0.53 to 0.77. Ablations demonstrate the benefits of broader pretraining mixtures, modular interfaces, and embodiment dreaming, with dreaming producing more similar latent geometry across embodiments. Project page: egox-dream.github.io.",
+    "authors": [
+      "Yaru Niu",
+      "Binghong Chen",
+      "Changwei Yao",
+      "Shangtao Li",
+      "Zhenlong Fang",
+      "Revanth Krishna Senthilkumaran",
+      "Shuai Zhou",
+      "Yuemin Mao",
+      "Kalie Ching",
+      "Po-Ju Chao",
+      "Yudong Luo",
+      "Peiqi Yu",
+      "Heng Zhang",
+      "Hao Zhang",
+      "Bingqing Chen",
+      "Chen Qiu",
+      "H. Eric Tseng",
+      "Ye Yuan",
+      "Umar Iqbal",
+      "Changliu Liu",
+      "Jonathan Francis",
+      "Ding Zhao"
+    ],
+    "published": "2026-11-12T12:40:24+00:00",
+    "updated": "2026-11-12T12:40:24+00:00",
+    "url": "http://arxiv.org/abs/2611.16728v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.16728v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.16590v1",
+    "title": "AstroMemBench: A Benchmark for Memory Systems in Embodied Spacecraft Agents",
+    "abstract": "Long-term spacecraft autonomy requires embodied agents to use operational history under communication delays, time-critical operations, environmental uncertainty, complex physical interactions, power and computational constraints, and safety and reliability requirements. We introduce AstroMemBench and a Scenario-Challenge-Capability design method that maps these requirements to executable memory tests. The benchmark covers 16 memory subchallenges through 140 templates and 2240 instances across nine tasks in planetary surface operations, on-orbit servicing, and deep-space exploration. A deterministic environment scores actions for task completion, state changes, safety, and resource use. Ablations under nine conditions show that the benchmark is sensitive to how accurately agents recover and use historical information and to differences in memory-system design. Main experiments compare six configurations. Mem0, Chain-of-Memory, LightMem, and retrieval-augmented generation (RAG) improve same-session mean scores over native Pi Agent, with no clear advantage of the three memory systems over RAG. After a session restart, Mem0 outperforms RAG by 12.25 points. Benefits favor instruction retention and result reuse over ongoing state tracking and energy reservation. AstroMemBench supports the design, development, and selection of memory systems for embodied spacecraft agents. AstroMemBench 1.0 and its evaluation code are publicly available: https://github.com/flyingView/AstroMemBench-v1.",
+    "authors": [
+      "You Wu",
+      "Guhong Zhang",
+      "Hongwei Li",
+      "Xinyue Hong",
+      "Yuan Jia"
+    ],
+    "published": "2026-11-12T10:23:15+00:00",
+    "updated": "2026-11-12T10:23:15+00:00",
+    "url": "http://arxiv.org/abs/2611.16590v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.16590v1",
+    "categories": [
+      "cs.AI",
+      "cs.RO"
+    ],
+    "primary_category": "cs.AI"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.16589v1",
+    "title": "STVLA: Spatial-aware and Temporal-memory forVision-Language-Action Models",
+    "abstract": "Robotic manipulation often requires both spatial scene understanding and task history. However, many vision-language-action (VLA) policies rely primarily on current observations, without explicitly integrating spatial structure and task history. Appearance-based memories can be sensitive to occlusion and viewpoint changes, while spatial representations of the current scene alone do not preserve how the scene has changed during task execution. We introduce STVLA, a framework that incorporates features from a pretrained visual geometry foundation model into temporal memory alongside visual representations. This allows the policy to recall past scene structure as context for current action decisions. To select informative history, STVLA uses a mathematically grounded scoring rule that balances relevance to the current observation with complementary evidence from memory. Across evaluations on LIBERO, LIBERO-Mem, MIKASA-Robo, and SimplerEnv Bridge, STVLA achieves the highest average success rate among the compared methods on each benchmark. On real-world block stacking, object organization, and phone packaging, it improves success over $π_{0.5}$ by $58.33$, $30.00$, and $35.00$ percentage points, respectively. These results support integrating scene geometry into temporal memory to improve manipulation requiring both spatial precision and task history. Project website: \\href{https://stvla.github.io/}{https://stvla.github.io/}",
+    "authors": [
+      "Zhuo Han",
+      "Yeqiang Wang",
+      "Xinran Wang",
+      "Hongwei Han",
+      "Yi Xiong",
+      "Zunian Wan",
+      "Jianbo Mao",
+      "Huan Peng",
+      "Yongcheng Liu",
+      "Wei Shan",
+      "Maoqing Yao"
+    ],
+    "published": "2026-11-12T10:21:49+00:00",
+    "updated": "2026-11-12T10:21:49+00:00",
+    "url": "http://arxiv.org/abs/2611.16589v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.16589v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.16487v1",
+    "title": "HeMeR: Heterogeneous Memory Reconciliation for Embodied Agents via Structured KV Reuse",
+    "abstract": "Embodied agents make decisions by combining information from heterogeneous memory modules, including declarative memory for explicit knowledge, procedural memory for learned routines, and working memory for current observations. During interaction, the memory contents required for decision making change with the agent's state, goal, and task progress, while many contents remain shared across consecutive decisions. However, existing memory modules are typically accessed through separate interfaces, so each updated memory context is often processed as a new input to the foundation model. This prevents selective key-value (KV) cache reuse for unchanged memory contents and forces full KV cache recomputation even when much of the memory context remains valid. We introduce HeMeR, an inference framework that performs KV reconciliation between dynamically updated memory contexts and reusable KV states. HeMeR tracks declarative, procedural, and working memory contents across action decisions, preserves KV states for unchanged contents, and reconciles only the KV states affected by memory-content updates. This enables efficient and stable inference as memory contents evolve during interaction. We evaluate HeMeR on ALFWorld, Habitat, and real-world robotic deployments requiring coordinated use of heterogeneous memory contents. In the real-world setting, HeMeR achieves 83.20% task success and reduces per-step inference time from 2.94 to 1.87 seconds compared with MemRL, while preserving compatible KV states as task progress updates the memory context.",
+    "authors": [
+      "Saehun Chun",
+      "Wonje Choi",
+      "Jinwoo Jang",
+      "Taeyoon Kwack",
+      "Honguk Woo"
+    ],
+    "published": "2026-11-12T08:58:20+00:00",
+    "updated": "2026-11-12T08:58:20+00:00",
+    "url": "http://arxiv.org/abs/2611.16487v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.16487v1",
+    "categories": [
+      "cs.AI"
+    ],
+    "primary_category": "cs.AI"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.16424v1",
+    "title": "PhysCapBench: A Cross-Domain Benchmark for Physically Grounded Video Captioning",
+    "abstract": "Physical AI aims to learn transferable physical knowledge from real-world experience to understand, predict, and act in the physical world. Internet videos and embodied demonstrations provide complementary observations of motion, interaction, and state evolution. A foundational data challenge is to measure and preserve this physical information as training supervision. In video-language pretraining, captions express observed processes in language, yet a semantically correct description can omit the interactions and transitions that define those processes. Rich physical experience in video does not automatically translate into sufficient language supervision. This gap calls for a yardstick to assess annotation quality, compare captioning strategies, and guide training-data refinement. Motivated by our data construction for world-model pretraining, we introduce PhysCapBench, to our knowledge the first unified physical-caption benchmark spanning all three domains: third-person scenes, egocentric manipulation, and handheld-gripper demonstrations. It provides human-verified annotations for 1,500 video sequences and evaluates accuracy and coverage through seven physical dimensions. We examine downstream utility through video reconstruction and manipulation-policy fine-tuning. Physical captions reduce reconstruction LPIPS by 8.6-9.5% on third-person videos and 26.9-30.9% on egocentric videos relative to metadata captions. Training-instruction enrichment improves both PhysCapBench scores and policy success, including a 7.5-percentage-point gain for pi0.5 on a RoboTwin 2.0 subtask. PhysCapBench makes the physical content of language supervision inspectable and comparable, providing a cross-domain basis for its evaluation and improvement.",
+    "authors": [
+      "Haofeng Wang",
+      "Pengcheng Wen",
+      "Ruiqi Li",
+      "Yuhao Zhang",
+      "Tiange Zhang",
+      "Boren Zheng",
+      "Xuanyi Liu",
+      "Siyu Tao",
+      "Danni Yu",
+      "Gan Lin",
+      "Haocheng Tang",
+      "Tianzizhe Guo",
+      "Mingyuan Su",
+      "Boyuan Chen",
+      "Zhongyuan Wang"
+    ],
+    "published": "2026-11-12T07:33:09+00:00",
+    "updated": "2026-11-12T07:33:09+00:00",
+    "url": "http://arxiv.org/abs/2611.16424v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.16424v1",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.16422v1",
+    "title": "BlinkMimic: Training a Humanoid Motion Tracker in Minutes on a Single GPU",
+    "abstract": "Whole-body motion tracking lets a humanoid robot follow reference motions, but training a tracking policy for a library of motions has usually taken hours of GPU time. SuperMimic showed that the policy can instead be trained by backpropagating through a world model learned from parallel simulation, and InstantTrack added Muon updates, a residual policy around the reference and an averaged deployed policy. We build on both and present BlinkMimic, a recipe that makes this training faster. On a simulated Unitree G1, BlinkMimic trains one policy for all 40 LAFAN1 clips in 3.4 minutes on a single RTX 4090, measured until three consecutive checkpoints reach a normalized return of at least 0.82 with no failed clip (mean of three seeds). We split training time into the cost of an iteration, the iterations needed to fit the motions, and the iterations needed to remove the last failures, and assign each component, inherited or new, to one of these terms. The new components are a step size that decreases once training has progressed, resets directed by failures of the deployed policy under deployment conditions, and GPU graph capture of the whole iteration. A leave-one-out ablation with three seeds per component shows which term each component affects, and further measurements of the gradient, the update rule and the failure cases explain these effects. Code and per-seed results are available at https://github.com/fuyichen0725/blinkmimic.",
+    "authors": [
+      "Fuyi Chen"
+    ],
+    "published": "2026-11-12T07:31:42+00:00",
+    "updated": "2026-11-12T07:31:42+00:00",
+    "url": "http://arxiv.org/abs/2611.16422v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.16422v1",
+    "categories": [
+      "cs.RO",
+      "cs.LG"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.16419v1",
+    "title": "I See What You Want: Decoding Hierarchical Operator Intent from Visual Teleoperation History",
+    "abstract": "Vision-language models (VLMs) have become a powerful foundation for robotic scene understanding, task planning, and language-conditioned control. A natural question follows: can these models also decode what a human operator intends while teleoperating a robot, without any explicit instruction? We formulate this as hierarchical intent prediction, jointly inferring the ongoing atomic action and the broader mission it serves from a short visual teleoperation history. To study this, we introduce VI AMO (Vision Intention Action and Mission Ongoing), a dataset of 6,600 episodes from eleven robot sources with 13,653 temporally aligned action annotations and 9,702 mission annotations. Large proprietary models struggle with this problem: on held-out episodes, GPT-4o reaches Sentence-BERT similarities of only 0.563 and 0.470 for action and mission, and GPT-5.6 Luna achieves only 0.581 and 0.554. Fine-tuning a VLM on VI AMO yields our Vision-Intention Model (VIM), which raises these scores to 0.825 and 0.821 and still reaches 0.726 and 0.717 on the 35.4% of test actions with both labels absent from training. Finally, as a downstream application, VIM's predicted mission enables a vision-language-action (VLA) policy to take over from the operator mid-task in a real-world environment unseen during VIM fine-tuning, reducing human teleoperation time by 34.6% relative to GPT-4o and 39.8% relative to GPT-5.6 Luna, while cutting intent-prediction latency by roughly 70% on average.",
+    "authors": [
+      "Xiangyi Jia",
+      "Kaixian Qu",
+      "Shengzhi Wang",
+      "Chenyu Yang",
+      "Robert Katzschmann",
+      "Marco Hutter"
+    ],
+    "published": "2026-11-12T07:30:14+00:00",
+    "updated": "2026-11-12T07:30:14+00:00",
+    "url": "http://arxiv.org/abs/2611.16419v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.16419v1",
+    "categories": [
+      "cs.RO",
+      "cs.CV"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.16374v1",
+    "title": "ManiLadder: Benchmarking Robot Manipulation Through a Categorized and Multi-Difficulty Level Task Ladder",
+    "abstract": "Recent advances in robotic manipulation have enabled increasingly complex and dexterous behaviors, yet existing benchmarks still focus on simple pick-and-place tasks and lack a systematic framework for measuring progress in robot learning along the axis of task difficulty. We present ManiLadder, a large-scale and organized simulation benchmark for robotic manipulation. ManiLadder contains 112 carefully designed tasks stratified into 4 difficulty levels, with 8 categories in each level, spanning rigid-body and deformable-object manipulation, single-arm and dual-arm settings, and gripper and dexterous-hand end-effectors. To calibrate difficulty, we fix the data amount the same for every task and use a unified flow- matching imitation learning policy under the same training and evaluation protocols, then use its evaluation success rate as an operational empirical difficulty signal. All tasks are iteratively refined until they fall into target difficulty ranges, which are then verified across different random seeds, policies, and agentic learning systems. We further analyze the task properties, compare different policy performances and training settings, analyze task transfer and data scaling behaviors, and conduct real-world experiments showing that the designed tasks preserve their difficulty ordering beyond simulation. ManiLad- der provides a calibrated ladder for measuring, comparing, and advancing robotic manipulation capabilities. More results are available at https://maniladder-benchmark.github.io/.",
+    "authors": [
+      "Chongkai Gao",
+      "Jieao Shi",
+      "Zhaoyu Mu",
+      "Yudi Lin",
+      "Xuanwei Liu",
+      "Wei Ken Ng",
+      "Baiye Cheng",
+      "Anqi Chen",
+      "Kerun Liu",
+      "Zhuoran Li",
+      "Xuchuan Huang",
+      "Haoyang Li",
+      "Shengjia Zhu",
+      "Nga Teng Chan",
+      "Yuxuan Zhang",
+      "Xingyu Chen",
+      "Lin Shao"
+    ],
+    "published": "2026-11-12T06:42:31+00:00",
+    "updated": "2026-11-12T06:42:31+00:00",
+    "url": "http://arxiv.org/abs/2611.16374v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.16374v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.16346v1",
+    "title": "MotionSkill: From Bipedal Motion Video to Control across Embodiments",
+    "abstract": "Reusing a demonstrated gait can reduce the work of specifying the same motion for each biped. A video captures the timing of a step, but each robot must execute it with its own limbs and actuators. MotionSkill recovers a timed reference once from monocular video and adapts it to each target in simulation. It aligns root motion and body landmarks in a common frame and records which landmarks are available at each instant. At each source timestamp, the mapper preserves limb directions, uses the target segment lengths, and solves inverse kinematics under joint limits and closure constraints. In MuJoCo, we train a separate residual policy for each of ten bipeds on its mapped reference from one four-second walking clip. Each policy uses the measured robot state to correct joint commands during contact. From initial states held out during training, MotionSkill completed 98% of trials on the original video and 26% with the upper body occluded for one second.",
+    "authors": [
+      "Philip Niu",
+      "Xiaofeng Han",
+      "Sylvie Pan",
+      "Yang Wang"
+    ],
+    "published": "2026-11-12T06:04:32+00:00",
+    "updated": "2026-11-12T06:04:32+00:00",
+    "url": "http://arxiv.org/abs/2611.16346v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.16346v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.16312v1",
+    "title": "Alloy: A Multi-Material Physics Engine for Robot Learning",
+    "abstract": "Robots handle much more than rigid objects: towels, cables, water, sand. The simulators used to train robots at scale are strongest on rigid bodies, and adding another material usually means a second engine and hand-written glue between the two. We present Alloy, an open-source physics engine for robot learning in which rigid robots, cloth, cables, liquids, granular material and soft bodies share one scene. Each object is described once; Alloy assigns it to a solver suited to its material, couples the solvers inside every control step, and runs the scene in many parallel worlds on one GPU, or on a CPU. Every world carries a health grade, to help tell a failure of the physics from a failure of the policy. Alloy is built on Newton, MuJoCo Warp and Warp, and it is written to be driven by coding agents: its documentation ships inside the package, every error names its fix, and the engine is exposed as tools over the Model Context Protocol. In a cold test, agents that had never seen Alloy installed a pre-release from the package index and trained policies for walking, cable handling and pouring on a single GPU. We also report how throughput grows with the number of worlds, depth-camera throughput, agreement with closed-form references, and a reliability test over a thousand worlds.",
+    "authors": [
+      "Pranay Gupta",
+      "Deepanshu Rohilla"
+    ],
+    "published": "2026-11-12T05:14:10+00:00",
+    "updated": "2026-11-12T05:14:10+00:00",
+    "url": "http://arxiv.org/abs/2611.16312v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.16312v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.16246v1",
+    "title": "What Can a VLA Learn from the Agent That Calls It? Task-Level Experience Distillation for Embodied Navigation",
+    "abstract": "Navigation agents use a large language model (LLM) planner to call a vision-language-action (VLA) model. Each episode needs the LLM, adding cost and delay. We distill successful agent experience into the VLA instead of distilling the planner. The VLA then navigates alone at test time. Agent sessions are not VLA demonstrations. They include motions driven by planner tools and sub-instructions, along with detours. We present H2E, a task-level experience distillation method that converts these sessions into VLA training data. Every motion becomes a VLA action under the original task instruction, with the resulting poses as targets. H2E masks the loss on steps that move away from the goal. It labels every visited state within 1 m of the goal as a stop. We then update the VLA with low-rank adaptation. The VLA learns to stop at the goal and find goals the base model never reaches. On all 3,189 REVERIE-CE val-unseen episodes, H2E raises the success rate of an 8B VLA from 35.0% to 44.9%.",
+    "authors": [
+      "Jinze Tao",
+      "Yuxiao Han",
+      "Kangkang Dong",
+      "Yancong Wei",
+      "Xiaojun Zhu",
+      "Bokui Chen",
+      "Houde Liu"
+    ],
+    "published": "2026-11-12T03:42:58+00:00",
+    "updated": "2026-11-12T03:42:58+00:00",
+    "url": "http://arxiv.org/abs/2611.16246v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.16246v1",
+    "categories": [
+      "cs.RO",
+      "cs.LG"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.16221v1",
+    "title": "BWM-Forge: Agentic World Programming for Embodied Intelligence",
+    "abstract": "Generating diverse robot videos requires control over scene geometry, robot motion, and viewpoints. End-to-end video generation offers limited direct access to these variables, making targeted edits and reuse across tasks difficult. We present BWM-Forge, a code-driven framework for controllable video generation in robotics. Given robot assets and a task description, the framework accepts an initial image, an image with motion data, or a human demonstration video. A coding agent constructs editable Blender scene programs that specify objects, robot motion, and cameras. The resulting proxy videos provide structural and motion references for a video generation model, which adds visual detail. A multi-agent harness coordinates input processing, scene construction, review, and rendering. Automated evaluation and user feedback support iterative refinement, while an experience repository stores and retrieves reusable modeling and rendering rules. This design supports multiple robot embodiments, synchronized viewpoints, and appearance variation from a shared scene program. We evaluate the framework on 15 tasks covering five robot types. Compared with LingBot-World Base Cam on these tasks, BWM-Forge achieves higher aesthetic quality, imaging quality, subject and background consistency, motion smoothness, and RoboJudge-9B physical adherence and instruction alignment scores. The baseline scores higher in dynamic degree. Qualitative cases illustrate viewpoint control, scene variation, feedback-driven edits, and experience reuse across scenes. These results demonstrate a practical approach to generating controllable robot videos through editable, executable scene representations.",
+    "authors": [
+      "BWM Team"
+    ],
+    "published": "2026-11-12T03:14:48+00:00",
+    "updated": "2026-11-12T03:14:48+00:00",
+    "url": "http://arxiv.org/abs/2611.16221v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.16221v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.16188v1",
+    "title": "PERA: Plug-in Experts for Robotic Actions in Continual Whole-Body Control",
+    "abstract": "Motion imitation enables humanoid robots to acquire whole-body skills such as walking and dancing. However, fine-tuning an entire policy for a new skill can affect existing behaviors, while training a separate policy for each skill increases training and maintenance costs. We present PERA, a method for learning new skills by reusing existing motion capabilities. PERA freezes a pretrained mixture-of-experts policy and trains an additional task expert and its routing score using task rewards or teacher-action supervision. In Unitree G1 simulation, each added task module contains approximately 1.03% of the parameters of the base actor. Built on our pretrained policy, PERA successfully completes all ten new tasks. Disabling the expert restores the original computation path of the base policy, which still fully executes all 126 original motions. Enabling the expert also improves the execution of some dance motions not used to train that expert, indicating that its benefits extend beyond its training motions. Experiments with HoloMotion further demonstrate the applicability of PERA to different base policies.",
+    "authors": [
+      "Shangchao Hu",
+      "Yadan Sun",
+      "Xibo Yu",
+      "Wei Huang"
+    ],
+    "published": "2026-11-12T02:23:21+00:00",
+    "updated": "2026-11-12T02:23:21+00:00",
+    "url": "http://arxiv.org/abs/2611.16188v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.16188v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.16116v1",
+    "title": "Robo-SWE: An Executable Issue-Resolution Dataset Mined from Robot Software Repositories",
+    "abstract": "Coding agents are evaluated mostly on general-purpose software, but domain-specific systems require domain-aware evaluation. Robot software is a particularly challenging case: Robot Operating System 2 (ROS 2) packages have their own build tools, simulators and learning frameworks are built on physics engines, and behavior that depends on timing and hardware is hard to test. We present Robo-SWE, a dataset of 236 executable issue-resolution tasks mined from merged pull requests in 28 public robotics repositories in four domains: ROS 2 systems, simulation and physics engines, robotics algorithm libraries, and robot-learning frameworks. Each task contains the original issue text, a container recipe for the repository at the commit before the fix, the developers' fix, and the developers' tests, which fail before the fix and pass after it in repeated offline runs. The dataset also keeps a provenance ledger of all 1,567 candidate pull requests, with the stage each reached and the reason for every rejection, and, as a first use, 3,540 graded attempts by five coding-agent setups with recorded patches and 3,529 available trajectories. Across three runs per primary setup, resolve rates range from 45.8% for Claude Sonnet 5.5 to 56.5% for Claude Opus 5.5; GPT-6.1 Sol reaches 54.1% at maximum effort and 52.5% at medium effort, and GPT-6 Astra 51.4%. GLM-5.3 resolves 46.2%, and Kimi K3.1 Pro 43.9%. The tasks are validated by execution; verification of their fairness by human reviewers is future work. The dataset and public leaderboard are available online.",
+    "authors": [
+      "Vahid Haratian",
+      "Vahid Ansari",
+      "Mohammadhossein Malmir",
+      "Alois Knoll"
+    ],
+    "published": "2026-11-11T23:51:27+00:00",
+    "updated": "2026-11-11T23:51:27+00:00",
+    "url": "http://arxiv.org/abs/2611.16116v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.16116v1",
+    "categories": [
+      "cs.SE",
+      "cs.RO"
+    ],
+    "primary_category": "cs.SE"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.16012v1",
+    "title": "Topology-Aware 4D Gaussian Splatting for Egocentric Videos",
+    "abstract": "Reconstructing dynamic scenes and objects from monocular egocentric video is crucial for embodied AI, yet existing 4D Gaussian Splatting (4DGS) approaches struggle with everyday interactions involving topological changes, such as cutting, assembly, opening, or closing. Since 4DGS methods rely on deforming a fixed representation, events that split, merge, or reveal surfaces cause severe visual artifacts. To address this challenge, we introduce TopoEgo, the first benchmark dedicated to topological changes in egocentric video (covering fission, fusion, open, and close), alongside Topo-4DGS, a topology-aware reconstruction method. Topo4DGS jointly models part-level motion and time-varying surface support by assigning independent rigid transformations to interacting parts and dynamically activating or deactivating Gaussians as surfaces appear, disappear, or separate. Extensive experiments demonstrate that Topo-4DGS significantly outperforms state-of-the-art 4DGS approaches across topological changes, especially on post-event frames. Code and data will be made publicly available.",
+    "authors": [
+      "Leonardo Vanni",
+      "Stefano Gasperini",
+      "Federico Tombari",
+      "Chiara Plizzari"
+    ],
+    "published": "2026-11-11T21:13:08+00:00",
+    "updated": "2026-11-11T21:13:08+00:00",
+    "url": "http://arxiv.org/abs/2611.16012v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.16012v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  }
+]
