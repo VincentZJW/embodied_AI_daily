@@ -1,0 +1,544 @@
+[
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.25474v1",
+    "title": "TuringPAI: A Foundation for On-Device Physical AI",
+    "abstract": "Physical AI requires models that understand spatial relationships and dynamic environments and translate observations into actions under limited onboard compute. We present TuringPAI, a family of models for on-device Physical AI comprising TuringPAI-VL for shared vision-language understanding, TuringPAI-Drive for autonomous driving, and TuringPAI-Embodied for robotic manipulation. TuringPAI-VL is a 0.65B model built on HybridViT-MLQ, which combines convolutional local aggregation with Transformer-based global modeling. Multi-scale Latent Queries integrate spatial features and observation history within the same visual Transformer, providing a compact, structured interface to the language model. Training combines general vision-language data with geometric, cross-view, and temporal supervision. TuringPAI-VL supports general multimodal understanding and improves quantitative geometric perception over Qwen2-VL-2B, while providing a shared initialization for the two downstream VLA models. For autonomous driving, TuringPAI-Drive maintains all evaluated ADE/FDE metrics within 1.2\\% of a full-token HybridViT baseline using the MLQ interface and achieves comparable aggregate scores in an in-house simulation evaluation. Using XPeng Native Runtime (XNRT) on a single NVIDIA Orin-X SoC, TuringPAI-Drive generates trajectories at 12\\,Hz in on-vehicle operation. For robotic manipulation, TuringPAI-Embodied achieves a 96.8\\% average success rate across the four LIBERO suites. These results demonstrate a shared vision-language foundation for driving and robotic manipulation under practical on-device constraints.",
+    "authors": [
+      "Qiman Wu",
+      "Hanlin Chen",
+      "Yuhua Wei",
+      "Mingyuan Wang",
+      "Shaman Tang",
+      "Minghao Li",
+      "Rui Xin",
+      "Xingye Liu",
+      "Zhichao Yang",
+      "Yiqi Yu",
+      "Hongyan Pei",
+      "Xiaowen Tian",
+      "YingYing Liu",
+      "Shiwen Liu",
+      "Jiahui Hu",
+      "Yizhao Wang",
+      "Yuheng Zhang",
+      "Anhua Liu",
+      "Yue He",
+      "Shuang Su",
+      "Da Zhu",
+      "Hua Zhou",
+      "Pengfei Diao",
+      "Haojie Yang",
+      "Weichao Huang",
+      "Hang Zhang",
+      "Honggou Yang",
+      "Xianming Liu"
+    ],
+    "published": "2026-11-19T04:01:34+00:00",
+    "updated": "2026-11-19T04:01:34+00:00",
+    "url": "http://arxiv.org/abs/2611.25474v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.25474v1",
+    "categories": [
+      "cs.CV",
+      "cs.RO"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.25461v1",
+    "title": "ActMem: From Latent Memory Reasoning to Grounded Robotic Action",
+    "abstract": "Vision-Language-Action (VLA) models have shown promising results in real-world long-horizon manipulation, where memory plays a crucial role. However, existing memory-augmented VLAs either retrieve past observations without reasoning about what they imply, or reason over the full history in a shared context where it crowds out current perception. Cognitive science treats them as distinct systems: memory reconstructs past experience to decide what to do, while perception guides how to act. We therefore propose ActMem, an in-context memory framework that decouples memory reasoning from perceptual grounding within a single vision-language backbone. Built on a vision-language model with native video understanding, ActMem infers the current subtask from a timestamped interaction history and keeps the hidden states formed during this inference as a Latent Memory Chain-of-Thought (Memory CoT), which conditions a flow-matching action expert. Perception Attention further lets the expert attend directly to the current view. To keep inference fast under long histories, Efficient Memory CoT Inference reuses computation across consecutive decisions without changing the output. ActMem achieves 71.1% task success and 80.8% completion success on RoboMemArena, surpassing the strongest baseline by 7.5 and 8.7 percentage points, and 73.8% average success on MIKASA-Robo, the best among all compared methods. In the real world, it reaches 68.8% average success on exogenous, endogenous, and traceless memory tasks, 10.0 percentage points above the strongest memory-augmented VLA. Code and checkpoints will be released at https://github.com/LigphiDonk/ActMem and https://huggingface.co/donk111/ActMem.",
+    "authors": [
+      "Linfeng Dong",
+      "Jianwei Niu",
+      "Jiuyi Zhao",
+      "Ruibing Feng",
+      "Xinghao Wu",
+      "Wu Yang",
+      "Shuai Tao",
+      "Wulong Liu",
+      "Mu Li"
+    ],
+    "published": "2026-11-19T03:46:39+00:00",
+    "updated": "2026-11-19T03:46:39+00:00",
+    "url": "http://arxiv.org/abs/2611.25461v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.25461v1",
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.25460v1",
+    "title": "LoongForge-Embodied: A Unified Framework for Training Heterogeneous Embodied Models",
+    "abstract": "Training Vision-Language-Action (VLA) models and World-Action Models (WAMs) is computationally expensive, while their heterogeneous architectures and fragmented training stacks make system optimizations difficult to reuse across models. To address these challenges, we present LoongForge-Embodied, a native-PyTorch framework that unifies and accelerates the training of heterogeneous embodied models. At its core, LoongForge-Embodied introduces a common abstraction layer that decouples model-specific implementations from shared training infrastructure, enabling cross-model reuse without constraining individual architectures or execution requirements. Buildingon this unified infrastructure, the framework combines reusable acceleration mechanisms with model-specific and hardware-aware optimization strategies across computation, execution, memory, data I/O, and distributed communication, including FP8-based communication optimizations for DDP and FSDP. Beyond training acceleration, LoongForge-Embodied integrates a unified data infrastructure with a pipeline for synthesizing robot data from egocentric data, and an efficient evaluation framework that supports concurrency and optimized computation in simulator. Experiments across representative VLA and WAM models demonstrate 1.47x-4.38x end-to-end training throughput improvements over their corresponding open-source baselines, as well as 4.1x-23.2x faster evaluation under the same protocols.",
+    "authors": [
+      "LoongForge Team"
+    ],
+    "published": "2026-11-19T03:45:44+00:00",
+    "updated": "2026-11-19T03:45:44+00:00",
+    "url": "http://arxiv.org/abs/2611.25460v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.25460v1",
+    "categories": [
+      "cs.AI"
+    ],
+    "primary_category": "cs.AI"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.25400v1",
+    "title": "Dune: A Zeroth-Order Optimizer with Time-Conditioned Historical Error Regression for VLA Test-Time Adaptation",
+    "abstract": "Test-Time Adaptation (TTA) enables Vision-Language-Action (VLA) models to handle distribution shifts during deployment without source-domain retraining. However, backpropagation-based adaptation incurs heavy memory overhead on resource-constrained robots, whereas zeroth-order (ZO) methods suffer from high estimation variance under limited perturbation budgets. We observe that while ZO estimation enables low-memory adaptation with rapid initial gains, it often stalls or degrades over long-horizon updates due to noisy gradient estimates. To address these limitations, we propose Dune, a zeroth-order optimizer that stabilizes long-horizon adaptation by coupling online historical error prediction with current perturbation observations. Specifically, Dune learns a lightweight, time-conditioned error predictor from past optimization dynamics and fuses its predictions with instantaneous ZO estimates, achieving effective variance reduction without backpropagation or extra forward passes. Additionally, we theoretically characterize how estimation variance restricts convergence in high-dimensional, small-population regimes, motivating the use of historical statistics. Extensive experiments on LIBERO and real-world robots demonstrate that Dune achieves superior success rates under a low memory footprint, with ablations confirming improved closed-loop stability and post-disturbance recovery.",
+    "authors": [
+      "Chengyang Dong",
+      "Ze Chen",
+      "Kai Ye",
+      "Chutian Wang",
+      "Heng Xu",
+      "Wei Mo",
+      "Maomao Li",
+      "Jiayan Xu",
+      "Jiayuan Wu",
+      "Yihao Xiao",
+      "Linhua Ye",
+      "Zhonghua Peng",
+      "Ruize Han",
+      "Jialong Sun"
+    ],
+    "published": "2026-11-19T02:40:38+00:00",
+    "updated": "2026-11-19T02:40:38+00:00",
+    "url": "http://arxiv.org/abs/2611.25400v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.25400v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.25398v1",
+    "title": "RefreshGrad: An Online Adaptive Data-sampling Method for Diffusion-based Visuomotor Learning",
+    "abstract": "Training vision-language-action (VLA) policies from demonstrations typically samples trajectory segments uniformly or relies on static offline data curation before training. However, we find that demonstration data vary sharply in supervision value across temporal windows, and that each window's value to the policy evolves substantially during training rather than being fixed or captured by raw loss alone. Motivated by this finding, we propose RefreshGrad, an online adaptive data-sampling framework that periodically scores temporal windows from the evolving policy using five policy-native signals and dynamically adjusts their sampling weights during training. RefreshGrad focuses optimization on informative, learnable windows without altering the policy architecture, training objective, or inference cost. Across ten LIBERO-Plus manipulation tasks, RefreshGrad boosts average success from 60.7% (Uniform) and 68.2% (FAKTUAL) to 76.1% under visual perturbations, and from 57.4% and 73.3% to 81.3% in clean scenes.",
+    "authors": [
+      "Dijia Zhan",
+      "Jinyi Li",
+      "Xuemiao Xu",
+      "Yan Zhou",
+      "Yu Liu",
+      "Shaoshan Liu",
+      "Jie Tang"
+    ],
+    "published": "2026-11-19T02:39:07+00:00",
+    "updated": "2026-11-19T02:39:07+00:00",
+    "url": "http://arxiv.org/abs/2611.25398v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.25398v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.25251v1",
+    "title": "WEVO: World Model-Enabled VLA Optimization for Whole-Body Loco-Manipulation",
+    "abstract": "Reinforcement learning (RL) can improve vision-language-action (VLA) policies beyond imitation, but humanoid exploration is unsafe and simulator RL can exploit residual sim-to-real gaps. We present WEVO, a teleoperation-free framework for post-training a whole-body humanoid VLA in an action-conditioned video world model (WM). Simulated manipulation and locomotion play data improve contact-dynamics and viewpoint-change prediction. A VLA trained on synthetic demonstrations collects 20 autonomous real robot rollouts per task to align the WM with deployment observations. The VLA, whole-body controller (WBC), and video WM then form a closed-loop RL environment with dense progress rewards. Across three real robot tasks, play data improves every evaluated WM metric and downstream policy success; video WM RL raises mean success from 23.3% to 75.0%, compared with 48.3% for real robot RL. We therefore leverage the complementary strengths of both environments: simulation provides policy initialization and broad coverage, while the video WM offers a deployment-aligned environment for policy improvement. Project website: https://qianzhong-chen.github.io/wevo.github.io/.",
+    "authors": [
+      "Qianzhong Chen",
+      "Muyuan Lin",
+      "Yuyin Sun",
+      "Mac Schwager",
+      "Cheng-Hao Kuo",
+      "Roberto Martín-Martín"
+    ],
+    "published": "2026-11-18T22:36:08+00:00",
+    "updated": "2026-11-18T22:36:08+00:00",
+    "url": "http://arxiv.org/abs/2611.25251v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.25251v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.25113v1",
+    "title": "Do Deep Stereo Models Learn Shape Priors?",
+    "abstract": "Localizing object boundaries is important for embodied visual systems, since small boundary errors can change the inferred geometry of physical surfaces. We study whether deep stereo models produce boundaries consistent with simple shape priors when local image and disparity cues are weak. We create a synthetic stereo dataset consisting of objects drawn from a highly constrained family of shapes, with randomized depth, slant, color and texture. Despite the simplicity of this shape space, we find that several state-of-the-art stereo models retain systematic boundary errors, even when finetuned or trained from scratch on the dataset. We then introduce a simple generative stereo model that jointly predicts disparity and a distance field representing object boundaries. The model improves boundary localization and produces contours that adhere more closely to the underlying shape space. These results expose limitations in the boundary predictions of current stereo architectures when local evidence is weak, and motivate further study of whether generative models can better combine regional grouping evidence with global geometric structure.",
+    "authors": [
+      "Linbo Tang",
+      "Aneel Damaraju",
+      "Todd Zickler"
+    ],
+    "published": "2026-11-18T19:51:54+00:00",
+    "updated": "2026-11-18T19:51:54+00:00",
+    "url": "http://arxiv.org/abs/2611.25113v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.25113v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.25105v1",
+    "title": "MAWAM: A Multi-Agent World-Action Model for Coordinated Manipulation",
+    "abstract": "Every move in a robot team changes the world in which its teammates must act. Coordinated manipulation therefore calls for predicting the team's actions together with the physical future they jointly create. We introduce MAWAM, a multi-agent world-action model that jointly generates each robot's future views and executable action chunks in a single sample. Built from a pretrained single-robot world-action backbone, MAWAM jointly denoises all robots' action and future-view tokens through cross-agent attention, while preserving a separate control interface for each robot. MAWAM achieves the highest success on all three real-robot tasks (laundry-bag collection, bath-towel folding, and umbrella handover), with 67.8% mean success, 18.9 percentage points above MA-VLA trained on the same demonstrations and cameras. In simulation, MAWAM reaches 90.3% mean success on eight tasks with teams of up to four arms. Ablations show that cross-agent attention and team-stage future-video supervision both improve coordinated control: without attention, a four-arm relay falls from 95.0% to 39.0%, and without this supervision, Place Food falls from 78.0% to 47.0%.",
+    "authors": [
+      "Xianzhe Fan",
+      "Chi-Pin Huang",
+      "Fu-En Yang",
+      "Jing Wang",
+      "Yecheng Wu",
+      "Yu-Cheng Chou",
+      "Johan Bjorck",
+      "Linxi \"Jim\" Fan",
+      "Jan Kautz",
+      "Yu-Chiang Frank Wang",
+      "Zhiding Yu",
+      "Hengshuang Zhao",
+      "Zhiqi Li"
+    ],
+    "published": "2026-11-18T19:39:30+00:00",
+    "updated": "2026-11-18T19:39:30+00:00",
+    "url": "http://arxiv.org/abs/2611.25105v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.25105v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.CV"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.24940v1",
+    "title": "$Z$-sight: Unifying Vision-Language-Action and Latent World Modeling",
+    "abstract": "We introduce $Z$-sight, a unified robot foundation model that couples vision-language-action (VLA) and generative latent world modeling. Video-based world action models (WAMs) show the value of joint future-and-action generation for control, yet inherit the heavy cost of video generators. Recent latent-space policies avoid pixel generation, yet typically align intermediate features or rely on frozen target encoders, decoupling future prediction from the VLM's native feature space. $Z$-sight instead predicts the future directly in the visual token space in which its VLM perceives the present. Coupling a foresight expert and a continuous action expert with the VLM in a mixture-of-transformers, $Z$-sight jointly denoises future spatial tokens and actions at inference without pixel reconstruction or external encoders. Trained on human video and robot trajectories, $Z$-sight achieves 81.9% success on SIMPLE (+9.6 points over the strongest baseline) and 73.3% across six Unitree G1 tasks (+20.0 points) at 110 ms per chunk, while remaining competitive on tabletop benchmarks.",
+    "authors": [
+      "Junjie Ye",
+      "Yiqi Zhao",
+      "Muchen Xu",
+      "Celina Shiyu Wang",
+      "Hao Dong",
+      "Ruohai Ge",
+      "Rong Xue",
+      "Benjamin J Kolligs",
+      "Aditya Dutt",
+      "Sasanka Nagavalli",
+      "Nassim A. Samad",
+      "Gaurav S. Sukhatme",
+      "Jyotirmoy V. Deshmukh",
+      "Yue Wang",
+      "Yuliang Guo"
+    ],
+    "published": "2026-11-18T18:59:38+00:00",
+    "updated": "2026-11-18T18:59:38+00:00",
+    "url": "http://arxiv.org/abs/2611.24940v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.24940v1",
+    "categories": [
+      "cs.RO",
+      "cs.CV"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.24938v1",
+    "title": "Phoenix: Learning Scene Structure Representations for Generalizable World-Action Models",
+    "abstract": "World-action models jointly predict future observations and actions, yet reconstruction-oriented visual representations do not explicitly emphasize the spatial relationships and object-state changes needed for manipulation. We introduce Phoenix, which learns representations of scene structure for world-action modeling. Specifically, Phoenix Encoder enriches DINOv3's general visual semantics through dual-teacher distillation of geometric and spatiotemporal semantic knowledge. Next, CS-VAE causally aggregates and compresses Phoenix Encoder features into generative latents while preserving scene information and spatial layout. Finally, Phoenix jointly predicts these latents, complementary appearance latents, and robot actions, linking scene evolution with action generation. To study pretraining data efficiency, we curate approximately 39,000 hours of egocentric and robot manipulation data for representation learning and use the robot demonstration subset for WAM pretraining. Following benchmark-specific post-training, Phoenix achieves state-of-the-art performance across simulation and real-robot benchmarks spanning single-arm, bimanual, and dexterous manipulation. It demonstrates strong robustness to perturbations, achieving success rates of 94.8% on LIBERO-Plus and 72.4% on RoboTwin 2.0 C2R, alongside strong cross-embodiment transfer and real-world manipulation performance on Bench2Dex and RoboDojo-RealWorld, respectively. Pretraining-scale analysis shows larger performance gains from data scaling than a video-VAE-only baseline, indicating stronger scaling benefits and more effective data utilization. Moreover, Phoenix maintains high success rates when adapted with limited downstream demonstrations, demonstrating strong few-shot adaptation. Our code, pretraining data, and models are available on the project page to help the community reproduce our results.",
+    "authors": [
+      "Yupeng Zheng",
+      "Chaoyue Li",
+      "Linbo Wang",
+      "Xiang Li",
+      "Yuhang Zheng",
+      "Xiaotong Su",
+      "Songen Gu",
+      "Yichen Zhang",
+      "Zebin Xing",
+      "Shuai Tian",
+      "Jingxiang Guo",
+      "Jing Li",
+      "Zhiyong Zhao",
+      "Zhongpu Xia",
+      "Qichao Zhang",
+      "Haoran Li",
+      "Shuicheng Yan",
+      "Dongbin Zhao"
+    ],
+    "published": "2026-11-18T18:59:04+00:00",
+    "updated": "2026-11-18T18:59:04+00:00",
+    "url": "http://arxiv.org/abs/2611.24938v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.24938v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.24925v1",
+    "title": "Render the Robot, Generate the World: One Video World Model Across Embodiments",
+    "abstract": "Predicting the consequences of an agent's actions requires modeling both the body's motion and the environment's response. Most video world models attempt to learn both from numerical actions, even though geometry and kinematics already specify the intended motion. We introduce Doppel, an embodiment-agnostic video world model conditioned on camera-aligned renderings of future body configurations and numerical action trajectories. By explicitly providing the intended motion, Doppel can focus on predicting object motion and interaction-driven changes in the environment. Rendered motion also provides a common visual interface across different embodiments and action spaces. To train on robot datasets without camera extrinsics, we recover camera poses and align rendered trajectories with recorded observations. We jointly train a single shared video backbone and conditioning adapter on eight datasets spanning eight robot and human embodiments, from single- and bimanual robot arms to a dexterous humanoid and human hands and bodies, using about 600 hours of video without embodiment labels. Across three robot-arm datasets, Doppel improves PSNR over action-only baselines by 1.00 dB on held-out trajectories and 1.20 dB under out-of-distribution evaluation, while predicting more consistent object motion. Training on all eight embodiments (Doppel-8) improves robot predictions over the three-robot model (Doppel-3) on four of six evaluation sets. Project page: https://doppelwm.github.io/.",
+    "authors": [
+      "Yash Jangir",
+      "Karan Mirakhor",
+      "Renos Zabounidis",
+      "Muhammad Zubair Irshad",
+      "Sergey Zakharov",
+      "Yonatan Bisk",
+      "Homanga Bharadhwaj"
+    ],
+    "published": "2026-11-18T18:52:28+00:00",
+    "updated": "2026-11-18T18:52:28+00:00",
+    "url": "http://arxiv.org/abs/2611.24925v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.24925v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.24864v1",
+    "title": "NereidVLA: Learning to Understand and Navigate the Underwater World",
+    "abstract": "Underwater navigation requires translating visual spatial cues into motion, yet marine vision-language datasets rarely include paired robot trajectories. We present NereidVLA, a vision-language-action model that transfers marine spatial knowledge to language-conditioned 3D navigation. We first train Sea2Know on approximately two million marine examples to learn target grounding, spatial relations, and scene structure without paired robot-motion supervision. We then adapt it using expert trajectories executed under simulated underwater vehicle dynamics. Given RGB histories and a language instruction, NereidVLA predicts discrete motion tokens that decode into local 3D trajectories for closed-loop tracking. Evaluation combines an independent six-dimensional underwater navigation understanding benchmark with offline prediction and closed-loop navigation. Under matched navigation training and execution settings, marine spatial pretraining increases simulation success from 72.4% to 84.4%. Without fine-tuning on the real test environment, NereidVLA achieves 78.75% success in laboratory-pool robot trials, compared with 47.50% for InternVLA-N1. These results show that marine spatial supervision can support downstream motion learning and physical underwater navigation.",
+    "authors": [
+      "Chenjie Zhao",
+      "Zhiliang Zhu",
+      "Quan Chen",
+      "Yuquan Xue",
+      "Xingxue Shi",
+      "Puyue Wang",
+      "Zhiqiang Zhao",
+      "Kangye Zheng",
+      "Boyang Xu",
+      "Mingwei Lin",
+      "Dejun Li"
+    ],
+    "published": "2026-11-18T18:19:00+00:00",
+    "updated": "2026-11-18T18:19:00+00:00",
+    "url": "http://arxiv.org/abs/2611.24864v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.24864v1",
+    "categories": [
+      "cs.CV",
+      "cs.RO"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.24836v1",
+    "title": "DiWALI: Diffusion Policy Learning in World Models via Latent Action Inference from Human and Robot Play",
+    "abstract": "Learning robot manipulation is constrained by the availability of action-labeled robot data, for both imitation and world models. Humans can demonstrate skills in seconds, but their demonstrations lack the required robot actions. We introduce DiWALI, a framework that learns and improves diffusion policies within a world model trained on human and robot play. DiWALI infers latent actions from consecutive frames using an inverse dynamics model, enabling world model training without action labels, and grounds them in robot commands through a decoder trained separately on robot play. Skill policies are trained over latent actions from action-free human demonstrations and improved with reinforcement learning in imagination. On the CALVIN benchmark, DiWALI policies trained solely from human demonstrations substantially outperform baselines trained with robot demonstrations. Incorporating human play into the world model training also yields stronger policies after fine-tuning than using the same amount of robot play alone. Experiments on a physical robot show that skills learned primarily from human demonstrations are further improved in imagination with a world model trained on human and robot play. Together, these results demonstrate that human experience can support both manipulation skill acquisition and subsequent policy improvement, reducing reliance on action-labeled robot data. Videos, dataset and code are available at https://diwali.cs.uni-freiburg.de.",
+    "authors": [
+      "Akshay L Chandra",
+      "Iman Nematollahi",
+      "Lingyue Zhao",
+      "Daria Kulikova",
+      "Angela P. Schoellig",
+      "Fabien Despinoy",
+      "Abhinav Valada"
+    ],
+    "published": "2026-11-18T18:03:14+00:00",
+    "updated": "2026-11-18T18:03:14+00:00",
+    "url": "http://arxiv.org/abs/2611.24836v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.24836v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.24831v1",
+    "title": "Overlooked and Underutilized: Prototypes are the Missing Piece in Tabular XAI",
+    "abstract": "Explainable AI (XAI) is frequently applied to high-stakes tabular data, yet the field relies heavily on feature attribution methods. While these approaches offer technical transparency, evaluating dozens of isolated features demands excessive cognitive effort from non-expert users. In this paper, we argue that prototypes remain overlooked and underutilized, and should be integrated as a complementary, intuitive gateway to auditing complex machine learning models. Although entire exemplars function as an intuitive baseline for prototype-based explanations, we highlight prototypical parts as particularly valuable for tabular data. By grouping related features into bounded subspaces, prototypical parts technically embody human-understandable concepts, replacing isolated features with cohesive semantic units. We support this integration through two primary lenses. Cognitively, these parts align with Rosch's categorization theory and Kahneman's System 1 thinking to naturally reduce cognitive load for humans. Then, we introduce a Geometric Validity Triad to conceptualize why prototypes validate the data manifold - a critical dimension often neglected by existing methods. We contend that making tabular XAI genuinely comprehensible requires shifting toward composite explanation pipelines that pair intuitive similarity-based reasoning with rigorous feature-level auditing. The paper concludes by outlining open challenges of prototype-based methods and discussing potential solutions to guide future research.",
+    "authors": [
+      "Jacek Karolczak",
+      "Jerzy Stefanowski"
+    ],
+    "published": "2026-11-18T18:00:55+00:00",
+    "updated": "2026-11-18T18:00:55+00:00",
+    "url": "http://arxiv.org/abs/2611.24831v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.24831v1",
+    "categories": [
+      "cs.LG",
+      "cs.HC"
+    ],
+    "primary_category": "cs.LG"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.24816v1",
+    "title": "RoboMorpher: Scaling Robot Morphology Representations for Cross-Embodiment Action Prediction",
+    "abstract": "Learning shared action representations is central to cross-embodiment manipulation. However, identical joint values can produce different spatial configurations across robots, limiting representations learned from joint values alone. We introduce RoboMorpher, a morphology-conditioned action tokenizer that jointly reconstructs joint angles and link poses to associate control coordinates with their kinematic effects. MorphGen supplies scalable kinematic supervision by generating serial-arm descriptions from survey-derived geometric priors. We pretrain RoboMorpher on 40 million morphology-state pairs and integrate the frozen tokenizer into a vision-language-action policy for discrete prediction and continuous refinement. We also introduce EmbodiBench, a ten-task benchmark with 30 generated URDFs per task. With downstream URDFs excluded from tokenizer pretraining, the policy achieves 56.40% success on RoboTwin 2.0 and 23.27% on EmbodiBench, exceeding continuous joint-space control by 9.73 and 15.34 percentage points. Removing link-pose supervision reduces EmbodiBench success by 17.94 percentage points, supporting morphology-aware geometric supervision for joint-action representation learning.",
+    "authors": [
+      "Wenwei Lin",
+      "Yan Qin",
+      "Weiliang Deng",
+      "Zixuan Li",
+      "Kaixuan Wang",
+      "Zanxin Chen",
+      "Yue Chen",
+      "Tianshuo Yang",
+      "Junting Chen",
+      "Zhixuan Liang",
+      "Yao Mu",
+      "Ximin Lyu",
+      "Renjing Xu",
+      "Ping Luo",
+      "Tianxing Chen"
+    ],
+    "published": "2026-11-18T17:47:57+00:00",
+    "updated": "2026-11-18T17:47:57+00:00",
+    "url": "http://arxiv.org/abs/2611.24816v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.24816v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.24731v1",
+    "title": "HandWorldBench: A Unified Benchmark for Hand-Centric World Models",
+    "abstract": "Recent advances in world models are opening new possibilities for fine-grained embodied tasks, with hand-object interaction offering a particularly demanding setting. Modeling these interactions involves capturing how hand actions change objects and how the resulting states persist over time. Yet systematic evaluation tailored to these hand-centric capabilities remains underdeveloped. To address this gap, we introduce HandWorldBench, a unified benchmark that systematically evaluates hand-centric world models across human hands, simulated dexterous hands, and real dexterous hands along six dimensions: visual quality, hand fidelity, appearance consistency, instruction following, physical consistency, and temporal coherence. To construct the benchmark, we develop a data curation pipeline that extracts hand-object interaction clips and screens them for quality, yielding 20,500 high-quality egocentric clips from over 600 hours of footage. We then manually select 500 clips covering seven task families for evaluation. Benchmarking eleven models under a unified protocol reveals that stronger hand-pose control does not consistently translate into coherent object-state evolution and persistence or robust cross-embodiment performance, with several specialized hand-control models underperforming general-purpose text/image-to-video generators on dexterous-hand tasks.",
+    "authors": [
+      "Zhaolu Wang",
+      "Jiacheng Xu",
+      "Lihong Wang",
+      "Shuqing Wang",
+      "Jianjie Fang",
+      "Ziyou Wang",
+      "Xvyuan Liu",
+      "Rongze Tang",
+      "Yiding Ma",
+      "Xin Zhang",
+      "Jiawei Chen",
+      "Wei Wu",
+      "Chen Gao",
+      "Yong Li",
+      "Zhibo Chen"
+    ],
+    "published": "2026-11-18T16:47:46+00:00",
+    "updated": "2026-11-18T16:47:46+00:00",
+    "url": "http://arxiv.org/abs/2611.24731v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.24731v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.24585v1",
+    "title": "SHAPE: Discrete Supervision and Parallel Continuous Streams for Learning Dexterous Manipulation from Egocentric Human Data",
+    "abstract": "Egocentric human recordings are far cheaper than dexterous robot demonstrations, promising stronger pretraining and direct skill learning without task-specific robot data. Yet humans and robots differ in morphology and kinematics, so human recordings lack the joint positions and actuator commands that supervise robot policies, providing only retargeted end-effector (EEF) actions. This raises two questions: how human data should supervise the policy, and how a dexterous robot should read out actions at deployment. We address both in SHAPE (Supervision from Human Action tokens with Parallel Executable streams), a vision-language-action (VLA) model whose backbone predicts discrete action tokens of EEF chunks as an auxiliary task, while a shared flow-matching expert outputs two executable streams, EEF and joint. On a bimanual robot with 22-DoF hands, a matched study shows that discrete supervision helps learn from human data, driving backbone gradients and shaping action-informative representations across domains. Under standard control pipelines at deployment, direct joint readout excels at fine-grained control with robot demonstrations, scoring 0.80 across six tasks against 0.63 for π0.5, whereas IK-based EEF readout excels at human-to-robot transfer. Pretrained with human data and discrete tokens, SHAPE learns new tasks from human demonstrations without task-specific robot data.",
+    "authors": [
+      "Yaping Li",
+      "Zhihong Liu",
+      "Jiacheng Li",
+      "Yi Yang",
+      "Wenchao Yue",
+      "Mingzhe Ye",
+      "Xiangcheng Liu",
+      "Yiyang Chen",
+      "Haotian He",
+      "Qi Zhang",
+      "Haonan Wang",
+      "Dahua Lin",
+      "Zhijie Deng"
+    ],
+    "published": "2026-11-18T15:14:26+00:00",
+    "updated": "2026-11-18T15:14:26+00:00",
+    "url": "http://arxiv.org/abs/2611.24585v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.24585v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.24499v1",
+    "title": "Single-Controller Teleoperation and Multimodal Dataset Generation for a Mobile Manipulator",
+    "abstract": "Robot learning systems require synchronized, high-quality demonstrations that combine visual, proprioceptive, and action data. However, collecting such datasets with mobile manipulators is often slowed down by fragmented teleoperation interfaces and manual post-processing workflows. This paper presents an integrated framework for teleoperated multimodal data collection on a Clearpath Dingo-O mobile base equipped with a Kinova Gen3 Lite manipulator and an Intel RealSense RGB-D camera. The framework combines single-controller operation of the base, arm, and recording process with an automated ROS-based pipeline for data capture, image-quality filtering, temporal synchronization, visualization, and export to machine-learning-ready Zarr datasets. We validate the system on a pick-and-place mobile-manipulation task in which the robot transports a bottle between two surfaces. The results show that the unified controller supports complete task execution and recording without external commands, while the data pipeline produces synchronized datasets for short demonstrations and identifies corrupted visual frames. The proposed framework provides a practical basis for producing structured demonstrations for robot-learning research.",
+    "authors": [
+      "Fardien Azizi",
+      "Sitor Sla",
+      "Christiaan Peppelman",
+      "Dion van Santen",
+      "Andrei-Carlo Papuc",
+      "Khaled Mustafa",
+      "Diego Martinez-Baselga",
+      "Javier Alonso-Mora"
+    ],
+    "published": "2026-11-18T14:26:21+00:00",
+    "updated": "2026-11-18T14:26:21+00:00",
+    "url": "http://arxiv.org/abs/2611.24499v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.24499v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.24494v1",
+    "title": "RECLAIM: Robot-Vision-Informed Adversarial Patch Defense via Embodied Attention Feedback",
+    "abstract": "Vision-language-action policies control embodied agents through a perception-action loop grounded in physical interaction, where adversarial patches can corrupt action predictions and thereby alter subsequent observations. To mitigate these threats, many existing defenses rely on policy adaptation or auxiliary models, but require additional training or inference. We introduce RECLAIM, a training-free, inference-time defense that uses a frozen VLA's own attention response to local visual interventions to guide purification during closed-loop embodied manipulation. Our key insight is that attention changes induced by local edits provide feedback for choosing where and how to purify as the robot interacts with its environment. RECLAIM combines this feedback with robot geometry to refine patch localization and select local treatments, then revalidates them as the agent's embodied actions change the observed scene. We evaluate RECLAIM against patches generated by four adversarial attack methods across multiple manipulation task suites under frozen VLA control. Under adversarial patch attacks, RECLAIM succeeds in at least one rollout on 95% of the evaluated tasks and raises rollout success on LIBERO-Object from 0% without defense to 70.0%. Its mean decision time is only 548.9 ms per control step. These results highlight policy-guided visual purification as an effective approach to defending embodied agents against adversarial patches and recovering closed-loop task execution.",
+    "authors": [
+      "Jiayou Zhu",
+      "Peng Guo",
+      "Litian Zhang",
+      "Xinze Shi",
+      "Yuting Zhang",
+      "Zelong Yu",
+      "Yize Tian",
+      "Jirong Liu",
+      "Zifeng Kang"
+    ],
+    "published": "2026-11-18T14:24:10+00:00",
+    "updated": "2026-11-18T14:24:10+00:00",
+    "url": "http://arxiv.org/abs/2611.24494v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.24494v1",
+    "categories": [
+      "cs.RO",
+      "cs.CR",
+      "cs.CV"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.24455v2",
+    "title": "Homeward: No Place Like the Training View",
+    "abstract": "Vision-language-action (VLA) policies implicitly assume that third-person cameras remain fixed at their data-collection poses; once a camera is bumped, remounted, or swapped at deployment, task success degrades precipitously even though the underlying task and robot remain unchanged. We present Homeward, a training-free, plug-and-play observation adapter that canonicalizes observations from an uncalibrated deployment camera back into the training view for frozen VLA policies. Our design stems from a closed-loop diagnostic paradox in simulation: while re-rendering perturbed views into the training camera with oracle geometry recovers much of the lost performance, substituting an off-the-shelf feed-forward 3D foundation model can leave the policy worse off than applying no correction at all. This degradation concentrates on the thin, articulated robot arm, which feed-forward depth prediction tears and scatters - yet the arm's exact 3D state is already known from robot kinematics. Homeward exploits this asymmetry: it estimates what is unknown - camera parameters and static scene depth - from the live RGB frame and a single training-view reference, and renders what is known - the moving robot links - directly from the kinematic model. Evaluated across $\\sim$300,000 closed-loop episodes spanning four frozen VLAs, Homeward boosts success across all 1,599 camera variants of LIBERO-Plus from 62.5%, 76.5%, 68.0%, and 3.6% to 77.6%, 95.1%, 91.2%, and 26.4% for OpenVLA-OFT, $π_{0.5}$, $π_0$, and OpenVLA, respectively. Without any scene fine-tuning or deployment camera calibration, Homeward extends to 6-DoF random placements, focal-length changes, and, with per-step pose estimation, continuous intra-episode camera drift, while matching or surpassing a calibrated, scene-trained view-synthesis baseline on three of four policies on LIBERO-Plus.",
+    "authors": [
+      "Mingyang Lyu",
+      "Yinqian Sun",
+      "Gongce Cao",
+      "Guobin Shen",
+      "Yuhao Zhang",
+      "Lu Jia",
+      "Chenfei Yan",
+      "Qian Zhang",
+      "Pin Lyu",
+      "Chen Gao",
+      "Bo Wang"
+    ],
+    "published": "2026-11-18T14:01:38+00:00",
+    "updated": "2026-11-19T04:16:32+00:00",
+    "url": "http://arxiv.org/abs/2611.24455v2",
+    "pdf_url": "https://arxiv.org/pdf/2611.24455v2",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  }
+]
