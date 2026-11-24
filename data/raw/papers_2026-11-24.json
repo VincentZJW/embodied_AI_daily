@@ -1,0 +1,494 @@
+[
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.30312v1",
+    "title": "One Policy, Many Bodies: Cooperative Human-Object Interaction with Heterogeneous Teams",
+    "abstract": "Physics-based human-object interaction (HOI) has enabled multiple characters to cooperatively transport objects, but existing cooperative controllers largely assume homogeneous embodiments and predefined interaction tasks. We ask whether a single physics-based policy can enable cooperation across diverse embodiments, team compositions, and interaction skills. We present MorphHOI, a decentralised framework built on a key insight: effective heterogeneous cooperation requires a unified representation across embodiments while accounting for differences in their physical capabilities. To realise this insight, we introduce a canonical body interface that unifies observation and action spaces, together with an embodiment-conditioned transformer that adapts cooperative decisions to the physical capabilities of each agent and its teammates. To extend cooperation to new interaction skills, we reuse the learned cooperative policy through task-specific tokens and lightweight adaptation, preserving its original capabilities. Our framework achieves success rates of up to 96.7\\% on seen embodiments, 95.6\\% on unseen embodiments, and 91.4\\% on novel payloads. Furthermore, the learned cooperation extends to diverse interaction skills with high success rates, including box carrying, transport on stairs, and waypoint following, while preserving previously acquired cooperative capabilities.",
+    "authors": [
+      "Zhihao Cao",
+      "Tianxu An",
+      "Chenhao Li",
+      "Chenyangguang Zhang",
+      "Stelian Coros",
+      "Marco Hutter"
+    ],
+    "published": "2026-11-23T08:58:19+00:00",
+    "updated": "2026-11-23T08:58:19+00:00",
+    "url": "http://arxiv.org/abs/2611.30312v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.30312v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.30310v1",
+    "title": "Seeing Together, Acting Apart: Shared Environmental Understanding for Multi-Robot Navigation",
+    "abstract": "Multi-robot embodied systems are typically designed to collaborate by coordinating actions, sharing trajectories, or learning joint policies. We ask a complementary question: can collaboration emerge before decision-making, by first building a shared understanding of the environment? We introduce Shared Environmental Understanding, a policy-agnostic representation that aggregates partial egocentric observations from multiple robots into a shared latent world model. This shifts collaboration from the policy space to the representation space, enabling decentralized decision-making with shared environmental context. To this end, we propose Shared Environment Encoding and Retrieval (SEER), a framework that organizes multi-robot observations into a shared memory, retrieves relevant context via spatio-temporal similarity, and encodes it using a predictive latent world model. The resulting representations are injected into downstream navigation agents as tokens. Experimental results demonstrate that SEER captures action-relevant environmental structure and consistently improves navigation performance across both specialized VLN agents and general vision-language model agents, while preserving single-agent capabilities.",
+    "authors": [
+      "Haihong Hao",
+      "Lei Chen",
+      "Mingfei Han",
+      "Chenglong Yan",
+      "Dong An",
+      "Yuqiang Yang",
+      "Changlin Li",
+      "Minghao Guo",
+      "Salman Khan",
+      "Xiaojun Chang"
+    ],
+    "published": "2026-11-23T08:58:12+00:00",
+    "updated": "2026-11-23T08:58:12+00:00",
+    "url": "http://arxiv.org/abs/2611.30310v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.30310v1",
+    "categories": [
+      "cs.RO",
+      "cs.CV"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.30308v1",
+    "title": "ConsisX: Cross-View Consistency Thinking in 3D for Vision-Language-Action Models",
+    "abstract": "Vision-language-action (VLA) models integrate visual perception and language understanding from vision-language models (VLMs) with action prediction for robotic manipulation. Although multi-view observations provide complementary scene information, VLMs model cross-view interactions based on 2D feature similarity, which can lead to physical inconsistency in the form of cross-view incorrect association between distinct entities and cross-view information fragmentation about the same entity. To address these challenges, we propose ConsisX, a novel VLA framework that integrates cross-view association and entity coherence to enable cross-view consistency thinking in 3D for physically consistent robotic manipulation. Specifically, Cross-View Association Modeling (CAM) is proposed to introduce cross-view spatial proximity constraints in a shared 3D space to reduce cross-view incorrect association. Entity Coherence Organization (ECO) is designed to organize cross-view local information into coherent 3D entity evidence, thereby addressing cross-view information fragmentation. Consistent Action Conditioning (CAC) is introduced to condition action prediction on task-relevant 3D entity evidence for cross-view consistent action execution. Experiments on 3 real-world manipulation tasks and 4 simulation benchmarks establish ConsisX as an effective and competitive framework for robotic manipulation.",
+    "authors": [
+      "Yunhe Zhang",
+      "Long Gao",
+      "Yuedong Fu",
+      "Gang He",
+      "Li Xu",
+      "Chang Wu",
+      "Pengyu Li"
+    ],
+    "published": "2026-11-23T08:58:01+00:00",
+    "updated": "2026-11-23T08:58:01+00:00",
+    "url": "http://arxiv.org/abs/2611.30308v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.30308v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.30291v1",
+    "title": "Beyond Which: Where, How, and When in Vision-Language-Action Models",
+    "abstract": "Vision-language-action (VLA) models typically rely on vision-language model (VLM) features as the primary perceptual source for action prediction, showing strong generalization across diverse robotic manipulation tasks. Although VLM features can identify which entities are relevant to action prediction, precise manipulation also requires understanding where task-relevant entities are located within the spatial layout, how their geometric structure constrains physical interaction, and when spatial or geometric information should make a greater contribution to action prediction. To this end, we introduce {\\mathcal{W}^{3}\\mathcal{H}}-VLA to organize VLA perception and action prediction around which, where, how, and when. Specifically, {\\mathcal{W}^{3}\\mathcal{H}}-VLA retains VLM-based semantic entity perception which and further introduces spatial distance perception where and geometric structure perception how with adaptive spatial-geometric guidance when to enrich the perceptual information available for action prediction. Experiments across real-world settings and simulation benchmarks demonstrate the effectiveness and superior performance of {\\mathcal{W}^{3}\\mathcal{H}}-VLA.",
+    "authors": [
+      "Yunhe Zhang",
+      "Long Gao",
+      "Yuedong Fu",
+      "Gang He",
+      "Li Xu",
+      "Chang Wu",
+      "Songyuheng Gao"
+    ],
+    "published": "2026-11-23T08:46:20+00:00",
+    "updated": "2026-11-23T08:46:20+00:00",
+    "url": "http://arxiv.org/abs/2611.30291v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.30291v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.30264v1",
+    "title": "Skill-Adaptive Noise Scheduling for Diffusion Policies",
+    "abstract": "Recent advances in diffusion policies have demonstrated strong effectiveness when integrated into hierarchical skill-based learning frameworks, leveraging offline data to capture multimodal and temporally abstracted behaviors. However, prior approaches have rarely considered the diffusion process as a learnable component, adopting fixed noise schedules applied uniformly across skills, regardless of their distinct behavioral contexts. Such a design fundamentally limits the achievable performance, particularly for contact-rich and dexterous manipulation tasks where different skills exhibit distinct couplings between action dimensions. In this paper, we present a skill-adaptive noise diffusion framework (SaND) which introduces a learnable, skill-conditioned noise schedule that modulates the diffusion process per action dimension, adapting the noising dynamics to each skill. To prevent the learned noise schedule from collapsing into trivial solutions, we employ an auxiliary inverse objective that reconstructs the skill embedding from the Legendre coefficients of the derivative of the noise schedule, encouraging the schedules to remain skill-discriminative. This formulation naturally enables adaptive control over the denoising steps for each skill, where noise schedules are clustered in the Legendre coefficient space, and the appropriate number of denoising steps is determined at the point where reconstruction error abruptly increases. At inference, we identify each skill embedding's cluster from its noise schedule and apply the corresponding number of denoising steps, dedicating more compute to skills requiring fine-grained control and less to simpler ones. In simulation and on real robot hardware, SaND outperforms existing skill learning and planning baselines on contact-rich and dexterous manipulation tasks, achieving higher success rates while requiring fewer denoising steps.",
+    "authors": [
+      "Woo Kyung Kim",
+      "Gwangpyo Yoo",
+      "Eunyoung Park",
+      "Honguk Woo"
+    ],
+    "published": "2026-11-23T08:25:56+00:00",
+    "updated": "2026-11-23T08:25:56+00:00",
+    "url": "http://arxiv.org/abs/2611.30264v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.30264v1",
+    "categories": [
+      "cs.RO",
+      "cs.LG"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.30254v1",
+    "title": "Innata-0: A Native Embodied World System with Model-Agent Co-Design",
+    "abstract": "The physical world is open-ended, dynamic, and partially observable. While foundation models have advanced embodied intelligence, standalone models struggle with long-horizon execution, and simply integrating models with agents may lead to inconsistencies between planning and physical control. To support reliable and adaptive behaviors in the physical world, we introduce Innata-0, a native embodied world system. Innata-0 jointly designs an embodied world-action model and an agent to combine their complementary strengths. The model, Innata-0-WAM, adopts a tri-tower Mixture-of-Transformers architecture that integrates understanding, prediction, and action generation. The agent, Innata-0-Agent, coordinates long-horizon execution through memory, verification, and recovery. A co-design protocol is further proposed to align model training with agent execution and leverage validated experiences to support subsequent adaptation and model improvement. Extensive evaluations demonstrate strong embodied capabilities across understanding, world prediction, and robotic manipulation. Innata-0 represents our first step toward physical intelligence, and we see it as the beginning of a much longer journey.",
+    "authors": [
+      "Innata Team",
+      "Yu Bai",
+      "Ziyi Bai",
+      "Yuxuan Cai",
+      "Chenrui He",
+      "Wenhao Li",
+      "Zhe Lin",
+      "Heng Wang",
+      "Hai Yuan",
+      "Zhiwei Yu",
+      "Yuanhang Zhang",
+      "Luyou Chen",
+      "Tiezhu Gao",
+      "Zheng Geng",
+      "Jinbang Guo",
+      "Dongxu Han",
+      "Diqi He",
+      "Börje F. Karlsson",
+      "Jintao Li",
+      "Zhiyu Li",
+      "Xiongkun Linghu",
+      "Guang Liu",
+      "You Liu",
+      "Zhen Luo",
+      "Mengsi Lyu",
+      "Yufeng Lyu",
+      "Zheng Lyu",
+      "Quanyue Ma",
+      "Chunlei Men",
+      "Ziqiang Ni",
+      "Tengfei Pan",
+      "Yijun Shen",
+      "Liang Sun",
+      "Shaoxuan Xie",
+      "Xiang Yang",
+      "Guocai Yao",
+      "Hongjun Zhang",
+      "Yingli Zhao",
+      "Yonghua Lin",
+      "Zhongyuan Wang",
+      "Huan Yang"
+    ],
+    "published": "2026-11-23T08:20:59+00:00",
+    "updated": "2026-11-23T08:20:59+00:00",
+    "url": "http://arxiv.org/abs/2611.30254v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.30254v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.30209v1",
+    "title": "RoboAda: Adapting Frozen Robot Policies at Test Time to Physics They Cannot See",
+    "abstract": "Pretrained robot policies decide what to do from camera images, yet some of the physics that decides whether their plans succeed is not visible. An object may look light but be 100 times heavier, and a weakened joint or a lagging controller leaves no trace in the image. When the physics at deployment differs from training, the plan is often still right but is executed as if nothing had changed. Training on such variations in advance cannot handle unseen changes, while adapting once deployed either changes the plan, leaving the miscalibrated commands in place, or updates a robot model by gradient steps that do not know how reliable they are and can make the robot worse even when nothing has changed. We propose RoboAda, which keeps the policy and its plan unchanged and corrects the commands that carry it out by inferring at test time how the robot turns commands into motion. The key observation is that the robot's own motion reveals the change: after each action chunk, an inverse-dynamics model of the original robot converts the observed motion into the commands it would have needed, yielding free labels at every step. Competing hypotheses of how the robot responds, including that nothing has changed, are weighted by how well they predict these labels, and the next chunk is sent with the commands that best realize the plan under them. RoboAda needs no reward, no gradient step and no data from the changed robot. We evaluate RoboAda with five frozen policies on LIBERO, two world action models and three vision-language-action models. Under eleven physical shifts, it more than doubles their average success, from 27.8% to 62.9%. It beats the best of seven test-time adaptation methods by 17.3 points on Cosmos Policy, and largely preserves the policies' success when nothing has changed. On bimanual RoboTwin 2.0 in joint space, it raises success under joint-target offsets from 24.9% to 78.8%.",
+    "authors": [
+      "Yunbei Zhang",
+      "Zijian Jin",
+      "Shuaicheng Niu",
+      "Baian Chen",
+      "Weirui Ye",
+      "Jihun Hamm",
+      "Yilun Du"
+    ],
+    "published": "2026-11-23T07:47:08+00:00",
+    "updated": "2026-11-23T07:47:08+00:00",
+    "url": "http://arxiv.org/abs/2611.30209v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.30209v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.30178v1",
+    "title": "Quantizing in the Loop: Drift-Aware Ultra-Low-Bit Vision-Language-Action Models",
+    "abstract": "Deploying large vision-language-action (VLA) models on resource-constrained robots demands extreme compression, yet existing post-training quantization (PTQ) methods frequently collapse at ultra-low bit-widths ($\\le$ 2 bits). We trace this failure to two mismatches in standard pipelines. First, calibrating on static offline demonstrations induces distribution shift: minor quantization perturbations drive the policy into unseen states where uncalibrated errors compound. Second, minimizing the layer-wise weight reconstruction error is a flawed proxy, as action generation depends only on the representations consumed by the action head. We present LoopQ, an on-policy ultra-low-bit quantization framework. LoopQ closes the loop by calibrating on states from the quantized policy's own rollouts. It then adds readout-aligned fine-tuning, which freezes the trellis codes and optimizes only lightweight lookup tables and scaling factors to align the backbone readout with the full-precision teacher. With all linear layers at 2 bits, LoopQ achieves a 60.4% success rate on LIBERO-Plus with GR00T N1.7, close to the 61.8% of full precision. Even at 1 bit per weight, $π_{0.5}$ still completes 80.0% of LIBERO tasks. With 8-bit activations, the 2-bit $π_{0.5}$ runs on integer kernels on an embedded NVIDIA Jetson AGX Thor, with 4.1$\\times$ smaller weights and 44% less memory. On a real AgileX Piper arm, it stays within one success of full precision on each of three tasks. Code and checkpoints are available at https://github.com/ForeverBlue816/LoopQ",
+    "authors": [
+      "Yanlong Chen",
+      "Thongthornpatch Chamadol",
+      "Yichen Guo",
+      "Yunfei Gao",
+      "Mohan Liu",
+      "Addison Lin Wang",
+      "Yawei Li"
+    ],
+    "published": "2026-11-23T07:23:34+00:00",
+    "updated": "2026-11-23T07:23:34+00:00",
+    "url": "http://arxiv.org/abs/2611.30178v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.30178v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.30171v1",
+    "title": "Audio-Visual Rearrangement",
+    "abstract": "We introduce Audio-Visual Rearrangement (AVR), a novel task in which an agent hears a spoken request, retrieves a suitable object, and delivers it to the requesting user or an instruction-specified destination. AVR requires the agent to understand the spoken request and acoustically localize the speaker for delivery. To support this task, we construct a dataset covering three query types: explicit target specification, speaker-relative spatial references, and implicit user intent, spanning eight subtypes with diverse object selection and delivery requirements. Moreover, we propose a framework that integrates a motion-aware spatial audio module into an audio-visual large language model to encode spatial cues from the spoken request and update them as the agent moves. We further incorporate auxiliary supervision for speech understanding, spatial audio perception, and visual grounding through multitask instruction tuning to improve action prediction. Experiments establish baseline performance in both seen and unseen environments, laying the groundwork for future research on embodied intelligence and human-robot interaction. The code will be publicly available soon.",
+    "authors": [
+      "Ruohao Guo",
+      "Jiatong Ye",
+      "Chenwei Dong",
+      "Jinxing Zhou",
+      "Dantong Niu",
+      "Guangyao Li",
+      "Zhenbo Li"
+    ],
+    "published": "2026-11-23T07:15:54+00:00",
+    "updated": "2026-11-23T07:15:54+00:00",
+    "url": "http://arxiv.org/abs/2611.30171v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.30171v1",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.MM",
+      "cs.SD"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.30145v1",
+    "title": "RMR-VLA: Recurrent Memory Reasoning for Vision-Language-Action Models",
+    "abstract": "Long-horizon, history-dependent robotic manipulation often requires acting on visual cues that have disappeared, such as an object indicated earlier or a target hidden under a moving cup. The key challenge is to maintain what past evidence means for the next action as the scene changes. We introduce Recurrent Memory Reasoning (RMR), an explicit reasoning step that connects memory to action inside a vision-language-action model (VLA), with no external reasoning model. At each update, the VLA first infers an event from visual evidence, then revises the task state and grounds a subgoal in the current scene to guide action generation. Carrying the state and subgoal across updates lets remembered identities and task progress determine the current target, doubling RoboMME success over an otherwise identical model without recurrence. Joint training lets one VLA both reason and act; because its memory decisions are text tokens with exact likelihoods, GRPO refines them from rollout rewards without making action generation stochastic. Among the compared methods, RMR-VLA achieves the best results on RoboMME (66.46% overall, 79.83% on the Reference category) and LIBERO-Mem (90.08%).",
+    "authors": [
+      "Yiheng Du",
+      "Jingqi Tian",
+      "Xu Jiang",
+      "Jiexuan Zhang",
+      "Shuyu Wang",
+      "Zecheng Tang",
+      "Jian Zhang"
+    ],
+    "published": "2026-11-23T06:49:35+00:00",
+    "updated": "2026-11-23T06:49:35+00:00",
+    "url": "http://arxiv.org/abs/2611.30145v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.30145v1",
+    "categories": [
+      "cs.CV",
+      "cs.RO"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.30120v1",
+    "title": "AxE: Benchmarking Agent-Environment Generalization of Video World Models via Grounded Events",
+    "abstract": "Edge cases are not the long tail; they are the norm. An embodied system deployed across changing environments, bodies, objects, and tasks will routinely encounter combinations that were absent from its training data. General-purpose physical intelligence therefore requires world models that reuse prior knowledge, predict consequences, and adapt with little or no additional training. Yet current evaluations of conditional video generation emphasize visual quality, prompt alignment, or isolated physical plausibility, leaving systematic generalization difficult to measure. We introduce AxE Bench, a benchmark that organizes condition changes along eight factors of the acting agent and of its environment, and pairs every original condition with controlled variants that change one side or both. WBench-plus applies the same structure to an existing multi-turn benchmark, pairing each WBench scenario with variants on the environment side, through its world setting or camera behavior, or on the agent side, through its interaction instructions. Additionally, to score generated futures, we develop an evaluation harness that combines vision-language reasoning with targeted computer-vision evidence, converting each video into temporally localized events and comparing generated events with reference events in both time and semantics. We summarize each model with the AxE Score, event Fidelity weighted by its Stability across original-variant pairs. Across twenty models, generated events match reference events far more often in timing than in content: no model exceeds a Fidelity of 13.01, the highest Stability is 0.55, and the highest AxE Score is 7.10. Together, these components turn world-model generalization from an informal aspiration into a falsifiable evaluation program for real and simulated interactions. Our project website can be found at: AxEBench.github.io",
+    "authors": [
+      "Haiyu Xu",
+      "Yiyang Chen",
+      "Jiayi Zhou",
+      "Jiaming Ji",
+      "Juntao Dai",
+      "Yaodong Yang",
+      "Boyuan Chen"
+    ],
+    "published": "2026-11-23T06:23:09+00:00",
+    "updated": "2026-11-23T06:23:09+00:00",
+    "url": "http://arxiv.org/abs/2611.30120v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.30120v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.30111v1",
+    "title": "RoboThink: Let the Agent Think, Let the Policy Act",
+    "abstract": "Robot policies act in real time but fail without knowing why, whereas a reasoning agent that watches the robot can often tell what went wrong. Existing systems either hand the agent control, which takes minutes per episode, or let it send instructions. Yet a policy follows a new instruction only from a fresh start, since a half-finished task leaves it in states outside its training data. Nor can an instruction fix how the robot moves. If a drift keeps pulling the hand to the left, \"push right, slightly\" is not a task the policy has learned. We propose RoboThink, in which the agent thinks and the policy learns to act on the agent's guidance. An instruction channel tells the policy what to do. When the user says \"the milk, not the butter\" after the robot has started, the agent rewrites the instruction and the robot undoes its own motion, with no training. A feedback channel tells it how to move. It is taught from the agent alone with agent-labelled DAgger, role tokens and counterfactual feedback, and is read only by the policy's action module. On LIBERO, RoboThink with Claude Opus 5.5 raises success from 0.09 to 0.87 under an unknown constant drift and from 0.42 to 0.84 under a random one. It also completes misheard and changed requests in 0.91 to 1.00 of the episodes. Acting alone, GPT-6 Astra needs 2.1 min per success and over a million tokens per episode, whereas RoboThink needs 55 s and 8k tokens. The same recipe works across policies, for both vision-language-action models and world action models, and across robots, from one arm to two arms and a mobile manipulator. On all 50 RoboTwin 2.0 tasks with two arms, success rises from 0.12 to 0.74 under the constant drift and from 0.31 to 0.56 under the random one. Finally, the agent is a plug-in. A policy taught by one agent works with other agents, including open-weight ones, and grows stronger with a stronger agent, without retraining.",
+    "authors": [
+      "Yunbei Zhang",
+      "Zijian Jin",
+      "Janet Wang",
+      "Xingchen Zhao",
+      "Zhenyu Zhang",
+      "Weirui Ye",
+      "Yilun Du"
+    ],
+    "published": "2026-11-23T06:10:48+00:00",
+    "updated": "2026-11-23T06:10:48+00:00",
+    "url": "http://arxiv.org/abs/2611.30111v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.30111v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.30083v1",
+    "title": "MotionServe: Efficient Multi-Robot Serving by Exploiting Robot Execution Slack",
+    "abstract": "As robotic arms undertake diverse manipulation tasks, a deployment may need to serve many task-specific vision-language-action (VLA) policies concurrently. Dedicating a GPU to each robot is costly, motivating shared-GPU inference. Low-rank adaptation (LoRA) allows compatible policies to share a frozen backbone with lightweight policy-specific adapters, reducing model-weight memory and enabling cross-policy batching. However, robot inference must keep pace with physical execution. With action chunking, robots continue executing buffered actions while awaiting new predictions, and the remaining buffered time provides each robot's execution slack for serving its next request. Once this slack is exhausted, the robot stalls until new actions arrive, interrupting task progress. Observing earlier preserves more slack but can lead to disruptive replanning and lower task success, whereas delaying dispatch to form larger batches can improve GPU efficiency but consumes slack and risks stalls. To balance these competing demands, we present MotionServe, a shared-GPU serving system that coordinates robot observation timing with server-side batch formation. MotionExec selects observation triggers based on motion structure in predicted action chunks, allowing inference to overlap with remaining buffered execution. SlackBatch combines the resulting per-robot execution budgets with estimated outstanding GPU work to determine when to wait, which requests to batch, and when to dispatch them. We evaluate X-VLA on LIBERO and SimplerEnv's WidowX tasks and OpenVLA-OFT on LIBERO, with up to 96 simulated robots sharing one NVIDIA H200 GPU. At 96 robots, MotionServe reduces mean stall per episode by 43.4% and 32.6% and improves task success by 8.98 and 2.30 percentage points, respectively, over each model's lowest-stall baseline. Backbone sharing also reduces weight memory for 96 policies by 97.6% and 91.1%.",
+    "authors": [
+      "Zikang Wen",
+      "Yuning Zhang",
+      "Dong Yuan"
+    ],
+    "published": "2026-11-23T05:43:31+00:00",
+    "updated": "2026-11-23T05:43:31+00:00",
+    "url": "http://arxiv.org/abs/2611.30083v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.30083v1",
+    "categories": [
+      "cs.RO",
+      "cs.DC"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.30077v1",
+    "title": "PushMimic: Learning Adaptive Humanoid Box Pushing via Dynamic Motion Augmentation and Reference Distillation",
+    "abstract": "Humanoid box pushing is challenging when the physical properties of the task, such as the box mass and the ramp inclination, are unknown before the push begins. This paper presents PushMimic, a framework that learns adaptive humanoid box pushing from a single level-ground kinematic reference motion. The learned policy adapts its pushing posture to these properties without observing them. PushMimic augments the reference motion into a dynamically feasible motion dataset over these properties with sampling-based trajectory optimization, and distills the dataset into one motion tracking policy in one stage of training. Simulation results over box masses from 5 to 15 kg and ramp inclinations up to 15 degrees show that PushMimic raises the success rate from 57.8% to 88.8% compared with a baseline that tracks the original reference motion. It also reduces the cost of push of the arms by 22%. Hardware experiments on a Unitree G1 humanoid show that the policy adapts its torso pitch during continuous pushing on an inclined treadmill, with box masses up to 19 kg and ramp inclinations up to 12.6 degrees. PushMimic therefore needs only one reference motion, instead of one for every box mass and ramp inclination.",
+    "authors": [
+      "Yulun Zhuang",
+      "Hanyu Zhang",
+      "Jingyu Liu",
+      "Yanran Ding"
+    ],
+    "published": "2026-11-23T05:36:11+00:00",
+    "updated": "2026-11-23T05:36:11+00:00",
+    "url": "http://arxiv.org/abs/2611.30077v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.30077v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.30041v1",
+    "title": "Spiking World-Action Models for Robotic Manipulation",
+    "abstract": "World action models (WAMs) predict how the world responds to actions and offer a promising path toward general embodied intelligence, but they are large and run the network many times per plan, so they are hard to deploy on robots. Spiking neural networks (SNNs) compute with sparse binary spikes and use additions instead of multiplications, which saves power. However, existing WAMs use dense videos as the world state, so a spiking version would spend most of its computation on the background. We therefore introduce SpikingWAM, the first spiking WAM, which uses a sparse task skeleton as the world state. Inspired by biological motor control, which attends only to the key positions of a task, the Task Skeleton State (TSS) keeps the keypoints of the arm and the task objects, and a small spiking front end estimates the object keypoints from images. Body Frame Spike Coding (BFSC) and Grid Coincidence Attention (GCA) keep millimetre precision, and the Persistent Single Step Readout (PSR) runs the network once per plan. On the simulated benchmarks LIBERO, LIBERO-Plus and RoboTwin 2.0, SpikingWAM achieves competitive success rates with far less energy than ANN methods and surpasses all compared methods on LIBERO-Plus. Real robot experiments further confirm its effectiveness. These results show that a task skeleton lets spiking networks implement WAMs at very low energy, offering a new solution for low power embodied intelligence. Project page: https://wxqnl.github.io/spikingwam/",
+    "authors": [
+      "Mingquan Liu",
+      "Peng Zhou",
+      "Shanming Yao",
+      "Shuai Wang",
+      "Simo Wu",
+      "Malu Zhang"
+    ],
+    "published": "2026-11-23T04:48:43+00:00",
+    "updated": "2026-11-23T04:48:43+00:00",
+    "url": "http://arxiv.org/abs/2611.30041v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.30041v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.30004v1",
+    "title": "EnvTrap: Revealing the Environment-Only Attack Surface in Embodied AI via Consequence-Blind Action Execution",
+    "abstract": "As AI models evolve from text and vision to physical agents, embodied AI faces a fundamentally different attack surface. Prior attacks on embodied systems have used crafted instructions, adversarial visual inputs, and training-time policy modifications; we study environment-only object rearrangements with unchanged models and instructions. We reveal an attack surface in safety-critical spatial relations among existing objects. An adversary who rearranges objects, without modifying instructions or accessing models, can cause hazardous consequences. In this work, we propose EnvTrap, a diagnostic pipeline that constructs paired safe, trap, and null-trap (benign but misleading) embodied scenarios. We demonstrate that environment-only perturbations raise hazardous-action rates to an average of 83.4% across the five evaluated action policies, with similar vulnerability patterns confirmed in world models. On a consequence-prediction task, model accuracy remains near chance, while human evaluators achieve high accuracy. We further propose a consequence-aware defense that reduces trap trigger rates by an average of 76.3 percentage points across action policies in simulation and by 62.9 percentage points pooled across physical backends. Together, these findings link environment-only attacks to a broader deficit in physical reasoning: embodied models recognize task-relevant objects yet fail to anticipate how spatial relations change the consequences of acting on them. EnvTrap makes this gap directly testable and turns hazardous layouts into training scenarios for safer embodied action. Our code and data are available at https://github.com/INKSIR/Envtrap.",
+    "authors": [
+      "Zehao Liu",
+      "Huashuo Lei",
+      "Xi Lin",
+      "Haoang Li",
+      "Yuliang Chen",
+      "Huarui Zhang",
+      "Yifan Wang"
+    ],
+    "published": "2026-11-23T04:08:50+00:00",
+    "updated": "2026-11-23T04:08:50+00:00",
+    "url": "http://arxiv.org/abs/2611.30004v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.30004v1",
+    "categories": [
+      "cs.CR",
+      "cs.RO"
+    ],
+    "primary_category": "cs.CR"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.29980v1",
+    "title": "TeleMultiStream: An Integrated Robot Teleoperation System with Low-Latency Multi-Stream Video Feedback",
+    "abstract": "Training embodied-intelligence models requires large-scale, high-quality demonstration data. Robot teleoperation provides an important means of collecting these data. Low-latency teleoperation also helps human operators take control promptly and provide corrective demonstrations in DAgger-based interactive learning. This paper presents TeleMultiStream, a robot teleoperation system that combines multi-stream WebRTC video feedback with UDP pose downlink. The system supports heterogeneous video sources and uses buffer reuse, bounded queues, and native XR rendering to reduce processing and waiting. In wired-LAN ZED Mini tests, TeleMultiStream's software and high-performance hardware encoding modes achieved dominant-interval Glass-to-Glass latency medians of 60 and 66~ms, respectively. These medians were 26.8\\% and 19.5\\% lower than the 82-ms RobotVision-PC reference, respectively. At the lower tested resolutions, the two TeleMultiStream encoding modes provided comparable visual latency. Their respective medians in three-stream Configuration~1 were 72 and 66~ms. In the higher-resolution Configuration~2, high-performance hardware encoding outperformed software encoding in latency and CPU utilization. It reduced mean encoding time from 11.85 to 8.80~ms and the dominant-interval Glass-to-Glass median from 94 to 88~ms. Its CPU utilization was approximately 67\\%, compared with 265\\% for software encoding. During three-stream reception with high-performance hardware encoding, the mean corrected one-way UDP latencies at 100~Hz were 1.576 and 1.800~ms in Configurations~1 and~2, respectively. Mean estimated packet loss was 0.0033\\% in both configurations. These results support responsive teleoperation for robot demonstration collection.",
+    "authors": [
+      "Chenchen Lv",
+      "Lingchen Hu",
+      "Yaosai Zhang",
+      "Chunlan Li",
+      "Gengkui Wei",
+      "Wei Xin",
+      "Li Li"
+    ],
+    "published": "2026-11-23T03:45:43+00:00",
+    "updated": "2026-11-23T03:45:43+00:00",
+    "url": "http://arxiv.org/abs/2611.29980v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.29980v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.29969v1",
+    "title": "CARE-3D: Reinforcement Learning for Evidence Grounded Agentic Reasoning in Situated 3D Scenes",
+    "abstract": "Situated 3D reasoning requires embodied agents to interpret objects, scene geometry, and viewpoint dependent spatial relations. Existing methods learn grounded interactions from supervised traces, but largely imitate prescribed evidence acquisition patterns rather than optimizing the support that the returned evidence provides for the correct answer. Moreover, outcome rewards provide limited credit for intermediate tool choices and may leave infrequent tools underexplored. An effective agent should instead adaptively decide what to ground, which tool to invoke, and how to assess the utility of returned evidence. To this end, this paper presents CARE-3D, a reinforcement post-training framework for adaptive grounded reasoning. Supervised fine-tuning (SFT) on grounding instructions first establishes valid interactions, after which Group Relative Policy Optimization (GRPO) optimizes the agent while keeping the 3D grounding module frozen. CARE-3D combines Counterfactual Attribution of Returned Evidence for evidence sensitive credit assignment, and Group Coverage Sampling to preserve tool coverage. Experiments on MSQA and Beacon3D show consistent gains over SFT and GRPO using only answer and format rewards, especially in spatial reasoning and grounding answer coherence. Our code is available at \\href{https://github.com/xiaoqian-UQ/CARE-3D}{CARE-3D}.",
+    "authors": [
+      "Xiaoqian Hu",
+      "Ruihong Qiu",
+      "Yanran Tang",
+      "Sen Wang"
+    ],
+    "published": "2026-11-23T03:36:02+00:00",
+    "updated": "2026-11-23T03:36:02+00:00",
+    "url": "http://arxiv.org/abs/2611.29969v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.29969v1",
+    "categories": [
+      "cs.AI",
+      "cs.CV"
+    ],
+    "primary_category": "cs.AI"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.29897v1",
+    "title": "Motion Mamba 2.0: Autoregressive Diffusion Mamba for Long-Horizon Humanoid Control",
+    "abstract": "Long-horizon, real-time controllable motion generation is essential for interactive animation and humanoid robotics, where an agent must respond to changing instructions and spatial goals while moving. Existing autoregressive diffusion methods generate motion incrementally, but bounded attention caches limit access to distant history, while repeated denoising introduces substantial inference overhead. We present Motion Mamba 2.0, a Mamba-based root-body diffusion architecture that integrates local attention, resumable recurrent states, and persistent content memory (PCM) for long-horizon controllable motion generation. PCM transforms compressed motion history from Mamba recurrent states, together with state changes and text-conditioned features, into dynamically updated content slots accessible to local attention. To enable efficient inference, we further develop an execution scheme tailored to this architecture, combining CUDA Graph replay, fused kernels, and execution-flow simplification while preserving the canonical history update. Evaluations on retargeted HiPHI demonstrate accurate terminal control over rollouts of up to 39.52 s, while short-horizon comparisons on BONES Seed and retargeted HumanML3D show that the model also retains strong spatial control and text-motion matching. On an RTX 4090, the optimized execution reduces median complete-window latency from 1685.35 to 276.14 ms, achieving a median paired speedup of 6.138$\\times$ while preserving identical outputs and committed states in the tested rollouts. Moreover, we conduct extensive real-world evaluation on the Unitree G1, demonstrating sequential text-guided action composition, expressive motion, and interactive locomotion through keyboard and mouse control.",
+    "authors": [
+      "Yue Huang",
+      "Tianshan Zhang",
+      "Zeyu Zhang",
+      "Jayeon Kang",
+      "Akide Liu",
+      "Sungjoon Choi",
+      "Dacheng Tao",
+      "Hao Tang"
+    ],
+    "published": "2026-11-23T01:51:57+00:00",
+    "updated": "2026-11-23T01:51:57+00:00",
+    "url": "http://arxiv.org/abs/2611.29897v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.29897v1",
+    "categories": [
+      "cs.RO",
+      "cs.CV"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.29873v1",
+    "title": "ProMix: Efficient Data Mixture Optimization for Robotic Imitation via Proxy-Reference DRO",
+    "abstract": "Vision-Language-Action (VLA) models excel in open-world manipulation, yet their performance often saturates when training data are naively pooled across heterogeneous robots, tasks, and environments. Distributionally robust data mixture optimization, exemplified by Re-Mix, can recover much of this performance, but its weight search requires training full-scale policies twice on the entire corpus, placing it out of reach for most laboratories. We present ProMix, a compute-efficient instantiation of the proxy-reference DRO recipe for robotic imitation learning: a 15M-parameter proxy learns per-domain sampling weights by minimizing worst-case excess loss against a frozen reference model, and the learned weights transfer, without re-tuning, to VLA backbones up to 7B parameters. We further provide, to our knowledge, the first controlled analysis of the reference model's role in robotic DRO, showing that removing it induces over-pessimism toward noisy, low-quality domains (-3.8% average and -14.3% worst-domain success rate), and that entropy regularization is needed to prevent weight collapse. Evaluated on 9500 real-world episodes from the Open-X Embodiment dataset, ProMix improves the average success rate over uniform mixing from 68.4% to 76.2%, matching Re-Mix within evaluation noise while reducing mixture-optimization cost to a backbone-independent 11 GPU-hours - versus 16 GPU-hours at the 50M comparison scale and 192 GPU-hours at 7B for full-scale searches - with a +17.1% absolute gain on the worst-case domain.",
+    "authors": [
+      "Qie Sima",
+      "Wei Xue",
+      "Yike Guo"
+    ],
+    "published": "2026-11-23T01:06:14+00:00",
+    "updated": "2026-11-23T01:06:14+00:00",
+    "url": "http://arxiv.org/abs/2611.29873v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.29873v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  }
+]
