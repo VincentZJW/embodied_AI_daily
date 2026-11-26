@@ -1,0 +1,445 @@
+[
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.34302v1",
+    "title": "Co-World Model for Human-Video-to-Robot Transfer via Co-Constructed Shared Latent Dynamics",
+    "abstract": "Human videos are abundant and cheap to obtain, whereas robot trajectories remain scarce and costly, making zero-shot skill transfer from a single human demonstration an appealing route to scalable robot learning. Existing methods, however, either retarget human-specific geometry or match only static visual goals, and thus stumble over the cross-embodiment dynamics mismatch and the ungrounded action execution. We present the Co-World Model (CoWM), a predictive framework jointly optimized from paired yet unsynchronized human and robot streams. To bridge the cross-embodiment dynamics gap, CoWM disentangles each observation into a shared object-relation state and embodiment-specific context. It aligns latent actions across embodiments using effect-swap and action-sensitivity objectives,such that actions are matched by their predicted effects on the manipulated objects rather than by embodimentdependent kinematics. For grounded execution, a phase-aware receding-horizon controller estimates demonstration progress, projects the inferred human action prior onto the robot action-support density, and translates the resulting latent dynamics into executable robot commands. Extensive experiments in simulation and on two physical robot platforms demonstrate the effectiveness of CoWM, its cross-platform generalizability, and the contribution of each component. See the demo video in the supporting information for details.",
+    "authors": [
+      "Xuetao Li",
+      "Xuan Jiang",
+      "Chen Liu",
+      "Zhongrui Rao",
+      "Yu Ling",
+      "Hui Wang",
+      "Sheng Liu",
+      "Miao Li"
+    ],
+    "published": "2026-11-25T12:54:52+00:00",
+    "updated": "2026-11-25T12:54:52+00:00",
+    "url": "http://arxiv.org/abs/2611.34302v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.34302v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.34288v1",
+    "title": "Rehearse in 3D, Render in 2D: Physically Consistent and Editable Robot World Models",
+    "abstract": "Embodied world models aim to predict future interactions that are both visually realistic and physically consistent. Yet explicit 3D motion prediction alone does not guarantee that object structure and contact relationships are preserved. Beyond motion prediction, 3D representations provide an explicit state space for imposing structural and physical constraints. Building on this insight, we introduce RehearsalWorld, an editable robot world model driven by 3D Interaction Rehearsal (3DIR). Given an initial RGB-D observation and robot actions, Interaction-Consistent Rehearsal (ICR) uses a pretrained 3D point-flow model as a motion prior. It refines the predicted trajectories through response-aware object grouping, persistent grasp memory, and contact structure refiner, preserving scene stability, object structure, and grasp attachments. Rehearsal-Aligned Video Generation (RAVG) then uses geometric projections of the rehearsal as temporal conditioning. We fine-tune a video generator on projection-video pairs to synthesize realistic interaction videos. Thanks to the decoupling of physical response from visual synthesis, RehearsalWorld also supports independent editing of material properties and camera viewpoints. Compared with PointWorld on real DROID grasping sequences, RehearsalWorld reduces gripper-relative offset by approximately 79% to 84% across deformable, articulated, and rigid objects and lowers reference motion error. For video prediction, it achieves a PSNR of 23.92 dB and an FVD of 149.",
+    "authors": [
+      "Guangyu Liu",
+      "Hanzhang Wang",
+      "Huijia Zhang",
+      "Hanbei Zhan",
+      "Linjie Hu",
+      "Bin Xiao",
+      "Xuan Zhou",
+      "Dong Zhang",
+      "Hanwei Liu"
+    ],
+    "published": "2026-11-25T12:41:56+00:00",
+    "updated": "2026-11-25T12:41:56+00:00",
+    "url": "http://arxiv.org/abs/2611.34288v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.34288v1",
+    "categories": [
+      "cs.RO",
+      "cs.CV"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.34287v1",
+    "title": "DataForgeVLA: Fully Synthetic Manipulation Demonstrations for Vision-Language-Action Training",
+    "abstract": "We present a dataset of 340 fully synthetic manipulation demonstrations generated from real seed data for Vision-Language-Action (VLA) training. The corpus contains 32,340 frames with synchronized RGB and actions across eight object categories, represented as LeRobot v2.1 episodes with H.264 video, per-frame robot states and pose-valued action labels, language task annotations, summary statistics and quality decisions. Each synthetic demonstration is produced without additional teleoperation: a LoRA-fine-tuned Cosmos-3 model generates a manipulation video, and RoboHaMeR recovers the corresponding robot trajectory from RGB. Quality screening accepted 300 of 340 episodes for policy fine-tuning. As preliminary evidence of feasibility, a pretrained GR00T N1.6 policy fine-tuned exclusively on the 300 accepted episodes reaches 16/20 (80%) real-world pick-and-place success on the Oreo-package task. A policy fine-tuned on 105 real teleoperated episodes achieved 18/20 (90%) under the same protocol. These results are based on one object and 20 trials per policy and are therefore reported as preliminary evidence rather than a general performance claim.",
+    "authors": [
+      "Sergei Kurchev",
+      "Iaroslav Kolomiets",
+      "Filipp Maksimov",
+      "Elizaveta Semenyakina",
+      "Miguel Altamirano Cabrera",
+      "Artem Lykov",
+      "Dzmitry Tsetserukou"
+    ],
+    "published": "2026-11-25T12:41:23+00:00",
+    "updated": "2026-11-25T12:41:23+00:00",
+    "url": "http://arxiv.org/abs/2611.34287v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.34287v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.34280v1",
+    "title": "Escapingthe instruction blackhole of vision-language-action policies via optimal-transport wormholes",
+    "abstract": "Vision-language-action (VLA) policies are trained to follow a fixed instruction, yet people change their minds while the robot acts. We identify the instruction black hole: once a VLA policy commits to a task, new instructions are absorbed and the robot completes the old task or freezes. We quantify it with a transmission ratio and an event horizon and prove it is a blind spot of static imitation, which cannot distinguish a policy that listens from a deaf one once the execution state reveals the task. We propose Wormhole, a training-free plug-in that relocates the robot instead of re-instructing it: optimal transport selects an approach-phase state of the new task, a rate-limited traversal carries the robot there, and the unmodified policy takes over. On LIBERO,Wormhole raises committed-switch success of pi to and pi0.5 from at most 1.2% to 93.1%, matching or exceeding scripted retreat-and-restart with one fifth of its action discontinuity.",
+    "authors": [
+      "Xuetao Li",
+      "Chen Liu",
+      "Jing Wu",
+      "Sheng Liu",
+      "Miao Li"
+    ],
+    "published": "2026-11-25T12:36:42+00:00",
+    "updated": "2026-11-25T12:36:42+00:00",
+    "url": "http://arxiv.org/abs/2611.34280v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.34280v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.34257v1",
+    "title": "CamAct: Learning Robotic Manipulation from In-the-Wild Videos via Camera Motion",
+    "abstract": "Vision-Language-Action (VLA) models benefit from large, diverse datasets for robotic manipulation, yet collecting robot demonstrations remains costly. Recent work has explored egocentric videos as a source of supervision, primarily drawing on demonstrations of human-object interaction. We show that in-the-wild videos can improve robotic manipulation even when they contain no demonstrations of object manipulation. Specifically, camera motion recovered from these videos provides an additional source of motion supervision that complements robot demonstrations. Building on this finding, we introduce CamAct, which incorporates this camera-motion supervision into VLA policies alongside robot demonstrations, extending the use of human videos for manipulation learning beyond object interactions. Experiments show that incorporating this video supervision during fine-tuning improves success rates from 96.40% to 98.10% on LIBERO and from 22.96% to 29.32% on RoboCasa 365. The resulting policy also demonstrates strong results in out-of-distribution generalization on LIBERO-Plus and real-world manipulation tasks.",
+    "authors": [
+      "Haoming Gu",
+      "Yunpeng Qing",
+      "Zhi Hou",
+      "Weinan Zhang"
+    ],
+    "published": "2026-11-25T12:19:59+00:00",
+    "updated": "2026-11-25T12:19:59+00:00",
+    "url": "http://arxiv.org/abs/2611.34257v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.34257v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.34220v1",
+    "title": "Variation-aware Temporal Correspondence for Self-Supervised Video Representation Learning",
+    "abstract": "Self-supervised video representation learning has achieved remarkable progress by leveraging large-scale unlabeled video data. Recent methods commonly extend Masked Image Modeling (MIM) to Masked Video Modeling (MVM), where video representations are learned by capturing semantic information from temporal contexts during masked content recovery. Unlike static images, videos exhibit inherent temporal variation, as visual objects continuously change their positions, appearances, and motion states across frames. Therefore, MVM needs to preserve semantic consistency while capturing temporal changes of corresponding regions, which raises two central challenges: 1) how to establish reliable temporal correspondence across frames, and 2) how to formulate an appropriate representation learning objective for modeling both semantic consistency and temporal variation. To address these challenges, we propose Variation-aware Temporal Correspondence for video Representation learning (VT-CoRe) framework. For challenge 1), VT-CoRe introduces a sandwich sampling strategy to construct two-sided temporal references and a Patch Registration Module (PRM) to establish reliable patch-level correspondence. For challenge 2), VT-CoRe imposes latent-space semantic alignment on registered representations through a self-distillation architecture and further proposes temporal variation modeling to constrain representation trajectories over time. Experiments on 8 downstream tasks across 16 benchmarks demonstrate the effectiveness and applicability of VT-CoRe across pixel-level, frame-level, video-level, and vision-based robotic learning scenarios. Complementary representation analysis shows that VT-CoRe learns a more structured latent space for variation-aware temporal correspondence learning.",
+    "authors": [
+      "Yang Liu",
+      "Qianqian Xu",
+      "Peisong Wen",
+      "Siran Dai",
+      "Qingming Huang"
+    ],
+    "published": "2026-11-25T11:43:06+00:00",
+    "updated": "2026-11-25T11:43:06+00:00",
+    "url": "http://arxiv.org/abs/2611.34220v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.34220v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.34199v1",
+    "title": "Loop4D: Embodied World Modeling with 4D VAEs and Looped Diffusion Transformers",
+    "abstract": "Predicting the outcomes of robotic manipulation requires modeling both visual appearance and evolving 3D geometry. This poses two challenges: video compression can obscure fine-grained robot motion, while jointly predicting RGB and geometry demands sufficient generative capacity. We introduce Loop4D, a framework that addresses these challenges through motion-preserving 4D representations and recurrent generative refinement. Our 4D VAE encodes RGB and pointmap sequences into compact spatiotemporal latents while preserving motion details and geometric structure. Our RGB VAE combines geometry-guided supervision with predictive reconstruction to reduce compression-induced motion artifacts. Our geometry VAE uses lightweight adapters to adapt pretrained RGB representations while preserving their priors. Building on these representations, our Dual-Stream Looped Diffusion Transformer maintains separate appearance and geometry streams with shared Transformer weights and cross-modal connections. By reusing Transformer blocks across loops, we increase effective depth without replicating backbone parameters, enabling models with fewer parameters to improve joint RGB-geometry prediction through additional computation. Experiments demonstrate high-quality 4D generation and validate Loop4D in simulated robotic manipulation tasks.",
+    "authors": [
+      "Gen Li",
+      "Fan Luo",
+      "Mengjun Lin",
+      "Shu Han",
+      "Bohan Li",
+      "Hao Zhao"
+    ],
+    "published": "2026-11-25T11:27:05+00:00",
+    "updated": "2026-11-25T11:27:05+00:00",
+    "url": "http://arxiv.org/abs/2611.34199v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.34199v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.34130v1",
+    "title": "WorldPhy: Benchmarking Fine-Grained Physical Plausibility of World Models in Robotics",
+    "abstract": "World models are increasingly used in robotics to improve the performance of embodied models. Compared with general-purpose video generation, robotics places more stringent requirements on world models. Generated videos must satisfy fine-grained physical constraints on robot motion and object interactions. However, existing world model benchmarks can overlook robotics specific physical details and struggle to assess them accurately. To address this problem, we introduce WorldPhy, a world model benchmark for accurate, fine-grained evaluation of physical plausibility in robotics. Our benchmark contains 300 tasks, each consisting of an initial-frame image and a task instruction, covering diverse robotics scenes, task categories, viewpoints, and robot configurations. We further collect over 12K high-quality human annotations, and use them to train WorldPhyReward to accurately provide scores and reasons across six fine-grained physical dimensions and an instruction-following dimension. Comparisons with general VLMs and existing reward models show that WorldPhyReward better aligns with human ratings. We system- atically evaluate 13 frontier open and closed-source world models. The results reveal that current world models struggle to consistently maintain fine-grained physical plausibility across different robotics scenarios. Our code is available at https://github.com/chuziyuan139/ WorldPhy.",
+    "authors": [
+      "Ziyuan Chu",
+      "Mingzhi Zheng",
+      "Kaiyue Zhang",
+      "Jinan Zhang",
+      "Linchao Zhu"
+    ],
+    "published": "2026-11-25T10:30:48+00:00",
+    "updated": "2026-11-25T10:30:48+00:00",
+    "url": "http://arxiv.org/abs/2611.34130v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.34130v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.34043v1",
+    "title": "WISER-RL: A Wake-Sleep Learning Mechanism for Robot Reinforcement Learning from One Demonstration",
+    "abstract": "A robot learning from one human demonstration may rarely succeed on its own, leaving reinforcement learning (RL) with little reward feedback. We introduce WISER-RL ({W}ake--sleep policy improvement loop, {I}mitation, and {S}elective {E}xperience {R}eplay), a composite reinforcement learning framework that turns assisted practice into autonomous control. During wake, GPTDAgger monitors disagreement among actions sampled by a diffusion policy. When disagreement crosses a threshold, a frozen GPT controller uses retrieved experience to continue the episode. During sleep, Conflict-Aware Experience Reweighting (CAER) compares visually matched successful trajectories and downweights conflicting action windows with more steps remaining to success. The policy imitates the reweighted successes and learns from both successes and failures through offline advantage-guided RL before collecting the next round. After final online PPO refinement, the autonomous policy succeeded in 100% evaluations on each of six LIBERO tasks and 100% trials on each of two real-robot tasks.",
+    "authors": [
+      "Kwunhang Wong",
+      "Yang Bai",
+      "Qingyang Bao",
+      "Liudi Yang",
+      "Chenzhi Liu",
+      "Jiehong Lin",
+      "Wei Huang",
+      "Lin Li",
+      "Ziyuan Liu",
+      "Yujie Yang",
+      "Gitta Kutyniok",
+      "Zhongrui Wang",
+      "Xiaojuan Qi"
+    ],
+    "published": "2026-11-25T09:22:42+00:00",
+    "updated": "2026-11-25T09:22:42+00:00",
+    "url": "http://arxiv.org/abs/2611.34043v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.34043v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.34014v1",
+    "title": "Hetero-Associative Visuomotor Memory: Soft Recall as a Base for Learned Residuals in Few-Demonstration Imitation",
+    "abstract": "Retrieve-and-correct policies typically refine the nearest retrieved demonstration chunk, the readout that works best when executed directly. We study what a demonstration memory should supply to the corrector instead and find that a smooth, softmax-weighted recall over the whole memory is a much better base. On ALOHA cube transfer (40 human demonstrations), soft recall is no better to execute alone than the nearest chunk; however, with keys, candidates, and training fixed, correcting it raises success by 22.4 points on fresh resets with new encoders and by 7.4 against a closed-loop-tuned top-1 corrector. On robomimic Square, it leads by 7.9 points with the two better operators and by 6.7 on a label-free draw of equal size. This gain holds on sparse, varied demonstrations under an action-aware key and leave-one-demonstration-out training, and fades or slightly reverses on dense, scripted, or generated data. Building on this finding, our hetero-associative visuomotor memory (HAVM, 14M parameters) trains offline in about five minutes, including a learned retrieval temperature $β$, and runs in 1.1 ms. Across six fresh ALOHA encoders, it reaches 76.4% within 24 s, comparable to a 264M Diffusion Policy trained for 6.7 h (78.8%) and ahead of ACT (71.7%) and fine-tuned VLAs (65.2-75.2%), while leading every 40-demonstration baseline within the benchmark's 8 s limit (74.6%; +6.5 over Diffusion Policy, +15.1 over ACT). On LIBERO, one 40-task memory reaches 92.2% and loses far less than SmolVLA to rewording; on a real SO-101 arm, it sustains 30 Hz control without stalling. Unlike pretrained foundation policies aimed at zero-shot generalization to unseen tasks and workspaces, HAVM trades broad out-of-distribution generalization for rapid adaptation to the available demonstrations.",
+    "authors": [
+      "Runcong Wang"
+    ],
+    "published": "2026-11-25T09:03:48+00:00",
+    "updated": "2026-11-25T09:03:48+00:00",
+    "url": "http://arxiv.org/abs/2611.34014v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.34014v1",
+    "categories": [
+      "cs.RO",
+      "cs.LG"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.33993v1",
+    "title": "Aegis-VLA: Reliability-Gated Action Refinement via a Trajectory World Model for Dynamic Object Manipulation",
+    "abstract": "Dynamic object manipulation requires maintaining spatial and temporal alignment with targets that continue to move during inference and execution. Although future prediction can inform action correction, an accurate forecast does not establish whether modifying an existing action would be beneficial. We present Aegis-VLA, a world-model-guided vision-language-action (VLA) framework that generates predictive action corrections and separately determines whether and how strongly to apply them. A Trajectory World Model combines kinematic extrapolation with learned residual dynamics to predict object motion and estimate positional uncertainty. Discrepancy-Guided Action Refinement uses differences between history-only and base-action-conditioned end-effector forecasts to propose bounded arm corrections. A Reliability Gate learns when to admit corrections based on demonstration-relative improvements over base actions, and regulates their application during inference using predictive uncertainty and anticipated object--end-effector proximity. Rejected corrections preserve the corresponding base actions. Aegis-VLA introduces only approximately 2.45M trainable parameters. On the simulated Dynamic Object Manipulation (DOM) benchmark, Aegis-VLA achieves 56.72\\% success over 1,800 evaluation trials, exceeding our reproduced DynamicVLA baseline of 45.44\\% by 11.28 percentage points.",
+    "authors": [
+      "Lennox Wei",
+      "Jiaqi Yao",
+      "Shixin Sun",
+      "Yuanzheng Zhang",
+      "Jianhua Han",
+      "Meng Tian",
+      "Shaohui Liu",
+      "Wangmeng Zuo"
+    ],
+    "published": "2026-11-25T08:46:50+00:00",
+    "updated": "2026-11-25T08:46:50+00:00",
+    "url": "http://arxiv.org/abs/2611.33993v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.33993v1",
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.33964v1",
+    "title": "Embodied-VGGT: Preserving Reliable Local Geometry for Long-Sequence Reconstruction",
+    "abstract": "Long sequence reconstruction must correct accumulated drift while preserving locally consistent geometry. In robotics and autonomous driving, embodied acquisition provides recurring platform- environment geometry and repeated observations of scene structure and platform motion. We present Embodied-VGGT, which exploits these cues to establish reliable local relationships and selectively preserve them during global refinement. Memory-Augmented Grounded Chunks (MAGC) builds on Scal3R's global context memory and uses relative scale references derived from predicted ground geometry to regularize test-time memory updates, encouraging cross-chunk consistency while limiting changes to reliable local geometry. Superpoint Alignment (SA) and Cross-Loop Optimization (CL) jointly address the robust establishment and preservation of geometric relationships. SA balances ground and non-ground evidence across spatial regions to estimate inter-chunk translation. CL uses geometric and motion consistency across interleaved windows to select coherent chunk groups, each receiving a shared Sim(3) correction that preserves its internal relative transformations during global optimization. Experiments on five public driving benchmarks demonstrate consistent and substantial improvements in long sequence reconstruction. On KITTI Odometry, Embodied-VGGT achieves a mean absolute trajectory error of 7.30 m and a Chamfer distance of 2.67 m, reducing these errors by 46.8% and 23.3% compared with the state-of-the-art baseline under same evaluation protocol. To facilitate reproducibility, we released our code: https://github.com/Ang-Sheep/Embodied-VGGT.",
+    "authors": [
+      "Yiheng Han",
+      "Ziang Chen",
+      "Zhuyong Fu",
+      "Yiqing Yin",
+      "Nan Ma"
+    ],
+    "published": "2026-11-25T08:28:45+00:00",
+    "updated": "2026-11-25T08:28:45+00:00",
+    "url": "http://arxiv.org/abs/2611.33964v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.33964v1",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.33934v1",
+    "title": "Towards 360$^\\circ$ Embodied UAV Tracking Without Turning",
+    "abstract": "Conventional embodied UAV tracking couples target observability with heading control because targets may leave the field of view of forward-facing cameras. We investigate a complementary paradigm that uses full-spherical perception to follow designated targets without active heading adjustment. To support this setting, we introduce 360UAV-ETrack, a simulation benchmark comprising 2,652 sequences, over 1.73 million synchronized observations, eight tracking tasks, and 150 held-out closed-loop scenarios. We propose 360UAV-TVLA, a panoramic vision--language--action (VLA) framework integrating persistent visual referring (PVR), compressed temporal memory (CTM), and geometry-aligned trajectory supervision (GTS) for instance identification, motion reasoning, and three-dimensional control. Experiments across two VLA backbones show consistent gains over standard fine-tuning, with normalized average tracking frames increasing from 22.56\\% to 35.28\\% for $π_0$ and from 25.68\\% to 33.64\\% for $π_{0.5}$. Our benchmark further reveals a substantial gap between offline imitation accuracy and closed-loop tracking reliability, establishing a challenging testbed for future research https://libingyu01.github.io/360UAV-ETrack_360UAV-TVLA/",
+    "authors": [
+      "Bingyu Li",
+      "Wu Du",
+      "Zhiyuan Zhao",
+      "Junyu Gao",
+      "Xuelong Li"
+    ],
+    "published": "2026-11-25T07:54:11+00:00",
+    "updated": "2026-11-25T07:54:11+00:00",
+    "url": "http://arxiv.org/abs/2611.33934v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.33934v1",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.33922v1",
+    "title": "iMFPO: Improving Mean Flow Policy Optimization with Drift-Aware Velocity Alignment for Embodied Control",
+    "abstract": "Flow-based generative policies offer expressive action modeling for embodied control, yet achieving efficient one-step generation under reward-driven policy optimization remains challenging. In particular, evolving action distributions during online reinforcement learning may introduce inconsistencies between instantaneous-velocity learning and interval-averaged action generation. To address this challenge, we propose iMFPO, a one-step generative policy optimization framework with decoupled velocity learning and drift-aware velocity alignment. A shared interval-conditioned actor supports instantaneous-velocity supervision and interval-averaged action generation. JVP-corrected velocity regression is jointly optimized with reward-driven policy objectives, with action-level guidance from a frozen PPO teacher during training. At inference, iMFPO directly generates actions through interval-averaged velocity prediction, achieving one-step control without iterative flow integration. Across Go2, G1, H1, and Spot, zero-latent evaluation yields mean returns of 35.69, 34.44, 416.23, and 29.86. On Go2, action-generation latency drops from 15.57 ms to 0.41 ms relative to 64-step RFPO. Code: https://github.com/AIGeeksGroup/iMFPO. Website: https://aigeeksgroup.github.io/iMFPO.",
+    "authors": [
+      "Lisiyu Pan",
+      "Ting Huang",
+      "Zeyu Zhang",
+      "Hao Tang"
+    ],
+    "published": "2026-11-25T07:43:15+00:00",
+    "updated": "2026-11-25T07:43:15+00:00",
+    "url": "http://arxiv.org/abs/2611.33922v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.33922v1",
+    "categories": [
+      "cs.RO",
+      "cs.CV"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.33914v1",
+    "title": "X-World: Transferring Video Priors to Cross-Embodiment Robot Control",
+    "abstract": "Language-instructed manipulation requires robust closedloop policies, yet action-labeled robot trajectories are costly and limited in coverage. Human and robot videos provide complementary spatiotemporal priors for crossembodiment control. We propose X-World, which adapts pretrained video diffusion to variable views. A Q-Former compresses hidden states into tokens for a shared flowmatching expert that predicts action chunks. Datasetspecific projections map native states and actions. We adapt the backbone on large-scale robot and human videos, freeze it for action-only pretraining of the Q-Former and action expert, then post-train on the target platform. At inference, X-World responds at 20 Hz and overlaps updates with execution via asynchronous real-time chunking. X-World performs strongly on LIBERO and under zero-shot shifts on LIBERO-Plus. On hardware, it averages 81.7% success across six bimanual tasks on the side-mounted dual-arm UR5e, one of three real-robot configurations presented.",
+    "authors": [
+      "Chun Gu",
+      "Xiaofei Wei",
+      "Yiming Chen",
+      "Juntong Zhang",
+      "Li Zhang"
+    ],
+    "published": "2026-11-25T07:34:35+00:00",
+    "updated": "2026-11-25T07:34:35+00:00",
+    "url": "http://arxiv.org/abs/2611.33914v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.33914v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.33880v1",
+    "title": "Integration of Vision-Language-Action Control for Autonomous Forklift Unloading with Limited Real-World Data",
+    "abstract": "Forklifts play a critical role in warehousing and distribution, but existing automation systems remain limited in handling complex tasks that require sequential decision-making. Recently, vision--language--action (VLA) models have emerged as a promising approach for multi-step decision-making by directly generating control actions from visual observations and language prompts. Although VLA-based control has been extensively researched for manipulators, to the best of our knowledge, its application to forklifts remains unexplored. Therefore, this study demonstrates the integration of VLA control for an autonomous forklift unloading task with limited real-world data. Moreover, training VLA models typically requires large-scale datasets. As there is currently no public dataset for forklift operations, we use a VLA model pretrained primarily on robotic manipulator data and construct a training dataset via simulation, which can be scaled up at low cost. We then adapt the pretrained VLA model to forklift control using 9.38 h of simulation data and 0.8 h of real-world demonstrations, with the latter accounting for approximately 8% of the collected forklift data by duration. The integrated system was validated through 72 real-world trials across four model variants. The results show that the proposed system can accomplish an unloading task even with limited real-world data.",
+    "authors": [
+      "Koshi Oishi",
+      "Seigo Ito"
+    ],
+    "published": "2026-11-25T06:58:46+00:00",
+    "updated": "2026-11-25T06:58:46+00:00",
+    "url": "http://arxiv.org/abs/2611.33880v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.33880v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.33878v1",
+    "title": "Off the Driven Path: Transferable Road Understanding in Driving VLAs",
+    "abstract": "End-to-end driving policies increasingly operate without explicit HD maps at inference, raising the question of what road knowledge they actually internalize. To probe this knowledge through model outputs, we introduce Road-KSU, a framework that automatically converts HD maps and actor annotations into a road-centric scene graph. From this, we derive road-focused question answering and reasoning targets, complemented by map-based trajectory compliance metrics. Pairing Road-KSU with geographically disjoint splits yields a $2 \\times 2$ evaluation crossing output modality (language vs. action) with place familiarity (seen vs. unseen roads). On NAVSIM, 95% of test samples lie within 10m of a training sample, and scores of 13 published planners on turns rise steeply with the number of training drives through the test location, pointing to memorized road geometry. Retraining on geographically disjoint splits and probing with Road-KSU confirm that action-space performance degrades most on unfamiliar turns, with failures dominated by geometric compliance. Language accuracy, however, drops on road-centric VQA on straight and curved roads alike, and remains stable on dynamic scene content. Scaling the training data further reveals a double dissociation: more drives through the same places improve driving on unseen roads but leave road question answering unchanged, whereas spreading a fixed data budget over more places increases road question answering with little change in driving performance. These findings show that improved driving scores need not imply broader road understanding on unseen roads, and identify geographic diversity as key to transferable road knowledge.",
+    "authors": [
+      "Lena Wild",
+      "Christian Helten",
+      "Katie Z Luo",
+      "Jakob Thumm",
+      "Rafael Valencia",
+      "Patric Jensfelt",
+      "Marco Pavone"
+    ],
+    "published": "2026-11-25T06:55:58+00:00",
+    "updated": "2026-11-25T06:55:58+00:00",
+    "url": "http://arxiv.org/abs/2611.33878v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.33878v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.33828v1",
+    "title": "Learning a Whole-Body Pivot-Walking Gait for Heavy-Box Transport with a Humanoid",
+    "abstract": "Through pivot walking, humans can transport objects that are too heavy to lift. Previous humanoid studies have relied on planned sequences in which object manipulation and stepping are executed separately and the object is brought to rest between successive rotations. However, few studies have developed a single learned controller for humanoid pivot walking. In this paper, we propose a single reinforcement-learning policy that jointly coordinates stepping, balance control, and object manipulation. The policy is trained using rewards that promote alternating pivot motions and a phase reference that progresses according to the displacement of the object. In simulation, we confirmed that the humanoid can pivot a box. For deployment, we fine-tuned the policy into an object-blind version that follows a periodic clock instead of the progress reference. On the real robot, the deployed policy transported the box forward by more than 1 m in all five trials; each trial ended at a base-tilt safety stop. These results demonstrate that coordinated humanoid pivot walking can be learned with reinforcement learning and transferred to a physical humanoid robot without direct object-state sensing.",
+    "authors": [
+      "Rikuto Hidaka",
+      "Tsung-Yuan Chen",
+      "Kento Kawaharazuka"
+    ],
+    "published": "2026-11-25T05:59:20+00:00",
+    "updated": "2026-11-25T05:59:20+00:00",
+    "url": "http://arxiv.org/abs/2611.33828v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.33828v1",
+    "categories": [
+      "cs.RO",
+      "cs.LG"
+    ],
+    "primary_category": "cs.RO"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.33819v1",
+    "title": "MMotion: Collaborative Cross-Scale Memory for Text-to-Motion Generation",
+    "abstract": "Text-to-motion generation aims to synthesize realistic human motions from natural-language descriptions, enabling applications in animation, virtual avatars, and embodied agents. Despite recent progress, existing methods either retrieve motion exemplars or retain long-range context, but rarely exploit memory to jointly reason about semantics, dynamics, and generation history. In this paper, we propose MMotion, a collaborative multi-scale memory framework that unifies scale-conditioned semantic retrieval, latent dynamics modeling, and causal working memory. Specifically, semantic memory provides motion priors at different generation scales, dynamics memory captures latent state transitions, and working memory preserves causal context from previously generated motions. A collaborative fusion mechanism integrates these complementary memories to determine what motion to generate, how it should evolve, and how it should remain consistent with its history. MMotion is architecture-agnostic and can be readily integrated into both diffusion-based and next scale autoregressive models. Extensive experiments across standard benchmarks and diverse backbones demonstrate consistent improvements over strong baselines.",
+    "authors": [
+      "Zhaoxin Fan",
+      "Qingchen Yu",
+      "Kejian Wu",
+      "Jian Yang",
+      "Zeming Liu",
+      "wenjun wu",
+      "Lili Wang"
+    ],
+    "published": "2026-11-25T05:48:24+00:00",
+    "updated": "2026-11-25T05:48:24+00:00",
+    "url": "http://arxiv.org/abs/2611.33819v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.33819v1",
+    "categories": [
+      "cs.CV"
+    ],
+    "primary_category": "cs.CV"
+  },
+  {
+    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.33816v1",
+    "title": "$\\widetilde{\\varepsilon}$: Does Initial Noise Induce Directional Bias in Vision-Language-Action Models?",
+    "abstract": "Vision-language-action models (VLAs) have widely adopted diffusion-based action generation for continuous robot motions, enabling fine-grained control across diverse tasks. However, recent studies have shown that their performance is highly sensitive to initial noise, with resulting action errors that make recovery difficult during execution. Existing approaches search for favorable noise initializations to improve performance, yet the action expert itself remains sensitive to noise. In this work, we reveal that initial noise induces a consistent directional bias in action space that closely aligns with the noise's temporal mean. We thus introduce a simple yet effective framework that improves robustness to initial noise through interventions during both training and inference. During training, we enforce consistent action predictions from antithetic noise pairs $(ε, -ε)$ and, at inference, remove the noise's temporal mean. Our method substantially reduces action deviation and improves task performance across simulation benchmarks. In real-robot experiments, our method increases the average task success rate of $π_{0.5}$ from 40% to 68%, with more stable and consistent execution.",
+    "authors": [
+      "Junmyeong Lee",
+      "Dongmin Shin",
+      "Wooseok Jeon",
+      "JunGyu Lee",
+      "Seunghyun Shin",
+      "Hae-Gon Jeon"
+    ],
+    "published": "2026-11-25T05:46:45+00:00",
+    "updated": "2026-11-25T05:46:45+00:00",
+    "url": "http://arxiv.org/abs/2611.33816v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.33816v1",
+    "categories": [
+      "cs.RO"
+    ],
+    "primary_category": "cs.RO"
+  }
+]
