@@ -1,6 +1,6 @@
 const latestArticle = {
-  "title": "具身智能中文日报｜2026-11-26",
-  "date": "2026-11-26",
+  "title": "具身智能中文日报｜2026-11-27",
+  "date": "2026-11-27",
   "subtitle": "聚焦VLA、Sim2Real、人形机器人，追踪论文、开源项目与产业动态。",
   "theme": "tech-dark",
   "accent_color": "#4F8CFF",
@@ -18,7 +18,7 @@ const latestArticle = {
   "executive_summary": [
     {
       "title": "核心结论 1",
-      "content": "本次采集得到论文 20 篇、GitHub 项目 20 个、行业/公司动态 15 条。",
+      "content": "本次采集得到论文 20 篇、GitHub 项目 20 个、行业/公司动态 13 条。",
       "card_type": "核心摘要卡",
       "importance_score": 96,
       "tags": [
@@ -59,32 +59,33 @@ const latestArticle = {
   ],
   "papers": [
     {
-      "title": "论文 1：仿真到真实迁移",
-      "reason": "该论文与仿真到真实迁移相关，建议配置 OpenAI API Key 后生成更准确的中文精读摘要。",
+      "title": "论文 1：视觉-语言-动作模型",
+      "reason": "该论文与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文精读摘要。",
       "highlights": [
         "已从 arXiv API 合规获取元数据。",
         "当前为规则摘要，未进行深度语义翻译。"
       ],
-      "source_url": "http://arxiv.org/abs/2611.34302v1",
+      "source_url": "http://arxiv.org/abs/2611.34914v1",
       "card_type": "重点论文卡",
-      "importance_score": 97,
+      "importance_score": 94,
       "tags": [
         "具身智能",
-        "Sim2Real"
+        "机器人视觉"
       ]
     },
     {
-      "title": "论文 2：机器人操作与抓取",
-      "reason": "该论文与机器人操作与抓取相关，建议配置 OpenAI API Key 后生成更准确的中文精读摘要。",
+      "title": "论文 2：人形机器人控制",
+      "reason": "该论文与人形机器人控制相关，建议配置 OpenAI API Key 后生成更准确的中文精读摘要。",
       "highlights": [
         "已从 arXiv API 合规获取元数据。",
         "当前为规则摘要，未进行深度语义翻译。"
       ],
-      "source_url": "http://arxiv.org/abs/2611.34288v1",
+      "source_url": "http://arxiv.org/abs/2611.34884v1",
       "card_type": "重点论文卡",
-      "importance_score": 91,
+      "importance_score": 95,
       "tags": [
         "具身智能",
+        "人形机器人",
         "机器人"
       ]
     },
@@ -95,7 +96,7 @@ const latestArticle = {
         "已从 arXiv API 合规获取元数据。",
         "当前为规则摘要，未进行深度语义翻译。"
       ],
-      "source_url": "http://arxiv.org/abs/2611.34287v1",
+      "source_url": "http://arxiv.org/abs/2611.34864v1",
       "card_type": "重点论文卡",
       "importance_score": 88,
       "tags": [
@@ -110,7 +111,7 @@ const latestArticle = {
         "已从 arXiv API 合规获取元数据。",
         "当前为规则摘要，未进行深度语义翻译。"
       ],
-      "source_url": "http://arxiv.org/abs/2611.34280v1",
+      "source_url": "http://arxiv.org/abs/2611.34778v1",
       "card_type": "重点论文卡",
       "importance_score": 85,
       "tags": [
@@ -119,18 +120,18 @@ const latestArticle = {
       ]
     },
     {
-      "title": "论文 5：视觉-语言-动作模型",
-      "reason": "该论文与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文精读摘要。",
+      "title": "论文 5：机器人操作与抓取",
+      "reason": "该论文与机器人操作与抓取相关，建议配置 OpenAI API Key 后生成更准确的中文精读摘要。",
       "highlights": [
         "已从 arXiv API 合规获取元数据。",
         "当前为规则摘要，未进行深度语义翻译。"
       ],
-      "source_url": "http://arxiv.org/abs/2611.34257v1",
+      "source_url": "http://arxiv.org/abs/2611.34745v1",
       "card_type": "重点论文卡",
       "importance_score": 82,
       "tags": [
         "具身智能",
-        "机器人视觉"
+        "机器人"
       ]
     }
   ],
@@ -138,7 +139,7 @@ const latestArticle = {
     {
       "name": "Genesis-Embodied-AI/genesis-world",
       "summary": "该项目可能聚焦仿真到真实迁移，主要语言为 Python。",
-      "why_follow": "仓库星标数约为 30315，可用于观察开源社区对仿真到真实迁移的实现方向。",
+      "why_follow": "仓库星标数约为 30326，可用于观察开源社区对仿真到真实迁移的实现方向。",
       "source_url": "https://github.com/Genesis-Embodied-AI/genesis-world",
       "card_type": "开源项目卡",
       "importance_score": 93,
@@ -148,10 +149,10 @@ const latestArticle = {
       ]
     },
     {
-      "name": "Octoday-Hub/Embodied-AI",
-      "summary": "该项目可能聚焦人形机器人控制，主要语言为 未知。",
-      "why_follow": "仓库星标数约为 3211，可用于观察开源社区对人形机器人控制的实现方向。",
-      "source_url": "https://github.com/Octoday-Hub/Embodied-AI",
+      "name": "YanjieZe/awesome-humanoid-robot-learning",
+      "summary": "该项目可能聚焦人形机器人控制，主要语言为 Python。",
+      "why_follow": "仓库星标数约为 2914，可用于观察开源社区对人形机器人控制的实现方向。",
+      "source_url": "https://github.com/YanjieZe/awesome-humanoid-robot-learning",
       "card_type": "开源项目卡",
       "importance_score": 91,
       "tags": [
@@ -161,25 +162,12 @@ const latestArticle = {
       ]
     },
     {
-      "name": "YanjieZe/awesome-humanoid-robot-learning",
-      "summary": "该项目可能聚焦人形机器人控制，主要语言为 Python。",
-      "why_follow": "仓库星标数约为 2914，可用于观察开源社区对人形机器人控制的实现方向。",
-      "source_url": "https://github.com/YanjieZe/awesome-humanoid-robot-learning",
-      "card_type": "开源项目卡",
-      "importance_score": 88,
-      "tags": [
-        "具身智能",
-        "人形机器人",
-        "机器人"
-      ]
-    },
-    {
       "name": "zchoi/Awesome-Embodied-Robotics-and-Agent",
       "summary": "该项目可能聚焦视觉-语言-动作模型，主要语言为 未知。",
-      "why_follow": "仓库星标数约为 1926，可用于观察开源社区对视觉-语言-动作模型的实现方向。",
+      "why_follow": "仓库星标数约为 1927，可用于观察开源社区对视觉-语言-动作模型的实现方向。",
       "source_url": "https://github.com/zchoi/Awesome-Embodied-Robotics-and-Agent",
       "card_type": "开源项目卡",
-      "importance_score": 81,
+      "importance_score": 84,
       "tags": [
         "具身智能",
         "机器人视觉"
@@ -191,10 +179,23 @@ const latestArticle = {
       "why_follow": "仓库星标数约为 893，可用于观察开源社区对仿真到真实迁移的实现方向。",
       "source_url": "https://github.com/leggedrobotics/pace-sim2real",
       "card_type": "开源项目卡",
-      "importance_score": 81,
+      "importance_score": 84,
       "tags": [
         "具身智能",
         "Sim2Real"
+      ]
+    },
+    {
+      "name": "FluxVLA/FluxVLA",
+      "summary": "该项目可能聚焦视觉-语言-动作模型，主要语言为 Python。",
+      "why_follow": "仓库星标数约为 800，可用于观察开源社区对视觉-语言-动作模型的实现方向。",
+      "source_url": "https://github.com/FluxVLA/FluxVLA",
+      "card_type": "开源项目卡",
+      "importance_score": 83,
+      "tags": [
+        "具身智能",
+        "VLA",
+        "机器人视觉"
       ]
     }
   ],
@@ -249,15 +250,15 @@ const latestArticle = {
       ]
     },
     {
-      "title": "行业动态 5：仿真到真实迁移",
-      "summary": "该动态与仿真到真实迁移相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
+      "title": "行业动态 5：视觉-语言-动作模型",
+      "summary": "该动态与视觉-语言-动作模型相关，建议配置 OpenAI API Key 后生成更准确的中文摘要。",
       "impact": "可作为跟踪产业落地、公司研发投入和招聘需求变化的线索。",
-      "source_url": "https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance",
+      "source_url": "https://www.therobotreport.com/softbank-acquires-marc-raiberts-robotics-and-ai-institute/",
       "card_type": "行业动态卡",
-      "importance_score": 77,
+      "importance_score": 74,
       "tags": [
         "具身智能",
-        "Sim2Real"
+        "机器人视觉"
       ]
     }
   ],
@@ -352,36 +353,36 @@ const latestArticle = {
   ],
   "sources": [
     {
-      "name": "论文 1：仿真到真实迁移",
-      "url": "http://arxiv.org/abs/2611.34302v1",
+      "name": "论文 1：视觉-语言-动作模型",
+      "url": "http://arxiv.org/abs/2611.34914v1",
       "type": "论文",
       "card_type": "来源链接卡",
-      "importance_score": 81
+      "importance_score": 78
     },
     {
-      "name": "论文 2：机器人操作与抓取",
-      "url": "http://arxiv.org/abs/2611.34288v1",
+      "name": "论文 2：人形机器人控制",
+      "url": "http://arxiv.org/abs/2611.34884v1",
       "type": "论文",
       "card_type": "来源链接卡",
-      "importance_score": 75
+      "importance_score": 79
     },
     {
       "name": "论文 3：视觉-语言-动作模型",
-      "url": "http://arxiv.org/abs/2611.34287v1",
+      "url": "http://arxiv.org/abs/2611.34864v1",
       "type": "论文",
       "card_type": "来源链接卡",
       "importance_score": 72
     },
     {
       "name": "论文 4：视觉-语言-动作模型",
-      "url": "http://arxiv.org/abs/2611.34280v1",
+      "url": "http://arxiv.org/abs/2611.34778v1",
       "type": "论文",
       "card_type": "来源链接卡",
       "importance_score": 69
     },
     {
-      "name": "论文 5：视觉-语言-动作模型",
-      "url": "http://arxiv.org/abs/2611.34257v1",
+      "name": "论文 5：机器人操作与抓取",
+      "url": "http://arxiv.org/abs/2611.34745v1",
       "type": "论文",
       "card_type": "来源链接卡",
       "importance_score": 66
@@ -392,13 +393,6 @@ const latestArticle = {
       "type": "GitHub",
       "card_type": "来源链接卡",
       "importance_score": 63
-    },
-    {
-      "name": "Octoday-Hub/Embodied-AI",
-      "url": "https://github.com/Octoday-Hub/Embodied-AI",
-      "type": "GitHub",
-      "card_type": "来源链接卡",
-      "importance_score": 60
     },
     {
       "name": "YanjieZe/awesome-humanoid-robot-learning",
@@ -417,6 +411,13 @@ const latestArticle = {
     {
       "name": "leggedrobotics/pace-sim2real",
       "url": "https://github.com/leggedrobotics/pace-sim2real",
+      "type": "GitHub",
+      "card_type": "来源链接卡",
+      "importance_score": 60
+    },
+    {
+      "name": "FluxVLA/FluxVLA",
+      "url": "https://github.com/FluxVLA/FluxVLA",
       "type": "GitHub",
       "card_type": "来源链接卡",
       "importance_score": 60
@@ -450,8 +451,8 @@ const latestArticle = {
       "importance_score": 60
     },
     {
-      "name": "行业动态 5：仿真到真实迁移",
-      "url": "https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance",
+      "name": "行业动态 5：视觉-语言-动作模型",
+      "url": "https://www.therobotreport.com/softbank-acquires-marc-raiberts-robotics-and-ai-institute/",
       "type": "行业动态",
       "card_type": "来源链接卡",
       "importance_score": 60
